@@ -55,6 +55,52 @@
   let progress = Object.assign({ lessons: {}, unitLevel: {}, xp: 0, streak: 0, lastDay: null, autoplay: true, modes: {} }, loadProgress());
   progress.unitLevel ||= {};
   progress.modes ||= {};
+  progress.tours ||= {}; // tours de primeira utilização já vistos
+
+  /* ---------- Tours de primeira utilização ---------- */
+  function homeTour() {
+    Spotlight.spotlight([
+      { icon: "👋", title: "Bem-vindo ao Prolingo!",
+        text: "Aqui você aprende inglês com <b>histórias</b>: diálogos com áudio em cada frase, perguntas sobre o que aconteceu e desafios de fala e escrita. Vamos ver como tudo funciona?" },
+      { target: ".tabs", title: "Histórias e Pro",
+        text: "<b>📚 Histórias</b> acompanha o seu curso, unidade por unidade. <b>💼 Pro</b> traz conversas da vida profissional: enfermagem, serviço social, medicina e psicologia." },
+      { target: ".unit .guide-btn", title: "Guia da unidade",
+        text: "As frases-chave da unidade, com áudio. Ótimo para revisar antes ou depois das lições." },
+      { target: ".unit .levels", title: "5 níveis de dificuldade",
+        text: "A mesma história em 5 versões: do <b>1 · Básico</b> ao <b>5 · Nativo</b>, com gírias e subentendidos. Você escolhe o nível livremente, sem precisar passar pelos anteriores." },
+      { target: ".unit .node .circle", round: true, pad: 24, title: "O círculo de cada lição",
+        text: "Ele tem 4 partes: 📖 <b>leitura</b>, 🎧 <b>escuta</b>, 🎤 <b>fala</b> e ✍️ <b>escrita</b>. Cada uma acende quando você completa a lição daquele jeito. O ✓ embaixo indica lição concluída no nível escolhido." },
+      { target: ".stats .fire", title: "Sequência e XP",
+        text: "🔥 são os <b>dias seguidos</b> de estudo e ⚡ o seu <b>XP</b>. Cada lição e cada parte nova do círculo rendem pontos." },
+      { target: "#install", title: "Instale o app",
+        text: "Coloque o Prolingo na tela inicial do celular para abrir como um aplicativo, em tela cheia." },
+      { target: "#help", round: true, title: "Rever este tour",
+        text: "Toque no <b>?</b> quando quiser ver estas dicas de novo." },
+      { target: ".unit .node", title: "Pronto para começar!",
+        text: "Toque na primeira lição. Lá dentro eu mostro os modos de estudo." },
+    ], { doneLabel: "Vamos lá!", onDone: () => { progress.tours.home = true; saveProgress(progress); } });
+  }
+
+  function lessonTour() {
+    Spotlight.spotlight([
+      { icon: "📖", title: "Sua primeira história",
+        text: "Cada lição é um <b>diálogo</b> que avança quando você toca em <b>Continuar</b>. A cada 4 ou 5 falas aparece uma pergunta sobre o que aconteceu." },
+      { target: ".story-head .title .en", title: "Toque nas palavras",
+        text: "Toque em qualquer palavra em inglês para <b>ouvir</b> e ver a <b>tradução</b>. Em cada fala, <b>Ver tradução</b> mostra a frase inteira. Tocar duas vezes no 🔊 repete mais devagar." },
+      { target: ".mode[data-mode='listen']", title: "🎧 Escuta",
+        text: "Toca o áudio de cada fala automaticamente, com vozes nativas de vários sotaques." },
+      { target: ".mode[data-mode='speak']", title: "🎤 Fala",
+        text: "Você <b>repete cada fala</b> em voz alta. O app escreve o que entendeu, você confere e confirma. Ele aceita pequenas diferenças e marca com <b>!</b> o que pode melhorar. O navegador vai pedir permissão para usar o microfone." },
+      { target: ".mode[data-mode='write']", title: "✍️ Escrita",
+        text: "A cada 2 ou 3 falas, um exercício: primeiro completar <b>palavras</b>, depois escrever a <b>frase inteira</b> (copiar, ditado ou tradução). Pequenos erros de digitação são aceitos." },
+      { target: ".start-ring", round: true, pad: 16, title: "Complete o círculo",
+        text: "Ligue os modos <b>antes de começar</b> para eles contarem no círculo. 📖 Leitura conta sempre; 🎤 Fala e ✍️ Escrita contam com <b>80% de acertos</b>. Há sempre um botão <b>Pular</b>." },
+      { target: ".lesson .close", round: true, title: "Pode sair quando quiser",
+        text: "Seu progresso fica <b>salvo</b>. Ao voltar, você continua de onde parou." },
+      { target: ".footer .btn.main", title: "Tudo pronto!",
+        text: "Escolha os modos e toque em <b>Começar</b>. Bons estudos! 🚀" },
+    ], { doneLabel: "Começar a explorar", onDone: () => { progress.tours.lesson = true; saveProgress(progress); } });
+  }
 
   // as 4 faces da língua: cada lição (em cada nível) tem um círculo dividido nelas
   const FACES = [
@@ -274,7 +320,7 @@
     const zig = [0, 60, 90, 60, 0, -60, -90, -60];
     const pro = section === "pro";
     let html = `<header class="topbar"><div class="brand"><img src="/icons/icon.svg" alt="">prolingo</div>
-      <div class="stats">${installPrompt ? `<button class="install" id="install">⬇ Instalar</button>` : ""}<span class="fire" title="Dias seguidos">🔥 ${progress.streak}</span><span class="xp" title="XP">⚡ ${progress.xp} XP</span></div></header>
+      <div class="stats">${installPrompt ? `<button class="install" id="install">⬇ Instalar</button>` : ""}<button class="help" id="help" aria-label="Como funciona o app" title="Como funciona">?</button><span class="fire" title="Dias seguidos">🔥 ${progress.streak}</span><span class="xp" title="XP">⚡ ${progress.xp} XP</span></div></header>
       <nav class="tabs" role="tablist">
         <a href="#/" class="tab ${pro ? "" : "on"}" role="tab" aria-selected="${!pro}">📚 Histórias</a>
         <a href="#/pro" class="tab ${pro ? "on" : ""}" role="tab" aria-selected="${pro}">💼 Pro</a>
@@ -318,6 +364,8 @@
     const $inst = document.getElementById("install");
     if ($inst) $inst.onclick = async () => { installPrompt.prompt(); await installPrompt.userChoice; installPrompt = null; $inst.remove(); };
     document.title = pro ? "Pro – Prolingo" : "Prolingo – Histórias";
+    document.getElementById("help").onclick = () => { progress.tours.lesson = false; saveProgress(progress); homeTour(); };
+    if (!progress.tours.home) setTimeout(() => { if (document.getElementById("help")) homeTour(); }, 500);
   }
 
   function renderGuide(id) {
@@ -929,6 +977,7 @@
 
     $btn.onclick = () => (blocker ? blocker.primary() : next());
     $skip.onclick = () => blocker?.skip();
+    if (!progress.tours.lesson) setTimeout(() => { if (pos < 0 && $btn.isConnected) lessonTour(); }, 500);
     if (saved) {
       // tela inicial com escolha: continuar de onde parou ou recomeçar
       setFooter({ label: "Continuar de onde parei", skip: true, skipLabel: "Recomeçar" });
