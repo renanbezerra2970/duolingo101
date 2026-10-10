@@ -264,9 +264,8 @@
         <div class="path">`;
       d.lessons.forEach((l, i) => {
         const done = progress.lessons[pkey(l.id, lvl)]?.done;
-        const crowns = state.levels.filter(x => progress.lessons[pkey(l.id, x.n)]?.done).length;
         html += `<button class="node ${done ? "done" : ""}" data-lesson="${l.id}" data-level="${lvl}" style="transform:translateX(${zig[i % zig.length]}px)">
-          <span class="circle">${ringWithIcons(facesOf(pkey(l.id, lvl)))}${l.emoji}${crowns ? `<span class="crowns" title="Níveis concluídos">👑${crowns}</span>` : ""}</span>
+          <span class="circle">${ringWithIcons(facesOf(pkey(l.id, lvl)))}${l.emoji}</span>
           <span class="label"><b>${esc(l.title)}</b>${esc(l.titlePt)}</span></button>`;
       });
       html += `</div></section>`;

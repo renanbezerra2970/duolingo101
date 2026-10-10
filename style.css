@@ -156,7 +156,6 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .lv-desc { margin: 10px 2px 0; color: var(--muted); font-weight: 600; font-size: 14px; line-height: 1.4; }
 .lv-desc b { color: var(--text); font-weight: 800; }
 .cefr, .lv-badge span { display: inline-block; font-size: 11px; font-weight: 900; padding: 1px 6px; border-radius: 6px; background: var(--line); color: var(--text); vertical-align: 1px; }
-.crowns { position: absolute; top: -8px; right: -12px; background: var(--bg); border: 2px solid var(--line); border-radius: 99px; font-size: 12px; font-weight: 900; padding: 1px 6px; line-height: 1.3; color: var(--gold); }
 .lv-badge { display: inline-flex; gap: 8px; align-items: center; margin-top: 12px; padding: 6px 14px; border-radius: 99px; border: 2px solid var(--line); font-size: 14px; font-weight: 900; }
 .lv-badge.lv-1, .lv-badge.lv-2 { color: var(--green); border-color: var(--green); }
 .lv-badge.lv-3 { color: var(--blue); border-color: var(--blue); }
@@ -264,8 +263,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .ring-ic.ic-1 { left: calc(50% + 32px); top: calc(50% + 32px); }
 .ring-ic.ic-2 { left: calc(50% - 32px); top: calc(50% + 32px); }
 .ring-ic.ic-3 { left: calc(50% - 32px); top: calc(50% - 32px); }
-/* coroa no topo e ✓ embaixo, para não cobrir os ícones */
-.crowns { top: -22px; right: auto; left: 50%; transform: translateX(-50%); z-index: 3; }
+/* ✓ embaixo, para não cobrir os ícones */
 .node.done .circle::after { right: auto; left: 50%; bottom: -20px; transform: translateX(-50%); z-index: 3; }
 .path { gap: 40px; }
 .node .label { margin-top: 14px; }
