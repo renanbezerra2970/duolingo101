@@ -253,3 +253,5 @@ button { font: inherit; color: inherit; cursor: pointer; }
 }
 .feed.quiz .line .en, .feed.quiz .line .trans { filter: blur(7px); user-select: none; pointer-events: none; transition: filter .25s; }
 .feed.quiz .line .pt-toggle { visibility: hidden; }
+/* espaço extra embaixo durante o exercício, para a caixa poder subir até o topo da tela */
+.feed.quiz { padding-bottom: 100vh; }

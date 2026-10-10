@@ -654,11 +654,22 @@
         <div class="pr-msg"></div>`;
       $feed.appendChild(box);
       $feed.classList.add("quiz"); // esconde o texto das falas para a resposta não ficar à vista
-      scrollDown(box);
+      // com o teclado aberto, a caixa do exercício precisa ficar no topo da tela, logo abaixo dos modos
+      const pin = () => {
+        if (!box.isConnected || !$feed.classList.contains("quiz")) return;
+        const head = $app.querySelector(".lesson-head");
+        const top = box.getBoundingClientRect().top + scrollY - (head?.offsetHeight || 0) - 10;
+        scrollTo({ top: Math.max(0, top), behavior: "instant" });
+      };
+      const repin = () => { pin(); setTimeout(pin, 150); setTimeout(pin, 450); };
+      window.visualViewport?.addEventListener("resize", repin);
+      const unpin = () => window.visualViewport?.removeEventListener("resize", repin);
+      setTimeout(pin, 0);
 
       const inputs = [...box.querySelectorAll(".blank, .pr-input")];
       const $msg = box.querySelector(".pr-msg");
       box.querySelector(".hint")?.addEventListener("click", (e) => { box.querySelector(".pr-hint").hidden = false; e.target.remove(); });
+      inputs.forEach(x => x.addEventListener("focus", repin));
       const refresh = () => setFooter({ label: "Verificar", disabled: !inputs.some(x => x.value.trim()), skip: true });
       inputs.forEach(x => x.addEventListener("input", refresh));
       refresh();
@@ -685,16 +696,22 @@
             : `Resposta certa:<div class="diff">${diffHTML(en, r.missing)}</div>`;
         }
         inputs.forEach(x => (x.disabled = true));
+        document.activeElement?.blur(); // fecha o teclado para mostrar o resultado e o "Continuar"
         $feed.classList.remove("quiz");
+        unpin();
+        scrollDown(box);
         if (ok) stats.writeOk++;
         box.classList.add(ok ? "ok" : "bad");
         blocker = null;
         setFooter({ ok, bad: !ok, fb: ok ? "Correto!" : "Não foi dessa vez" });
-        $btn.focus();
+        $btn.focus({ preventScroll: true });
       }
       function stop(text) {
         inputs.forEach(x => (x.disabled = true));
+        document.activeElement?.blur();
         $feed.classList.remove("quiz");
+        unpin();
+        scrollDown(box);
         box.classList.add("skipped");
         $msg.innerHTML = `${text} Resposta:<div class="diff">${esc(en)}</div>`;
         blocker = null;
