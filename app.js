@@ -228,6 +228,11 @@
     }).join("");
     return `<svg class="ring" viewBox="0 0 100 100" aria-hidden="true">${arcs}</svg>`;
   }
+  // círculo com o ícone de cada face no meio da sua parte (leitura em cima à direita, depois sentido horário)
+  function ringWithIcons(faces) {
+    const icons = FACES.map((f, i) => `<span class="ring-ic ic-${i} ${faces[f.id] ? "got" : ""}" style="--c:${f.color}" title="${f.name}${faces[f.id] ? " ✓" : ""}">${f.icon}</span>`).join("");
+    return ringSVG(faces) + icons;
+  }
 
   /* ---------- Telas ---------- */
   function renderHome(section = "stories") {
@@ -244,7 +249,6 @@
     for (const u of groupsOf(section)) {
       const d = state.unitData[u.id];
       const lvl = unitLevel(u.id);
-      const info = levelInfo(lvl);
       html += `<section class="unit" style="--unit-color:${u.color}">
         <div class="unit-banner" style="background:${u.color}">
           <div><h2>${esc(u.title)}</h2><p>${esc(u.subtitle)}</p></div>
@@ -257,14 +261,12 @@
               <b>${l.n}</b><small>${esc(l.name)}</small></button>`;
           }).join("")}
         </div>
-        <p class="lv-desc"><b>Nível ${lvl} · ${esc(info.name)}</b> <span class="cefr">${esc(info.cefr || "")}</span> — ${esc(info.desc || "")}</p>
-        <p class="faces-legend">${FACES.map(f => `<span><i style="background:${f.color}"></i>${f.icon} ${f.name}</span>`).join("")}</p>
         <div class="path">`;
       d.lessons.forEach((l, i) => {
         const done = progress.lessons[pkey(l.id, lvl)]?.done;
         const crowns = state.levels.filter(x => progress.lessons[pkey(l.id, x.n)]?.done).length;
         html += `<button class="node ${done ? "done" : ""}" data-lesson="${l.id}" data-level="${lvl}" style="transform:translateX(${zig[i % zig.length]}px)">
-          <span class="circle">${ringSVG(facesOf(pkey(l.id, lvl)))}${l.emoji}${crowns ? `<span class="crowns" title="Níveis concluídos">👑${crowns}</span>` : ""}</span>
+          <span class="circle">${ringWithIcons(facesOf(pkey(l.id, lvl)))}${l.emoji}${crowns ? `<span class="crowns" title="Níveis concluídos">👑${crowns}</span>` : ""}</span>
           <span class="label"><b>${esc(l.title)}</b>${esc(l.titlePt)}</span></button>`;
       });
       html += `</div></section>`;
@@ -785,7 +787,7 @@
         write: eligible.write && mode.write ? `${stats.writeOk}/${stats.writeTotal} exercícios certos (${pct(writeRate)}; precisa de 80%)` : "Ligue ✍️ Escrita antes de começar",
       };
       $app.innerHTML = `<div class="end">
-        <div class="end-ring">${ringSVG(faces)}<span>${acc === 100 ? "🏆" : "🎉"}</span></div>
+        <div class="end-ring">${ringWithIcons(faces)}<span>${acc === 100 ? "🏆" : "🎉"}</span></div>
         <h1>História concluída!</h1>
         <p style="color:var(--muted);margin:0">${esc(lesson.title)} — nível ${level} · ${esc(info.name)}</p>
         <div class="cards">

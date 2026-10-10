@@ -255,3 +255,24 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .feed.quiz .line .pt-toggle { visibility: hidden; }
 /* espaço extra embaixo durante o exercício, para a caixa poder subir até o topo da tela */
 .feed.quiz { padding-bottom: 100vh; }
+
+/* ícones das 4 faces sobre o círculo da lição */
+.ring-ic { position: absolute; width: 24px; height: 24px; margin: -12px 0 0 -12px; border-radius: 50%; display: grid; place-items: center; font-size: 12px; line-height: 1; background: var(--bg); border: 2px solid var(--ring-off); filter: grayscale(1); opacity: .55; z-index: 2; }
+.ring-ic.got { border-color: var(--c); filter: none; opacity: 1; }
+/* meio de cada parte: 45°, 135°, 225° e 315°, no raio do círculo */
+.ring-ic.ic-0 { left: calc(50% + 32px); top: calc(50% - 32px); }
+.ring-ic.ic-1 { left: calc(50% + 32px); top: calc(50% + 32px); }
+.ring-ic.ic-2 { left: calc(50% - 32px); top: calc(50% + 32px); }
+.ring-ic.ic-3 { left: calc(50% - 32px); top: calc(50% - 32px); }
+/* coroa no topo e ✓ embaixo, para não cobrir os ícones */
+.crowns { top: -22px; right: auto; left: 50%; transform: translateX(-50%); z-index: 3; }
+.node.done .circle::after { right: auto; left: 50%; bottom: -20px; transform: translateX(-50%); z-index: 3; }
+.path { gap: 40px; }
+.node .label { margin-top: 14px; }
+/* tela final: círculo grande, ícones maiores e espaço para o rodapé fixo */
+.end { padding-bottom: 280px; }
+.end-ring .ring-ic { width: 32px; height: 32px; margin: -16px 0 0 -16px; font-size: 16px; }
+.end-ring .ring-ic.ic-0 { left: calc(50% + 42px); top: calc(50% - 42px); }
+.end-ring .ring-ic.ic-1 { left: calc(50% + 42px); top: calc(50% + 42px); }
+.end-ring .ring-ic.ic-2 { left: calc(50% - 42px); top: calc(50% + 42px); }
+.end-ring .ring-ic.ic-3 { left: calc(50% - 42px); top: calc(50% - 42px); }
