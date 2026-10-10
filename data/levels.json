@@ -1,0 +1,9 @@
+{
+  "levels": [
+    { "n": 1, "name": "Básico", "cefr": "A1", "rate": "-5%", "desc": "No ritmo do Duolingo: frases curtas e vocabulário da unidade." },
+    { "n": 2, "name": "Elementar", "cefr": "A2", "rate": "-5%", "desc": "Frases completas, mais vocabulário e um pouco de passado e futuro." },
+    { "n": 3, "name": "Intermediário", "cefr": "B1", "rate": "+0%", "desc": "Conversa natural e perguntas em inglês." },
+    { "n": 4, "name": "Avançado", "cefr": "B2–C1", "rate": "+0%", "desc": "Expressões idiomáticas, phrasal verbs, humor e subentendidos." },
+    { "n": 5, "name": "Nativo", "cefr": "C2", "rate": "+8%", "desc": "Gírias, ironia, fala rápida e perguntas sobre o que NÃO foi dito." }
+  ]
+}

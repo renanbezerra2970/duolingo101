@@ -142,3 +142,29 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .splash img { width: 96px; height: 96px; animation: bob 1s ease-in-out infinite alternate; }
 @keyframes bob { to { transform: translateY(-10px) rotate(-4deg); } }
 @media (max-width: 420px) { .stats { gap: 10px; font-size: 14px; } .brand { font-size: 19px; } }
+
+/* ---------- Níveis de dificuldade ---------- */
+.levels { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px; margin-top: 14px; }
+.lv { min-width: 0; background: none; border: 2px solid var(--line); border-bottom-width: 4px; border-radius: 14px; padding: 8px 4px 6px; display: flex; flex-direction: column; align-items: center; gap: 2px; color: var(--muted); }
+.lv b { font-size: 20px; font-weight: 900; line-height: 1; }
+.lv small { font-size: 11px; font-weight: 800; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; }
+.lv.on { border-color: var(--unit-color); color: var(--text); background: color-mix(in srgb, var(--unit-color) 18%, transparent); }
+.lv.on b { color: var(--unit-color); }
+.lv.full b::after { content: " ✓"; font-size: 13px; color: var(--gold); }
+.lv-desc { margin: 10px 2px 0; color: var(--muted); font-weight: 600; font-size: 14px; line-height: 1.4; }
+.lv-desc b { color: var(--text); font-weight: 800; }
+.cefr, .lv-badge span { display: inline-block; font-size: 11px; font-weight: 900; padding: 1px 6px; border-radius: 6px; background: var(--line); color: var(--text); vertical-align: 1px; }
+.crowns { position: absolute; top: -8px; right: -12px; background: var(--bg); border: 2px solid var(--line); border-radius: 99px; font-size: 12px; font-weight: 900; padding: 1px 6px; line-height: 1.3; color: var(--gold); }
+.lv-badge { display: inline-flex; gap: 8px; align-items: center; margin-top: 12px; padding: 6px 14px; border-radius: 99px; border: 2px solid var(--line); font-size: 14px; font-weight: 900; }
+.lv-badge.lv-1, .lv-badge.lv-2 { color: var(--green); border-color: var(--green); }
+.lv-badge.lv-3 { color: var(--blue); border-color: var(--blue); }
+.lv-badge.lv-4 { color: #ce82ff; border-color: #ce82ff; }
+.lv-badge.lv-5 { color: var(--red); border-color: var(--red); }
+.question h3.q-en { display: flex; gap: 12px; align-items: flex-start; }
+.question h3.q-en .en { font-size: 21px; font-weight: 900; line-height: 1.4; }
+.end .up { margin: 18px 0 0; }
+@media (max-width: 520px) {
+  .levels { gap: 6px; }
+  .lv small { font-size: 9.5px; }
+  .end .up { width: auto; }
+}

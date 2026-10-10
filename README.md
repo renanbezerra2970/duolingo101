@@ -35,3 +35,18 @@ um diálogo longo, com uma pergunta a cada 4–5 falas, todas as frases e palavr
 - Fala: `[personagem, inglês, português]`. O personagem (voz + emoji) é definido em `cast`, no topo do arquivo da unidade. `nar` é o narrador.
 - Pergunta: `q` = enunciado, `o` = opções, `a` = índice da certa (o app embaralha). `"lang": "en"` faz as opções terem áudio.
 - Nova unidade: crie `data/unit5.json`, registre em `data/units.json` (com as frases do guia) e adicione palavras novas em `data/glossary.json`.
+
+## Níveis de dificuldade (1 a 5)
+
+Cada história existe em 5 versões: mesmo enredo, língua cada vez mais difícil. Descrições e velocidade do áudio ficam em `data/levels.json`.
+
+| Nível | Onde fica | Perguntas |
+|---|---|---|
+| 1 Básico (A1) | `data/unitN.json` | em português |
+| 2 Elementar (A2) | `data/levels/uN-2.json` | em português (algumas opções em inglês com `"lang": "en"`) |
+| 3 Intermediário (B1) | `data/levels/uN-3.json` | em inglês, com áudio |
+| 4 Avançado (B2–C1) | `data/levels/uN-4.json` | em inglês: expressões idiomáticas |
+| 5 Nativo (C2) | `data/levels/uN-5.json` | em inglês: gírias, ironia, subentendidos |
+
+Formato de `data/levels/uN-L.json`: `{ "unit": N, "level": L, "cast": { ...personagens extras... }, "lessons": { "u1l1": [ ...falas e perguntas... ] } }`.
+O glossário aceita só a forma base da palavra: o app acha sozinho plurais, passado, "-ing" e possessivos.

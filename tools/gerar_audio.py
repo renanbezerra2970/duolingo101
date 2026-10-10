@@ -22,40 +22,63 @@ AUDIO = ROOT / "audio"
 WORD_VOICE = "en-US-JennyNeural"
 DEFAULT_VOICE = "en-US-JennyNeural"
 WORD_RE = re.compile(r"[A-Za-zÀ-ÿ]+(?:'[A-Za-zÀ-ÿ]+)?")
-CONCURRENCY = 6
+CONCURRENCY = 10
 
 
 def file_for(key: str) -> str:
     return hashlib.sha1(key.encode("utf-8")).hexdigest()[:12] + ".mp3"
 
 
+def sentence_key(voice, text, rate):
+    # o nível 1 e 2 usam -5% (chave antiga, sem a velocidade); os outros níveis incluem a velocidade
+    return f"{voice}|{text}" if rate == "-5%" else f"{voice}|{text}|{rate}"
+
+
+def load(path):
+    return json.loads((ROOT / path).read_text(encoding="utf-8"))
+
+
 def collect():
-    """Retorna {chave: (voz, texto, velocidade)}. Chave de frase = 'voz|texto'; de palavra = 'word|palavra'."""
+    """Retorna {chave: (voz, texto, velocidade)}. Palavras soltas usam a chave 'word|palavra'."""
     items = {}
 
-    def add_sentence(voice, text):
-        items[f"{voice}|{text}"] = (voice, text, "-5%")
+    def add_sentence(voice, text, rate="-5%"):
+        items[sentence_key(voice, text, rate)] = (voice, text, rate)
         for w in WORD_RE.findall(text):
             w = w.lower()
             items[f"word|{w}"] = (WORD_VOICE, w, "-15%")
 
-    units = json.loads((ROOT / "data" / "units.json").read_text(encoding="utf-8"))["units"]
-    for unit in units:
+    def add_steps(steps, cast, level, rate):
+        for step in steps:
+            if isinstance(step, list):
+                who, en = step[0], step[1]
+                add_sentence(cast.get(who, {}).get("voice", DEFAULT_VOICE), en, rate)
+            elif level >= 3:  # pergunta e opções em inglês
+                add_sentence(DEFAULT_VOICE, step["q"], rate)
+                for opt in step["o"]:
+                    add_sentence(DEFAULT_VOICE, opt, rate)
+            elif step.get("lang") == "en":
+                for opt in step["o"]:
+                    add_sentence(DEFAULT_VOICE, opt, rate)
+
+    rates = {lv["n"]: lv["rate"] for lv in load("data/levels.json")["levels"]}
+    for unit in load("data/units.json")["units"]:
         for en, _pt in unit.get("phrases", []):
             add_sentence(DEFAULT_VOICE, en)
-        data = json.loads((ROOT / unit["file"]).read_text(encoding="utf-8"))
+        data = load(unit["file"])
         cast = data["cast"]
         for lesson in data["lessons"]:
             add_sentence(DEFAULT_VOICE, lesson["title"])
-            for step in lesson["steps"]:
-                if isinstance(step, list):
-                    who, en = step[0], step[1]
-                    add_sentence(cast.get(who, {}).get("voice", DEFAULT_VOICE), en)
-                elif step.get("lang") == "en":
-                    for opt in step["o"]:
-                        add_sentence(DEFAULT_VOICE, opt)
+            add_steps(lesson["steps"], cast, 1, rates[1])
+        for level in range(2, 6):
+            path = ROOT / "data" / "levels" / f"u{unit['id']}-{level}.json"
+            if not path.exists():
+                continue
+            lv = json.loads(path.read_text(encoding="utf-8"))
+            lv_cast = {**cast, **lv.get("cast", {})}
+            for steps in lv["lessons"].values():
+                add_steps(steps, lv_cast, level, rates[level])
     return items
-
 
 async def synth(sem, voice, text, rate, out: Path):
     async with sem:
