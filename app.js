@@ -331,18 +331,13 @@
   const wordCount = (s) => (s.match(WORD_RE) || []).length;
   // dica: primeira letra de cada palavra ("Coffee, please." → "C_____, p_____.")
   const hintOf = (s) => s.replace(WORD_RE, (w) => w[0] + w.slice(1).replace(/[A-Za-zÀ-ÿ]/g, "_"));
-  // mostra a frase certa marcando em vermelho as palavras que faltaram
-  function diffHTML(expected, missing) {
-    const miss = new Set(missing);
-    let out = "", i = 0;
-    for (const m of expected.matchAll(WORD_RE)) {
-      const bad = M.tokens(m[0]).some(t => miss.has(t));
-      out += esc(expected.slice(i, m.index)) + (bad ? `<mark>${esc(m[0])}</mark>` : esc(m[0]));
-      i = m.index + m[0].length;
-    }
-    return out + esc(expected.slice(i));
+  // texto com as palavras divergentes marcadas por um "!" discreto (laranja = pequena diferença, vermelho = faltou/não bateu)
+  function markedHTML(text, marks) {
+    return M.annotate(text, marks).map(p =>
+      !p.status || p.status === "ok" ? esc(p.text)
+        : `<span class="mk ${p.status}" title="${p.status === "close" ? "Pequena diferença" : "Faltou ou não bateu"}">${esc(p.text)}<sup>!</sup></span>`).join("");
   }
-
+  const hasMarks = (marks) => marks.some(m => m !== "ok");
   let cleanup = null; // encerra microfone/áudio ao sair da lição
 
   async function renderLesson(id, level) {
@@ -558,17 +553,20 @@
       function confirmSaid() {
         if (phase === "retry") return listen();
         if (!alts.length) return;
-        const best = alts.map(a => M.score(expected, a, "recall")).sort((a, b) => b.score - a.score)[0];
+        const best = alts.map(a => ({ said: a, ...M.score(expected, a, "recall") })).sort((a, b) => b.score - a.score)[0];
+        // marca na frase captada o que não bateu, e mostra a frase original marcada logo abaixo
+        $said.innerHTML = markedHTML(best.said, best.gmarks);
+        const original = hasMarks(best.marks) ? `<div class="diff"><small>Original:</small> ${markedHTML(expected, best.marks)}</div>` : "";
         if (best.score >= THRESHOLD.speak) {
           finished = true;
           stats.speakOk++;
           box.classList.add("ok");
-          $msg.textContent = best.exact ? "Perfeito! 🎉" : "Muito bem! 👍";
+          $msg.innerHTML = best.exact ? "Perfeito! 🎉" : `Muito bem! 👍 Repare no que está marcado com <b class="mk-legend">!</b>${original}`;
           blocker = null;
           setFooter({ ok: true, fb: best.exact ? "Perfeito!" : "Boa pronúncia!" });
         } else {
           box.classList.add("bad");
-          $msg.innerHTML = `Quase! Confira: <span class="diff">${diffHTML(expected, best.missing)}</span>`;
+          $msg.innerHTML = `Quase! Repare no que está marcado com <b class="mk-legend">!</b><div class="diff"><small>Original:</small> ${markedHTML(expected, best.marks)}</div>`;
           phase = "retry";
           setFooter({ label: "Tentar de novo", skip: true, bad: true });
         }
@@ -684,17 +682,20 @@
           ok = res.every(r => r.ok);
           exact = res.every(r => r.exact);
           inputs.forEach((x, k) => {
-            x.classList.add(res[k].ok ? "right" : "wrong");
-            if (!res[k].exact) x.insertAdjacentHTML("afterend", `<sup class="fix">${esc(x.dataset.ans)}</sup>`);
+            x.classList.add(res[k].ok ? (res[k].exact ? "right" : "near") : "wrong");
+            if (!res[k].exact) x.insertAdjacentHTML("afterend", `<sup class="fix ${res[k].ok ? "near" : ""}">${res[k].ok ? "! " : ""}${esc(x.dataset.ans)}</sup>`);
           });
-          $msg.innerHTML = ok ? (exact ? "Correto! 🎉" : "Correto, com um pequeno erro de digitação.") : "Confira as palavras certas acima.";
+          $msg.innerHTML = ok ? (exact ? "Correto! 🎉" : `Correto, com um pequeno erro de digitação. A forma certa está ao lado da palavra marcada com <b class="mk-legend">!</b>`) : "Confira as palavras certas acima.";
         } else {
-          const r = M.score(en, inputs[0].value, "f1");
+          const typed = inputs[0].value;
+          const r = M.score(en, typed, "f1");
           ok = r.score >= THRESHOLD[type];
           exact = r.exact;
+          const yours = `<div class="diff"><small>Você escreveu:</small> ${markedHTML(typed, r.gmarks)}</div>`;
+          const right = `<div class="diff"><small>Forma certa:</small> ${markedHTML(en, r.marks)}</div>`;
           $msg.innerHTML = ok
-            ? (exact ? "Correto! 🎉" : `Correto, com pequenos erros. Forma certa:<div class="diff">${esc(en)}</div>`)
-            : `Resposta certa:<div class="diff">${diffHTML(en, r.missing)}</div>`;
+            ? (exact ? "Correto! 🎉" : `Correto, com pequenas diferenças marcadas com <b class="mk-legend">!</b>${yours}${right}`)
+            : `Não foi dessa vez. Repare no que está marcado com <b class="mk-legend">!</b>${yours}${right}`;
         }
         inputs.forEach(x => (x.disabled = true));
         document.activeElement?.blur(); // fecha o teclado para mostrar o resultado e o "Continuar"

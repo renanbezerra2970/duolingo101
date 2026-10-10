@@ -274,3 +274,17 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .end-ring .ring-ic.ic-1 { left: calc(50% + 42px); top: calc(50% + 42px); }
 .end-ring .ring-ic.ic-2 { left: calc(50% - 42px); top: calc(50% + 42px); }
 .end-ring .ring-ic.ic-3 { left: calc(50% - 42px); top: calc(50% - 42px); }
+
+/* marcação sutil das palavras divergentes */
+.mk { border-bottom: 2px dotted; padding-bottom: 1px; }
+.mk sup { font-size: 11px; font-weight: 900; margin-left: 1px; }
+.mk.close { border-color: var(--orange); }
+.mk.close sup { color: var(--orange); }
+.mk.miss { border-color: var(--red); background: rgba(255,75,75,.12); border-radius: 3px 3px 0 0; }
+.mk.miss sup { color: var(--red); }
+.mk-legend { color: var(--orange); }
+.diff small { color: var(--muted); font-weight: 700; font-size: 12px; text-transform: uppercase; letter-spacing: .4px; margin-right: 4px; }
+.diff + .diff { margin-top: 4px; }
+.blank.near { border-color: var(--orange); color: var(--orange); }
+.fix.near { color: var(--orange); }
+.practice.ok .pr-msg .diff { color: var(--text); }

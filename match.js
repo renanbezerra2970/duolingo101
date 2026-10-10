@@ -87,14 +87,18 @@
         dp[i][j] = wordsMatch(exp[i - 1], got[j - 1]) ? dp[i - 1][j - 1] + 1 : Math.max(dp[i - 1][j], dp[i][j - 1]);
       }
     }
-    const hit = new Array(m).fill(false);
+    // status de cada palavra: "ok" (igual), "close" (aceita com pequena diferença) ou false (faltou / não bateu)
+    const hit = new Array(m).fill(false), ghit = new Array(n).fill(false);
     let i = m, j = n;
     while (i > 0 && j > 0) {
-      if (wordsMatch(exp[i - 1], got[j - 1]) && dp[i][j] === dp[i - 1][j - 1] + 1) { hit[i - 1] = true; i--; j--; }
+      if (wordsMatch(exp[i - 1], got[j - 1]) && dp[i][j] === dp[i - 1][j - 1] + 1) {
+        hit[i - 1] = ghit[j - 1] = exp[i - 1] === got[j - 1] ? "ok" : "close";
+        i--; j--;
+      }
       else if (dp[i - 1][j] >= dp[i][j - 1]) i--;
       else j--;
     }
-    return { matches: dp[m][n], hit };
+    return { matches: dp[m][n], hit, ghit };
   }
 
   /**
@@ -104,11 +108,33 @@
    */
   function score(expected, given, mode = "f1") {
     const e = tokens(expected), g = tokens(given);
-    if (!e.length) return { score: g.length ? 0 : 1, exact: !g.length, missing: [] };
-    const { matches, hit } = align(e, g);
+    if (!e.length) return { score: g.length ? 0 : 1, exact: !g.length, missing: [], marks: [], gmarks: g.map(() => false) };
+    const { matches, hit, ghit } = align(e, g);
     const s = mode === "recall" ? matches / e.length : (2 * matches) / (e.length + g.length || 1);
     const exact = e.join(" ") === g.join(" ");
-    return { score: s, exact, missing: e.filter((_, k) => !hit[k]) };
+    return { score: s, exact, missing: e.filter((_, k) => !hit[k]), marks: hit, gmarks: ghit };
+  }
+
+  /**
+   * Divide o texto original em pedaços (palavras e pontuação) e diz o status de cada palavra,
+   * a partir das marcas por token de score(): "ok", "close" ou "miss".
+   */
+  const CHUNK_RE = /[A-Za-zÀ-ÿ0-9]+(?:['’.:,\-][A-Za-zÀ-ÿ0-9]+)*/g;
+  function annotate(text, marks) {
+    const out = [];
+    let i = 0, k = 0;
+    for (const m of String(text).matchAll(CHUNK_RE)) {
+      if (m.index > i) out.push({ text: text.slice(i, m.index) });
+      const n = tokens(m[0]).length;
+      const st = marks.slice(k, k + n);
+      k += n;
+      const status = !n ? "ok" : st.some(x => !x) ? "miss" : st.includes("close") ? "close" : "ok";
+      out.push({ text: m[0], status });
+      i = m.index + m[0].length;
+    }
+    if (i < text.length) out.push({ text: text.slice(i) });
+    // se a contagem não bater (caso raro), não marca nada para não acusar erro injustamente
+    return k === marks.length ? out : out.map(p => (p.status ? { ...p, status: "ok" } : p));
   }
 
   // uma palavra (lacuna): aceita erro de digitação pequeno
@@ -119,7 +145,7 @@
     return { ok: lev(e, g) <= typoAllowance(e.length), exact: false };
   }
 
-  const api = { tokens, score, wordOk, lev, numToWords };
+  const api = { tokens, score, wordOk, lev, numToWords, annotate };
   if (typeof module !== "undefined" && module.exports) module.exports = api;
   else root.D101Match = api;
 })(typeof window !== "undefined" ? window : globalThis);
