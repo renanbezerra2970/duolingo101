@@ -10,6 +10,8 @@
   --red: #ff4b4b;
   --gold: #ffc800;
   --radius: 16px;
+  --ring-off: #37464f;
+  --orange: #ff9600;
 }
 
 * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
@@ -174,3 +176,80 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .tab { text-align: center; text-decoration: none; color: var(--muted); font-weight: 900; font-size: 16px; padding: 10px 8px; border: 2px solid var(--line); border-bottom-width: 4px; border-radius: 14px; }
 .tab.on { color: var(--blue); border-color: var(--blue); background: rgba(28,176,246,.12); }
 .pro-intro { color: var(--muted); font-weight: 600; margin: 14px 2px 0; line-height: 1.4; }
+
+/* ---------- Círculo das 4 faces (leitura, escuta, fala, escrita) ---------- */
+.ring { position: absolute; inset: -11px; width: calc(100% + 22px); height: calc(100% + 22px); pointer-events: none; overflow: visible; }
+.ring path { fill: none; stroke-width: 7; stroke-linecap: round; transition: stroke .3s; }
+.faces-legend { display: flex; flex-wrap: wrap; gap: 6px 14px; margin: 8px 2px 0; font-size: 12.5px; color: var(--muted); font-weight: 700; }
+.faces-legend span { display: inline-flex; align-items: center; gap: 5px; }
+.faces-legend i { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+.path { gap: 30px; }
+.start-ring { position: relative; width: 64px; height: 64px; margin: 18px auto 0; border-radius: 50%; }
+.end-ring { position: relative; width: 130px; height: 130px; display: grid; place-items: center; font-size: 72px; animation: pop .5s ease; }
+.end-ring .ring { inset: 0; width: 100%; height: 100%; }
+.end-ring .ring path { stroke-width: 6; }
+.face-list { list-style: none; padding: 0; margin: 16px 0 0; width: 100%; max-width: 420px; text-align: left; display: grid; gap: 8px; }
+.face-list li { display: grid; grid-template-columns: 14px 1fr; column-gap: 10px; align-items: center; border: 2px solid var(--line); border-radius: 14px; padding: 10px 14px; }
+.face-list li.got { border-color: color-mix(in srgb, var(--green) 45%, var(--line)); }
+.face-list .dot { width: 12px; height: 12px; border-radius: 50%; grid-row: span 2; }
+.face-list b { font-size: 15px; }
+.face-list small { color: var(--muted); font-weight: 600; font-size: 13px; }
+.face-list em { color: var(--gold); font-style: normal; font-weight: 900; }
+.mode-hint { color: var(--muted); font-weight: 600; font-size: 14px; max-width: 460px; margin: 12px auto 0; line-height: 1.45; }
+
+/* ---------- Modos dentro da lição ---------- */
+.lesson-head { position: sticky; top: 0; z-index: 5; background: var(--bg); padding-bottom: 8px; }
+.lesson-head .lesson-top { position: static; padding-bottom: 8px; }
+.modes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+.mode { background: none; border: 2px solid var(--line); border-bottom-width: 4px; border-radius: 12px; padding: 7px 4px; font-weight: 900; font-size: 14px; color: var(--muted); white-space: nowrap; }
+.mode.on[data-mode="listen"] { color: #ce82ff; border-color: #ce82ff; background: rgba(206,130,255,.1); }
+.mode.on[data-mode="speak"] { color: var(--orange); border-color: var(--orange); background: rgba(255,150,0,.1); }
+.mode.on[data-mode="write"] { color: var(--green); border-color: var(--green); background: rgba(88,204,2,.1); }
+.mode.unavailable { opacity: .45; text-decoration: line-through; }
+
+/* ---------- Exercícios de fala e escrita ---------- */
+.practice { margin: 14px 0 22px; border: 2px solid var(--line); border-radius: var(--radius); padding: 14px 16px; animation: rise .3s ease; background: rgba(255,255,255,.02); }
+.practice.ok { border-color: var(--green); background: rgba(88,204,2,.07); }
+.practice.bad { border-color: var(--red); background: rgba(255,75,75,.06); }
+.practice.skipped { opacity: .65; }
+.pr-head { font-weight: 900; font-size: 16px; margin-bottom: 10px; }
+.speak-box .pr-head { color: var(--orange); }
+.write-box .pr-head { color: var(--green); }
+.pr-said { min-height: 30px; font-size: 19px; line-height: 1.45; padding: 8px 12px; border-radius: 12px; background: rgba(0,0,0,.2); }
+.pr-said i { color: var(--muted); }
+.pr-said .ph { color: #52656d; font-weight: 600; font-size: 15px; }
+.pr-row { display: flex; align-items: center; gap: 14px; margin-top: 12px; }
+.mic { width: 56px; height: 56px; flex: none; border-radius: 50%; border: 0; background: var(--orange); font-size: 26px; box-shadow: 0 4px 0 #c76f00; }
+.mic.on { animation: micpulse 1s ease-in-out infinite; }
+@keyframes micpulse { 0%, 100% { box-shadow: 0 0 0 0 rgba(255,150,0,.6), 0 4px 0 #c76f00; } 50% { box-shadow: 0 0 0 12px rgba(255,150,0,0), 0 4px 0 #c76f00; } }
+.pr-msg { font-weight: 700; font-size: 15px; color: var(--muted); line-height: 1.45; }
+.practice.ok .pr-msg { color: var(--green); }
+.practice.bad .pr-msg { color: #ffb4b4; }
+.diff { margin-top: 6px; color: var(--text); font-size: 17px; line-height: 1.5; }
+.diff mark { background: rgba(255,75,75,.3); color: #fff; border-radius: 4px; padding: 0 3px; }
+.pr-tools { display: flex; gap: 10px; align-items: center; margin-bottom: 8px; }
+.hint { background: none; border: 2px solid var(--line); border-radius: 10px; color: var(--gold); font-weight: 800; font-size: 13px; padding: 4px 10px; }
+.pr-hint { font-family: ui-monospace, Consolas, monospace; letter-spacing: 1px; color: var(--gold); margin: 6px 0; font-size: 15px; }
+.pr-src { font-size: 19px; line-height: 2; }
+.pr-src.pt-src { color: var(--text); font-weight: 800; }
+.pr-pt { color: var(--muted); font-weight: 600; font-size: 15px; margin: 4px 0 8px; }
+.blank { font: inherit; font-size: 18px; font-weight: 800; color: var(--text); background: rgba(0,0,0,.25); border: 0; border-bottom: 3px solid var(--blue); border-radius: 6px 6px 0 0; padding: 0 6px; margin: 0 2px; text-align: center; outline: none; }
+.blank:focus { background: rgba(28,176,246,.15); }
+.blank.right { border-color: var(--green); color: var(--green); }
+.blank.wrong { border-color: var(--red); color: var(--red); text-decoration: line-through; }
+.fix { color: var(--green); font-weight: 900; font-size: 13px; margin-right: 4px; }
+.pr-input { width: 100%; font: inherit; font-size: 18px; font-weight: 700; color: var(--text); background: rgba(0,0,0,.25); border: 2px solid var(--line); border-radius: 12px; padding: 10px 12px; resize: vertical; outline: none; margin-top: 8px; }
+.pr-input:focus { border-color: var(--blue); }
+.footer.bad { background: #3a1a1a; border-color: #3a1a1a; }
+.footer.bad .feedback { color: #ff8a8a; }
+.btn.skip { margin-left: auto; padding: 14px 18px; }
+.btn.skip + .btn.main { margin-left: 0; }
+.toast { position: fixed; left: 50%; bottom: 110px; transform: translateX(-50%); z-index: 60; background: var(--text); color: var(--bg); font-weight: 800; padding: 10px 16px; border-radius: 12px; max-width: min(92vw, 440px); text-align: center; box-shadow: 0 8px 24px rgba(0,0,0,.4); transition: opacity .4s; }
+.toast.out { opacity: 0; }
+@media (max-width: 520px) {
+  .mode { font-size: 12.5px; }
+  .btn.skip { width: auto; flex: 0 0 auto; }
+  .footer-inner .btn.main { flex: 1; width: auto; }
+}
+.feed.quiz .line .en, .feed.quiz .line .trans { filter: blur(7px); user-select: none; pointer-events: none; transition: filter .25s; }
+.feed.quiz .line .pt-toggle { visibility: hidden; }

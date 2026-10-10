@@ -63,3 +63,14 @@ Trilhas profissionais no mesmo formato (5 histórias × 5 níveis), listadas em 
 | Psicologia | `data/pro/psi.json` | `data/levels/upsi-2..5.json` |
 
 Nova área: crie `data/pro/<id>.json` + `data/levels/u<id>-2..5.json` e registre em `"pro"` com as frases-chave do guia.
+
+## Círculo das 4 faces e modos de estudo
+
+Cada lição (em cada nível) tem um círculo em 4 partes: 📖 Leitura · 🎧 Escuta · 🎤 Fala · ✍️ Escrita.
+
+- **Leitura**: concluir a lição.
+- **Escuta**: concluir com 🎧 Escuta (áudio automático) ligada do início ao fim.
+- **Fala** (`🎤`): cada fala do diálogo é repetida em voz alta; o navegador transcreve (Web Speech API), o usuário vê o texto e confirma. Conta com ≥ 80% das falas aceitas.
+- **Escrita** (`✍️`): a cada 2–3 falas, um exercício: lacuna de 1 palavra → 2 palavras → frase inteira (copiar, ditado ou tradução), conforme o nível (`WRITE_PLAN` em `app.js`). Conta com ≥ 80% de acertos.
+- Os modos só contam no círculo se estiverem ligados desde o início. Fala e Escrita têm botão **Pular**.
+- A tolerância a erros fica em `match.js` (números, contrações, grafia britânica/americana, erros de digitação).
