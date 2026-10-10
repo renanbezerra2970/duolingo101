@@ -50,7 +50,7 @@
     const done = () => btn?.classList.remove("playing");
     const file = state.manifest[key];
     if (file) {
-      const a = new Audio("audio/" + file);
+      const a = new Audio("/audio/" + file);
       a.playbackRate = slow ? 0.7 : 1;
       a.onended = a.onerror = done;
       current = a;
@@ -130,12 +130,12 @@
   }
   async function loadAll() {
     const [u, g, m] = await Promise.all([
-      getJSON("data/units.json"),
-      getJSON("data/glossary.json").catch(() => ({})),
-      getJSON("audio/manifest.json").catch(() => ({})),
+      getJSON("/data/units.json"),
+      getJSON("/data/glossary.json").catch(() => ({})),
+      getJSON("/audio/manifest.json").catch(() => ({})),
     ]);
     state.units = u.units; state.glossary = g; state.manifest = m;
-    const datas = await Promise.all(state.units.map(x => getJSON(x.file)));
+    const datas = await Promise.all(state.units.map(x => getJSON("/" + x.file)));
     datas.forEach(d => { state.unitData[d.unit] = d; });
   }
   function findLesson(id) {
@@ -151,8 +151,8 @@
   function renderHome() {
     stopAudio();
     const zig = [0, 60, 90, 60, 0, -60, -90, -60];
-    let html = `<header class="topbar"><div class="brand">🦉 duolingo 101</div>
-      <div class="stats"><span class="fire" title="Dias seguidos">🔥 ${progress.streak}</span><span class="xp" title="XP">⚡ ${progress.xp} XP</span></div></header>`;
+    let html = `<header class="topbar"><div class="brand"><img src="/icons/icon.svg" alt="">duolingo 101</div>
+      <div class="stats">${installPrompt ? `<button class="install" id="install">⬇ Instalar</button>` : ""}<span class="fire" title="Dias seguidos">🔥 ${progress.streak}</span><span class="xp" title="XP">⚡ ${progress.xp} XP</span></div></header>`;
     for (const u of state.units) {
       const d = state.unitData[u.id];
       html += `<section class="unit" style="--unit-color:${u.color}">
@@ -172,6 +172,9 @@
     $app.innerHTML = html;
     $app.querySelectorAll("[data-lesson]").forEach(b => b.onclick = () => go(`#/lesson/${b.dataset.lesson}`));
     $app.querySelectorAll("[data-guide]").forEach(b => b.onclick = () => go(`#/guide/${b.dataset.guide}`));
+    const $inst = document.getElementById("install");
+    if ($inst) $inst.onclick = async () => { installPrompt.prompt(); await installPrompt.userChoice; installPrompt = null; $inst.remove(); };
+    document.title = "Duolingo 101 – Histórias";
   }
 
   function renderGuide(id) {
@@ -185,12 +188,14 @@
     }
     $app.innerHTML = html;
     $app.querySelector(".back").onclick = () => go("#/");
+    document.title = `Guia da ${u.title} – Duolingo 101`;
   }
 
   function renderLesson(id) {
     const found = findLesson(id);
     if (!found) return go("#/");
     const { data, lesson, unit } = found;
+    document.title = `${lesson.title} – Duolingo 101`;
     const cast = data.cast;
     const steps = lesson.steps;
     let pos = -1, mistakes = 0, answered = 0, waiting = false;
@@ -333,6 +338,15 @@
     else renderHome();
   }
   addEventListener("hashchange", route);
+
+  /* ---------- App instalável / offline ---------- */
+  let installPrompt = null;
+  addEventListener("beforeinstallprompt", (e) => {
+    e.preventDefault();
+    installPrompt = e;
+    if (state.units.length && (!location.hash || location.hash === "#/")) renderHome();
+  });
+  if ("serviceWorker" in navigator && location.protocol === "https:") navigator.serviceWorker.register("/sw.js").catch(() => {});
 
   if ("speechSynthesis" in window) speechSynthesis.getVoices();
   loadAll().then(route).catch((err) => {

@@ -3,17 +3,45 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#131f24">
   <title>Duolingo 101 – Histórias</title>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦉</text></svg>">
+  <meta name="description" content="Histórias em inglês com áudio em cada frase e palavra, para complementar as lições do Duolingo.">
+  <meta name="theme-color" content="#131f24">
+  <meta name="color-scheme" content="dark">
+
+  <!-- Compartilhamento (WhatsApp, Telegram, Facebook, X...) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Duolingo 101">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:url" content="https://duolingo101.vercel.app/">
+  <meta property="og:title" content="Duolingo 101 – Histórias em inglês">
+  <meta property="og:description" content="Diálogos com áudio em cada frase e palavra, e desafios a cada poucas falas. 🎧💬">
+  <meta property="og:image" content="https://duolingo101.vercel.app/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Duolingo 101: histórias em inglês com áudio">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Duolingo 101 – Histórias em inglês">
+  <meta name="twitter:description" content="Diálogos com áudio em cada frase e palavra, e desafios a cada poucas falas.">
+  <meta name="twitter:image" content="https://duolingo101.vercel.app/og-image.png">
+
+  <!-- Ícones e app instalável -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Duolingo 101">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-  <div id="app"></div>
+  <div id="app"><div class="splash"><img src="/icons/icon.svg" alt=""></div></div>
   <div id="tooltip" class="tooltip" hidden></div>
-  <script src="app.js"></script>
+  <script src="/app.js"></script>
 </body>
 </html>

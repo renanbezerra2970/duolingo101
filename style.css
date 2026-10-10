@@ -133,3 +133,12 @@ button { font: inherit; color: inherit; cursor: pointer; }
   .footer-inner { flex-wrap: wrap; }
   .guide-head .big { font-size: 56px; }
 }
+
+/* ---------- Marca, instalar, splash ---------- */
+.brand { display: flex; align-items: center; gap: 10px; }
+.brand img { width: 34px; height: 34px; }
+.install { background: var(--blue); color: #0b1a24; border: 0; border-radius: 10px; padding: 4px 10px; font-weight: 900; font-size: 13px; box-shadow: 0 3px 0 #1899d6; }
+.splash { min-height: 100dvh; display: grid; place-items: center; }
+.splash img { width: 96px; height: 96px; animation: bob 1s ease-in-out infinite alternate; }
+@keyframes bob { to { transform: translateY(-10px) rotate(-4deg); } }
+@media (max-width: 420px) { .stats { gap: 10px; font-size: 14px; } .brand { font-size: 19px; } }
