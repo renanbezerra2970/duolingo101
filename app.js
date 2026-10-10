@@ -163,15 +163,23 @@
       getJSON("/data/glossary.json").catch(() => ({})),
       getJSON("/audio/manifest.json").catch(() => ({})),
     ]);
-    state.units = u.units; state.levels = lv.levels; state.glossary = g; state.manifest = m;
-    const datas = await Promise.all(state.units.map(x => getJSON("/" + x.file)));
-    datas.forEach(d => { state.unitData[d.unit] = d; });
+    state.units = u.units; state.pro = u.pro || []; state.levels = lv.levels; state.glossary = g; state.manifest = m;
+    const all = [...state.units, ...state.pro];
+    const datas = await Promise.all(all.map(x => getJSON("/" + x.file)));
+    datas.forEach((d, i) => { state.unitData[all[i].id] = d; });
+  }
+  // "stories" = unidades do curso; "pro" = trilhas profissionais
+  const sectionOf = (u) => (state.pro.includes(u) ? "pro" : "stories");
+  const groupsOf = (section) => (section === "pro" ? state.pro : state.units);
+  const homeHash = (section) => (section === "pro" ? "#/pro" : "#/");
+  function findGroup(id) {
+    return [...state.units, ...state.pro].find(x => String(x.id) === String(id));
   }
   function findLesson(id) {
-    for (const u of state.units) {
+    for (const u of [...state.units, ...state.pro]) {
       const d = state.unitData[u.id];
       const i = d.lessons.findIndex(l => l.id === id);
-      if (i >= 0) return { unit: u, data: d, lesson: d.lessons[i], index: i };
+      if (i >= 0) return { unit: u, data: d, lesson: d.lessons[i], index: i, section: sectionOf(u) };
     }
     return null;
   }
@@ -186,12 +194,18 @@
   }
 
   /* ---------- Telas ---------- */
-  function renderHome() {
+  function renderHome(section = "stories") {
     stopAudio();
     const zig = [0, 60, 90, 60, 0, -60, -90, -60];
+    const pro = section === "pro";
     let html = `<header class="topbar"><div class="brand"><img src="/icons/icon.svg" alt="">duolingo 101</div>
-      <div class="stats">${installPrompt ? `<button class="install" id="install">⬇ Instalar</button>` : ""}<span class="fire" title="Dias seguidos">🔥 ${progress.streak}</span><span class="xp" title="XP">⚡ ${progress.xp} XP</span></div></header>`;
-    for (const u of state.units) {
+      <div class="stats">${installPrompt ? `<button class="install" id="install">⬇ Instalar</button>` : ""}<span class="fire" title="Dias seguidos">🔥 ${progress.streak}</span><span class="xp" title="XP">⚡ ${progress.xp} XP</span></div></header>
+      <nav class="tabs" role="tablist">
+        <a href="#/" class="tab ${pro ? "" : "on"}" role="tab" aria-selected="${!pro}">📚 Histórias</a>
+        <a href="#/pro" class="tab ${pro ? "on" : ""}" role="tab" aria-selected="${pro}">💼 Pro</a>
+      </nav>
+      ${pro ? `<p class="pro-intro">Conversas da vida profissional, do primeiro atendimento ao inglês de quem trabalha na área. Escolha a trilha e o nível.</p>` : ""}`;
+    for (const u of groupsOf(section)) {
       const d = state.unitData[u.id];
       const lvl = unitLevel(u.id);
       const info = levelInfo(lvl);
@@ -218,7 +232,7 @@
       });
       html += `</div></section>`;
     }
-    html += `<p style="text-align:center;color:var(--muted);padding:30px 0 40px;font-weight:600">Mais unidades em breve ✨</p>`;
+    html += `<p style="text-align:center;color:var(--muted);padding:30px 0 40px;font-weight:600">${pro ? "Mais áreas em breve ✨" : "Mais unidades em breve ✨"}</p>`;
     $app.innerHTML = html;
     $app.querySelectorAll(".node").forEach(b => b.onclick = () => go(`#/lesson/${b.dataset.lesson}/${b.dataset.level}`));
     $app.querySelectorAll("[data-guide]").forEach(b => b.onclick = () => go(`#/guide/${b.dataset.guide}`));
@@ -226,38 +240,40 @@
       progress.unitLevel[b.dataset.unit] = +b.dataset.level;
       saveProgress(progress);
       const y = scrollY;
-      renderHome();
+      renderHome(section);
       scrollTo(0, y);
     });
     const $inst = document.getElementById("install");
     if ($inst) $inst.onclick = async () => { installPrompt.prompt(); await installPrompt.userChoice; installPrompt = null; $inst.remove(); };
-    document.title = "Duolingo 101 – Histórias";
+    document.title = pro ? "Pro – Duolingo 101" : "Duolingo 101 – Histórias";
   }
 
   function renderGuide(id) {
-    const u = state.units.find(x => String(x.id) === String(id));
+    const u = findGroup(id);
     if (!u) return go("#/");
+    const pro = sectionOf(u) === "pro";
     let html = `<button class="back">← Voltar</button>
-      <div class="guide-head"><div class="big">${u.emoji}</div><div><h1>Guia da ${esc(u.title)}</h1><p>${esc(u.subtitle)}. Toque nas palavras para ouvir e ver a tradução.</p></div></div>
-      <div class="section-title">FRASES IMPORTANTES</div>`;
+      <div class="guide-head"><div class="big">${u.emoji}</div><div><h1>${pro ? "Guia: " : "Guia da "}${esc(u.title)}</h1><p>${esc(u.subtitle)}. Toque nas palavras para ouvir e ver a tradução.</p></div></div>
+      <div class="section-title">${pro ? "FRASES-CHAVE DA PROFISSÃO" : "FRASES IMPORTANTES"}</div>`;
     for (const [en, pt] of u.phrases) {
       html += `<div class="phrase">${speakBtn(DEFAULT_VOICE, en)}<div><div class="en">${wordsHTML(en)}</div><div class="pt">${esc(pt)}</div></div></div>`;
     }
     $app.innerHTML = html;
-    $app.querySelector(".back").onclick = () => go("#/");
-    document.title = `Guia da ${u.title} – Duolingo 101`;
+    $app.querySelector(".back").onclick = () => go(homeHash(sectionOf(u)));
+    document.title = `Guia: ${u.title} – Duolingo 101`;
   }
 
   async function renderLesson(id, level) {
     const found = findLesson(id);
     if (!found) return go("#/");
-    const { lesson, unit } = found;
+    const { lesson, unit, section } = found;
+    const home = homeHash(section);
     const info = levelInfo(level);
     const rate = info.rate;
     const content = await getSteps(found, level);
     if (!content) {
       $app.innerHTML = `<button class="back">← Voltar</button><p style="padding:20px 0">O nível ${level} desta história ainda não foi criado. 🚧</p>`;
-      $app.querySelector(".back").onclick = () => go("#/");
+      $app.querySelector(".back").onclick = () => go(home);
       return;
     }
     const { steps, cast } = content;
@@ -287,7 +303,7 @@
     const $btn = $app.querySelector(".btn");
     const $footer = $app.querySelector(".footer");
     const $fb = $app.querySelector(".feedback");
-    $app.querySelector(".close").onclick = () => { if (pos < 0 || confirm("Sair da lição? O progresso desta história será perdido.")) go("#/"); };
+    $app.querySelector(".close").onclick = () => { if (pos < 0 || confirm("Sair da lição? O progresso desta história será perdido.")) go(home); };
     const $auto = $app.querySelector(".autoplay");
     $auto.onclick = () => { progress.autoplay = !progress.autoplay; saveProgress(progress); $auto.classList.toggle("on", progress.autoplay); };
 
@@ -368,7 +384,7 @@
       const key = pkey(lesson.id, level);
       const repeat = !!progress.lessons[key];
       registerStudy(key, acc, level);
-      const all = state.units.flatMap(u => state.unitData[u.id].lessons.map(l => l.id));
+      const all = groupsOf(section).flatMap(u => state.unitData[u.id].lessons.map(l => l.id));
       const nextId = all[all.indexOf(lesson.id) + 1];
       const canLevelUp = level < 5;
       $app.innerHTML = `<div class="end">
@@ -387,7 +403,7 @@
         </div></div>`;
       document.getElementById("again").onclick = () => renderLesson(lesson.id, level);
       document.getElementById("up")?.addEventListener("click", () => go(`#/lesson/${lesson.id}/${level + 1}`));
-      document.getElementById("cont").onclick = () => go(nextId ? `#/lesson/${nextId}/${level}` : "#/");
+      document.getElementById("cont").onclick = () => go(nextId ? `#/lesson/${nextId}/${level}` : home);
       document.getElementById("cont").focus();
     }
 
@@ -410,6 +426,7 @@
     const [, page, arg, lv] = location.hash.split("/");
     if (page === "lesson") renderLesson(arg, Math.min(5, Math.max(1, parseInt(lv, 10) || 1)));
     else if (page === "guide") renderGuide(arg);
+    else if (page === "pro") renderHome("pro");
     else renderHome();
   }
   addEventListener("hashchange", route);
@@ -419,7 +436,7 @@
   addEventListener("beforeinstallprompt", (e) => {
     e.preventDefault();
     installPrompt = e;
-    if (state.units.length && (!location.hash || location.hash === "#/")) renderHome();
+    if (state.units.length && (!location.hash || location.hash === "#/" || location.hash === "#/pro")) renderHome(location.hash === "#/pro" ? "pro" : "stories");
   });
   if ("serviceWorker" in navigator && location.protocol === "https:") navigator.serviceWorker.register("/sw.js").catch(() => {});
 

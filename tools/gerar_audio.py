@@ -62,7 +62,8 @@ def collect():
                     add_sentence(DEFAULT_VOICE, opt, rate)
 
     rates = {lv["n"]: lv["rate"] for lv in load("data/levels.json")["levels"]}
-    for unit in load("data/units.json")["units"]:
+    index = load("data/units.json")
+    for unit in index["units"] + index.get("pro", []):
         for en, _pt in unit.get("phrases", []):
             add_sentence(DEFAULT_VOICE, en)
         data = load(unit["file"])

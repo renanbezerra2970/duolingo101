@@ -50,3 +50,16 @@ Cada história existe em 5 versões: mesmo enredo, língua cada vez mais difíci
 
 Formato de `data/levels/uN-L.json`: `{ "unit": N, "level": L, "cast": { ...personagens extras... }, "lessons": { "u1l1": [ ...falas e perguntas... ] } }`.
 O glossário aceita só a forma base da palavra: o app acha sozinho plurais, passado, "-ing" e possessivos.
+
+## Aba Pro (inglês profissional)
+
+Trilhas profissionais no mesmo formato (5 histórias × 5 níveis), listadas em `data/units.json` na chave `"pro"`:
+
+| Trilha | Arquivo nível 1 | Níveis 2–5 |
+|---|---|---|
+| Enfermagem | `data/pro/enf.json` | `data/levels/uenf-2..5.json` |
+| Serviço Social | `data/pro/soc.json` | `data/levels/usoc-2..5.json` |
+| Medicina | `data/pro/med.json` | `data/levels/umed-2..5.json` |
+| Psicologia | `data/pro/psi.json` | `data/levels/upsi-2..5.json` |
+
+Nova área: crie `data/pro/<id>.json` + `data/levels/u<id>-2..5.json` e registre em `"pro"` com as frases-chave do guia.

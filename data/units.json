@@ -8,11 +8,26 @@
       "emoji": "☕",
       "file": "data/unit1.json",
       "phrases": [
-        ["Tea or coffee?", "Chá ou café?"],
-        ["Water, please.", "Água, por favor."],
-        ["coffee with milk", "café com leite"],
-        ["Thank you, goodbye!", "Obrigada, adeus!"],
-        ["Welcome!", "Bem-vindo!"]
+        [
+          "Tea or coffee?",
+          "Chá ou café?"
+        ],
+        [
+          "Water, please.",
+          "Água, por favor."
+        ],
+        [
+          "coffee with milk",
+          "café com leite"
+        ],
+        [
+          "Thank you, goodbye!",
+          "Obrigada, adeus!"
+        ],
+        [
+          "Welcome!",
+          "Bem-vindo!"
+        ]
       ]
     },
     {
@@ -23,11 +38,26 @@
       "emoji": "🌎",
       "file": "data/unit2.json",
       "phrases": [
-        ["I am from Paris, and you?", "Eu sou de Paris, e você?"],
-        ["I am from Tokyo.", "Eu sou de Tóquio."],
-        ["I am from Brazil too!", "Eu sou do Brasil também!"],
-        ["I am from China, and you?", "Sou da China, e você?"],
-        ["I am from Mexico.", "Eu sou do México."]
+        [
+          "I am from Paris, and you?",
+          "Eu sou de Paris, e você?"
+        ],
+        [
+          "I am from Tokyo.",
+          "Eu sou de Tóquio."
+        ],
+        [
+          "I am from Brazil too!",
+          "Eu sou do Brasil também!"
+        ],
+        [
+          "I am from China, and you?",
+          "Sou da China, e você?"
+        ],
+        [
+          "I am from Mexico.",
+          "Eu sou do México."
+        ]
       ]
     },
     {
@@ -38,11 +68,26 @@
       "emoji": "👨‍👩‍👧‍👦",
       "file": "data/unit3.json",
       "phrases": [
-        ["My dad is from France.", "Meu pai é da França."],
-        ["This is my mom.", "Essa é minha mãe."],
-        ["Hi, my name is Anna.", "Oi, meu nome é Anna."],
-        ["my sister and my brother", "minha irmã e meu irmão"],
-        ["Lisa is from Paris.", "Lisa é de Paris."]
+        [
+          "My dad is from France.",
+          "Meu pai é da França."
+        ],
+        [
+          "This is my mom.",
+          "Essa é minha mãe."
+        ],
+        [
+          "Hi, my name is Anna.",
+          "Oi, meu nome é Anna."
+        ],
+        [
+          "my sister and my brother",
+          "minha irmã e meu irmão"
+        ],
+        [
+          "Lisa is from Paris.",
+          "Lisa é de Paris."
+        ]
       ]
     },
     {
@@ -53,11 +98,180 @@
       "emoji": "✈️",
       "file": "data/unit4.json",
       "phrases": [
-        ["Your passport, please.", "Seu passaporte, por favor."],
-        ["Is this your bag?", "Esta é sua mala?"],
-        ["Welcome to Paris!", "Bem-vindo a Paris!"],
-        ["This is my ticket.", "Este é meu ingresso."],
-        ["Yes, this is your gate.", "Sim, esse é o seu portão."]
+        [
+          "Your passport, please.",
+          "Seu passaporte, por favor."
+        ],
+        [
+          "Is this your bag?",
+          "Esta é sua mala?"
+        ],
+        [
+          "Welcome to Paris!",
+          "Bem-vindo a Paris!"
+        ],
+        [
+          "This is my ticket.",
+          "Este é meu ingresso."
+        ],
+        [
+          "Yes, this is your gate.",
+          "Sim, esse é o seu portão."
+        ]
+      ]
+    }
+  ],
+  "pro": [
+    {
+      "id": "enf",
+      "title": "Enfermagem",
+      "subtitle": "Na enfermaria: admissão, sinais vitais, dor, passagem de plantão e alta",
+      "color": "#e5484d",
+      "emoji": "💉",
+      "file": "data/pro/enf.json",
+      "phrases": [
+        [
+          "I'm your nurse today.",
+          "Sou sua enfermeira hoje."
+        ],
+        [
+          "Do you have any allergies?",
+          "Você tem alguma alergia?"
+        ],
+        [
+          "I need to check your blood pressure.",
+          "Preciso verificar sua pressão."
+        ],
+        [
+          "On a scale of zero to ten, how bad is the pain?",
+          "Numa escala de zero a dez, quão forte é a dor?"
+        ],
+        [
+          "Press this button if you need help.",
+          "Aperte este botão se precisar de ajuda."
+        ],
+        [
+          "Please don't get up on your own.",
+          "Por favor, não se levante sozinho."
+        ],
+        [
+          "Keep the wound clean and dry.",
+          "Mantenha o curativo limpo e seco."
+        ]
+      ]
+    },
+    {
+      "id": "soc",
+      "title": "Serviço Social",
+      "subtitle": "Acolhimento, moradia, visitas domiciliares e rede de apoio",
+      "color": "#a560e8",
+      "emoji": "🤝",
+      "file": "data/pro/soc.json",
+      "phrases": [
+        [
+          "Everything you tell me is confidential.",
+          "Tudo o que você me contar é confidencial."
+        ],
+        [
+          "What brings you here today?",
+          "O que te traz aqui hoje?"
+        ],
+        [
+          "How can I support you?",
+          "Como posso te apoiar?"
+        ],
+        [
+          "Do you feel safe at home?",
+          "Você se sente seguro(a) em casa?"
+        ],
+        [
+          "Let's make a plan together.",
+          "Vamos fazer um plano juntos."
+        ],
+        [
+          "You have the right to decide.",
+          "Você tem o direito de decidir."
+        ],
+        [
+          "I'll follow up next week.",
+          "Vou dar retorno na semana que vem."
+        ]
+      ]
+    },
+    {
+      "id": "med",
+      "title": "Medicina",
+      "subtitle": "Anamnese, pronto-socorro, dar notícias, consentimento e visita médica",
+      "color": "#1899d6",
+      "emoji": "🩺",
+      "file": "data/pro/med.json",
+      "phrases": [
+        [
+          "What brings you in today?",
+          "O que te traz aqui hoje?"
+        ],
+        [
+          "When did the pain start?",
+          "Quando a dor começou?"
+        ],
+        [
+          "Does the pain spread anywhere?",
+          "A dor irradia para algum lugar?"
+        ],
+        [
+          "Are you taking any medication?",
+          "Você toma algum remédio?"
+        ],
+        [
+          "I'd like to examine you.",
+          "Gostaria de examinar você."
+        ],
+        [
+          "We need to run some tests.",
+          "Precisamos fazer alguns exames."
+        ],
+        [
+          "Do you have any questions?",
+          "Você tem alguma pergunta?"
+        ]
+      ]
+    },
+    {
+      "id": "psi",
+      "title": "Psicologia",
+      "subtitle": "Primeira sessão, ansiedade, luto, família e avaliação de risco",
+      "color": "#14b8a6",
+      "emoji": "🧠",
+      "file": "data/pro/psi.json",
+      "phrases": [
+        [
+          "How have you been feeling lately?",
+          "Como você tem se sentido ultimamente?"
+        ],
+        [
+          "Take your time.",
+          "Leve o tempo que precisar."
+        ],
+        [
+          "That sounds really hard.",
+          "Isso parece muito difícil."
+        ],
+        [
+          "What goes through your mind when that happens?",
+          "O que passa pela sua cabeça quando isso acontece?"
+        ],
+        [
+          "Your feelings make sense.",
+          "Seus sentimentos fazem sentido."
+        ],
+        [
+          "Are you having thoughts of hurting yourself?",
+          "Você está tendo pensamentos de se machucar?"
+        ],
+        [
+          "Let's make a safety plan together.",
+          "Vamos fazer um plano de segurança juntos."
+        ]
       ]
     }
   ]

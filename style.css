@@ -168,3 +168,9 @@ button { font: inherit; color: inherit; cursor: pointer; }
   .lv small { font-size: 9.5px; }
   .end .up { width: auto; }
 }
+
+/* ---------- Abas Histórias / Pro ---------- */
+.tabs { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 16px; }
+.tab { text-align: center; text-decoration: none; color: var(--muted); font-weight: 900; font-size: 16px; padding: 10px 8px; border: 2px solid var(--line); border-bottom-width: 4px; border-radius: 14px; }
+.tab.on { color: var(--blue); border-color: var(--blue); background: rgba(28,176,246,.12); }
+.pro-intro { color: var(--muted); font-weight: 600; margin: 14px 2px 0; line-height: 1.4; }

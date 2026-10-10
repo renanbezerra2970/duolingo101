@@ -1,7 +1,7 @@
 /* Service worker: deixa o app instalável e funcionando offline.
    - páginas, código e lições: tenta a internet primeiro (pega sempre a versão nova), cai no cache se estiver offline
    - áudios e ícones: cache primeiro (o nome do MP3 muda quando o conteúdo muda) */
-const CACHE = "d101-v2";
+const CACHE = "d101-v3";
 const SHELL = ["/", "/index.html", "/style.css", "/app.js", "/manifest.webmanifest", "/icons/icon.svg",
   "/data/units.json", "/data/levels.json", "/data/glossary.json", "/audio/manifest.json"];
 
