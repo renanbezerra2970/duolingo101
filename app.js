@@ -300,7 +300,7 @@
         const done = progress.lessons[pkey(l.id, lvl)]?.done;
         html += `<button class="node ${done ? "done" : ""}" data-lesson="${l.id}" data-level="${lvl}" style="transform:translateX(${zig[i % zig.length]}px)">
           <span class="circle">${ringWithIcons(facesOf(pkey(l.id, lvl)))}${l.emoji}</span>
-          <span class="label"><b>${esc(l.title)}</b>${esc(l.titlePt)}</span></button>`;
+          <span class="label"><b>${esc(l.title)}</b>${esc(l.titlePt)}${progress.inProgress?.[pkey(l.id, lvl)] ? `<em class="resume-tag">⏸ ${progress.inProgress[pkey(l.id, lvl)].pct}%</em>` : ""}</span></button>`;
       });
       html += `</div></section>`;
     }
@@ -426,6 +426,19 @@
     let sinceWrite = 0, writeGap = 2 + Math.round(Math.random()), writeIdx = 0;
     let activeRec = null;
 
+    // progresso salvo da lição (cada nível tem o seu); salvo a cada passo concluído
+    const lkey = pkey(lesson.id, level);
+    progress.inProgress ||= {};
+    const saved = progress.inProgress[lkey]?.pos >= 0 && progress.inProgress[lkey].pos < steps.length - 1 ? progress.inProgress[lkey] : null;
+    const snapshot = () => {
+      progress.inProgress[lkey] = {
+        pos, mistakes, answered, stats: { ...stats }, eligible: { ...eligible }, sinceWrite, writeGap, writeIdx,
+        pct: Math.round(((pos + 1) / steps.length) * 100), at: today(),
+      };
+      saveProgress(progress);
+    };
+    const clearSnapshot = () => { if (progress.inProgress[lkey]) { delete progress.inProgress[lkey]; saveProgress(progress); } };
+
     $app.innerHTML = `<div class="lesson">
       <div class="lesson-head">
         <div class="lesson-top">
@@ -445,6 +458,7 @@
           <div class="sub">${esc(lesson.titlePt)} · ${esc(unit.title)}</div>
           <div class="lv-badge lv-${level}">Nível ${level} · ${esc(info.name)} <span>${esc(info.cefr || "")}</span></div>
           <div class="start-ring">${ringSVG(facesOf(pkey(lesson.id, level)))}</div>
+          ${saved ? `<p class="resume-note">⏸ Você parou em <b>${saved.pct}%</b> desta história. Continue de onde parou ou recomece.</p>` : ""}
           <p class="mode-hint">Escolha os modos <b>antes de começar</b> para completar o círculo: 📖 leitura (sempre), 🎧 escuta (áudio ligado), 🎤 fala e ✍️ escrita (80% de acertos).</p>
         </div>
       </div>
@@ -458,10 +472,11 @@
     const $footer = $app.querySelector(".footer");
     const $fb = $app.querySelector(".feedback");
 
-    function setFooter({ label = "Continuar", disabled = false, skip = false, ok = false, bad = false, fb = "" } = {}) {
+    function setFooter({ label = "Continuar", disabled = false, skip = false, skipLabel = "Pular", ok = false, bad = false, fb = "" } = {}) {
       $btn.textContent = label;
       $btn.disabled = disabled;
       $skip.hidden = !skip;
+      $skip.textContent = skipLabel;
       $footer.classList.toggle("ok", ok);
       $footer.classList.toggle("bad", bad);
       $fb.textContent = fb;
@@ -506,9 +521,9 @@
       if (pos < 0) return go(home);
       const leave = await confirmDialog({
         title: "Sair da lição?",
-        text: "Você vai perder o progresso desta história e precisará começar de novo.",
+        text: "Seu progresso fica salvo. Quando voltar, você continua de onde parou.",
         cancel: "Continuar estudando",
-        ok: "Sair",
+        ok: "Sair e continuar depois",
       });
       if (leave) go(home);
     };
@@ -519,6 +534,7 @@
 
     function next() {
       if (waitingQuestion) return;
+      if (pos >= 0) snapshot(); // tudo até aqui está resolvido: ponto seguro para retomar
       // Escrita: a cada 2 ou 3 falas, um exercício antes de seguir em frente
       if (mode.write && pos >= 0 && sinceWrite >= writeGap && shown.length && startWrite()) return;
       pos++;
@@ -530,7 +546,16 @@
       else addQuestion(step);
     }
 
-    function addLine([who, en, pt]) {
+    function addLine(step) {
+      const { el, c, narr, en } = renderLine(step);
+      sinceWrite++;
+      const sp = mode.speak && !narr ? startSpeak(en) : null;
+      scrollDown(sp ? sp.box : el);
+      if (mode.listen) playSentence(c.voice, en, el.querySelector(".speak"), rate, () => sp?.autoStart(250));
+      else sp?.autoStart(700);
+    }
+
+    function renderLine([who, en, pt]) {
       const c = cast[who] || { name: who, avatar: "🙂", voice: DEFAULT_VOICE };
       const narr = who === "nar";
       const el = document.createElement("div");
@@ -543,11 +568,33 @@
         </div></div>`;
       $feed.appendChild(el);
       shown.push({ who, en, pt, voice: c.voice });
-      sinceWrite++;
-      const sp = mode.speak && !narr ? startSpeak(en) : null;
-      scrollDown(sp ? sp.box : el);
-      if (mode.listen) playSentence(c.voice, en, el.querySelector(".speak"), rate, () => sp?.autoStart(250));
-      else sp?.autoStart(700);
+      return { el, c, narr, en };
+    }
+
+    // pergunta já respondida (ao retomar uma lição salva)
+    function renderAnswered(q) {
+      const el = document.createElement("div");
+      el.className = "question answered";
+      const isEn = enQuestions || q.lang === "en";
+      const title = enQuestions ? `<h3 class="q-en"><span class="en">${wordsHTML(q.q)}</span></h3>` : `<h3>${esc(q.q)}</h3>`;
+      el.innerHTML = title + `<button class="opt right" disabled><span class="box">✓</span><span class="${isEn ? "en" : ""}">${esc(q.o[q.a])}</span></button>`;
+      $feed.appendChild(el);
+    }
+
+    // retoma a lição do ponto salvo: refaz o diálogo até ali, sem áudio
+    function resume(s) {
+      pos = s.pos; mistakes = s.mistakes; answered = s.answered;
+      Object.assign(stats, s.stats);
+      sinceWrite = s.sinceWrite; writeGap = s.writeGap; writeIdx = s.writeIdx;
+      // um modo só segue valendo para o círculo se estava ativo desde o início e continua ligado
+      for (const m of ["listen", "speak", "write"]) eligible[m] = !!s.eligible?.[m] && mode[m];
+      $feed.querySelector(".resume-note")?.remove();
+      for (let i = 0; i <= pos; i++) {
+        const st = steps[i];
+        if (Array.isArray(st)) renderLine(st); else renderAnswered(st);
+      }
+      $feed.insertAdjacentHTML("beforeend", `<div class="resume-mark">⏸ Você parou aqui</div>`);
+      $bar.style.width = ((pos + 1) / steps.length) * 100 + "%";
     }
 
     /* ---------- Fala: repetir cada fala do diálogo ---------- */
@@ -832,6 +879,7 @@
 
     function finish() {
       cleanup();
+      clearSnapshot();
       const acc = answered ? Math.round(((answered - mistakes) / answered) * 100) : 100;
       const key = pkey(lesson.id, level);
       const repeat = !!progress.lessons[key];
@@ -881,6 +929,16 @@
 
     $btn.onclick = () => (blocker ? blocker.primary() : next());
     $skip.onclick = () => blocker?.skip();
+    if (saved) {
+      // tela inicial com escolha: continuar de onde parou ou recomeçar
+      setFooter({ label: "Continuar de onde parei", skip: true, skipLabel: "Recomeçar" });
+      blocker = {
+        kind: "start",
+        primary: () => { blocker = null; resume(saved); next(); },
+        skip: () => { blocker = null; clearSnapshot(); $feed.querySelector(".resume-note")?.remove(); next(); },
+        cancel: () => {},
+      };
+    }
     $btn.focus();
     keyHandler = (e) => {
       if (e.target.matches?.("input, textarea")) {

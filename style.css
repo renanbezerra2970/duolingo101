@@ -299,3 +299,10 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .dialog .btn { width: 100%; margin: 0; }
 .btn.danger { color: var(--red); border-color: var(--line); }
 @media (min-width: 600px) { .dialog-wrap { place-items: center; } }
+
+/* ---------- Lição salva / retomada ---------- */
+.resume-note { margin: 14px auto 0; max-width: 460px; padding: 10px 14px; border-radius: 12px; border: 2px solid var(--blue); color: var(--text); font-weight: 700; font-size: 15px; background: rgba(28,176,246,.08); }
+.resume-mark { text-align: center; color: var(--blue); font-weight: 900; font-size: 13px; letter-spacing: .5px; margin: 18px 0 6px; display: flex; align-items: center; gap: 10px; }
+.resume-mark::before, .resume-mark::after { content: ""; flex: 1; height: 2px; background: rgba(28,176,246,.35); }
+.question.answered { opacity: .75; }
+.resume-tag { display: block; font-style: normal; color: var(--blue); font-weight: 900; font-size: 12px; margin-top: 3px; }
