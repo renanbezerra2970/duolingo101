@@ -1,6 +1,6 @@
-# Duolingo 101 — Histórias
+# Prolingo — Histórias em inglês
 
-App no estilo das *Histórias* do Duolingo para complementar o curso de inglês:
+App de histórias em inglês para estudar com diálogos:
 um diálogo longo, com uma pergunta a cada 4–5 falas, todas as frases e palavras com áudio em inglês.
 
 ## Como funciona (sem banco de dados, sem servidor)
@@ -10,7 +10,7 @@ um diálogo longo, com uma pergunta a cada 4–5 falas, todas as frases e palavr
 | Lições | `data/unitN.json` (nesta pasta, no seu PC) | O "banco de dados" é a própria pasta — arquivos JSON versionados no Git |
 | Áudios | `audio/*.mp3` + `audio/manifest.json` | Gerados uma vez com vozes neurais grátis (edge-tts) |
 | Progresso (XP, sequência, lições feitas) | `localStorage` do navegador | Fica salvo em cada aparelho |
-| Site | Vercel (projeto `duolingo101`) | Publica sozinho a cada `git push` |
+| Site | Vercel (projeto `prolingo`, https://prolingo101.vercel.app) | Publica sozinho a cada `git push` |
 
 ## Atalhos
 

@@ -288,3 +288,14 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .blank.near { border-color: var(--orange); color: var(--orange); }
 .fix.near { color: var(--orange); }
 .practice.ok .pr-msg .diff { color: var(--text); }
+
+/* ---------- Janela de confirmação do app ---------- */
+.dialog-wrap { position: fixed; inset: 0; z-index: 80; background: rgba(5,12,15,.72); display: grid; place-items: end center; padding: 16px; animation: fadein .2s ease; }
+@keyframes fadein { from { opacity: 0; } }
+.dialog { width: 100%; max-width: 440px; background: var(--panel); border: 2px solid var(--line); border-radius: 22px; padding: 22px 20px 18px; text-align: center; display: grid; gap: 10px; animation: rise .25s ease; margin-bottom: max(8px, env(safe-area-inset-bottom)); }
+.dialog-icon img { width: 56px; height: 56px; }
+.dialog h2 { margin: 2px 0 0; font-size: 22px; font-weight: 900; }
+.dialog p { margin: 0 0 8px; color: var(--muted); font-weight: 600; line-height: 1.45; }
+.dialog .btn { width: 100%; margin: 0; }
+.btn.danger { color: var(--red); border-color: var(--line); }
+@media (min-width: 600px) { .dialog-wrap { place-items: center; } }

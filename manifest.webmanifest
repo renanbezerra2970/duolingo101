@@ -1,7 +1,7 @@
 {
-  "name": "Duolingo 101 – Histórias",
-  "short_name": "Duolingo 101",
-  "description": "Histórias em inglês com áudio em cada frase e palavra, para complementar o Duolingo.",
+  "name": "Prolingo – Histórias em inglês",
+  "short_name": "Prolingo",
+  "description": "Histórias em inglês com áudio em cada frase e palavra: leitura, escuta, fala e escrita, do básico ao nativo.",
   "lang": "pt-BR",
   "start_url": "/",
   "scope": "/",

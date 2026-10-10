@@ -1,4 +1,4 @@
-/* Duolingo 101 – lições em formato de história (diálogo + perguntas). Sem build, sem servidor. */
+/* Prolingo – lições em formato de história (diálogo + perguntas). Sem build, sem servidor. */
 (() => {
   "use strict";
 
@@ -18,6 +18,40 @@
   function saveProgress(p) {
     try { localStorage.setItem(KEY, JSON.stringify(p)); } catch {}
   }
+
+  /* ---------- Mudança de endereço: os endereços antigos mandam o progresso para o novo ---------- */
+  // o progresso fica salvo por endereço; por isso o endereço antigo o envia junto (no #, que não vai para o servidor)
+  const HOME_HOST = "prolingo101.vercel.app";
+  const OLD_HOSTS = ["duolingo101.vercel.app", "prolingo-br.vercel.app"];
+  if (OLD_HOSTS.includes(location.hostname)) {
+    let data = null;
+    try { data = localStorage.getItem(KEY); } catch {}
+    const pack = data ? "#import=" + encodeURIComponent(btoa(unescape(encodeURIComponent(data)))) : "";
+    location.replace(`https://${HOME_HOST}/${pack}`);
+    return;
+  }
+  function mergeProgress(a, b) {
+    const out = { ...b, ...a, lessons: { ...(b.lessons || {}) } };
+    for (const [k, v] of Object.entries(a.lessons || {})) {
+      const w = out.lessons[k];
+      out.lessons[k] = !w ? v : {
+        done: v.done || w.done, best: Math.max(v.best || 0, w.best || 0), at: v.at > w.at ? v.at : w.at,
+        faces: { ...(w.faces || {}), ...Object.fromEntries(Object.entries(v.faces || {}).filter(([, x]) => x)) },
+      };
+    }
+    out.xp = Math.max(a.xp || 0, b.xp || 0);
+    out.streak = Math.max(a.streak || 0, b.streak || 0);
+    out.lastDay = (a.lastDay || "") > (b.lastDay || "") ? a.lastDay : b.lastDay;
+    return out;
+  }
+  if (location.hash.startsWith("#import=")) {
+    try {
+      const incoming = JSON.parse(decodeURIComponent(escape(atob(decodeURIComponent(location.hash.slice(8))))));
+      saveProgress(mergeProgress(loadProgress(), incoming));
+    } catch {}
+    history.replaceState(null, "", location.pathname + "#/");
+  }
+
   let progress = Object.assign({ lessons: {}, unitLevel: {}, xp: 0, streak: 0, lastDay: null, autoplay: true, modes: {} }, loadProgress());
   progress.unitLevel ||= {};
   progress.modes ||= {};
@@ -70,7 +104,7 @@
   }
   function play(key, text, btn, onEnd) {
     stopAudio();
-    // clicar duas vezes seguidas no mesmo áudio toca mais devagar (como a tartaruga do Duolingo)
+    // clicar duas vezes seguidas no mesmo áudio toca mais devagar
     const slow = key === lastKey && Date.now() - lastAt < 4000;
     lastKey = key; lastAt = Date.now();
     btn?.classList.add("playing");
@@ -239,7 +273,7 @@
     stopAudio();
     const zig = [0, 60, 90, 60, 0, -60, -90, -60];
     const pro = section === "pro";
-    let html = `<header class="topbar"><div class="brand"><img src="/icons/icon.svg" alt="">duolingo 101</div>
+    let html = `<header class="topbar"><div class="brand"><img src="/icons/icon.svg" alt="">prolingo</div>
       <div class="stats">${installPrompt ? `<button class="install" id="install">⬇ Instalar</button>` : ""}<span class="fire" title="Dias seguidos">🔥 ${progress.streak}</span><span class="xp" title="XP">⚡ ${progress.xp} XP</span></div></header>
       <nav class="tabs" role="tablist">
         <a href="#/" class="tab ${pro ? "" : "on"}" role="tab" aria-selected="${!pro}">📚 Histórias</a>
@@ -283,7 +317,7 @@
     });
     const $inst = document.getElementById("install");
     if ($inst) $inst.onclick = async () => { installPrompt.prompt(); await installPrompt.userChoice; installPrompt = null; $inst.remove(); };
-    document.title = pro ? "Pro – Duolingo 101" : "Duolingo 101 – Histórias";
+    document.title = pro ? "Pro – Prolingo" : "Prolingo – Histórias";
   }
 
   function renderGuide(id) {
@@ -298,7 +332,7 @@
     }
     $app.innerHTML = html;
     $app.querySelector(".back").onclick = () => go(homeHash(sectionOf(u)));
-    document.title = `Guia: ${u.title} – Duolingo 101`;
+    document.title = `Guia: ${u.title} – Prolingo`;
   }
 
   /* ---------- Modos Fala e Escrita ---------- */
@@ -338,6 +372,31 @@
         : `<span class="mk ${p.status}" title="${p.status === "close" ? "Pequena diferença" : "Faltou ou não bateu"}">${esc(p.text)}<sup>!</sup></span>`).join("");
   }
   const hasMarks = (marks) => marks.some(m => m !== "ok");
+  // janela de confirmação do próprio app (no lugar do aviso do navegador)
+  function confirmDialog({ title, text, ok, cancel }) {
+    return new Promise((resolve) => {
+      const wrap = document.createElement("div");
+      wrap.className = "dialog-wrap";
+      wrap.innerHTML = `<div class="dialog" role="dialog" aria-modal="true" aria-labelledby="dlg-t">
+          <div class="dialog-icon"><img src="/icons/icon.svg" alt=""></div>
+          <h2 id="dlg-t">${esc(title)}</h2>
+          <p>${esc(text)}</p>
+          <button class="btn" data-r="0">${esc(cancel)}</button>
+          <button class="btn ghost danger" data-r="1">${esc(ok)}</button>
+        </div>`;
+      const close = (r) => { wrap.remove(); removeEventListener("keydown", onKey, true); resolve(r); };
+      const onKey = (e) => { if (e.key === "Escape") { e.stopPropagation(); close(false); } };
+      wrap.addEventListener("click", (e) => {
+        if (e.target === wrap) return close(false);
+        const b = e.target.closest("[data-r]");
+        if (b) close(b.dataset.r === "1");
+      });
+      addEventListener("keydown", onKey, true);
+      document.body.appendChild(wrap);
+      wrap.querySelector('[data-r="0"]').focus();
+    });
+  }
+
   let cleanup = null; // encerra microfone/áudio ao sair da lição
 
   async function renderLesson(id, level) {
@@ -356,7 +415,7 @@
     const { steps, cast } = content;
     const enQuestions = level >= 3; // a partir do nível 3, perguntas e opções em inglês
     const dialogueTotal = steps.filter(s => Array.isArray(s) && s[0] !== "nar").length;
-    document.title = `${lesson.title} (nível ${level}) – Duolingo 101`;
+    document.title = `${lesson.title} (nível ${level}) – Prolingo`;
 
     let pos = -1, mistakes = 0, answered = 0, waitingQuestion = false;
     let blocker = null; // exercício de fala/escrita em andamento: segura o "Continuar"
@@ -443,7 +502,16 @@
     });
     paintModes();
 
-    $app.querySelector(".close").onclick = () => { if (pos < 0 || confirm("Sair da lição? O progresso desta história será perdido.")) go(home); };
+    $app.querySelector(".close").onclick = async () => {
+      if (pos < 0) return go(home);
+      const leave = await confirmDialog({
+        title: "Sair da lição?",
+        text: "Você vai perder o progresso desta história e precisará começar de novo.",
+        cancel: "Continuar estudando",
+        ok: "Sair",
+      });
+      if (leave) go(home);
+    };
 
     function scrollDown(el) {
       requestAnimationFrame(() => el.scrollIntoView({ behavior: "smooth", block: "center" }));
