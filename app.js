@@ -8,7 +8,7 @@
   const DEFAULT_VOICE = "en-US-JennyNeural";
   const SPEAKER = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>';
 
-  const state = { units: [], unitData: {}, levels: [], levelData: {}, glossary: {}, manifest: {} };
+  const state = { units: [], unitData: {}, levels: [], levelData: {}, glossary: {}, manifest: {}, wordfreq: {} };
 
   /* ---------- Progresso (fica salvo neste navegador) ---------- */
   const KEY = "d101.progress.v1";
@@ -63,12 +63,12 @@
       { icon: "👋", title: "Bem-vindo ao Prolingo!",
         text: "Aqui você aprende inglês com <b>histórias</b>: diálogos com áudio em cada frase, perguntas sobre o que aconteceu e desafios de fala e escrita. Vamos ver como tudo funciona?" },
       { target: ".tabs", title: "Histórias e Pro",
-        text: "<b>📚 Histórias</b> acompanha o seu curso, unidade por unidade. <b>💼 Pro</b> traz conversas da vida profissional: enfermagem, serviço social, medicina e psicologia." },
-      { target: ".unit .guide-btn", title: "Guia da unidade",
-        text: "As frases-chave da unidade, com áudio. Ótimo para revisar antes ou depois das lições." },
-      { target: ".unit .levels", title: "5 níveis de dificuldade",
+        text: "<b>📚 Histórias</b> acompanha o seu curso, unidade por unidade. <b>💼 Pro</b> traz conversas da vida profissional, com <b>busca</b> para achar a sua profissão." },
+      { target: ".unit.open .unit-banner", title: "Unidades recolhíveis",
+        text: "Toque no título de uma unidade para <b>abrir ou recolher</b>. A unidade em que você está estudando fica aberta. O botão <b>📖 GUIA</b> traz as frases-chave com áudio." },
+      { target: ".unit.open .levels", title: "5 níveis de dificuldade",
         text: "A mesma história em 5 versões: do <b>1 · Básico</b> ao <b>5 · Nativo</b>, com gírias e subentendidos. Você escolhe o nível livremente, sem precisar passar pelos anteriores." },
-      { target: ".unit .node .circle", round: true, pad: 24, title: "O círculo de cada lição",
+      { target: ".unit.open .node .circle", round: true, pad: 24, title: "O círculo de cada lição",
         text: "Ele tem 4 partes: 📖 <b>leitura</b>, 🎧 <b>escuta</b>, 🎤 <b>fala</b> e ✍️ <b>escrita</b>. Cada uma acende quando você completa a lição daquele jeito. O ✓ embaixo indica lição concluída no nível escolhido." },
       { target: ".stats .fire", title: "Sequência e XP",
         text: "🔥 são os <b>dias seguidos</b> de estudo e ⚡ o seu <b>XP</b>. Cada lição e cada parte nova do círculo rendem pontos." },
@@ -76,7 +76,7 @@
         text: "Coloque o Prolingo na tela inicial do celular para abrir como um aplicativo, em tela cheia." },
       { target: "#help", round: true, title: "Rever este tour",
         text: "Toque no <b>?</b> quando quiser ver estas dicas de novo." },
-      { target: ".unit .node", title: "Pronto para começar!",
+      { target: ".unit.open .node", title: "Pronto para começar!",
         text: "Toque na primeira lição. Lá dentro eu mostro os modos de estudo." },
     ], { doneLabel: "Vamos lá!", onDone: () => { progress.tours.home = true; saveProgress(progress); } });
   }
@@ -87,6 +87,8 @@
         text: "Cada lição é um <b>diálogo</b> que avança quando você toca em <b>Continuar</b>. A cada 4 ou 5 falas aparece uma pergunta sobre o que aconteceu." },
       { target: ".story-head .title .en", title: "Toque nas palavras",
         text: "Toque em qualquer palavra em inglês para <b>ouvir</b> e ver a <b>tradução</b>. Em cada fala, <b>Ver tradução</b> mostra a frase inteira. Tocar duas vezes no 🔊 repete mais devagar." },
+      { target: ".new-words", title: "✨ Palavras novas",
+        text: "Cada história apresenta só algumas palavras novas. Elas aparecem <b>destacadas em roxo</b> no diálogo e, logo depois, eu confiro se você entendeu o significado. No fim, você vê a lista do que aprendeu." },
       { target: ".mode[data-mode='listen']", title: "🎧 Escuta",
         text: "Toca o áudio de cada fala automaticamente, com vozes nativas de vários sotaques." },
       { target: ".mode[data-mode='speak']", title: "🎤 Fala",
@@ -185,10 +187,10 @@
 
   /* ---------- Texto em inglês com palavras clicáveis ---------- */
   function esc(s) { return String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c])); }
-  function wordsHTML(text) {
+  function wordsHTML(text, mark) {
     let out = "", i = 0;
     for (const m of text.matchAll(WORD_RE)) {
-      out += esc(text.slice(i, m.index)) + `<span class="w" data-w="${esc(m[0])}">${esc(m[0])}</span>`;
+      out += esc(text.slice(i, m.index)) + `<span class="w${mark ? mark(m[0]) : ""}" data-w="${esc(m[0])}">${esc(m[0])}</span>`;
       i = m.index + m[0].length;
     }
     return out + esc(text.slice(i));
@@ -198,22 +200,28 @@
   }
 
   // procura a palavra no glossário; se não achar, tenta a forma base (plural, passado, -ing, possessivo...)
-  function glossFor(word) {
+  const LEMMA_RULES = [
+    [/'s$/, ""], [/s'$/, "s"], [/ies$/, "y"], [/ied$/, "y"], [/es$/, ""], [/s$/, ""],
+    [/([^aeiou])\1ed$/, "$1"], [/ed$/, "e"], [/ed$/, ""], [/d$/, ""],
+    [/([^aeiou])\1ing$/, "$1"], [/ing$/, "e"], [/ing$/, ""], [/ily$/, "y"], [/ly$/, ""],
+    [/er$/, ""], [/est$/, ""],
+  ];
+  // forma base da palavra que está no glossário (ou null)
+  function lemmaOf(word) {
     const w = word.toLowerCase().replace(/’/g, "'");
     const g = state.glossary;
-    if (g[w]) return g[w];
-    const tries = [
-      [/'s$/, ""], [/s'$/, "s"], [/ies$/, "y"], [/ied$/, "y"], [/es$/, ""], [/s$/, ""],
-      [/([^aeiou])\1ed$/, "$1"], [/ed$/, "e"], [/ed$/, ""], [/d$/, ""],
-      [/([^aeiou])\1ing$/, "$1"], [/ing$/, "e"], [/ing$/, ""], [/ily$/, "y"], [/ly$/, ""],
-      [/er$/, ""], [/est$/, ""],
-    ];
-    for (const [re, rep] of tries) {
+    if (g[w]) return w;
+    for (const [re, rep] of LEMMA_RULES) {
       if (!re.test(w)) continue;
       const base = w.replace(re, rep);
-      if (base.length > 1 && g[base]) return `${g[base]} (${base})`;
+      if (base.length > 1 && g[base]) return base;
     }
     return null;
+  }
+  function glossFor(word) {
+    const base = lemmaOf(word);
+    if (!base) return null;
+    return base === word.toLowerCase().replace(/’/g, "'") ? state.glossary[base] : `${state.glossary[base]} (${base})`;
   }
 
   let tipTimer;
@@ -237,6 +245,8 @@
       tipTimer = setTimeout(hideTip, 2200);
       return;
     }
+    const nw = e.target.closest(".nw-play");
+    if (nw) { playWord(nw.dataset.w); return; }
     const s = e.target.closest(".speak");
     if (s) { playSentence(s.dataset.voice, s.dataset.text, s, s.dataset.rate); return; }
     const t = e.target.closest(".pt-toggle");
@@ -258,12 +268,14 @@
     return r.json();
   }
   async function loadAll() {
-    const [u, lv, g, m] = await Promise.all([
+    const [u, lv, g, m, wf] = await Promise.all([
       getJSON("/data/units.json"),
       getJSON("/data/levels.json"),
       getJSON("/data/glossary.json").catch(() => ({})),
       getJSON("/audio/manifest.json").catch(() => ({})),
+      getJSON("/data/wordfreq.json").catch(() => ({})),
     ]);
+    state.wordfreq = wf;
     state.units = u.units; state.pro = u.pro || []; state.levels = lv.levels; state.glossary = g; state.manifest = m;
     const all = [...state.units, ...state.pro];
     const datas = await Promise.all(all.map(x => getJSON("/" + x.file)));
@@ -315,26 +327,113 @@
   }
 
   /* ---------- Telas ---------- */
+  // unidades/profissões abertas nesta sessão (por aba); por padrão, só a última estudada fica aberta
+  const openUnits = { stories: null, pro: null };
+  let proQuery = "";
+  const norm = (s) => String(s).toLowerCase().normalize("NFD").replace(/\p{M}/gu, "");
+
+  function defaultOpen(section) {
+    const groups = groupsOf(section);
+    const last = progress.lastUnit?.[section];
+    if (groups.some(u => String(u.id) === String(last))) return String(last);
+    // sem histórico: a primeira unidade que ainda tem lição por fazer no nível escolhido
+    const pending = groups.find(u => state.unitData[u.id].lessons.some(l => !progress.lessons[pkey(l.id, unitLevel(u.id))]?.done));
+    return String((pending || groups[0])?.id);
+  }
+
   function renderHome(section = "stories") {
     stopAudio();
-    const zig = [0, 60, 90, 60, 0, -60, -90, -60];
     const pro = section === "pro";
+    openUnits[section] ||= new Set([defaultOpen(section)]);
     let html = `<header class="topbar"><div class="brand"><img src="/icons/icon.svg" alt="">prolingo</div>
       <div class="stats">${installPrompt ? `<button class="install" id="install">⬇ Instalar</button>` : ""}<button class="help" id="help" aria-label="Como funciona o app" title="Como funciona">?</button><span class="fire" title="Dias seguidos">🔥 ${progress.streak}</span><span class="xp" title="XP">⚡ ${progress.xp} XP</span></div></header>
       <nav class="tabs" role="tablist">
         <a href="#/" class="tab ${pro ? "" : "on"}" role="tab" aria-selected="${!pro}">📚 Histórias</a>
         <a href="#/pro" class="tab ${pro ? "on" : ""}" role="tab" aria-selected="${pro}">💼 Pro</a>
-      </nav>
-      ${pro ? `<p class="pro-intro">Conversas da vida profissional, do primeiro atendimento ao inglês de quem trabalha na área. Escolha a trilha e o nível.</p>` : ""}`;
-    for (const u of groupsOf(section)) {
+      </nav>`;
+    if (pro) {
+      const az = [...state.pro].sort((a, b) => a.title.localeCompare(b.title, "pt"));
+      html += `<p class="pro-intro">Conversas da vida profissional, do primeiro atendimento ao inglês de quem trabalha na área.</p>
+        <div class="pro-find">
+          <label class="pro-search"><span aria-hidden="true">🔎</span><input type="search" id="pro-q" placeholder="Buscar profissão…" autocomplete="off" value="${esc(proQuery)}" aria-label="Buscar profissão"></label>
+          <select id="pro-pick" aria-label="Escolher profissão da lista">
+            <option value="">Lista A–Z</option>
+            ${az.map(u => `<option value="${u.id}">${esc(u.title)}</option>`).join("")}
+          </select>
+        </div>`;
+    }
+    html += `<div id="units"></div>
+      <p style="text-align:center;color:var(--muted);padding:30px 0 40px;font-weight:600">${pro ? "Mais áreas em breve ✨" : "Mais unidades em breve ✨"}</p>`;
+    $app.innerHTML = html;
+    renderUnits(section);
+
+    if (pro) {
+      const $q = document.getElementById("pro-q");
+      $q.oninput = () => {
+        proQuery = $q.value;
+        const hits = matchingPro();
+        if (hits.length === 1) openUnits.pro = new Set([String(hits[0].id)]); // achou só uma: já abre
+        renderUnits(section);
+      };
+      document.getElementById("pro-pick").onchange = (e) => {
+        const id = e.target.value;
+        if (!id) return;
+        chooseUnit("pro", id);
+        proQuery = "";
+        $q.value = "";
+        e.target.value = "";
+        renderUnits(section);
+        document.querySelector(`.unit[data-unit="${id}"]`)?.scrollIntoView({ block: "start", behavior: "instant" });
+      };
+    }
+    const $inst = document.getElementById("install");
+    if ($inst) $inst.onclick = async () => { installPrompt.prompt(); await installPrompt.userChoice; installPrompt = null; $inst.remove(); };
+    document.title = pro ? "Pro – Prolingo" : "Prolingo – Histórias";
+    document.getElementById("help").onclick = () => { progress.tours.lesson = false; saveProgress(progress); homeTour(); };
+    if (!progress.tours.home && !pro) setTimeout(() => { if (document.getElementById("help")) homeTour(); }, 500);
+  }
+
+  // a profissão (ou unidade) escolhida vira a "atual": fica aberta e, na aba Pro, no topo
+  function chooseUnit(section, id) {
+    progress.lastUnit ||= {};
+    progress.lastUnit[section] = String(id);
+    saveProgress(progress);
+    openUnits[section] = new Set([String(id)]);
+  }
+
+  function matchingPro() {
+    const q = norm(proQuery.trim());
+    return state.pro.filter(u => !q || norm(u.title).includes(q) || norm(u.subtitle).includes(q));
+  }
+
+  function renderUnits(section) {
+    const pro = section === "pro";
+    const zig = [0, 60, 90, 60, 0, -60, -90, -60];
+    const open = openUnits[section];
+    let groups = groupsOf(section);
+    if (pro) {
+      const first = progress.lastUnit?.pro;
+      groups = matchingPro().sort((a, b) =>
+        (String(b.id) === first) - (String(a.id) === first) || a.title.localeCompare(b.title, "pt"));
+    }
+    let html = "";
+    if (pro && !groups.length) html = `<p class="no-results">Nenhuma profissão encontrada para “${esc(proQuery)}”.</p>`;
+    for (const u of groups) {
       const d = state.unitData[u.id];
       const lvl = unitLevel(u.id);
-      html += `<section class="unit" style="--unit-color:${u.color}">
-        <div class="unit-banner" style="background:${u.color}">
-          <div><h2>${esc(u.title)}</h2><p>${esc(u.subtitle)}</p></div>
-          <button class="guide-btn" data-guide="${u.id}">📖 GUIA</button>
-        </div>
-        <div class="levels" role="tablist" aria-label="Nível de dificuldade">
+      const isOpen = open.has(String(u.id));
+      const doneHere = d.lessons.filter(l => progress.lessons[pkey(l.id, lvl)]?.done).length;
+      const paused = d.lessons.some(l => progress.inProgress?.[pkey(l.id, lvl)]);
+      html += `<section class="unit ${isOpen ? "open" : "collapsed"}" data-unit="${u.id}" style="--unit-color:${u.color}">
+        <div class="unit-banner" style="background:${u.color}" role="button" tabindex="0" aria-expanded="${isOpen}" data-toggle="${u.id}">
+          <span class="uh-emoji" aria-hidden="true">${u.emoji}</span>
+          <div class="uh-text"><h2>${esc(u.title)}</h2><p>${esc(u.subtitle)}</p></div>
+          ${isOpen ? `<button class="guide-btn" data-guide="${u.id}">📖 GUIA</button>`
+            : `<span class="uh-meta">${paused ? "⏸ " : ""}${doneHere}/${d.lessons.length}</span>`}
+          <span class="chev" aria-hidden="true">${isOpen ? "▴" : "▾"}</span>
+        </div>`;
+      if (isOpen) {
+        html += `<div class="levels" role="tablist" aria-label="Nível de dificuldade">
           ${state.levels.map(l => {
             const done = d.lessons.filter(x => progress.lessons[pkey(x.id, l.n)]?.done).length;
             return `<button class="lv ${l.n === lvl ? "on" : ""} ${done === d.lessons.length ? "full" : ""}" data-unit="${u.id}" data-level="${l.n}" role="tab" aria-selected="${l.n === lvl}">
@@ -342,30 +441,41 @@
           }).join("")}
         </div>
         <div class="path">`;
-      d.lessons.forEach((l, i) => {
-        const done = progress.lessons[pkey(l.id, lvl)]?.done;
-        html += `<button class="node ${done ? "done" : ""}" data-lesson="${l.id}" data-level="${lvl}" style="transform:translateX(${zig[i % zig.length]}px)">
-          <span class="circle">${ringWithIcons(facesOf(pkey(l.id, lvl)))}${l.emoji}</span>
-          <span class="label"><b>${esc(l.title)}</b>${esc(l.titlePt)}${progress.inProgress?.[pkey(l.id, lvl)] ? `<em class="resume-tag">⏸ ${progress.inProgress[pkey(l.id, lvl)].pct}%</em>` : ""}</span></button>`;
-      });
-      html += `</div></section>`;
+        d.lessons.forEach((l, i) => {
+          const done = progress.lessons[pkey(l.id, lvl)]?.done;
+          const ip = progress.inProgress?.[pkey(l.id, lvl)];
+          html += `<button class="node ${done ? "done" : ""}" data-lesson="${l.id}" data-level="${lvl}" data-unit="${u.id}" style="transform:translateX(${zig[i % zig.length]}px)">
+            <span class="circle">${ringWithIcons(facesOf(pkey(l.id, lvl)))}${l.emoji}</span>
+            <span class="label"><b>${esc(l.title)}</b>${esc(l.titlePt)}${ip ? `<em class="resume-tag">⏸ ${ip.pct}%</em>` : ""}</span></button>`;
+        });
+        html += `</div>`;
+      }
+      html += `</section>`;
     }
-    html += `<p style="text-align:center;color:var(--muted);padding:30px 0 40px;font-weight:600">${pro ? "Mais áreas em breve ✨" : "Mais unidades em breve ✨"}</p>`;
-    $app.innerHTML = html;
-    $app.querySelectorAll(".node").forEach(b => b.onclick = () => go(`#/lesson/${b.dataset.lesson}/${b.dataset.level}`));
-    $app.querySelectorAll("[data-guide]").forEach(b => b.onclick = () => go(`#/guide/${b.dataset.guide}`));
-    $app.querySelectorAll(".lv").forEach(b => b.onclick = () => {
+    const $units = document.getElementById("units");
+    $units.innerHTML = html;
+    $units.querySelectorAll("[data-toggle]").forEach(b => {
+      const toggle = () => {
+        const id = b.dataset.toggle;
+        if (open.has(id)) open.delete(id); else open.add(id);
+        renderUnits(section);
+        if (open.has(id)) document.querySelector(`.unit[data-unit="${id}"]`)?.scrollIntoView({ block: "nearest", behavior: "instant" });
+      };
+      b.onclick = (e) => { if (!e.target.closest(".guide-btn")) toggle(); };
+      b.onkeydown = (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); toggle(); } };
+    });
+    $units.querySelectorAll(".node").forEach(b => b.onclick = () => {
+      chooseUnit(section, b.dataset.unit);
+      go(`#/lesson/${b.dataset.lesson}/${b.dataset.level}`);
+    });
+    $units.querySelectorAll("[data-guide]").forEach(b => b.onclick = (e) => { e.stopPropagation(); go(`#/guide/${b.dataset.guide}`); });
+    $units.querySelectorAll(".lv").forEach(b => b.onclick = () => {
       progress.unitLevel[b.dataset.unit] = +b.dataset.level;
       saveProgress(progress);
       const y = scrollY;
-      renderHome(section);
+      renderUnits(section);
       scrollTo(0, y);
     });
-    const $inst = document.getElementById("install");
-    if ($inst) $inst.onclick = async () => { installPrompt.prompt(); await installPrompt.userChoice; installPrompt = null; $inst.remove(); };
-    document.title = pro ? "Pro – Prolingo" : "Prolingo – Histórias";
-    document.getElementById("help").onclick = () => { progress.tours.lesson = false; saveProgress(progress); homeTour(); };
-    if (!progress.tours.home) setTimeout(() => { if (document.getElementById("help")) homeTour(); }, 500);
   }
 
   function renderGuide(id) {
@@ -397,6 +507,72 @@
   };
   const MAX_WORDS = { 1: 6, 2: 9, 3: 12, 4: 16, 5: 20 };
   const THRESHOLD = { copy: 0.9, dictation: 0.8, translate: 0.65, speak: 0.75 };
+  /* ---------- Palavras novas ----------
+   * Cada história apresenta poucas palavras novas por vez: um cartão antes de começar, destaque roxo
+   * na primeira vez que aparecem, uma checagem rápida do significado logo depois e a lista no final.
+   * Uma palavra deixa de ser "nova" quando foi ensinada ou quando já apareceu em 3 histórias concluídas. */
+  const NEW_CAP = { 1: 4, 2: 5, 3: 6, 4: 6, 5: 6 };
+  const KNOWN_AFTER = 3;
+  const shortGloss = (g) => String(g).split(/\s\(|;|,|\//)[0].trim();
+  function lemmasOf(steps) {
+    const out = [];
+    steps.forEach((s, i) => {
+      if (!Array.isArray(s)) return;
+      for (const m of s[1].matchAll(WORD_RE)) { const l = lemmaOf(m[0]); if (l) out.push({ lemma: l, surface: m[0], i }); }
+    });
+    return out;
+  }
+  // palavras gramaticais muito comuns não entram como "novas"
+  const BASIC = new Set("what where when who why how which have has had get got go take make there here all any some one two three four five six seven eight nine ten hundred thousand let well yeah like now then than if as by from up out about".split(" "));
+  // nos níveis 3 a 5, palavras que aparecem em muitas histórias (data/wordfreq.json) não contam como novidade
+  const MAX_FREQ = { 3: 20, 4: 12, 5: 10 };
+  const isKnown = (l) => !!progress.words.taught[l] || (progress.words.seen[l] || 0) >= KNOWN_AFTER;
+  // primeira vez com este recurso: as palavras das histórias já concluídas contam como conhecidas
+  async function ensureWords() {
+    if (progress.words) return;
+    const words = { taught: {}, seen: {} };
+    for (const key of Object.keys(progress.lessons)) {
+      if (!progress.lessons[key]?.done) continue;
+      const [id, lv] = key.split("@");
+      const found = findLesson(id);
+      const c = found && await getSteps(found, +(lv || 1));
+      if (c) for (const { lemma } of lemmasOf(c.steps)) words.taught[lemma] = 1;
+    }
+    progress.words = words;
+    saveProgress(progress);
+  }
+  function pickNewWords(steps, cast, unit, level) {
+    const names = new Set(Object.values(cast).flatMap(c => String(c.name).toLowerCase().split(/[^a-z]+/)));
+    const guide = new Set((unit.phrases || []).flatMap(([en]) => [...en.matchAll(WORD_RE)].map(m => lemmaOf(m[0]))));
+    const info = new Map();
+    for (const o of lemmasOf(steps)) {
+      const g = state.glossary[o.lemma];
+      // fora: nomes de personagens, nomes próprios (tradução com maiúscula) e contrações
+      if (/^\p{Lu}/u.test(g) || o.lemma.includes("'")) continue;
+      // nos níveis 3 a 5, as frases do guia (básicas) já não são novidade
+      if (level >= 3 && guide.has(o.lemma)) continue;
+      if (STOP.has(o.lemma) || BASIC.has(o.lemma) || names.has(o.lemma) || o.lemma.length < 2 || isKnown(o.lemma)) continue;
+      const x = info.get(o.lemma) || { ...o, n: 0 };
+      x.n++;
+      info.set(o.lemma, x);
+    }
+    let list = [...info.values()];
+    const freq = (l) => state.wordfreq[l] || 1;
+    if (MAX_FREQ[level]) {
+      const rare = list.filter(x => freq(x.lemma) <= MAX_FREQ[level]);
+      if (rare.length >= 3) list = rare;
+    }
+    // prioridade: palavras do guia da unidade, depois as que mais se repetem na história
+    // (nos níveis avançados, desempata pela mais rara no conjunto das histórias)
+    return list
+      .sort((a, b) => guide.has(b.lemma) - guide.has(a.lemma) || b.n - a.n || (level >= 3 ? freq(a.lemma) - freq(b.lemma) : 0) || a.i - b.i)
+      .slice(0, NEW_CAP[level] || 6)
+      .sort((a, b) => a.i - b.i)
+      .map(x => ({ lemma: x.lemma, show: state.manifest[`word|${x.lemma}`] ? x.lemma : x.surface.toLowerCase(), gloss: shortGloss(state.glossary[x.lemma]) }));
+  }
+  function wordListHTML(list) {
+    return `<ul class="nw-list">${list.map(w => `<li><button class="nw-play" data-w="${esc(w.show)}" aria-label="Ouvir ${esc(w.show)}">${SPEAKER}<b>${esc(w.show)}</b></button><span>${esc(w.gloss)}</span></li>`).join("")}</ul>`;
+  }
   const WRITE_TITLE = {
     fill1: "✍️ Complete a palavra que falta", fill2: "✍️ Complete as palavras que faltam",
     copy: "✍️ Copie a frase em inglês", dictation: "✍️ Escreva o que você ouve", translate: "✍️ Traduza para o inglês",
@@ -461,6 +637,11 @@
       return;
     }
     const { steps, cast } = content;
+    await ensureWords();
+    const newWords = pickNewWords(steps, cast, unit, level);
+    const newByLemma = new Map(newWords.map(w => [w.lemma, w]));
+    const introduced = new Set(); // palavras novas que já apareceram no diálogo
+    const wordQuiz = []; // checagens rápidas aguardando a vez
     const enQuestions = level >= 3; // a partir do nível 3, perguntas e opções em inglês
     const dialogueTotal = steps.filter(s => Array.isArray(s) && s[0] !== "nar").length;
     document.title = `${lesson.title} (nível ${level}) – Prolingo`;
@@ -506,6 +687,8 @@
           <div class="sub">${esc(lesson.titlePt)} · ${esc(unit.title)}</div>
           <div class="lv-badge lv-${level}">Nível ${level} · ${esc(info.name)} <span>${esc(info.cefr || "")}</span></div>
           <div class="start-ring">${ringSVG(facesOf(pkey(lesson.id, level)))}</div>
+          ${newWords.length ? `<div class="new-words"><div class="nw-title">✨ Palavras novas nesta história</div>
+            ${wordListHTML(newWords)}<p class="nw-note">Elas aparecem <span class="nw-sample">destacadas</span> no diálogo, e eu confiro se ficou claro.</p></div>` : ""}
           ${saved ? `<p class="resume-note">⏸ Você parou em <b>${saved.pct}%</b> desta história. Continue de onde parou ou recomece.</p>` : ""}
           <p class="mode-hint">Escolha os modos <b>antes de começar</b> para completar o círculo: 📖 leitura (sempre), 🎧 escuta (áudio ligado), 🎤 fala e ✍️ escrita (80% de acertos).</p>
         </div>
@@ -583,6 +766,7 @@
     function next() {
       if (waitingQuestion) return;
       if (pos >= 0) snapshot(); // tudo até aqui está resolvido: ponto seguro para retomar
+      if (wordQuiz.length) return addWordQuiz(wordQuiz.shift());
       // Escrita: a cada 2 ou 3 falas, um exercício antes de seguir em frente
       if (mode.write && pos >= 0 && sinceWrite >= writeGap && shown.length && startWrite()) return;
       pos++;
@@ -603,14 +787,23 @@
       else sp?.autoStart(700);
     }
 
-    function renderLine([who, en, pt]) {
+    // destaca a primeira aparição de cada palavra nova (e agenda a checagem do significado)
+    const markNew = (quiet) => (word) => {
+      const l = lemmaOf(word);
+      if (!l || !newByLemma.has(l) || introduced.has(l)) return "";
+      introduced.add(l);
+      if (!quiet) wordQuiz.push(newByLemma.get(l));
+      return " new";
+    };
+
+    function renderLine([who, en, pt], quiet = false) {
       const c = cast[who] || { name: who, avatar: "🙂", voice: DEFAULT_VOICE };
       const narr = who === "nar";
       const el = document.createElement("div");
       el.className = "line" + (narr ? " narr" : "");
       el.innerHTML = `${narr ? "" : `<div class="avatar">${c.avatar}<small>${esc(c.name)}</small></div>`}
         <div class="bubble">${speakBtn(c.voice, en, rate)}<div class="content">
-          <div class="en">${wordsHTML(en)}</div>
+          <div class="en">${wordsHTML(en, markNew(quiet))}</div>
           <div class="trans" hidden>${esc(pt)}</div>
           <button class="pt-toggle">VER TRADUÇÃO</button>
         </div></div>`;
@@ -639,7 +832,7 @@
       $feed.querySelector(".resume-note")?.remove();
       for (let i = 0; i <= pos; i++) {
         const st = steps[i];
-        if (Array.isArray(st)) renderLine(st); else renderAnswered(st);
+        if (Array.isArray(st)) renderLine(st, true); else renderAnswered(st);
       }
       $feed.insertAdjacentHTML("beforeend", `<div class="resume-mark">⏸ Você parou aqui</div>`);
       $bar.style.width = ((pos + 1) / steps.length) * 100 + "%";
@@ -759,7 +952,8 @@
       return c;
     }
     function pickBlanks(text, n) {
-      const c = blankCandidates(text).sort(() => Math.random() - 0.5).slice(0, n);
+      const fresh = (m) => newByLemma.has(lemmaOf(m[0]) || "");
+      const c = blankCandidates(text).sort((a, b) => fresh(b) - fresh(a) || Math.random() - 0.5).slice(0, n);
       return c.length === n ? c.sort((a, b) => a.index - b.index) : null;
     }
 
@@ -886,6 +1080,46 @@
       return true;
     }
 
+    /* ---------- Palavra nova: o que significa? ---------- */
+    function wordOptions(w) {
+      const pool = [...new Set([
+        ...newWords.filter(x => x !== w).map(x => x.gloss),
+        ...lemmasOf(steps).filter(o => !STOP.has(o.lemma)).map(o => shortGloss(state.glossary[o.lemma])),
+      ])].sort(() => Math.random() - 0.5);
+      const opts = [w.gloss];
+      for (const g of pool) {
+        if (opts.length === 3) break;
+        if (g && !opts.some(o => norm(o) === norm(g))) opts.push(g);
+      }
+      return opts.sort(() => Math.random() - 0.5);
+    }
+    function addWordQuiz(w) {
+      waitingQuestion = true;
+      setFooter({ disabled: true });
+      const el = document.createElement("div");
+      el.className = "question word-quiz";
+      el.innerHTML = `<div class="nw-tag">✨ PALAVRA NOVA</div>
+        <h3>O que significa <button class="nw-play big" data-w="${esc(w.show)}" aria-label="Ouvir ${esc(w.show)}">${SPEAKER}<b>${esc(w.show)}</b></button>?</h3>` +
+        wordOptions(w).map((o, n) => `<button class="opt" data-ok="${o === w.gloss ? 1 : 0}" data-n="${n}"><span class="box">${n + 1}</span><span>${esc(o)}</span></button>`).join("");
+      $feed.appendChild(el);
+      scrollDown(el);
+      playWord(w.show);
+      el.querySelectorAll(".opt").forEach(b => b.onclick = () => {
+        if (b.dataset.ok === "1") {
+          b.classList.add("right"); b.querySelector(".box").textContent = "✓";
+          el.querySelectorAll(".opt").forEach(x => x.disabled = true);
+          waitingQuestion = false;
+          setFooter({ ok: true, fb: `${w.show} = ${w.gloss}` });
+          $btn.focus();
+        } else {
+          b.classList.remove("wrong"); void b.offsetWidth; b.classList.add("wrong");
+          b.querySelector(".box").textContent = "✕";
+          b.disabled = true;
+        }
+      });
+      el._choose = (n) => el.querySelector(`.opt[data-n="${n}"]:not(:disabled)`)?.click();
+    }
+
     /* ---------- Perguntas de múltipla escolha (como antes) ---------- */
     function addQuestion(q) {
       waitingQuestion = true;
@@ -939,6 +1173,10 @@
         write: eligible.write && mode.write && stats.writeTotal > 0 && writeRate >= PASS_RATE,
       };
       const fresh = registerStudy(key, acc, level, earned);
+      const learned = newWords.filter(w => introduced.has(w.lemma));
+      for (const w of learned) progress.words.taught[w.lemma] ||= today();
+      if (!repeat) for (const l of new Set(lemmasOf(steps).map(o => o.lemma))) progress.words.seen[l] = (progress.words.seen[l] || 0) + 1;
+      saveProgress(progress);
       const faces = facesOf(key);
       const all = groupsOf(section).flatMap(u => state.unitData[u.id].lessons.map(l => l.id));
       const nextId = all[all.indexOf(lesson.id) + 1];
@@ -958,6 +1196,7 @@
           <div class="card"><div class="k">XP</div><div class="v">⚡ ${xpFor(level, repeat) + 5 * fresh.length}</div></div>
           <div class="card green"><div class="k">PRECISÃO</div><div class="v">🎯 ${acc}%</div></div>
         </div>
+        ${learned.length ? `<div class="new-words learned"><div class="nw-title">✨ Palavras que você aprendeu</div>${wordListHTML(learned)}</div>` : ""}
         <ul class="face-list">
           ${FACES.map(f => `<li class="${faces[f.id] ? "got" : ""}"><span class="dot" style="background:${faces[f.id] ? f.color : "var(--ring-off)"}"></span>
             <b>${f.icon} ${f.name}</b><small>${fresh.includes(f.id) ? "<em>Nova! +5 XP</em> · " : ""}${esc(faces[f.id] && !earned[f.id] && f.id !== "read" ? "Já conquistada antes" : why[f.id])}</small></li>`).join("")}
@@ -1019,7 +1258,8 @@
     else if (page === "pro") renderHome("pro");
     else renderHome();
   }
-  addEventListener("hashchange", route);
+  let ready = false; // só troca de tela depois que as lições carregaram
+  addEventListener("hashchange", () => { if (ready) route(); });
 
   /* ---------- App instalável / offline ---------- */
   let installPrompt = null;
@@ -1031,7 +1271,7 @@
   if ("serviceWorker" in navigator && location.protocol === "https:") navigator.serviceWorker.register("/sw.js").catch(() => {});
 
   if ("speechSynthesis" in window) speechSynthesis.getVoices();
-  loadAll().then(route).catch((err) => {
+  loadAll().then(() => { ready = true; route(); }).catch((err) => {
     $app.innerHTML = `<p style="padding:40px 0">Não consegui carregar as lições 😕<br><small style="color:var(--muted)">${esc(String(err))}</small><br><br>
       Se abriu o arquivo direto (file://), use o <b>ABRIR_LOCAL.bat</b>.</p>`;
   });

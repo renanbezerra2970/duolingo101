@@ -34,7 +34,7 @@ um diálogo longo, com uma pergunta a cada 4–5 falas, todas as frases e palavr
 
 - Fala: `[personagem, inglês, português]`. O personagem (voz + emoji) é definido em `cast`, no topo do arquivo da unidade. `nar` é o narrador.
 - Pergunta: `q` = enunciado, `o` = opções, `a` = índice da certa (o app embaralha). `"lang": "en"` faz as opções terem áudio.
-- Nova unidade: crie `data/unit5.json`, registre em `data/units.json` (com as frases do guia) e adicione palavras novas em `data/glossary.json`.
+- Nova unidade: crie `data/unit6.json` (e `data/levels/u6-2..5.json`), registre em `data/units.json` (com as frases do guia) e adicione palavras novas em `data/glossary.json`.
 
 ## Níveis de dificuldade (1 a 5)
 
@@ -74,3 +74,19 @@ Cada lição (em cada nível) tem um círculo em 4 partes: 📖 Leitura · 🎧 
 - **Escrita** (`✍️`): a cada 2–3 falas, um exercício: lacuna de 1 palavra → 2 palavras → frase inteira (copiar, ditado ou tradução), conforme o nível (`WRITE_PLAN` em `app.js`). Conta com ≥ 80% de acertos.
 - Os modos só contam no círculo se estiverem ligados desde o início. Fala e Escrita têm botão **Pular**.
 - A tolerância a erros fica em `match.js` (números, contrações, grafia britânica/americana, erros de digitação).
+
+## Palavras novas
+
+Cada história apresenta poucas palavras novas por vez (4 no nível 1, até 6 nos níveis 3–5):
+
+1. **Cartão "Palavras novas"** antes de começar, com áudio e tradução.
+2. **Destaque roxo** na primeira vez que cada uma aparece no diálogo.
+3. **Checagem rápida** ("✨ PALAVRA NOVA – o que significa…?", 3 opções) logo depois da fala.
+4. **Lista "Palavras que você aprendeu"** no fim. Nos exercícios de escrita, as lacunas preferem as palavras novas.
+
+Quem escolhe: palavras do glossário que o usuário ainda não conhece (não foram ensinadas e não apareceram em 3 histórias concluídas), com prioridade para as frases do guia da unidade e as que mais se repetem. Nos níveis 3–5, palavras muito frequentes no conjunto das histórias (`data/wordfreq.json`, gerado por `tools/frequencia.py`, chamado pelo `gerar_audio.py`) ficam de fora. O registro fica em `progress.words` no navegador.
+
+## Tela inicial
+
+- Unidades e profissões são **recolhíveis**; só a última estudada fica aberta.
+- Na aba **Pro**, busca por texto (sem acento) e lista A–Z; a profissão escolhida (ou a última iniciada) fica no topo, aberta.

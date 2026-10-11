@@ -119,6 +119,36 @@
           "Sim, esse é o seu portão."
         ]
       ]
+    },
+    {
+      "id": 5,
+      "title": "Unidade 5",
+      "subtitle": "Cidade e casa",
+      "color": "#ff86d0",
+      "emoji": "🏙️",
+      "file": "data/unit5.json",
+      "phrases": [
+        [
+          "David, where is your house?",
+          "David, onde fica sua casa?"
+        ],
+        [
+          "This city is nice!",
+          "Esta cidade é bacana!"
+        ],
+        [
+          "Your house is big!",
+          "A casa de vocês é grande!"
+        ],
+        [
+          "This museum is famous, right?",
+          "Esse museu é famoso, né?"
+        ],
+        [
+          "Welcome to my city!",
+          "Bem-vindo à minha cidade!"
+        ]
+      ]
     }
   ],
   "pro": [

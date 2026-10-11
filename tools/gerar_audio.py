@@ -132,3 +132,5 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+    import frequencia  # atualiza data/wordfreq.json (palavras novas por nível)
+    frequencia.main()
