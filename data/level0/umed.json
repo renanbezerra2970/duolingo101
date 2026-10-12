@@ -1,0 +1,2363 @@
+{
+ "unit": "med",
+ "lessons": [
+  {
+   "id": "medz1",
+   "title": "pain · do · any · need",
+   "titlePt": "dor · fazer · algum · precisar",
+   "emoji": "🔤",
+   "words": [
+    "pain",
+    "do",
+    "any",
+    "need"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "do",
+     "pt": "fazer"
+    },
+    {
+     "t": "meaning",
+     "w": "do",
+     "pt": "fazer",
+     "o": [
+      "todo mundo",
+      "fazer",
+      "contar"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "any",
+     "pt": "algum"
+    },
+    {
+     "t": "hear",
+     "w": "any",
+     "pt": "algum",
+     "o": [
+      "any",
+      "car",
+      "three"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "do",
+       "fazer"
+      ],
+      [
+       "any",
+       "algum"
+      ],
+      [
+       "pain",
+       "dor"
+      ],
+      [
+       "need",
+       "precisar"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "pain",
+     "pt": "dor"
+    },
+    {
+     "t": "pick",
+     "w": "pain",
+     "pt": "dor",
+     "o": [
+      "infection",
+      "his",
+      "pain"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "need",
+     "pt": "precisar"
+    },
+    {
+     "t": "meaning",
+     "w": "need",
+     "pt": "precisar",
+     "o": [
+      "guerra",
+      "precisar",
+      "machucar"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "pain",
+     "pt": "dor",
+     "o": [
+      "first",
+      "chest",
+      "pain"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "pain",
+       "dor"
+      ],
+      [
+       "need",
+       "precisar"
+      ],
+      [
+       "do",
+       "fazer"
+      ],
+      [
+       "any",
+       "algum"
+      ]
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "Do I need antibiotics?",
+     "pt": "Preciso de antibiótico?",
+     "v": "en-IE-EmilyNeural",
+     "x": [
+      "better",
+      "but",
+      "use"
+     ]
+    },
+    {
+     "t": "fill",
+     "en": "No, I don't.",
+     "pt": "Não, não tenho.",
+     "v": "en-IE-EmilyNeural",
+     "gap": "No, I ___.",
+     "w": "don't",
+     "o": [
+      "need",
+      "don't",
+      "course"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Do I need antibiotics?",
+     "pt": "Preciso de antibiótico?",
+     "v": "en-IE-EmilyNeural",
+     "o": [
+      "Eu sei. O exame de imagem mostra apendicite.",
+      "Agora não. Só comprimidos.",
+      "Preciso de antibiótico?"
+     ]
+    },
+    {
+     "t": "pick",
+     "w": "need",
+     "pt": "precisar",
+     "o": [
+      "blood",
+      "arm",
+      "need"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "No, I don't.",
+     "pt": "Não, não tenho.",
+     "v": "en-IE-EmilyNeural",
+     "x": [
+      "sign",
+      "infection",
+      "sore"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "OK. I understand.",
+     "pt": "Tá. Eu entendo.",
+     "v": "en-NZ-MollyNeural",
+     "o": [
+      "OK. I understand.",
+      "Good question, Josh. Not for one week.",
+      "Yes, a little."
+     ]
+    },
+    {
+     "t": "meaning",
+     "w": "pain",
+     "pt": "dor",
+     "o": [
+      "mover",
+      "alto",
+      "dor"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "OK. I understand.",
+     "pt": "Tá. Eu entendo.",
+     "v": "en-NZ-MollyNeural",
+     "o": [
+      "Tá. Eu entendo.",
+      "Obrigada, doutor. Me sinto melhor agora.",
+      "Você tem alguma alergia?"
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "OK. I agree.",
+     "pt": "Tá. Eu concordo.",
+     "v": "en-NZ-MollyNeural",
+     "x": [
+      "eight",
+      "virus",
+      "ecg"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "medz2",
+   "title": "take · doctor · question · heart",
+   "titlePt": "pegar · médico(a) · pergunta · coração",
+   "emoji": "🧩",
+   "words": [
+    "take",
+    "doctor",
+    "question",
+    "heart"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "take",
+     "pt": "pegar"
+    },
+    {
+     "t": "meaning",
+     "w": "take",
+     "pt": "pegar",
+     "o": [
+      "pegar",
+      "dor",
+      "médico(a)"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "doctor",
+     "pt": "médico(a)"
+    },
+    {
+     "t": "hear",
+     "w": "doctor",
+     "pt": "médico(a)",
+     "o": [
+      "doctor",
+      "take",
+      "heart"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "take",
+       "pegar"
+      ],
+      [
+       "doctor",
+       "médico(a)"
+      ],
+      [
+       "do",
+       "fazer"
+      ],
+      [
+       "pain",
+       "dor"
+      ],
+      [
+       "need",
+       "precisar"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "question",
+     "pt": "pergunta"
+    },
+    {
+     "t": "pick",
+     "w": "question",
+     "pt": "pergunta",
+     "o": [
+      "doctor",
+      "take",
+      "question"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "heart",
+     "pt": "coração"
+    },
+    {
+     "t": "meaning",
+     "w": "heart",
+     "pt": "coração",
+     "o": [
+      "coração",
+      "dor",
+      "pegar"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "question",
+     "pt": "pergunta",
+     "o": [
+      "pain",
+      "take",
+      "question"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "question",
+       "pergunta"
+      ],
+      [
+       "heart",
+       "coração"
+      ],
+      [
+       "take",
+       "pegar"
+      ],
+      [
+       "doctor",
+       "médico(a)"
+      ],
+      [
+       "need",
+       "precisar"
+      ]
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "Yes, doctor.",
+     "pt": "Sim, doutor.",
+     "v": "en-ZA-LeahNeural",
+     "x": [
+      "want",
+      "stomach",
+      "start"
+     ]
+    },
+    {
+     "t": "fill",
+     "en": "No, I don't.",
+     "pt": "Não, não tenho.",
+     "v": "en-IE-EmilyNeural",
+     "gap": "No, I ___.",
+     "w": "don't",
+     "o": [
+      "round",
+      "don't",
+      "without"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Yes, doctor.",
+     "pt": "Sim, doutor.",
+     "v": "en-ZA-LeahNeural",
+     "o": [
+      "A Emily está no consultório médico.",
+      "Por muito tempo. Talvez para sempre.",
+      "Sim, doutor."
+     ]
+    },
+    {
+     "t": "pick",
+     "w": "heart",
+     "pt": "coração",
+     "o": [
+      "take",
+      "heart",
+      "question"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "No, I don't.",
+     "pt": "Não, não tenho.",
+     "v": "en-IE-EmilyNeural",
+     "x": [
+      "high",
+      "one",
+      "at"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "OK. I understand.",
+     "pt": "Tá. Eu entendo.",
+     "v": "en-NZ-MollyNeural",
+     "o": [
+      "Yes. You will have a general anaesthetic.",
+      "OK. I understand.",
+      "John Wright. My chest hurts a lot."
+     ]
+    },
+    {
+     "t": "meaning",
+     "w": "do",
+     "pt": "fazer",
+     "o": [
+      "precisar",
+      "pegar",
+      "fazer"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "OK. I understand.",
+     "pt": "Tá. Eu entendo.",
+     "v": "en-NZ-MollyNeural",
+     "o": [
+      "Tá. Eu entendo.",
+      "Tá. Obrigada, doutor.",
+      "Sim, claro. Ela pode esperar aqui."
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "OK. I agree.",
+     "pt": "Tá. Eu concordo.",
+     "v": "en-NZ-MollyNeural",
+     "x": [
+      "need",
+      "welcome",
+      "and"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "medz3",
+   "title": "when · diabetes · did · start",
+   "titlePt": "quando · diabetes · fez · começar",
+   "emoji": "🎯",
+   "words": [
+    "when",
+    "diabetes",
+    "did",
+    "start"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "when",
+     "pt": "quando"
+    },
+    {
+     "t": "meaning",
+     "w": "when",
+     "pt": "quando",
+     "o": [
+      "médico(a)",
+      "algum",
+      "quando"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "diabetes",
+     "pt": "diabetes"
+    },
+    {
+     "t": "hear",
+     "w": "diabetes",
+     "pt": "diabetes",
+     "o": [
+      "diabetes",
+      "did",
+      "question"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "when",
+       "quando"
+      ],
+      [
+       "diabetes",
+       "diabetes"
+      ],
+      [
+       "heart",
+       "coração"
+      ],
+      [
+       "need",
+       "precisar"
+      ],
+      [
+       "doctor",
+       "médico(a)"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "did",
+     "pt": "fez"
+    },
+    {
+     "t": "pick",
+     "w": "did",
+     "pt": "fez",
+     "o": [
+      "doctor",
+      "did",
+      "diabetes"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "start",
+     "pt": "começar"
+    },
+    {
+     "t": "meaning",
+     "w": "start",
+     "pt": "começar",
+     "o": [
+      "começar",
+      "quando",
+      "dor"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "did",
+     "pt": "fez",
+     "o": [
+      "start",
+      "did",
+      "take"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "did",
+       "fez"
+      ],
+      [
+       "start",
+       "começar"
+      ],
+      [
+       "when",
+       "quando"
+      ],
+      [
+       "diabetes",
+       "diabetes"
+      ],
+      [
+       "need",
+       "precisar"
+      ]
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "When did the pain start?",
+     "pt": "Quando a dor começou?",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "her",
+      "eat",
+      "stomach"
+     ]
+    },
+    {
+     "t": "fill",
+     "en": "When did it start?",
+     "pt": "Quando começou?",
+     "v": "en-US-BrianNeural",
+     "gap": "___ did it start?",
+     "w": "When",
+     "o": [
+      "When",
+      "very",
+      "week"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "When did the pain start?",
+     "pt": "Quando a dor começou?",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "O senhor está em boas mãos, Sr. Wright.",
+      "Quando a dor começou?",
+      "Sim, hoje. É uma operação comum."
+     ]
+    },
+    {
+     "t": "pick",
+     "w": "start",
+     "pt": "começar",
+     "o": [
+      "pain",
+      "take",
+      "start"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "When did it start?",
+     "pt": "Quando começou?",
+     "v": "en-US-BrianNeural",
+     "x": [
+      "less",
+      "soon",
+      "without"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "Diabetes? Oh no.",
+     "pt": "Diabetes? Ah, não.",
+     "v": "en-IN-NeerjaNeural",
+     "o": [
+      "Diabetes? Oh no.",
+      "No injections?",
+      "I'd like to examine you."
+     ]
+    },
+    {
+     "t": "meaning",
+     "w": "any",
+     "pt": "algum",
+     "o": [
+      "algum",
+      "fazer",
+      "pegar"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Diabetes? Oh no.",
+     "pt": "Diabetes? Ah, não.",
+     "v": "en-IN-NeerjaNeural",
+     "o": [
+      "Por muito tempo. Talvez para sempre.",
+      "Diabetes? Ah, não.",
+      "Tá. Eu concordo."
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "Yes, doctor.",
+     "pt": "Sim, doutor.",
+     "v": "en-ZA-LeahNeural",
+     "x": [
+      "too",
+      "thirsty",
+      "every"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "medz4",
+   "title": "test · anywhere · bring · examine",
+   "titlePt": "exame · em qualquer lugar · trazer · examinar",
+   "emoji": "🧠",
+   "words": [
+    "test",
+    "anywhere",
+    "bring",
+    "examine"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "test",
+     "pt": "exame"
+    },
+    {
+     "t": "meaning",
+     "w": "test",
+     "pt": "exame",
+     "o": [
+      "exame",
+      "fazer",
+      "coração"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "anywhere",
+     "pt": "em qualquer lugar"
+    },
+    {
+     "t": "hear",
+     "w": "anywhere",
+     "pt": "em qualquer lugar",
+     "o": [
+      "did",
+      "anywhere",
+      "examine"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "test",
+       "exame"
+      ],
+      [
+       "anywhere",
+       "em qualquer lugar"
+      ],
+      [
+       "heart",
+       "coração"
+      ],
+      [
+       "any",
+       "algum"
+      ],
+      [
+       "did",
+       "fez"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "bring",
+     "pt": "trazer"
+    },
+    {
+     "t": "pick",
+     "w": "bring",
+     "pt": "trazer",
+     "o": [
+      "question",
+      "any",
+      "bring"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "examine",
+     "pt": "examinar"
+    },
+    {
+     "t": "meaning",
+     "w": "examine",
+     "pt": "examinar",
+     "o": [
+      "examinar",
+      "fazer",
+      "médico(a)"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "bring",
+     "pt": "trazer",
+     "o": [
+      "bring",
+      "did",
+      "test"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "bring",
+       "trazer"
+      ],
+      [
+       "examine",
+       "examinar"
+      ],
+      [
+       "test",
+       "exame"
+      ],
+      [
+       "anywhere",
+       "em qualquer lugar"
+      ],
+      [
+       "question",
+       "pergunta"
+      ]
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "When did the pain start?",
+     "pt": "Quando a dor começou?",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "life",
+      "eat",
+      "appendicitis"
+     ]
+    },
+    {
+     "t": "fill",
+     "en": "Does the pain spread anywhere?",
+     "pt": "A dor irradia para algum lugar?",
+     "v": "en-US-JennyNeural",
+     "gap": "___ the pain spread anywhere?",
+     "w": "Does",
+     "o": [
+      "diabetes",
+      "so",
+      "Does"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "When did the pain start?",
+     "pt": "Quando a dor começou?",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Não, não tenho.",
+      "Quando a dor começou?",
+      "Se piorar, volte."
+     ]
+    },
+    {
+     "t": "pick",
+     "w": "examine",
+     "pt": "examinar",
+     "o": [
+      "when",
+      "examine",
+      "diabetes"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "Does the pain spread anywhere?",
+     "pt": "A dor irradia para algum lugar?",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "in",
+      "great",
+      "eight"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "Diabetes? Oh no.",
+     "pt": "Diabetes? Ah, não.",
+     "v": "en-IN-NeerjaNeural",
+     "o": [
+      "Yes, doctor.",
+      "Every day? For how long?",
+      "Diabetes? Oh no."
+     ]
+    },
+    {
+     "t": "meaning",
+     "w": "pain",
+     "pt": "dor",
+     "o": [
+      "dor",
+      "diabetes",
+      "exame"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Diabetes? Oh no.",
+     "pt": "Diabetes? Ah, não.",
+     "v": "en-IN-NeerjaNeural",
+     "o": [
+      "Diabetes? Ah, não.",
+      "Bom dia a todos. Quem é o próximo?",
+      "Ainda posso comer as receitas da minha mãe?"
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "When did it start?",
+     "pt": "Quando começou?",
+     "v": "en-US-BrianNeural",
+     "x": [
+      "know",
+      "hi",
+      "fever"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "medz5",
+   "title": "help · know · medication · spread",
+   "titlePt": "ajuda · saber · medicação · espalhar",
+   "emoji": "💬",
+   "words": [
+    "help",
+    "know",
+    "medication",
+    "spread"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "help",
+     "pt": "ajuda"
+    },
+    {
+     "t": "meaning",
+     "w": "help",
+     "pt": "ajuda",
+     "o": [
+      "fez",
+      "ajuda",
+      "saber"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "know",
+     "pt": "saber"
+    },
+    {
+     "t": "hear",
+     "w": "know",
+     "pt": "saber",
+     "o": [
+      "know",
+      "heart",
+      "did"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "help",
+       "ajuda"
+      ],
+      [
+       "know",
+       "saber"
+      ],
+      [
+       "need",
+       "precisar"
+      ],
+      [
+       "heart",
+       "coração"
+      ],
+      [
+       "question",
+       "pergunta"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "medication",
+     "pt": "medicação"
+    },
+    {
+     "t": "pick",
+     "w": "medication",
+     "pt": "medicação",
+     "o": [
+      "start",
+      "spread",
+      "medication"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "spread",
+     "pt": "espalhar"
+    },
+    {
+     "t": "meaning",
+     "w": "spread",
+     "pt": "espalhar",
+     "o": [
+      "saber",
+      "em qualquer lugar",
+      "espalhar"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "medication",
+     "pt": "medicação",
+     "o": [
+      "medication",
+      "need",
+      "help"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "medication",
+       "medicação"
+      ],
+      [
+       "spread",
+       "espalhar"
+      ],
+      [
+       "help",
+       "ajuda"
+      ],
+      [
+       "know",
+       "saber"
+      ],
+      [
+       "question",
+       "pergunta"
+      ]
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "Does the pain spread anywhere?",
+     "pt": "A dor irradia para algum lugar?",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "appendicitis",
+      "healthy",
+      "metformin"
+     ]
+    },
+    {
+     "t": "fill",
+     "en": "When did the pain start?",
+     "pt": "Quando a dor começou?",
+     "v": "en-US-JennyNeural",
+     "gap": "When ___ the pain start?",
+     "w": "did",
+     "o": [
+      "ecg",
+      "did",
+      "think"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Does the pain spread anywhere?",
+     "pt": "A dor irradia para algum lugar?",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Sim, sem problema.",
+      "Ótimo. Acho que é um vírus.",
+      "A dor irradia para algum lugar?"
+     ]
+    },
+    {
+     "t": "pick",
+     "w": "spread",
+     "pt": "espalhar",
+     "o": [
+      "test",
+      "do",
+      "spread"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "When did the pain start?",
+     "pt": "Quando a dor começou?",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "tablet",
+      "high",
+      "hand"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "Do I need antibiotics?",
+     "pt": "Preciso de antibiótico?",
+     "v": "en-IE-EmilyNeural",
+     "o": [
+      "Do I need antibiotics?",
+      "I have your blood test results.",
+      "Good question, Josh. Not for one week."
+     ]
+    },
+    {
+     "t": "meaning",
+     "w": "anywhere",
+     "pt": "em qualquer lugar",
+     "o": [
+      "trazer",
+      "dor",
+      "em qualquer lugar"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Do I need antibiotics?",
+     "pt": "Preciso de antibiótico?",
+     "v": "en-IE-EmilyNeural",
+     "o": [
+      "Só paracetamol.",
+      "A Emily está no consultório médico.",
+      "Preciso de antibiótico?"
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "Yes, doctor.",
+     "pt": "Sim, doutor.",
+     "v": "en-ZA-LeahNeural",
+     "x": [
+      "first",
+      "metformin",
+      "less"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "medz6",
+   "title": "ago · attack · blood · call",
+   "titlePt": "atrás · ataque · sangue · ligar",
+   "emoji": "🔁",
+   "words": [
+    "ago",
+    "attack",
+    "blood",
+    "call"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "ago",
+     "pt": "atrás"
+    },
+    {
+     "t": "meaning",
+     "w": "ago",
+     "pt": "atrás",
+     "o": [
+      "diabetes",
+      "quando",
+      "atrás"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "attack",
+     "pt": "ataque"
+    },
+    {
+     "t": "hear",
+     "w": "attack",
+     "pt": "ataque",
+     "o": [
+      "diabetes",
+      "attack",
+      "help"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "ago",
+       "atrás"
+      ],
+      [
+       "attack",
+       "ataque"
+      ],
+      [
+       "spread",
+       "espalhar"
+      ],
+      [
+       "when",
+       "quando"
+      ],
+      [
+       "bring",
+       "trazer"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "blood",
+     "pt": "sangue"
+    },
+    {
+     "t": "pick",
+     "w": "blood",
+     "pt": "sangue",
+     "o": [
+      "when",
+      "spread",
+      "blood"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "call",
+     "pt": "ligar"
+    },
+    {
+     "t": "meaning",
+     "w": "call",
+     "pt": "ligar",
+     "o": [
+      "quando",
+      "exame",
+      "ligar"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "blood",
+     "pt": "sangue",
+     "o": [
+      "test",
+      "blood",
+      "know"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "blood",
+       "sangue"
+      ],
+      [
+       "call",
+       "ligar"
+      ],
+      [
+       "ago",
+       "atrás"
+      ],
+      [
+       "attack",
+       "ataque"
+      ],
+      [
+       "spread",
+       "espalhar"
+      ]
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "Does the pain spread anywhere?",
+     "pt": "A dor irradia para algum lugar?",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "where",
+      "week",
+      "always"
+     ]
+    },
+    {
+     "t": "fill",
+     "en": "When did the pain start?",
+     "pt": "Quando a dor começou?",
+     "v": "en-US-JennyNeural",
+     "gap": "___ did the pain start?",
+     "w": "When",
+     "o": [
+      "long",
+      "When",
+      "show"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Does the pain spread anywhere?",
+     "pt": "A dor irradia para algum lugar?",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "A dor irradia para algum lugar?",
+      "Aqui, no meio. É uma dor pesada.",
+      "Oi, Chloe. Eu sou o Dr. Silva, o cirurgião."
+     ]
+    },
+    {
+     "t": "pick",
+     "w": "call",
+     "pt": "ligar",
+     "o": [
+      "bring",
+      "diabetes",
+      "call"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "When did the pain start?",
+     "pt": "Quando a dor começou?",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "today",
+      "car",
+      "be"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "No, I don't.",
+     "pt": "Não, não tenho.",
+     "v": "en-IE-EmilyNeural",
+     "o": [
+      "You're in good hands, Mr. Wright.",
+      "Dr. Silva looks at the ECG.",
+      "No, I don't."
+     ]
+    },
+    {
+     "t": "meaning",
+     "w": "any",
+     "pt": "algum",
+     "o": [
+      "algum",
+      "coração",
+      "sangue"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "No, I don't.",
+     "pt": "Não, não tenho.",
+     "v": "en-IE-EmilyNeural",
+     "o": [
+      "Por favor, não coma nem beba nada agora.",
+      "Não, não tenho.",
+      "Boa pergunta, Josh. Não por uma semana."
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "Diabetes? Oh no.",
+     "pt": "Diabetes? Ah, não.",
+     "v": "en-IN-NeerjaNeural",
+     "x": [
+      "for",
+      "paracetamol",
+      "bring"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "medz7",
+   "title": "every · feel · how · hurt",
+   "titlePt": "cada · sentir · como · machucar",
+   "emoji": "⭐",
+   "words": [
+    "every",
+    "feel",
+    "how",
+    "hurt"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "every",
+     "pt": "cada"
+    },
+    {
+     "t": "meaning",
+     "w": "every",
+     "pt": "cada",
+     "o": [
+      "cada",
+      "diabetes",
+      "medicação"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "feel",
+     "pt": "sentir"
+    },
+    {
+     "t": "hear",
+     "w": "feel",
+     "pt": "sentir",
+     "o": [
+      "blood",
+      "feel",
+      "question"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "every",
+       "cada"
+      ],
+      [
+       "feel",
+       "sentir"
+      ],
+      [
+       "blood",
+       "sangue"
+      ],
+      [
+       "doctor",
+       "médico(a)"
+      ],
+      [
+       "spread",
+       "espalhar"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "how",
+     "pt": "como"
+    },
+    {
+     "t": "pick",
+     "w": "how",
+     "pt": "como",
+     "o": [
+      "know",
+      "take",
+      "how"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "hurt",
+     "pt": "machucar"
+    },
+    {
+     "t": "meaning",
+     "w": "hurt",
+     "pt": "machucar",
+     "o": [
+      "machucar",
+      "médico(a)",
+      "exame"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "how",
+     "pt": "como",
+     "o": [
+      "how",
+      "ago",
+      "hurt"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "how",
+       "como"
+      ],
+      [
+       "hurt",
+       "machucar"
+      ],
+      [
+       "every",
+       "cada"
+      ],
+      [
+       "feel",
+       "sentir"
+      ],
+      [
+       "start",
+       "começar"
+      ]
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "Does the pain spread anywhere?",
+     "pt": "A dor irradia para algum lugar?",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "surgeon",
+      "camera",
+      "emergency"
+     ]
+    },
+    {
+     "t": "fill",
+     "en": "When did the pain start?",
+     "pt": "Quando a dor começou?",
+     "v": "en-US-JennyNeural",
+     "gap": "When did the ___ start?",
+     "w": "pain",
+     "o": [
+      "pain",
+      "hello",
+      "today"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Does the pain spread anywhere?",
+     "pt": "A dor irradia para algum lugar?",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Boa pergunta, Josh. Não por uma semana.",
+      "A dor irradia para algum lugar?",
+      "John Wright. Meu peito dói muito."
+     ]
+    },
+    {
+     "t": "pick",
+     "w": "hurt",
+     "pt": "machucar",
+     "o": [
+      "hurt",
+      "diabetes",
+      "every"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "When did the pain start?",
+     "pt": "Quando a dor começou?",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "sick",
+      "home",
+      "help"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "OK. I understand.",
+     "pt": "Tá. Eu entendo.",
+     "v": "en-NZ-MollyNeural",
+     "o": [
+      "Emily is at the doctor's office.",
+      "Do you smoke?",
+      "OK. I understand."
+     ]
+    },
+    {
+     "t": "meaning",
+     "w": "heart",
+     "pt": "coração",
+     "o": [
+      "exame",
+      "coração",
+      "dor"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "OK. I understand.",
+     "pt": "Tá. Eu entendo.",
+     "v": "en-NZ-MollyNeural",
+     "o": [
+      "Bom dia, doutor.",
+      "Ele colocou um stent no coração.",
+      "Tá. Eu entendo."
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "OK. I agree.",
+     "pt": "Tá. Eu concordo.",
+     "v": "en-NZ-MollyNeural",
+     "x": [
+      "third",
+      "hour",
+      "type"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "medz8",
+   "title": "just · life · long · operation",
+   "titlePt": "só · vida · longo · operação",
+   "emoji": "🗝️",
+   "words": [
+    "just",
+    "life",
+    "long",
+    "operation"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "just",
+     "pt": "só"
+    },
+    {
+     "t": "meaning",
+     "w": "just",
+     "pt": "só",
+     "o": [
+      "longo",
+      "começar",
+      "só"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "life",
+     "pt": "vida"
+    },
+    {
+     "t": "hear",
+     "w": "life",
+     "pt": "vida",
+     "o": [
+      "hurt",
+      "life",
+      "heart"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "just",
+       "só"
+      ],
+      [
+       "life",
+       "vida"
+      ],
+      [
+       "need",
+       "precisar"
+      ],
+      [
+       "attack",
+       "ataque"
+      ],
+      [
+       "did",
+       "fez"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "long",
+     "pt": "longo"
+    },
+    {
+     "t": "pick",
+     "w": "long",
+     "pt": "longo",
+     "o": [
+      "start",
+      "long",
+      "question"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "operation",
+     "pt": "operação"
+    },
+    {
+     "t": "meaning",
+     "w": "operation",
+     "pt": "operação",
+     "o": [
+      "cada",
+      "operação",
+      "ataque"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "long",
+     "pt": "longo",
+     "o": [
+      "long",
+      "did",
+      "spread"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "long",
+       "longo"
+      ],
+      [
+       "operation",
+       "operação"
+      ],
+      [
+       "just",
+       "só"
+      ],
+      [
+       "life",
+       "vida"
+      ],
+      [
+       "start",
+       "começar"
+      ]
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "Does the pain spread anywhere?",
+     "pt": "A dor irradia para algum lugar?",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "sit",
+      "second",
+      "so"
+     ]
+    },
+    {
+     "t": "fill",
+     "en": "When did the pain start?",
+     "pt": "Quando a dor começou?",
+     "v": "en-US-JennyNeural",
+     "gap": "When ___ the pain start?",
+     "w": "did",
+     "o": [
+      "did",
+      "arrive",
+      "in"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Does the pain spread anywhere?",
+     "pt": "A dor irradia para algum lugar?",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Boa pergunta, Josh. Não por uma semana.",
+      "Por favor, não coma nem beba nada agora.",
+      "A dor irradia para algum lugar?"
+     ]
+    },
+    {
+     "t": "pick",
+     "w": "operation",
+     "pt": "operação",
+     "o": [
+      "pain",
+      "need",
+      "operation"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "When did the pain start?",
+     "pt": "Quando a dor começou?",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "about",
+      "cigarette",
+      "take"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "Just paracetamol.",
+     "pt": "Só paracetamol.",
+     "v": "en-IE-EmilyNeural",
+     "o": [
+      "Just paracetamol.",
+      "Emily is at the doctor's office.",
+      "Do you have a headache?"
+     ]
+    },
+    {
+     "t": "meaning",
+     "w": "medication",
+     "pt": "medicação",
+     "o": [
+      "quando",
+      "medicação",
+      "começar"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Just paracetamol.",
+     "pt": "Só paracetamol.",
+     "v": "en-IE-EmilyNeural",
+     "o": [
+      "Só paracetamol.",
+      "A Emily está no consultório médico.",
+      "Talvez amanhã. Mas primeiro, seus remédios."
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "An operation? Today?",
+     "pt": "Uma operação? Hoje?",
+     "v": "en-NZ-MollyNeural",
+     "x": [
+      "no",
+      "round",
+      "neck"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "medz9",
+   "title": "risk · some · tablet · wife",
+   "titlePt": "risco · algum · comprimido · esposa",
+   "emoji": "🚀",
+   "words": [
+    "risk",
+    "some",
+    "tablet",
+    "wife"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "risk",
+     "pt": "risco"
+    },
+    {
+     "t": "meaning",
+     "w": "risk",
+     "pt": "risco",
+     "o": [
+      "médico(a)",
+      "comprimido",
+      "risco"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "some",
+     "pt": "algum"
+    },
+    {
+     "t": "hear",
+     "w": "some",
+     "pt": "algum",
+     "o": [
+      "test",
+      "some",
+      "ago"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "risk",
+       "risco"
+      ],
+      [
+       "some",
+       "algum"
+      ],
+      [
+       "examine",
+       "examinar"
+      ],
+      [
+       "operation",
+       "operação"
+      ],
+      [
+       "ago",
+       "atrás"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "tablet",
+     "pt": "comprimido"
+    },
+    {
+     "t": "pick",
+     "w": "tablet",
+     "pt": "comprimido",
+     "o": [
+      "help",
+      "when",
+      "tablet"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "wife",
+     "pt": "esposa"
+    },
+    {
+     "t": "meaning",
+     "w": "wife",
+     "pt": "esposa",
+     "o": [
+      "coração",
+      "esposa",
+      "médico(a)"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "tablet",
+     "pt": "comprimido",
+     "o": [
+      "start",
+      "tablet",
+      "pain"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "tablet",
+       "comprimido"
+      ],
+      [
+       "wife",
+       "esposa"
+      ],
+      [
+       "risk",
+       "risco"
+      ],
+      [
+       "some",
+       "algum"
+      ],
+      [
+       "examine",
+       "examinar"
+      ]
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "Does the pain spread anywhere?",
+     "pt": "A dor irradia para algum lugar?",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "department",
+      "make",
+      "attack"
+     ]
+    },
+    {
+     "t": "fill",
+     "en": "When did the pain start?",
+     "pt": "Quando a dor começou?",
+     "v": "en-US-JennyNeural",
+     "gap": "When did the pain ___?",
+     "w": "start",
+     "o": [
+      "long",
+      "start",
+      "job"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Does the pain spread anywhere?",
+     "pt": "A dor irradia para algum lugar?",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "O que isso significa?",
+      "E, Sr. Wright, os cigarros...",
+      "A dor irradia para algum lugar?"
+     ]
+    },
+    {
+     "t": "pick",
+     "w": "wife",
+     "pt": "esposa",
+     "o": [
+      "test",
+      "question",
+      "wife"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "When did the pain start?",
+     "pt": "Quando a dor começou?",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "other",
+      "small",
+      "our"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "Just paracetamol.",
+     "pt": "Só paracetamol.",
+     "v": "en-IE-EmilyNeural",
+     "o": [
+      "We need to run some tests.",
+      "OK. I want to try.",
+      "Just paracetamol."
+     ]
+    },
+    {
+     "t": "meaning",
+     "w": "anywhere",
+     "pt": "em qualquer lugar",
+     "o": [
+      "algum",
+      "ataque",
+      "em qualquer lugar"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Just paracetamol.",
+     "pt": "Só paracetamol.",
+     "v": "en-IE-EmilyNeural",
+     "o": [
+      "Há três dias.",
+      "O que isso significa?",
+      "Só paracetamol."
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "An operation? Today?",
+     "pt": "Uma operação? Hoje?",
+     "v": "en-NZ-MollyNeural",
+     "x": [
+      "can",
+      "has",
+      "question"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "medz10",
+   "title": "Review",
+   "titlePt": "Revisão geral",
+   "emoji": "🏆",
+   "words": [],
+   "screens": [
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "start",
+       "começar"
+      ],
+      [
+       "take",
+       "pegar"
+      ],
+      [
+       "any",
+       "algum"
+      ],
+      [
+       "hurt",
+       "machucar"
+      ],
+      [
+       "did",
+       "fez"
+      ]
+     ]
+    },
+    {
+     "t": "meaning",
+     "w": "medication",
+     "pt": "medicação",
+     "o": [
+      "pergunta",
+      "vida",
+      "medicação"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "bring",
+     "pt": "trazer",
+     "o": [
+      "ago",
+      "bring",
+      "need"
+     ]
+    },
+    {
+     "t": "pick",
+     "w": "some",
+     "pt": "algum",
+     "o": [
+      "some",
+      "risk",
+      "wife"
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "What brings you in today?",
+     "pt": "O que te traz aqui hoje?",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "paracetamol",
+      "am",
+      "hand"
+     ]
+    },
+    {
+     "t": "fill",
+     "en": "When did the pain start?",
+     "pt": "Quando a dor começou?",
+     "v": "en-US-JennyNeural",
+     "gap": "___ did the pain start?",
+     "w": "When",
+     "o": [
+      "When",
+      "bring",
+      "have"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "What brings you in today?",
+     "pt": "O que te traz aqui hoje?",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "John Wright. Meu peito dói muito.",
+      "O que te traz aqui hoje?",
+      "Doutor! Este homem está com dor no peito!"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "long",
+       "longo"
+      ],
+      [
+       "test",
+       "exame"
+      ],
+      [
+       "when",
+       "quando"
+      ],
+      [
+       "just",
+       "só"
+      ],
+      [
+       "call",
+       "ligar"
+      ]
+     ]
+    },
+    {
+     "t": "type",
+     "en": "When did the pain start?",
+     "pt": "Quando a dor começou?",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "wife",
+      "red",
+      "little"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "Does the pain spread anywhere?",
+     "pt": "A dor irradia para algum lugar?",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "We need to run some tests.",
+      "Diabetes? Oh no.",
+      "Does the pain spread anywhere?"
+     ]
+    },
+    {
+     "t": "meaning",
+     "w": "help",
+     "pt": "ajuda",
+     "o": [
+      "ataque",
+      "ajuda",
+      "comprimido"
+     ]
+    },
+    {
+     "t": "pick",
+     "w": "anywhere",
+     "pt": "em qualquer lugar",
+     "o": [
+      "test",
+      "anywhere",
+      "some"
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "Are you taking any medication?",
+     "pt": "Você toma algum remédio?",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "water",
+      "sit",
+      "first"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Are you taking any medication?",
+     "pt": "Você toma algum remédio?",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Gostaria de examinar você.",
+      "De nada. Melhoras!",
+      "Você toma algum remédio?"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "question",
+     "pt": "pergunta",
+     "o": [
+      "any",
+      "when",
+      "question"
+     ]
+    },
+    {
+     "t": "fill",
+     "en": "I'd like to examine you.",
+     "pt": "Gostaria de examinar você.",
+     "v": "en-US-JennyNeural",
+     "gap": "I'd like to ___ you.",
+     "w": "examine",
+     "o": [
+      "up",
+      "examine",
+      "minute"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "Does the pain spread anywhere?",
+     "pt": "A dor irradia para algum lugar?",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "care",
+      "our",
+      "round"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "examine",
+       "examinar"
+      ],
+      [
+       "spread",
+       "espalhar"
+      ],
+      [
+       "know",
+       "saber"
+      ],
+      [
+       "tablet",
+       "comprimido"
+      ],
+      [
+       "diabetes",
+       "diabetes"
+      ]
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "I'd like to examine you.",
+     "pt": "Gostaria de examinar você.",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "question",
+      "nineteen",
+      "dangerous"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "I'd like to examine you.",
+     "pt": "Gostaria de examinar você.",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Gostaria de examinar você.",
+      "Ótimo. Acho que é um vírus.",
+      "O senhor está em boas mãos, Sr. Wright."
+     ]
+    }
+   ]
+  }
+ ]
+}

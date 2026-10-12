@@ -1,0 +1,2363 @@
+{
+ "unit": 5,
+ "lessons": [
+  {
+   "id": "u5z1",
+   "title": "small · museum · big · famous",
+   "titlePt": "pequeno · museu · grande · famoso",
+   "emoji": "🔤",
+   "words": [
+    "small",
+    "museum",
+    "big",
+    "famous"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "small",
+     "pt": "pequeno"
+    },
+    {
+     "t": "meaning",
+     "w": "small",
+     "pt": "pequeno",
+     "o": [
+      "sim",
+      "visitar",
+      "pequeno"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "big",
+     "pt": "grande"
+    },
+    {
+     "t": "hear",
+     "w": "big",
+     "pt": "grande",
+     "o": [
+      "she",
+      "be",
+      "big"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "small",
+       "pequeno"
+      ],
+      [
+       "big",
+       "grande"
+      ],
+      [
+       "famous",
+       "famoso"
+      ],
+      [
+       "museum",
+       "museu"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "famous",
+     "pt": "famoso"
+    },
+    {
+     "t": "pick",
+     "w": "famous",
+     "pt": "famoso",
+     "o": [
+      "famous",
+      "come",
+      "everyone"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "museum",
+     "pt": "museu"
+    },
+    {
+     "t": "meaning",
+     "w": "museum",
+     "pt": "museu",
+     "o": [
+      "sou",
+      "museu",
+      "mas"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "famous",
+     "pt": "famoso",
+     "o": [
+      "car",
+      "famous",
+      "me"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "famous",
+       "famoso"
+      ],
+      [
+       "museum",
+       "museu"
+      ],
+      [
+       "small",
+       "pequeno"
+      ],
+      [
+       "big",
+       "grande"
+      ]
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "The Mona Lisa? But it's small!",
+     "pt": "A Mona Lisa? Mas ela é pequena!",
+     "v": "en-US-EricNeural",
+     "x": [
+      "he",
+      "old",
+      "welcome"
+     ]
+    },
+    {
+     "t": "fill",
+     "en": "Thank you, David!",
+     "pt": "Obrigado, David!",
+     "v": "en-US-JennyNeural",
+     "gap": "___ you, David!",
+     "w": "Thank",
+     "o": [
+      "Thank",
+      "door",
+      "at"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "The Mona Lisa? But it's small!",
+     "pt": "A Mona Lisa? Mas ela é pequena!",
+     "v": "en-US-EricNeural",
+     "o": [
+      "Obrigado, David!",
+      "A Mona Lisa? Mas ela é pequena!",
+      "David, onde fica sua casa?"
+     ]
+    },
+    {
+     "t": "pick",
+     "w": "museum",
+     "pt": "museu",
+     "o": [
+      "museum",
+      "new",
+      "lot"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "Thank you, David!",
+     "pt": "Obrigado, David!",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "are",
+      "please",
+      "park"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "Hi, Pépin! I'm Ben. I'm nice!",
+     "pt": "Oi, Pépin! Eu sou o Ben. Eu sou legal!",
+     "v": "en-US-EricNeural",
+     "o": [
+      "Hi! Is Paris your city?",
+      "Hi, Pépin! I'm Ben. I'm nice!",
+      "It's not very big. But it's nice."
+     ]
+    },
+    {
+     "t": "meaning",
+     "w": "small",
+     "pt": "pequeno",
+     "o": [
+      "carro",
+      "pequeno",
+      "ele"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Hi, Pépin! I'm Ben. I'm nice!",
+     "pt": "Oi, Pépin! Eu sou o Ben. Eu sou legal!",
+     "v": "en-US-EricNeural",
+     "o": [
+      "Mas o gato também é pequeno!",
+      "Oi, Pépin! Eu sou o Ben. Eu sou legal!",
+      "Não é muito grande. Mas é bacana."
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "It's the Mona Lisa! I know her!",
+     "pt": "É a Mona Lisa! Eu conheço ela!",
+     "v": "en-US-AnaNeural",
+     "x": [
+      "hi",
+      "year",
+      "who"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u5z2",
+   "title": "street · but · room · bakery",
+   "titlePt": "rua · mas · sala · padaria",
+   "emoji": "🧩",
+   "words": [
+    "street",
+    "but",
+    "room",
+    "bakery"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "street",
+     "pt": "rua"
+    },
+    {
+     "t": "meaning",
+     "w": "street",
+     "pt": "rua",
+     "o": [
+      "rua",
+      "padaria",
+      "pequeno"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "but",
+     "pt": "mas"
+    },
+    {
+     "t": "hear",
+     "w": "but",
+     "pt": "mas",
+     "o": [
+      "big",
+      "museum",
+      "but"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "street",
+       "rua"
+      ],
+      [
+       "but",
+       "mas"
+      ],
+      [
+       "small",
+       "pequeno"
+      ],
+      [
+       "big",
+       "grande"
+      ],
+      [
+       "museum",
+       "museu"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "room",
+     "pt": "sala"
+    },
+    {
+     "t": "pick",
+     "w": "room",
+     "pt": "sala",
+     "o": [
+      "bakery",
+      "room",
+      "museum"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "bakery",
+     "pt": "padaria"
+    },
+    {
+     "t": "meaning",
+     "w": "bakery",
+     "pt": "padaria",
+     "o": [
+      "museu",
+      "padaria",
+      "rua"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "room",
+     "pt": "sala",
+     "o": [
+      "but",
+      "bakery",
+      "room"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "room",
+       "sala"
+      ],
+      [
+       "bakery",
+       "padaria"
+      ],
+      [
+       "street",
+       "rua"
+      ],
+      [
+       "but",
+       "mas"
+      ],
+      [
+       "small",
+       "pequeno"
+      ]
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "The Mona Lisa? But it's small!",
+     "pt": "A Mona Lisa? Mas ela é pequena!",
+     "v": "en-US-EricNeural",
+     "x": [
+      "green",
+      "mom",
+      "door"
+     ]
+    },
+    {
+     "t": "fill",
+     "en": "Thank you, David!",
+     "pt": "Obrigado, David!",
+     "v": "en-US-JennyNeural",
+     "gap": "___ you, David!",
+     "w": "Thank",
+     "o": [
+      "walk",
+      "friend",
+      "Thank"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "The Mona Lisa? But it's small!",
+     "pt": "A Mona Lisa? Mas ela é pequena!",
+     "v": "en-US-EricNeural",
+     "o": [
+      "A Mona Lisa? Mas ela é pequena!",
+      "Sua rua é muito bonita, David.",
+      "Oi! Eu sou o David. Bem-vindos à minha cidade!"
+     ]
+    },
+    {
+     "t": "pick",
+     "w": "bakery",
+     "pt": "padaria",
+     "o": [
+      "bakery",
+      "room",
+      "street"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "Thank you, David!",
+     "pt": "Obrigado, David!",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "street",
+      "airport",
+      "beautiful"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "Hi, Pépin! I'm Ben. I'm nice!",
+     "pt": "Oi, Pépin! Eu sou o Ben. Eu sou legal!",
+     "v": "en-US-EricNeural",
+     "o": [
+      "Hi, Pépin! I'm Ben. I'm nice!",
+      "Yes, there are!",
+      "Yes, please! I love bread!"
+     ]
+    },
+    {
+     "t": "meaning",
+     "w": "small",
+     "pt": "pequeno",
+     "o": [
+      "grande",
+      "pequeno",
+      "famoso"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Hi, Pépin! I'm Ben. I'm nice!",
+     "pt": "Oi, Pépin! Eu sou o Ben. Eu sou legal!",
+     "v": "en-US-EricNeural",
+     "o": [
+      "Sua rua é muito bonita, David.",
+      "Oi, Pépin! Eu sou o Ben. Eu sou legal!",
+      "Londres! Bem-vindos, bem-vindos! Entrem."
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "It's the Mona Lisa! I know her!",
+     "pt": "É a Mona Lisa! Eu conheço ela!",
+     "v": "en-US-AnaNeural",
+     "x": [
+      "is",
+      "city",
+      "your"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u5z3",
+   "title": "next · come · old · right",
+   "titlePt": "próximo · vir · velho · certo",
+   "emoji": "🎯",
+   "words": [
+    "next",
+    "come",
+    "old",
+    "right"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "next",
+     "pt": "próximo"
+    },
+    {
+     "t": "meaning",
+     "w": "next",
+     "pt": "próximo",
+     "o": [
+      "museu",
+      "próximo",
+      "grande"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "come",
+     "pt": "vir"
+    },
+    {
+     "t": "hear",
+     "w": "come",
+     "pt": "vir",
+     "o": [
+      "street",
+      "come",
+      "next"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "next",
+       "próximo"
+      ],
+      [
+       "come",
+       "vir"
+      ],
+      [
+       "museum",
+       "museu"
+      ],
+      [
+       "room",
+       "sala"
+      ],
+      [
+       "famous",
+       "famoso"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "old",
+     "pt": "velho"
+    },
+    {
+     "t": "pick",
+     "w": "old",
+     "pt": "velho",
+     "o": [
+      "bakery",
+      "old",
+      "room"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "right",
+     "pt": "certo"
+    },
+    {
+     "t": "meaning",
+     "w": "right",
+     "pt": "certo",
+     "o": [
+      "próximo",
+      "famoso",
+      "certo"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "old",
+     "pt": "velho",
+     "o": [
+      "old",
+      "come",
+      "next"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "old",
+       "velho"
+      ],
+      [
+       "right",
+       "certo"
+      ],
+      [
+       "next",
+       "próximo"
+      ],
+      [
+       "come",
+       "vir"
+      ],
+      [
+       "but",
+       "mas"
+      ]
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "The Mona Lisa? But it's small!",
+     "pt": "A Mona Lisa? Mas ela é pequena!",
+     "v": "en-US-EricNeural",
+     "x": [
+      "this",
+      "green",
+      "my"
+     ]
+    },
+    {
+     "t": "fill",
+     "en": "This museum is famous, right?",
+     "pt": "Esse museu é famoso, né?",
+     "v": "en-US-JennyNeural",
+     "gap": "This ___ is famous, right?",
+     "w": "museum",
+     "o": [
+      "bread",
+      "where",
+      "museum"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "The Mona Lisa? But it's small!",
+     "pt": "A Mona Lisa? Mas ela é pequena!",
+     "v": "en-US-EricNeural",
+     "o": [
+      "Qual é a próxima sala?",
+      "A Mona Lisa? Mas ela é pequena!",
+      "Uau! Ele gosta de você, Ben!"
+     ]
+    },
+    {
+     "t": "pick",
+     "w": "right",
+     "pt": "certo",
+     "o": [
+      "room",
+      "next",
+      "right"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "This museum is famous, right?",
+     "pt": "Esse museu é famoso, né?",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "with",
+      "nice",
+      "bread"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "What is the next room?",
+     "pt": "Qual é a próxima sala?",
+     "v": "en-US-AnaNeural",
+     "o": [
+      "Hi, Pépin! I'm Ben. I'm nice!",
+      "This city is nice!",
+      "What is the next room?"
+     ]
+    },
+    {
+     "t": "meaning",
+     "w": "big",
+     "pt": "grande",
+     "o": [
+      "certo",
+      "padaria",
+      "grande"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "What is the next room?",
+     "pt": "Qual é a próxima sala?",
+     "v": "en-US-AnaNeural",
+     "o": [
+      "Isso! Eu amo esse museu!",
+      "Esta é uma pintura muito famosa. Olhem!",
+      "Qual é a próxima sala?"
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "London! Welcome, welcome! Come in.",
+     "pt": "Londres! Bem-vindos, bem-vindos! Entrem.",
+     "v": "en-IE-EmilyNeural",
+     "x": [
+      "is",
+      "thank",
+      "see"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u5z4",
+   "title": "window · beautiful · love · park",
+   "titlePt": "janela · lindo · amor · parque",
+   "emoji": "🧠",
+   "words": [
+    "window",
+    "beautiful",
+    "love",
+    "park"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "window",
+     "pt": "janela"
+    },
+    {
+     "t": "meaning",
+     "w": "window",
+     "pt": "janela",
+     "o": [
+      "janela",
+      "certo",
+      "próximo"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "beautiful",
+     "pt": "lindo"
+    },
+    {
+     "t": "hear",
+     "w": "beautiful",
+     "pt": "lindo",
+     "o": [
+      "room",
+      "beautiful",
+      "but"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "window",
+       "janela"
+      ],
+      [
+       "beautiful",
+       "lindo"
+      ],
+      [
+       "famous",
+       "famoso"
+      ],
+      [
+       "right",
+       "certo"
+      ],
+      [
+       "bakery",
+       "padaria"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "love",
+     "pt": "amor"
+    },
+    {
+     "t": "pick",
+     "w": "love",
+     "pt": "amor",
+     "o": [
+      "love",
+      "small",
+      "beautiful"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "park",
+     "pt": "parque"
+    },
+    {
+     "t": "meaning",
+     "w": "park",
+     "pt": "parque",
+     "o": [
+      "parque",
+      "lindo",
+      "janela"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "love",
+     "pt": "amor",
+     "o": [
+      "small",
+      "love",
+      "old"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "love",
+       "amor"
+      ],
+      [
+       "park",
+       "parque"
+      ],
+      [
+       "window",
+       "janela"
+      ],
+      [
+       "beautiful",
+       "lindo"
+      ],
+      [
+       "come",
+       "vir"
+      ]
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "The Mona Lisa? But it's small!",
+     "pt": "A Mona Lisa? Mas ela é pequena!",
+     "v": "en-US-EricNeural",
+     "x": [
+      "welcome",
+      "street",
+      "people"
+     ]
+    },
+    {
+     "t": "fill",
+     "en": "A park? Is it big?",
+     "pt": "Um parque? Ele é grande?",
+     "v": "en-US-EricNeural",
+     "gap": "A park? Is it ___?",
+     "w": "big",
+     "o": [
+      "love",
+      "big",
+      "my"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "The Mona Lisa? But it's small!",
+     "pt": "A Mona Lisa? Mas ela é pequena!",
+     "v": "en-US-EricNeural",
+     "o": [
+      "A Mona Lisa? Mas ela é pequena!",
+      "Minha casa? Fica perto daqui.",
+      "Onde fica a casa dela?"
+     ]
+    },
+    {
+     "t": "pick",
+     "w": "park",
+     "pt": "parque",
+     "o": [
+      "museum",
+      "park",
+      "beautiful"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "A park? Is it big?",
+     "pt": "Um parque? Ele é grande?",
+     "v": "en-US-EricNeural",
+     "x": [
+      "here",
+      "our",
+      "door"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "Yes! I love this museum!",
+     "pt": "Isso! Eu amo esse museu!",
+     "v": "en-US-EricNeural",
+     "o": [
+      "Your house is big!",
+      "Yes! I love this museum!",
+      "A park? Is it big?"
+     ]
+    },
+    {
+     "t": "meaning",
+     "w": "bakery",
+     "pt": "padaria",
+     "o": [
+      "velho",
+      "parque",
+      "padaria"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Yes! I love this museum!",
+     "pt": "Isso! Eu amo esse museu!",
+     "v": "en-US-EricNeural",
+     "o": [
+      "Paris é linda. Esta cidade é bacana!",
+      "David, sua escola é aqui?",
+      "Isso! Eu amo esse museu!"
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "You? Wow! You're very beautiful!",
+     "pt": "Você? Uau! Você é muito bonita!",
+     "v": "en-US-EricNeural",
+     "x": [
+      "people",
+      "year",
+      "yes"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u5z5",
+   "title": "lot · book · now · see",
+   "titlePt": "muito · livro · agora · ver",
+   "emoji": "💬",
+   "words": [
+    "lot",
+    "book",
+    "now",
+    "see"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "lot",
+     "pt": "muito"
+    },
+    {
+     "t": "meaning",
+     "w": "lot",
+     "pt": "muito",
+     "o": [
+      "muito",
+      "próximo",
+      "ver"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "book",
+     "pt": "livro"
+    },
+    {
+     "t": "hear",
+     "w": "book",
+     "pt": "livro",
+     "o": [
+      "big",
+      "book",
+      "see"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "lot",
+       "muito"
+      ],
+      [
+       "book",
+       "livro"
+      ],
+      [
+       "beautiful",
+       "lindo"
+      ],
+      [
+       "bakery",
+       "padaria"
+      ],
+      [
+       "come",
+       "vir"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "now",
+     "pt": "agora"
+    },
+    {
+     "t": "pick",
+     "w": "now",
+     "pt": "agora",
+     "o": [
+      "bakery",
+      "beautiful",
+      "now"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "see",
+     "pt": "ver"
+    },
+    {
+     "t": "meaning",
+     "w": "see",
+     "pt": "ver",
+     "o": [
+      "muito",
+      "ver",
+      "rua"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "now",
+     "pt": "agora",
+     "o": [
+      "book",
+      "now",
+      "bakery"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "now",
+       "agora"
+      ],
+      [
+       "see",
+       "ver"
+      ],
+      [
+       "lot",
+       "muito"
+      ],
+      [
+       "book",
+       "livro"
+      ],
+      [
+       "big",
+       "grande"
+      ]
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "The Mona Lisa? But it's small!",
+     "pt": "A Mona Lisa? Mas ela é pequena!",
+     "v": "en-US-EricNeural",
+     "x": [
+      "on",
+      "museum",
+      "day"
+     ]
+    },
+    {
+     "t": "fill",
+     "en": "Wow! This museum is famous, right?",
+     "pt": "Uau! Esse museu é famoso, né?",
+     "v": "en-US-JennyNeural",
+     "gap": "Wow! This museum is famous, ___?",
+     "w": "right",
+     "o": [
+      "go",
+      "right",
+      "café"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "The Mona Lisa? But it's small!",
+     "pt": "A Mona Lisa? Mas ela é pequena!",
+     "v": "en-US-EricNeural",
+     "o": [
+      "A Mona Lisa? Mas ela é pequena!",
+      "A casa de vocês é grande!",
+      "E onde fica o seu quarto, David?"
+     ]
+    },
+    {
+     "t": "pick",
+     "w": "see",
+     "pt": "ver",
+     "o": [
+      "see",
+      "small",
+      "book"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "Wow! This museum is famous, right?",
+     "pt": "Uau! Esse museu é famoso, né?",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "look",
+      "welcome",
+      "nice"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "This museum is famous, right?",
+     "pt": "Esse museu é famoso, né?",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "This museum is famous, right?",
+      "Yes. This is me. I'm twenty here.",
+      "My house? It's near here."
+     ]
+    },
+    {
+     "t": "meaning",
+     "w": "park",
+     "pt": "parque",
+     "o": [
+      "mas",
+      "velho",
+      "parque"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "This museum is famous, right?",
+     "pt": "Esse museu é famoso, né?",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Oi! Paris é a sua cidade?",
+      "E os carros são pequenos! Muito pequenos!",
+      "Esse museu é famoso, né?"
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "A park? Is it big?",
+     "pt": "Um parque? Ele é grande?",
+     "v": "en-US-EricNeural",
+     "x": [
+      "he",
+      "shy",
+      "have"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u5z6",
+   "title": "that · white · blue · can",
+   "titlePt": "aquele · branco · azul · poder",
+   "emoji": "🔁",
+   "words": [
+    "that",
+    "white",
+    "blue",
+    "can"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "that",
+     "pt": "aquele"
+    },
+    {
+     "t": "meaning",
+     "w": "that",
+     "pt": "aquele",
+     "o": [
+      "aquele",
+      "certo",
+      "velho"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "white",
+     "pt": "branco"
+    },
+    {
+     "t": "hear",
+     "w": "white",
+     "pt": "branco",
+     "o": [
+      "museum",
+      "small",
+      "white"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "that",
+       "aquele"
+      ],
+      [
+       "white",
+       "branco"
+      ],
+      [
+       "room",
+       "sala"
+      ],
+      [
+       "beautiful",
+       "lindo"
+      ],
+      [
+       "come",
+       "vir"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "blue",
+     "pt": "azul"
+    },
+    {
+     "t": "pick",
+     "w": "blue",
+     "pt": "azul",
+     "o": [
+      "blue",
+      "bakery",
+      "see"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "can",
+     "pt": "poder"
+    },
+    {
+     "t": "meaning",
+     "w": "can",
+     "pt": "poder",
+     "o": [
+      "azul",
+      "vir",
+      "poder"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "blue",
+     "pt": "azul",
+     "o": [
+      "can",
+      "blue",
+      "beautiful"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "blue",
+       "azul"
+      ],
+      [
+       "can",
+       "poder"
+      ],
+      [
+       "that",
+       "aquele"
+      ],
+      [
+       "white",
+       "branco"
+      ],
+      [
+       "now",
+       "agora"
+      ]
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "The Mona Lisa? But it's small!",
+     "pt": "A Mona Lisa? Mas ela é pequena!",
+     "v": "en-US-EricNeural",
+     "x": [
+      "hello",
+      "eye",
+      "on"
+     ]
+    },
+    {
+     "t": "fill",
+     "en": "What is the next room?",
+     "pt": "Qual é a próxima sala?",
+     "v": "en-US-AnaNeural",
+     "gap": "What is the next ___?",
+     "w": "room",
+     "o": [
+      "mom",
+      "room",
+      "too"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "The Mona Lisa? But it's small!",
+     "pt": "A Mona Lisa? Mas ela é pequena!",
+     "v": "en-US-EricNeural",
+     "o": [
+      "Sim, tem!",
+      "A Mona Lisa? Mas ela é pequena!",
+      "Sua cidade é muito bonita, David."
+     ]
+    },
+    {
+     "t": "pick",
+     "w": "can",
+     "pt": "poder",
+     "o": [
+      "can",
+      "street",
+      "that"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "What is the next room?",
+     "pt": "Qual é a próxima sala?",
+     "v": "en-US-AnaNeural",
+     "x": [
+      "our",
+      "in",
+      "fifty"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "Yes! I love this museum!",
+     "pt": "Isso! Eu amo esse museu!",
+     "v": "en-US-EricNeural",
+     "o": [
+      "Today, everyone is at a big museum.",
+      "Yes! I love this museum!",
+      "It's not very big. But it's nice."
+     ]
+    },
+    {
+     "t": "meaning",
+     "w": "book",
+     "pt": "livro",
+     "o": [
+      "livro",
+      "muito",
+      "ver"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Yes! I love this museum!",
+     "pt": "Isso! Eu amo esse museu!",
+     "v": "en-US-EricNeural",
+     "o": [
+      "Isso! Eu amo esse museu!",
+      "Onde fica a casa dela?",
+      "E onde fica o seu quarto?"
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "London! Welcome, welcome! Come in.",
+     "pt": "Londres! Bem-vindos, bem-vindos! Entrem.",
+     "v": "en-IE-EmilyNeural",
+     "x": [
+      "is",
+      "shy",
+      "where"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u5z7",
+   "title": "car · eye · fifty · grandma",
+   "titlePt": "carro · olho · cinquenta · vovó",
+   "emoji": "⭐",
+   "words": [
+    "car",
+    "eye",
+    "fifty",
+    "grandma"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "car",
+     "pt": "carro"
+    },
+    {
+     "t": "meaning",
+     "w": "car",
+     "pt": "carro",
+     "o": [
+      "padaria",
+      "carro",
+      "aquele"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "eye",
+     "pt": "olho"
+    },
+    {
+     "t": "hear",
+     "w": "eye",
+     "pt": "olho",
+     "o": [
+      "old",
+      "lot",
+      "eye"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "car",
+       "carro"
+      ],
+      [
+       "eye",
+       "olho"
+      ],
+      [
+       "room",
+       "sala"
+      ],
+      [
+       "museum",
+       "museu"
+      ],
+      [
+       "come",
+       "vir"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "fifty",
+     "pt": "cinquenta"
+    },
+    {
+     "t": "pick",
+     "w": "fifty",
+     "pt": "cinquenta",
+     "o": [
+      "fifty",
+      "beautiful",
+      "window"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "grandma",
+     "pt": "vovó"
+    },
+    {
+     "t": "meaning",
+     "w": "grandma",
+     "pt": "vovó",
+     "o": [
+      "cinquenta",
+      "lindo",
+      "vovó"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "fifty",
+     "pt": "cinquenta",
+     "o": [
+      "fifty",
+      "park",
+      "window"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "fifty",
+       "cinquenta"
+      ],
+      [
+       "grandma",
+       "vovó"
+      ],
+      [
+       "car",
+       "carro"
+      ],
+      [
+       "eye",
+       "olho"
+      ],
+      [
+       "famous",
+       "famoso"
+      ]
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "The Mona Lisa? But it's small!",
+     "pt": "A Mona Lisa? Mas ela é pequena!",
+     "v": "en-US-EricNeural",
+     "x": [
+      "want",
+      "upstairs",
+      "today"
+     ]
+    },
+    {
+     "t": "fill",
+     "en": "You? Wow! You're very beautiful!",
+     "pt": "Você? Uau! Você é muito bonita!",
+     "v": "en-US-EricNeural",
+     "gap": "You? Wow! You're very ___!",
+     "w": "beautiful",
+     "o": [
+      "beautiful",
+      "there",
+      "brother"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "The Mona Lisa? But it's small!",
+     "pt": "A Mona Lisa? Mas ela é pequena!",
+     "v": "en-US-EricNeural",
+     "o": [
+      "E onde fica o seu quarto?",
+      "É a casa azul?",
+      "A Mona Lisa? Mas ela é pequena!"
+     ]
+    },
+    {
+     "t": "pick",
+     "w": "grandma",
+     "pt": "vovó",
+     "o": [
+      "grandma",
+      "blue",
+      "next"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "You? Wow! You're very beautiful!",
+     "pt": "Você? Uau! Você é muito bonita!",
+     "v": "en-US-EricNeural",
+     "x": [
+      "guide",
+      "long",
+      "my"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "Wow! This museum is famous, right?",
+     "pt": "Uau! Esse museu é famoso, né?",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Your house is big!",
+      "And the bakery! And my house!",
+      "Wow! This museum is famous, right?"
+     ]
+    },
+    {
+     "t": "meaning",
+     "w": "bakery",
+     "pt": "padaria",
+     "o": [
+      "cinquenta",
+      "padaria",
+      "carro"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Wow! This museum is famous, right?",
+     "pt": "Uau! Esse museu é famoso, né?",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "A casa de vocês é grande!",
+      "Sua rua é muito bonita, David.",
+      "Uau! Esse museu é famoso, né?"
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "This museum is famous, right?",
+     "pt": "Esse museu é famoso, né?",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "on",
+      "lot",
+      "he"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u5z8",
+   "title": "have · kitchen · like · near",
+   "titlePt": "ter · cozinha · gostar · perto",
+   "emoji": "🗝️",
+   "words": [
+    "have",
+    "kitchen",
+    "like",
+    "near"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "have",
+     "pt": "ter"
+    },
+    {
+     "t": "meaning",
+     "w": "have",
+     "pt": "ter",
+     "o": [
+      "rua",
+      "ter",
+      "ver"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "kitchen",
+     "pt": "cozinha"
+    },
+    {
+     "t": "hear",
+     "w": "kitchen",
+     "pt": "cozinha",
+     "o": [
+      "beautiful",
+      "kitchen",
+      "famous"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "have",
+       "ter"
+      ],
+      [
+       "kitchen",
+       "cozinha"
+      ],
+      [
+       "old",
+       "velho"
+      ],
+      [
+       "love",
+       "amor"
+      ],
+      [
+       "small",
+       "pequeno"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "like",
+     "pt": "gostar"
+    },
+    {
+     "t": "pick",
+     "w": "like",
+     "pt": "gostar",
+     "o": [
+      "come",
+      "white",
+      "like"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "near",
+     "pt": "perto"
+    },
+    {
+     "t": "meaning",
+     "w": "near",
+     "pt": "perto",
+     "o": [
+      "rua",
+      "grande",
+      "perto"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "like",
+     "pt": "gostar",
+     "o": [
+      "lot",
+      "like",
+      "love"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "like",
+       "gostar"
+      ],
+      [
+       "near",
+       "perto"
+      ],
+      [
+       "have",
+       "ter"
+      ],
+      [
+       "kitchen",
+       "cozinha"
+      ],
+      [
+       "eye",
+       "olho"
+      ]
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "The Mona Lisa? But it's small!",
+     "pt": "A Mona Lisa? Mas ela é pequena!",
+     "v": "en-US-EricNeural",
+     "x": [
+      "her",
+      "kid",
+      "upstairs"
+     ]
+    },
+    {
+     "t": "fill",
+     "en": "Come! This is the kitchen.",
+     "pt": "Venham! Esta é a cozinha.",
+     "v": "en-CA-LiamNeural",
+     "gap": "Come! This is the ___.",
+     "w": "kitchen",
+     "o": [
+      "kitchen",
+      "next",
+      "like"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "The Mona Lisa? But it's small!",
+     "pt": "A Mona Lisa? Mas ela é pequena!",
+     "v": "en-US-EricNeural",
+     "o": [
+      "Olá e bem-vindos! Eu sou o guia de vocês hoje.",
+      "Mas o gato também é pequeno!",
+      "A Mona Lisa? Mas ela é pequena!"
+     ]
+    },
+    {
+     "t": "pick",
+     "w": "near",
+     "pt": "perto",
+     "o": [
+      "old",
+      "come",
+      "near"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "Come! This is the kitchen.",
+     "pt": "Venham! Esta é a cozinha.",
+     "v": "en-CA-LiamNeural",
+     "x": [
+      "door",
+      "see",
+      "with"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "Wow! He likes you, Ben!",
+     "pt": "Uau! Ele gosta de você, Ben!",
+     "v": "en-CA-LiamNeural",
+     "o": [
+      "Wow! He likes you, Ben!",
+      "Mom! Can we have a cat?",
+      "Hi, Pépin! I'm Ben. I'm nice!"
+     ]
+    },
+    {
+     "t": "meaning",
+     "w": "eye",
+     "pt": "olho",
+     "o": [
+      "azul",
+      "olho",
+      "vir"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Wow! He likes you, Ben!",
+     "pt": "Uau! Ele gosta de você, Ben!",
+     "v": "en-CA-LiamNeural",
+     "o": [
+      "Oi! Paris é a sua cidade?",
+      "É a casa azul?",
+      "Uau! Ele gosta de você, Ben!"
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "The white house? Like in America?",
+     "pt": "A casa branca? Como nos Estados Unidos?",
+     "v": "en-US-EricNeural",
+     "x": [
+      "look",
+      "beautiful",
+      "day"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u5z9",
+   "title": "walk · year · be · bigger",
+   "titlePt": "andar · ano · ser · maior",
+   "emoji": "🚀",
+   "words": [
+    "walk",
+    "year",
+    "be",
+    "bigger"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "walk",
+     "pt": "andar"
+    },
+    {
+     "t": "meaning",
+     "w": "walk",
+     "pt": "andar",
+     "o": [
+      "rua",
+      "branco",
+      "andar"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "year",
+     "pt": "ano"
+    },
+    {
+     "t": "hear",
+     "w": "year",
+     "pt": "ano",
+     "o": [
+      "can",
+      "see",
+      "year"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "walk",
+       "andar"
+      ],
+      [
+       "year",
+       "ano"
+      ],
+      [
+       "park",
+       "parque"
+      ],
+      [
+       "small",
+       "pequeno"
+      ],
+      [
+       "that",
+       "aquele"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "be",
+     "pt": "ser"
+    },
+    {
+     "t": "pick",
+     "w": "be",
+     "pt": "ser",
+     "o": [
+      "book",
+      "love",
+      "be"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "bigger",
+     "pt": "maior"
+    },
+    {
+     "t": "meaning",
+     "w": "bigger",
+     "pt": "maior",
+     "o": [
+      "maior",
+      "vir",
+      "ano"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "be",
+     "pt": "ser",
+     "o": [
+      "eye",
+      "room",
+      "be"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "be",
+       "ser"
+      ],
+      [
+       "bigger",
+       "maior"
+      ],
+      [
+       "walk",
+       "andar"
+      ],
+      [
+       "year",
+       "ano"
+      ],
+      [
+       "have",
+       "ter"
+      ]
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "The Mona Lisa? But it's small!",
+     "pt": "A Mona Lisa? Mas ela é pequena!",
+     "v": "en-US-EricNeural",
+     "x": [
+      "great",
+      "family",
+      "thank"
+     ]
+    },
+    {
+     "t": "fill",
+     "en": "Come! This is the kitchen.",
+     "pt": "Venham! Esta é a cozinha.",
+     "v": "en-CA-LiamNeural",
+     "gap": "___! This is the kitchen.",
+     "w": "Come",
+     "o": [
+      "he",
+      "love",
+      "Come"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "The Mona Lisa? But it's small!",
+     "pt": "A Mona Lisa? Mas ela é pequena!",
+     "v": "en-US-EricNeural",
+     "o": [
+      "Oi, Pépin! Eu sou o Ben. Eu sou legal!",
+      "Londres! Bem-vindos, bem-vindos! Entrem.",
+      "A Mona Lisa? Mas ela é pequena!"
+     ]
+    },
+    {
+     "t": "pick",
+     "w": "bigger",
+     "pt": "maior",
+     "o": [
+      "blue",
+      "eye",
+      "bigger"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "Come! This is the kitchen.",
+     "pt": "Venham! Esta é a cozinha.",
+     "v": "en-CA-LiamNeural",
+     "x": [
+      "but",
+      "every",
+      "not"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "Wow! He likes you, Ben!",
+     "pt": "Uau! Ele gosta de você, Ben!",
+     "v": "en-CA-LiamNeural",
+     "o": [
+      "Wow! He likes you, Ben!",
+      "It's beautiful. Look at her eyes.",
+      "And where is your room, David?"
+     ]
+    },
+    {
+     "t": "meaning",
+     "w": "famous",
+     "pt": "famoso",
+     "o": [
+      "sala",
+      "famoso",
+      "maior"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Wow! He likes you, Ben!",
+     "pt": "Uau! Ele gosta de você, Ben!",
+     "v": "en-CA-LiamNeural",
+     "o": [
+      "Londres! Bem-vindos, bem-vindos! Entrem.",
+      "Venham! Esta é a cozinha.",
+      "Uau! Ele gosta de você, Ben!"
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "The white house? Like in America?",
+     "pt": "A casa branca? Como nos Estados Unidos?",
+     "v": "en-US-EricNeural",
+     "x": [
+      "fifty",
+      "welcome",
+      "visit"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u5z10",
+   "title": "Review",
+   "titlePt": "Revisão geral",
+   "emoji": "🏆",
+   "words": [],
+   "screens": [
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "room",
+       "sala"
+      ],
+      [
+       "eye",
+       "olho"
+      ],
+      [
+       "old",
+       "velho"
+      ],
+      [
+       "fifty",
+       "cinquenta"
+      ],
+      [
+       "can",
+       "poder"
+      ]
+     ]
+    },
+    {
+     "t": "meaning",
+     "w": "kitchen",
+     "pt": "cozinha",
+     "o": [
+      "vovó",
+      "famoso",
+      "cozinha"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "like",
+     "pt": "gostar",
+     "o": [
+      "bakery",
+      "like",
+      "kitchen"
+     ]
+    },
+    {
+     "t": "pick",
+     "w": "next",
+     "pt": "próximo",
+     "o": [
+      "next",
+      "bigger",
+      "big"
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "David, where is your house?",
+     "pt": "David, onde fica sua casa?",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "eye",
+      "am",
+      "guide"
+     ]
+    },
+    {
+     "t": "fill",
+     "en": "This city is nice!",
+     "pt": "Esta cidade é bacana!",
+     "v": "en-US-JennyNeural",
+     "gap": "___ city is nice!",
+     "w": "This",
+     "o": [
+      "can",
+      "This",
+      "small"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "David, where is your house?",
+     "pt": "David, onde fica sua casa?",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Oi! Paris é a sua cidade?",
+      "Ben... nossa casa é pequena.",
+      "David, onde fica sua casa?"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "lot",
+       "muito"
+      ],
+      [
+       "car",
+       "carro"
+      ],
+      [
+       "beautiful",
+       "lindo"
+      ],
+      [
+       "that",
+       "aquele"
+      ],
+      [
+       "small",
+       "pequeno"
+      ]
+     ]
+    },
+    {
+     "t": "type",
+     "en": "This city is nice!",
+     "pt": "Esta cidade é bacana!",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "not",
+      "your",
+      "bread"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "Your house is big!",
+     "pt": "A casa de vocês é grande!",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Yes! I love this museum!",
+      "It's there. The green door.",
+      "Your house is big!"
+     ]
+    },
+    {
+     "t": "meaning",
+     "w": "now",
+     "pt": "agora",
+     "o": [
+      "próximo",
+      "perto",
+      "agora"
+     ]
+    },
+    {
+     "t": "pick",
+     "w": "museum",
+     "pt": "museu",
+     "o": [
+      "small",
+      "kitchen",
+      "museum"
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "This museum is famous, right?",
+     "pt": "Esse museu é famoso, né?",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "beautiful",
+      "nice",
+      "people"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "This museum is famous, right?",
+     "pt": "Esse museu é famoso, né?",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Um parque? Ele é grande?",
+      "E onde fica o seu quarto?",
+      "Esse museu é famoso, né?"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "near",
+     "pt": "perto",
+     "o": [
+      "old",
+      "near",
+      "bigger"
+     ]
+    },
+    {
+     "t": "fill",
+     "en": "Welcome to my city!",
+     "pt": "Bem-vindo à minha cidade!",
+     "v": "en-US-JennyNeural",
+     "gap": "Welcome to my ___!",
+     "w": "city",
+     "o": [
+      "know",
+      "city",
+      "shy"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "Your house is big!",
+     "pt": "A casa de vocês é grande!",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "bakery",
+      "old",
+      "at"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "bigger",
+       "maior"
+      ],
+      [
+       "street",
+       "rua"
+      ],
+      [
+       "love",
+       "amor"
+      ],
+      [
+       "window",
+       "janela"
+      ],
+      [
+       "year",
+       "ano"
+      ]
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "Welcome to my city!",
+     "pt": "Bem-vindo à minha cidade!",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "brother",
+      "visit",
+      "your"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Welcome to my city!",
+     "pt": "Bem-vindo à minha cidade!",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Bem-vindo à minha cidade!",
+      "Sua rua é muito bonita, David.",
+      "E onde fica o seu quarto?"
+     ]
+    }
+   ]
+  }
+ ]
+}

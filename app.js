@@ -8,7 +8,7 @@
   const DEFAULT_VOICE = "en-US-JennyNeural";
   const SPEAKER = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>';
 
-  const state = { units: [], unitData: {}, levels: [], levelData: {}, glossary: {}, manifest: {}, wordfreq: {} };
+  const state = { units: [], pro: [], unitData: {}, zero: {}, levels: [], levelData: {}, glossary: {}, manifest: {}, wordfreq: {} };
 
   /* ---------- Progresso (fica salvo neste navegador) ---------- */
   const KEY = "d101.progress.v1";
@@ -67,7 +67,7 @@
       { target: ".unit.open .unit-banner", title: "Unidades recolhíveis",
         text: "Toque no título de uma unidade para <b>abrir ou recolher</b>. A unidade em que você está estudando fica aberta. O botão <b>📖 GUIA</b> traz as frases-chave com áudio." },
       { target: ".unit.open .levels", title: "5 níveis de dificuldade",
-        text: "A mesma história em 5 versões: do <b>1 · Básico</b> ao <b>5 · Nativo</b>, com gírias e subentendidos. Você escolhe o nível livremente, sem precisar passar pelos anteriores." },
+        text: "A mesma história em 5 versões: do <b>1 · Básico</b> ao <b>5 · Nativo</b>, com gírias e subentendidos. Você escolhe o nível livremente. Se o nível 1 estiver difícil, o <b>0 · Palavras</b> treina as palavras da unidade com exercícios curtos." },
       { target: ".unit.open .node .circle", round: true, pad: 24, title: "O círculo de cada lição",
         text: "Ele tem 4 partes: 📖 <b>leitura</b>, 🎧 <b>escuta</b>, 🎤 <b>fala</b> e ✍️ <b>escrita</b>. Cada uma acende quando você completa a lição daquele jeito. O ✓ embaixo indica lição concluída no nível escolhido." },
       { target: ".stats .fire", title: "Sequência e XP",
@@ -117,9 +117,9 @@
     return { read: !!r?.done, ...(r?.faces || {}) };
   };
 
-  // nível 1 usa a chave antiga ("u1l1"), os outros "u1l1@3"
-  const pkey = (id, level) => (level > 1 ? `${id}@${level}` : id);
-  const unitLevel = (unitId) => progress.unitLevel[unitId] || 1;
+  // nível 1 usa a chave antiga ("u1l1"), os outros "u1l1@3" (o nível 0, de vocabulário, "u1z1@0")
+  const pkey = (id, level) => (level === 1 ? id : `${id}@${level}`);
+  const unitLevel = (unitId) => progress.unitLevel[unitId] ?? 1;
   const levelInfo = (n) => state.levels.find(l => l.n === n) || { n, name: "", rate: "-5%" };
   const xpFor = (level, repeat) => (repeat ? 5 : 10 + 5 * level);
 
@@ -278,8 +278,12 @@
     state.wordfreq = wf;
     state.units = u.units; state.pro = u.pro || []; state.levels = lv.levels; state.glossary = g; state.manifest = m;
     const all = [...state.units, ...state.pro];
-    const datas = await Promise.all(all.map(x => getJSON("/" + x.file)));
+    const [datas, zeros] = await Promise.all([
+      Promise.all(all.map(x => getJSON("/" + x.file))),
+      Promise.all(all.map(x => getJSON(`/data/level0/u${x.id}.json`).catch(() => null))),
+    ]);
     datas.forEach((d, i) => { state.unitData[all[i].id] = d; });
+    zeros.forEach((d, i) => { if (d) state.zero[all[i].id] = d; });
   }
   // "stories" = unidades do curso; "pro" = trilhas profissionais
   const sectionOf = (u) => (state.pro.includes(u) ? "pro" : "stories");
@@ -293,9 +297,15 @@
       const d = state.unitData[u.id];
       const i = d.lessons.findIndex(l => l.id === id);
       if (i >= 0) return { unit: u, data: d, lesson: d.lessons[i], index: i, section: sectionOf(u) };
+      const z = state.zero[u.id]?.lessons || [];
+      const k = z.findIndex(l => l.id === id);
+      if (k >= 0) return { unit: u, data: d, lesson: z[k], index: k, section: sectionOf(u), zero: true };
     }
     return null;
   }
+  // lições de uma unidade num nível: o nível 0 tem as suas (10, de vocabulário); os outros são as histórias
+  const lessonsFor = (unitId, level) => (level === 0 ? state.zero[unitId]?.lessons || [] : state.unitData[unitId].lessons);
+  const levelsFor = (unitId) => state.levels.filter(l => l.n > 0 || state.zero[unitId]);
   // falas de uma lição num nível: o nível 1 está no arquivo da unidade; os outros em data/levels/uN-L.json
   async function getSteps(found, level) {
     if (level === 1) return { steps: found.lesson.steps, cast: found.data.cast };
@@ -337,7 +347,7 @@
     const last = progress.lastUnit?.[section];
     if (groups.some(u => String(u.id) === String(last))) return String(last);
     // sem histórico: a primeira unidade que ainda tem lição por fazer no nível escolhido
-    const pending = groups.find(u => state.unitData[u.id].lessons.some(l => !progress.lessons[pkey(l.id, unitLevel(u.id))]?.done));
+    const pending = groups.find(u => lessonsFor(u.id, unitLevel(u.id)).some(l => !progress.lessons[pkey(l.id, unitLevel(u.id))]?.done));
     return String((pending || groups[0])?.id);
   }
 
@@ -422,26 +432,29 @@
       const d = state.unitData[u.id];
       const lvl = unitLevel(u.id);
       const isOpen = open.has(String(u.id));
-      const doneHere = d.lessons.filter(l => progress.lessons[pkey(l.id, lvl)]?.done).length;
-      const paused = d.lessons.some(l => progress.inProgress?.[pkey(l.id, lvl)]);
+      const list = lessonsFor(u.id, lvl);
+      const doneHere = list.filter(l => progress.lessons[pkey(l.id, lvl)]?.done).length;
+      const paused = list.some(l => progress.inProgress?.[pkey(l.id, lvl)]);
       html += `<section class="unit ${isOpen ? "open" : "collapsed"}" data-unit="${u.id}" style="--unit-color:${u.color}">
         <div class="unit-banner" style="background:${u.color}" role="button" tabindex="0" aria-expanded="${isOpen}" data-toggle="${u.id}">
           <span class="uh-emoji" aria-hidden="true">${u.emoji}</span>
           <div class="uh-text"><h2>${esc(u.title)}</h2><p>${esc(u.subtitle)}</p></div>
           ${isOpen ? `<button class="guide-btn" data-guide="${u.id}">📖 GUIA</button>`
-            : `<span class="uh-meta">${paused ? "⏸ " : ""}${doneHere}/${d.lessons.length}</span>`}
+            : `<span class="uh-meta">${paused ? "⏸ " : ""}${doneHere}/${list.length}</span>`}
           <span class="chev" aria-hidden="true">${isOpen ? "▴" : "▾"}</span>
         </div>`;
       if (isOpen) {
         html += `<div class="levels" role="tablist" aria-label="Nível de dificuldade">
-          ${state.levels.map(l => {
-            const done = d.lessons.filter(x => progress.lessons[pkey(x.id, l.n)]?.done).length;
-            return `<button class="lv ${l.n === lvl ? "on" : ""} ${done === d.lessons.length ? "full" : ""}" data-unit="${u.id}" data-level="${l.n}" role="tab" aria-selected="${l.n === lvl}">
+          ${levelsFor(u.id).map(l => {
+            const ls = lessonsFor(u.id, l.n);
+            const done = ls.filter(x => progress.lessons[pkey(x.id, l.n)]?.done).length;
+            return `<button class="lv lv${l.n} ${l.n === lvl ? "on" : ""} ${ls.length && done === ls.length ? "full" : ""}" data-unit="${u.id}" data-level="${l.n}" role="tab" aria-selected="${l.n === lvl}">
               <b>${l.n}</b><small>${esc(l.name)}</small></button>`;
           }).join("")}
         </div>
+        ${lvl === 0 ? `<p class="zero-note">🔤 <b>Nível 0 · Palavras:</b> exercícios curtos e repetidos para fixar as palavras desta unidade antes das histórias.</p>` : ""}
         <div class="path">`;
-        d.lessons.forEach((l, i) => {
+        list.forEach((l, i) => {
           const done = progress.lessons[pkey(l.id, lvl)]?.done;
           const ip = progress.inProgress?.[pkey(l.id, lvl)];
           html += `<button class="node ${done ? "done" : ""}" data-lesson="${l.id}" data-level="${lvl}" data-unit="${u.id}" style="transform:translateX(${zig[i % zig.length]}px)">
@@ -535,6 +548,7 @@
       if (!progress.lessons[key]?.done) continue;
       const [id, lv] = key.split("@");
       const found = findLesson(id);
+      if (found?.zero) { for (const w of found.lesson.words || []) words.taught[w] = 1; continue; }
       const c = found && await getSteps(found, +(lv || 1));
       if (c) for (const { lemma } of lemmasOf(c.steps)) words.taught[lemma] = 1;
     }
@@ -623,6 +637,166 @@
 
   let cleanup = null; // encerra microfone/áudio ao sair da lição
 
+  /* ---------- Fala (reconhecimento de voz) ----------
+   * Falas com várias orações são capturadas uma oração por vez: o reconhecimento do navegador
+   * para sozinho numa pausa, e frases longas acabavam cortadas no meio. */
+  let activeRec = null;
+  const stopRec = () => { try { activeRec?.abort(); } catch {} activeRec = null; };
+  const wordsIn = (s) => (s.match(WORD_RE) || []).length;
+  function splitClauses(text) {
+    if (wordsIn(text) <= 7) return [text];
+    let parts = text.match(/[^.!?…]+(?:[.!?…]+["'”’)]*|$)\s*/g) || [text];
+    if (parts.join("") !== text) return [text];
+    // uma oração muito longa: corta também em vírgula, ponto e vírgula, dois-pontos ou travessão
+    parts = parts.flatMap(p => {
+      if (wordsIn(p) <= 12) return [p];
+      const bits = p.match(/[^,;:—]+(?:[,;:—]+|$)\s*/g) || [p];
+      if (bits.join("") !== p) return [p];
+      const out = [];
+      for (const b of bits) {
+        if (out.length && wordsIn(out[out.length - 1]) < 6) out[out.length - 1] += b; else out.push(b);
+      }
+      return out;
+    });
+    // pedaços curtinhos ("Hi!", "Ha!", "Mr.") se juntam ao vizinho
+    const merged = [];
+    for (const p of parts) {
+      if (merged.length && wordsIn(merged[merged.length - 1]) < 3) merged[merged.length - 1] += p;
+      else merged.push(p);
+    }
+    if (merged.length > 1 && wordsIn(merged[merged.length - 1]) < 3) { const last = merged.pop(); merged[merged.length - 1] += last; }
+    return merged.map(s => s.trim()).filter(Boolean);
+  }
+
+  // caixa de "repita em voz alta"; ctx liga a caixa à tela (rodapé, bloqueio do Continuar, acerto)
+  function createSpeak(expected, { mount, setFooter, setBlocker, isActive, onOk }) {
+    const parts = splitClauses(expected);
+    const multi = parts.length > 1;
+    let k = 0; // oração da vez
+    const box = document.createElement("div");
+    box.className = "practice speak-box";
+    box.innerHTML = `<div class="pr-head">${multi ? "🎤 Repita em voz alta, <b>uma parte de cada vez</b>" : "🎤 Agora repita a frase em voz alta"}</div>
+      ${multi ? `<div class="pr-parts">${parts.map((p, i) => `<span class="pp" data-i="${i}">${esc(p)}</span>`).join(" ")}</div>` : ""}
+      <div class="pr-said" aria-live="polite"></div>
+      <div class="pr-row"><button class="mic" aria-label="Falar">🎤</button><span class="pr-msg"></span></div>`;
+    mount(box);
+    const $said = box.querySelector(".pr-said"), $mic = box.querySelector(".mic"), $msg = box.querySelector(".pr-msg");
+    let alts = [], listening = false, finished = false, phase = "confirm";
+    const paintParts = () => box.querySelectorAll(".pp").forEach(el => {
+      const i = +el.dataset.i;
+      el.classList.toggle("done", i < k);
+      el.classList.toggle("cur", i === k && !finished);
+    });
+    const showSaid = (fin, interim = "") => {
+      $said.innerHTML = fin || interim
+        ? `${esc(fin)}${interim ? ` <i>${esc(interim)}</i>` : ""}`
+        : `<span class="ph">${listening ? (multi ? `Ouvindo… fale a parte ${k + 1} de ${parts.length}` : "Ouvindo… fale agora") : (multi ? `Toque no microfone e fale a parte ${k + 1} de ${parts.length}` : "Toque no microfone e fale")}</span>`;
+    };
+    paintParts();
+    showSaid("");
+    setFooter({ label: "Confirmar", disabled: true, skip: true });
+
+    function listen() {
+      if (finished) return;
+      stopAudio();
+      stopRec();
+      const rec = new SR();
+      activeRec = rec;
+      rec.lang = "en-US";
+      rec.interimResults = true;
+      rec.maxAlternatives = 3;
+      rec.continuous = false;
+      alts = [];
+      phase = "confirm";
+      listening = true;
+      box.classList.remove("ok", "bad");
+      $mic.classList.add("on");
+      $msg.textContent = "";
+      showSaid("");
+      setFooter({ label: "Confirmar", disabled: true, skip: true });
+      rec.onresult = (e) => {
+        const res = Array.from(e.results);
+        const fin = res.filter(r => r.isFinal);
+        const finText = fin.map(r => r[0].transcript).join(" ").trim();
+        const interim = res.filter(r => !r.isFinal).map(r => r[0].transcript).join(" ");
+        alts = fin.length === 1 ? Array.from(fin[0]).map(a => a.transcript.trim()) : finText ? [finText] : [];
+        showSaid(finText, interim);
+      };
+      rec.onerror = (e) => {
+        const msgs = {
+          "not-allowed": "Permita o uso do microfone no navegador para usar o modo Fala.",
+          "service-not-allowed": "Permita o uso do microfone no navegador para usar o modo Fala.",
+          "no-speech": "Não ouvi nada. Toque no 🎤 e tente de novo.",
+          "audio-capture": "Nenhum microfone encontrado.",
+          network: "O reconhecimento de voz precisa de internet.",
+        };
+        if (e.error !== "aborted") $msg.textContent = msgs[e.error] || "Não deu para ouvir. Toque no 🎤 e tente de novo.";
+      };
+      rec.onend = () => {
+        if (activeRec === rec) activeRec = null;
+        listening = false;
+        $mic.classList.remove("on");
+        if (finished) return;
+        if (alts.length) setFooter({ label: "Confirmar", disabled: false, skip: true });
+        else {
+          showSaid("");
+          if (!$msg.textContent) $msg.textContent = "Não captei nada. Toque no 🎤 e tente de novo.";
+        }
+      };
+      try { rec.start(); } catch { listening = false; $mic.classList.remove("on"); }
+    }
+
+    function confirmSaid() {
+      if (phase === "retry") return listen();
+      if (!alts.length) return;
+      const expectedNow = parts[k];
+      const best = alts.map(a => ({ said: a, ...M.score(expectedNow, a, "recall") })).sort((a, b) => b.score - a.score)[0];
+      // marca na frase captada o que não bateu, e mostra a frase original marcada logo abaixo
+      $said.innerHTML = markedHTML(best.said, best.gmarks);
+      const original = hasMarks(best.marks) ? `<div class="diff"><small>Original:</small> ${markedHTML(expectedNow, best.marks)}</div>` : "";
+      if (best.score < THRESHOLD.speak) {
+        box.classList.add("bad");
+        $msg.innerHTML = `Quase! Repare no que está marcado com <b class="mk-legend">!</b><div class="diff"><small>Original:</small> ${markedHTML(expectedNow, best.marks)}</div>`;
+        phase = "retry";
+        setFooter({ label: "Tentar de novo", skip: true, bad: true });
+        return;
+      }
+      if (k < parts.length - 1) {
+        // parte certa: segue para a próxima oração, já ouvindo
+        k++;
+        paintParts();
+        box.classList.add("ok");
+        $msg.innerHTML = `${best.exact ? "Isso! 👍" : `Boa! Repare no <b class="mk-legend">!</b>${original}`} Agora a parte ${k + 1} de ${parts.length}.`;
+        alts = [];
+        setFooter({ label: "Confirmar", disabled: true, skip: true });
+        setTimeout(() => { if (!finished && !listening && isActive()) listen(); }, best.exact ? 700 : 1600);
+        return;
+      }
+      finished = true;
+      k = parts.length;
+      paintParts();
+      onOk();
+      box.classList.add("ok");
+      $msg.innerHTML = best.exact ? "Perfeito! 🎉" : `Muito bem! 👍 Repare no que está marcado com <b class="mk-legend">!</b>${original}`;
+      setBlocker(null);
+      setFooter({ ok: true, fb: best.exact ? "Perfeito!" : "Boa pronúncia!" });
+    }
+    function finishSkip(text) {
+      finished = true;
+      stopRec();
+      box.classList.add("skipped");
+      $msg.textContent = text;
+      setBlocker(null);
+      setFooter();
+    }
+    $mic.onclick = listen;
+    setBlocker({ kind: "speak", primary: confirmSaid, skip: () => finishSkip("Pulado."), cancel: () => finishSkip("Modo Fala desligado.") });
+    return {
+      box,
+      autoStart(delay) { setTimeout(() => { if (!finished && !listening && isActive()) listen(); }, delay); },
+    };
+  }
+
   async function renderLesson(id, level) {
     const found = findLesson(id);
     if (!found) return go("#/");
@@ -653,7 +827,6 @@
     const stats = { speakOk: 0, writeOk: 0, writeTotal: 0 };
     const shown = []; // falas já exibidas
     let sinceWrite = 0, writeGap = 2 + Math.round(Math.random()), writeIdx = 0;
-    let activeRec = null;
 
     // progresso salvo da lição (cada nível tem o seu); salvo a cada passo concluído
     const lkey = pkey(lesson.id, level);
@@ -689,6 +862,7 @@
           <div class="start-ring">${ringSVG(facesOf(pkey(lesson.id, level)))}</div>
           ${newWords.length ? `<div class="new-words"><div class="nw-title">✨ Palavras novas nesta história</div>
             ${wordListHTML(newWords)}<p class="nw-note">Elas aparecem <span class="nw-sample">destacadas</span> no diálogo, e eu confiro se ficou claro.</p></div>` : ""}
+          ${level === 1 && state.zero[unit.id] && pos < 0 ? `<a class="zero-link" href="#/lesson/${(state.zero[unit.id].lessons.find(l => !progress.lessons[pkey(l.id, 0)]?.done) || state.zero[unit.id].lessons[0]).id}/0">🔤 Achou difícil? Treine antes o vocabulário no <b>nível 0</b> →</a>` : ""}
           ${saved ? `<p class="resume-note">⏸ Você parou em <b>${saved.pct}%</b> desta história. Continue de onde parou ou recomece.</p>` : ""}
           <p class="mode-hint">Escolha os modos <b>antes de começar</b> para completar o círculo: 📖 leitura (sempre), 🎧 escuta (áudio ligado), 🎤 fala e ✍️ escrita (80% de acertos).</p>
         </div>
@@ -712,7 +886,6 @@
       $footer.classList.toggle("bad", bad);
       $fb.textContent = fb;
     }
-    const stopRec = () => { try { activeRec?.abort(); } catch {} activeRec = null; };
     cleanup = () => { stopRec(); stopAudio(); };
 
     /* modos */
@@ -840,107 +1013,13 @@
 
     /* ---------- Fala: repetir cada fala do diálogo ---------- */
     function startSpeak(expected) {
-      const box = document.createElement("div");
-      box.className = "practice speak-box";
-      box.innerHTML = `<div class="pr-head">🎤 Agora repita a frase em voz alta</div>
-        <div class="pr-said" aria-live="polite"></div>
-        <div class="pr-row"><button class="mic" aria-label="Falar">🎤</button><span class="pr-msg"></span></div>`;
-      $feed.appendChild(box);
-      const $said = box.querySelector(".pr-said"), $mic = box.querySelector(".mic"), $msg = box.querySelector(".pr-msg");
-      let alts = [], listening = false, finished = false, phase = "confirm";
-      const showSaid = (fin, interim = "") => {
-        $said.innerHTML = fin || interim
-          ? `${esc(fin)}${interim ? ` <i>${esc(interim)}</i>` : ""}`
-          : `<span class="ph">${listening ? "Ouvindo… fale agora" : "Toque no microfone e fale"}</span>`;
-      };
-      showSaid("");
-      setFooter({ label: "Confirmar", disabled: true, skip: true });
-
-      function listen() {
-        if (finished) return;
-        stopAudio();
-        stopRec();
-        const rec = new SR();
-        activeRec = rec;
-        rec.lang = "en-US";
-        rec.interimResults = true;
-        rec.maxAlternatives = 3;
-        rec.continuous = false;
-        alts = [];
-        phase = "confirm";
-        listening = true;
-        box.classList.remove("ok", "bad");
-        $mic.classList.add("on");
-        $msg.textContent = "";
-        showSaid("");
-        setFooter({ label: "Confirmar", disabled: true, skip: true });
-        rec.onresult = (e) => {
-          const res = Array.from(e.results);
-          const fin = res.filter(r => r.isFinal);
-          const finText = fin.map(r => r[0].transcript).join(" ").trim();
-          const interim = res.filter(r => !r.isFinal).map(r => r[0].transcript).join(" ");
-          alts = fin.length === 1 ? Array.from(fin[0]).map(a => a.transcript.trim()) : finText ? [finText] : [];
-          showSaid(finText, interim);
-        };
-        rec.onerror = (e) => {
-          const msgs = {
-            "not-allowed": "Permita o uso do microfone no navegador para usar o modo Fala.",
-            "service-not-allowed": "Permita o uso do microfone no navegador para usar o modo Fala.",
-            "no-speech": "Não ouvi nada. Toque no 🎤 e tente de novo.",
-            "audio-capture": "Nenhum microfone encontrado.",
-            network: "O reconhecimento de voz precisa de internet.",
-          };
-          if (e.error !== "aborted") $msg.textContent = msgs[e.error] || "Não deu para ouvir. Toque no 🎤 e tente de novo.";
-        };
-        rec.onend = () => {
-          if (activeRec === rec) activeRec = null;
-          listening = false;
-          $mic.classList.remove("on");
-          if (finished) return;
-          if (alts.length) setFooter({ label: "Confirmar", disabled: false, skip: true });
-          else {
-            showSaid("");
-            if (!$msg.textContent) $msg.textContent = "Não captei nada. Toque no 🎤 e tente de novo.";
-          }
-        };
-        try { rec.start(); } catch { listening = false; $mic.classList.remove("on"); }
-      }
-
-      function confirmSaid() {
-        if (phase === "retry") return listen();
-        if (!alts.length) return;
-        const best = alts.map(a => ({ said: a, ...M.score(expected, a, "recall") })).sort((a, b) => b.score - a.score)[0];
-        // marca na frase captada o que não bateu, e mostra a frase original marcada logo abaixo
-        $said.innerHTML = markedHTML(best.said, best.gmarks);
-        const original = hasMarks(best.marks) ? `<div class="diff"><small>Original:</small> ${markedHTML(expected, best.marks)}</div>` : "";
-        if (best.score >= THRESHOLD.speak) {
-          finished = true;
-          stats.speakOk++;
-          box.classList.add("ok");
-          $msg.innerHTML = best.exact ? "Perfeito! 🎉" : `Muito bem! 👍 Repare no que está marcado com <b class="mk-legend">!</b>${original}`;
-          blocker = null;
-          setFooter({ ok: true, fb: best.exact ? "Perfeito!" : "Boa pronúncia!" });
-        } else {
-          box.classList.add("bad");
-          $msg.innerHTML = `Quase! Repare no que está marcado com <b class="mk-legend">!</b><div class="diff"><small>Original:</small> ${markedHTML(expected, best.marks)}</div>`;
-          phase = "retry";
-          setFooter({ label: "Tentar de novo", skip: true, bad: true });
-        }
-      }
-      function finishSkip(text) {
-        finished = true;
-        stopRec();
-        box.classList.add("skipped");
-        $msg.textContent = text;
-        blocker = null;
-        setFooter();
-      }
-      $mic.onclick = listen;
-      blocker = { kind: "speak", primary: confirmSaid, skip: () => finishSkip("Pulado."), cancel: () => finishSkip("Modo Fala desligado.") };
-      return {
-        box,
-        autoStart(delay) { setTimeout(() => { if (!finished && !listening && blocker?.kind === "speak") listen(); }, delay); },
-      };
+      return createSpeak(expected, {
+        mount: (el) => $feed.appendChild(el),
+        setFooter,
+        setBlocker: (b) => { blocker = b; },
+        isActive: () => blocker?.kind === "speak",
+        onOk: () => { stats.speakOk++; },
+      });
     }
 
     /* ---------- Escrita: completar, copiar, ditado ou tradução ---------- */
@@ -1246,6 +1325,439 @@
     };
   }
 
+  /* ---------- Nível 0: vocabulário em ciclo de repetição ----------
+   * 20 telas por lição: apresentar a palavra, reconhecer, ouvir, combinar pares, montar e completar
+   * frases, falar e escrever. Com ✍️ Escrita ligada, montar frases vira digitar; com 🎤 Fala ligada,
+   * as frases são repetidas em voz alta. Errou? A tela volta no fim da lição (uma vez). */
+  const shuffle = (a) => { const b = [...a]; for (let i = b.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [b[i], b[j]] = [b[j], b[i]]; } return b; };
+  const tokensOf = (s) => s.match(WORD_RE) || [];
+  const sameTokens = (a, b) => tokensOf(a).join(" ").toLowerCase() === tokensOf(b).join(" ").toLowerCase();
+
+  async function renderDrill(id) {
+    const found = findLesson(id);
+    if (!found?.zero) return go("#/");
+    const { lesson, unit, section } = found;
+    const home = homeHash(section);
+    const level = 0, key = pkey(lesson.id, 0);
+    const info = levelInfo(0);
+    const screens = lesson.screens;
+    await ensureWords();
+    document.title = `Vocabulário ${found.index + 1} – ${unit.title} – Prolingo`;
+
+    const mode = { listen: !!progress.autoplay, speak: !!progress.modes.speak && !!SR, write: !!progress.modes.write };
+    const eligible = { ...mode };
+    const stats = { speakOk: 0, speakTotal: 0, writeOk: 0, writeTotal: 0 };
+    let queue = screens.map((_, i) => i), qi = -1, firstOk = 0, scored = 0, retried = [];
+    let blocker = null, checker = null, phase = "start", isWrite = false;
+
+    progress.inProgress ||= {};
+    const saved = progress.inProgress[key]?.queue ? progress.inProgress[key] : null;
+    const snapshot = () => {
+      progress.inProgress[key] = { queue, qi, firstOk, scored, retried, stats: { ...stats }, eligible: { ...eligible }, pct: Math.round(((qi + 1) / queue.length) * 100), at: today() };
+      saveProgress(progress);
+    };
+    const clearSnapshot = () => { if (progress.inProgress[key]) { delete progress.inProgress[key]; saveProgress(progress); } };
+    const wordsList = lesson.words.map(w => ({ lemma: w, show: w, gloss: screens.find(s => s.w === w && s.pt)?.pt || shortGloss(state.glossary[w] || "") }));
+
+    $app.innerHTML = `<div class="lesson drill-lesson">
+      <div class="lesson-head">
+        <div class="lesson-top">
+          <button class="close" aria-label="Sair">✕</button>
+          <div class="bar"><div></div></div>
+        </div>
+        <div class="modes" role="group" aria-label="Modos de estudo">
+          <button class="mode" data-mode="listen" title="Tocar o áudio automaticamente">🎧 Escuta</button>
+          <button class="mode" data-mode="speak" title="Repetir as frases em voz alta">🎤 Fala</button>
+          <button class="mode" data-mode="write" title="Digitar as frases em vez de montar com blocos">✍️ Escrita</button>
+        </div>
+      </div>
+      <div class="feed drill">
+        <div class="story-head">
+          <div class="art">${lesson.emoji}</div>
+          <div class="title"><span class="en drill-title">${esc(lesson.title)}</span></div>
+          <div class="sub">${esc(lesson.titlePt)} · ${esc(unit.title)}</div>
+          <div class="lv-badge lv-0">Nível 0 · ${esc(info.name)} <span>${esc(info.cefr || "")}</span></div>
+          <div class="start-ring">${ringSVG(facesOf(key))}</div>
+          ${wordsList.length ? `<div class="new-words"><div class="nw-title">✨ Palavras desta lição</div>${wordListHTML(wordsList)}</div>`
+            : `<p class="mode-hint">Revisão de todas as palavras da unidade.</p>`}
+          ${saved ? `<p class="resume-note">⏸ Você parou em <b>${saved.pct}%</b> desta lição. Continue de onde parou ou recomece.</p>` : ""}
+          <p class="mode-hint">20 exercícios curtos. Ligue os modos <b>antes de começar</b> para completar o círculo: 🎧 escuta, 🎤 fala (repetir frases) e ✍️ escrita (digitar em vez de montar).</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer"><div class="footer-inner"><span class="feedback"></span><button class="btn ghost skip" hidden>Pular</button><button class="btn main">Começar</button></div></div>`;
+
+    const $stage = $app.querySelector(".drill");
+    const $bar = $app.querySelector(".bar > div");
+    const $btn = $app.querySelector(".btn.main");
+    const $skip = $app.querySelector(".btn.skip");
+    const $footer = $app.querySelector(".footer");
+    const $fb = $app.querySelector(".feedback");
+    function setFooter({ label = "Continuar", disabled = false, skip = false, skipLabel = "Pular", ok = false, bad = false, fb = "" } = {}) {
+      $btn.textContent = label;
+      $btn.disabled = disabled;
+      $skip.hidden = !skip;
+      $skip.textContent = skipLabel;
+      $footer.classList.toggle("ok", ok);
+      $footer.classList.toggle("bad", bad);
+      $fb.innerHTML = fb;
+    }
+    cleanup = () => { stopRec(); stopAudio(); };
+
+    const $modes = $app.querySelectorAll(".mode");
+    function paintModes() {
+      $modes.forEach(b => {
+        b.classList.toggle("on", mode[b.dataset.mode]);
+        b.setAttribute("aria-pressed", mode[b.dataset.mode]);
+        if (b.dataset.mode === "speak" && !SR) b.classList.add("unavailable");
+      });
+    }
+    $modes.forEach(b => b.onclick = () => {
+      const m = b.dataset.mode;
+      if (m === "speak" && !SR) return toast("Este navegador não reconhece voz. Use o Chrome (Android/PC) ou o Safari (iPhone).");
+      mode[m] = !mode[m];
+      if (m === "listen") progress.autoplay = mode.listen; else progress.modes[m] = mode[m];
+      saveProgress(progress);
+      if (!mode[m]) { eligible[m] = false; if (m === "listen") stopAudio(); if (blocker?.kind === m) blocker.cancel(); }
+      else if (phase !== "start") { eligible[m] = false; toast(`${b.textContent.trim()} ligado. Vale a partir da próxima tela; para contar no círculo, precisa estar ativo desde o início.`); }
+      else eligible[m] = true;
+      paintModes();
+    });
+    paintModes();
+
+    $app.querySelector(".close").onclick = async () => {
+      if (phase === "start") return go(home);
+      const leave = await confirmDialog({
+        title: "Sair da lição?", text: "Seu progresso fica salvo. Quando voltar, você continua de onde parou.",
+        cancel: "Continuar estudando", ok: "Sair e continuar depois",
+      });
+      if (leave) go(home);
+    };
+
+    const say = (w) => playWord(w);
+    const sayLine = (sc, btn, onEnd) => playSentence(sc.v, sc.en, btn, "-5%", onEnd);
+    const speakerBig = (label = "Ouvir") => `<button class="big-speaker" aria-label="${label}">${SPEAKER}</button>`;
+    const prompt = (tag, title) => `<div class="dr-tag">${tag}</div><h2 class="dr-q">${title}</h2>`;
+
+    // opções de múltipla escolha; "lang" en faz cada toque falar a palavra
+    function choices(options, right, { en = false, speakTap = false } = {}) {
+      const box = document.createElement("div");
+      box.className = "dr-opts";
+      box.innerHTML = options.map((o, n) => `<button class="opt" data-n="${n}"><span class="box">${n + 1}</span><span class="${en ? "en" : ""}">${esc(o)}</span></button>`).join("");
+      $stage.appendChild(box);
+      let chosen = null;
+      box.querySelectorAll(".opt").forEach(b => b.onclick = () => {
+        if (phase !== "answer") return;
+        box.querySelectorAll(".opt").forEach(x => x.classList.remove("sel"));
+        b.classList.add("sel");
+        chosen = options[+b.dataset.n];
+        if (speakTap) say(chosen);
+        setFooter({ label: "Verificar" });
+      });
+      $stage._choose = (n) => box.querySelector(`.opt[data-n="${n}"]`)?.click();
+      checker = () => {
+        const ok = chosen === right;
+        box.querySelectorAll(".opt").forEach(x => {
+          x.disabled = true;
+          if (options[+x.dataset.n] === right) x.classList.add("right");
+          else if (x.classList.contains("sel")) x.classList.add("wrong");
+        });
+        return { ok, answer: right };
+      };
+      setFooter({ label: "Verificar", disabled: true });
+    }
+
+    // montar a frase tocando nos blocos
+    function tiles(answer, extra) {
+      const words = shuffle([...tokensOf(answer), ...(extra || [])]);
+      const box = document.createElement("div");
+      box.className = "dr-bank";
+      box.innerHTML = `<div class="dr-line" aria-live="polite"></div><div class="dr-tiles">${words.map((w, i) => `<button class="tile" data-i="${i}">${esc(w)}</button>`).join("")}</div>`;
+      $stage.appendChild(box);
+      const $line = box.querySelector(".dr-line");
+      const picked = [];
+      const paint = () => {
+        $line.innerHTML = picked.map(i => `<button class="tile in" data-i="${i}">${esc(words[i])}</button>`).join("");
+        box.querySelectorAll(".dr-tiles .tile").forEach(t => t.classList.toggle("used", picked.includes(+t.dataset.i)));
+        setFooter({ label: "Verificar", disabled: !picked.length });
+      };
+      box.addEventListener("click", (e) => {
+        const t = e.target.closest(".tile");
+        if (!t || phase !== "answer") return;
+        const i = +t.dataset.i;
+        if (t.classList.contains("in")) picked.splice(picked.indexOf(i), 1);
+        else if (!picked.includes(i)) { picked.push(i); say(words[i]); }
+        paint();
+      });
+      paint();
+      checker = () => {
+        const given = picked.map(i => words[i]).join(" ");
+        box.querySelectorAll(".tile").forEach(t => t.disabled = true);
+        return { ok: sameTokens(given, answer), answer };
+      };
+    }
+
+    // digitar (tradução ou ditado), com a mesma tolerância dos exercícios de escrita
+    function typed(answer, kind) {
+      const box = document.createElement("div");
+      box.className = "dr-type";
+      box.innerHTML = `<textarea class="write-input" rows="2" autocomplete="off" autocapitalize="sentences" spellcheck="false" placeholder="Escreva em inglês"></textarea><div class="pr-msg"></div>`;
+      $stage.appendChild(box);
+      const $in = box.querySelector("textarea");
+      $in.oninput = () => setFooter({ label: "Verificar", disabled: !$in.value.trim() });
+      $in.onfocus = () => setTimeout(() => $in.scrollIntoView({ block: "center", behavior: "instant" }), 250);
+      setTimeout(() => $in.focus({ preventScroll: true }), 50);
+      setFooter({ label: "Verificar", disabled: true });
+      checker = () => {
+        const r = M.score(answer, $in.value, kind);
+        const ok = r.score >= THRESHOLD[kind];
+        isWrite = true;
+        $in.disabled = true;
+        $in.blur();
+        if (!r.exact) box.querySelector(".pr-msg").innerHTML = `<div class="diff"><small>Resposta:</small> ${markedHTML(answer, r.marks)}</div>`;
+        return { ok, answer, near: ok && !r.exact };
+      };
+    }
+
+    function show(sc) {
+      $stage.innerHTML = "";
+      $stage._choose = null;
+      checker = null;
+      isWrite = false;
+      phase = "answer";
+      const el = document.createElement("div");
+      el.className = "dr-screen";
+      $stage.appendChild(el);
+      const add = (html) => el.insertAdjacentHTML("beforeend", html);
+      const wire = (fn) => el.querySelectorAll(".big-speaker").forEach(b => b.onclick = () => fn(b));
+      switch (sc.t) {
+        case "intro":
+          add(`${prompt("✨ PALAVRA NOVA", "")}<div class="dr-card">${speakerBig()}<div class="dr-word en">${esc(sc.w)}</div><div class="dr-pt">${esc(sc.pt)}</div></div>
+            <p class="dr-hint">Toque no alto-falante para ouvir de novo.</p>`);
+          wire(() => say(sc.w));
+          say(sc.w);
+          phase = "result";
+          setFooter({ label: "Continuar" });
+          return;
+        case "meaning":
+          add(prompt("ESCOLHA O SIGNIFICADO", `O que significa <button class="nw-play big" data-w="${esc(sc.w)}">${SPEAKER}<b>${esc(sc.w)}</b></button>?`));
+          if (mode.listen) say(sc.w);
+          return choices(sc.o, sc.pt);
+        case "pick":
+          add(prompt("ESCOLHA A PALAVRA", `Como se diz “${esc(sc.pt)}”?`));
+          return choices(sc.o, sc.w, { en: true, speakTap: true });
+        case "hear":
+          add(`${prompt("🎧 O QUE VOCÊ OUVE?", "Toque na palavra que você ouviu")}<div class="dr-listen">${speakerBig()}</div>`);
+          wire(() => say(sc.w));
+          say(sc.w);
+          return choices(sc.o, sc.w, { en: true });
+        case "pairs": return pairs(sc, add);
+        case "fill":
+          add(`${prompt("COMPLETE A FRASE", "")}<div class="dr-sentence">${speakerBig()}<span class="en">${esc(sc.gap).replace("___", '<span class="gap">____</span>')}</span></div><div class="dr-pt-line">${esc(sc.pt)}</div>`);
+          wire((b) => sayLine(sc, b));
+          return choices(sc.o, sc.w, { en: true, speakTap: true });
+        case "listen":
+          add(`${prompt("🎧 O QUE VOCÊ OUVE?", "Escolha a frase que você ouviu")}<div class="dr-listen">${speakerBig()}</div>`);
+          wire((b) => sayLine(sc, b));
+          sayLine(sc, el.querySelector(".big-speaker"));
+          return choices(sc.o, sc.en, { en: true });
+        case "bank":
+          if (mode.write) {
+            add(prompt("✍️ ESCREVA EM INGLÊS", esc(sc.pt)));
+            return typed(sc.en, "translate");
+          }
+          add(prompt("MONTE A FRASE EM INGLÊS", esc(sc.pt)));
+          return tiles(sc.en, sc.x);
+        case "type":
+          add(`${prompt(mode.write ? "✍️ ESCREVA O QUE VOCÊ OUVE" : "🎧 MONTE O QUE VOCÊ OUVE", "")}<div class="dr-listen">${speakerBig()}</div>`);
+          wire((b) => sayLine(sc, b));
+          sayLine(sc, el.querySelector(".big-speaker"));
+          return mode.write ? typed(sc.en, "dictation") : tiles(sc.en, sc.x);
+        case "speak":
+          if (mode.speak) {
+            add(`${prompt("🎤 FALE EM VOZ ALTA", "")}<div class="dr-sentence">${speakerBig()}<span class="en">${wordsHTML(sc.en)}</span></div><div class="dr-pt-line">${esc(sc.pt)}</div>`);
+            wire((b) => sayLine(sc, b));
+            stats.speakTotal++;
+            phase = "result"; // quem libera o Continuar é a própria caixa de fala
+            const sp = createSpeak(sc.en, {
+              mount: (box) => $stage.appendChild(box),
+              setFooter,
+              setBlocker: (b) => { blocker = b; },
+              isActive: () => blocker?.kind === "speak",
+              onOk: () => { stats.speakOk++; firstOk++; },
+            });
+            scored++;
+            sayLine(sc, el.querySelector(".big-speaker"), () => sp.autoStart(250));
+            return;
+          }
+          add(`${prompt("O QUE ESTA FRASE SIGNIFICA?", "")}<div class="dr-sentence">${speakerBig()}<span class="en">${wordsHTML(sc.en)}</span></div>`);
+          wire((b) => sayLine(sc, b));
+          if (mode.listen) sayLine(sc, el.querySelector(".big-speaker"));
+          return choices(sc.o, sc.pt);
+      }
+    }
+
+    function pairs(sc, add) {
+      add(prompt("TOQUE NOS PARES", ""));
+      const left = shuffle(sc.p.map(p => p[0])), right = shuffle(sc.p.map(p => p[1]));
+      const box = document.createElement("div");
+      box.className = "dr-pairs";
+      box.innerHTML = left.map((w, i) => `<button class="tile en" data-side="en" data-v="${esc(w)}">${esc(w)}</button><button class="tile" data-side="pt" data-v="${esc(right[i])}">${esc(right[i])}</button>`).join("");
+      $stage.appendChild(box);
+      let sel = null, errors = 0, left_ = sc.p.length;
+      const match = (en, pt) => sc.p.some(p => p[0] === en && p[1] === pt);
+      setFooter({ label: "Continuar", disabled: true });
+      box.querySelectorAll(".tile").forEach(t => t.onclick = () => {
+        if (t.classList.contains("done")) return;
+        if (t.dataset.side === "en") say(t.dataset.v);
+        if (!sel || sel.dataset.side === t.dataset.side) {
+          box.querySelectorAll(".tile.sel").forEach(x => x.classList.remove("sel"));
+          sel = t; t.classList.add("sel");
+          return;
+        }
+        const [en, pt] = sel.dataset.side === "en" ? [sel.dataset.v, t.dataset.v] : [t.dataset.v, sel.dataset.v];
+        const pair = [sel, t];
+        sel = null;
+        pair.forEach(x => x.classList.remove("sel"));
+        if (match(en, pt)) {
+          pair.forEach(x => { x.classList.add("done"); x.disabled = true; });
+          if (--left_ === 0) {
+            scored++;
+            if (!errors) firstOk++;
+            phase = "result";
+            setFooter({ ok: true, fb: errors ? "Isso! 👍" : "Perfeito! 🎉" });
+            $btn.focus();
+          }
+        } else {
+          errors++;
+          pair.forEach(x => { x.classList.remove("bad"); void x.offsetWidth; x.classList.add("bad"); });
+        }
+      });
+    }
+
+    function check() {
+      if (!checker) return;
+      const sc = screens[queue[qi]];
+      const { ok, answer, near } = checker();
+      checker = null;
+      phase = "result";
+      const first = !retried.includes(queue[qi]) || queue.indexOf(queue[qi]) === qi;
+      if (first) { scored++; if (ok) firstOk++; }
+      if (first && isWrite) { stats.writeTotal++; if (ok) stats.writeOk++; } // escrita conta a 1ª tentativa
+      if (ok) {
+        if (sc.en && sc.t !== "listen") sayLine(sc);
+        else if (sc.w) say(sc.w);
+        setFooter({ ok: true, fb: near ? "Quase perfeito! 👍" : ["Excelente! 🎉", "Muito bem! ✨", "Perfeito! 💪", "Mandou bem! 🙌"][Math.floor(Math.random() * 4)] });
+      } else {
+        // errou: a tela volta no fim da lição (uma vez só)
+        if (!retried.includes(queue[qi])) { retried.push(queue[qi]); queue.push(queue[qi]); }
+        setFooter({ bad: true, label: "Continuar", fb: `<small>Resposta certa:</small> ${esc(answer)}` });
+        if (sc.en) sayLine(sc);
+      }
+      $btn.focus();
+    }
+
+    function next() {
+      if (qi >= 0) snapshot();
+      stopAudio();
+      qi++;
+      $bar.style.width = (qi / queue.length) * 100 + "%";
+      if (qi >= queue.length) return finish();
+      show(screens[queue[qi]]);
+    }
+
+    function finish() {
+      cleanup();
+      clearSnapshot();
+      const acc = scored ? Math.round((firstOk / scored) * 100) : 100;
+      const repeat = !!progress.lessons[key];
+      const speakRate = stats.speakTotal ? stats.speakOk / stats.speakTotal : 0;
+      const writeRate = stats.writeTotal ? stats.writeOk / stats.writeTotal : 0;
+      const earned = {
+        listen: eligible.listen && mode.listen,
+        speak: eligible.speak && mode.speak && stats.speakTotal > 0 && speakRate >= PASS_RATE,
+        write: eligible.write && mode.write && stats.writeTotal > 0 && writeRate >= PASS_RATE,
+      };
+      const fresh = registerStudy(key, acc, 0, earned);
+      for (const w of lesson.words) progress.words.taught[w] ||= today();
+      saveProgress(progress);
+      const faces = facesOf(key);
+      const zl = lessonsFor(unit.id, 0);
+      const nextZero = zl[found.index + 1];
+      const firstStory = state.unitData[unit.id].lessons[0];
+      const pct = (r) => Math.round(r * 100) + "%";
+      const why = {
+        read: "Lição concluída",
+        listen: earned.listen ? "Áudio ligado do início ao fim" : "Faça com 🎧 Escuta ligada do início ao fim",
+        speak: eligible.speak && mode.speak ? `${stats.speakOk}/${stats.speakTotal} frases faladas (${pct(speakRate)}; precisa de 80%)` : "Ligue 🎤 Fala antes de começar",
+        write: eligible.write && mode.write ? `${stats.writeOk}/${stats.writeTotal} frases escritas (${pct(writeRate)}; precisa de 80%)` : "Ligue ✍️ Escrita antes de começar",
+      };
+      $app.innerHTML = `<div class="end">
+        <div class="end-ring">${ringWithIcons(faces)}<span>${acc === 100 ? "🏆" : "🎉"}</span></div>
+        <h1>Lição concluída!</h1>
+        <p style="color:var(--muted);margin:0">Vocabulário ${found.index + 1} de ${zl.length} · ${esc(unit.title)}</p>
+        <div class="cards">
+          <div class="card"><div class="k">XP</div><div class="v">⚡ ${xpFor(0, repeat) + 5 * fresh.length}</div></div>
+          <div class="card green"><div class="k">PRECISÃO</div><div class="v">🎯 ${acc}%</div></div>
+        </div>
+        ${wordsList.length ? `<div class="new-words learned"><div class="nw-title">✨ Palavras que você treinou</div>${wordListHTML(wordsList)}</div>` : ""}
+        <ul class="face-list">
+          ${FACES.map(f => `<li class="${faces[f.id] ? "got" : ""}"><span class="dot" style="background:${faces[f.id] ? f.color : "var(--ring-off)"}"></span>
+            <b>${f.icon} ${f.name}</b><small>${fresh.includes(f.id) ? "<em>Nova! +5 XP</em> · " : ""}${esc(faces[f.id] && !earned[f.id] && f.id !== "read" ? "Já conquistada antes" : why[f.id])}</small></li>`).join("")}
+        </ul>
+        ${!nextZero && firstStory ? `<button class="btn ghost up" id="up">📖 Agora as histórias: nível 1</button>` : ""}
+        </div>
+        <div class="footer"><div class="footer-inner">
+          <button class="btn ghost" id="again">Repetir</button>
+          <button class="btn" id="cont">${nextZero ? "Próxima lição" : "Continuar"}</button>
+        </div></div>`;
+      const toStories = () => { progress.unitLevel[unit.id] = 1; saveProgress(progress); go(`#/lesson/${firstStory.id}/1`); };
+      document.getElementById("again").onclick = () => renderDrill(lesson.id);
+      document.getElementById("up")?.addEventListener("click", toStories);
+      document.getElementById("cont").onclick = () => (nextZero ? go(`#/lesson/${nextZero.id}/0`) : go(home));
+      document.getElementById("cont").focus();
+      keyHandler = null;
+    }
+
+    function start(s) {
+      if (s) {
+        ({ queue, qi, firstOk, scored, retried } = s);
+        Object.assign(stats, s.stats);
+        for (const m of ["listen", "speak", "write"]) eligible[m] = !!s.eligible?.[m] && mode[m];
+      }
+      next();
+    }
+
+    $btn.onclick = () => {
+      if (blocker) return blocker.primary();
+      if (phase === "start") return start(null);
+      if (phase === "answer") return check();
+      next();
+    };
+    $skip.onclick = () => blocker?.skip();
+    if (saved) {
+      setFooter({ label: "Continuar de onde parei", skip: true, skipLabel: "Recomeçar" });
+      blocker = {
+        kind: "start",
+        primary: () => { blocker = null; start(saved); },
+        skip: () => { blocker = null; clearSnapshot(); start(null); },
+        cancel: () => {},
+      };
+    }
+    $btn.focus();
+    keyHandler = (e) => {
+      if (e.target.matches?.("input, textarea")) {
+        if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); if (!$btn.disabled) $btn.click(); }
+        return;
+      }
+      if (e.target.closest("button") && e.key === " ") return;
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); if (!$btn.disabled) $btn.click(); }
+      const n = parseInt(e.key, 10);
+      if (phase === "answer" && n >= 1 && n <= 9) $stage._choose?.(n - 1);
+    };
+  }
+
+
   /* ---------- Rotas ---------- */
   let keyHandler = null;
   document.addEventListener("keydown", (e) => keyHandler?.(e));
@@ -1253,7 +1765,9 @@
   function route() {
     keyHandler = null; hideTip(); cleanup?.(); cleanup = null; stopAudio(); scrollTo(0, 0);
     const [, page, arg, lv] = location.hash.split("/");
-    if (page === "lesson") renderLesson(arg, Math.min(5, Math.max(1, parseInt(lv, 10) || 1)));
+    const n = parseInt(lv, 10);
+    const level = Number.isNaN(n) ? 1 : Math.min(5, Math.max(0, n));
+    if (page === "lesson") (level === 0 ? renderDrill(arg) : renderLesson(arg, level));
     else if (page === "guide") renderGuide(arg);
     else if (page === "pro") renderHome("pro");
     else renderHome();

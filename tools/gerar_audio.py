@@ -79,6 +79,15 @@ def collect():
             lv_cast = {**cast, **lv.get("cast", {})}
             for steps in lv["lessons"].values():
                 add_steps(steps, lv_cast, level, rates[level])
+    # nível 0 (vocabulário): palavras soltas e frases (as frases já vêm do nível 1, mesma voz e velocidade)
+    for path in sorted((ROOT / "data" / "level0").glob("*.json")):
+        for lesson in json.loads(path.read_text(encoding="utf-8"))["lessons"]:
+            for sc in lesson["screens"]:
+                for w in [sc.get("w")] + sc.get("o", []) * (sc["t"] in ("pick", "hear", "fill")) + [p[0] for p in sc.get("p", [])] + sc.get("x", []):
+                    if w:
+                        items[f"word|{w.lower()}"] = (WORD_VOICE, w.lower(), "-15%")
+                if "en" in sc:
+                    add_sentence(sc["v"], sc["en"])
     return items
 
 async def synth(sem, voice, text, rate, out: Path):
@@ -131,6 +140,8 @@ async def main():
 
 
 if __name__ == "__main__":
+    import nivel0  # gera o nível 0 (vocabulário) a partir do nível 1 de cada unidade
+    nivel0.main()
     asyncio.run(main())
     import frequencia  # atualiza data/wordfreq.json (palavras novas por nível)
     frequencia.main()

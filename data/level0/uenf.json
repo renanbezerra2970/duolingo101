@@ -1,0 +1,2363 @@
+{
+ "unit": "enf",
+ "lessons": [
+  {
+   "id": "enfz1",
+   "title": "button · pain · need · help",
+   "titlePt": "botão · dor · precisar · ajuda",
+   "emoji": "🔤",
+   "words": [
+    "button",
+    "pain",
+    "need",
+    "help"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "pain",
+     "pt": "dor"
+    },
+    {
+     "t": "meaning",
+     "w": "pain",
+     "pt": "dor",
+     "o": [
+      "escala",
+      "dor",
+      "minuto"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "need",
+     "pt": "precisar"
+    },
+    {
+     "t": "hear",
+     "w": "need",
+     "pt": "precisar",
+     "o": [
+      "sit",
+      "today",
+      "need"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "pain",
+       "dor"
+      ],
+      [
+       "need",
+       "precisar"
+      ],
+      [
+       "help",
+       "ajuda"
+      ],
+      [
+       "button",
+       "botão"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "help",
+     "pt": "ajuda"
+    },
+    {
+     "t": "pick",
+     "w": "help",
+     "pt": "ajuda",
+     "o": [
+      "kind",
+      "help",
+      "need"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "button",
+     "pt": "botão"
+    },
+    {
+     "t": "meaning",
+     "w": "button",
+     "pt": "botão",
+     "o": [
+      "deixar",
+      "resultado",
+      "botão"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "help",
+     "pt": "ajuda",
+     "o": [
+      "get",
+      "help",
+      "what"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "help",
+       "ajuda"
+      ],
+      [
+       "button",
+       "botão"
+      ],
+      [
+       "pain",
+       "dor"
+      ],
+      [
+       "need",
+       "precisar"
+      ]
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "Can I help?",
+     "pt": "Posso ajudar?",
+     "v": "en-AU-NatashaNeural",
+     "x": [
+      "tablet",
+      "four",
+      "very"
+     ]
+    },
+    {
+     "t": "fill",
+     "en": "The red button? OK.",
+     "pt": "O botão vermelho? Tá.",
+     "v": "en-US-RogerNeural",
+     "gap": "The red ___? OK.",
+     "w": "button",
+     "o": [
+      "from",
+      "own",
+      "button"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Can I help?",
+     "pt": "Posso ajudar?",
+     "v": "en-AU-NatashaNeural",
+     "o": [
+      "Obrigado, Grace. Você é um anjo.",
+      "Ele é alérgico a penicilina.",
+      "Posso ajudar?"
+     ]
+    },
+    {
+     "t": "pick",
+     "w": "button",
+     "pt": "botão",
+     "o": [
+      "end",
+      "button",
+      "done"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "The red button? OK.",
+     "pt": "O botão vermelho? Tá.",
+     "v": "en-US-RogerNeural",
+     "x": [
+      "thing",
+      "two",
+      "start"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "Seven. It's a seven.",
+     "pt": "Sete. É um sete.",
+     "v": "en-US-RogerNeural",
+     "o": [
+      "The red button? OK.",
+      "That's good news!",
+      "Seven. It's a seven."
+     ]
+    },
+    {
+     "t": "meaning",
+     "w": "button",
+     "pt": "botão",
+     "o": [
+      "é",
+      "conseguir",
+      "botão"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Seven. It's a seven.",
+     "pt": "Sete. É um sete.",
+     "v": "en-US-RogerNeural",
+     "o": [
+      "Sim. Febre também é importante.",
+      "Sete. É um sete.",
+      "Trinta minutos depois, a Grace volta."
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "And his pain?",
+     "pt": "E a dor dele?",
+     "v": "en-IE-ConnorNeural",
+     "x": [
+      "big",
+      "every",
+      "now"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "enfz2",
+   "title": "check · home · how · wound",
+   "titlePt": "conferir · casa · como · ferida",
+   "emoji": "🧩",
+   "words": [
+    "check",
+    "home",
+    "how",
+    "wound"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "check",
+     "pt": "conferir"
+    },
+    {
+     "t": "meaning",
+     "w": "check",
+     "pt": "conferir",
+     "o": [
+      "casa",
+      "conferir",
+      "botão"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "home",
+     "pt": "casa"
+    },
+    {
+     "t": "hear",
+     "w": "home",
+     "pt": "casa",
+     "o": [
+      "need",
+      "wound",
+      "home"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "check",
+       "conferir"
+      ],
+      [
+       "home",
+       "casa"
+      ],
+      [
+       "help",
+       "ajuda"
+      ],
+      [
+       "button",
+       "botão"
+      ],
+      [
+       "need",
+       "precisar"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "how",
+     "pt": "como"
+    },
+    {
+     "t": "pick",
+     "w": "how",
+     "pt": "como",
+     "o": [
+      "how",
+      "help",
+      "check"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "wound",
+     "pt": "ferida"
+    },
+    {
+     "t": "meaning",
+     "w": "wound",
+     "pt": "ferida",
+     "o": [
+      "dor",
+      "ajuda",
+      "ferida"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "how",
+     "pt": "como",
+     "o": [
+      "home",
+      "how",
+      "button"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "how",
+       "como"
+      ],
+      [
+       "wound",
+       "ferida"
+      ],
+      [
+       "check",
+       "conferir"
+      ],
+      [
+       "home",
+       "casa"
+      ],
+      [
+       "pain",
+       "dor"
+      ]
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "Can I help?",
+     "pt": "Posso ajudar?",
+     "v": "en-AU-NatashaNeural",
+     "x": [
+      "back",
+      "use",
+      "going"
+     ]
+    },
+    {
+     "t": "fill",
+     "en": "Seven. It's a seven.",
+     "pt": "Sete. É um sete.",
+     "v": "en-US-RogerNeural",
+     "gap": "Seven. ___ a seven.",
+     "w": "It's",
+     "o": [
+      "course",
+      "It's",
+      "hot"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Can I help?",
+     "pt": "Posso ajudar?",
+     "v": "en-AU-NatashaNeural",
+     "o": [
+      "Obrigada. Esta é a sua pulseira.",
+      "Onde estou? Esta é a minha casa?",
+      "Posso ajudar?"
+     ]
+    },
+    {
+     "t": "pick",
+     "w": "wound",
+     "pt": "ferida",
+     "o": [
+      "button",
+      "need",
+      "wound"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "Seven. It's a seven.",
+     "pt": "Sete. É um sete.",
+     "v": "en-US-RogerNeural",
+     "x": [
+      "result",
+      "up",
+      "shift"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "The red button? OK.",
+     "pt": "O botão vermelho? Tá.",
+     "v": "en-US-RogerNeural",
+     "o": [
+      "The red button? OK.",
+      "Great. Have a good night, Daniel.",
+      "OK. I'm writing it here. Penicillin."
+     ]
+    },
+    {
+     "t": "meaning",
+     "w": "help",
+     "pt": "ajuda",
+     "o": [
+      "ajuda",
+      "como",
+      "precisar"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "The red button? OK.",
+     "pt": "O botão vermelho? Tá.",
+     "v": "en-US-RogerNeural",
+     "o": [
+      "O botão vermelho? Tá.",
+      "Grace, obrigado por tudo.",
+      "Obrigado, Grace. Você é um anjo."
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "Yes! I'm going home!",
+     "pt": "Sim! Vou para casa!",
+     "v": "en-US-RogerNeural",
+     "x": [
+      "from",
+      "third",
+      "keep"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "enfz3",
+   "title": "blood · do · get · nurse",
+   "titlePt": "sangue · fazer · conseguir · enfermeira(o)",
+   "emoji": "🎯",
+   "words": [
+    "blood",
+    "do",
+    "get",
+    "nurse"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "blood",
+     "pt": "sangue"
+    },
+    {
+     "t": "meaning",
+     "w": "blood",
+     "pt": "sangue",
+     "o": [
+      "sangue",
+      "botão",
+      "fazer"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "do",
+     "pt": "fazer"
+    },
+    {
+     "t": "hear",
+     "w": "do",
+     "pt": "fazer",
+     "o": [
+      "help",
+      "pain",
+      "do"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "blood",
+       "sangue"
+      ],
+      [
+       "do",
+       "fazer"
+      ],
+      [
+       "button",
+       "botão"
+      ],
+      [
+       "check",
+       "conferir"
+      ],
+      [
+       "home",
+       "casa"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "get",
+     "pt": "conseguir"
+    },
+    {
+     "t": "pick",
+     "w": "get",
+     "pt": "conseguir",
+     "o": [
+      "nurse",
+      "get",
+      "do"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "nurse",
+     "pt": "enfermeira(o)"
+    },
+    {
+     "t": "meaning",
+     "w": "nurse",
+     "pt": "enfermeira(o)",
+     "o": [
+      "conferir",
+      "ajuda",
+      "enfermeira(o)"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "get",
+     "pt": "conseguir",
+     "o": [
+      "get",
+      "button",
+      "home"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "get",
+       "conseguir"
+      ],
+      [
+       "nurse",
+       "enfermeira(o)"
+      ],
+      [
+       "blood",
+       "sangue"
+      ],
+      [
+       "do",
+       "fazer"
+      ],
+      [
+       "pain",
+       "dor"
+      ]
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "Can I help?",
+     "pt": "Posso ajudar?",
+     "v": "en-AU-NatashaNeural",
+     "x": [
+      "goodbye",
+      "one",
+      "zero"
+     ]
+    },
+    {
+     "t": "fill",
+     "en": "Seven. It's a seven.",
+     "pt": "Sete. É um sete.",
+     "v": "en-US-RogerNeural",
+     "gap": "___. It's a seven.",
+     "w": "Seven",
+     "o": [
+      "week",
+      "Seven",
+      "on"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Can I help?",
+     "pt": "Posso ajudar?",
+     "v": "en-AU-NatashaNeural",
+     "o": [
+      "Posso ajudar?",
+      "Grace, obrigado por tudo.",
+      "Que ótimo. Tente descansar agora."
+     ]
+    },
+    {
+     "t": "pick",
+     "w": "nurse",
+     "pt": "enfermeira(o)",
+     "o": [
+      "pain",
+      "nurse",
+      "help"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "Seven. It's a seven.",
+     "pt": "Sete. É um sete.",
+     "v": "en-US-RogerNeural",
+     "x": [
+      "you",
+      "work",
+      "tonight"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "The red button? OK.",
+     "pt": "O botão vermelho? Tá.",
+     "v": "en-US-RogerNeural",
+     "o": [
+      "And his pain?",
+      "The red button? OK.",
+      "OK. Thank you."
+     ]
+    },
+    {
+     "t": "meaning",
+     "w": "pain",
+     "pt": "dor",
+     "o": [
+      "fazer",
+      "sangue",
+      "dor"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "The red button? OK.",
+     "pt": "O botão vermelho? Tá.",
+     "v": "en-US-RogerNeural",
+     "o": [
+      "Olá, Grace. Prazer em conhecê-la.",
+      "O botão vermelho? Tá.",
+      "Pronto. Quando faz efeito?"
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "I'm your nurse today.",
+     "pt": "Sou sua enfermeira hoje.",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "move",
+      "night",
+      "on"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "enfz4",
+   "title": "penicillin · back · if · press",
+   "titlePt": "penicilina · de volta · se · prensa",
+   "emoji": "🧠",
+   "words": [
+    "penicillin",
+    "back",
+    "if",
+    "press"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "penicillin",
+     "pt": "penicilina"
+    },
+    {
+     "t": "meaning",
+     "w": "penicillin",
+     "pt": "penicilina",
+     "o": [
+      "sangue",
+      "penicilina",
+      "fazer"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "back",
+     "pt": "de volta"
+    },
+    {
+     "t": "hear",
+     "w": "back",
+     "pt": "de volta",
+     "o": [
+      "button",
+      "press",
+      "back"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "penicillin",
+       "penicilina"
+      ],
+      [
+       "back",
+       "de volta"
+      ],
+      [
+       "pain",
+       "dor"
+      ],
+      [
+       "button",
+       "botão"
+      ],
+      [
+       "home",
+       "casa"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "if",
+     "pt": "se"
+    },
+    {
+     "t": "pick",
+     "w": "if",
+     "pt": "se",
+     "o": [
+      "get",
+      "press",
+      "if"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "press",
+     "pt": "prensa"
+    },
+    {
+     "t": "meaning",
+     "w": "press",
+     "pt": "prensa",
+     "o": [
+      "dor",
+      "prensa",
+      "penicilina"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "if",
+     "pt": "se",
+     "o": [
+      "penicillin",
+      "if",
+      "button"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "if",
+       "se"
+      ],
+      [
+       "press",
+       "prensa"
+      ],
+      [
+       "penicillin",
+       "penicilina"
+      ],
+      [
+       "back",
+       "de volta"
+      ],
+      [
+       "do",
+       "fazer"
+      ]
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "Can I help?",
+     "pt": "Posso ajudar?",
+     "v": "en-AU-NatashaNeural",
+     "x": [
+      "nice",
+      "have",
+      "four"
+     ]
+    },
+    {
+     "t": "fill",
+     "en": "Seven. It's a seven.",
+     "pt": "Sete. É um sete.",
+     "v": "en-US-RogerNeural",
+     "gap": "___. It's a seven.",
+     "w": "Seven",
+     "o": [
+      "water",
+      "did",
+      "Seven"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Can I help?",
+     "pt": "Posso ajudar?",
+     "v": "en-AU-NatashaNeural",
+     "o": [
+      "Alérgico a penicilina. Entendi.",
+      "Posso ajudar?",
+      "Por favor, não se levante sozinho."
+     ]
+    },
+    {
+     "t": "pick",
+     "w": "press",
+     "pt": "prensa",
+     "o": [
+      "press",
+      "do",
+      "pain"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "Seven. It's a seven.",
+     "pt": "Sete. É um sete.",
+     "v": "en-US-RogerNeural",
+     "x": [
+      "right",
+      "minute",
+      "exact"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "The red button? OK.",
+     "pt": "O botão vermelho? Tá.",
+     "v": "en-US-RogerNeural",
+     "o": [
+      "The red button? OK.",
+      "Good morning! Today is the big day!",
+      "I'll write it in my phone."
+     ]
+    },
+    {
+     "t": "meaning",
+     "w": "do",
+     "pt": "fazer",
+     "o": [
+      "conseguir",
+      "fazer",
+      "botão"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "The red button? OK.",
+     "pt": "O botão vermelho? Tá.",
+     "v": "en-US-RogerNeural",
+     "o": [
+      "Qual é a sua data de nascimento, por favor?",
+      "O botão vermelho? Tá.",
+      "Coisas familiares ajudam com a confusão."
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "Press this button if you need help.",
+     "pt": "Aperte este botão se precisar de ajuda.",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "saw",
+      "normal",
+      "very"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "enfz5",
+   "title": "pressure · up · allergic · allergies",
+   "titlePt": "pressão · para cima · alérgico · alergias",
+   "emoji": "💬",
+   "words": [
+    "pressure",
+    "up",
+    "allergic",
+    "allergies"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "pressure",
+     "pt": "pressão"
+    },
+    {
+     "t": "meaning",
+     "w": "pressure",
+     "pt": "pressão",
+     "o": [
+      "pressão",
+      "fazer",
+      "se"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "up",
+     "pt": "para cima"
+    },
+    {
+     "t": "hear",
+     "w": "up",
+     "pt": "para cima",
+     "o": [
+      "allergic",
+      "back",
+      "up"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "pressure",
+       "pressão"
+      ],
+      [
+       "up",
+       "para cima"
+      ],
+      [
+       "press",
+       "prensa"
+      ],
+      [
+       "if",
+       "se"
+      ],
+      [
+       "back",
+       "de volta"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "allergic",
+     "pt": "alérgico"
+    },
+    {
+     "t": "pick",
+     "w": "allergic",
+     "pt": "alérgico",
+     "o": [
+      "allergic",
+      "allergies",
+      "home"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "allergies",
+     "pt": "alergias"
+    },
+    {
+     "t": "meaning",
+     "w": "allergies",
+     "pt": "alergias",
+     "o": [
+      "ajuda",
+      "prensa",
+      "alergias"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "allergic",
+     "pt": "alérgico",
+     "o": [
+      "press",
+      "pain",
+      "allergic"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "allergic",
+       "alérgico"
+      ],
+      [
+       "allergies",
+       "alergias"
+      ],
+      [
+       "pressure",
+       "pressão"
+      ],
+      [
+       "up",
+       "para cima"
+      ],
+      [
+       "help",
+       "ajuda"
+      ]
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "I need to check your blood pressure.",
+     "pt": "Preciso verificar sua pressão.",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "at",
+      "date",
+      "penicillin"
+     ]
+    },
+    {
+     "t": "fill",
+     "en": "He's allergic to penicillin.",
+     "pt": "Ele é alérgico a penicilina.",
+     "v": "en-GB-LibbyNeural",
+     "gap": "He's allergic to ___.",
+     "w": "penicillin",
+     "o": [
+      "penicillin",
+      "where",
+      "he"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "I need to check your blood pressure.",
+     "pt": "Preciso verificar sua pressão.",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Preciso verificar sua pressão.",
+      "Valeu, Grace. Vai para casa descansar!",
+      "Paracetamol às dez. Certo."
+     ]
+    },
+    {
+     "t": "pick",
+     "w": "allergies",
+     "pt": "alergias",
+     "o": [
+      "up",
+      "allergies",
+      "back"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "He's allergic to penicillin.",
+     "pt": "Ele é alérgico a penicilina.",
+     "v": "en-GB-LibbyNeural",
+     "x": [
+      "date",
+      "that",
+      "step"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "Yes. I'm allergic to penicillin.",
+     "pt": "Sim. Sou alérgico a penicilina.",
+     "v": "en-US-RogerNeural",
+     "o": [
+      "OK. I'm writing it here. Penicillin.",
+      "Yes. I'm allergic to penicillin.",
+      "Remember, you're allergic to penicillin."
+     ]
+    },
+    {
+     "t": "meaning",
+     "w": "back",
+     "pt": "de volta",
+     "o": [
+      "de volta",
+      "penicilina",
+      "sangue"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Yes. I'm allergic to penicillin.",
+     "pt": "Sim. Sou alérgico a penicilina.",
+     "v": "en-US-RogerNeural",
+     "o": [
+      "Obrigado, filho.",
+      "Sim. Sou alérgico a penicilina.",
+      "Certo. Estou anotando aqui. Penicilina."
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "Remember, you're allergic to penicillin.",
+     "pt": "Lembrando, o senhor é alérgico a penicilina.",
+     "v": "en-GB-LibbyNeural",
+     "x": [
+      "welcome",
+      "show",
+      "here"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "enfz6",
+   "title": "any · bad · call · clean",
+   "titlePt": "algum · ruim · ligar · limpo",
+   "emoji": "🔁",
+   "words": [
+    "any",
+    "bad",
+    "call",
+    "clean"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "any",
+     "pt": "algum"
+    },
+    {
+     "t": "meaning",
+     "w": "any",
+     "pt": "algum",
+     "o": [
+      "limpo",
+      "dor",
+      "algum"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "bad",
+     "pt": "ruim"
+    },
+    {
+     "t": "hear",
+     "w": "bad",
+     "pt": "ruim",
+     "o": [
+      "blood",
+      "check",
+      "bad"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "any",
+       "algum"
+      ],
+      [
+       "bad",
+       "ruim"
+      ],
+      [
+       "get",
+       "conseguir"
+      ],
+      [
+       "pressure",
+       "pressão"
+      ],
+      [
+       "allergies",
+       "alergias"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "call",
+     "pt": "ligar"
+    },
+    {
+     "t": "pick",
+     "w": "call",
+     "pt": "ligar",
+     "o": [
+      "button",
+      "call",
+      "allergic"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "clean",
+     "pt": "limpo"
+    },
+    {
+     "t": "meaning",
+     "w": "clean",
+     "pt": "limpo",
+     "o": [
+      "algum",
+      "fazer",
+      "limpo"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "call",
+     "pt": "ligar",
+     "o": [
+      "up",
+      "call",
+      "how"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "call",
+       "ligar"
+      ],
+      [
+       "clean",
+       "limpo"
+      ],
+      [
+       "any",
+       "algum"
+      ],
+      [
+       "bad",
+       "ruim"
+      ],
+      [
+       "home",
+       "casa"
+      ]
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "I need to check your blood pressure.",
+     "pt": "Preciso verificar sua pressão.",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "nurse",
+      "often",
+      "appointment"
+     ]
+    },
+    {
+     "t": "fill",
+     "en": "He's allergic to penicillin.",
+     "pt": "Ele é alérgico a penicilina.",
+     "v": "en-GB-LibbyNeural",
+     "gap": "He's allergic to ___.",
+     "w": "penicillin",
+     "o": [
+      "date",
+      "angel",
+      "penicillin"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "I need to check your blood pressure.",
+     "pt": "Preciso verificar sua pressão.",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Aguda. Quando eu me mexo, é muito aguda.",
+      "Preciso verificar sua pressão.",
+      "Olá, Grace. Prazer em conhecê-la."
+     ]
+    },
+    {
+     "t": "pick",
+     "w": "clean",
+     "pt": "limpo",
+     "o": [
+      "clean",
+      "get",
+      "wound"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "He's allergic to penicillin.",
+     "pt": "Ele é alérgico a penicilina.",
+     "v": "en-GB-LibbyNeural",
+     "x": [
+      "let",
+      "visit",
+      "and"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "Yes. I'm allergic to penicillin.",
+     "pt": "Sim. Sou alérgico a penicilina.",
+     "v": "en-US-RogerNeural",
+     "o": [
+      "Yes. I'm allergic to penicillin.",
+      "Are the results back?",
+      "In the morning, his daughter, Helen, visits."
+     ]
+    },
+    {
+     "t": "meaning",
+     "w": "if",
+     "pt": "se",
+     "o": [
+      "penicilina",
+      "se",
+      "precisar"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Yes. I'm allergic to penicillin.",
+     "pt": "Sim. Sou alérgico a penicilina.",
+     "v": "en-US-RogerNeural",
+     "o": [
+      "Sim. Sou alérgico a penicilina.",
+      "Paracetamol às dez. Certo.",
+      "Este é o botão de chamada."
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "Remember, you're allergic to penicillin.",
+     "pt": "Lembrando, o senhor é alérgico a penicilina.",
+     "v": "en-GB-LibbyNeural",
+     "x": [
+      "ten",
+      "pain",
+      "water"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "enfz7",
+   "title": "doctor · dry · him · hip",
+   "titlePt": "médico(a) · seco · ele · quadril",
+   "emoji": "⭐",
+   "words": [
+    "doctor",
+    "dry",
+    "him",
+    "hip"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "doctor",
+     "pt": "médico(a)"
+    },
+    {
+     "t": "meaning",
+     "w": "doctor",
+     "pt": "médico(a)",
+     "o": [
+      "prensa",
+      "ele",
+      "médico(a)"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "dry",
+     "pt": "seco"
+    },
+    {
+     "t": "hear",
+     "w": "dry",
+     "pt": "seco",
+     "o": [
+      "dry",
+      "doctor",
+      "call"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "doctor",
+       "médico(a)"
+      ],
+      [
+       "dry",
+       "seco"
+      ],
+      [
+       "any",
+       "algum"
+      ],
+      [
+       "nurse",
+       "enfermeira(o)"
+      ],
+      [
+       "pain",
+       "dor"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "him",
+     "pt": "ele"
+    },
+    {
+     "t": "pick",
+     "w": "him",
+     "pt": "ele",
+     "o": [
+      "doctor",
+      "wound",
+      "him"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "hip",
+     "pt": "quadril"
+    },
+    {
+     "t": "meaning",
+     "w": "hip",
+     "pt": "quadril",
+     "o": [
+      "botão",
+      "quadril",
+      "dor"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "him",
+     "pt": "ele",
+     "o": [
+      "doctor",
+      "blood",
+      "him"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "him",
+       "ele"
+      ],
+      [
+       "hip",
+       "quadril"
+      ],
+      [
+       "doctor",
+       "médico(a)"
+      ],
+      [
+       "dry",
+       "seco"
+      ],
+      [
+       "nurse",
+       "enfermeira(o)"
+      ]
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "I need to check your blood pressure.",
+     "pt": "Preciso verificar sua pressão.",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "six",
+      "rest",
+      "please"
+     ]
+    },
+    {
+     "t": "fill",
+     "en": "He's allergic to penicillin.",
+     "pt": "Ele é alérgico a penicilina.",
+     "v": "en-GB-LibbyNeural",
+     "gap": "He's allergic to ___.",
+     "w": "penicillin",
+     "o": [
+      "glass",
+      "hot",
+      "penicillin"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "I need to check your blood pressure.",
+     "pt": "Preciso verificar sua pressão.",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Preciso verificar sua pressão.",
+      "Bom dia! Hoje é o grande dia!",
+      "Ótimo. Bom plantão, Daniel."
+     ]
+    },
+    {
+     "t": "pick",
+     "w": "hip",
+     "pt": "quadril",
+     "o": [
+      "clean",
+      "hip",
+      "wound"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "He's allergic to penicillin.",
+     "pt": "Ele é alérgico a penicilina.",
+     "v": "en-GB-LibbyNeural",
+     "x": [
+      "pleasure",
+      "birth",
+      "doctor"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "Yes. I'm allergic to penicillin.",
+     "pt": "Sim. Sou alérgico a penicilina.",
+     "v": "en-US-RogerNeural",
+     "o": [
+      "Thank you, Grace. You're very kind.",
+      "Yes. I'm allergic to penicillin.",
+      "I need the toilet. I can walk."
+     ]
+    },
+    {
+     "t": "meaning",
+     "w": "call",
+     "pt": "ligar",
+     "o": [
+      "ruim",
+      "ligar",
+      "seco"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Yes. I'm allergic to penicillin.",
+     "pt": "Sim. Sou alérgico a penicilina.",
+     "v": "en-US-RogerNeural",
+     "o": [
+      "Sim. Sou alérgico a penicilina.",
+      "Obrigado, Grace. Você é muito gentil.",
+      "E nada de penicilina!"
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "Remember, you're allergic to penicillin.",
+     "pt": "Lembrando, o senhor é alérgico a penicilina.",
+     "v": "en-GB-LibbyNeural",
+     "x": [
+      "down",
+      "eighty",
+      "exact"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "enfz8",
+   "title": "hospital · keep · night · paracetamol",
+   "titlePt": "hospital · manter · noite · paracetamol",
+   "emoji": "🗝️",
+   "words": [
+    "hospital",
+    "keep",
+    "night",
+    "paracetamol"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "hospital",
+     "pt": "hospital"
+    },
+    {
+     "t": "meaning",
+     "w": "hospital",
+     "pt": "hospital",
+     "o": [
+      "precisar",
+      "fazer",
+      "hospital"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "keep",
+     "pt": "manter"
+    },
+    {
+     "t": "hear",
+     "w": "keep",
+     "pt": "manter",
+     "o": [
+      "bad",
+      "penicillin",
+      "keep"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "hospital",
+       "hospital"
+      ],
+      [
+       "keep",
+       "manter"
+      ],
+      [
+       "call",
+       "ligar"
+      ],
+      [
+       "allergic",
+       "alérgico"
+      ],
+      [
+       "hip",
+       "quadril"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "night",
+     "pt": "noite"
+    },
+    {
+     "t": "pick",
+     "w": "night",
+     "pt": "noite",
+     "o": [
+      "home",
+      "hip",
+      "night"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "paracetamol",
+     "pt": "paracetamol"
+    },
+    {
+     "t": "meaning",
+     "w": "paracetamol",
+     "pt": "paracetamol",
+     "o": [
+      "algum",
+      "ruim",
+      "paracetamol"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "night",
+     "pt": "noite",
+     "o": [
+      "night",
+      "paracetamol",
+      "doctor"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "night",
+       "noite"
+      ],
+      [
+       "paracetamol",
+       "paracetamol"
+      ],
+      [
+       "hospital",
+       "hospital"
+      ],
+      [
+       "keep",
+       "manter"
+      ],
+      [
+       "allergies",
+       "alergias"
+      ]
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "Keep the wound clean and dry.",
+     "pt": "Mantenha o curativo limpo e seco.",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "button",
+      "later",
+      "did"
+     ]
+    },
+    {
+     "t": "fill",
+     "en": "Oh. The hospital. Yes.",
+     "pt": "Ah. O hospital. Sim.",
+     "v": "en-US-RogerNeural",
+     "gap": "Oh. The ___. Yes.",
+     "w": "hospital",
+     "o": [
+      "your",
+      "hospital",
+      "one"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Keep the wound clean and dry.",
+     "pt": "Mantenha o curativo limpo e seco.",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "De manhã, a filha dele, Helen, faz uma visita.",
+      "Mantenha o curativo limpo e seco.",
+      "Segundo, os remédios. Tome paracetamol para a dor."
+     ]
+    },
+    {
+     "t": "pick",
+     "w": "paracetamol",
+     "pt": "paracetamol",
+     "o": [
+      "paracetamol",
+      "press",
+      "allergic"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "Oh. The hospital. Yes.",
+     "pt": "Ah. O hospital. Sim.",
+     "v": "en-US-RogerNeural",
+     "x": [
+      "second",
+      "these",
+      "appointment"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "I need to check your blood pressure.",
+     "pt": "Preciso verificar sua pressão.",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "I need to check your blood pressure.",
+      "Keep the wound clean and dry.",
+      "OK. Is the pain sharp or dull?"
+     ]
+    },
+    {
+     "t": "meaning",
+     "w": "him",
+     "pt": "ele",
+     "o": [
+      "como",
+      "precisar",
+      "ele"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "I need to check your blood pressure.",
+     "pt": "Preciso verificar sua pressão.",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "O médico pediu exames de sangue.",
+      "De manhã, a filha dele, Helen, faz uma visita.",
+      "Preciso verificar sua pressão."
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "He's allergic to penicillin.",
+     "pt": "Ele é alérgico a penicilina.",
+     "v": "en-GB-LibbyNeural",
+     "x": [
+      "here",
+      "red",
+      "noise"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "enfz9",
+   "title": "scale · take · thirty · four",
+   "titlePt": "escala · pegar · trinta · quatro",
+   "emoji": "🚀",
+   "words": [
+    "scale",
+    "take",
+    "thirty",
+    "four"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "scale",
+     "pt": "escala"
+    },
+    {
+     "t": "meaning",
+     "w": "scale",
+     "pt": "escala",
+     "o": [
+      "escala",
+      "ligar",
+      "hospital"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "take",
+     "pt": "pegar"
+    },
+    {
+     "t": "hear",
+     "w": "take",
+     "pt": "pegar",
+     "o": [
+      "blood",
+      "if",
+      "take"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "scale",
+       "escala"
+      ],
+      [
+       "take",
+       "pegar"
+      ],
+      [
+       "wound",
+       "ferida"
+      ],
+      [
+       "clean",
+       "limpo"
+      ],
+      [
+       "him",
+       "ele"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "thirty",
+     "pt": "trinta"
+    },
+    {
+     "t": "pick",
+     "w": "thirty",
+     "pt": "trinta",
+     "o": [
+      "thirty",
+      "press",
+      "wound"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "four",
+     "pt": "quatro"
+    },
+    {
+     "t": "meaning",
+     "w": "four",
+     "pt": "quatro",
+     "o": [
+      "quatro",
+      "hospital",
+      "sangue"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "thirty",
+     "pt": "trinta",
+     "o": [
+      "pain",
+      "thirty",
+      "need"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "thirty",
+       "trinta"
+      ],
+      [
+       "four",
+       "quatro"
+      ],
+      [
+       "scale",
+       "escala"
+      ],
+      [
+       "take",
+       "pegar"
+      ],
+      [
+       "penicillin",
+       "penicilina"
+      ]
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "Keep the wound clean and dry.",
+     "pt": "Mantenha o curativo limpo e seco.",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "result",
+      "important",
+      "familiar"
+     ]
+    },
+    {
+     "t": "fill",
+     "en": "Oh. The hospital. Yes.",
+     "pt": "Ah. O hospital. Sim.",
+     "v": "en-US-RogerNeural",
+     "gap": "Oh. The ___. Yes.",
+     "w": "hospital",
+     "o": [
+      "photo",
+      "hospital",
+      "big"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Keep the wound clean and dry.",
+     "pt": "Mantenha o curativo limpo e seco.",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Obrigado, Grace. Você é um anjo.",
+      "Ah. O hospital. Sim.",
+      "Mantenha o curativo limpo e seco."
+     ]
+    },
+    {
+     "t": "pick",
+     "w": "four",
+     "pt": "quatro",
+     "o": [
+      "keep",
+      "press",
+      "four"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "Oh. The hospital. Yes.",
+     "pt": "Ah. O hospital. Sim.",
+     "v": "en-US-RogerNeural",
+     "x": [
+      "help",
+      "bad",
+      "another"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "Yes. I'm allergic to penicillin.",
+     "pt": "Sim. Sou alérgico a penicilina.",
+     "v": "en-US-RogerNeural",
+     "o": [
+      "Yes. I'm allergic to penicillin.",
+      "You're welcome. Do you need anything?",
+      "Sharp. When I move, it's very sharp."
+     ]
+    },
+    {
+     "t": "meaning",
+     "w": "nurse",
+     "pt": "enfermeira(o)",
+     "o": [
+      "enfermeira(o)",
+      "para cima",
+      "manter"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Yes. I'm allergic to penicillin.",
+     "pt": "Sim. Sou alérgico a penicilina.",
+     "v": "en-US-RogerNeural",
+     "o": [
+      "Olá, Grace. Prazer em conhecê-la.",
+      "Sim. Sou alérgico a penicilina.",
+      "Sim, está bem. O Daniel ajudou."
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "Remember, you're allergic to penicillin.",
+     "pt": "Lembrando, o senhor é alérgico a penicilina.",
+     "v": "en-GB-LibbyNeural",
+     "x": [
+      "come",
+      "doctor",
+      "phone"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "enfz10",
+   "title": "Review",
+   "titlePt": "Revisão geral",
+   "emoji": "🏆",
+   "words": [],
+   "screens": [
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "up",
+       "para cima"
+      ],
+      [
+       "if",
+       "se"
+      ],
+      [
+       "allergies",
+       "alergias"
+      ],
+      [
+       "wound",
+       "ferida"
+      ],
+      [
+       "thirty",
+       "trinta"
+      ]
+     ]
+    },
+    {
+     "t": "meaning",
+     "w": "clean",
+     "pt": "limpo",
+     "o": [
+      "limpo",
+      "fazer",
+      "médico(a)"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "check",
+     "pt": "conferir",
+     "o": [
+      "wound",
+      "check",
+      "how"
+     ]
+    },
+    {
+     "t": "pick",
+     "w": "night",
+     "pt": "noite",
+     "o": [
+      "night",
+      "hip",
+      "need"
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "I'm your nurse today.",
+     "pt": "Sou sua enfermeira hoje.",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "did",
+      "up",
+      "what"
+     ]
+    },
+    {
+     "t": "fill",
+     "en": "Do you have any allergies?",
+     "pt": "Você tem alguma alergia?",
+     "v": "en-US-JennyNeural",
+     "gap": "Do you have any ___?",
+     "w": "allergies",
+     "o": [
+      "allergies",
+      "tablet",
+      "one"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "I'm your nurse today.",
+     "pt": "Sou sua enfermeira hoje.",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Sou sua enfermeira hoje.",
+      "Grace, obrigado por tudo.",
+      "Até no domingo!"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "hospital",
+       "hospital"
+      ],
+      [
+       "pressure",
+       "pressão"
+      ],
+      [
+       "button",
+       "botão"
+      ],
+      [
+       "take",
+       "pegar"
+      ],
+      [
+       "dry",
+       "seco"
+      ]
+     ]
+    },
+    {
+     "t": "type",
+     "en": "Do you have any allergies?",
+     "pt": "Você tem alguma alergia?",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "doctor",
+      "this",
+      "then"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "I need to check your blood pressure.",
+     "pt": "Preciso verificar sua pressão.",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Done. When does it work?",
+      "I need to check your blood pressure.",
+      "Next time, please press the call button."
+     ]
+    },
+    {
+     "t": "meaning",
+     "w": "home",
+     "pt": "casa",
+     "o": [
+      "seco",
+      "botão",
+      "casa"
+     ]
+    },
+    {
+     "t": "pick",
+     "w": "back",
+     "pt": "de volta",
+     "o": [
+      "clean",
+      "back",
+      "allergic"
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "On a scale of zero to ten, how bad is the pain?",
+     "pt": "Numa escala de zero a dez, quão forte é a dor?",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "going",
+      "normal",
+      "took"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "On a scale of zero to ten, how bad is the pain?",
+     "pt": "Numa escala de zero a dez, quão forte é a dor?",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Obrigada, Grace. Você foi maravilhosa.",
+      "Numa escala de zero a dez, quão forte é a dor?",
+      "E sua temperatura está normal."
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "four",
+     "pt": "quatro",
+     "o": [
+      "scale",
+      "allergies",
+      "four"
+     ]
+    },
+    {
+     "t": "fill",
+     "en": "Press this button if you need help.",
+     "pt": "Aperte este botão se precisar de ajuda.",
+     "v": "en-US-JennyNeural",
+     "gap": "Press this button ___ you need help.",
+     "w": "if",
+     "o": [
+      "if",
+      "wristband",
+      "did"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "I need to check your blood pressure.",
+     "pt": "Preciso verificar sua pressão.",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "date",
+      "anything",
+      "birth"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "press",
+       "prensa"
+      ],
+      [
+       "hip",
+       "quadril"
+      ],
+      [
+       "doctor",
+       "médico(a)"
+      ],
+      [
+       "how",
+       "como"
+      ],
+      [
+       "keep",
+       "manter"
+      ]
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "Press this button if you need help.",
+     "pt": "Aperte este botão se precisar de ajuda.",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "how",
+      "welcome",
+      "got"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Press this button if you need help.",
+     "pt": "Aperte este botão se precisar de ajuda.",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Aperte este botão se precisar de ajuda.",
+      "Valeu, Grace. Vai para casa descansar!",
+      "Ele pode tomar banho?"
+     ]
+    }
+   ]
+  }
+ ]
+}

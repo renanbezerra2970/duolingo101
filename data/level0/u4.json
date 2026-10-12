@@ -1,0 +1,2363 @@
+{
+ "unit": 4,
+ "lessons": [
+  {
+   "id": "u4z1",
+   "title": "bag · my · is · this",
+   "titlePt": "mala · meu · é · este",
+   "emoji": "🔤",
+   "words": [
+    "bag",
+    "my",
+    "is",
+    "this"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "is",
+     "pt": "é"
+    },
+    {
+     "t": "meaning",
+     "w": "is",
+     "pt": "é",
+     "o": [
+      "onde",
+      "é",
+      "chá"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "my",
+     "pt": "meu"
+    },
+    {
+     "t": "hear",
+     "w": "my",
+     "pt": "meu",
+     "o": [
+      "bags",
+      "my",
+      "mom"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "is",
+       "é"
+      ],
+      [
+       "my",
+       "meu"
+      ],
+      [
+       "bag",
+       "mala"
+      ],
+      [
+       "this",
+       "este"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "this",
+     "pt": "este"
+    },
+    {
+     "t": "pick",
+     "w": "this",
+     "pt": "este",
+     "o": [
+      "son",
+      "tea",
+      "this"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "bag",
+     "pt": "mala"
+    },
+    {
+     "t": "meaning",
+     "w": "bag",
+     "pt": "mala",
+     "o": [
+      "também",
+      "mala",
+      "café"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "this",
+     "pt": "este",
+     "o": [
+      "this",
+      "milk",
+      "good"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "this",
+       "este"
+      ],
+      [
+       "bag",
+       "mala"
+      ],
+      [
+       "is",
+       "é"
+      ],
+      [
+       "my",
+       "meu"
+      ]
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "It's OK!",
+     "pt": "Tudo bem!",
+     "v": "en-US-RogerNeural",
+     "x": [
+      "seat",
+      "going",
+      "bags"
+     ]
+    },
+    {
+     "t": "fill",
+     "en": "Tokyo! Wow!",
+     "pt": "Tóquio! Uau!",
+     "v": "en-US-EricNeural",
+     "gap": "Tokyo! ___!",
+     "w": "Wow",
+     "o": [
+      "here",
+      "Wow",
+      "you"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "It's OK!",
+     "pt": "Tudo bem!",
+     "v": "en-US-RogerNeural",
+     "o": [
+      "Não. Minha mala é vermelha.",
+      "Certo! Obrigado, pessoal.",
+      "Tudo bem!"
+     ]
+    },
+    {
+     "t": "pick",
+     "w": "bag",
+     "pt": "mala",
+     "o": [
+      "passports",
+      "twenty",
+      "bag"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "Tokyo! Wow!",
+     "pt": "Tóquio! Uau!",
+     "v": "en-US-EricNeural",
+     "x": [
+      "we",
+      "in",
+      "excuse"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "Yes! This is my bag!",
+     "pt": "Sim! Esta é a minha mala!",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Bonjour! Your passport, please.",
+      "Yes! Coffee! Coffee in Paris!",
+      "Yes! This is my bag!"
+     ]
+    },
+    {
+     "t": "meaning",
+     "w": "bag",
+     "pt": "mala",
+     "o": [
+      "nosso(a)",
+      "mala",
+      "chá"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Yes! This is my bag!",
+     "pt": "Sim! Esta é a minha mala!",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Paris! Mãe, onde está o papai?",
+      "Sim! Esta é a minha mala!",
+      "Papai! Lisa!"
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "Is this my bag? Kate... Yes!",
+     "pt": "Esta é minha mala? Kate... Sim!",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "ten",
+      "man",
+      "from"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u4z2",
+   "title": "gate · passport · ticket · seat",
+   "titlePt": "portão · passaporte · passagem · assento",
+   "emoji": "🧩",
+   "words": [
+    "gate",
+    "passport",
+    "ticket",
+    "seat"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "gate",
+     "pt": "portão"
+    },
+    {
+     "t": "meaning",
+     "w": "gate",
+     "pt": "portão",
+     "o": [
+      "assento",
+      "este",
+      "portão"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "passport",
+     "pt": "passaporte"
+    },
+    {
+     "t": "hear",
+     "w": "passport",
+     "pt": "passaporte",
+     "o": [
+      "gate",
+      "passport",
+      "seat"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "gate",
+       "portão"
+      ],
+      [
+       "passport",
+       "passaporte"
+      ],
+      [
+       "is",
+       "é"
+      ],
+      [
+       "this",
+       "este"
+      ],
+      [
+       "bag",
+       "mala"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "ticket",
+     "pt": "passagem"
+    },
+    {
+     "t": "pick",
+     "w": "ticket",
+     "pt": "passagem",
+     "o": [
+      "this",
+      "ticket",
+      "bag"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "seat",
+     "pt": "assento"
+    },
+    {
+     "t": "meaning",
+     "w": "seat",
+     "pt": "assento",
+     "o": [
+      "assento",
+      "este",
+      "mala"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "ticket",
+     "pt": "passagem",
+     "o": [
+      "ticket",
+      "bag",
+      "gate"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "ticket",
+       "passagem"
+      ],
+      [
+       "seat",
+       "assento"
+      ],
+      [
+       "gate",
+       "portão"
+      ],
+      [
+       "passport",
+       "passaporte"
+      ],
+      [
+       "bag",
+       "mala"
+      ]
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "This is my ticket.",
+     "pt": "Este é meu ingresso.",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "first",
+      "ten",
+      "their"
+     ]
+    },
+    {
+     "t": "fill",
+     "en": "This is my passport!",
+     "pt": "Este é o meu passaporte!",
+     "v": "en-US-AnaNeural",
+     "gap": "This is my ___!",
+     "w": "passport",
+     "o": [
+      "city",
+      "bags",
+      "passport"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "This is my ticket.",
+     "pt": "Este é meu ingresso.",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Ah! Sr. Tanaka! Olá de novo!",
+      "Este é meu ingresso.",
+      "Água, por favor."
+     ]
+    },
+    {
+     "t": "pick",
+     "w": "seat",
+     "pt": "assento",
+     "o": [
+      "is",
+      "seat",
+      "this"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "This is my passport!",
+     "pt": "Este é o meu passaporte!",
+     "v": "en-US-AnaNeural",
+     "x": [
+      "everyone",
+      "dad",
+      "look"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "My passport... My passport?",
+     "pt": "Meu passaporte... Meu passaporte?",
+     "v": "en-US-EricNeural",
+     "o": [
+      "My passport... My passport?",
+      "Thank you. Where are you from?",
+      "My dad is in Paris!"
+     ]
+    },
+    {
+     "t": "meaning",
+     "w": "my",
+     "pt": "meu",
+     "o": [
+      "meu",
+      "passaporte",
+      "mala"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "My passport... My passport?",
+     "pt": "Meu passaporte... Meu passaporte?",
+     "v": "en-US-EricNeural",
+     "o": [
+      "Meu passaporte... Meu passaporte?",
+      "Olha. Meu nome está aqui. Tanaka.",
+      "Certo! Obrigado, pessoal."
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "It's OK!",
+     "pt": "Tudo bem!",
+     "v": "en-US-RogerNeural",
+     "x": [
+      "coffee",
+      "look",
+      "black"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u4z3",
+   "title": "red · twenty · excuse · airport",
+   "titlePt": "vermelho(a) · vinte · desculpe · aeroporto",
+   "emoji": "🎯",
+   "words": [
+    "red",
+    "twenty",
+    "excuse",
+    "airport"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "red",
+     "pt": "vermelho(a)"
+    },
+    {
+     "t": "meaning",
+     "w": "red",
+     "pt": "vermelho(a)",
+     "o": [
+      "é",
+      "mala",
+      "vermelho(a)"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "twenty",
+     "pt": "vinte"
+    },
+    {
+     "t": "hear",
+     "w": "twenty",
+     "pt": "vinte",
+     "o": [
+      "passport",
+      "ticket",
+      "twenty"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "red",
+       "vermelho(a)"
+      ],
+      [
+       "twenty",
+       "vinte"
+      ],
+      [
+       "seat",
+       "assento"
+      ],
+      [
+       "bag",
+       "mala"
+      ],
+      [
+       "ticket",
+       "passagem"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "excuse",
+     "pt": "desculpe"
+    },
+    {
+     "t": "pick",
+     "w": "excuse",
+     "pt": "desculpe",
+     "o": [
+      "is",
+      "airport",
+      "excuse"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "airport",
+     "pt": "aeroporto"
+    },
+    {
+     "t": "meaning",
+     "w": "airport",
+     "pt": "aeroporto",
+     "o": [
+      "desculpe",
+      "passagem",
+      "aeroporto"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "excuse",
+     "pt": "desculpe",
+     "o": [
+      "passport",
+      "excuse",
+      "this"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "excuse",
+       "desculpe"
+      ],
+      [
+       "airport",
+       "aeroporto"
+      ],
+      [
+       "red",
+       "vermelho(a)"
+      ],
+      [
+       "twenty",
+       "vinte"
+      ],
+      [
+       "passport",
+       "passaporte"
+      ]
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "Paris... Gate twenty.",
+     "pt": "Paris... Portão vinte.",
+     "v": "en-US-AriaNeural",
+     "x": [
+      "yes",
+      "dad",
+      "no"
+     ]
+    },
+    {
+     "t": "fill",
+     "en": "This is my ticket.",
+     "pt": "Este é meu ingresso.",
+     "v": "en-US-JennyNeural",
+     "gap": "This is ___ ticket.",
+     "w": "my",
+     "o": [
+      "too",
+      "first",
+      "my"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Paris... Gate twenty.",
+     "pt": "Paris... Portão vinte.",
+     "v": "en-US-AriaNeural",
+     "o": [
+      "Paris... Portão vinte.",
+      "Bem-vindo a Paris!",
+      "Um homem está lá também."
+     ]
+    },
+    {
+     "t": "pick",
+     "w": "airport",
+     "pt": "aeroporto",
+     "o": [
+      "this",
+      "seat",
+      "airport"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "This is my ticket.",
+     "pt": "Este é meu ingresso.",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "thank",
+      "gate",
+      "their"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "Tokyo! Wow!",
+     "pt": "Tóquio! Uau!",
+     "v": "en-US-EricNeural",
+     "o": [
+      "Goodbye! Nice to meet you!",
+      "Hello! Your tickets, please.",
+      "Tokyo! Wow!"
+     ]
+    },
+    {
+     "t": "meaning",
+     "w": "my",
+     "pt": "meu",
+     "o": [
+      "é",
+      "meu",
+      "assento"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Tokyo! Wow!",
+     "pt": "Tóquio! Uau!",
+     "v": "en-US-EricNeural",
+     "o": [
+      "Tóquio! Uau!",
+      "Malas primeiro, Ben.",
+      "Esta é sua mala?"
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "This is my passport!",
+     "pt": "Este é o meu passaporte!",
+     "v": "en-US-AnaNeural",
+     "x": [
+      "hurry",
+      "water",
+      "tickets"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u4z4",
+   "title": "bags · black · city · man",
+   "titlePt": "malas · preto(a) · cidade · homem",
+   "emoji": "🧠",
+   "words": [
+    "bags",
+    "black",
+    "city",
+    "man"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "bags",
+     "pt": "malas"
+    },
+    {
+     "t": "meaning",
+     "w": "bags",
+     "pt": "malas",
+     "o": [
+      "portão",
+      "malas",
+      "vinte"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "black",
+     "pt": "preto(a)"
+    },
+    {
+     "t": "hear",
+     "w": "black",
+     "pt": "preto(a)",
+     "o": [
+      "twenty",
+      "black",
+      "bag"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "bags",
+       "malas"
+      ],
+      [
+       "black",
+       "preto(a)"
+      ],
+      [
+       "twenty",
+       "vinte"
+      ],
+      [
+       "my",
+       "meu"
+      ],
+      [
+       "bag",
+       "mala"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "city",
+     "pt": "cidade"
+    },
+    {
+     "t": "pick",
+     "w": "city",
+     "pt": "cidade",
+     "o": [
+      "this",
+      "seat",
+      "city"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "man",
+     "pt": "homem"
+    },
+    {
+     "t": "meaning",
+     "w": "man",
+     "pt": "homem",
+     "o": [
+      "assento",
+      "mala",
+      "homem"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "city",
+     "pt": "cidade",
+     "o": [
+      "bag",
+      "passport",
+      "city"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "city",
+       "cidade"
+      ],
+      [
+       "man",
+       "homem"
+      ],
+      [
+       "bags",
+       "malas"
+      ],
+      [
+       "black",
+       "preto(a)"
+      ],
+      [
+       "twenty",
+       "vinte"
+      ]
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "Paris... Gate twenty.",
+     "pt": "Paris... Portão vinte.",
+     "v": "en-US-AriaNeural",
+     "x": [
+      "good",
+      "it",
+      "sugar"
+     ]
+    },
+    {
+     "t": "fill",
+     "en": "My passport... My passport?",
+     "pt": "Meu passaporte... Meu passaporte?",
+     "v": "en-US-EricNeural",
+     "gap": "My passport... ___ passport?",
+     "w": "My",
+     "o": [
+      "My",
+      "is",
+      "first"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Paris... Gate twenty.",
+     "pt": "Paris... Portão vinte.",
+     "v": "en-US-AriaNeural",
+     "o": [
+      "Um homem está no assento dez.",
+      "Paris... Portão vinte.",
+      "Tanaka? Ah! Desculpe!"
+     ]
+    },
+    {
+     "t": "pick",
+     "w": "man",
+     "pt": "homem",
+     "o": [
+      "black",
+      "man",
+      "red"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "My passport... My passport?",
+     "pt": "Meu passaporte... Meu passaporte?",
+     "v": "en-US-EricNeural",
+     "x": [
+      "coffee",
+      "ten",
+      "there"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "This is my ticket.",
+     "pt": "Este é meu ingresso.",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "This is my ticket.",
+      "Anna, where is my bag?",
+      "Yes! I am from Paris."
+     ]
+    },
+    {
+     "t": "meaning",
+     "w": "red",
+     "pt": "vermelho(a)",
+     "o": [
+      "vermelho(a)",
+      "aeroporto",
+      "este"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "This is my ticket.",
+     "pt": "Este é meu ingresso.",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Este é meu ingresso.",
+      "Papai! Lisa!",
+      "Bonjour, Anna! Bem-vinda à minha cidade!"
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "It's OK!",
+     "pt": "Tudo bem!",
+     "v": "en-US-RogerNeural",
+     "x": [
+      "from",
+      "sorry",
+      "our"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u4z5",
+   "title": "mr · our · plane · twelve",
+   "titlePt": "senhor · nosso(a) · avião · doze",
+   "emoji": "💬",
+   "words": [
+    "mr",
+    "our",
+    "plane",
+    "twelve"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "mr",
+     "pt": "senhor"
+    },
+    {
+     "t": "meaning",
+     "w": "mr",
+     "pt": "senhor",
+     "o": [
+      "homem",
+      "avião",
+      "senhor"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "our",
+     "pt": "nosso(a)"
+    },
+    {
+     "t": "hear",
+     "w": "our",
+     "pt": "nosso(a)",
+     "o": [
+      "mr",
+      "man",
+      "our"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "mr",
+       "senhor"
+      ],
+      [
+       "our",
+       "nosso(a)"
+      ],
+      [
+       "city",
+       "cidade"
+      ],
+      [
+       "this",
+       "este"
+      ],
+      [
+       "my",
+       "meu"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "plane",
+     "pt": "avião"
+    },
+    {
+     "t": "pick",
+     "w": "plane",
+     "pt": "avião",
+     "o": [
+      "black",
+      "bag",
+      "plane"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "twelve",
+     "pt": "doze"
+    },
+    {
+     "t": "meaning",
+     "w": "twelve",
+     "pt": "doze",
+     "o": [
+      "aeroporto",
+      "passaporte",
+      "doze"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "plane",
+     "pt": "avião",
+     "o": [
+      "is",
+      "plane",
+      "this"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "plane",
+       "avião"
+      ],
+      [
+       "twelve",
+       "doze"
+      ],
+      [
+       "mr",
+       "senhor"
+      ],
+      [
+       "our",
+       "nosso(a)"
+      ],
+      [
+       "bags",
+       "malas"
+      ]
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "Is this our gate? Paris?",
+     "pt": "Este é o nosso portão? Paris?",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "many",
+      "twenty",
+      "morning"
+     ]
+    },
+    {
+     "t": "fill",
+     "en": "Tokyo! Wow!",
+     "pt": "Tóquio! Uau!",
+     "v": "en-US-EricNeural",
+     "gap": "___! Wow!",
+     "w": "Tokyo",
+     "o": [
+      "please",
+      "Tokyo",
+      "goodbye"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Is this our gate? Paris?",
+     "pt": "Este é o nosso portão? Paris?",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Este é o nosso portão? Paris?",
+      "Sim! Café! Café em Paris!",
+      "O senhor é de Paris também?"
+     ]
+    },
+    {
+     "t": "pick",
+     "w": "twelve",
+     "pt": "doze",
+     "o": [
+      "twenty",
+      "airport",
+      "twelve"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "Tokyo! Wow!",
+     "pt": "Tóquio! Uau!",
+     "v": "en-US-EricNeural",
+     "x": [
+      "milk",
+      "twenty",
+      "here"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "Paris... Gate twenty.",
+     "pt": "Paris... Portão vinte.",
+     "v": "en-US-AriaNeural",
+     "o": [
+      "And the children? Their passports, please.",
+      "Paris... Gate twenty.",
+      "OK! Thank you, everyone."
+     ]
+    },
+    {
+     "t": "meaning",
+     "w": "this",
+     "pt": "este",
+     "o": [
+      "este",
+      "portão",
+      "malas"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Paris... Gate twenty.",
+     "pt": "Paris... Portão vinte.",
+     "v": "en-US-AriaNeural",
+     "o": [
+      "Nós somos de Londres. E o senhor?",
+      "Paris... Portão vinte.",
+      "O senhor é de Paris também?"
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "This is my passport!",
+     "pt": "Este é o meu passaporte!",
+     "v": "en-US-AnaNeural",
+     "x": [
+      "welcome",
+      "sugar",
+      "son"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u4z6",
+   "title": "we · again · children · eleven",
+   "titlePt": "nós · de novo · crianças · onze",
+   "emoji": "🔁",
+   "words": [
+    "we",
+    "again",
+    "children",
+    "eleven"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "we",
+     "pt": "nós"
+    },
+    {
+     "t": "meaning",
+     "w": "we",
+     "pt": "nós",
+     "o": [
+      "nós",
+      "nosso(a)",
+      "crianças"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "again",
+     "pt": "de novo"
+    },
+    {
+     "t": "hear",
+     "w": "again",
+     "pt": "de novo",
+     "o": [
+      "black",
+      "again",
+      "we"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "we",
+       "nós"
+      ],
+      [
+       "again",
+       "de novo"
+      ],
+      [
+       "city",
+       "cidade"
+      ],
+      [
+       "twelve",
+       "doze"
+      ],
+      [
+       "mr",
+       "senhor"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "children",
+     "pt": "crianças"
+    },
+    {
+     "t": "pick",
+     "w": "children",
+     "pt": "crianças",
+     "o": [
+      "children",
+      "city",
+      "this"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "eleven",
+     "pt": "onze"
+    },
+    {
+     "t": "meaning",
+     "w": "eleven",
+     "pt": "onze",
+     "o": [
+      "nosso(a)",
+      "vermelho(a)",
+      "onze"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "children",
+     "pt": "crianças",
+     "o": [
+      "airport",
+      "gate",
+      "children"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "children",
+       "crianças"
+      ],
+      [
+       "eleven",
+       "onze"
+      ],
+      [
+       "we",
+       "nós"
+      ],
+      [
+       "again",
+       "de novo"
+      ],
+      [
+       "black",
+       "preto(a)"
+      ]
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "Is this our gate? Paris?",
+     "pt": "Este é o nosso portão? Paris?",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "good",
+      "am",
+      "bag"
+     ]
+    },
+    {
+     "t": "fill",
+     "en": "My passport... My passport?",
+     "pt": "Meu passaporte... Meu passaporte?",
+     "v": "en-US-EricNeural",
+     "gap": "My passport... ___ passport?",
+     "w": "My",
+     "o": [
+      "there",
+      "are",
+      "My"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Is this our gate? Paris?",
+     "pt": "Este é o nosso portão? Paris?",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Bem-vindo a Paris!",
+      "Aqui está!",
+      "Este é o nosso portão? Paris?"
+     ]
+    },
+    {
+     "t": "pick",
+     "w": "eleven",
+     "pt": "onze",
+     "o": [
+      "again",
+      "gate",
+      "eleven"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "My passport... My passport?",
+     "pt": "Meu passaporte... Meu passaporte?",
+     "v": "en-US-EricNeural",
+     "x": [
+      "we",
+      "phew",
+      "twenty"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "This is my ticket.",
+     "pt": "Este é meu ingresso.",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "This is my ticket.",
+      "Excuse me. This is my seat.",
+      "Your bag? No, this is my bag!"
+     ]
+    },
+    {
+     "t": "meaning",
+     "w": "red",
+     "pt": "vermelho(a)",
+     "o": [
+      "vermelho(a)",
+      "preto(a)",
+      "vinte"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "This is my ticket.",
+     "pt": "Este é meu ingresso.",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Tóquio! Uau!",
+      "Este é meu ingresso.",
+      "Ben! Está na sua mochila?"
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "It's OK!",
+     "pt": "Tudo bem!",
+     "v": "en-US-RogerNeural",
+     "x": [
+      "go",
+      "too",
+      "with"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u4z7",
+   "title": "going · hurry · many · on",
+   "titlePt": "indo · rápido · muitos · em",
+   "emoji": "⭐",
+   "words": [
+    "going",
+    "hurry",
+    "many",
+    "on"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "going",
+     "pt": "indo"
+    },
+    {
+     "t": "meaning",
+     "w": "going",
+     "pt": "indo",
+     "o": [
+      "indo",
+      "malas",
+      "preto(a)"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "hurry",
+     "pt": "rápido"
+    },
+    {
+     "t": "hear",
+     "w": "hurry",
+     "pt": "rápido",
+     "o": [
+      "eleven",
+      "hurry",
+      "gate"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "going",
+       "indo"
+      ],
+      [
+       "hurry",
+       "rápido"
+      ],
+      [
+       "mr",
+       "senhor"
+      ],
+      [
+       "twenty",
+       "vinte"
+      ],
+      [
+       "we",
+       "nós"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "many",
+     "pt": "muitos"
+    },
+    {
+     "t": "pick",
+     "w": "many",
+     "pt": "muitos",
+     "o": [
+      "airport",
+      "seat",
+      "many"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "on",
+     "pt": "em"
+    },
+    {
+     "t": "meaning",
+     "w": "on",
+     "pt": "em",
+     "o": [
+      "portão",
+      "em",
+      "aeroporto"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "many",
+     "pt": "muitos",
+     "o": [
+      "my",
+      "many",
+      "passport"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "many",
+       "muitos"
+      ],
+      [
+       "on",
+       "em"
+      ],
+      [
+       "going",
+       "indo"
+      ],
+      [
+       "hurry",
+       "rápido"
+      ],
+      [
+       "our",
+       "nosso(a)"
+      ]
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "Anna is on the plane.",
+     "pt": "A Anna está no avião.",
+     "v": "en-US-AndrewNeural",
+     "x": [
+      "welcome",
+      "many",
+      "no"
+     ]
+    },
+    {
+     "t": "fill",
+     "en": "Is this our gate? Paris?",
+     "pt": "Este é o nosso portão? Paris?",
+     "v": "en-US-JennyNeural",
+     "gap": "Is this our ___? Paris?",
+     "w": "gate",
+     "o": [
+      "black",
+      "are",
+      "gate"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Anna is on the plane.",
+     "pt": "A Anna está no avião.",
+     "v": "en-US-AndrewNeural",
+     "o": [
+      "Ah! Sr. Tanaka! Olá de novo!",
+      "A Anna está no avião.",
+      "Tudo bem!"
+     ]
+    },
+    {
+     "t": "pick",
+     "w": "on",
+     "pt": "em",
+     "o": [
+      "on",
+      "airport",
+      "twelve"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "Is this our gate? Paris?",
+     "pt": "Este é o nosso portão? Paris?",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "airport",
+      "tea",
+      "seat"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "Tokyo! Wow!",
+     "pt": "Tóquio! Uau!",
+     "v": "en-US-EricNeural",
+     "o": [
+      "Yes, this is your gate.",
+      "Oh! Thank you, Anna!",
+      "Tokyo! Wow!"
+     ]
+    },
+    {
+     "t": "meaning",
+     "w": "red",
+     "pt": "vermelho(a)",
+     "o": [
+      "vermelho(a)",
+      "doze",
+      "de novo"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Tokyo! Wow!",
+     "pt": "Tóquio! Uau!",
+     "v": "en-US-EricNeural",
+     "o": [
+      "A Anna está no avião.",
+      "Malas primeiro, Ben.",
+      "Tóquio! Uau!"
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "Paris... Gate twenty.",
+     "pt": "Paris... Portão vinte.",
+     "v": "en-US-AriaNeural",
+     "x": [
+      "from",
+      "look",
+      "on"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u4z8",
+   "title": "passports · phew · run · son",
+   "titlePt": "passaportes · ufa · correr · filho",
+   "emoji": "🗝️",
+   "words": [
+    "passports",
+    "phew",
+    "run",
+    "son"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "passports",
+     "pt": "passaportes"
+    },
+    {
+     "t": "meaning",
+     "w": "passports",
+     "pt": "passaportes",
+     "o": [
+      "passaportes",
+      "nós",
+      "homem"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "phew",
+     "pt": "ufa"
+    },
+    {
+     "t": "hear",
+     "w": "phew",
+     "pt": "ufa",
+     "o": [
+      "phew",
+      "this",
+      "eleven"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "passports",
+       "passaportes"
+      ],
+      [
+       "phew",
+       "ufa"
+      ],
+      [
+       "mr",
+       "senhor"
+      ],
+      [
+       "bags",
+       "malas"
+      ],
+      [
+       "many",
+       "muitos"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "run",
+     "pt": "correr"
+    },
+    {
+     "t": "pick",
+     "w": "run",
+     "pt": "correr",
+     "o": [
+      "we",
+      "run",
+      "son"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "son",
+     "pt": "filho"
+    },
+    {
+     "t": "meaning",
+     "w": "son",
+     "pt": "filho",
+     "o": [
+      "muitos",
+      "vermelho(a)",
+      "filho"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "run",
+     "pt": "correr",
+     "o": [
+      "run",
+      "plane",
+      "going"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "run",
+       "correr"
+      ],
+      [
+       "son",
+       "filho"
+      ],
+      [
+       "passports",
+       "passaportes"
+      ],
+      [
+       "phew",
+       "ufa"
+      ],
+      [
+       "bag",
+       "mala"
+      ]
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "Anna is on the plane.",
+     "pt": "A Anna está no avião.",
+     "v": "en-US-AndrewNeural",
+     "x": [
+      "hello",
+      "am",
+      "ticket"
+     ]
+    },
+    {
+     "t": "fill",
+     "en": "This is my passport!",
+     "pt": "Este é o meu passaporte!",
+     "v": "en-US-AnaNeural",
+     "gap": "This ___ my passport!",
+     "w": "is",
+     "o": [
+      "bags",
+      "you",
+      "is"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Anna is on the plane.",
+     "pt": "A Anna está no avião.",
+     "v": "en-US-AndrewNeural",
+     "o": [
+      "A Anna está no avião.",
+      "Não. Minha mala é vermelha.",
+      "Sua mala? Não, esta é a minha mala!"
+     ]
+    },
+    {
+     "t": "pick",
+     "w": "son",
+     "pt": "filho",
+     "o": [
+      "ticket",
+      "son",
+      "passport"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "This is my passport!",
+     "pt": "Este é o meu passaporte!",
+     "v": "en-US-AnaNeural",
+     "x": [
+      "at",
+      "sugar",
+      "bag"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "My passport... My passport?",
+     "pt": "Meu passaporte... Meu passaporte?",
+     "v": "en-US-EricNeural",
+     "o": [
+      "Tea for Mom, water for me...",
+      "My passport... My passport?",
+      "Ben! Is it in your bag?"
+     ]
+    },
+    {
+     "t": "meaning",
+     "w": "this",
+     "pt": "este",
+     "o": [
+      "crianças",
+      "vermelho(a)",
+      "este"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "My passport... My passport?",
+     "pt": "Meu passaporte... Meu passaporte?",
+     "v": "en-US-EricNeural",
+     "o": [
+      "Meu passaporte... Meu passaporte?",
+      "Certo! Obrigado, pessoal.",
+      "Obrigada. Assento dez."
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "Is this our gate? Paris?",
+     "pt": "Este é o nosso portão? Paris?",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "mr",
+      "tea",
+      "on"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u4z9",
+   "title": "their · they · tickets · today",
+   "titlePt": "deles · eles · passagens · hoje",
+   "emoji": "🚀",
+   "words": [
+    "their",
+    "they",
+    "tickets",
+    "today"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "their",
+     "pt": "deles"
+    },
+    {
+     "t": "meaning",
+     "w": "their",
+     "pt": "deles",
+     "o": [
+      "ufa",
+      "deles",
+      "crianças"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "they",
+     "pt": "eles"
+    },
+    {
+     "t": "hear",
+     "w": "they",
+     "pt": "eles",
+     "o": [
+      "they",
+      "bags",
+      "we"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "their",
+       "deles"
+      ],
+      [
+       "they",
+       "eles"
+      ],
+      [
+       "airport",
+       "aeroporto"
+      ],
+      [
+       "black",
+       "preto(a)"
+      ],
+      [
+       "hurry",
+       "rápido"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "tickets",
+     "pt": "passagens"
+    },
+    {
+     "t": "pick",
+     "w": "tickets",
+     "pt": "passagens",
+     "o": [
+      "bag",
+      "passports",
+      "tickets"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "today",
+     "pt": "hoje"
+    },
+    {
+     "t": "meaning",
+     "w": "today",
+     "pt": "hoje",
+     "o": [
+      "hoje",
+      "em",
+      "passaporte"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "tickets",
+     "pt": "passagens",
+     "o": [
+      "tickets",
+      "seat",
+      "hurry"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "tickets",
+       "passagens"
+      ],
+      [
+       "today",
+       "hoje"
+      ],
+      [
+       "their",
+       "deles"
+      ],
+      [
+       "they",
+       "eles"
+      ],
+      [
+       "black",
+       "preto(a)"
+      ]
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "They run to gate twenty.",
+     "pt": "Eles correm para o portão vinte.",
+     "v": "en-US-AndrewNeural",
+     "x": [
+      "our",
+      "in",
+      "tea"
+     ]
+    },
+    {
+     "t": "fill",
+     "en": "Anna is on the plane.",
+     "pt": "A Anna está no avião.",
+     "v": "en-US-AndrewNeural",
+     "gap": "Anna is ___ the plane.",
+     "w": "on",
+     "o": [
+      "everyone",
+      "on",
+      "first"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "They run to gate twenty.",
+     "pt": "Eles correm para o portão vinte.",
+     "v": "en-US-AndrewNeural",
+     "o": [
+      "Eles correm para o portão vinte.",
+      "Mãe! Rápido!",
+      "Paris... Portão vinte."
+     ]
+    },
+    {
+     "t": "pick",
+     "w": "today",
+     "pt": "hoje",
+     "o": [
+      "black",
+      "today",
+      "twelve"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "Anna is on the plane.",
+     "pt": "A Anna está no avião.",
+     "v": "en-US-AndrewNeural",
+     "x": [
+      "their",
+      "tickets",
+      "everyone"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "This is my ticket.",
+     "pt": "Este é meu ingresso.",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "This is my ticket.",
+      "Are you from Paris, too?",
+      "Yes! Sorry. My ticket... seat eleven."
+     ]
+    },
+    {
+     "t": "meaning",
+     "w": "city",
+     "pt": "cidade",
+     "o": [
+      "cidade",
+      "passaporte",
+      "de novo"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "This is my ticket.",
+     "pt": "Este é meu ingresso.",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Este é meu ingresso.",
+      "Meu pai está em Paris!",
+      "Anna! Ben! Kate! Bem-vindos a Paris!"
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "It's OK!",
+     "pt": "Tudo bem!",
+     "v": "en-US-RogerNeural",
+     "x": [
+      "phew",
+      "look",
+      "not"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u4z10",
+   "title": "Review",
+   "titlePt": "Revisão geral",
+   "emoji": "🏆",
+   "words": [],
+   "screens": [
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "phew",
+       "ufa"
+      ],
+      [
+       "today",
+       "hoje"
+      ],
+      [
+       "airport",
+       "aeroporto"
+      ],
+      [
+       "twenty",
+       "vinte"
+      ],
+      [
+       "my",
+       "meu"
+      ]
+     ]
+    },
+    {
+     "t": "meaning",
+     "w": "we",
+     "pt": "nós",
+     "o": [
+      "aeroporto",
+      "avião",
+      "nós"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "city",
+     "pt": "cidade",
+     "o": [
+      "ticket",
+      "city",
+      "on"
+     ]
+    },
+    {
+     "t": "pick",
+     "w": "red",
+     "pt": "vermelho(a)",
+     "o": [
+      "going",
+      "red",
+      "passports"
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "Your passport, please.",
+     "pt": "Seu passaporte, por favor.",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "my",
+      "tea",
+      "many"
+     ]
+    },
+    {
+     "t": "fill",
+     "en": "Is this your bag?",
+     "pt": "Esta é sua mala?",
+     "v": "en-US-JennyNeural",
+     "gap": "Is ___ your bag?",
+     "w": "this",
+     "o": [
+      "this",
+      "please",
+      "again"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Your passport, please.",
+     "pt": "Seu passaporte, por favor.",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Seu passaporte, por favor.",
+      "Sua mala? Não, esta é a minha mala!",
+      "Paris... Portão vinte."
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "man",
+       "homem"
+      ],
+      [
+       "ticket",
+       "passagem"
+      ],
+      [
+       "plane",
+       "avião"
+      ],
+      [
+       "gate",
+       "portão"
+      ],
+      [
+       "run",
+       "correr"
+      ]
+     ]
+    },
+    {
+     "t": "type",
+     "en": "Is this your bag?",
+     "pt": "Esta é sua mala?",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "going",
+      "here",
+      "hello"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "Welcome to Paris!",
+     "pt": "Bem-vindo a Paris!",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Oh! Thank you!",
+      "Welcome to Paris!",
+      "Yes! Coffee! Coffee in Paris!"
+     ]
+    },
+    {
+     "t": "meaning",
+     "w": "excuse",
+     "pt": "desculpe",
+     "o": [
+      "desculpe",
+      "meu",
+      "vinte"
+     ]
+    },
+    {
+     "t": "pick",
+     "w": "seat",
+     "pt": "assento",
+     "o": [
+      "we",
+      "seat",
+      "gate"
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "This is my ticket.",
+     "pt": "Este é meu ingresso.",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "red",
+      "city",
+      "our"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "This is my ticket.",
+     "pt": "Este é meu ingresso.",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Este é meu ingresso.",
+      "Não. Minha mala é vermelha.",
+      "Tanaka? Ah! Desculpe!"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "children",
+     "pt": "crianças",
+     "o": [
+      "city",
+      "black",
+      "children"
+     ]
+    },
+    {
+     "t": "fill",
+     "en": "Yes, this is your gate.",
+     "pt": "Sim, esse é o seu portão.",
+     "v": "en-US-JennyNeural",
+     "gap": "Yes, this ___ your gate.",
+     "w": "is",
+     "o": [
+      "phew",
+      "coffee",
+      "is"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "Welcome to Paris!",
+     "pt": "Bem-vindo a Paris!",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "dad",
+      "your",
+      "there"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "passports",
+       "passaportes"
+      ],
+      [
+       "passport",
+       "passaporte"
+      ],
+      [
+       "hurry",
+       "rápido"
+      ],
+      [
+       "twelve",
+       "doze"
+      ],
+      [
+       "again",
+       "de novo"
+      ]
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "Yes, this is your gate.",
+     "pt": "Sim, esse é o seu portão.",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "tea",
+      "son",
+      "their"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Yes, this is your gate.",
+     "pt": "Sim, esse é o seu portão.",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Esta é sua mala, mãe?",
+      "Este é o nosso portão? Paris?",
+      "Sim, esse é o seu portão."
+     ]
+    }
+   ]
+  }
+ ]
+}

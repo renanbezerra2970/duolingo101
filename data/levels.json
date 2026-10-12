@@ -1,5 +1,6 @@
 {
   "levels": [
+    { "n": 0, "name": "Palavras", "cefr": "Pré-A1", "rate": "-5%", "desc": "Exercícios curtos e repetidos para fixar as palavras da unidade antes das histórias." },
     { "n": 1, "name": "Básico", "cefr": "A1", "rate": "-5%", "desc": "Frases curtas e o vocabulário essencial de cada unidade." },
     { "n": 2, "name": "Elementar", "cefr": "A2", "rate": "-5%", "desc": "Frases completas, mais vocabulário e um pouco de passado e futuro." },
     { "n": 3, "name": "Intermediário", "cefr": "B1", "rate": "+0%", "desc": "Conversa natural e perguntas em inglês." },

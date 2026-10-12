@@ -1,0 +1,2363 @@
+{
+ "unit": 2,
+ "lessons": [
+  {
+   "id": "u2z1",
+   "title": "am · you · from · is",
+   "titlePt": "sou · você · de · é",
+   "emoji": "🔤",
+   "words": [
+    "am",
+    "you",
+    "from",
+    "is"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "from",
+     "pt": "de"
+    },
+    {
+     "t": "meaning",
+     "w": "from",
+     "pt": "de",
+     "o": [
+      "de",
+      "ou",
+      "sério? de verdade"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "am",
+     "pt": "sou"
+    },
+    {
+     "t": "hear",
+     "w": "am",
+     "pt": "sou",
+     "o": [
+      "sorry",
+      "am",
+      "in"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "from",
+       "de"
+      ],
+      [
+       "am",
+       "sou"
+      ],
+      [
+       "you",
+       "você"
+      ],
+      [
+       "is",
+       "é"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "you",
+     "pt": "você"
+    },
+    {
+     "t": "pick",
+     "w": "you",
+     "pt": "você",
+     "o": [
+      "this",
+      "you",
+      "milk"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "is",
+     "pt": "é"
+    },
+    {
+     "t": "meaning",
+     "w": "is",
+     "pt": "é",
+     "o": [
+      "sim",
+      "café",
+      "é"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "you",
+     "pt": "você",
+     "o": [
+      "day",
+      "sorry",
+      "you"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "you",
+       "você"
+      ],
+      [
+       "is",
+       "é"
+      ],
+      [
+       "from",
+       "de"
+      ],
+      [
+       "am",
+       "sou"
+      ]
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "I am from Tokyo.",
+     "pt": "Eu sou de Tóquio.",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "no",
+      "and",
+      "for"
+     ]
+    },
+    {
+     "t": "fill",
+     "en": "I am from Mexico.",
+     "pt": "Eu sou do México.",
+     "v": "en-US-JennyNeural",
+     "gap": "I ___ from Mexico.",
+     "w": "am",
+     "o": [
+      "not",
+      "good",
+      "am"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "I am from Tokyo.",
+     "pt": "Eu sou de Tóquio.",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Eu sou de Tóquio.",
+      "Bom dia! Eu sou a Yuki.",
+      "Sim! Chá, pessoal?"
+     ]
+    },
+    {
+     "t": "pick",
+     "w": "is",
+     "pt": "é",
+     "o": [
+      "hello",
+      "for",
+      "is"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "I am from Mexico.",
+     "pt": "Eu sou do México.",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "too",
+      "door",
+      "please"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "I am from Brazil.",
+     "pt": "Eu sou do Brasil.",
+     "v": "en-US-EricNeural",
+     "o": [
+      "Sofia, a game! Where is he from?",
+      "Pedro is at a hostel in London.",
+      "I am from Brazil."
+     ]
+    },
+    {
+     "t": "meaning",
+     "w": "am",
+     "pt": "sou",
+     "o": [
+      "manhã",
+      "ele",
+      "sou"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "I am from Brazil.",
+     "pt": "Eu sou do Brasil.",
+     "v": "en-US-EricNeural",
+     "o": [
+      "Eu sou do Brasil.",
+      "Sim! O Li é da China.",
+      "Obrigada, Bea!"
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "I am from Beijing.",
+     "pt": "Eu sou de Pequim.",
+     "v": "en-US-GuyNeural",
+     "x": [
+      "goodbye",
+      "course",
+      "first"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u2z2",
+   "title": "and · where · meet · nice",
+   "titlePt": "e · onde · conhecer · legal",
+   "emoji": "🧩",
+   "words": [
+    "and",
+    "where",
+    "meet",
+    "nice"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "and",
+     "pt": "e"
+    },
+    {
+     "t": "meaning",
+     "w": "and",
+     "pt": "e",
+     "o": [
+      "conhecer",
+      "e",
+      "você"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "where",
+     "pt": "onde"
+    },
+    {
+     "t": "hear",
+     "w": "where",
+     "pt": "onde",
+     "o": [
+      "and",
+      "where",
+      "am"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "and",
+       "e"
+      ],
+      [
+       "where",
+       "onde"
+      ],
+      [
+       "from",
+       "de"
+      ],
+      [
+       "am",
+       "sou"
+      ],
+      [
+       "is",
+       "é"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "meet",
+     "pt": "conhecer"
+    },
+    {
+     "t": "pick",
+     "w": "meet",
+     "pt": "conhecer",
+     "o": [
+      "where",
+      "meet",
+      "nice"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "nice",
+     "pt": "legal"
+    },
+    {
+     "t": "meaning",
+     "w": "nice",
+     "pt": "legal",
+     "o": [
+      "sou",
+      "onde",
+      "legal"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "meet",
+     "pt": "conhecer",
+     "o": [
+      "is",
+      "am",
+      "meet"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "meet",
+       "conhecer"
+      ],
+      [
+       "nice",
+       "legal"
+      ],
+      [
+       "and",
+       "e"
+      ],
+      [
+       "where",
+       "onde"
+      ],
+      [
+       "you",
+       "você"
+      ]
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "Nice to meet you, Li!",
+     "pt": "Prazer em te conhecer, Li!",
+     "v": "en-US-EricNeural",
+     "x": [
+      "has",
+      "there",
+      "are"
+     ]
+    },
+    {
+     "t": "fill",
+     "en": "Nice to meet you, Bea!",
+     "pt": "Prazer em te conhecer, Bea!",
+     "v": "en-US-MichelleNeural",
+     "gap": "___ to meet you, Bea!",
+     "w": "Nice",
+     "o": [
+      "too",
+      "Nice",
+      "coffee"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Nice to meet you, Li!",
+     "pt": "Prazer em te conhecer, Li!",
+     "v": "en-US-EricNeural",
+     "o": [
+      "Oi, Ana! De onde você é?",
+      "Prazer em te conhecer, Li!",
+      "Você é do Japão também?"
+     ]
+    },
+    {
+     "t": "pick",
+     "w": "nice",
+     "pt": "legal",
+     "o": [
+      "am",
+      "nice",
+      "meet"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "Nice to meet you, Bea!",
+     "pt": "Prazer em te conhecer, Bea!",
+     "v": "en-US-MichelleNeural",
+     "x": [
+      "from",
+      "yes",
+      "go"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "I am Pedro. Nice to meet you!",
+     "pt": "Eu sou o Pedro. Prazer em te conhecer!",
+     "v": "en-US-EricNeural",
+     "o": [
+      "Welcome to the party, everyone!",
+      "I am Pedro. Nice to meet you!",
+      "Yuki? She is from Japan."
+     ]
+    },
+    {
+     "t": "meaning",
+     "w": "you",
+     "pt": "você",
+     "o": [
+      "e",
+      "você",
+      "de"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "I am Pedro. Nice to meet you!",
+     "pt": "Eu sou o Pedro. Prazer em te conhecer!",
+     "v": "en-US-EricNeural",
+     "o": [
+      "A Yuki está no café também.",
+      "Eu sou o Pedro. Prazer em te conhecer!",
+      "Sofia, um jogo! De onde ele é?"
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "I am from Paris, and you?",
+     "pt": "Eu sou de Paris, e você?",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "goodbye",
+      "he",
+      "class"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u2z3",
+   "title": "he · she · everyone · not",
+   "titlePt": "ele · ela · todo mundo · não",
+   "emoji": "🎯",
+   "words": [
+    "he",
+    "she",
+    "everyone",
+    "not"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "he",
+     "pt": "ele"
+    },
+    {
+     "t": "meaning",
+     "w": "he",
+     "pt": "ele",
+     "o": [
+      "onde",
+      "legal",
+      "ele"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "she",
+     "pt": "ela"
+    },
+    {
+     "t": "hear",
+     "w": "she",
+     "pt": "ela",
+     "o": [
+      "he",
+      "where",
+      "she"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "he",
+       "ele"
+      ],
+      [
+       "she",
+       "ela"
+      ],
+      [
+       "am",
+       "sou"
+      ],
+      [
+       "and",
+       "e"
+      ],
+      [
+       "meet",
+       "conhecer"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "everyone",
+     "pt": "todo mundo"
+    },
+    {
+     "t": "pick",
+     "w": "everyone",
+     "pt": "todo mundo",
+     "o": [
+      "nice",
+      "everyone",
+      "is"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "not",
+     "pt": "não"
+    },
+    {
+     "t": "meaning",
+     "w": "not",
+     "pt": "não",
+     "o": [
+      "não",
+      "você",
+      "conhecer"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "everyone",
+     "pt": "todo mundo",
+     "o": [
+      "everyone",
+      "she",
+      "and"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "everyone",
+       "todo mundo"
+      ],
+      [
+       "not",
+       "não"
+      ],
+      [
+       "he",
+       "ele"
+      ],
+      [
+       "she",
+       "ela"
+      ],
+      [
+       "meet",
+       "conhecer"
+      ]
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "He is from Brazil!",
+     "pt": "Ele é do Brasil!",
+     "v": "en-US-AriaNeural",
+     "x": [
+      "where",
+      "at",
+      "yes"
+     ]
+    },
+    {
+     "t": "fill",
+     "en": "She is from Mexico.",
+     "pt": "Ela é do México.",
+     "v": "en-US-GuyNeural",
+     "gap": "___ is from Mexico.",
+     "w": "She",
+     "o": [
+      "please",
+      "sorry",
+      "She"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "He is from Brazil!",
+     "pt": "Ele é do Brasil!",
+     "v": "en-US-AriaNeural",
+     "o": [
+      "A Ana é tímida.",
+      "Ele é do Brasil!",
+      "Bem-vinda, Ana!"
+     ]
+    },
+    {
+     "t": "pick",
+     "w": "not",
+     "pt": "não",
+     "o": [
+      "not",
+      "and",
+      "where"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "She is from Mexico.",
+     "pt": "Ela é do México.",
+     "v": "en-US-GuyNeural",
+     "x": [
+      "café",
+      "goodbye",
+      "zero"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "Yuki? She is from Japan.",
+     "pt": "A Yuki? Ela é do Japão.",
+     "v": "en-GB-SoniaNeural",
+     "o": [
+      "Yes! Coffee with milk!",
+      "Yuki? She is from Japan.",
+      "Good morning! I am Yuki."
+     ]
+    },
+    {
+     "t": "meaning",
+     "w": "and",
+     "pt": "e",
+     "o": [
+      "e",
+      "ele",
+      "todo mundo"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Yuki? She is from Japan.",
+     "pt": "A Yuki? Ela é do Japão.",
+     "v": "en-GB-SoniaNeural",
+     "o": [
+      "A Yuki? Ela é do Japão.",
+      "Obrigada, Sr. Brown!",
+      "E o Pedro? Ele é do México?"
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "And she? Where is she from?",
+     "pt": "E ela? De onde ela é?",
+     "v": "en-US-AriaNeural",
+     "x": [
+      "please",
+      "one",
+      "game"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u2z4",
+   "title": "in · new · class · english",
+   "titlePt": "em · novo(a) · aula · inglês",
+   "emoji": "🧠",
+   "words": [
+    "in",
+    "new",
+    "class",
+    "english"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "in",
+     "pt": "em"
+    },
+    {
+     "t": "meaning",
+     "w": "in",
+     "pt": "em",
+     "o": [
+      "em",
+      "é",
+      "não"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "new",
+     "pt": "novo(a)"
+    },
+    {
+     "t": "hear",
+     "w": "new",
+     "pt": "novo(a)",
+     "o": [
+      "new",
+      "english",
+      "you"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "in",
+       "em"
+      ],
+      [
+       "new",
+       "novo(a)"
+      ],
+      [
+       "she",
+       "ela"
+      ],
+      [
+       "and",
+       "e"
+      ],
+      [
+       "nice",
+       "legal"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "class",
+     "pt": "aula"
+    },
+    {
+     "t": "pick",
+     "w": "class",
+     "pt": "aula",
+     "o": [
+      "everyone",
+      "not",
+      "class"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "english",
+     "pt": "inglês"
+    },
+    {
+     "t": "meaning",
+     "w": "english",
+     "pt": "inglês",
+     "o": [
+      "sou",
+      "ele",
+      "inglês"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "class",
+     "pt": "aula",
+     "o": [
+      "everyone",
+      "new",
+      "class"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "class",
+       "aula"
+      ],
+      [
+       "english",
+       "inglês"
+      ],
+      [
+       "in",
+       "em"
+      ],
+      [
+       "new",
+       "novo(a)"
+      ],
+      [
+       "he",
+       "ele"
+      ]
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "I am from China, and you?",
+     "pt": "Sou da China, e você?",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "are",
+      "new",
+      "my"
+     ]
+    },
+    {
+     "t": "fill",
+     "en": "Tokyo! Wow!",
+     "pt": "Tóquio! Uau!",
+     "v": "en-US-EricNeural",
+     "gap": "___! Wow!",
+     "w": "Tokyo",
+     "o": [
+      "Tokyo",
+      "tea",
+      "english"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "I am from China, and you?",
+     "pt": "Sou da China, e você?",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Sou da China, e você?",
+      "O Li está no albergue também.",
+      "Obrigada, Sr. Brown!"
+     ]
+    },
+    {
+     "t": "pick",
+     "w": "english",
+     "pt": "inglês",
+     "o": [
+      "meet",
+      "from",
+      "english"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "Tokyo! Wow!",
+     "pt": "Tóquio! Uau!",
+     "v": "en-US-EricNeural",
+     "x": [
+      "one",
+      "student",
+      "game"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "Brazil, Japan, and China!",
+     "pt": "Brasil, Japão e China!",
+     "v": "en-US-EricNeural",
+     "o": [
+      "Brazil, Japan, and China!",
+      "Thank you, everyone! Goodbye!",
+      "Tea, of course! Tea with milk!"
+     ]
+    },
+    {
+     "t": "meaning",
+     "w": "is",
+     "pt": "é",
+     "o": [
+      "novo(a)",
+      "é",
+      "de"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Brazil, Japan, and China!",
+     "pt": "Brasil, Japão e China!",
+     "v": "en-US-EricNeural",
+     "o": [
+      "Brasil, Japão e China!",
+      "A Ana é tímida.",
+      "Aqui está! De onde você é?"
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "I am from Mexico!",
+     "pt": "Eu sou do México!",
+     "v": "en-US-AriaNeural",
+     "x": [
+      "good",
+      "go",
+      "in"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u2z5",
+   "title": "game · hostel · party · really",
+   "titlePt": "jogo · albergue · festa · sério? de verdade",
+   "emoji": "💬",
+   "words": [
+    "game",
+    "hostel",
+    "party",
+    "really"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "game",
+     "pt": "jogo"
+    },
+    {
+     "t": "meaning",
+     "w": "game",
+     "pt": "jogo",
+     "o": [
+      "jogo",
+      "albergue",
+      "aula"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "hostel",
+     "pt": "albergue"
+    },
+    {
+     "t": "hear",
+     "w": "hostel",
+     "pt": "albergue",
+     "o": [
+      "and",
+      "hostel",
+      "am"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "game",
+       "jogo"
+      ],
+      [
+       "hostel",
+       "albergue"
+      ],
+      [
+       "and",
+       "e"
+      ],
+      [
+       "english",
+       "inglês"
+      ],
+      [
+       "new",
+       "novo(a)"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "party",
+     "pt": "festa"
+    },
+    {
+     "t": "pick",
+     "w": "party",
+     "pt": "festa",
+     "o": [
+      "she",
+      "party",
+      "nice"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "really",
+     "pt": "sério? de verdade"
+    },
+    {
+     "t": "meaning",
+     "w": "really",
+     "pt": "sério? de verdade",
+     "o": [
+      "sério? de verdade",
+      "de",
+      "novo(a)"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "party",
+     "pt": "festa",
+     "o": [
+      "party",
+      "in",
+      "she"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "party",
+       "festa"
+      ],
+      [
+       "really",
+       "sério? de verdade"
+      ],
+      [
+       "game",
+       "jogo"
+      ],
+      [
+       "hostel",
+       "albergue"
+      ],
+      [
+       "is",
+       "é"
+      ]
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "Sofia, a game! Where is he from?",
+     "pt": "Sofia, um jogo! De onde ele é?",
+     "v": "en-GB-SoniaNeural",
+     "x": [
+      "café",
+      "first",
+      "for"
+     ]
+    },
+    {
+     "t": "fill",
+     "en": "Brazil, China, Mexico, Japan, France...",
+     "pt": "Brasil, China, México, Japão, França...",
+     "v": "en-US-EricNeural",
+     "gap": "Brazil, China, ___, Japan, France...",
+     "w": "Mexico",
+     "o": [
+      "Mexico",
+      "thank",
+      "has"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Sofia, a game! Where is he from?",
+     "pt": "Sofia, um jogo! De onde ele é?",
+     "v": "en-GB-SoniaNeural",
+     "o": [
+      "Oi, Pedro! Olá!",
+      "Sofia, um jogo! De onde ele é?",
+      "Chá, por favor."
+     ]
+    },
+    {
+     "t": "pick",
+     "w": "really",
+     "pt": "sério? de verdade",
+     "o": [
+      "really",
+      "english",
+      "not"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "Brazil, China, Mexico, Japan, France...",
+     "pt": "Brasil, China, México, Japão, França...",
+     "v": "en-US-EricNeural",
+     "x": [
+      "door",
+      "morning",
+      "not"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "Tokyo, Brazil, China, Mexico, and Paris!",
+     "pt": "Tóquio, Brasil, China, México e Paris!",
+     "v": "en-US-ChristopherNeural",
+     "o": [
+      "I am from Recife, too!",
+      "Pedro! Are you from Brazil?",
+      "Tokyo, Brazil, China, Mexico, and Paris!"
+     ]
+    },
+    {
+     "t": "meaning",
+     "w": "nice",
+     "pt": "legal",
+     "o": [
+      "novo(a)",
+      "legal",
+      "sério? de verdade"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Tokyo, Brazil, China, Mexico, and Paris!",
+     "pt": "Tóquio, Brasil, China, México e Paris!",
+     "v": "en-US-ChristopherNeural",
+     "o": [
+      "Tóquio, Brasil, China, México e Paris!",
+      "Olá! Café?",
+      "Oi! Bom dia!"
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "I am from Brazil. And you?",
+     "pt": "Eu sou do Brasil. E você?",
+     "v": "en-US-EricNeural",
+     "x": [
+      "course",
+      "there",
+      "has"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u2z6",
+   "title": "student · this · course · day",
+   "titlePt": "aluno(a) · este · curso · dia",
+   "emoji": "🔁",
+   "words": [
+    "student",
+    "this",
+    "course",
+    "day"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "student",
+     "pt": "aluno(a)"
+    },
+    {
+     "t": "meaning",
+     "w": "student",
+     "pt": "aluno(a)",
+     "o": [
+      "é",
+      "festa",
+      "aluno(a)"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "this",
+     "pt": "este"
+    },
+    {
+     "t": "hear",
+     "w": "this",
+     "pt": "este",
+     "o": [
+      "this",
+      "class",
+      "hostel"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "student",
+       "aluno(a)"
+      ],
+      [
+       "this",
+       "este"
+      ],
+      [
+       "english",
+       "inglês"
+      ],
+      [
+       "everyone",
+       "todo mundo"
+      ],
+      [
+       "game",
+       "jogo"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "course",
+     "pt": "curso"
+    },
+    {
+     "t": "pick",
+     "w": "course",
+     "pt": "curso",
+     "o": [
+      "class",
+      "course",
+      "where"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "day",
+     "pt": "dia"
+    },
+    {
+     "t": "meaning",
+     "w": "day",
+     "pt": "dia",
+     "o": [
+      "dia",
+      "é",
+      "você"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "course",
+     "pt": "curso",
+     "o": [
+      "course",
+      "and",
+      "game"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "course",
+       "curso"
+      ],
+      [
+       "day",
+       "dia"
+      ],
+      [
+       "student",
+       "aluno(a)"
+      ],
+      [
+       "this",
+       "este"
+      ],
+      [
+       "everyone",
+       "todo mundo"
+      ]
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "I am from Japan. From Tokyo.",
+     "pt": "Eu sou do Japão. De Tóquio.",
+     "v": "en-US-MichelleNeural",
+     "x": [
+      "this",
+      "with",
+      "morning"
+     ]
+    },
+    {
+     "t": "fill",
+     "en": "And Pedro? Is he from Mexico?",
+     "pt": "E o Pedro? Ele é do México?",
+     "v": "en-GB-SoniaNeural",
+     "gap": "And Pedro? ___ he from Mexico?",
+     "w": "Is",
+     "o": [
+      "please",
+      "there",
+      "Is"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "I am from Japan. From Tokyo.",
+     "pt": "Eu sou do Japão. De Tóquio.",
+     "v": "en-US-MichelleNeural",
+     "o": [
+      "Eu sou do Japão. De Tóquio.",
+      "Prazer em te conhecer também, Pedro!",
+      "Aqui está!"
+     ]
+    },
+    {
+     "t": "pick",
+     "w": "day",
+     "pt": "dia",
+     "o": [
+      "day",
+      "she",
+      "game"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "And Pedro? Is he from Mexico?",
+     "pt": "E o Pedro? Ele é do México?",
+     "v": "en-GB-SoniaNeural",
+     "x": [
+      "friend",
+      "no",
+      "course"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "And England! Mr. Brown is from London!",
+     "pt": "E Inglaterra! O Sr. Brown é de Londres!",
+     "v": "en-US-MichelleNeural",
+     "o": [
+      "And England! Mr. Brown is from London!",
+      "Here you go!",
+      "Yes, I am! I am from Brazil."
+     ]
+    },
+    {
+     "t": "meaning",
+     "w": "nice",
+     "pt": "legal",
+     "o": [
+      "aula",
+      "legal",
+      "novo(a)"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "And England! Mr. Brown is from London!",
+     "pt": "E Inglaterra! O Sr. Brown é de Londres!",
+     "v": "en-US-MichelleNeural",
+     "o": [
+      "Prazer em te conhecer também!",
+      "Sim! Tóquio!",
+      "E Inglaterra! O Sr. Brown é de Londres!"
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "I am from Tokyo.",
+     "pt": "Eu sou de Tóquio.",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "she",
+      "friend",
+      "not"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u2z7",
+   "title": "door · first · friend · has",
+   "titlePt": "porta · primeiro · amigo(a) · tem",
+   "emoji": "⭐",
+   "words": [
+    "door",
+    "first",
+    "friend",
+    "has"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "door",
+     "pt": "porta"
+    },
+    {
+     "t": "meaning",
+     "w": "door",
+     "pt": "porta",
+     "o": [
+      "jogo",
+      "aula",
+      "porta"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "first",
+     "pt": "primeiro"
+    },
+    {
+     "t": "hear",
+     "w": "first",
+     "pt": "primeiro",
+     "o": [
+      "and",
+      "he",
+      "first"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "door",
+       "porta"
+      ],
+      [
+       "first",
+       "primeiro"
+      ],
+      [
+       "is",
+       "é"
+      ],
+      [
+       "nice",
+       "legal"
+      ],
+      [
+       "where",
+       "onde"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "friend",
+     "pt": "amigo(a)"
+    },
+    {
+     "t": "pick",
+     "w": "friend",
+     "pt": "amigo(a)",
+     "o": [
+      "everyone",
+      "friend",
+      "day"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "has",
+     "pt": "tem"
+    },
+    {
+     "t": "meaning",
+     "w": "has",
+     "pt": "tem",
+     "o": [
+      "primeiro",
+      "tem",
+      "de"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "friend",
+     "pt": "amigo(a)",
+     "o": [
+      "friend",
+      "is",
+      "from"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "friend",
+       "amigo(a)"
+      ],
+      [
+       "has",
+       "tem"
+      ],
+      [
+       "door",
+       "porta"
+      ],
+      [
+       "first",
+       "primeiro"
+      ],
+      [
+       "am",
+       "sou"
+      ]
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "The English class has a party.",
+     "pt": "A turma de inglês faz uma festa.",
+     "v": "en-US-AndrewNeural",
+     "x": [
+      "my",
+      "student",
+      "new"
+     ]
+    },
+    {
+     "t": "fill",
+     "en": "I am from Mexico.",
+     "pt": "Eu sou do México.",
+     "v": "en-US-JennyNeural",
+     "gap": "I am ___ Mexico.",
+     "w": "from",
+     "o": [
+      "shy",
+      "one",
+      "from"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "The English class has a party.",
+     "pt": "A turma de inglês faz uma festa.",
+     "v": "en-US-AndrewNeural",
+     "o": [
+      "A turma de inglês faz uma festa.",
+      "Tóquio! Bem-vinda, Yuki!",
+      "Tóquio! Chá para você?"
+     ]
+    },
+    {
+     "t": "pick",
+     "w": "has",
+     "pt": "tem",
+     "o": [
+      "am",
+      "has",
+      "meet"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "I am from Mexico.",
+     "pt": "Eu sou do México.",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "where",
+      "meet",
+      "friend"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "I am from Paris, and you?",
+     "pt": "Eu sou de Paris, e você?",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "I am from Paris, and you?",
+      "Hello! I am Sofia.",
+      "Thank you, Mr. Brown!"
+     ]
+    },
+    {
+     "t": "meaning",
+     "w": "you",
+     "pt": "você",
+     "o": [
+      "inglês",
+      "albergue",
+      "você"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "I am from Paris, and you?",
+     "pt": "Eu sou de Paris, e você?",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Pedro, de onde você é?",
+      "Eu sou de Paris, e você?",
+      "Prazer em te conhecer também!"
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "I am from China, and you?",
+     "pt": "Sou da China, e você?",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "hostel",
+      "please",
+      "zero"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u2z8",
+   "title": "it · my · one · play",
+   "titlePt": "isso · meu · um · jogar",
+   "emoji": "🗝️",
+   "words": [
+    "it",
+    "my",
+    "one",
+    "play"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "it",
+     "pt": "isso"
+    },
+    {
+     "t": "meaning",
+     "w": "it",
+     "pt": "isso",
+     "o": [
+      "isso",
+      "um",
+      "jogar"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "my",
+     "pt": "meu"
+    },
+    {
+     "t": "hear",
+     "w": "my",
+     "pt": "meu",
+     "o": [
+      "nice",
+      "play",
+      "my"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "it",
+       "isso"
+      ],
+      [
+       "my",
+       "meu"
+      ],
+      [
+       "course",
+       "curso"
+      ],
+      [
+       "really",
+       "sério? de verdade"
+      ],
+      [
+       "new",
+       "novo(a)"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "one",
+     "pt": "um"
+    },
+    {
+     "t": "pick",
+     "w": "one",
+     "pt": "um",
+     "o": [
+      "you",
+      "one",
+      "am"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "play",
+     "pt": "jogar"
+    },
+    {
+     "t": "meaning",
+     "w": "play",
+     "pt": "jogar",
+     "o": [
+      "jogar",
+      "festa",
+      "em"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "one",
+     "pt": "um",
+     "o": [
+      "one",
+      "nice",
+      "am"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "one",
+       "um"
+      ],
+      [
+       "play",
+       "jogar"
+      ],
+      [
+       "it",
+       "isso"
+      ],
+      [
+       "my",
+       "meu"
+      ],
+      [
+       "from",
+       "de"
+      ]
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "This is my friend, Ana.",
+     "pt": "Esta é minha amiga, Ana.",
+     "v": "en-US-GuyNeural",
+     "x": [
+      "class",
+      "zero",
+      "tea"
+     ]
+    },
+    {
+     "t": "fill",
+     "en": "Sofia and Claire play a game.",
+     "pt": "A Sofia e a Claire jogam um jogo.",
+     "v": "en-US-AndrewNeural",
+     "gap": "Sofia and Claire play a ___.",
+     "w": "game",
+     "o": [
+      "friend",
+      "game",
+      "thank"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "This is my friend, Ana.",
+     "pt": "Esta é minha amiga, Ana.",
+     "v": "en-US-GuyNeural",
+     "o": [
+      "Bom dia! Eu sou a Yuki.",
+      "Eu sou o Pedro. Prazer em te conhecer!",
+      "Esta é minha amiga, Ana."
+     ]
+    },
+    {
+     "t": "pick",
+     "w": "play",
+     "pt": "jogar",
+     "o": [
+      "not",
+      "play",
+      "it"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "Sofia and Claire play a game.",
+     "pt": "A Sofia e a Claire jogam um jogo.",
+     "v": "en-US-AndrewNeural",
+     "x": [
+      "with",
+      "new",
+      "café"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "Tokyo! Wow!",
+     "pt": "Tóquio! Uau!",
+     "v": "en-US-EricNeural",
+     "o": [
+      "Tokyo! Wow!",
+      "Tea, please.",
+      "Goodbye, Mr. Brown!"
+     ]
+    },
+    {
+     "t": "meaning",
+     "w": "is",
+     "pt": "é",
+     "o": [
+      "isso",
+      "legal",
+      "é"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Tokyo! Wow!",
+     "pt": "Tóquio! Uau!",
+     "v": "en-US-EricNeural",
+     "o": [
+      "Eu sou o Pedro. Prazer em te conhecer!",
+      "Tóquio! Uau!",
+      "Tóquio! Chá para você?"
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "I am from Brazil.",
+     "pt": "Eu sou do Brasil.",
+     "v": "en-US-EricNeural",
+     "x": [
+      "welcome",
+      "friend",
+      "water"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u2z9",
+   "title": "shy · there · what · zero",
+   "titlePt": "tímido(a) · lá · o quê · zero",
+   "emoji": "🚀",
+   "words": [
+    "shy",
+    "there",
+    "what",
+    "zero"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "shy",
+     "pt": "tímido(a)"
+    },
+    {
+     "t": "meaning",
+     "w": "shy",
+     "pt": "tímido(a)",
+     "o": [
+      "tímido(a)",
+      "amigo(a)",
+      "zero"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "there",
+     "pt": "lá"
+    },
+    {
+     "t": "hear",
+     "w": "there",
+     "pt": "lá",
+     "o": [
+      "there",
+      "she",
+      "my"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "shy",
+       "tímido(a)"
+      ],
+      [
+       "there",
+       "lá"
+      ],
+      [
+       "hostel",
+       "albergue"
+      ],
+      [
+       "english",
+       "inglês"
+      ],
+      [
+       "first",
+       "primeiro"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "what",
+     "pt": "o quê"
+    },
+    {
+     "t": "pick",
+     "w": "what",
+     "pt": "o quê",
+     "o": [
+      "nice",
+      "is",
+      "what"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "zero",
+     "pt": "zero"
+    },
+    {
+     "t": "meaning",
+     "w": "zero",
+     "pt": "zero",
+     "o": [
+      "meu",
+      "porta",
+      "zero"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "what",
+     "pt": "o quê",
+     "o": [
+      "what",
+      "meet",
+      "zero"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "what",
+       "o quê"
+      ],
+      [
+       "zero",
+       "zero"
+      ],
+      [
+       "shy",
+       "tímido(a)"
+      ],
+      [
+       "there",
+       "lá"
+      ],
+      [
+       "am",
+       "sou"
+      ]
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "Ana is shy.",
+     "pt": "A Ana é tímida.",
+     "v": "en-US-AndrewNeural",
+     "x": [
+      "there",
+      "student",
+      "too"
+     ]
+    },
+    {
+     "t": "fill",
+     "en": "There is a new student.",
+     "pt": "Há um aluno novo.",
+     "v": "en-US-AndrewNeural",
+     "gap": "There is a ___ student.",
+     "w": "new",
+     "o": [
+      "one",
+      "for",
+      "new"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Ana is shy.",
+     "pt": "A Ana é tímida.",
+     "v": "en-US-AndrewNeural",
+     "o": [
+      "E Londres! Bem-vindos a Londres!",
+      "Sofia, um jogo! De onde ele é?",
+      "A Ana é tímida."
+     ]
+    },
+    {
+     "t": "pick",
+     "w": "zero",
+     "pt": "zero",
+     "o": [
+      "zero",
+      "she",
+      "am"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "There is a new student.",
+     "pt": "Há um aluno novo.",
+     "v": "en-US-AndrewNeural",
+     "x": [
+      "where",
+      "no",
+      "at"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "I am from Beijing.",
+     "pt": "Eu sou de Pequim.",
+     "v": "en-US-GuyNeural",
+     "o": [
+      "I am from Beijing.",
+      "Hi, Ana! Where are you from?",
+      "Yes! Really!"
+     ]
+    },
+    {
+     "t": "meaning",
+     "w": "game",
+     "pt": "jogo",
+     "o": [
+      "aula",
+      "tem",
+      "jogo"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "I am from Beijing.",
+     "pt": "Eu sou de Pequim.",
+     "v": "en-US-GuyNeural",
+     "o": [
+      "A Sofia e a Claire jogam um jogo.",
+      "Eu sou de Pequim.",
+      "Eu sou do Brasil também!"
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "Brazil, Japan, and China!",
+     "pt": "Brasil, Japão e China!",
+     "v": "en-US-EricNeural",
+     "x": [
+      "tea",
+      "café",
+      "she"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u2z10",
+   "title": "Review",
+   "titlePt": "Revisão geral",
+   "emoji": "🏆",
+   "words": [],
+   "screens": [
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "everyone",
+       "todo mundo"
+      ],
+      [
+       "and",
+       "e"
+      ],
+      [
+       "where",
+       "onde"
+      ],
+      [
+       "friend",
+       "amigo(a)"
+      ],
+      [
+       "really",
+       "sério? de verdade"
+      ]
+     ]
+    },
+    {
+     "t": "meaning",
+     "w": "he",
+     "pt": "ele",
+     "o": [
+      "ele",
+      "novo(a)",
+      "o quê"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "game",
+     "pt": "jogo",
+     "o": [
+      "game",
+      "really",
+      "day"
+     ]
+    },
+    {
+     "t": "pick",
+     "w": "zero",
+     "pt": "zero",
+     "o": [
+      "you",
+      "zero",
+      "day"
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "I am from Paris, and you?",
+     "pt": "Eu sou de Paris, e você?",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "hostel",
+      "game",
+      "is"
+     ]
+    },
+    {
+     "t": "fill",
+     "en": "I am from Tokyo.",
+     "pt": "Eu sou de Tóquio.",
+     "v": "en-US-JennyNeural",
+     "gap": "I am ___ Tokyo.",
+     "w": "from",
+     "o": [
+      "everyone",
+      "new",
+      "from"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "I am from Paris, and you?",
+     "pt": "Eu sou de Paris, e você?",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Oi! Bom dia!",
+      "E o Pedro? Ele é do México?",
+      "Eu sou de Paris, e você?"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "door",
+       "porta"
+      ],
+      [
+       "course",
+       "curso"
+      ],
+      [
+       "it",
+       "isso"
+      ],
+      [
+       "shy",
+       "tímido(a)"
+      ],
+      [
+       "she",
+       "ela"
+      ]
+     ]
+    },
+    {
+     "t": "type",
+     "en": "I am from Tokyo.",
+     "pt": "Eu sou de Tóquio.",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "door",
+      "welcome",
+      "there"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "I am from Brazil too!",
+     "pt": "Eu sou do Brasil também!",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "I am from Brazil too!",
+      "Goodbye, Mr. Brown!",
+      "Li is at the hostel, too."
+     ]
+    },
+    {
+     "t": "meaning",
+     "w": "from",
+     "pt": "de",
+     "o": [
+      "de",
+      "você",
+      "sou"
+     ]
+    },
+    {
+     "t": "pick",
+     "w": "what",
+     "pt": "o quê",
+     "o": [
+      "shy",
+      "new",
+      "what"
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "I am from China, and you?",
+     "pt": "Sou da China, e você?",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "goodbye",
+      "are",
+      "welcome"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "I am from China, and you?",
+     "pt": "Sou da China, e você?",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Você é do Brasil também?",
+      "Obrigada, Li!",
+      "Sou da China, e você?"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "is",
+     "pt": "é",
+     "o": [
+      "from",
+      "is",
+      "nice"
+     ]
+    },
+    {
+     "t": "fill",
+     "en": "I am from Mexico.",
+     "pt": "Eu sou do México.",
+     "v": "en-US-JennyNeural",
+     "gap": "I ___ from Mexico.",
+     "w": "am",
+     "o": [
+      "am",
+      "hello",
+      "party"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "I am from Brazil too!",
+     "pt": "Eu sou do Brasil também!",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "door",
+      "has",
+      "with"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "there",
+       "lá"
+      ],
+      [
+       "play",
+       "jogar"
+      ],
+      [
+       "this",
+       "este"
+      ],
+      [
+       "class",
+       "aula"
+      ],
+      [
+       "in",
+       "em"
+      ]
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "I am from Mexico.",
+     "pt": "Eu sou do México.",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "he",
+      "morning",
+      "good"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "I am from Mexico.",
+     "pt": "Eu sou do México.",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Eu sou do México.",
+      "Eu sou do Brasil também!",
+      "Prazer em te conhecer, Li!"
+     ]
+    }
+   ]
+  }
+ ]
+}
