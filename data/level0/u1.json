@@ -40,7 +40,7 @@
      "o": [
       "you",
       "bread",
-      "please"
+      "milk"
      ]
     },
     {
@@ -55,12 +55,12 @@
        "você"
       ],
       [
-       "milk",
-       "leite"
-      ],
-      [
        "please",
        "por favor"
+      ],
+      [
+       "milk",
+       "leite"
       ]
      ]
     },
@@ -91,7 +91,7 @@
      "o": [
       "agradecer",
       "leite",
-      "por favor"
+      "café"
      ]
     },
     {
@@ -240,9 +240,9 @@
      "w": "tea",
      "pt": "chá",
      "o": [
-      "agradecer",
+      "leite",
       "chá",
-      "e"
+      "por favor"
      ]
     },
     {
@@ -256,7 +256,7 @@
      "pt": "agradecer",
      "o": [
       "please",
-      "tea",
+      "coffee",
       "thank"
      ]
     },
@@ -272,16 +272,16 @@
        "agradecer"
       ],
       [
-       "you",
-       "você"
-      ],
-      [
-       "please",
-       "por favor"
-      ],
-      [
        "coffee",
        "café"
+      ],
+      [
+       "milk",
+       "leite"
+      ],
+      [
+       "you",
+       "você"
       ]
      ]
     },
@@ -295,8 +295,8 @@
      "w": "and",
      "pt": "e",
      "o": [
-      "with",
-      "coffee",
+      "milk",
+      "you",
       "and"
      ]
     },
@@ -311,7 +311,7 @@
      "pt": "com",
      "o": [
       "com",
-      "agradecer",
+      "e",
       "por favor"
      ]
     },
@@ -321,8 +321,8 @@
      "pt": "e",
      "o": [
       "and",
-      "coffee",
-      "milk"
+      "you",
+      "coffee"
      ]
     },
     {
@@ -345,8 +345,8 @@
        "agradecer"
       ],
       [
-       "coffee",
-       "café"
+       "you",
+       "você"
       ]
      ]
     },
@@ -404,8 +404,8 @@
      "pt": "chá",
      "o": [
       "tea",
-      "coffee",
-      "with"
+      "thank",
+      "and"
      ]
     },
     {
@@ -465,9 +465,9 @@
      "w": "for",
      "pt": "para",
      "o": [
-      "bolo",
+      "café",
       "para",
-      "agradecer"
+      "água"
      ]
     },
     {
@@ -480,8 +480,8 @@
      "w": "sugar",
      "pt": "açúcar",
      "o": [
-      "cake",
-      "with",
+      "coffee",
+      "and",
       "sugar"
      ]
     },
@@ -501,12 +501,12 @@
        "por favor"
       ],
       [
-       "and",
-       "e"
+       "tea",
+       "chá"
       ],
       [
-       "with",
-       "com"
+       "and",
+       "e"
       ]
      ]
     },
@@ -520,9 +520,9 @@
      "w": "water",
      "pt": "água",
      "o": [
-      "thank",
+      "milk",
       "water",
-      "coffee"
+      "thank"
      ]
     },
     {
@@ -536,8 +536,8 @@
      "pt": "bolo",
      "o": [
       "bolo",
-      "para",
-      "com"
+      "por favor",
+      "e"
      ]
     },
     {
@@ -546,7 +546,7 @@
      "pt": "água",
      "o": [
       "water",
-      "milk",
+      "you",
       "for"
      ]
     },
@@ -628,9 +628,9 @@
      "w": "for",
      "pt": "para",
      "o": [
-      "water",
+      "tea",
       "for",
-      "and"
+      "please"
      ]
     },
     {
@@ -691,8 +691,8 @@
      "pt": "ir",
      "o": [
       "ir",
-      "por favor",
-      "água"
+      "bem-vindo(a)",
+      "chá"
      ]
     },
     {
@@ -705,9 +705,9 @@
      "w": "here",
      "pt": "aqui",
      "o": [
-      "milk",
+      "thank",
       "here",
-      "with"
+      "water"
      ]
     },
     {
@@ -722,16 +722,16 @@
        "aqui"
       ],
       [
-       "thank",
-       "agradecer"
-      ],
-      [
-       "and",
-       "e"
+       "water",
+       "água"
       ],
       [
        "for",
        "para"
+      ],
+      [
+       "please",
+       "por favor"
       ]
      ]
     },
@@ -745,8 +745,8 @@
      "w": "no",
      "pt": "não",
      "o": [
-      "for",
-      "sugar",
+      "please",
+      "go",
       "no"
      ]
     },
@@ -760,9 +760,9 @@
      "w": "welcome",
      "pt": "bem-vindo(a)",
      "o": [
-      "chá",
+      "você",
       "bem-vindo(a)",
-      "leite"
+      "agradecer"
      ]
     },
     {
@@ -771,7 +771,7 @@
      "pt": "não",
      "o": [
       "here",
-      "and",
+      "for",
       "no"
      ]
     },
@@ -795,8 +795,8 @@
        "aqui"
       ],
       [
-       "you",
-       "você"
+       "milk",
+       "leite"
       ]
      ]
     },
@@ -853,8 +853,8 @@
      "w": "go",
      "pt": "ir",
      "o": [
-      "you",
-      "cake",
+      "milk",
+      "sugar",
       "go"
      ]
     },
@@ -915,8 +915,8 @@
      "w": "café",
      "pt": "café",
      "o": [
-      "aqui",
-      "sim",
+      "e",
+      "bem-vindo(a)",
       "café"
      ]
     },
@@ -930,8 +930,8 @@
      "w": "or",
      "pt": "ou",
      "o": [
-      "water",
       "tea",
+      "thank",
       "or"
      ]
     },
@@ -947,16 +947,16 @@
        "ou"
       ],
       [
-       "no",
-       "não"
+       "tea",
+       "chá"
+      ],
+      [
+       "cake",
+       "bolo"
       ],
       [
        "milk",
        "leite"
-      ],
-      [
-       "sugar",
-       "açúcar"
       ]
      ]
     },
@@ -970,9 +970,9 @@
      "w": "yes",
      "pt": "sim",
      "o": [
-      "no",
+      "water",
       "yes",
-      "milk"
+      "for"
      ]
     },
     {
@@ -986,8 +986,8 @@
      "pt": "em",
      "o": [
       "em",
-      "ou",
-      "bem-vindo(a)"
+      "bolo",
+      "para"
      ]
     },
     {
@@ -996,8 +996,8 @@
      "pt": "sim",
      "o": [
       "yes",
-      "at",
-      "for"
+      "you",
+      "coffee"
      ]
     },
     {
@@ -1020,8 +1020,8 @@
        "ou"
       ],
       [
-       "no",
-       "não"
+       "tea",
+       "chá"
       ]
      ]
     },
@@ -1078,8 +1078,8 @@
      "w": "café",
      "pt": "café",
      "o": [
+      "with",
       "milk",
-      "or",
       "café"
      ]
     },
@@ -1140,9 +1140,9 @@
      "w": "goodbye",
      "pt": "tchau",
      "o": [
-      "sim",
+      "açúcar",
       "tchau",
-      "açúcar"
+      "sim"
      ]
     },
     {
@@ -1156,7 +1156,7 @@
      "pt": "oi",
      "o": [
       "go",
-      "and",
+      "please",
       "hi"
      ]
     },
@@ -1172,16 +1172,16 @@
        "oi"
       ],
       [
-       "for",
-       "para"
+       "coffee",
+       "café"
       ],
       [
-       "thank",
-       "agradecer"
+       "here",
+       "aqui"
       ],
       [
-       "or",
-       "ou"
+       "cake",
+       "bolo"
       ]
      ]
     },
@@ -1195,8 +1195,8 @@
      "w": "good",
      "pt": "bom",
      "o": [
-      "for",
-      "thank",
+      "coffee",
+      "no",
       "good"
      ]
     },
@@ -1210,8 +1210,8 @@
      "w": "is",
      "pt": "é",
      "o": [
-      "açúcar",
-      "agradecer",
+      "leite",
+      "água",
       "é"
      ]
     },
@@ -1221,7 +1221,7 @@
      "pt": "bom",
      "o": [
       "good",
-      "no",
+      "water",
       "go"
      ]
     },
@@ -1245,8 +1245,8 @@
        "oi"
       ],
       [
-       "welcome",
-       "bem-vindo(a)"
+       "tea",
+       "chá"
       ]
      ]
     },
@@ -1367,9 +1367,9 @@
      "w": "morning",
      "pt": "manhã",
      "o": [
-      "leite",
+      "bom",
       "manhã",
-      "olá"
+      "ou"
      ]
     },
     {
@@ -1383,8 +1383,8 @@
      "pt": "também",
      "o": [
       "too",
-      "sugar",
-      "coffee"
+      "yes",
+      "go"
      ]
     },
     {
@@ -1399,16 +1399,16 @@
        "também"
       ],
       [
-       "no",
-       "não"
+       "café",
+       "café"
       ],
       [
-       "goodbye",
-       "tchau"
+       "hi",
+       "oi"
       ],
       [
-       "thank",
-       "agradecer"
+       "here",
+       "aqui"
       ]
      ]
     },
@@ -1422,8 +1422,8 @@
      "w": "hello",
      "pt": "olá",
      "o": [
-      "here",
-      "you",
+      "morning",
+      "no",
       "hello"
      ]
     },
@@ -1437,8 +1437,8 @@
      "w": "sorry",
      "pt": "desculpa",
      "o": [
-      "café",
-      "açúcar",
+      "e",
+      "também",
       "desculpa"
      ]
     },
@@ -1448,8 +1448,8 @@
      "pt": "olá",
      "o": [
       "hello",
-      "milk",
-      "coffee"
+      "good",
+      "go"
      ]
     },
     {
@@ -1472,8 +1472,8 @@
        "também"
       ],
       [
-       "please",
-       "por favor"
+       "welcome",
+       "bem-vindo(a)"
       ]
      ]
     },
@@ -1594,8 +1594,8 @@
      "w": "are",
      "pt": "são",
      "o": [
-      "por favor",
-      "bolo",
+      "é",
+      "bom",
       "são"
      ]
     },
@@ -1609,8 +1609,8 @@
      "w": "bread",
      "pt": "pão",
      "o": [
-      "and",
-      "tea",
+      "please",
+      "is",
       "bread"
      ]
     },
@@ -1626,16 +1626,16 @@
        "pão"
       ],
       [
-       "no",
-       "não"
+       "at",
+       "em"
       ],
       [
-       "cake",
-       "bolo"
+       "good",
+       "bom"
       ],
       [
-       "yes",
-       "sim"
+       "sugar",
+       "açúcar"
       ]
      ]
     },
@@ -1650,8 +1650,8 @@
      "pt": "vovô",
      "o": [
       "grandpa",
-      "you",
-      "is"
+      "me",
+      "good"
      ]
     },
     {
@@ -1665,8 +1665,8 @@
      "pt": "mim",
      "o": [
       "mim",
-      "água",
-      "chá"
+      "pão",
+      "é"
      ]
     },
     {
@@ -1676,7 +1676,7 @@
      "o": [
       "grandpa",
       "cake",
-      "goodbye"
+      "and"
      ]
     },
     {
@@ -1699,8 +1699,8 @@
        "pão"
       ],
       [
-       "or",
-       "ou"
+       "yes",
+       "sim"
       ]
      ]
     },
@@ -1821,8 +1821,8 @@
      "w": "cheese",
      "pt": "queijo",
      "o": [
-      "café",
-      "desculpa",
+      "e",
+      "dois",
       "queijo"
      ]
     },
@@ -1836,9 +1836,9 @@
      "w": "more",
      "pt": "mais",
      "o": [
-      "no",
+      "for",
       "more",
-      "sorry"
+      "two"
      ]
     },
     {
@@ -1853,16 +1853,16 @@
        "mais"
       ],
       [
-       "morning",
-       "manhã"
+       "thank",
+       "agradecer"
       ],
       [
-       "at",
-       "em"
+       "yes",
+       "sim"
       ],
       [
-       "good",
-       "bom"
+       "go",
+       "ir"
       ]
      ]
     },
@@ -1876,9 +1876,9 @@
      "w": "two",
      "pt": "dois",
      "o": [
-      "tea",
+      "sorry",
       "two",
-      "good"
+      "water"
      ]
     },
     {
@@ -1891,8 +1891,8 @@
      "w": "busy",
      "pt": "ocupado(a)",
      "o": [
-      "olá",
-      "chá",
+      "agradecer",
+      "desculpa",
       "ocupado(a)"
      ]
     },
@@ -1902,8 +1902,8 @@
      "pt": "dois",
      "o": [
       "two",
-      "cake",
-      "hi"
+      "good",
+      "no"
      ]
     },
     {
@@ -1926,8 +1926,8 @@
        "mais"
       ],
       [
-       "welcome",
-       "bem-vindo(a)"
+       "with",
+       "com"
       ]
      ]
     },
@@ -2037,45 +2037,45 @@
      "t": "pairs",
      "p": [
       [
-       "thank",
-       "agradecer"
-      ],
-      [
-       "coffee",
-       "café"
-      ],
-      [
        "at",
        "em"
       ],
       [
-       "with",
-       "com"
+       "here",
+       "aqui"
       ],
       [
-       "no",
-       "não"
+       "yes",
+       "sim"
+      ],
+      [
+       "tea",
+       "chá"
+      ],
+      [
+       "for",
+       "para"
       ]
      ]
     },
     {
      "t": "meaning",
-     "w": "or",
-     "pt": "ou",
+     "w": "too",
+     "pt": "também",
      "o": [
-      "ou",
-      "e",
-      "bem-vindo(a)"
+      "também",
+      "café",
+      "com"
      ]
     },
     {
      "t": "hear",
-     "w": "hi",
-     "pt": "oi",
+     "w": "no",
+     "pt": "não",
      "o": [
-      "here",
-      "hi",
-      "tea"
+      "hello",
+      "no",
+      "sorry"
      ]
     },
     {
@@ -2141,24 +2141,24 @@
      "t": "pairs",
      "p": [
       [
-       "too",
-       "também"
-      ],
-      [
-       "for",
-       "para"
-      ],
-      [
-       "you",
-       "você"
-      ],
-      [
-       "café",
-       "café"
+       "or",
+       "ou"
       ],
       [
        "sugar",
        "açúcar"
+      ],
+      [
+       "me",
+       "mim"
+      ],
+      [
+       "and",
+       "e"
+      ],
+      [
+       "are",
+       "são"
       ]
      ]
     },
@@ -2192,12 +2192,12 @@
     },
     {
      "t": "pick",
-     "w": "cheese",
-     "pt": "queijo",
+     "w": "hi",
+     "pt": "oi",
      "o": [
-      "cheese",
-      "here",
-      "hello"
+      "hi",
+      "hello",
+      "thank"
      ]
     },
     {
@@ -2225,12 +2225,12 @@
     },
     {
      "t": "meaning",
-     "w": "grandpa",
-     "pt": "vovô",
+     "w": "go",
+     "pt": "ir",
      "o": [
-      "vovô",
-      "sim",
-      "chá"
+      "ir",
+      "bem-vindo(a)",
+      "desculpa"
      ]
     },
     {
@@ -2246,12 +2246,12 @@
     },
     {
      "t": "hear",
-     "w": "bread",
-     "pt": "pão",
+     "w": "please",
+     "pt": "por favor",
      "o": [
-      "bread",
-      "no",
-      "is"
+      "please",
+      "for",
+      "good"
      ]
     },
     {

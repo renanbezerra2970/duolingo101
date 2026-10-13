@@ -55,12 +55,12 @@
        "algum"
       ],
       [
-       "need",
-       "precisar"
-      ],
-      [
        "pain",
        "dor"
+      ],
+      [
+       "need",
+       "precisar"
       ]
      ]
     },
@@ -242,7 +242,7 @@
      "o": [
       "pegar",
       "dor",
-      "pergunta"
+      "fazer"
      ]
     },
     {
@@ -255,9 +255,9 @@
      "w": "doctor",
      "pt": "médico(a)",
      "o": [
-      "take",
+      "do",
       "doctor",
-      "heart"
+      "need"
      ]
     },
     {
@@ -272,12 +272,12 @@
        "médico(a)"
       ],
       [
-       "any",
-       "algum"
-      ],
-      [
        "do",
        "fazer"
+      ],
+      [
+       "need",
+       "precisar"
       ],
       [
        "pain",
@@ -296,8 +296,8 @@
      "pt": "pergunta",
      "o": [
       "question",
-      "doctor",
-      "heart"
+      "heart",
+      "need"
      ]
     },
     {
@@ -312,7 +312,7 @@
      "o": [
       "dor",
       "coração",
-      "precisar"
+      "algum"
      ]
     },
     {
@@ -321,8 +321,8 @@
      "pt": "pergunta",
      "o": [
       "question",
-      "any",
-      "heart"
+      "take",
+      "need"
      ]
     },
     {
@@ -403,8 +403,8 @@
      "w": "take",
      "pt": "pegar",
      "o": [
-      "question",
       "do",
+      "doctor",
       "take"
      ]
     },
@@ -467,7 +467,7 @@
      "o": [
       "quando",
       "dor",
-      "começar"
+      "fez"
      ]
     },
     {
@@ -480,8 +480,8 @@
      "w": "diabetes",
      "pt": "diabetes",
      "o": [
-      "when",
-      "do",
+      "need",
+      "doctor",
       "diabetes"
      ]
     },
@@ -497,16 +497,16 @@
        "diabetes"
       ],
       [
+       "take",
+       "pegar"
+      ],
+      [
+       "doctor",
+       "médico(a)"
+      ],
+      [
        "any",
        "algum"
-      ],
-      [
-       "do",
-       "fazer"
-      ],
-      [
-       "need",
-       "precisar"
       ]
      ]
     },
@@ -520,8 +520,8 @@
      "w": "did",
      "pt": "fez",
      "o": [
-      "doctor",
-      "take",
+      "heart",
+      "question",
       "did"
      ]
     },
@@ -536,7 +536,7 @@
      "pt": "começar",
      "o": [
       "começar",
-      "pegar",
+      "diabetes",
       "pergunta"
      ]
     },
@@ -546,8 +546,8 @@
      "pt": "fez",
      "o": [
       "did",
-      "doctor",
-      "do"
+      "heart",
+      "doctor"
      ]
     },
     {
@@ -629,7 +629,7 @@
      "pt": "quando",
      "o": [
       "question",
-      "diabetes",
+      "start",
       "when"
      ]
     },
@@ -691,8 +691,8 @@
      "pt": "exame",
      "o": [
       "exame",
-      "precisar",
-      "fazer"
+      "algum",
+      "pegar"
      ]
     },
     {
@@ -706,8 +706,8 @@
      "pt": "em qualquer lugar",
      "o": [
       "anywhere",
-      "examine",
-      "diabetes"
+      "start",
+      "test"
      ]
     },
     {
@@ -722,16 +722,16 @@
        "em qualquer lugar"
       ],
       [
-       "doctor",
-       "médico(a)"
+       "heart",
+       "coração"
       ],
       [
-       "when",
-       "quando"
+       "need",
+       "precisar"
       ],
       [
-       "diabetes",
-       "diabetes"
+       "start",
+       "começar"
       ]
      ]
     },
@@ -746,8 +746,8 @@
      "pt": "trazer",
      "o": [
       "bring",
-      "test",
-      "anywhere"
+      "any",
+      "pain"
      ]
     },
     {
@@ -761,8 +761,8 @@
      "pt": "examinar",
      "o": [
       "examinar",
-      "em qualquer lugar",
-      "trazer"
+      "dor",
+      "em qualquer lugar"
      ]
     },
     {
@@ -771,8 +771,8 @@
      "pt": "trazer",
      "o": [
       "bring",
-      "heart",
-      "start"
+      "need",
+      "did"
      ]
     },
     {
@@ -795,8 +795,8 @@
        "em qualquer lugar"
       ],
       [
-       "do",
-       "fazer"
+       "doctor",
+       "médico(a)"
       ]
      ]
     },
@@ -853,8 +853,8 @@
      "w": "test",
      "pt": "exame",
      "o": [
+      "doctor",
       "pain",
-      "anywhere",
       "test"
      ]
     },
@@ -915,9 +915,9 @@
      "w": "help",
      "pt": "ajuda",
      "o": [
-      "examinar",
+      "quando",
       "ajuda",
-      "fazer"
+      "em qualquer lugar"
      ]
     },
     {
@@ -930,9 +930,9 @@
      "w": "know",
      "pt": "saber",
      "o": [
-      "did",
+      "bring",
       "know",
-      "question"
+      "spread"
      ]
     },
     {
@@ -947,16 +947,16 @@
        "saber"
       ],
       [
-       "start",
-       "começar"
+       "did",
+       "fez"
       ],
       [
-       "take",
-       "pegar"
+       "do",
+       "fazer"
       ],
       [
-       "when",
-       "quando"
+       "any",
+       "algum"
       ]
      ]
     },
@@ -970,8 +970,8 @@
      "w": "medication",
      "pt": "medicação",
      "o": [
+      "doctor",
       "pain",
-      "know",
       "medication"
      ]
     },
@@ -986,8 +986,8 @@
      "pt": "espalhar",
      "o": [
       "espalhar",
-      "quando",
-      "médico(a)"
+      "medicação",
+      "começar"
      ]
     },
     {
@@ -995,9 +995,9 @@
      "w": "medication",
      "pt": "medicação",
      "o": [
-      "do",
+      "anywhere",
       "medication",
-      "help"
+      "diabetes"
      ]
     },
     {
@@ -1020,8 +1020,8 @@
        "saber"
       ],
       [
-       "bring",
-       "trazer"
+       "need",
+       "precisar"
       ]
      ]
     },
@@ -1078,9 +1078,9 @@
      "w": "help",
      "pt": "ajuda",
      "o": [
-      "question",
+      "spread",
       "help",
-      "diabetes"
+      "any"
      ]
     },
     {
@@ -1140,9 +1140,9 @@
      "w": "ago",
      "pt": "atrás",
      "o": [
-      "ataque",
+      "ligar",
       "atrás",
-      "pegar"
+      "pergunta"
      ]
     },
     {
@@ -1155,9 +1155,9 @@
      "w": "attack",
      "pt": "ataque",
      "o": [
-      "when",
+      "any",
       "attack",
-      "take"
+      "spread"
      ]
     },
     {
@@ -1172,16 +1172,16 @@
        "ataque"
       ],
       [
+       "heart",
+       "coração"
+      ],
+      [
+       "know",
+       "saber"
+      ],
+      [
        "test",
        "exame"
-      ],
-      [
-       "bring",
-       "trazer"
-      ],
-      [
-       "need",
-       "precisar"
       ]
      ]
     },
@@ -1195,8 +1195,8 @@
      "w": "blood",
      "pt": "sangue",
      "o": [
-      "attack",
-      "ago",
+      "anywhere",
+      "diabetes",
       "blood"
      ]
     },
@@ -1210,9 +1210,9 @@
      "w": "call",
      "pt": "ligar",
      "o": [
-      "espalhar",
+      "pergunta",
       "ligar",
-      "médico(a)"
+      "começar"
      ]
     },
     {
@@ -1220,8 +1220,8 @@
      "w": "blood",
      "pt": "sangue",
      "o": [
-      "test",
-      "attack",
+      "pain",
+      "anywhere",
       "blood"
      ]
     },
@@ -1245,8 +1245,8 @@
        "ataque"
       ],
       [
-       "help",
-       "ajuda"
+       "diabetes",
+       "diabetes"
       ]
      ]
     },
@@ -1368,8 +1368,8 @@
      "pt": "cada",
      "o": [
       "cada",
-      "examinar",
-      "médico(a)"
+      "sangue",
+      "exame"
      ]
     },
     {
@@ -1383,8 +1383,8 @@
      "pt": "sentir",
      "o": [
       "feel",
-      "attack",
-      "how"
+      "call",
+      "test"
      ]
     },
     {
@@ -1399,16 +1399,16 @@
        "sentir"
       ],
       [
-       "bring",
-       "trazer"
+       "medication",
+       "medicação"
       ],
       [
-       "any",
-       "algum"
+       "take",
+       "pegar"
       ],
       [
-       "do",
-       "fazer"
+       "need",
+       "precisar"
       ]
      ]
     },
@@ -1422,9 +1422,9 @@
      "w": "how",
      "pt": "como",
      "o": [
-      "doctor",
+      "start",
       "how",
-      "diabetes"
+      "any"
      ]
     },
     {
@@ -1437,8 +1437,8 @@
      "w": "hurt",
      "pt": "machucar",
      "o": [
-      "começar",
-      "cada",
+      "fez",
+      "como",
       "machucar"
      ]
     },
@@ -1448,8 +1448,8 @@
      "pt": "como",
      "o": [
       "how",
-      "every",
-      "attack"
+      "anywhere",
+      "hurt"
      ]
     },
     {
@@ -1472,8 +1472,8 @@
        "sentir"
       ],
       [
-       "medication",
-       "medicação"
+       "examine",
+       "examinar"
       ]
      ]
     },
@@ -1595,8 +1595,8 @@
      "pt": "só",
      "o": [
       "só",
-      "precisar",
-      "começar"
+      "coração",
+      "fez"
      ]
     },
     {
@@ -1610,8 +1610,8 @@
      "pt": "vida",
      "o": [
       "life",
-      "pain",
-      "medication"
+      "doctor",
+      "examine"
      ]
     },
     {
@@ -1626,16 +1626,16 @@
        "vida"
       ],
       [
-       "pain",
-       "dor"
+       "doctor",
+       "médico(a)"
       ],
       [
-       "call",
-       "ligar"
+       "blood",
+       "sangue"
       ],
       [
-       "bring",
-       "trazer"
+       "medication",
+       "medicação"
       ]
      ]
     },
@@ -1649,8 +1649,8 @@
      "w": "long",
      "pt": "longo",
      "o": [
-      "spread",
-      "need",
+      "question",
+      "test",
       "long"
      ]
     },
@@ -1664,9 +1664,9 @@
      "w": "operation",
      "pt": "operação",
      "o": [
-      "só",
+      "longo",
       "operação",
-      "ajuda"
+      "ataque"
      ]
     },
     {
@@ -1675,8 +1675,8 @@
      "pt": "longo",
      "o": [
       "long",
-      "just",
-      "question"
+      "medication",
+      "just"
      ]
     },
     {
@@ -1699,8 +1699,8 @@
        "vida"
       ],
       [
-       "question",
-       "pergunta"
+       "every",
+       "cada"
       ]
      ]
     },
@@ -1821,8 +1821,8 @@
      "w": "risk",
      "pt": "risco",
      "o": [
-      "fazer",
-      "ajuda",
+      "dor",
+      "ataque",
       "risco"
      ]
     },
@@ -1836,9 +1836,9 @@
      "w": "some",
      "pt": "algum",
      "o": [
-      "long",
+      "know",
       "some",
-      "when"
+      "life"
      ]
     },
     {
@@ -1853,16 +1853,16 @@
        "algum"
       ],
       [
-       "question",
-       "pergunta"
+       "heart",
+       "coração"
       ],
       [
-       "take",
-       "pegar"
+       "blood",
+       "sangue"
       ],
       [
-       "operation",
-       "operação"
+       "need",
+       "precisar"
       ]
      ]
     },
@@ -1876,8 +1876,8 @@
      "w": "tablet",
      "pt": "comprimido",
      "o": [
-      "call",
-      "pain",
+      "every",
+      "doctor",
       "tablet"
      ]
     },
@@ -1892,8 +1892,8 @@
      "pt": "esposa",
      "o": [
       "esposa",
-      "dor",
-      "médico(a)"
+      "médico(a)",
+      "cada"
      ]
     },
     {
@@ -1901,8 +1901,8 @@
      "w": "tablet",
      "pt": "comprimido",
      "o": [
-      "operation",
-      "just",
+      "call",
+      "medication",
       "tablet"
      ]
     },
@@ -1926,8 +1926,8 @@
        "algum"
       ],
       [
-       "test",
-       "exame"
+       "heart",
+       "coração"
       ]
      ]
     },
@@ -2037,45 +2037,45 @@
      "t": "pairs",
      "p": [
       [
+       "diabetes",
+       "diabetes"
+      ],
+      [
+       "attack",
+       "ataque"
+      ],
+      [
        "ago",
        "atrás"
-      ],
-      [
-       "help",
-       "ajuda"
-      ],
-      [
-       "life",
-       "vida"
       ],
       [
        "anywhere",
        "em qualquer lugar"
       ],
       [
-       "do",
-       "fazer"
+       "pain",
+       "dor"
       ]
      ]
     },
     {
      "t": "meaning",
-     "w": "question",
-     "pt": "pergunta",
+     "w": "bring",
+     "pt": "trazer",
      "o": [
-      "examinar",
-      "vida",
-      "pergunta"
+      "espalhar",
+      "atrás",
+      "trazer"
      ]
     },
     {
      "t": "hear",
-     "w": "call",
-     "pt": "ligar",
+     "w": "just",
+     "pt": "só",
      "o": [
-      "pain",
-      "call",
-      "take"
+      "doctor",
+      "just",
+      "risk"
      ]
     },
     {
@@ -2141,24 +2141,24 @@
      "t": "pairs",
      "p": [
       [
-       "did",
-       "fez"
+       "question",
+       "pergunta"
       ],
       [
-       "blood",
-       "sangue"
+       "tablet",
+       "comprimido"
       ],
       [
-       "operation",
-       "operação"
+       "hurt",
+       "machucar"
       ],
       [
-       "know",
-       "saber"
+       "test",
+       "exame"
       ],
       [
-       "spread",
-       "espalhar"
+       "do",
+       "fazer"
       ]
      ]
     },
@@ -2192,12 +2192,12 @@
     },
     {
      "t": "pick",
-     "w": "every",
-     "pt": "cada",
+     "w": "call",
+     "pt": "ligar",
      "o": [
-      "every",
-      "start",
-      "did"
+      "call",
+      "did",
+      "question"
      ]
     },
     {
@@ -2225,12 +2225,12 @@
     },
     {
      "t": "meaning",
-     "w": "diabetes",
-     "pt": "diabetes",
+     "w": "long",
+     "pt": "longo",
      "o": [
-      "comprimido",
-      "diabetes",
-      "coração"
+      "medicação",
+      "longo",
+      "ajuda"
      ]
     },
     {
@@ -2246,12 +2246,12 @@
     },
     {
      "t": "hear",
-     "w": "how",
-     "pt": "como",
+     "w": "when",
+     "pt": "quando",
      "o": [
-      "attack",
-      "how",
-      "wife"
+      "wife",
+      "when",
+      "heart"
      ]
     },
     {

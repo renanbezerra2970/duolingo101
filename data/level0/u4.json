@@ -240,9 +240,9 @@
      "w": "gate",
      "pt": "portão",
      "o": [
-      "mala",
+      "assento",
       "portão",
-      "meu"
+      "mala"
      ]
     },
     {
@@ -255,7 +255,7 @@
      "w": "passport",
      "pt": "passaporte",
      "o": [
-      "ticket",
+      "this",
       "bag",
       "passport"
      ]
@@ -295,9 +295,9 @@
      "w": "ticket",
      "pt": "passagem",
      "o": [
-      "seat",
+      "my",
       "ticket",
-      "this"
+      "passport"
      ]
     },
     {
@@ -311,8 +311,8 @@
      "pt": "assento",
      "o": [
       "assento",
-      "passaporte",
-      "meu"
+      "é",
+      "este"
      ]
     },
     {
@@ -322,7 +322,7 @@
      "o": [
       "bag",
       "ticket",
-      "my"
+      "this"
      ]
     },
     {
@@ -403,7 +403,7 @@
      "w": "gate",
      "pt": "portão",
      "o": [
-      "my",
+      "bag",
       "gate",
       "this"
      ]
@@ -465,9 +465,9 @@
      "w": "red",
      "pt": "vermelho(a)",
      "o": [
-      "passaporte",
+      "portão",
       "vermelho(a)",
-      "desculpe"
+      "meu"
      ]
     },
     {
@@ -480,9 +480,9 @@
      "w": "twenty",
      "pt": "vinte",
      "o": [
-      "this",
+      "passport",
       "twenty",
-      "red"
+      "bag"
      ]
     },
     {
@@ -501,12 +501,12 @@
        "mala"
       ],
       [
-       "this",
-       "este"
+       "passport",
+       "passaporte"
       ],
       [
-       "gate",
-       "portão"
+       "seat",
+       "assento"
       ]
      ]
     },
@@ -521,8 +521,8 @@
      "pt": "desculpe",
      "o": [
       "excuse",
-      "twenty",
-      "this"
+      "is",
+      "passport"
      ]
     },
     {
@@ -535,8 +535,8 @@
      "w": "airport",
      "pt": "aeroporto",
      "o": [
+      "é",
       "vinte",
-      "este",
       "aeroporto"
      ]
     },
@@ -545,8 +545,8 @@
      "w": "excuse",
      "pt": "desculpe",
      "o": [
-      "bag",
-      "seat",
+      "airport",
+      "red",
       "excuse"
      ]
     },
@@ -570,8 +570,8 @@
        "vinte"
       ],
       [
-       "is",
-       "é"
+       "gate",
+       "portão"
       ]
      ]
     },
@@ -630,7 +630,7 @@
      "o": [
       "red",
       "ticket",
-      "excuse"
+      "my"
      ]
     },
     {
@@ -691,8 +691,8 @@
      "pt": "malas",
      "o": [
       "malas",
-      "preto(a)",
-      "meu"
+      "é",
+      "cidade"
      ]
     },
     {
@@ -707,7 +707,7 @@
      "o": [
       "city",
       "black",
-      "seat"
+      "passport"
      ]
     },
     {
@@ -722,16 +722,16 @@
        "preto(a)"
       ],
       [
-       "twenty",
-       "vinte"
+       "is",
+       "é"
       ],
       [
-       "my",
-       "meu"
+       "ticket",
+       "passagem"
       ],
       [
-       "bag",
-       "mala"
+       "airport",
+       "aeroporto"
       ]
      ]
     },
@@ -745,8 +745,8 @@
      "w": "city",
      "pt": "cidade",
      "o": [
-      "twenty",
-      "black",
+      "gate",
+      "bags",
       "city"
      ]
     },
@@ -760,8 +760,8 @@
      "w": "man",
      "pt": "homem",
      "o": [
-      "vermelho(a)",
-      "passaporte",
+      "desculpe",
+      "portão",
       "homem"
      ]
     },
@@ -772,7 +772,7 @@
      "o": [
       "city",
       "this",
-      "man"
+      "is"
      ]
     },
     {
@@ -795,8 +795,8 @@
        "preto(a)"
       ],
       [
-       "red",
-       "vermelho(a)"
+       "bag",
+       "mala"
       ]
      ]
     },
@@ -854,8 +854,8 @@
      "pt": "malas",
      "o": [
       "bags",
-      "my",
-      "passport"
+      "city",
+      "red"
      ]
     },
     {
@@ -916,8 +916,8 @@
      "pt": "senhor",
      "o": [
       "senhor",
-      "nosso(a)",
-      "desculpe"
+      "portão",
+      "vermelho(a)"
      ]
     },
     {
@@ -930,9 +930,9 @@
      "w": "our",
      "pt": "nosso(a)",
      "o": [
-      "my",
+      "city",
       "our",
-      "airport"
+      "excuse"
      ]
     },
     {
@@ -947,12 +947,12 @@
        "nosso(a)"
       ],
       [
-       "red",
-       "vermelho(a)"
+       "bag",
+       "mala"
       ],
       [
-       "this",
-       "este"
+       "man",
+       "homem"
       ],
       [
        "ticket",
@@ -970,9 +970,9 @@
      "w": "plane",
      "pt": "avião",
      "o": [
-      "gate",
+      "bags",
       "plane",
-      "seat"
+      "passport"
      ]
     },
     {
@@ -985,8 +985,8 @@
      "w": "twelve",
      "pt": "doze",
      "o": [
-      "portão",
-      "senhor",
+      "malas",
+      "mala",
       "doze"
      ]
     },
@@ -995,8 +995,8 @@
      "w": "plane",
      "pt": "avião",
      "o": [
-      "passport",
-      "my",
+      "twenty",
+      "our",
       "plane"
      ]
     },
@@ -1020,8 +1020,8 @@
        "nosso(a)"
       ],
       [
-       "excuse",
-       "desculpe"
+       "bags",
+       "malas"
       ]
      ]
     },
@@ -1079,8 +1079,8 @@
      "pt": "senhor",
      "o": [
       "mr",
-      "ticket",
-      "bags"
+      "our",
+      "seat"
      ]
     },
     {
@@ -1140,9 +1140,9 @@
      "w": "we",
      "pt": "nós",
      "o": [
-      "passaporte",
+      "crianças",
       "nós",
-      "de novo"
+      "nosso(a)"
      ]
     },
     {
@@ -1155,9 +1155,9 @@
      "w": "again",
      "pt": "de novo",
      "o": [
-      "excuse",
+      "we",
       "again",
-      "we"
+      "our"
      ]
     },
     {
@@ -1172,16 +1172,16 @@
        "de novo"
       ],
       [
-       "bag",
-       "mala"
+       "plane",
+       "avião"
       ],
       [
-       "ticket",
-       "passagem"
+       "our",
+       "nosso(a)"
       ],
       [
-       "is",
-       "é"
+       "passport",
+       "passaporte"
       ]
      ]
     },
@@ -1195,8 +1195,8 @@
      "w": "children",
      "pt": "crianças",
      "o": [
-      "passport",
-      "mr",
+      "twenty",
+      "bag",
       "children"
      ]
     },
@@ -1211,8 +1211,8 @@
      "pt": "onze",
      "o": [
       "onze",
-      "crianças",
-      "nós"
+      "assento",
+      "nosso(a)"
      ]
     },
     {
@@ -1220,9 +1220,9 @@
      "w": "children",
      "pt": "crianças",
      "o": [
-      "bags",
+      "seat",
       "children",
-      "plane"
+      "airport"
      ]
     },
     {
@@ -1245,8 +1245,8 @@
        "de novo"
       ],
       [
-       "is",
-       "é"
+       "passport",
+       "passaporte"
       ]
      ]
     },
@@ -1367,8 +1367,8 @@
      "w": "going",
      "pt": "indo",
      "o": [
-      "é",
-      "rápido",
+      "nós",
+      "vinte",
       "indo"
      ]
     },
@@ -1382,9 +1382,9 @@
      "w": "hurry",
      "pt": "rápido",
      "o": [
-      "we",
+      "our",
       "hurry",
-      "passport"
+      "my"
      ]
     },
     {
@@ -1399,16 +1399,16 @@
        "rápido"
       ],
       [
-       "airport",
-       "aeroporto"
+       "again",
+       "de novo"
       ],
       [
-       "city",
-       "cidade"
+       "red",
+       "vermelho(a)"
       ],
       [
-       "excuse",
-       "desculpe"
+       "twelve",
+       "doze"
       ]
      ]
     },
@@ -1422,8 +1422,8 @@
      "w": "many",
      "pt": "muitos",
      "o": [
-      "red",
-      "black",
+      "excuse",
+      "mr",
       "many"
      ]
     },
@@ -1437,9 +1437,9 @@
      "w": "on",
      "pt": "em",
      "o": [
-      "nosso(a)",
+      "aeroporto",
       "em",
-      "senhor"
+      "homem"
      ]
     },
     {
@@ -1447,9 +1447,9 @@
      "w": "many",
      "pt": "muitos",
      "o": [
-      "again",
+      "our",
       "many",
-      "seat"
+      "gate"
      ]
     },
     {
@@ -1472,8 +1472,8 @@
        "rápido"
       ],
       [
-       "our",
-       "nosso(a)"
+       "bags",
+       "malas"
       ]
      ]
     },
@@ -1594,8 +1594,8 @@
      "w": "passports",
      "pt": "passaportes",
      "o": [
-      "correr",
-      "meu",
+      "indo",
+      "passaporte",
       "passaportes"
      ]
     },
@@ -1609,8 +1609,8 @@
      "w": "phew",
      "pt": "ufa",
      "o": [
-      "red",
-      "twenty",
+      "excuse",
+      "is",
       "phew"
      ]
     },
@@ -1626,16 +1626,16 @@
        "ufa"
       ],
       [
-       "airport",
-       "aeroporto"
+       "again",
+       "de novo"
       ],
       [
-       "children",
-       "crianças"
+       "seat",
+       "assento"
       ],
       [
-       "twenty",
-       "vinte"
+       "is",
+       "é"
       ]
      ]
     },
@@ -1649,8 +1649,8 @@
      "w": "run",
      "pt": "correr",
      "o": [
-      "red",
-      "passports",
+      "excuse",
+      "man",
       "run"
      ]
     },
@@ -1665,8 +1665,8 @@
      "pt": "filho",
      "o": [
       "filho",
-      "doze",
-      "em"
+      "este",
+      "rápido"
      ]
     },
     {
@@ -1674,8 +1674,8 @@
      "w": "run",
      "pt": "correr",
      "o": [
-      "children",
-      "city",
+      "seat",
+      "we",
       "run"
      ]
     },
@@ -1699,8 +1699,8 @@
        "ufa"
       ],
       [
-       "passport",
-       "passaporte"
+       "my",
+       "meu"
       ]
      ]
     },
@@ -1822,8 +1822,8 @@
      "pt": "deles",
      "o": [
       "deles",
-      "em",
-      "passaporte"
+      "este",
+      "é"
      ]
     },
     {
@@ -1836,9 +1836,9 @@
      "w": "they",
      "pt": "eles",
      "o": [
-      "twenty",
+      "many",
       "they",
-      "son"
+      "our"
      ]
     },
     {
@@ -1853,16 +1853,16 @@
        "eles"
       ],
       [
-       "going",
-       "indo"
-      ],
-      [
-       "my",
-       "meu"
-      ],
-      [
        "passport",
        "passaporte"
+      ],
+      [
+       "mr",
+       "senhor"
+      ],
+      [
+       "twenty",
+       "vinte"
       ]
      ]
     },
@@ -1876,9 +1876,9 @@
      "w": "tickets",
      "pt": "passagens",
      "o": [
-      "mr",
+      "today",
       "tickets",
-      "eleven"
+      "on"
      ]
     },
     {
@@ -1892,8 +1892,8 @@
      "pt": "hoje",
      "o": [
       "hoje",
-      "cidade",
-      "assento"
+      "vermelho(a)",
+      "portão"
      ]
     },
     {
@@ -1902,8 +1902,8 @@
      "pt": "passagens",
      "o": [
       "tickets",
-      "phew",
-      "airport"
+      "black",
+      "hurry"
      ]
     },
     {
@@ -1926,8 +1926,8 @@
        "eles"
       ],
       [
-       "bag",
-       "mala"
+       "phew",
+       "ufa"
       ]
      ]
     },
@@ -2037,45 +2037,45 @@
      "t": "pairs",
      "p": [
       [
-       "run",
-       "correr"
+       "twelve",
+       "doze"
       ],
       [
-       "this",
-       "este"
+       "my",
+       "meu"
       ],
       [
-       "many",
-       "muitos"
+       "plane",
+       "avião"
+      ],
+      [
+       "passport",
+       "passaporte"
       ],
       [
        "ticket",
        "passagem"
-      ],
-      [
-       "again",
-       "de novo"
       ]
      ]
     },
     {
      "t": "meaning",
-     "w": "tickets",
-     "pt": "passagens",
+     "w": "man",
+     "pt": "homem",
      "o": [
-      "meu",
-      "passagens",
-      "de novo"
+      "eles",
+      "homem",
+      "passagem"
      ]
     },
     {
      "t": "hear",
-     "w": "mr",
-     "pt": "senhor",
+     "w": "today",
+     "pt": "hoje",
      "o": [
-      "mr",
-      "red",
-      "our"
+      "today",
+      "again",
+      "airport"
      ]
     },
     {
@@ -2141,24 +2141,24 @@
      "t": "pairs",
      "p": [
       [
-       "man",
-       "homem"
+       "mr",
+       "senhor"
       ],
       [
-       "phew",
-       "ufa"
+       "black",
+       "preto(a)"
       ],
       [
-       "passports",
-       "passaportes"
+       "hurry",
+       "rápido"
       ],
       [
-       "red",
-       "vermelho(a)"
+       "again",
+       "de novo"
       ],
       [
-       "we",
-       "nós"
+       "city",
+       "cidade"
       ]
      ]
     },
@@ -2192,12 +2192,12 @@
     },
     {
      "t": "pick",
-     "w": "today",
-     "pt": "hoje",
+     "w": "going",
+     "pt": "indo",
      "o": [
-      "bag",
-      "mr",
-      "today"
+      "phew",
+      "today",
+      "going"
      ]
     },
     {
@@ -2225,12 +2225,12 @@
     },
     {
      "t": "meaning",
-     "w": "our",
-     "pt": "nosso(a)",
+     "w": "airport",
+     "pt": "aeroporto",
      "o": [
-      "nosso(a)",
-      "portão",
-      "vermelho(a)"
+      "aeroporto",
+      "mala",
+      "de novo"
      ]
     },
     {
@@ -2246,12 +2246,12 @@
     },
     {
      "t": "hear",
-     "w": "on",
-     "pt": "em",
+     "w": "this",
+     "pt": "este",
      "o": [
-      "our",
       "airport",
-      "on"
+      "their",
+      "this"
      ]
     },
     {

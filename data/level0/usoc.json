@@ -240,9 +240,9 @@
      "w": "week",
      "pt": "semana",
      "o": [
-      "trazer",
+      "ajuda",
       "semana",
-      "como"
+      "mês"
      ]
     },
     {
@@ -255,8 +255,8 @@
      "w": "bring",
      "pt": "trazer",
      "o": [
-      "help",
-      "do",
+      "how",
+      "home",
       "bring"
      ]
     },
@@ -272,16 +272,16 @@
        "trazer"
       ],
       [
+       "month",
+       "mês"
+      ],
+      [
        "home",
        "casa"
       ],
       [
        "do",
        "fazer"
-      ],
-      [
-       "help",
-       "ajuda"
       ]
      ]
     },
@@ -296,8 +296,8 @@
      "pt": "ligar",
      "o": [
       "call",
-      "do",
-      "home"
+      "home",
+      "week"
      ]
     },
     {
@@ -310,8 +310,8 @@
      "w": "how",
      "pt": "como",
      "o": [
-      "trazer",
-      "casa",
+      "fazer",
+      "ligar",
       "como"
      ]
     },
@@ -321,8 +321,8 @@
      "pt": "ligar",
      "o": [
       "call",
-      "week",
-      "do"
+      "how",
+      "home"
      ]
     },
     {
@@ -345,8 +345,8 @@
        "trazer"
       ],
       [
-       "do",
-       "fazer"
+       "home",
+       "casa"
       ]
      ]
     },
@@ -403,9 +403,9 @@
      "w": "week",
      "pt": "semana",
      "o": [
-      "call",
+      "bring",
       "week",
-      "month"
+      "do"
      ]
     },
     {
@@ -465,9 +465,9 @@
      "w": "let",
      "pt": "deixar",
      "o": [
-      "ajuda",
+      "semana",
       "deixar",
-      "fazer"
+      "casa"
      ]
     },
     {
@@ -480,8 +480,8 @@
      "w": "make",
      "pt": "fazer",
      "o": [
-      "help",
-      "how",
+      "week",
+      "plan",
       "make"
      ]
     },
@@ -497,16 +497,12 @@
        "fazer"
       ],
       [
+       "bring",
+       "trazer"
+      ],
+      [
        "call",
        "ligar"
-      ],
-      [
-       "month",
-       "mês"
-      ],
-      [
-       "home",
-       "casa"
       ]
      ]
     },
@@ -520,9 +516,9 @@
      "w": "plan",
      "pt": "plano",
      "o": [
-      "do",
+      "home",
       "plan",
-      "make"
+      "help"
      ]
     },
     {
@@ -536,8 +532,8 @@
      "pt": "ficar",
      "o": [
       "ficar",
-      "plano",
-      "ajuda"
+      "mês",
+      "como"
      ]
     },
     {
@@ -545,8 +541,8 @@
      "w": "plan",
      "pt": "plano",
      "o": [
-      "make",
-      "week",
+      "help",
+      "call",
       "plan"
      ]
     },
@@ -570,8 +566,8 @@
        "fazer"
       ],
       [
-       "how",
-       "como"
+       "month",
+       "mês"
       ]
      ]
     },
@@ -628,9 +624,9 @@
      "w": "let",
      "pt": "deixar",
      "o": [
-      "stay",
+      "do",
       "let",
-      "do"
+      "home"
      ]
     },
     {
@@ -690,8 +686,8 @@
      "w": "tell",
      "pt": "contar",
      "o": [
-      "casa",
-      "semana",
+      "ficar",
+      "ligar",
       "contar"
      ]
     },
@@ -705,7 +701,7 @@
      "w": "work",
      "pt": "trabalho",
      "o": [
-      "do",
+      "tell",
       "let",
       "work"
      ]
@@ -722,16 +718,16 @@
        "trabalho"
       ],
       [
-       "plan",
-       "plano"
+       "month",
+       "mês"
       ],
       [
-       "week",
-       "semana"
+       "call",
+       "ligar"
       ],
       [
-       "do",
-       "fazer"
+       "home",
+       "casa"
       ]
      ]
     },
@@ -745,9 +741,9 @@
      "w": "confidential",
      "pt": "confidencial",
      "o": [
-      "bring",
+      "how",
       "confidential",
-      "help"
+      "week"
      ]
     },
     {
@@ -762,7 +758,7 @@
      "o": [
       "cada",
       "fazer",
-      "como"
+      "plano"
      ]
     },
     {
@@ -770,8 +766,8 @@
      "w": "confidential",
      "pt": "confidencial",
      "o": [
-      "week",
-      "month",
+      "call",
+      "work",
       "confidential"
      ]
     },
@@ -795,8 +791,8 @@
        "trabalho"
       ],
       [
-       "stay",
-       "ficar"
+       "do",
+       "fazer"
       ]
      ]
     },
@@ -853,9 +849,9 @@
      "w": "tell",
      "pt": "contar",
      "o": [
-      "make",
+      "help",
       "tell",
-      "work"
+      "every"
      ]
     },
     {
@@ -916,8 +912,8 @@
      "pt": "sentir",
      "o": [
       "sentir",
-      "ajuda",
-      "como"
+      "cada",
+      "casa"
      ]
     },
     {
@@ -930,9 +926,9 @@
      "w": "together",
      "pt": "juntos",
      "o": [
-      "decide",
+      "call",
       "together",
-      "help"
+      "every"
      ]
     },
     {
@@ -947,16 +943,16 @@
        "juntos"
       ],
       [
-       "how",
-       "como"
+       "tell",
+       "contar"
       ],
       [
-       "every",
-       "cada"
+       "do",
+       "fazer"
       ],
       [
-       "plan",
-       "plano"
+       "bring",
+       "trazer"
       ]
      ]
     },
@@ -970,9 +966,9 @@
      "w": "want",
      "pt": "querer",
      "o": [
-      "bring",
+      "work",
       "want",
-      "stay"
+      "decide"
      ]
     },
     {
@@ -987,7 +983,7 @@
      "o": [
       "semana",
       "decidir",
-      "deixar"
+      "fazer"
      ]
     },
     {
@@ -996,8 +992,8 @@
      "pt": "querer",
      "o": [
       "want",
-      "every",
-      "plan"
+      "do",
+      "bring"
      ]
     },
     {
@@ -1020,8 +1016,8 @@
        "juntos"
       ],
       [
-       "help",
-       "ajuda"
+       "every",
+       "cada"
       ]
      ]
     },
@@ -1079,7 +1075,7 @@
      "pt": "sentir",
      "o": [
       "feel",
-      "home",
+      "let",
       "confidential"
      ]
     },
@@ -1140,7 +1136,7 @@
      "w": "everything",
      "pt": "tudo",
      "o": [
-      "ficar",
+      "aluguel",
       "contar",
       "tudo"
      ]
@@ -1156,8 +1152,8 @@
      "pt": "seguir",
      "o": [
       "follow",
-      "let",
-      "rent"
+      "make",
+      "feel"
      ]
     },
     {
@@ -1176,12 +1172,12 @@
        "semana"
       ],
       [
-       "together",
-       "juntos"
+       "how",
+       "como"
       ],
       [
-       "make",
-       "fazer"
+       "together",
+       "juntos"
       ]
      ]
     },
@@ -1195,9 +1191,9 @@
      "w": "pay",
      "pt": "pagar",
      "o": [
-      "together",
+      "work",
       "pay",
-      "follow"
+      "do"
      ]
     },
     {
@@ -1210,9 +1206,9 @@
      "w": "rent",
      "pt": "aluguel",
      "o": [
-      "fazer",
+      "confidencial",
       "aluguel",
-      "ligar"
+      "seguir"
      ]
     },
     {
@@ -1220,9 +1216,9 @@
      "w": "pay",
      "pt": "pagar",
      "o": [
-      "confidential",
+      "call",
       "pay",
-      "month"
+      "everything"
      ]
     },
     {
@@ -1245,8 +1241,8 @@
        "seguir"
       ],
       [
-       "feel",
-       "sentir"
+       "want",
+       "querer"
       ]
      ]
     },
@@ -1367,8 +1363,8 @@
      "w": "safe",
      "pt": "seguro",
      "o": [
-      "ajuda",
-      "querer",
+      "cada",
+      "mês",
       "seguro"
      ]
     },
@@ -1382,7 +1378,7 @@
      "w": "up",
      "pt": "para cima",
      "o": [
-      "tell",
+      "home",
       "week",
       "up"
      ]
@@ -1399,16 +1395,16 @@
        "para cima"
       ],
       [
-       "confidential",
-       "confidencial"
+       "call",
+       "ligar"
       ],
       [
-       "stay",
-       "ficar"
+       "decide",
+       "decidir"
       ],
       [
-       "follow",
-       "seguir"
+       "help",
+       "ajuda"
       ]
      ]
     },
@@ -1422,9 +1418,9 @@
      "w": "about",
      "pt": "sobre",
      "o": [
-      "pay",
+      "bring",
       "about",
-      "alone"
+      "decide"
      ]
     },
     {
@@ -1437,8 +1433,8 @@
      "w": "alone",
      "pt": "sozinho",
      "o": [
-      "sentir",
-      "fazer",
+      "querer",
+      "sobre",
       "sozinho"
      ]
     },
@@ -1449,7 +1445,7 @@
      "o": [
       "tell",
       "about",
-      "call"
+      "home"
      ]
     },
     {
@@ -1472,8 +1468,8 @@
        "para cima"
       ],
       [
-       "make",
-       "fazer"
+       "rent",
+       "aluguel"
       ]
      ]
     },
@@ -1595,8 +1591,8 @@
      "pt": "botão",
      "o": [
       "botão",
-      "fazer",
-      "trazer"
+      "trabalho",
+      "como"
      ]
     },
     {
@@ -1609,8 +1605,8 @@
      "w": "job",
      "pt": "trabalho",
      "o": [
-      "month",
-      "safe",
+      "about",
+      "help",
       "job"
      ]
     },
@@ -1626,12 +1622,12 @@
        "trabalho"
       ],
       [
-       "decide",
-       "decidir"
+       "call",
+       "ligar"
       ],
       [
-       "every",
-       "cada"
+       "do",
+       "fazer"
       ],
       [
        "tell",
@@ -1649,9 +1645,9 @@
      "w": "landlord",
      "pt": "proprietário",
      "o": [
-      "little",
+      "about",
       "landlord",
-      "make"
+      "alone"
      ]
     },
     {
@@ -1666,7 +1662,7 @@
      "o": [
       "confidencial",
       "pequeno",
-      "fazer"
+      "ficar"
      ]
     },
     {
@@ -1674,8 +1670,8 @@
      "w": "landlord",
      "pt": "proprietário",
      "o": [
-      "make",
-      "month",
+      "alone",
+      "together",
       "landlord"
      ]
     },
@@ -1821,9 +1817,9 @@
      "w": "much",
      "pt": "muito",
      "o": [
-      "fazer",
+      "algum",
       "muito",
-      "sentir"
+      "apoio"
      ]
     },
     {
@@ -1836,9 +1832,9 @@
      "w": "say",
      "pt": "dizer",
      "o": [
-      "feel",
+      "want",
       "say",
-      "alone"
+      "work"
      ]
     },
     {
@@ -1853,16 +1849,12 @@
        "dizer"
       ],
       [
-       "tell",
-       "contar"
+       "job",
+       "trabalho"
       ],
       [
-       "do",
-       "fazer"
-      ],
-      [
-       "bring",
-       "trazer"
+       "let",
+       "deixar"
       ]
      ]
     },
@@ -1876,8 +1868,8 @@
      "w": "some",
      "pt": "algum",
      "o": [
-      "every",
-      "plan",
+      "landlord",
+      "up",
       "some"
      ]
     },
@@ -1891,8 +1883,8 @@
      "w": "support",
      "pt": "apoio",
      "o": [
-      "fazer",
-      "trabalho",
+      "ficar",
+      "querer",
       "apoio"
      ]
     },
@@ -1903,7 +1895,7 @@
      "o": [
       "week",
       "some",
-      "help"
+      "every"
      ]
     },
     {
@@ -1926,8 +1918,8 @@
        "dizer"
       ],
       [
-       "let",
-       "deixar"
+       "make",
+       "fazer"
       ]
      ]
     },
@@ -2037,45 +2029,45 @@
      "t": "pairs",
      "p": [
       [
-       "up",
-       "para cima"
+       "decide",
+       "decidir"
       ],
       [
-       "some",
-       "algum"
+       "together",
+       "juntos"
       ],
       [
-       "how",
-       "como"
+       "little",
+       "pequeno"
       ],
       [
-       "call",
-       "ligar"
+       "home",
+       "casa"
       ],
       [
-       "bring",
-       "trazer"
+       "job",
+       "trabalho"
       ]
      ]
     },
     {
      "t": "meaning",
-     "w": "home",
-     "pt": "casa",
+     "w": "let",
+     "pt": "deixar",
      "o": [
-      "dizer",
-      "ligar",
-      "casa"
+      "pagar",
+      "casa",
+      "deixar"
      ]
     },
     {
      "t": "hear",
-     "w": "landlord",
-     "pt": "proprietário",
+     "w": "rent",
+     "pt": "aluguel",
      "o": [
-      "landlord",
-      "much",
-      "little"
+      "rent",
+      "follow",
+      "alone"
      ]
     },
     {
@@ -2141,24 +2133,24 @@
      "t": "pairs",
      "p": [
       [
+       "some",
+       "algum"
+      ],
+      [
+       "say",
+       "dizer"
+      ],
+      [
        "make",
        "fazer"
       ],
       [
-       "month",
-       "mês"
+       "safe",
+       "seguro"
       ],
       [
-       "let",
-       "deixar"
-      ],
-      [
-       "button",
-       "botão"
-      ],
-      [
-       "little",
-       "pequeno"
+       "alone",
+       "sozinho"
       ]
      ]
     },
@@ -2192,12 +2184,12 @@
     },
     {
      "t": "pick",
-     "w": "pay",
-     "pt": "pagar",
+     "w": "bring",
+     "pt": "trazer",
      "o": [
       "about",
-      "follow",
-      "pay"
+      "much",
+      "bring"
      ]
     },
     {
@@ -2228,9 +2220,9 @@
      "w": "week",
      "pt": "semana",
      "o": [
-      "trabalho",
+      "querer",
       "semana",
-      "ajuda"
+      "cada"
      ]
     },
     {
@@ -2246,12 +2238,12 @@
     },
     {
      "t": "hear",
-     "w": "follow",
-     "pt": "seguir",
+     "w": "much",
+     "pt": "muito",
      "o": [
-      "up",
-      "do",
-      "follow"
+      "decide",
+      "stay",
+      "much"
      ]
     },
     {

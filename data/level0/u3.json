@@ -55,12 +55,12 @@
        "meu"
       ],
       [
-       "this",
-       "este"
-      ],
-      [
        "from",
        "de"
+      ],
+      [
+       "this",
+       "este"
       ]
      ]
     },
@@ -240,8 +240,8 @@
      "w": "and",
      "pt": "e",
      "o": [
-      "meu",
-      "é",
+      "este",
+      "café",
       "e"
      ]
     },
@@ -255,9 +255,9 @@
      "w": "coffee",
      "pt": "café",
      "o": [
-      "from",
+      "my",
       "coffee",
-      "am"
+      "and"
      ]
     },
     {
@@ -272,12 +272,12 @@
        "café"
       ],
       [
-       "is",
-       "é"
+       "from",
+       "de"
       ],
       [
-       "this",
-       "este"
+       "is",
+       "é"
       ],
       [
        "my",
@@ -295,9 +295,9 @@
      "w": "dad",
      "pt": "pai",
      "o": [
-      "this",
+      "my",
       "dad",
-      "and"
+      "am"
      ]
     },
     {
@@ -310,9 +310,9 @@
      "w": "am",
      "pt": "sou",
      "o": [
-      "pai",
+      "café",
       "sou",
-      "de"
+      "meu"
      ]
     },
     {
@@ -321,8 +321,8 @@
      "pt": "pai",
      "o": [
       "dad",
-      "this",
-      "and"
+      "my",
+      "am"
      ]
     },
     {
@@ -403,9 +403,9 @@
      "w": "and",
      "pt": "e",
      "o": [
-      "this",
+      "my",
       "and",
-      "is"
+      "coffee"
      ]
     },
     {
@@ -466,8 +466,8 @@
      "pt": "você",
      "o": [
       "você",
-      "e",
-      "mãe"
+      "sou",
+      "meu"
      ]
     },
     {
@@ -480,8 +480,8 @@
      "w": "sister",
      "pt": "irmã",
      "o": [
-      "my",
       "from",
+      "coffee",
       "sister"
      ]
     },
@@ -497,16 +497,16 @@
        "irmã"
       ],
       [
-       "and",
-       "e"
+       "am",
+       "sou"
+      ],
+      [
+       "is",
+       "é"
       ],
       [
        "dad",
        "pai"
-      ],
-      [
-       "coffee",
-       "café"
       ]
      ]
     },
@@ -520,9 +520,9 @@
      "w": "mom",
      "pt": "mãe",
      "o": [
-      "is",
+      "my",
       "mom",
-      "this"
+      "you"
      ]
     },
     {
@@ -537,7 +537,7 @@
      "o": [
       "este",
       "oi",
-      "sou"
+      "e"
      ]
     },
     {
@@ -546,8 +546,8 @@
      "pt": "mãe",
      "o": [
       "mom",
-      "dad",
-      "from"
+      "is",
+      "coffee"
      ]
     },
     {
@@ -570,8 +570,8 @@
        "irmã"
       ],
       [
-       "am",
-       "sou"
+       "and",
+       "e"
       ]
      ]
     },
@@ -628,8 +628,8 @@
      "w": "you",
      "pt": "você",
      "o": [
-      "from",
-      "is",
+      "coffee",
+      "this",
       "you"
      ]
     },
@@ -690,9 +690,9 @@
      "w": "no",
      "pt": "não",
      "o": [
-      "meu",
+      "este",
       "não",
-      "oi"
+      "de"
      ]
     },
     {
@@ -707,7 +707,7 @@
      "o": [
       "this",
       "brother",
-      "my"
+      "from"
      ]
     },
     {
@@ -722,12 +722,12 @@
        "irmão"
       ],
       [
-       "from",
-       "de"
+       "coffee",
+       "café"
       ],
       [
-       "am",
-       "sou"
+       "and",
+       "e"
       ],
       [
        "sister",
@@ -746,8 +746,8 @@
      "pt": "para",
      "o": [
       "for",
-      "dad",
-      "from"
+      "is",
+      "coffee"
      ]
     },
     {
@@ -760,9 +760,9 @@
      "w": "name",
      "pt": "nome",
      "o": [
-      "este",
+      "irmão",
       "nome",
-      "para"
+      "meu"
      ]
     },
     {
@@ -770,8 +770,8 @@
      "w": "for",
      "pt": "para",
      "o": [
-      "and",
-      "you",
+      "am",
+      "sister",
       "for"
      ]
     },
@@ -795,8 +795,8 @@
        "irmão"
       ],
       [
-       "mom",
-       "mãe"
+       "my",
+       "meu"
       ]
      ]
     },
@@ -853,9 +853,9 @@
      "w": "no",
      "pt": "não",
      "o": [
-      "is",
+      "you",
       "no",
-      "hi"
+      "from"
      ]
     },
     {
@@ -915,8 +915,8 @@
      "w": "please",
      "pt": "por favor",
      "o": [
-      "café",
-      "sou",
+      "mãe",
+      "de",
       "por favor"
      ]
     },
@@ -930,8 +930,8 @@
      "w": "your",
      "pt": "seu",
      "o": [
-      "mom",
-      "brother",
+      "for",
+      "hi",
       "your"
      ]
     },
@@ -947,16 +947,16 @@
        "seu"
       ],
       [
-       "hi",
-       "oi"
+       "no",
+       "não"
       ],
       [
        "this",
        "este"
       ],
       [
-       "brother",
-       "irmão"
+       "hi",
+       "oi"
       ]
      ]
     },
@@ -970,8 +970,8 @@
      "w": "family",
      "pt": "família",
      "o": [
-      "name",
-      "please",
+      "and",
+      "dad",
       "family"
      ]
     },
@@ -985,9 +985,9 @@
      "w": "tea",
      "pt": "chá",
      "o": [
-      "irmão",
+      "oi",
       "chá",
-      "mãe"
+      "para"
      ]
     },
     {
@@ -995,8 +995,8 @@
      "w": "family",
      "pt": "família",
      "o": [
-      "hi",
-      "you",
+      "sister",
+      "am",
       "family"
      ]
     },
@@ -1020,8 +1020,8 @@
        "seu"
       ],
       [
-       "and",
-       "e"
+       "is",
+       "é"
       ]
      ]
     },
@@ -1080,7 +1080,7 @@
      "o": [
       "please",
       "family",
-      "no"
+      "for"
      ]
     },
     {
@@ -1140,8 +1140,8 @@
      "w": "milk",
      "pt": "leite",
      "o": [
+      "não",
       "este",
-      "dez",
       "leite"
      ]
     },
@@ -1157,7 +1157,7 @@
      "o": [
       "dog",
       "milk",
-      "coffee"
+      "am"
      ]
     },
     {
@@ -1172,16 +1172,16 @@
        "cachorro"
       ],
       [
-       "for",
-       "para"
+       "please",
+       "por favor"
       ],
       [
        "family",
        "família"
       ],
       [
-       "dad",
-       "pai"
+       "coffee",
+       "café"
       ]
      ]
     },
@@ -1197,7 +1197,7 @@
      "o": [
       "this",
       "house",
-      "am"
+      "milk"
      ]
     },
     {
@@ -1212,7 +1212,7 @@
      "o": [
       "dez",
       "família",
-      "chá"
+      "pai"
      ]
     },
     {
@@ -1221,8 +1221,8 @@
      "pt": "casa",
      "o": [
       "house",
-      "milk",
-      "from"
+      "from",
+      "coffee"
      ]
     },
     {
@@ -1245,8 +1245,8 @@
        "cachorro"
       ],
       [
-       "sister",
-       "irmã"
+       "name",
+       "nome"
       ]
      ]
     },
@@ -1368,8 +1368,8 @@
      "pt": "quem",
      "o": [
       "quem",
-      "irmão",
-      "nome"
+      "oi",
+      "casa"
      ]
     },
     {
@@ -1383,8 +1383,8 @@
      "pt": "gato",
      "o": [
       "cat",
-      "and",
-      "is"
+      "her",
+      "tea"
      ]
     },
     {
@@ -1399,16 +1399,16 @@
        "gato"
       ],
       [
-       "this",
-       "este"
+       "no",
+       "não"
       ],
       [
-       "coffee",
-       "café"
+       "mom",
+       "mãe"
       ],
       [
-       "my",
-       "meu"
+       "from",
+       "de"
       ]
      ]
     },
@@ -1422,9 +1422,9 @@
      "w": "her",
      "pt": "dela",
      "o": [
-      "sister",
+      "name",
       "her",
-      "name"
+      "who"
      ]
     },
     {
@@ -1437,8 +1437,8 @@
      "w": "his",
      "pt": "dele",
      "o": [
-      "dez",
-      "cachorro",
+      "por favor",
+      "chá",
       "dele"
      ]
     },
@@ -1448,8 +1448,8 @@
      "pt": "dela",
      "o": [
       "her",
-      "this",
-      "you"
+      "brother",
+      "sister"
      ]
     },
     {
@@ -1472,8 +1472,8 @@
        "gato"
       ],
       [
-       "sister",
-       "irmã"
+       "hi",
+       "oi"
       ]
      ]
     },
@@ -1595,8 +1595,8 @@
      "pt": "bebe",
      "o": [
       "bebe",
-      "este",
-      "cachorro"
+      "por favor",
+      "chá"
      ]
     },
     {
@@ -1609,9 +1609,9 @@
      "w": "girl",
      "pt": "menina",
      "o": [
-      "my",
+      "look",
       "girl",
-      "house"
+      "coffee"
      ]
     },
     {
@@ -1626,16 +1626,16 @@
        "menina"
       ],
       [
+       "her",
+       "dela"
+      ],
+      [
        "dad",
        "pai"
       ],
       [
-       "coffee",
-       "café"
-      ],
-      [
-       "and",
-       "e"
+       "cat",
+       "gato"
       ]
      ]
     },
@@ -1649,9 +1649,9 @@
      "w": "look",
      "pt": "olha",
      "o": [
-      "dog",
+      "family",
       "look",
-      "no"
+      "sister"
      ]
     },
     {
@@ -1664,7 +1664,7 @@
      "w": "lunch",
      "pt": "almoço",
      "o": [
-      "dele",
+      "para",
       "almoço",
       "família"
      ]
@@ -1674,9 +1674,9 @@
      "w": "look",
      "pt": "olha",
      "o": [
-      "dad",
+      "her",
       "look",
-      "ten"
+      "my"
      ]
     },
     {
@@ -1699,8 +1699,8 @@
        "menina"
       ],
       [
-       "you",
-       "você"
+       "sister",
+       "irmã"
       ]
      ]
     },
@@ -1821,8 +1821,8 @@
      "w": "photo",
      "pt": "foto",
      "o": [
-      "bebe",
-      "de",
+      "por favor",
+      "dele",
       "foto"
      ]
     },
@@ -1836,7 +1836,7 @@
      "w": "school",
      "pt": "escola",
      "o": [
-      "my",
+      "you",
       "this",
       "school"
      ]
@@ -1853,16 +1853,16 @@
        "escola"
       ],
       [
-       "tea",
-       "chá"
+       "brother",
+       "irmão"
       ],
       [
        "family",
        "família"
       ],
       [
-       "no",
-       "não"
+       "dog",
+       "cachorro"
       ]
      ]
     },
@@ -1876,8 +1876,8 @@
      "w": "sunday",
      "pt": "domingo",
      "o": [
-      "school",
-      "for",
+      "drinks",
+      "ten",
       "sunday"
      ]
     },
@@ -1902,8 +1902,8 @@
      "pt": "domingo",
      "o": [
       "sunday",
-      "is",
-      "who"
+      "look",
+      "house"
      ]
     },
     {
@@ -1926,8 +1926,8 @@
        "escola"
       ],
       [
-       "am",
-       "sou"
+       "name",
+       "nome"
       ]
      ]
     },
@@ -2037,45 +2037,45 @@
      "t": "pairs",
      "p": [
       [
-       "look",
-       "olha"
+       "drinks",
+       "bebe"
       ],
       [
-       "please",
-       "por favor"
+       "dad",
+       "pai"
       ],
       [
-       "for",
-       "para"
+       "ten",
+       "dez"
       ],
       [
-       "school",
-       "escola"
+       "sister",
+       "irmã"
       ],
       [
-       "photo",
-       "foto"
+       "brother",
+       "irmão"
       ]
      ]
     },
     {
      "t": "meaning",
-     "w": "no",
-     "pt": "não",
+     "w": "your",
+     "pt": "seu",
      "o": [
-      "dela",
-      "seu",
-      "não"
+      "sou",
+      "é",
+      "seu"
      ]
     },
     {
      "t": "hear",
-     "w": "her",
-     "pt": "dela",
+     "w": "am",
+     "pt": "sou",
      "o": [
-      "my",
-      "who",
-      "her"
+      "you",
+      "house",
+      "am"
      ]
     },
     {
@@ -2141,24 +2141,24 @@
      "t": "pairs",
      "p": [
       [
-       "from",
-       "de"
-      ],
-      [
-       "ten",
-       "dez"
-      ],
-      [
-       "lunch",
-       "almoço"
-      ],
-      [
-       "sister",
-       "irmã"
+       "his",
+       "dele"
       ],
       [
        "my",
        "meu"
+      ],
+      [
+       "from",
+       "de"
+      ],
+      [
+       "sunday",
+       "domingo"
+      ],
+      [
+       "you",
+       "você"
       ]
      ]
     },
@@ -2192,12 +2192,12 @@
     },
     {
      "t": "pick",
-     "w": "his",
-     "pt": "dele",
+     "w": "family",
+     "pt": "família",
      "o": [
-      "your",
-      "his",
-      "coffee"
+      "is",
+      "family",
+      "lunch"
      ]
     },
     {
@@ -2225,11 +2225,11 @@
     },
     {
      "t": "meaning",
-     "w": "hi",
-     "pt": "oi",
+     "w": "dog",
+     "pt": "cachorro",
      "o": [
-      "oi",
-      "domingo",
+      "cachorro",
+      "escola",
       "este"
      ]
     },
@@ -2246,12 +2246,12 @@
     },
     {
      "t": "hear",
-     "w": "you",
-     "pt": "você",
+     "w": "for",
+     "pt": "para",
      "o": [
+      "ten",
       "for",
-      "you",
-      "his"
+      "family"
      ]
     },
     {

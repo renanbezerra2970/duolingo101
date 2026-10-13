@@ -55,12 +55,12 @@
        "pensou"
       ],
       [
-       "how",
-       "como"
-      ],
-      [
        "about",
        "sobre"
+      ],
+      [
+       "how",
+       "como"
       ]
      ]
     },
@@ -240,9 +240,9 @@
      "w": "hard",
      "pt": "difícil",
      "o": [
-      "sobre",
+      "juntos",
       "difícil",
-      "sentir"
+      "deixar"
      ]
     },
     {
@@ -255,7 +255,7 @@
      "w": "let",
      "pt": "deixar",
      "o": [
-      "hard",
+      "feel",
       "let",
       "about"
      ]
@@ -272,12 +272,12 @@
        "deixar"
       ],
       [
-       "how",
-       "como"
+       "feel",
+       "sentir"
       ],
       [
-       "about",
-       "sobre"
+       "how",
+       "como"
       ],
       [
        "thought",
@@ -296,8 +296,8 @@
      "pt": "fazer",
      "o": [
       "make",
-      "together",
-      "thought"
+      "thought",
+      "how"
      ]
     },
     {
@@ -311,8 +311,8 @@
      "pt": "juntos",
      "o": [
       "juntos",
-      "fazer",
-      "sobre"
+      "sentir",
+      "como"
      ]
     },
     {
@@ -321,8 +321,8 @@
      "pt": "fazer",
      "o": [
       "make",
-      "thought",
-      "let"
+      "how",
+      "hard"
      ]
     },
     {
@@ -345,8 +345,8 @@
        "deixar"
       ],
       [
-       "thought",
-       "pensou"
+       "how",
+       "como"
       ]
      ]
     },
@@ -403,7 +403,7 @@
      "w": "hard",
      "pt": "difícil",
      "o": [
-      "how",
+      "about",
       "hard",
       "make"
      ]
@@ -466,8 +466,8 @@
      "pt": "tempo",
      "o": [
       "tempo",
-      "fazer",
-      "plano"
+      "sentir",
+      "trabalho"
      ]
     },
     {
@@ -481,8 +481,8 @@
      "pt": "trabalho",
      "o": [
       "work",
-      "week",
-      "feel"
+      "let",
+      "week"
      ]
     },
     {
@@ -497,16 +497,16 @@
        "trabalho"
       ],
       [
-       "together",
-       "juntos"
-      ],
-      [
-       "make",
-       "fazer"
+       "thought",
+       "pensou"
       ],
       [
        "feel",
        "sentir"
+      ],
+      [
+       "let",
+       "deixar"
       ]
      ]
     },
@@ -521,8 +521,8 @@
      "pt": "plano",
      "o": [
       "plan",
-      "let",
-      "about"
+      "hard",
+      "together"
      ]
     },
     {
@@ -535,9 +535,9 @@
      "w": "week",
      "pt": "semana",
      "o": [
-      "juntos",
+      "como",
       "semana",
-      "plano"
+      "trabalho"
      ]
     },
     {
@@ -545,8 +545,8 @@
      "w": "plan",
      "pt": "plano",
      "o": [
-      "how",
       "about",
+      "together",
       "plan"
      ]
     },
@@ -570,8 +570,8 @@
        "trabalho"
       ],
       [
-       "about",
-       "sobre"
+       "together",
+       "juntos"
       ]
      ]
     },
@@ -629,8 +629,8 @@
      "pt": "tempo",
      "o": [
       "time",
-      "week",
-      "feel"
+      "let",
+      "week"
      ]
     },
     {
@@ -691,8 +691,8 @@
      "pt": "sido",
      "o": [
       "sido",
-      "telefone",
-      "semana"
+      "juntos",
+      "deixar"
      ]
     },
     {
@@ -706,7 +706,7 @@
      "pt": "telefone",
      "o": [
       "phone",
-      "how",
+      "been",
       "about"
      ]
     },
@@ -722,12 +722,12 @@
        "telefone"
       ],
       [
-       "work",
-       "trabalho"
+       "thought",
+       "pensou"
       ],
       [
-       "plan",
-       "plano"
+       "work",
+       "trabalho"
       ],
       [
        "about",
@@ -745,9 +745,9 @@
      "w": "said",
      "pt": "disse",
      "o": [
-      "so",
+      "time",
       "said",
-      "been"
+      "so"
      ]
     },
     {
@@ -760,9 +760,9 @@
      "w": "so",
      "pt": "então",
      "o": [
-      "como",
+      "sido",
       "então",
-      "sido"
+      "tempo"
      ]
     },
     {
@@ -770,9 +770,9 @@
      "w": "said",
      "pt": "disse",
      "o": [
-      "time",
+      "make",
       "said",
-      "make"
+      "feel"
      ]
     },
     {
@@ -795,8 +795,8 @@
        "telefone"
       ],
       [
-       "make",
-       "fazer"
+       "time",
+       "tempo"
       ]
      ]
     },
@@ -853,7 +853,7 @@
      "w": "been",
      "pt": "sido",
      "o": [
-      "so",
+      "time",
       "been",
       "about"
      ]
@@ -917,7 +917,7 @@
      "o": [
       "sobre",
       "som",
-      "então"
+      "fazer"
      ]
     },
     {
@@ -930,7 +930,7 @@
      "w": "tell",
      "pt": "contar",
      "o": [
-      "thought",
+      "together",
       "tell",
       "think"
      ]
@@ -947,16 +947,16 @@
        "contar"
       ],
       [
-       "let",
-       "deixar"
-      ],
-      [
        "feel",
        "sentir"
       ],
       [
-       "plan",
-       "plano"
+       "hard",
+       "difícil"
+      ],
+      [
+       "said",
+       "disse"
       ]
      ]
     },
@@ -971,8 +971,8 @@
      "pt": "pensar",
      "o": [
       "think",
-      "so",
-      "how"
+      "make",
+      "so"
      ]
     },
     {
@@ -985,8 +985,8 @@
      "w": "through",
      "pt": "através",
      "o": [
-      "som",
-      "trabalho",
+      "difícil",
+      "semana",
       "através"
      ]
     },
@@ -995,8 +995,8 @@
      "w": "think",
      "pt": "pensar",
      "o": [
-      "let",
-      "how",
+      "feel",
+      "so",
       "think"
      ]
     },
@@ -1020,8 +1020,8 @@
        "contar"
       ],
       [
-       "week",
-       "semana"
+       "let",
+       "deixar"
       ]
      ]
     },
@@ -1078,9 +1078,9 @@
      "w": "sound",
      "pt": "som",
      "o": [
-      "plan",
+      "been",
       "sound",
-      "week"
+      "let"
      ]
     },
     {
@@ -1141,8 +1141,8 @@
      "pt": "era",
      "o": [
       "era",
-      "som",
-      "pensou"
+      "pensou",
+      "juntos"
      ]
     },
     {
@@ -1156,8 +1156,8 @@
      "pt": "ruim",
      "o": [
       "bad",
-      "together",
-      "said"
+      "how",
+      "work"
      ]
     },
     {
@@ -1180,8 +1180,8 @@
        "pensar"
       ],
       [
-       "together",
-       "juntos"
+       "how",
+       "como"
       ]
      ]
     },
@@ -1196,8 +1196,8 @@
      "pt": "respirar",
      "o": [
       "breathe",
-      "together",
-      "so"
+      "how",
+      "make"
      ]
     },
     {
@@ -1210,9 +1210,9 @@
      "w": "feelings",
      "pt": "sentimentos",
      "o": [
-      "telefone",
+      "plano",
       "sentimentos",
-      "pensar"
+      "ruim"
      ]
     },
     {
@@ -1220,8 +1220,8 @@
      "w": "breathe",
      "pt": "respirar",
      "o": [
-      "bad",
-      "sound",
+      "through",
+      "thought",
       "breathe"
      ]
     },
@@ -1368,8 +1368,8 @@
      "pt": "ótimo",
      "o": [
       "ótimo",
-      "juntos",
-      "pensou"
+      "pensou",
+      "telefone"
      ]
     },
     {
@@ -1382,9 +1382,9 @@
      "w": "happen",
      "pt": "acontecer",
      "o": [
-      "so",
+      "feel",
       "happen",
-      "mind"
+      "so"
      ]
     },
     {
@@ -1399,12 +1399,12 @@
        "acontecer"
       ],
       [
-       "how",
-       "como"
+       "time",
+       "tempo"
       ],
       [
-       "said",
-       "disse"
+       "work",
+       "trabalho"
       ],
       [
        "tell",
@@ -1423,8 +1423,8 @@
      "pt": "machucar",
      "o": [
       "hurt",
-      "was",
-      "mind"
+      "plan",
+      "so"
      ]
     },
     {
@@ -1437,7 +1437,7 @@
      "w": "mind",
      "pt": "mente",
      "o": [
-      "som",
+      "difícil",
       "contar",
       "mente"
      ]
@@ -1447,9 +1447,9 @@
      "w": "hurt",
      "pt": "machucar",
      "o": [
-      "think",
+      "together",
       "hurt",
-      "hard"
+      "was"
      ]
     },
     {
@@ -1472,8 +1472,8 @@
        "acontecer"
       ],
       [
-       "breathe",
-       "respirar"
+       "think",
+       "pensar"
       ]
      ]
     },
@@ -1595,8 +1595,8 @@
      "pt": "segurança",
      "o": [
       "segurança",
-      "pensar",
-      "disse"
+      "juntos",
+      "como"
      ]
     },
     {
@@ -1610,8 +1610,8 @@
      "pt": "sentido",
      "o": [
       "sense",
-      "work",
-      "through"
+      "week",
+      "been"
      ]
     },
     {
@@ -1626,16 +1626,16 @@
        "sentido"
       ],
       [
-       "sound",
-       "som"
+       "hard",
+       "difícil"
       ],
       [
-       "feelings",
-       "sentimentos"
+       "think",
+       "pensar"
       ],
       [
-       "make",
-       "fazer"
+       "thought",
+       "pensou"
       ]
      ]
     },
@@ -1650,8 +1650,8 @@
      "pt": "pegar",
      "o": [
       "take",
-      "hard",
-      "want"
+      "hurt",
+      "said"
      ]
     },
     {
@@ -1664,7 +1664,7 @@
      "w": "want",
      "pt": "querer",
      "o": [
-      "pensar",
+      "trabalho",
       "sentimentos",
       "querer"
      ]
@@ -1674,8 +1674,8 @@
      "w": "take",
      "pt": "pegar",
      "o": [
-      "feel",
-      "phone",
+      "hard",
+      "mind",
       "take"
      ]
     },
@@ -1699,8 +1699,8 @@
        "sentido"
       ],
       [
-       "make",
-       "fazer"
+       "thought",
+       "pensou"
       ]
      ]
     },
@@ -1821,9 +1821,9 @@
      "w": "yourself",
      "pt": "você mesmo",
      "o": [
-      "melhor",
+      "trabalho",
       "você mesmo",
-      "sido"
+      "pegar"
      ]
     },
     {
@@ -1836,9 +1836,9 @@
      "w": "always",
      "pt": "sempre",
      "o": [
-      "anxious",
+      "tell",
       "always",
-      "let"
+      "breathe"
      ]
     },
     {
@@ -1853,16 +1853,16 @@
        "sempre"
       ],
       [
-       "plan",
-       "plano"
+       "want",
+       "querer"
       ],
       [
-       "mind",
-       "mente"
+       "how",
+       "como"
       ],
       [
-       "sense",
-       "sentido"
+       "great",
+       "ótimo"
       ]
      ]
     },
@@ -1876,8 +1876,8 @@
      "w": "anxious",
      "pt": "ansioso",
      "o": [
-      "feel",
-      "mind",
+      "hard",
+      "so",
       "anxious"
      ]
     },
@@ -1891,9 +1891,9 @@
      "w": "better",
      "pt": "melhor",
      "o": [
-      "sido",
+      "pegar",
       "melhor",
-      "difícil"
+      "querer"
      ]
     },
     {
@@ -1903,7 +1903,7 @@
      "o": [
       "anxious",
       "feelings",
-      "make"
+      "great"
      ]
     },
     {
@@ -1926,8 +1926,8 @@
        "sempre"
       ],
       [
-       "so",
-       "então"
+       "feel",
+       "sentir"
       ]
      ]
     },
@@ -2037,45 +2037,45 @@
      "t": "pairs",
      "p": [
       [
-       "always",
-       "sempre"
+       "think",
+       "pensar"
       ],
       [
-       "sense",
-       "sentido"
+       "plan",
+       "plano"
       ],
       [
-       "take",
-       "pegar"
+       "yourself",
+       "você mesmo"
       ],
       [
-       "feel",
-       "sentir"
+       "happen",
+       "acontecer"
       ],
       [
-       "together",
-       "juntos"
+       "great",
+       "ótimo"
       ]
      ]
     },
     {
      "t": "meaning",
-     "w": "great",
-     "pt": "ótimo",
+     "w": "together",
+     "pt": "juntos",
      "o": [
-      "ótimo",
-      "sido",
-      "sentido"
+      "juntos",
+      "pegar",
+      "plano"
      ]
     },
     {
      "t": "hear",
-     "w": "week",
-     "pt": "semana",
+     "w": "let",
+     "pt": "deixar",
      "o": [
-      "make",
-      "sound",
-      "week"
+      "thought",
+      "hard",
+      "let"
      ]
     },
     {
@@ -2141,24 +2141,24 @@
      "t": "pairs",
      "p": [
       [
-       "phone",
-       "telefone"
-      ],
-      [
-       "how",
-       "como"
-      ],
-      [
-       "safety",
-       "segurança"
-      ],
-      [
-       "let",
-       "deixar"
+       "mind",
+       "mente"
       ],
       [
        "hurt",
        "machucar"
+      ],
+      [
+       "feelings",
+       "sentimentos"
+      ],
+      [
+       "breathe",
+       "respirar"
+      ],
+      [
+       "about",
+       "sobre"
       ]
      ]
     },
@@ -2192,12 +2192,12 @@
     },
     {
      "t": "pick",
-     "w": "through",
-     "pt": "através",
+     "w": "sense",
+     "pt": "sentido",
      "o": [
-      "hard",
-      "take",
-      "through"
+      "was",
+      "yourself",
+      "sense"
      ]
     },
     {
@@ -2225,12 +2225,12 @@
     },
     {
      "t": "meaning",
-     "w": "think",
-     "pt": "pensar",
+     "w": "phone",
+     "pt": "telefone",
      "o": [
-      "sido",
-      "pensar",
-      "pensou"
+      "pegar",
+      "telefone",
+      "sempre"
      ]
     },
     {
@@ -2246,12 +2246,12 @@
     },
     {
      "t": "hear",
-     "w": "happen",
-     "pt": "acontecer",
+     "w": "anxious",
+     "pt": "ansioso",
      "o": [
-      "work",
-      "happen",
-      "feel"
+      "week",
+      "anxious",
+      "happen"
      ]
     },
     {

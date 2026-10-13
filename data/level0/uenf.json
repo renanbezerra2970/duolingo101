@@ -241,8 +241,8 @@
      "pt": "conferir",
      "o": [
       "conferir",
-      "como",
-      "ajuda"
+      "ferida",
+      "como"
      ]
     },
     {
@@ -256,8 +256,8 @@
      "pt": "casa",
      "o": [
       "home",
-      "need",
-      "button"
+      "button",
+      "how"
      ]
     },
     {
@@ -272,16 +272,16 @@
        "casa"
       ],
       [
-       "button",
-       "botão"
+       "need",
+       "precisar"
       ],
       [
        "help",
        "ajuda"
       ],
       [
-       "need",
-       "precisar"
+       "pain",
+       "dor"
       ]
      ]
     },
@@ -296,7 +296,7 @@
      "pt": "como",
      "o": [
       "help",
-      "button",
+      "check",
       "how"
      ]
     },
@@ -310,9 +310,9 @@
      "w": "wound",
      "pt": "ferida",
      "o": [
-      "conferir",
+      "casa",
       "ferida",
-      "ajuda"
+      "como"
      ]
     },
     {
@@ -320,9 +320,9 @@
      "w": "how",
      "pt": "como",
      "o": [
-      "wound",
+      "button",
       "how",
-      "check"
+      "home"
      ]
     },
     {
@@ -345,8 +345,8 @@
        "casa"
       ],
       [
-       "help",
-       "ajuda"
+       "need",
+       "precisar"
       ]
      ]
     },
@@ -403,8 +403,8 @@
      "w": "check",
      "pt": "conferir",
      "o": [
-      "wound",
       "button",
+      "help",
       "check"
      ]
     },
@@ -465,9 +465,9 @@
      "w": "blood",
      "pt": "sangue",
      "o": [
-      "ferida",
+      "conferir",
       "sangue",
-      "enfermeira(o)"
+      "dor"
      ]
     },
     {
@@ -481,8 +481,8 @@
      "pt": "fazer",
      "o": [
       "do",
-      "check",
-      "get"
+      "nurse",
+      "check"
      ]
     },
     {
@@ -497,16 +497,16 @@
        "fazer"
       ],
       [
-       "check",
-       "conferir"
+       "home",
+       "casa"
       ],
       [
-       "button",
-       "botão"
+       "help",
+       "ajuda"
       ],
       [
-       "need",
-       "precisar"
+       "wound",
+       "ferida"
       ]
      ]
     },
@@ -521,8 +521,8 @@
      "pt": "conseguir",
      "o": [
       "get",
-      "pain",
-      "need"
+      "home",
+      "wound"
      ]
     },
     {
@@ -537,7 +537,7 @@
      "o": [
       "dor",
       "enfermeira(o)",
-      "ajuda"
+      "como"
      ]
     },
     {
@@ -546,8 +546,8 @@
      "pt": "conseguir",
      "o": [
       "get",
-      "home",
-      "wound"
+      "need",
+      "check"
      ]
     },
     {
@@ -570,8 +570,8 @@
        "fazer"
       ],
       [
-       "how",
-       "como"
+       "button",
+       "botão"
       ]
      ]
     },
@@ -629,8 +629,8 @@
      "pt": "sangue",
      "o": [
       "blood",
-      "button",
-      "check"
+      "do",
+      "get"
      ]
     },
     {
@@ -691,8 +691,8 @@
      "pt": "penicilina",
      "o": [
       "penicilina",
-      "enfermeira(o)",
-      "conferir"
+      "dor",
+      "prensa"
      ]
     },
     {
@@ -705,8 +705,8 @@
      "w": "back",
      "pt": "de volta",
      "o": [
+      "press",
       "check",
-      "blood",
       "back"
      ]
     },
@@ -722,16 +722,16 @@
        "de volta"
       ],
       [
-       "button",
-       "botão"
+       "do",
+       "fazer"
       ],
       [
-       "blood",
-       "sangue"
+       "check",
+       "conferir"
       ],
       [
-       "how",
-       "como"
+       "wound",
+       "ferida"
       ]
      ]
     },
@@ -760,9 +760,9 @@
      "w": "press",
      "pt": "prensa",
      "o": [
-      "casa",
+      "precisar",
       "prensa",
-      "enfermeira(o)"
+      "dor"
      ]
     },
     {
@@ -771,8 +771,8 @@
      "pt": "se",
      "o": [
       "if",
-      "button",
-      "get"
+      "how",
+      "help"
      ]
     },
     {
@@ -795,8 +795,8 @@
        "de volta"
       ],
       [
-       "help",
-       "ajuda"
+       "how",
+       "como"
       ]
      ]
     },
@@ -853,8 +853,8 @@
      "w": "penicillin",
      "pt": "penicilina",
      "o": [
-      "get",
-      "nurse",
+      "check",
+      "pain",
       "penicillin"
      ]
     },
@@ -915,8 +915,8 @@
      "w": "pressure",
      "pt": "pressão",
      "o": [
+      "alergias",
       "ajuda",
-      "conseguir",
       "pressão"
      ]
     },
@@ -930,9 +930,9 @@
      "w": "up",
      "pt": "para cima",
      "o": [
-      "press",
+      "home",
       "up",
-      "pressure"
+      "allergic"
      ]
     },
     {
@@ -947,16 +947,16 @@
        "para cima"
       ],
       [
+       "if",
+       "se"
+      ],
+      [
+       "wound",
+       "ferida"
+      ],
+      [
        "back",
        "de volta"
-      ],
-      [
-       "blood",
-       "sangue"
-      ],
-      [
-       "help",
-       "ajuda"
       ]
      ]
     },
@@ -970,9 +970,9 @@
      "w": "allergic",
      "pt": "alérgico",
      "o": [
-      "need",
+      "blood",
       "allergic",
-      "pressure"
+      "get"
      ]
     },
     {
@@ -985,9 +985,9 @@
      "w": "allergies",
      "pt": "alergias",
      "o": [
-      "enfermeira(o)",
+      "botão",
       "alergias",
-      "prensa"
+      "casa"
      ]
     },
     {
@@ -995,8 +995,8 @@
      "w": "allergic",
      "pt": "alérgico",
      "o": [
-      "nurse",
-      "need",
+      "button",
+      "blood",
       "allergic"
      ]
     },
@@ -1020,8 +1020,8 @@
        "para cima"
       ],
       [
-       "do",
-       "fazer"
+       "pain",
+       "dor"
       ]
      ]
     },
@@ -1079,8 +1079,8 @@
      "pt": "pressão",
      "o": [
       "pressure",
-      "button",
-      "how"
+      "back",
+      "blood"
      ]
     },
     {
@@ -1141,8 +1141,8 @@
      "pt": "algum",
      "o": [
       "algum",
-      "conferir",
-      "limpo"
+      "enfermeira(o)",
+      "dor"
      ]
     },
     {
@@ -1156,8 +1156,8 @@
      "pt": "ruim",
      "o": [
       "bad",
-      "allergies",
-      "pressure"
+      "need",
+      "button"
      ]
     },
     {
@@ -1172,16 +1172,16 @@
        "ruim"
       ],
       [
-       "get",
-       "conseguir"
+       "help",
+       "ajuda"
+      ],
+      [
+       "back",
+       "de volta"
       ],
       [
        "button",
        "botão"
-      ],
-      [
-       "nurse",
-       "enfermeira(o)"
       ]
      ]
     },
@@ -1195,9 +1195,9 @@
      "w": "call",
      "pt": "ligar",
      "o": [
-      "pain",
+      "clean",
       "call",
-      "allergic"
+      "get"
      ]
     },
     {
@@ -1210,8 +1210,8 @@
      "w": "clean",
      "pt": "limpo",
      "o": [
-      "se",
-      "algum",
+      "pressão",
+      "alérgico",
       "limpo"
      ]
     },
@@ -1220,8 +1220,8 @@
      "w": "call",
      "pt": "ligar",
      "o": [
-      "if",
-      "how",
+      "wound",
+      "pressure",
       "call"
      ]
     },
@@ -1245,8 +1245,8 @@
        "ruim"
       ],
       [
-       "allergies",
-       "alergias"
+       "pain",
+       "dor"
       ]
      ]
     },
@@ -1367,8 +1367,8 @@
      "w": "doctor",
      "pt": "médico(a)",
      "o": [
-      "ele",
-      "enfermeira(o)",
+      "alérgico",
+      "algum",
       "médico(a)"
      ]
     },
@@ -1382,8 +1382,8 @@
      "w": "dry",
      "pt": "seco",
      "o": [
-      "nurse",
-      "any",
+      "doctor",
+      "bad",
       "dry"
      ]
     },
@@ -1399,16 +1399,16 @@
        "seco"
       ],
       [
-       "up",
-       "para cima"
-      ],
-      [
        "allergic",
        "alérgico"
       ],
       [
-       "clean",
-       "limpo"
+       "get",
+       "conseguir"
+      ],
+      [
+       "pain",
+       "dor"
       ]
      ]
     },
@@ -1422,9 +1422,9 @@
      "w": "him",
      "pt": "ele",
      "o": [
-      "wound",
+      "how",
       "him",
-      "need"
+      "up"
      ]
     },
     {
@@ -1437,9 +1437,9 @@
      "w": "hip",
      "pt": "quadril",
      "o": [
-      "precisar",
+      "enfermeira(o)",
       "quadril",
-      "botão"
+      "de volta"
      ]
     },
     {
@@ -1448,8 +1448,8 @@
      "pt": "ele",
      "o": [
       "him",
-      "get",
-      "nurse"
+      "help",
+      "doctor"
      ]
     },
     {
@@ -1472,8 +1472,8 @@
        "seco"
       ],
       [
-       "button",
-       "botão"
+       "back",
+       "de volta"
       ]
      ]
     },
@@ -1594,9 +1594,9 @@
      "w": "hospital",
      "pt": "hospital",
      "o": [
-      "enfermeira(o)",
+      "médico(a)",
       "hospital",
-      "para cima"
+      "ruim"
      ]
     },
     {
@@ -1609,9 +1609,9 @@
      "w": "keep",
      "pt": "manter",
      "o": [
-      "penicillin",
+      "need",
       "keep",
-      "help"
+      "allergies"
      ]
     },
     {
@@ -1626,16 +1626,16 @@
        "manter"
       ],
       [
-       "hip",
-       "quadril"
+       "press",
+       "prensa"
       ],
       [
-       "up",
-       "para cima"
+       "button",
+       "botão"
       ],
       [
-       "check",
-       "conferir"
+       "nurse",
+       "enfermeira(o)"
       ]
      ]
     },
@@ -1650,8 +1650,8 @@
      "pt": "noite",
      "o": [
       "night",
-      "do",
-      "paracetamol"
+      "dry",
+      "help"
      ]
     },
     {
@@ -1665,8 +1665,8 @@
      "pt": "paracetamol",
      "o": [
       "paracetamol",
-      "alergias",
-      "conferir"
+      "precisar",
+      "enfermeira(o)"
      ]
     },
     {
@@ -1674,8 +1674,8 @@
      "w": "night",
      "pt": "noite",
      "o": [
-      "if",
-      "pressure",
+      "hip",
+      "clean",
       "night"
      ]
     },
@@ -1699,8 +1699,8 @@
        "manter"
       ],
       [
-       "hip",
-       "quadril"
+       "press",
+       "prensa"
       ]
      ]
     },
@@ -1821,7 +1821,7 @@
      "w": "scale",
      "pt": "escala",
      "o": [
-      "ferida",
+      "conseguir",
       "alérgico",
       "escala"
      ]
@@ -1836,8 +1836,8 @@
      "w": "take",
      "pt": "pegar",
      "o": [
-      "paracetamol",
-      "pressure",
+      "do",
+      "any",
       "take"
      ]
     },
@@ -1853,16 +1853,16 @@
        "pegar"
       ],
       [
-       "clean",
-       "limpo"
+       "call",
+       "ligar"
       ],
       [
-       "if",
-       "se"
+       "up",
+       "para cima"
       ],
       [
-       "blood",
-       "sangue"
+       "wound",
+       "ferida"
       ]
      ]
     },
@@ -1876,8 +1876,8 @@
      "w": "thirty",
      "pt": "trinta",
      "o": [
-      "keep",
-      "button",
+      "allergic",
+      "help",
       "thirty"
      ]
     },
@@ -1891,8 +1891,8 @@
      "w": "four",
      "pt": "quatro",
      "o": [
-      "casa",
-      "trinta",
+      "penicilina",
+      "seco",
       "quatro"
      ]
     },
@@ -1901,8 +1901,8 @@
      "w": "thirty",
      "pt": "trinta",
      "o": [
-      "help",
-      "hip",
+      "back",
+      "pain",
       "thirty"
      ]
     },
@@ -1926,8 +1926,8 @@
        "pegar"
       ],
       [
-       "paracetamol",
-       "paracetamol"
+       "help",
+       "ajuda"
       ]
      ]
     },
@@ -2037,45 +2037,45 @@
      "t": "pairs",
      "p": [
       [
-       "hospital",
-       "hospital"
-      ],
-      [
-       "him",
-       "ele"
-      ],
-      [
        "pressure",
        "pressão"
       ],
       [
-       "how",
-       "como"
+       "keep",
+       "manter"
       ],
       [
-       "four",
-       "quatro"
+       "thirty",
+       "trinta"
+      ],
+      [
+       "nurse",
+       "enfermeira(o)"
+      ],
+      [
+       "need",
+       "precisar"
       ]
      ]
     },
     {
      "t": "meaning",
-     "w": "help",
-     "pt": "ajuda",
+     "w": "back",
+     "pt": "de volta",
      "o": [
-      "como",
-      "manter",
-      "ajuda"
+      "enfermeira(o)",
+      "conferir",
+      "de volta"
      ]
     },
     {
      "t": "hear",
-     "w": "if",
-     "pt": "se",
+     "w": "hip",
+     "pt": "quadril",
      "o": [
-      "button",
-      "check",
-      "if"
+      "help",
+      "home",
+      "hip"
      ]
     },
     {
@@ -2141,24 +2141,24 @@
      "t": "pairs",
      "p": [
       [
-       "home",
-       "casa"
+       "penicillin",
+       "penicilina"
       ],
       [
-       "get",
-       "conseguir"
+       "night",
+       "noite"
       ],
       [
-       "take",
-       "pegar"
+       "wound",
+       "ferida"
       ],
       [
-       "any",
-       "algum"
+       "clean",
+       "limpo"
       ],
       [
-       "keep",
-       "manter"
+       "check",
+       "conferir"
       ]
      ]
     },
@@ -2192,12 +2192,12 @@
     },
     {
      "t": "pick",
-     "w": "button",
-     "pt": "botão",
+     "w": "help",
+     "pt": "ajuda",
      "o": [
-      "scale",
-      "button",
-      "get"
+      "allergies",
+      "help",
+      "night"
      ]
     },
     {
@@ -2225,12 +2225,12 @@
     },
     {
      "t": "meaning",
-     "w": "penicillin",
-     "pt": "penicilina",
+     "w": "paracetamol",
+     "pt": "paracetamol",
      "o": [
-      "quadril",
-      "pressão",
-      "penicilina"
+      "seco",
+      "trinta",
+      "paracetamol"
      ]
     },
     {
@@ -2246,12 +2246,12 @@
     },
     {
      "t": "hear",
-     "w": "doctor",
-     "pt": "médico(a)",
+     "w": "up",
+     "pt": "para cima",
      "o": [
-      "how",
-      "scale",
-      "doctor"
+      "nurse",
+      "allergies",
+      "up"
      ]
     },
     {

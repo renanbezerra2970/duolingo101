@@ -55,12 +55,12 @@
        "grande"
       ],
       [
-       "museum",
-       "museu"
-      ],
-      [
        "famous",
        "famoso"
+      ],
+      [
+       "museum",
+       "museu"
       ]
      ]
     },
@@ -89,7 +89,7 @@
      "w": "museum",
      "pt": "museu",
      "o": [
-      "grande",
+      "pequeno",
       "ótimo",
       "museu"
      ]
@@ -240,9 +240,9 @@
      "w": "street",
      "pt": "rua",
      "o": [
-      "mas",
+      "padaria",
       "rua",
-      "famoso"
+      "grande"
      ]
     },
     {
@@ -256,8 +256,8 @@
      "pt": "mas",
      "o": [
       "but",
-      "street",
-      "famous"
+      "bakery",
+      "big"
      ]
     },
     {
@@ -272,16 +272,16 @@
        "mas"
       ],
       [
-       "famous",
-       "famoso"
-      ],
-      [
        "museum",
        "museu"
       ],
       [
        "small",
        "pequeno"
+      ],
+      [
+       "famous",
+       "famoso"
       ]
      ]
     },
@@ -296,8 +296,8 @@
      "pt": "sala",
      "o": [
       "room",
-      "street",
-      "small"
+      "bakery",
+      "street"
      ]
     },
     {
@@ -310,7 +310,7 @@
      "w": "bakery",
      "pt": "padaria",
      "o": [
-      "museu",
+      "mas",
       "padaria",
       "famoso"
      ]
@@ -321,8 +321,8 @@
      "pt": "sala",
      "o": [
       "room",
-      "small",
-      "but"
+      "street",
+      "small"
      ]
     },
     {
@@ -345,8 +345,8 @@
        "mas"
       ],
       [
-       "big",
-       "grande"
+       "small",
+       "pequeno"
       ]
      ]
     },
@@ -404,8 +404,8 @@
      "pt": "rua",
      "o": [
       "street",
-      "big",
-      "bakery"
+      "small",
+      "museum"
      ]
     },
     {
@@ -465,8 +465,8 @@
      "w": "next",
      "pt": "próximo",
      "o": [
-      "pequeno",
-      "certo",
+      "rua",
+      "grande",
       "próximo"
      ]
     },
@@ -480,8 +480,8 @@
      "w": "come",
      "pt": "vir",
      "o": [
-      "room",
-      "right",
+      "but",
+      "famous",
       "come"
      ]
     },
@@ -497,16 +497,16 @@
        "vir"
       ],
       [
+       "small",
+       "pequeno"
+      ],
+      [
        "but",
        "mas"
       ],
       [
-       "museum",
-       "museu"
-      ],
-      [
-       "room",
-       "sala"
+       "street",
+       "rua"
       ]
      ]
     },
@@ -520,8 +520,8 @@
      "w": "old",
      "pt": "velho",
      "o": [
-      "come",
-      "bakery",
+      "room",
+      "next",
       "old"
      ]
     },
@@ -536,8 +536,8 @@
      "pt": "certo",
      "o": [
       "certo",
-      "mas",
-      "padaria"
+      "padaria",
+      "museu"
      ]
     },
     {
@@ -545,8 +545,8 @@
      "w": "old",
      "pt": "velho",
      "o": [
-      "small",
-      "come",
+      "street",
+      "room",
       "old"
      ]
     },
@@ -570,8 +570,8 @@
        "vir"
       ],
       [
-       "street",
-       "rua"
+       "bakery",
+       "padaria"
       ]
      ]
     },
@@ -628,9 +628,9 @@
      "w": "next",
      "pt": "próximo",
      "o": [
-      "museum",
+      "right",
       "next",
-      "street"
+      "old"
      ]
     },
     {
@@ -691,8 +691,8 @@
      "pt": "janela",
      "o": [
       "janela",
-      "padaria",
-      "pequeno"
+      "museu",
+      "rua"
      ]
     },
     {
@@ -706,8 +706,8 @@
      "pt": "lindo",
      "o": [
       "beautiful",
-      "museum",
-      "come"
+      "next",
+      "room"
      ]
     },
     {
@@ -722,16 +722,16 @@
        "lindo"
       ],
       [
-       "old",
-       "velho"
+       "but",
+       "mas"
       ],
       [
-       "museum",
-       "museu"
+       "right",
+       "certo"
       ],
       [
-       "big",
-       "grande"
+       "small",
+       "pequeno"
       ]
      ]
     },
@@ -746,8 +746,8 @@
      "pt": "amor",
      "o": [
       "love",
-      "right",
-      "small"
+      "big",
+      "street"
      ]
     },
     {
@@ -760,9 +760,9 @@
      "w": "park",
      "pt": "parque",
      "o": [
-      "grande",
+      "amor",
       "parque",
-      "mas"
+      "pequeno"
      ]
     },
     {
@@ -770,8 +770,8 @@
      "w": "love",
      "pt": "amor",
      "o": [
-      "big",
-      "come",
+      "window",
+      "room",
       "love"
      ]
     },
@@ -795,8 +795,8 @@
        "lindo"
       ],
       [
-       "museum",
-       "museu"
+       "right",
+       "certo"
       ]
      ]
     },
@@ -853,9 +853,9 @@
      "w": "window",
      "pt": "janela",
      "o": [
-      "room",
+      "but",
       "window",
-      "next"
+      "old"
      ]
     },
     {
@@ -915,8 +915,8 @@
      "w": "lot",
      "pt": "muito",
      "o": [
-      "grande",
       "sala",
+      "famoso",
       "muito"
      ]
     },
@@ -930,9 +930,9 @@
      "w": "book",
      "pt": "livro",
      "o": [
-      "window",
+      "park",
       "book",
-      "room"
+      "famous"
      ]
     },
     {
@@ -947,16 +947,16 @@
        "livro"
       ],
       [
-       "next",
-       "próximo"
+       "old",
+       "velho"
       ],
       [
-       "park",
-       "parque"
+       "right",
+       "certo"
       ],
       [
-       "room",
-       "sala"
+       "famous",
+       "famoso"
       ]
      ]
     },
@@ -970,9 +970,9 @@
      "w": "now",
      "pt": "agora",
      "o": [
-      "small",
+      "but",
       "now",
-      "see"
+      "street"
      ]
     },
     {
@@ -985,8 +985,8 @@
      "w": "see",
      "pt": "ver",
      "o": [
+      "amor",
       "certo",
-      "rua",
       "ver"
      ]
     },
@@ -995,8 +995,8 @@
      "w": "now",
      "pt": "agora",
      "o": [
-      "window",
       "next",
+      "old",
       "now"
      ]
     },
@@ -1020,8 +1020,8 @@
        "livro"
       ],
       [
-       "love",
-       "amor"
+       "room",
+       "sala"
       ]
      ]
     },
@@ -1080,7 +1080,7 @@
      "o": [
       "come",
       "lot",
-      "old"
+      "big"
      ]
     },
     {
@@ -1140,8 +1140,8 @@
      "w": "that",
      "pt": "aquele",
      "o": [
-      "muito",
-      "poder",
+      "parque",
+      "livro",
       "aquele"
      ]
     },
@@ -1156,8 +1156,8 @@
      "pt": "branco",
      "o": [
       "white",
-      "park",
-      "book"
+      "now",
+      "can"
      ]
     },
     {
@@ -1172,16 +1172,16 @@
        "branco"
       ],
       [
-       "famous",
-       "famoso"
-      ],
-      [
-       "street",
-       "rua"
+       "next",
+       "próximo"
       ],
       [
        "right",
        "certo"
+      ],
+      [
+       "love",
+       "amor"
       ]
      ]
     },
@@ -1197,7 +1197,7 @@
      "o": [
       "come",
       "blue",
-      "can"
+      "book"
      ]
     },
     {
@@ -1212,7 +1212,7 @@
      "o": [
       "poder",
       "vir",
-      "famoso"
+      "museu"
      ]
     },
     {
@@ -1220,8 +1220,8 @@
      "w": "blue",
      "pt": "azul",
      "o": [
-      "street",
-      "window",
+      "lot",
+      "park",
       "blue"
      ]
     },
@@ -1245,8 +1245,8 @@
        "branco"
       ],
       [
-       "next",
-       "próximo"
+       "old",
+       "velho"
       ]
      ]
     },
@@ -1368,8 +1368,8 @@
      "pt": "carro",
      "o": [
       "carro",
-      "azul",
-      "agora"
+      "amor",
+      "pequeno"
      ]
     },
     {
@@ -1382,9 +1382,9 @@
      "w": "eye",
      "pt": "olho",
      "o": [
-      "big",
+      "blue",
       "eye",
-      "love"
+      "room"
      ]
     },
     {
@@ -1399,16 +1399,16 @@
        "olho"
       ],
       [
-       "park",
-       "parque"
+       "now",
+       "agora"
       ],
       [
-       "blue",
-       "azul"
+       "love",
+       "amor"
       ],
       [
-       "street",
-       "rua"
+       "right",
+       "certo"
       ]
      ]
     },
@@ -1422,9 +1422,9 @@
      "w": "fifty",
      "pt": "cinquenta",
      "o": [
-      "street",
+      "beautiful",
       "fifty",
-      "lot"
+      "next"
      ]
     },
     {
@@ -1437,9 +1437,9 @@
      "w": "grandma",
      "pt": "vovó",
      "o": [
-      "branco",
+      "lindo",
       "vovó",
-      "azul"
+      "carro"
      ]
     },
     {
@@ -1447,8 +1447,8 @@
      "w": "fifty",
      "pt": "cinquenta",
      "o": [
-      "window",
-      "old",
+      "museum",
+      "park",
       "fifty"
      ]
     },
@@ -1472,8 +1472,8 @@
        "olho"
       ],
       [
-       "now",
-       "agora"
+       "small",
+       "pequeno"
       ]
      ]
     },
@@ -1595,8 +1595,8 @@
      "pt": "ter",
      "o": [
       "ter",
-      "branco",
-      "próximo"
+      "grande",
+      "velho"
      ]
     },
     {
@@ -1609,9 +1609,9 @@
      "w": "kitchen",
      "pt": "cozinha",
      "o": [
-      "park",
+      "lot",
       "kitchen",
-      "love"
+      "room"
      ]
     },
     {
@@ -1626,16 +1626,16 @@
        "cozinha"
       ],
       [
-       "lot",
-       "muito"
+       "next",
+       "próximo"
       ],
       [
-       "car",
-       "carro"
+       "white",
+       "branco"
       ],
       [
-       "eye",
-       "olho"
+       "love",
+       "amor"
       ]
      ]
     },
@@ -1649,9 +1649,9 @@
      "w": "like",
      "pt": "gostar",
      "o": [
-      "car",
+      "kitchen",
       "like",
-      "that"
+      "right"
      ]
     },
     {
@@ -1665,8 +1665,8 @@
      "pt": "perto",
      "o": [
       "perto",
-      "janela",
-      "padaria"
+      "próximo",
+      "ver"
      ]
     },
     {
@@ -1675,8 +1675,8 @@
      "pt": "gostar",
      "o": [
       "like",
-      "car",
-      "famous"
+      "kitchen",
+      "grandma"
      ]
     },
     {
@@ -1699,8 +1699,8 @@
        "cozinha"
       ],
       [
-       "now",
-       "agora"
+       "small",
+       "pequeno"
       ]
      ]
     },
@@ -1821,8 +1821,8 @@
      "w": "walk",
      "pt": "andar",
      "o": [
-      "branco",
-      "ser",
+      "ter",
+      "grande",
       "andar"
      ]
     },
@@ -1837,8 +1837,8 @@
      "pt": "ano",
      "o": [
       "year",
-      "blue",
-      "room"
+      "bigger",
+      "famous"
      ]
     },
     {
@@ -1853,16 +1853,16 @@
        "ano"
       ],
       [
-       "park",
-       "parque"
+       "next",
+       "próximo"
       ],
       [
-       "blue",
-       "azul"
+       "can",
+       "poder"
       ],
       [
-       "kitchen",
-       "cozinha"
+       "near",
+       "perto"
       ]
      ]
     },
@@ -1876,7 +1876,7 @@
      "w": "be",
      "pt": "ser",
      "o": [
-      "museum",
+      "now",
       "be",
       "come"
      ]
@@ -1891,7 +1891,7 @@
      "w": "bigger",
      "pt": "maior",
      "o": [
-      "museu",
+      "ser",
       "maior",
       "vir"
      ]
@@ -1901,7 +1901,7 @@
      "w": "be",
      "pt": "ser",
      "o": [
-      "lot",
+      "next",
       "be",
       "come"
      ]
@@ -1926,8 +1926,8 @@
        "ano"
       ],
       [
-       "car",
-       "carro"
+       "lot",
+       "muito"
       ]
      ]
     },
@@ -2037,24 +2037,24 @@
      "t": "pairs",
      "p": [
       [
-       "right",
-       "certo"
+       "that",
+       "aquele"
       ],
       [
-       "park",
-       "parque"
+       "white",
+       "branco"
       ],
       [
-       "but",
-       "mas"
+       "small",
+       "pequeno"
       ],
       [
-       "beautiful",
-       "lindo"
+       "lot",
+       "muito"
       ],
       [
-       "grandma",
-       "vovó"
+       "walk",
+       "andar"
       ]
      ]
     },
@@ -2063,19 +2063,19 @@
      "w": "eye",
      "pt": "olho",
      "o": [
-      "sala",
+      "famoso",
       "olho",
-      "agora"
+      "ano"
      ]
     },
     {
      "t": "hear",
-     "w": "small",
-     "pt": "pequeno",
+     "w": "like",
+     "pt": "gostar",
      "o": [
-      "right",
-      "small",
-      "kitchen"
+      "that",
+      "like",
+      "room"
      ]
     },
     {
@@ -2141,24 +2141,24 @@
      "t": "pairs",
      "p": [
       [
-       "window",
-       "janela"
+       "museum",
+       "museu"
       ],
       [
-       "can",
-       "poder"
+       "fifty",
+       "cinquenta"
       ],
       [
-       "love",
-       "amor"
+       "blue",
+       "azul"
       ],
       [
-       "bakery",
-       "padaria"
+       "see",
+       "ver"
       ],
       [
-       "near",
-       "perto"
+       "bigger",
+       "maior"
       ]
      ]
     },
@@ -2192,12 +2192,12 @@
     },
     {
      "t": "pick",
-     "w": "be",
-     "pt": "ser",
+     "w": "but",
+     "pt": "mas",
      "o": [
-      "bakery",
-      "be",
-      "window"
+      "see",
+      "but",
+      "museum"
      ]
     },
     {
@@ -2225,12 +2225,12 @@
     },
     {
      "t": "meaning",
-     "w": "like",
-     "pt": "gostar",
+     "w": "book",
+     "pt": "livro",
      "o": [
-      "carro",
-      "muito",
-      "gostar"
+      "cozinha",
+      "próximo",
+      "livro"
      ]
     },
     {
@@ -2246,12 +2246,12 @@
     },
     {
      "t": "hear",
-     "w": "big",
-     "pt": "grande",
+     "w": "window",
+     "pt": "janela",
      "o": [
-      "famous",
-      "white",
-      "big"
+      "near",
+      "big",
+      "window"
      ]
     },
     {
