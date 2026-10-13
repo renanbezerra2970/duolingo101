@@ -23,9 +23,9 @@
      "w": "help",
      "pt": "ajuda",
      "o": [
-      "em",
-      "machucar",
-      "ajuda"
+      "sentir",
+      "ajuda",
+      "cair"
      ]
     },
     {
@@ -38,8 +38,8 @@
      "w": "home",
      "pt": "casa",
      "o": [
-      "people",
-      "arm",
+      "press",
+      "messy",
       "home"
      ]
     },
@@ -75,8 +75,8 @@
      "pt": "mês",
      "o": [
       "month",
-      "also",
-      "normal"
+      "or",
+      "she"
      ]
     },
     {
@@ -89,9 +89,9 @@
      "w": "do",
      "pt": "fazer",
      "o": [
-      "então",
-      "de volta",
-      "fazer"
+      "fazer",
+      "ter",
+      "trinta"
      ]
     },
     {
@@ -99,9 +99,9 @@
      "w": "month",
      "pt": "mês",
      "o": [
-      "tell",
-      "soon",
-      "month"
+      "month",
+      "eight",
+      "about"
      ]
     },
     {
@@ -126,27 +126,40 @@
      ]
     },
     {
+     "t": "phrase",
+     "en": "Bye, Rosa!",
+     "pt": "Tchau, Rosa!",
+     "v": "en-GB-MaisieNeural"
+    },
+    {
      "t": "bank",
      "en": "Bye, Rosa!",
      "pt": "Tchau, Rosa!",
      "v": "en-GB-MaisieNeural",
      "x": [
-      "tell",
-      "that",
-      "bring"
-     ]
+      "hurt",
+      "on",
+      "appetite"
+     ],
+     "wr": "copy"
+    },
+    {
+     "t": "phrase",
+     "en": "Water, please.",
+     "pt": "Água, por favor.",
+     "v": "en-US-AvaNeural"
     },
     {
      "t": "fill",
      "en": "Water, please.",
      "pt": "Água, por favor.",
      "v": "en-US-AvaNeural",
-     "gap": "Water, ___.",
-     "w": "please",
+     "gap": "___, please.",
+     "w": "Water",
      "o": [
-      "much",
-      "food",
-      "please"
+      "here",
+      "beautiful",
+      "Water"
      ]
     },
     {
@@ -155,73 +168,52 @@
      "pt": "Tchau, Rosa!",
      "v": "en-GB-MaisieNeural",
      "o": [
-      "O que te traz aqui hoje?",
-      "Que maravilha! Parabéns!",
-      "Tchau, Rosa!"
+      "Tchau, Rosa!",
+      "Obrigada, Rosa! Muito obrigada!",
+      "Começo na segunda."
      ]
     },
     {
-     "t": "pick",
-     "w": "do",
-     "pt": "fazer",
+     "t": "spell",
+     "w": "help",
+     "pt": "ajuda",
      "o": [
-      "do",
-      "eighty",
-      "them"
-     ]
-    },
-    {
-     "t": "type",
-     "en": "Water, please.",
-     "pt": "Água, por favor.",
-     "v": "en-US-AvaNeural",
-     "x": [
-      "landlord",
-      "visit",
-      "open"
+      "afternoon",
+      "help",
+      "proud"
      ]
     },
     {
      "t": "listen",
-     "en": "Every day?",
-     "pt": "Todo dia?",
-     "v": "en-KE-ChilembaNeural",
+     "en": "Bye, Rosa!",
+     "pt": "Tchau, Rosa!",
+     "v": "en-GB-MaisieNeural",
      "o": [
-      "He can go home on Friday.",
-      "So, what brings you here today?",
-      "Every day?"
-     ]
-    },
-    {
-     "t": "meaning",
-     "w": "month",
-     "pt": "mês",
-     "o": [
-      "contar",
-      "para cima",
-      "mês"
+      "Tell me!",
+      "Please don't. Asking for help is brave.",
+      "Bye, Rosa!"
      ]
     },
     {
      "t": "speak",
-     "en": "Every day?",
-     "pt": "Todo dia?",
-     "v": "en-KE-ChilembaNeural",
+     "en": "Water, please.",
+     "pt": "Água, por favor.",
+     "v": "en-US-AvaNeural",
      "o": [
-      "Traga seu apetite! Vou fazer chá.",
-      "Todo dia?",
-      "Estou preocupada. Ele mora sozinho."
+      "Tá. Até o mês que vem!",
+      "Boa tarde. Eu sou a Sharon, a enfermeira-chefe.",
+      "Água, por favor."
      ]
     },
     {
-     "t": "bank",
-     "en": "Tell me!",
-     "pt": "Me conta!",
-     "v": "en-PH-RosaNeural",
+     "t": "copy",
+     "en": "Water, please.",
+     "pt": "Água, por favor.",
+     "v": "en-US-AvaNeural",
      "x": [
-      "kitchen",
-      "hard",
-      "someone"
+      "do",
+      "soon",
+      "make"
      ]
     }
    ]
@@ -248,9 +240,9 @@
      "w": "week",
      "pt": "semana",
      "o": [
+      "trazer",
       "semana",
-      "mês",
-      "trazer"
+      "como"
      ]
     },
     {
@@ -263,9 +255,9 @@
      "w": "bring",
      "pt": "trazer",
      "o": [
-      "month",
-      "bring",
-      "how"
+      "help",
+      "do",
+      "bring"
      ]
     },
     {
@@ -280,16 +272,16 @@
        "trazer"
       ],
       [
+       "home",
+       "casa"
+      ],
+      [
        "do",
        "fazer"
       ],
       [
-       "month",
-       "mês"
-      ],
-      [
-       "home",
-       "casa"
+       "help",
+       "ajuda"
       ]
      ]
     },
@@ -303,9 +295,9 @@
      "w": "call",
      "pt": "ligar",
      "o": [
-      "home",
       "call",
-      "do"
+      "do",
+      "home"
      ]
     },
     {
@@ -318,8 +310,8 @@
      "w": "how",
      "pt": "como",
      "o": [
-      "ajuda",
-      "mês",
+      "trazer",
+      "casa",
       "como"
      ]
     },
@@ -328,9 +320,9 @@
      "w": "call",
      "pt": "ligar",
      "o": [
-      "month",
+      "call",
       "week",
-      "call"
+      "do"
      ]
     },
     {
@@ -353,10 +345,16 @@
        "trazer"
       ],
       [
-       "home",
-       "casa"
+       "do",
+       "fazer"
       ]
      ]
+    },
+    {
+     "t": "phrase",
+     "en": "Rosa calls Mr. Grant, the landlord.",
+     "pt": "A Rosa liga para o Sr. Grant, o proprietário.",
+     "v": "en-US-AndrewNeural"
     },
     {
      "t": "bank",
@@ -364,22 +362,29 @@
      "pt": "A Rosa liga para o Sr. Grant, o proprietário.",
      "v": "en-US-AndrewNeural",
      "x": [
-      "often",
-      "rent",
-      "embarrassed"
-     ]
+      "us",
+      "not",
+      "every"
+     ],
+     "wr": "copy"
+    },
+    {
+     "t": "phrase",
+     "en": "Bye, Rosa!",
+     "pt": "Tchau, Rosa!",
+     "v": "en-GB-MaisieNeural"
     },
     {
      "t": "fill",
      "en": "Bye, Rosa!",
      "pt": "Tchau, Rosa!",
      "v": "en-GB-MaisieNeural",
-     "gap": "___, Rosa!",
-     "w": "Bye",
+     "gap": "Bye, ___!",
+     "w": "Rosa",
      "o": [
-      "kitchen",
-      "Bye",
-      "email"
+      "Rosa",
+      "right",
+      "too"
      ]
     },
     {
@@ -388,73 +393,52 @@
      "pt": "A Rosa liga para o Sr. Grant, o proprietário.",
      "v": "en-US-AndrewNeural",
      "o": [
+      "Sim. Estou muito preocupada.",
       "A Rosa liga para o Sr. Grant, o proprietário.",
-      "E eu posso ficar na minha casa?",
-      "Como posso te apoiar?"
+      "O que te traz aqui hoje?"
      ]
     },
     {
-     "t": "pick",
-     "w": "how",
-     "pt": "como",
+     "t": "spell",
+     "w": "week",
+     "pt": "semana",
      "o": [
-      "help",
-      "how",
+      "call",
+      "week",
       "month"
      ]
     },
     {
-     "t": "type",
-     "en": "Bye, Rosa!",
-     "pt": "Tchau, Rosa!",
-     "v": "en-GB-MaisieNeural",
-     "x": [
-      "did",
-      "day",
-      "messy"
-     ]
-    },
-    {
      "t": "listen",
-     "en": "Yes, of course.",
-     "pt": "Sim, claro.",
-     "v": "en-KE-ChilembaNeural",
+     "en": "Rosa calls Mr. Grant, the landlord.",
+     "pt": "A Rosa liga para o Sr. Grant, o proprietário.",
+     "v": "en-US-AndrewNeural",
      "o": [
       "Can I read it?",
-      "Yes, of course.",
-      "He can go home on Friday."
-     ]
-    },
-    {
-     "t": "meaning",
-     "w": "month",
-     "pt": "mês",
-     "o": [
-      "ajuda",
-      "fazer",
-      "mês"
+      "Let's make a plan together.",
+      "Rosa calls Mr. Grant, the landlord."
      ]
     },
     {
      "t": "speak",
-     "en": "Yes, of course.",
-     "pt": "Sim, claro.",
-     "v": "en-KE-ChilembaNeural",
+     "en": "Bye, Rosa!",
+     "pt": "Tchau, Rosa!",
+     "v": "en-GB-MaisieNeural",
      "o": [
-      "Sim, claro.",
-      "Obrigada. Me sinto envergonhada.",
-      "Você gostaria de água ou chá?"
+      "Você gostaria de água ou chá?",
+      "Tchau, Rosa!",
+      "Vou dar retorno no mês que vem, tá?"
      ]
     },
     {
-     "t": "bank",
-     "en": "Yes. I agree.",
-     "pt": "Sim. Eu concordo.",
-     "v": "en-KE-ChilembaNeural",
+     "t": "copy",
+     "en": "Bye, Rosa!",
+     "pt": "Tchau, Rosa!",
+     "v": "en-GB-MaisieNeural",
      "x": [
-      "email",
-      "new",
-      "meet"
+      "meet",
+      "old",
+      "messy"
      ]
     }
    ]
@@ -481,9 +465,9 @@
      "w": "let",
      "pt": "deixar",
      "o": [
-      "fazer",
-      "mês",
-      "deixar"
+      "ajuda",
+      "deixar",
+      "fazer"
      ]
     },
     {
@@ -496,9 +480,9 @@
      "w": "make",
      "pt": "fazer",
      "o": [
-      "stay",
-      "make",
-      "home"
+      "help",
+      "how",
+      "make"
      ]
     },
     {
@@ -517,8 +501,8 @@
        "ligar"
       ],
       [
-       "help",
-       "ajuda"
+       "month",
+       "mês"
       ],
       [
        "home",
@@ -536,9 +520,9 @@
      "w": "plan",
      "pt": "plano",
      "o": [
+      "do",
       "plan",
-      "bring",
-      "stay"
+      "make"
      ]
     },
     {
@@ -551,9 +535,9 @@
      "w": "stay",
      "pt": "ficar",
      "o": [
-      "casa",
-      "semana",
-      "ficar"
+      "ficar",
+      "plano",
+      "ajuda"
      ]
     },
     {
@@ -561,9 +545,9 @@
      "w": "plan",
      "pt": "plano",
      "o": [
-      "do",
-      "plan",
-      "week"
+      "make",
+      "week",
+      "plan"
      ]
     },
     {
@@ -584,8 +568,18 @@
       [
        "make",
        "fazer"
+      ],
+      [
+       "how",
+       "como"
       ]
      ]
+    },
+    {
+     "t": "phrase",
+     "en": "Let's make a plan together.",
+     "pt": "Vamos fazer um plano juntos.",
+     "v": "en-US-JennyNeural"
     },
     {
      "t": "bank",
@@ -593,10 +587,17 @@
      "pt": "Vamos fazer um plano juntos.",
      "v": "en-US-JennyNeural",
      "x": [
-      "eight",
-      "often",
-      "that"
-     ]
+      "better",
+      "very",
+      "meet"
+     ],
+     "wr": "copy"
+    },
+    {
+     "t": "phrase",
+     "en": "Rosa calls Mr. Grant, the landlord.",
+     "pt": "A Rosa liga para o Sr. Grant, o proprietário.",
+     "v": "en-US-AndrewNeural"
     },
     {
      "t": "fill",
@@ -606,8 +607,8 @@
      "gap": "Rosa calls Mr. Grant, the ___.",
      "w": "landlord",
      "o": [
-      "are",
-      "also",
+      "right",
+      "say",
       "landlord"
      ]
     },
@@ -617,73 +618,52 @@
      "pt": "Vamos fazer um plano juntos.",
      "v": "en-US-JennyNeural",
      "o": [
-      "A geladeira está quase vazia.",
-      "Vamos fazer um plano juntos.",
-      "Só o braço. Um pouco."
+      "Vou dar retorno na semana que vem.",
+      "Água, por favor.",
+      "Vamos fazer um plano juntos."
      ]
     },
     {
-     "t": "pick",
-     "w": "stay",
-     "pt": "ficar",
+     "t": "spell",
+     "w": "let",
+     "pt": "deixar",
      "o": [
       "stay",
-      "week",
-      "how"
-     ]
-    },
-    {
-     "t": "type",
-     "en": "Rosa calls Mr. Grant, the landlord.",
-     "pt": "A Rosa liga para o Sr. Grant, o proprietário.",
-     "v": "en-US-AndrewNeural",
-     "x": [
-      "in",
-      "fell",
-      "take"
+      "let",
+      "do"
      ]
     },
     {
      "t": "listen",
-     "en": "Bye, Rosa!",
-     "pt": "Tchau, Rosa!",
-     "v": "en-GB-MaisieNeural",
+     "en": "Let's make a plan together.",
+     "pt": "Vamos fazer um plano juntos.",
+     "v": "en-US-JennyNeural",
      "o": [
-      "Can you come back on Thursday?",
-      "There is a meeting about his discharge.",
-      "Bye, Rosa!"
-     ]
-    },
-    {
-     "t": "meaning",
-     "w": "home",
-     "pt": "casa",
-     "o": [
-      "casa",
-      "ficar",
-      "deixar"
+      "No problem. How are you today?",
+      "Jasmine! Hello! You look happy!",
+      "Let's make a plan together."
      ]
     },
     {
      "t": "speak",
-     "en": "Bye, Rosa!",
-     "pt": "Tchau, Rosa!",
-     "v": "en-GB-MaisieNeural",
+     "en": "Rosa calls Mr. Grant, the landlord.",
+     "pt": "A Rosa liga para o Sr. Grant, o proprietário.",
+     "v": "en-US-AndrewNeural",
      "o": [
-      "Tchau, Rosa!",
-      "Me conta!",
-      "Que maravilha! Parabéns!"
+      "Eu adoraria um chá. Obrigada.",
+      "A Rosa liga para o Sr. Grant, o proprietário.",
+      "Ele pode ir para casa na sexta."
      ]
     },
     {
-     "t": "bank",
-     "en": "And the rent?",
-     "pt": "E o aluguel?",
-     "v": "en-PH-RosaNeural",
+     "t": "copy",
+     "en": "Rosa calls Mr. Grant, the landlord.",
+     "pt": "A Rosa liga para o Sr. Grant, o proprietário.",
+     "v": "en-US-AndrewNeural",
      "x": [
-      "neck",
-      "so",
-      "he"
+      "meal",
+      "pay",
+      "good"
      ]
     }
    ]
@@ -710,9 +690,9 @@
      "w": "tell",
      "pt": "contar",
      "o": [
-      "cada",
-      "contar",
-      "fazer"
+      "casa",
+      "semana",
+      "contar"
      ]
     },
     {
@@ -725,9 +705,9 @@
      "w": "work",
      "pt": "trabalho",
      "o": [
-      "work",
-      "plan",
-      "week"
+      "do",
+      "let",
+      "work"
      ]
     },
     {
@@ -746,11 +726,11 @@
        "plano"
       ],
       [
-       "how",
-       "como"
+       "week",
+       "semana"
       ],
       [
-       "make",
+       "do",
        "fazer"
       ]
      ]
@@ -765,8 +745,8 @@
      "w": "confidential",
      "pt": "confidencial",
      "o": [
+      "bring",
       "confidential",
-      "do",
       "help"
      ]
     },
@@ -780,9 +760,9 @@
      "w": "every",
      "pt": "cada",
      "o": [
+      "cada",
       "fazer",
-      "mês",
-      "cada"
+      "como"
      ]
     },
     {
@@ -791,8 +771,8 @@
      "pt": "confidencial",
      "o": [
       "week",
-      "confidential",
-      "bring"
+      "month",
+      "confidential"
      ]
     },
     {
@@ -815,10 +795,16 @@
        "trabalho"
       ],
       [
-       "week",
-       "semana"
+       "stay",
+       "ficar"
       ]
      ]
+    },
+    {
+     "t": "phrase",
+     "en": "Every day?",
+     "pt": "Todo dia?",
+     "v": "en-KE-ChilembaNeural"
     },
     {
      "t": "bank",
@@ -826,10 +812,17 @@
      "pt": "Todo dia?",
      "v": "en-KE-ChilembaNeural",
      "x": [
-      "month",
-      "hundred",
-      "week"
-     ]
+      "her",
+      "safe",
+      "embarrassed"
+     ],
+     "wr": "copy"
+    },
+    {
+     "t": "phrase",
+     "en": "Tell me!",
+     "pt": "Me conta!",
+     "v": "en-PH-RosaNeural"
     },
     {
      "t": "fill",
@@ -839,9 +832,9 @@
      "gap": "___ me!",
      "w": "Tell",
      "o": [
-      "live",
       "Tell",
-      "work"
+      "just",
+      "sit"
      ]
     },
     {
@@ -850,73 +843,52 @@
      "pt": "Todo dia?",
      "v": "en-KE-ChilembaNeural",
      "o": [
+      "Traga seu apetite! Vou fazer chá.",
       "Todo dia?",
-      "Você tem o direito de decidir.",
-      "Sim, claro."
+      "Tá. Até o mês que vem!"
      ]
     },
     {
-     "t": "pick",
-     "w": "every",
-     "pt": "cada",
+     "t": "spell",
+     "w": "tell",
+     "pt": "contar",
      "o": [
-      "bring",
-      "confidential",
-      "every"
-     ]
-    },
-    {
-     "t": "type",
-     "en": "Tell me!",
-     "pt": "Me conta!",
-     "v": "en-PH-RosaNeural",
-     "x": [
-      "just",
-      "safe",
-      "course"
+      "make",
+      "tell",
+      "work"
      ]
     },
     {
      "t": "listen",
-     "en": "Let's make a plan together.",
-     "pt": "Vamos fazer um plano juntos.",
-     "v": "en-US-JennyNeural",
+     "en": "Every day?",
+     "pt": "Todo dia?",
+     "v": "en-KE-ChilembaNeural",
      "o": [
-      "Hello. Is this about Jasmine's rent?",
-      "I'll follow up next week.",
-      "Let's make a plan together."
-     ]
-    },
-    {
-     "t": "meaning",
-     "w": "call",
-     "pt": "ligar",
-     "o": [
-      "ligar",
-      "contar",
-      "casa"
+      "Thank you, Rosa! Thank you so much!",
+      "Every day?",
+      "Hello. Is this about Jasmine's rent?"
      ]
     },
     {
      "t": "speak",
-     "en": "Let's make a plan together.",
-     "pt": "Vamos fazer um plano juntos.",
-     "v": "en-US-JennyNeural",
+     "en": "Tell me!",
+     "pt": "Me conta!",
+     "v": "en-PH-RosaNeural",
      "o": [
-      "Claro. Minha porta está sempre aberta.",
-      "Você gostaria de água ou chá?",
-      "Vamos fazer um plano juntos."
+      "Olá. É sobre o aluguel da Jasmine?",
+      "Me conta!",
+      "Tá. Até o mês que vem!"
      ]
     },
     {
-     "t": "bank",
-     "en": "Rosa calls Mr. Grant, the landlord.",
-     "pt": "A Rosa liga para o Sr. Grant, o proprietário.",
-     "v": "en-US-AndrewNeural",
+     "t": "copy",
+     "en": "Tell me!",
+     "pt": "Me conta!",
+     "v": "en-PH-RosaNeural",
      "x": [
-      "read",
-      "start",
-      "bank"
+      "where",
+      "alone",
+      "far"
      ]
     }
    ]
@@ -943,9 +915,9 @@
      "w": "feel",
      "pt": "sentir",
      "o": [
-      "juntos",
-      "deixar",
-      "sentir"
+      "sentir",
+      "ajuda",
+      "como"
      ]
     },
     {
@@ -958,9 +930,9 @@
      "w": "together",
      "pt": "juntos",
      "o": [
-      "call",
+      "decide",
       "together",
-      "plan"
+      "help"
      ]
     },
     {
@@ -975,16 +947,16 @@
        "juntos"
       ],
       [
+       "how",
+       "como"
+      ],
+      [
+       "every",
+       "cada"
+      ],
+      [
        "plan",
        "plano"
-      ],
-      [
-       "make",
-       "fazer"
-      ],
-      [
-       "month",
-       "mês"
       ]
      ]
     },
@@ -998,9 +970,9 @@
      "w": "want",
      "pt": "querer",
      "o": [
+      "bring",
       "want",
-      "how",
-      "help"
+      "stay"
      ]
     },
     {
@@ -1013,9 +985,9 @@
      "w": "decide",
      "pt": "decidir",
      "o": [
-      "ajuda",
+      "semana",
       "decidir",
-      "trazer"
+      "deixar"
      ]
     },
     {
@@ -1024,8 +996,8 @@
      "pt": "querer",
      "o": [
       "want",
-      "call",
-      "home"
+      "every",
+      "plan"
      ]
     },
     {
@@ -1048,10 +1020,16 @@
        "juntos"
       ],
       [
-       "stay",
-       "ficar"
+       "help",
+       "ajuda"
       ]
      ]
+    },
+    {
+     "t": "phrase",
+     "en": "Let's make a plan together.",
+     "pt": "Vamos fazer um plano juntos.",
+     "v": "en-US-JennyNeural"
     },
     {
      "t": "bank",
@@ -1059,10 +1037,17 @@
      "pt": "Vamos fazer um plano juntos.",
      "v": "en-US-JennyNeural",
      "x": [
-      "again",
-      "follow",
-      "look"
-     ]
+      "lost",
+      "mom",
+      "four"
+     ],
+     "wr": "copy"
+    },
+    {
+     "t": "phrase",
+     "en": "Every day?",
+     "pt": "Todo dia?",
+     "v": "en-KE-ChilembaNeural"
     },
     {
      "t": "fill",
@@ -1072,9 +1057,9 @@
      "gap": "___ day?",
      "w": "Every",
      "o": [
-      "Every",
-      "alone",
-      "children"
+      "support",
+      "morning",
+      "Every"
      ]
     },
     {
@@ -1083,73 +1068,52 @@
      "pt": "Vamos fazer um plano juntos.",
      "v": "en-US-JennyNeural",
      "o": [
-      "Começo na segunda.",
-      "Vamos fazer um plano juntos.",
-      "A Lily tem oito, e o Marcus tem quatro."
+      "Jasmine! Olá! Você parece feliz!",
+      "Sinto muito. Isso é muito difícil.",
+      "Vamos fazer um plano juntos."
      ]
     },
     {
-     "t": "pick",
-     "w": "decide",
-     "pt": "decidir",
+     "t": "spell",
+     "w": "feel",
+     "pt": "sentir",
      "o": [
-      "decide",
+      "feel",
       "home",
-      "make"
-     ]
-    },
-    {
-     "t": "type",
-     "en": "Every day?",
-     "pt": "Todo dia?",
-     "v": "en-KE-ChilembaNeural",
-     "x": [
-      "for",
-      "work",
-      "where"
+      "confidential"
      ]
     },
     {
      "t": "listen",
-     "en": "Tell me!",
-     "pt": "Me conta!",
-     "v": "en-PH-RosaNeural",
+     "en": "Let's make a plan together.",
+     "pt": "Vamos fazer um plano juntos.",
+     "v": "en-US-JennyNeural",
      "o": [
-      "Tell me!",
-      "There is a meeting about his discharge.",
-      "I lost my job last month."
-     ]
-    },
-    {
-     "t": "meaning",
-     "w": "let",
-     "pt": "deixar",
-     "o": [
-      "trazer",
-      "deixar",
-      "sentir"
+      "Let's make a plan together.",
+      "Do you feel safe at home?",
+      "I'm worried. He lives alone."
      ]
     },
     {
      "t": "speak",
-     "en": "Tell me!",
-     "pt": "Me conta!",
-     "v": "en-PH-RosaNeural",
+     "en": "Every day?",
+     "pt": "Todo dia?",
+     "v": "en-KE-ChilembaNeural",
      "o": [
-      "Quantos anos têm seus filhos?",
-      "Me conta!",
-      "Cem dólares a mais por mês."
+      "Todo dia?",
+      "E o aluguel?",
+      "Vamos fazer um plano juntos."
      ]
     },
     {
-     "t": "bank",
-     "en": "Bye, Rosa!",
-     "pt": "Tchau, Rosa!",
-     "v": "en-GB-MaisieNeural",
+     "t": "copy",
+     "en": "Every day?",
+     "pt": "Todo dia?",
+     "v": "en-KE-ChilembaNeural",
      "x": [
-      "just",
-      "thank",
-      "school"
+      "shopping",
+      "what",
+      "afternoon"
      ]
     }
    ]
@@ -1176,9 +1140,9 @@
      "w": "everything",
      "pt": "tudo",
      "o": [
-      "tudo",
-      "fazer",
-      "querer"
+      "ficar",
+      "contar",
+      "tudo"
      ]
     },
     {
@@ -1191,9 +1155,9 @@
      "w": "follow",
      "pt": "seguir",
      "o": [
-      "feel",
       "follow",
-      "make"
+      "let",
+      "rent"
      ]
     },
     {
@@ -1208,16 +1172,16 @@
        "seguir"
       ],
       [
-       "call",
-       "ligar"
+       "week",
+       "semana"
       ],
       [
-       "do",
+       "together",
+       "juntos"
+      ],
+      [
+       "make",
        "fazer"
-      ],
-      [
-       "confidential",
-       "confidencial"
       ]
      ]
     },
@@ -1231,9 +1195,9 @@
      "w": "pay",
      "pt": "pagar",
      "o": [
+      "together",
       "pay",
-      "confidential",
-      "together"
+      "follow"
      ]
     },
     {
@@ -1246,9 +1210,9 @@
      "w": "rent",
      "pt": "aluguel",
      "o": [
-      "deixar",
+      "fazer",
       "aluguel",
-      "seguir"
+      "ligar"
      ]
     },
     {
@@ -1256,9 +1220,9 @@
      "w": "pay",
      "pt": "pagar",
      "o": [
+      "confidential",
       "pay",
-      "decide",
-      "do"
+      "month"
      ]
     },
     {
@@ -1287,15 +1251,28 @@
      ]
     },
     {
+     "t": "phrase",
+     "en": "Let's make a plan together.",
+     "pt": "Vamos fazer um plano juntos.",
+     "v": "en-US-JennyNeural"
+    },
+    {
      "t": "bank",
      "en": "Let's make a plan together.",
      "pt": "Vamos fazer um plano juntos.",
      "v": "en-US-JennyNeural",
      "x": [
-      "very",
-      "like",
-      "old"
-     ]
+      "family",
+      "and",
+      "hospital"
+     ],
+     "wr": "translate"
+    },
+    {
+     "t": "phrase",
+     "en": "And the rent?",
+     "pt": "E o aluguel?",
+     "v": "en-PH-RosaNeural"
     },
     {
      "t": "fill",
@@ -1305,9 +1282,9 @@
      "gap": "And the ___?",
      "w": "rent",
      "o": [
-      "button",
+      "bring",
       "rent",
-      "back"
+      "they"
      ]
     },
     {
@@ -1316,19 +1293,9 @@
      "pt": "Vamos fazer um plano juntos.",
      "v": "en-US-JennyNeural",
      "o": [
-      "Há uma reunião sobre a alta dele.",
-      "Claro. Minha porta está sempre aberta.",
+      "Jasmine! Olá! Você parece feliz!",
+      "Perdi meu emprego no mês passado.",
       "Vamos fazer um plano juntos."
-     ]
-    },
-    {
-     "t": "pick",
-     "w": "rent",
-     "pt": "aluguel",
-     "o": [
-      "do",
-      "work",
-      "rent"
      ]
     },
     {
@@ -1337,53 +1304,44 @@
      "pt": "E o aluguel?",
      "v": "en-PH-RosaNeural",
      "x": [
-      "tea",
-      "problem",
-      "for"
+      "extra",
+      "come",
+      "send"
      ]
     },
     {
      "t": "listen",
-     "en": "Every day?",
-     "pt": "Todo dia?",
-     "v": "en-KE-ChilembaNeural",
+     "en": "Let's make a plan together.",
+     "pt": "Vamos fazer um plano juntos.",
+     "v": "en-US-JennyNeural",
      "o": [
+      "Were you hurt?",
       "We can stay? Really?",
-      "How old are your children?",
-      "Every day?"
-     ]
-    },
-    {
-     "t": "meaning",
-     "w": "every",
-     "pt": "cada",
-     "o": [
-      "cada",
-      "sentir",
-      "aluguel"
+      "Let's make a plan together."
      ]
     },
     {
      "t": "speak",
-     "en": "Every day?",
-     "pt": "Todo dia?",
-     "v": "en-KE-ChilembaNeural",
+     "en": "And the rent?",
+     "pt": "E o aluguel?",
+     "v": "en-PH-RosaNeural",
      "o": [
-      "Um botão? O que é isso?",
-      "Todo dia?",
-      "Então, o que te traz aqui hoje?"
+      "E eu sou a Ngozi, a filha dele.",
+      "Vou dar retorno no mês que vem, tá?",
+      "E o aluguel?"
      ]
     },
     {
      "t": "bank",
-     "en": "Tell me!",
-     "pt": "Me conta!",
+     "en": "And the rent?",
+     "pt": "E o aluguel?",
      "v": "en-PH-RosaNeural",
      "x": [
-      "sorry",
-      "eight",
-      "some"
-     ]
+      "home",
+      "fun",
+      "extra"
+     ],
+     "wr": "translate"
     }
    ]
   },
@@ -1409,9 +1367,9 @@
      "w": "safe",
      "pt": "seguro",
      "o": [
-      "seguro",
-      "deixar",
-      "cada"
+      "ajuda",
+      "querer",
+      "seguro"
      ]
     },
     {
@@ -1424,9 +1382,9 @@
      "w": "up",
      "pt": "para cima",
      "o": [
-      "decide",
-      "up",
-      "about"
+      "tell",
+      "week",
+      "up"
      ]
     },
     {
@@ -1441,16 +1399,16 @@
        "para cima"
       ],
       [
-       "week",
-       "semana"
+       "confidential",
+       "confidencial"
       ],
       [
-       "help",
-       "ajuda"
+       "stay",
+       "ficar"
       ],
       [
-       "want",
-       "querer"
+       "follow",
+       "seguir"
       ]
      ]
     },
@@ -1464,9 +1422,9 @@
      "w": "about",
      "pt": "sobre",
      "o": [
-      "together",
+      "pay",
       "about",
-      "home"
+      "alone"
      ]
     },
     {
@@ -1479,8 +1437,8 @@
      "w": "alone",
      "pt": "sozinho",
      "o": [
-      "tudo",
-      "sobre",
+      "sentir",
+      "fazer",
       "sozinho"
      ]
     },
@@ -1489,9 +1447,9 @@
      "w": "about",
      "pt": "sobre",
      "o": [
+      "tell",
       "about",
-      "help",
-      "bring"
+      "call"
      ]
     },
     {
@@ -1514,10 +1472,16 @@
        "para cima"
       ],
       [
-       "week",
-       "semana"
+       "make",
+       "fazer"
       ]
      ]
+    },
+    {
+     "t": "phrase",
+     "en": "Let's make a plan together.",
+     "pt": "Vamos fazer um plano juntos.",
+     "v": "en-US-JennyNeural"
     },
     {
      "t": "bank",
@@ -1525,22 +1489,29 @@
      "pt": "Vamos fazer um plano juntos.",
      "v": "en-US-JennyNeural",
      "x": [
-      "proud",
-      "smile",
-      "were"
-     ]
+      "look",
+      "often",
+      "next"
+     ],
+     "wr": "translate"
+    },
+    {
+     "t": "phrase",
+     "en": "I'll follow up next week.",
+     "pt": "Vou dar retorno na semana que vem.",
+     "v": "en-US-JennyNeural"
     },
     {
      "t": "fill",
      "en": "I'll follow up next week.",
      "pt": "Vou dar retorno na semana que vem.",
      "v": "en-US-JennyNeural",
-     "gap": "I'll follow up next ___.",
-     "w": "week",
+     "gap": "I'll follow ___ next week.",
+     "w": "up",
      "o": [
-      "tire",
-      "war",
-      "week"
+      "everyone",
+      "up",
+      "lot"
      ]
     },
     {
@@ -1549,19 +1520,9 @@
      "pt": "Vamos fazer um plano juntos.",
      "v": "en-US-JennyNeural",
      "o": [
-      "E eu sou a Ngozi, a filha dele.",
-      "Vamos fazer um plano juntos.",
-      "Você pode voltar na quinta?"
-     ]
-    },
-    {
-     "t": "pick",
-     "w": "alone",
-     "pt": "sozinho",
-     "o": [
-      "alone",
-      "pay",
-      "month"
+      "Jasmine! Olá! Você parece feliz!",
+      "Tudo o que você me contar é confidencial.",
+      "Vamos fazer um plano juntos."
      ]
     },
     {
@@ -1570,53 +1531,44 @@
      "pt": "Vou dar retorno na semana que vem.",
      "v": "en-US-JennyNeural",
      "x": [
-      "even",
-      "hundred",
-      "car"
+      "if",
+      "lost",
+      "four"
      ]
     },
     {
      "t": "listen",
-     "en": "I'll follow up next month, OK?",
-     "pt": "Vou dar retorno no mês que vem, tá?",
-     "v": "en-PH-RosaNeural",
+     "en": "Let's make a plan together.",
+     "pt": "Vamos fazer um plano juntos.",
+     "v": "en-US-JennyNeural",
      "o": [
-      "Of course. My door is always open.",
-      "I'll follow up next month, OK?",
-      "No problem. How are you today?"
-     ]
-    },
-    {
-     "t": "meaning",
-     "w": "week",
-     "pt": "semana",
-     "o": [
-      "cada",
-      "sentir",
-      "semana"
+      "I start on Monday.",
+      "Rosa calls Mr. Grant, the landlord.",
+      "Let's make a plan together."
      ]
     },
     {
      "t": "speak",
-     "en": "I'll follow up next month, OK?",
-     "pt": "Vou dar retorno no mês que vem, tá?",
-     "v": "en-PH-RosaNeural",
+     "en": "I'll follow up next week.",
+     "pt": "Vou dar retorno na semana que vem.",
+     "v": "en-US-JennyNeural",
      "o": [
-      "Vou dar retorno no mês que vem, tá?",
-      "Tá. Isso é justo. Ela pode ficar.",
-      "Boa tarde. Eu sou a Sharon, a enfermeira-chefe."
+      "Obrigada. Me sinto envergonhada.",
+      "Vou dar retorno na semana que vem.",
+      "Só o braço. Um pouco."
      ]
     },
     {
      "t": "bank",
-     "en": "And the rent?",
-     "pt": "E o aluguel?",
-     "v": "en-PH-RosaNeural",
+     "en": "I'll follow up next week.",
+     "pt": "Vou dar retorno na semana que vem.",
+     "v": "en-US-JennyNeural",
      "x": [
-      "together",
-      "water",
-      "arm"
-     ]
+      "love",
+      "at",
+      "little"
+     ],
+     "wr": "translate"
     }
    ]
   },
@@ -1642,9 +1594,9 @@
      "w": "button",
      "pt": "botão",
      "o": [
-      "deixar",
-      "ajuda",
-      "botão"
+      "botão",
+      "fazer",
+      "trazer"
      ]
     },
     {
@@ -1657,9 +1609,9 @@
      "w": "job",
      "pt": "trabalho",
      "o": [
-      "job",
-      "home",
-      "confidential"
+      "month",
+      "safe",
+      "job"
      ]
     },
     {
@@ -1674,16 +1626,16 @@
        "trabalho"
       ],
       [
-       "confidential",
-       "confidencial"
+       "decide",
+       "decidir"
       ],
       [
-       "together",
-       "juntos"
+       "every",
+       "cada"
       ],
       [
-       "stay",
-       "ficar"
+       "tell",
+       "contar"
       ]
      ]
     },
@@ -1697,9 +1649,9 @@
      "w": "landlord",
      "pt": "proprietário",
      "o": [
+      "little",
       "landlord",
-      "week",
-      "pay"
+      "make"
      ]
     },
     {
@@ -1712,9 +1664,9 @@
      "w": "little",
      "pt": "pequeno",
      "o": [
-      "casa",
-      "tudo",
-      "pequeno"
+      "confidencial",
+      "pequeno",
+      "fazer"
      ]
     },
     {
@@ -1722,9 +1674,9 @@
      "w": "landlord",
      "pt": "proprietário",
      "o": [
-      "stay",
-      "landlord",
-      "home"
+      "make",
+      "month",
+      "landlord"
      ]
     },
     {
@@ -1747,10 +1699,16 @@
        "trabalho"
       ],
       [
-       "up",
-       "para cima"
+       "tell",
+       "contar"
       ]
      ]
+    },
+    {
+     "t": "phrase",
+     "en": "Rosa calls Mr. Grant, the landlord.",
+     "pt": "A Rosa liga para o Sr. Grant, o proprietário.",
+     "v": "en-US-AndrewNeural"
     },
     {
      "t": "bank",
@@ -1758,22 +1716,29 @@
      "pt": "A Rosa liga para o Sr. Grant, o proprietário.",
      "v": "en-US-AndrewNeural",
      "x": [
-      "later",
       "day",
-      "can"
-     ]
+      "people",
+      "sit"
+     ],
+     "wr": "translate"
+    },
+    {
+     "t": "phrase",
+     "en": "Let's make a plan together.",
+     "pt": "Vamos fazer um plano juntos.",
+     "v": "en-US-JennyNeural"
     },
     {
      "t": "fill",
      "en": "Let's make a plan together.",
      "pt": "Vamos fazer um plano juntos.",
      "v": "en-US-JennyNeural",
-     "gap": "Let's make a ___ together.",
-     "w": "plan",
+     "gap": "Let's ___ a plan together.",
+     "w": "make",
      "o": [
-      "near",
-      "plan",
-      "and"
+      "confidential",
+      "make",
+      "about"
      ]
     },
     {
@@ -1782,19 +1747,9 @@
      "pt": "A Rosa liga para o Sr. Grant, o proprietário.",
      "v": "en-US-AndrewNeural",
      "o": [
-      "Tá. Eu gostaria disso.",
-      "Só o braço. Um pouco.",
+      "E eu posso ficar na minha casa?",
+      "A Lily está com a mãe hoje.",
       "A Rosa liga para o Sr. Grant, o proprietário."
-     ]
-    },
-    {
-     "t": "pick",
-     "w": "little",
-     "pt": "pequeno",
-     "o": [
-      "week",
-      "every",
-      "little"
      ]
     },
     {
@@ -1803,53 +1758,44 @@
      "pt": "Vamos fazer um plano juntos.",
      "v": "en-US-JennyNeural",
      "x": [
-      "tea",
-      "extra",
-      "father"
+      "next",
+      "would",
+      "work"
      ]
     },
     {
      "t": "listen",
-     "en": "I'll follow up next week.",
-     "pt": "Vou dar retorno na semana que vem.",
-     "v": "en-US-JennyNeural",
+     "en": "Rosa calls Mr. Grant, the landlord.",
+     "pt": "A Rosa liga para o Sr. Grant, o proprietário.",
+     "v": "en-US-AndrewNeural",
      "o": [
-      "Just my arm. A little.",
-      "I'll follow up next week.",
-      "Can I see the kitchen?"
-     ]
-    },
-    {
-     "t": "meaning",
-     "w": "everything",
-     "pt": "tudo",
-     "o": [
-      "sozinho",
-      "tudo",
-      "fazer"
+      "And the normal rent, too?",
+      "Rosa calls Mr. Grant, the landlord.",
+      "Just my arm. A little."
      ]
     },
     {
      "t": "speak",
-     "en": "I'll follow up next week.",
-     "pt": "Vou dar retorno na semana que vem.",
+     "en": "Let's make a plan together.",
+     "pt": "Vamos fazer um plano juntos.",
      "v": "en-US-JennyNeural",
      "o": [
-      "Um botão? O que é isso?",
-      "Todo dia?",
-      "Vou dar retorno na semana que vem."
+      "Eu adoraria um chá. Obrigada.",
+      "Oi. Eu sou a Jasmine. Obrigada.",
+      "Vamos fazer um plano juntos."
      ]
     },
     {
      "t": "bank",
-     "en": "I'll follow up next month, OK?",
-     "pt": "Vou dar retorno no mês que vem, tá?",
-     "v": "en-PH-RosaNeural",
+     "en": "Let's make a plan together.",
+     "pt": "Vamos fazer um plano juntos.",
+     "v": "en-US-JennyNeural",
      "x": [
-      "better",
-      "almost",
-      "like"
-     ]
+      "take",
+      "thursday",
+      "meet"
+     ],
+     "wr": "translate"
     }
    ]
   },
@@ -1875,9 +1821,9 @@
      "w": "much",
      "pt": "muito",
      "o": [
-      "sozinho",
-      "pequeno",
-      "muito"
+      "fazer",
+      "muito",
+      "sentir"
      ]
     },
     {
@@ -1890,8 +1836,8 @@
      "w": "say",
      "pt": "dizer",
      "o": [
+      "feel",
       "say",
-      "some",
       "alone"
      ]
     },
@@ -1907,16 +1853,16 @@
        "dizer"
       ],
       [
+       "tell",
+       "contar"
+      ],
+      [
        "do",
        "fazer"
       ],
       [
-       "job",
-       "trabalho"
-      ],
-      [
-       "button",
-       "botão"
+       "bring",
+       "trazer"
       ]
      ]
     },
@@ -1930,9 +1876,9 @@
      "w": "some",
      "pt": "algum",
      "o": [
-      "some",
-      "stay",
-      "make"
+      "every",
+      "plan",
+      "some"
      ]
     },
     {
@@ -1945,9 +1891,9 @@
      "w": "support",
      "pt": "apoio",
      "o": [
+      "fazer",
       "trabalho",
-      "apoio",
-      "querer"
+      "apoio"
      ]
     },
     {
@@ -1955,9 +1901,9 @@
      "w": "some",
      "pt": "algum",
      "o": [
-      "support",
-      "home",
-      "some"
+      "week",
+      "some",
+      "help"
      ]
     },
     {
@@ -1980,10 +1926,16 @@
        "dizer"
       ],
       [
-       "how",
-       "como"
+       "let",
+       "deixar"
       ]
      ]
+    },
+    {
+     "t": "phrase",
+     "en": "Rosa calls Mr. Grant, the landlord.",
+     "pt": "A Rosa liga para o Sr. Grant, o proprietário.",
+     "v": "en-US-AndrewNeural"
     },
     {
      "t": "bank",
@@ -1991,22 +1943,29 @@
      "pt": "A Rosa liga para o Sr. Grant, o proprietário.",
      "v": "en-US-AndrewNeural",
      "x": [
-      "tell",
-      "one",
-      "letter"
-     ]
+      "decide",
+      "arm",
+      "old"
+     ],
+     "wr": "translate"
+    },
+    {
+     "t": "phrase",
+     "en": "Let's make a plan together.",
+     "pt": "Vamos fazer um plano juntos.",
+     "v": "en-US-JennyNeural"
     },
     {
      "t": "fill",
      "en": "Let's make a plan together.",
      "pt": "Vamos fazer um plano juntos.",
      "v": "en-US-JennyNeural",
-     "gap": "Let's make a ___ together.",
-     "w": "plan",
+     "gap": "Let's make a plan ___.",
+     "w": "together",
      "o": [
-      "plan",
-      "wonderful",
-      "far"
+      "together",
+      "drew",
+      "has"
      ]
     },
     {
@@ -2015,19 +1974,9 @@
      "pt": "A Rosa liga para o Sr. Grant, o proprietário.",
      "v": "en-US-AndrewNeural",
      "o": [
+      "Estou bem. Minhas pernas estão cansadas.",
       "A Rosa liga para o Sr. Grant, o proprietário.",
-      "Boa tarde. Eu sou a Sharon, a enfermeira-chefe.",
-      "Olá. É sobre o aluguel da Jasmine?"
-     ]
-    },
-    {
-     "t": "pick",
-     "w": "support",
-     "pt": "apoio",
-     "o": [
-      "say",
-      "call",
-      "support"
+      "Traga seu apetite! Vou fazer chá."
      ]
     },
     {
@@ -2036,53 +1985,44 @@
      "pt": "Vamos fazer um plano juntos.",
      "v": "en-US-JennyNeural",
      "x": [
-      "mean",
-      "down",
-      "alone"
+      "open",
+      "what",
+      "course"
      ]
     },
     {
      "t": "listen",
-     "en": "A little. Not much.",
-     "pt": "Um pouco. Não muito.",
-     "v": "en-US-AvaNeural",
+     "en": "Rosa calls Mr. Grant, the landlord.",
+     "pt": "A Rosa liga para o Sr. Grant, o proprietário.",
+     "v": "en-US-AndrewNeural",
      "o": [
-      "Of course. My door is always open.",
-      "A little. Not much.",
-      "Do you feel safe at home?"
-     ]
-    },
-    {
-     "t": "meaning",
-     "w": "bring",
-     "pt": "trazer",
-     "o": [
-      "seguir",
-      "muito",
-      "trazer"
+      "Would you like some water or tea?",
+      "Rosa calls Mr. Grant, the landlord.",
+      "How can I support you?"
      ]
     },
     {
      "t": "speak",
-     "en": "A little. Not much.",
-     "pt": "Um pouco. Não muito.",
-     "v": "en-US-AvaNeural",
+     "en": "Let's make a plan together.",
+     "pt": "Vamos fazer um plano juntos.",
+     "v": "en-US-JennyNeural",
      "o": [
-      "Um pouco. Não muito.",
-      "Sim. Estou muito preocupada.",
-      "Por favor, não se sinta. Pedir ajuda é corajoso."
+      "Jasmine! Olá! Você parece feliz!",
+      "Vamos fazer um plano juntos.",
+      "Obrigada, Rosa! Muito obrigada!"
      ]
     },
     {
      "t": "bank",
-     "en": "I'll follow up next week.",
-     "pt": "Vou dar retorno na semana que vem.",
+     "en": "Let's make a plan together.",
+     "pt": "Vamos fazer um plano juntos.",
      "v": "en-US-JennyNeural",
      "x": [
-      "say",
-      "neck",
-      "her"
-     ]
+      "two",
+      "go",
+      "smile"
+     ],
+     "wr": "translate"
     }
    ]
   },
@@ -2097,24 +2037,24 @@
      "t": "pairs",
      "p": [
       [
-       "landlord",
-       "proprietário"
-      ],
-      [
-       "bring",
-       "trazer"
-      ],
-      [
        "up",
        "para cima"
       ],
       [
-       "pay",
-       "pagar"
+       "some",
+       "algum"
       ],
       [
-       "rent",
-       "aluguel"
+       "how",
+       "como"
+      ],
+      [
+       "call",
+       "ligar"
+      ],
+      [
+       "bring",
+       "trazer"
       ]
      ]
     },
@@ -2123,30 +2063,26 @@
      "w": "home",
      "pt": "casa",
      "o": [
-      "sobre",
-      "aluguel",
+      "dizer",
+      "ligar",
       "casa"
      ]
     },
     {
      "t": "hear",
-     "w": "safe",
-     "pt": "seguro",
+     "w": "landlord",
+     "pt": "proprietário",
      "o": [
-      "safe",
-      "let",
-      "landlord"
+      "landlord",
+      "much",
+      "little"
      ]
     },
     {
-     "t": "pick",
-     "w": "much",
-     "pt": "muito",
-     "o": [
-      "everything",
-      "up",
-      "much"
-     ]
+     "t": "phrase",
+     "en": "Everything you tell me is confidential.",
+     "pt": "Tudo o que você me contar é confidencial.",
+     "v": "en-US-JennyNeural"
     },
     {
      "t": "bank",
@@ -2154,10 +2090,28 @@
      "pt": "Tudo o que você me contar é confidencial.",
      "v": "en-US-JennyNeural",
      "x": [
-      "call",
-      "she",
-      "monday"
+      "car",
+      "come",
+      "wonderful"
+     ],
+     "wr": "translate"
+    },
+    {
+     "t": "speak",
+     "en": "Everything you tell me is confidential.",
+     "pt": "Tudo o que você me contar é confidencial.",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Tudo o que você me contar é confidencial.",
+      "Então, o que te traz aqui hoje?",
+      "Tá. Até o mês que vem!"
      ]
+    },
+    {
+     "t": "phrase",
+     "en": "What brings you here today?",
+     "pt": "O que te traz aqui hoje?",
+     "v": "en-US-JennyNeural"
     },
     {
      "t": "fill",
@@ -2167,41 +2121,9 @@
      "gap": "What ___ you here today?",
      "w": "brings",
      "o": [
-      "brings",
-      "one",
-      "do"
-     ]
-    },
-    {
-     "t": "speak",
-     "en": "Everything you tell me is confidential.",
-     "pt": "Tudo o que você me contar é confidencial.",
-     "v": "en-US-JennyNeural",
-     "o": [
-      "Oi. Eu sou a Jasmine. Obrigada.",
-      "Tudo o que você me contar é confidencial.",
-      "Boa tarde. Eu sou a Sharon, a enfermeira-chefe."
-     ]
-    },
-    {
-     "t": "pairs",
-     "p": [
-      [
-       "month",
-       "mês"
-      ],
-      [
-       "job",
-       "trabalho"
-      ],
-      [
-       "alone",
-       "sozinho"
-      ],
-      [
-       "tell",
-       "contar"
-      ]
+      "center",
+      "look",
+      "brings"
      ]
     },
     {
@@ -2210,10 +2132,41 @@
      "pt": "O que te traz aqui hoje?",
      "v": "en-US-JennyNeural",
      "x": [
-      "down",
-      "we",
-      "say"
+      "car",
+      "open",
+      "private"
      ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "make",
+       "fazer"
+      ],
+      [
+       "month",
+       "mês"
+      ],
+      [
+       "let",
+       "deixar"
+      ],
+      [
+       "button",
+       "botão"
+      ],
+      [
+       "little",
+       "pequeno"
+      ]
+     ]
+    },
+    {
+     "t": "phrase",
+     "en": "How can I support you?",
+     "pt": "Como posso te apoiar?",
+     "v": "en-US-JennyNeural"
     },
     {
      "t": "listen",
@@ -2221,133 +2174,97 @@
      "pt": "Como posso te apoiar?",
      "v": "en-US-JennyNeural",
      "o": [
-      "OK. I'd like that.",
-      "How can I support you?",
-      "I'll follow up next month, OK?"
+      "I'll follow up next month, OK?",
+      "Can I see the kitchen?",
+      "How can I support you?"
      ]
     },
     {
-     "t": "meaning",
-     "w": "plan",
-     "pt": "plano",
+     "t": "speak",
+     "en": "How can I support you?",
+     "pt": "Como posso te apoiar?",
+     "v": "en-US-JennyNeural",
      "o": [
-      "plano",
-      "para cima",
-      "tudo"
+      "É a minha família. E você!",
+      "Como posso te apoiar?",
+      "Você gostaria de água ou chá?"
      ]
     },
     {
      "t": "pick",
-     "w": "decide",
-     "pt": "decidir",
+     "w": "pay",
+     "pt": "pagar",
      "o": [
-      "much",
-      "decide",
-      "home"
-     ]
-    },
-    {
-     "t": "bank",
-     "en": "Do you feel safe at home?",
-     "pt": "Você se sente seguro(a) em casa?",
-     "v": "en-US-JennyNeural",
-     "x": [
-      "discharge",
-      "live",
-      "also"
-     ]
-    },
-    {
-     "t": "speak",
-     "en": "Do you feel safe at home?",
-     "pt": "Você se sente seguro(a) em casa?",
-     "v": "en-US-JennyNeural",
-     "o": [
-      "Você se sente seguro(a) em casa?",
-      "Tá. Até o mês que vem!",
-      "Estou bem. Minhas pernas estão cansadas."
-     ]
-    },
-    {
-     "t": "hear",
-     "w": "let",
-     "pt": "deixar",
-     "o": [
-      "decide",
-      "let",
-      "rent"
-     ]
-    },
-    {
-     "t": "fill",
-     "en": "Let's make a plan together.",
-     "pt": "Vamos fazer um plano juntos.",
-     "v": "en-US-JennyNeural",
-     "gap": "Let's make a plan ___.",
-     "w": "together",
-     "o": [
-      "support",
-      "week",
-      "together"
+      "about",
+      "follow",
+      "pay"
      ]
     },
     {
      "t": "type",
-     "en": "How can I support you?",
-     "pt": "Como posso te apoiar?",
+     "en": "Everything you tell me is confidential.",
+     "pt": "Tudo o que você me contar é confidencial.",
      "v": "en-US-JennyNeural",
      "x": [
-      "fun",
-      "drew",
-      "down"
-     ]
-    },
-    {
-     "t": "pairs",
-     "p": [
-      [
-       "say",
-       "dizer"
-      ],
-      [
-       "want",
-       "querer"
-      ],
-      [
-       "little",
-       "pequeno"
-      ],
-      [
-       "follow",
-       "seguir"
-      ],
-      [
-       "button",
-       "botão"
-      ]
+      "from",
+      "mean",
+      "name"
      ]
     },
     {
      "t": "bank",
-     "en": "Let's make a plan together.",
-     "pt": "Vamos fazer um plano juntos.",
+     "en": "How can I support you?",
+     "pt": "Como posso te apoiar?",
      "v": "en-US-JennyNeural",
      "x": [
-      "mean",
-      "sorry",
-      "door"
+      "down",
+      "fell",
+      "fair"
+     ],
+     "wr": "translate"
+    },
+    {
+     "t": "meaning",
+     "w": "week",
+     "pt": "semana",
+     "o": [
+      "trabalho",
+      "semana",
+      "ajuda"
      ]
     },
     {
      "t": "speak",
-     "en": "Let's make a plan together.",
-     "pt": "Vamos fazer um plano juntos.",
+     "en": "What brings you here today?",
+     "pt": "O que te traz aqui hoje?",
      "v": "en-US-JennyNeural",
      "o": [
-      "Vamos fazer um plano juntos.",
-      "Tá. Eu gostaria disso.",
-      "Boa tarde. Eu sou a Sharon, a enfermeira-chefe."
+      "Confidencial? O que isso significa?",
+      "Todo dia?",
+      "O que te traz aqui hoje?"
      ]
+    },
+    {
+     "t": "hear",
+     "w": "follow",
+     "pt": "seguir",
+     "o": [
+      "up",
+      "do",
+      "follow"
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "What brings you here today?",
+     "pt": "O que te traz aqui hoje?",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "are",
+      "read",
+      "we"
+     ],
+     "wr": "translate"
     }
    ]
   }

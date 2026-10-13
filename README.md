@@ -96,6 +96,8 @@ Quem escolhe: palavras do glossário que o usuário ainda não conhece (não for
 Para quem acha o nível 1 difícil. Não é história: são **10 lições de 20 telas** por unidade (e por área Pro), no ciclo de repetição: apresentar a palavra, escolher o significado, ouvir e escolher, combinar pares, montar a frase com blocos, completar, falar e escrever. Errou? A tela volta no fim da lição.
 
 - Gerado por `tools/nivel0.py` a partir do **nível 1** da própria unidade (palavras mais frequentes + frases do guia), em `data/level0/u<id>.json`. O `gerar_audio.py` roda o gerador antes de gerar os áudios.
+- Toda frase usada num exercício é **apresentada antes** na mesma lição (tela "✨ Frase nova", com áudio e tradução); o gerador confere isso.
+- **Lições 1–5:** nada de escrever frase inteira a partir do áudio: só digitar palavras ouvidas ou **copiar** a frase vendo. **Lições 6–10:** ditado e tradução de frases inteiras.
 - Modos: com ✍️ Escrita, montar frases vira digitar; com 🎤 Fala, as frases são repetidas em voz alta. O círculo das 4 faces funciona igual.
 - O nível 1 mostra um atalho "Achou difícil? Treine antes o vocabulário no nível 0".
 

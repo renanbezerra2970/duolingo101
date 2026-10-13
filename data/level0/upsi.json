@@ -23,9 +23,9 @@
      "w": "feel",
      "pt": "sentir",
      "o": [
-      "pânico",
-      "nervoso",
-      "sentir"
+      "nunca",
+      "sentir",
+      "sem"
      ]
     },
     {
@@ -38,9 +38,9 @@
      "w": "thought",
      "pt": "pensou",
      "o": [
-      "thought",
-      "your",
-      "safety"
+      "that",
+      "psychologist",
+      "thought"
      ]
     },
     {
@@ -55,12 +55,12 @@
        "pensou"
       ],
       [
-       "about",
-       "sobre"
-      ],
-      [
        "how",
        "como"
+      ],
+      [
+       "about",
+       "sobre"
       ]
      ]
     },
@@ -74,9 +74,9 @@
      "w": "how",
      "pt": "como",
      "o": [
-      "today",
-      "how",
-      "through"
+      "tutor",
+      "sometimes",
+      "how"
      ]
     },
     {
@@ -90,8 +90,8 @@
      "pt": "sobre",
      "o": [
       "sobre",
-      "avisar",
-      "poder"
+      "aqui",
+      "alguém"
      ]
     },
     {
@@ -99,9 +99,9 @@
      "w": "how",
      "pt": "como",
      "o": [
-      "will",
-      "how",
-      "sad"
+      "body",
+      "those",
+      "how"
      ]
     },
     {
@@ -126,15 +126,28 @@
      ]
     },
     {
+     "t": "phrase",
+     "en": "Yeah. Exactly.",
+     "pt": "É. Exatamente.",
+     "v": "en-NZ-MitchellNeural"
+    },
+    {
      "t": "bank",
      "en": "Yeah. Exactly.",
      "pt": "É. Exatamente.",
      "v": "en-NZ-MitchellNeural",
      "x": [
-      "my",
-      "understand",
-      "anxious"
-     ]
+      "panic",
+      "people",
+      "has"
+     ],
+     "wr": "copy"
+    },
+    {
+     "t": "phrase",
+     "en": "OK. I understand.",
+     "pt": "Tá. Entendi.",
+     "v": "en-AU-WilliamMultilingualNeural"
     },
     {
      "t": "fill",
@@ -144,9 +157,9 @@
      "gap": "OK. I ___.",
      "w": "understand",
      "o": [
-      "more",
+      "school",
       "understand",
-      "can"
+      "from"
      ]
     },
     {
@@ -156,72 +169,51 @@
      "v": "en-NZ-MitchellNeural",
      "o": [
       "É. Exatamente.",
-      "Minha irmã, Maya. E meu cachorro, Bruno.",
-      "Ansioso. E triste."
+      "Ela sempre grita comigo.",
+      "Sim. O Bruno precisa de mim."
      ]
     },
     {
-     "t": "pick",
-     "w": "about",
-     "pt": "sobre",
+     "t": "spell",
+     "w": "feel",
+     "pt": "sentir",
      "o": [
-      "relationship",
-      "about",
-      "help"
-     ]
-    },
-    {
-     "t": "type",
-     "en": "OK. I understand.",
-     "pt": "Tá. Entendi.",
-     "v": "en-AU-WilliamMultilingualNeural",
-     "x": [
-      "here",
-      "support",
-      "house"
+      "courage",
+      "feel",
+      "her"
      ]
     },
     {
      "t": "listen",
-     "en": "OK. I'll try.",
-     "pt": "Tá. Vou tentar.",
-     "v": "en-AU-WilliamMultilingualNeural",
+     "en": "Yeah. Exactly.",
+     "pt": "É. Exatamente.",
+     "v": "en-NZ-MitchellNeural",
      "o": [
-      "Are you having thoughts of hurting yourself?",
-      "OK. I'll try.",
-      "They are very important to you."
-     ]
-    },
-    {
-     "t": "meaning",
-     "w": "thought",
-     "pt": "pensou",
-     "o": [
-      "talvez",
-      "pensou",
-      "sozinho"
+      "Yes. Very worried.",
+      "Yeah. Exactly.",
+      "And I want to sleep well."
      ]
     },
     {
      "t": "speak",
-     "en": "OK. I'll try.",
-     "pt": "Tá. Vou tentar.",
+     "en": "OK. I understand.",
+     "pt": "Tá. Entendi.",
      "v": "en-AU-WilliamMultilingualNeural",
      "o": [
-      "Talvez... 'Minhas ideias podem ser boas.'",
-      "Tá. Vou tentar.",
-      "Seus sentimentos fazem sentido."
+      "Tá. Entendi.",
+      "Podemos encontrar um plano juntos?",
+      "Ela sempre grita comigo."
      ]
     },
     {
-     "t": "bank",
-     "en": "I'm so sorry about Frank.",
-     "pt": "Sinto muito pelo Frank.",
-     "v": "en-US-MichelleNeural",
+     "t": "copy",
+     "en": "OK. I understand.",
+     "pt": "Tá. Entendi.",
+     "v": "en-AU-WilliamMultilingualNeural",
      "x": [
-      "or",
-      "wake",
-      "just"
+      "monday",
+      "point",
+      "lost"
      ]
     }
    ]
@@ -248,9 +240,9 @@
      "w": "hard",
      "pt": "difícil",
      "o": [
-      "como",
       "sobre",
-      "difícil"
+      "difícil",
+      "sentir"
      ]
     },
     {
@@ -263,9 +255,9 @@
      "w": "let",
      "pt": "deixar",
      "o": [
-      "thought",
       "hard",
-      "let"
+      "let",
+      "about"
      ]
     },
     {
@@ -280,16 +272,16 @@
        "deixar"
       ],
       [
-       "feel",
-       "sentir"
-      ],
-      [
        "how",
        "como"
       ],
       [
        "about",
        "sobre"
+      ],
+      [
+       "thought",
+       "pensou"
       ]
      ]
     },
@@ -303,9 +295,9 @@
      "w": "make",
      "pt": "fazer",
      "o": [
-      "about",
-      "how",
-      "make"
+      "make",
+      "together",
+      "thought"
      ]
     },
     {
@@ -318,9 +310,9 @@
      "w": "together",
      "pt": "juntos",
      "o": [
-      "pensou",
-      "sobre",
-      "juntos"
+      "juntos",
+      "fazer",
+      "sobre"
      ]
     },
     {
@@ -328,9 +320,9 @@
      "w": "make",
      "pt": "fazer",
      "o": [
-      "thought",
       "make",
-      "hard"
+      "thought",
+      "let"
      ]
     },
     {
@@ -359,59 +351,61 @@
      ]
     },
     {
+     "t": "phrase",
+     "en": "OK. I'll try.",
+     "pt": "Tá. Vou tentar.",
+     "v": "en-AU-WilliamMultilingualNeural"
+    },
+    {
      "t": "bank",
+     "en": "OK. I'll try.",
+     "pt": "Tá. Vou tentar.",
+     "v": "en-AU-WilliamMultilingualNeural",
+     "x": [
+      "panic",
+      "cook",
+      "hurt"
+     ],
+     "wr": "copy"
+    },
+    {
+     "t": "phrase",
      "en": "Yeah. Exactly.",
      "pt": "É. Exatamente.",
-     "v": "en-NZ-MitchellNeural",
-     "x": [
-      "long",
-      "like",
-      "safety"
-     ]
+     "v": "en-NZ-MitchellNeural"
     },
     {
      "t": "fill",
-     "en": "OK. I understand.",
-     "pt": "Tá. Entendi.",
-     "v": "en-AU-WilliamMultilingualNeural",
-     "gap": "OK. I ___.",
-     "w": "understand",
+     "en": "Yeah. Exactly.",
+     "pt": "É. Exatamente.",
+     "v": "en-NZ-MitchellNeural",
+     "gap": "Yeah. ___.",
+     "w": "Exactly",
      "o": [
-      "your",
-      "understand",
-      "say"
+      "important",
+      "life",
+      "Exactly"
      ]
     },
     {
      "t": "speak",
-     "en": "Yeah. Exactly.",
-     "pt": "É. Exatamente.",
-     "v": "en-NZ-MitchellNeural",
-     "o": [
-      "É. Exatamente.",
-      "Oi. Obrigado. Estou um pouco nervoso.",
-      "Então você sente que ninguém te escuta."
-     ]
-    },
-    {
-     "t": "pick",
-     "w": "together",
-     "pt": "juntos",
-     "o": [
-      "together",
-      "thought",
-      "let"
-     ]
-    },
-    {
-     "t": "type",
-     "en": "OK. I understand.",
-     "pt": "Tá. Entendi.",
+     "en": "OK. I'll try.",
+     "pt": "Tá. Vou tentar.",
      "v": "en-AU-WilliamMultilingualNeural",
-     "x": [
-      "job",
-      "lot",
-      "late"
+     "o": [
+      "Sim. Isso é luto. É muito normal.",
+      "Tá. Vou tentar.",
+      "O que passou pela sua cabeça?"
+     ]
+    },
+    {
+     "t": "spell",
+     "w": "hard",
+     "pt": "difícil",
+     "o": [
+      "how",
+      "hard",
+      "make"
      ]
     },
     {
@@ -420,41 +414,31 @@
      "pt": "Tá. Vou tentar.",
      "v": "en-AU-WilliamMultilingualNeural",
      "o": [
-      "Thank you for telling me about Frank.",
       "OK. I'll try.",
-      "Hold for four. Breathe out for six."
-     ]
-    },
-    {
-     "t": "meaning",
-     "w": "thought",
-     "pt": "pensou",
-     "o": [
-      "juntos",
-      "fazer",
-      "pensou"
+      "Take your time.",
+      "Are you thinking about ending your life?"
      ]
     },
     {
      "t": "speak",
-     "en": "OK. I'll try.",
-     "pt": "Tá. Vou tentar.",
-     "v": "en-AU-WilliamMultilingualNeural",
+     "en": "Yeah. Exactly.",
+     "pt": "É. Exatamente.",
+     "v": "en-NZ-MitchellNeural",
      "o": [
-      "E para quem você pode ligar?",
-      "Primeiro, o que você disser aqui é confidencial.",
-      "Tá. Vou tentar."
+      "E quero dormir bem.",
+      "É. Exatamente.",
+      "Ansioso. E triste."
      ]
     },
     {
-     "t": "bank",
-     "en": "Let's make a safety plan together.",
-     "pt": "Vamos fazer um plano de segurança juntos.",
-     "v": "en-US-JennyNeural",
+     "t": "copy",
+     "en": "Yeah. Exactly.",
+     "pt": "É. Exatamente.",
+     "v": "en-NZ-MitchellNeural",
      "x": [
-      "hold",
-      "sound",
-      "should"
+      "fact",
+      "went",
+      "tell"
      ]
     }
    ]
@@ -481,9 +465,9 @@
      "w": "time",
      "pt": "tempo",
      "o": [
-      "difícil",
       "tempo",
-      "fazer"
+      "fazer",
+      "plano"
      ]
     },
     {
@@ -496,9 +480,9 @@
      "w": "work",
      "pt": "trabalho",
      "o": [
-      "make",
-      "hard",
-      "work"
+      "work",
+      "week",
+      "feel"
      ]
     },
     {
@@ -513,16 +497,16 @@
        "trabalho"
       ],
       [
-       "thought",
-       "pensou"
+       "together",
+       "juntos"
       ],
       [
        "make",
        "fazer"
       ],
       [
-       "about",
-       "sobre"
+       "feel",
+       "sentir"
       ]
      ]
     },
@@ -536,9 +520,9 @@
      "w": "plan",
      "pt": "plano",
      "o": [
-      "how",
       "plan",
-      "together"
+      "let",
+      "about"
      ]
     },
     {
@@ -551,9 +535,9 @@
      "w": "week",
      "pt": "semana",
      "o": [
-      "pensou",
-      "como",
-      "semana"
+      "juntos",
+      "semana",
+      "plano"
      ]
     },
     {
@@ -561,7 +545,7 @@
      "w": "plan",
      "pt": "plano",
      "o": [
-      "let",
+      "how",
       "about",
       "plan"
      ]
@@ -586,33 +570,46 @@
        "trabalho"
       ],
       [
-       "feel",
-       "sentir"
+       "about",
+       "sobre"
       ]
      ]
     },
     {
+     "t": "phrase",
+     "en": "Let's make a safety plan together.",
+     "pt": "Vamos fazer um plano de segurança juntos.",
+     "v": "en-US-JennyNeural"
+    },
+    {
      "t": "bank",
      "en": "Let's make a safety plan together.",
      "pt": "Vamos fazer um plano de segurança juntos.",
      "v": "en-US-JennyNeural",
      "x": [
-      "true",
-      "now",
-      "hold"
-     ]
+      "body",
+      "it",
+      "for"
+     ],
+     "wr": "copy"
+    },
+    {
+     "t": "phrase",
+     "en": "OK. I understand.",
+     "pt": "Tá. Entendi.",
+     "v": "en-AU-WilliamMultilingualNeural"
     },
     {
      "t": "fill",
-     "en": "Yeah. Exactly.",
-     "pt": "É. Exatamente.",
-     "v": "en-NZ-MitchellNeural",
-     "gap": "___. Exactly.",
-     "w": "Yeah",
+     "en": "OK. I understand.",
+     "pt": "Tá. Entendi.",
+     "v": "en-AU-WilliamMultilingualNeural",
+     "gap": "OK. I ___.",
+     "w": "understand",
      "o": [
-      "listen",
-      "normal",
-      "Yeah"
+      "understand",
+      "job",
+      "late"
      ]
     },
     {
@@ -621,51 +618,30 @@
      "pt": "Vamos fazer um plano de segurança juntos.",
      "v": "en-US-JennyNeural",
      "o": [
-      "O que você gostaria de mudar?",
-      "Então, qual seria um pensamento mais equilibrado?",
-      "Vamos fazer um plano de segurança juntos."
+      "Isso ajuda. Meu corpo está mais relaxado.",
+      "Vamos fazer um plano de segurança juntos.",
+      "O que aconteceu na reunião?"
      ]
     },
     {
-     "t": "pick",
-     "w": "week",
-     "pt": "semana",
+     "t": "spell",
+     "w": "time",
+     "pt": "tempo",
      "o": [
-      "work",
       "time",
-      "week"
-     ]
-    },
-    {
-     "t": "type",
-     "en": "Yeah. Exactly.",
-     "pt": "É. Exatamente.",
-     "v": "en-NZ-MitchellNeural",
-     "x": [
-      "seventy",
-      "normal",
-      "about"
+      "week",
+      "feel"
      ]
     },
     {
      "t": "listen",
-     "en": "OK. I understand.",
-     "pt": "Tá. Entendi.",
-     "v": "en-AU-WilliamMultilingualNeural",
+     "en": "Let's make a safety plan together.",
+     "pt": "Vamos fazer um plano de segurança juntos.",
+     "v": "en-US-JennyNeural",
      "o": [
-      "OK. I understand.",
-      "Karen, did you hear what Noah said?",
-      "My daughter said I should come."
-     ]
-    },
-    {
-     "t": "meaning",
-     "w": "let",
-     "pt": "deixar",
-     "o": [
-      "juntos",
-      "deixar",
-      "difícil"
+      "Let's make a safety plan together.",
+      "That helps. My body feels more relaxed.",
+      "She always shouts at me."
      ]
     },
     {
@@ -674,20 +650,20 @@
      "pt": "Tá. Entendi.",
      "v": "en-AU-WilliamMultilingualNeural",
      "o": [
-      "Para a Maya. Ela sempre atende.",
       "Sinto muito pelo Frank.",
+      "Sério? Que bom ouvir isso.",
       "Tá. Entendi."
      ]
     },
     {
-     "t": "bank",
-     "en": "OK. I'll try.",
-     "pt": "Tá. Vou tentar.",
+     "t": "copy",
+     "en": "OK. I understand.",
+     "pt": "Tá. Entendi.",
      "v": "en-AU-WilliamMultilingualNeural",
      "x": [
-      "really",
-      "his",
-      "group"
+      "through",
+      "report",
+      "idea"
      ]
     }
    ]
@@ -714,9 +690,9 @@
      "w": "been",
      "pt": "sido",
      "o": [
-      "difícil",
-      "sentir",
-      "sido"
+      "sido",
+      "telefone",
+      "semana"
      ]
     },
     {
@@ -729,9 +705,9 @@
      "w": "phone",
      "pt": "telefone",
      "o": [
-      "together",
-      "about",
-      "phone"
+      "phone",
+      "how",
+      "about"
      ]
     },
     {
@@ -746,16 +722,16 @@
        "telefone"
       ],
       [
-       "make",
-       "fazer"
+       "work",
+       "trabalho"
       ],
       [
-       "week",
-       "semana"
+       "plan",
+       "plano"
       ],
       [
-       "time",
-       "tempo"
+       "about",
+       "sobre"
       ]
      ]
     },
@@ -769,9 +745,9 @@
      "w": "said",
      "pt": "disse",
      "o": [
-      "together",
-      "plan",
-      "said"
+      "so",
+      "said",
+      "been"
      ]
     },
     {
@@ -784,9 +760,9 @@
      "w": "so",
      "pt": "então",
      "o": [
-      "juntos",
+      "como",
       "então",
-      "sobre"
+      "sido"
      ]
     },
     {
@@ -794,9 +770,9 @@
      "w": "said",
      "pt": "disse",
      "o": [
+      "time",
       "said",
-      "been",
-      "about"
+      "make"
      ]
     },
     {
@@ -819,10 +795,16 @@
        "telefone"
       ],
       [
-       "how",
-       "como"
+       "make",
+       "fazer"
       ]
      ]
+    },
+    {
+     "t": "phrase",
+     "en": "I'm so sorry about Frank.",
+     "pt": "Sinto muito pelo Frank.",
+     "v": "en-US-MichelleNeural"
     },
     {
      "t": "bank",
@@ -830,22 +812,29 @@
      "pt": "Sinto muito pelo Frank.",
      "v": "en-US-MichelleNeural",
      "x": [
-      "thirty",
-      "have",
-      "both"
-     ]
+      "forty",
+      "just",
+      "mom"
+     ],
+     "wr": "copy"
+    },
+    {
+     "t": "phrase",
+     "en": "Let's make a safety plan together.",
+     "pt": "Vamos fazer um plano de segurança juntos.",
+     "v": "en-US-JennyNeural"
     },
     {
      "t": "fill",
      "en": "Let's make a safety plan together.",
      "pt": "Vamos fazer um plano de segurança juntos.",
      "v": "en-US-JennyNeural",
-     "gap": "Let's make a ___ plan together.",
-     "w": "safety",
+     "gap": "___ make a safety plan together.",
+     "w": "Let's",
      "o": [
-      "safety",
-      "stop",
-      "yourself"
+      "Let's",
+      "especially",
+      "again"
      ]
     },
     {
@@ -854,73 +843,52 @@
      "pt": "Sinto muito pelo Frank.",
      "v": "en-US-MichelleNeural",
      "o": [
-      "Primeiro, o que você disser aqui é confidencial.",
-      "Minha filha. E minha vizinha, Mary.",
-      "Sinto muito pelo Frank."
+      "Sinto muito pelo Frank.",
+      "Sim. Muito preocupada.",
+      "Sério? Que bom ouvir isso."
      ]
     },
     {
-     "t": "pick",
-     "w": "so",
-     "pt": "então",
+     "t": "spell",
+     "w": "been",
+     "pt": "sido",
      "o": [
       "so",
-      "phone",
-      "make"
-     ]
-    },
-    {
-     "t": "type",
-     "en": "Let's make a safety plan together.",
-     "pt": "Vamos fazer um plano de segurança juntos.",
-     "v": "en-US-JennyNeural",
-     "x": [
-      "unsafe",
-      "act",
-      "nervous"
+      "been",
+      "about"
      ]
     },
     {
      "t": "listen",
-     "en": "Yeah. Exactly.",
-     "pt": "É. Exatamente.",
-     "v": "en-NZ-MitchellNeural",
+     "en": "I'm so sorry about Frank.",
+     "pt": "Sinto muito pelo Frank.",
+     "v": "en-US-MichelleNeural",
      "o": [
-      "Yeah. Exactly.",
-      "Thank you for telling me about Frank.",
-      "I thought, 'Everyone will think I'm stupid.'"
-     ]
-    },
-    {
-     "t": "meaning",
-     "w": "thought",
-     "pt": "pensou",
-     "o": [
-      "sido",
-      "então",
-      "pensou"
+      "Yes. This is grief. It's very normal.",
+      "I'm so sorry about Frank.",
+      "Are you having thoughts of hurting yourself?"
      ]
     },
     {
      "t": "speak",
-     "en": "Yeah. Exactly.",
-     "pt": "É. Exatamente.",
-     "v": "en-NZ-MitchellNeural",
+     "en": "Let's make a safety plan together.",
+     "pt": "Vamos fazer um plano de segurança juntos.",
+     "v": "en-US-JennyNeural",
      "o": [
-      "Sim. Muito preocupada.",
-      "É. Exatamente.",
-      "Talvez eu tente. Obrigada por me ouvir."
+      "Às vezes eu converso com a foto dele.",
+      "Ela nunca escuta. Ela só grita.",
+      "Vamos fazer um plano de segurança juntos."
      ]
     },
     {
-     "t": "bank",
-     "en": "OK. I understand.",
-     "pt": "Tá. Entendi.",
-     "v": "en-AU-WilliamMultilingualNeural",
+     "t": "copy",
+     "en": "Let's make a safety plan together.",
+     "pt": "Vamos fazer um plano de segurança juntos.",
+     "v": "en-US-JennyNeural",
      "x": [
-      "time",
-      "went",
-      "crazy"
+      "through",
+      "did",
+      "take"
      ]
     }
    ]
@@ -947,9 +915,9 @@
      "w": "sound",
      "pt": "som",
      "o": [
-      "como",
-      "pensar",
-      "som"
+      "sobre",
+      "som",
+      "então"
      ]
     },
     {
@@ -962,9 +930,9 @@
      "w": "tell",
      "pt": "contar",
      "o": [
+      "thought",
       "tell",
-      "how",
-      "sound"
+      "think"
      ]
     },
     {
@@ -979,16 +947,16 @@
        "contar"
       ],
       [
+       "let",
+       "deixar"
+      ],
+      [
        "feel",
        "sentir"
       ],
       [
        "plan",
        "plano"
-      ],
-      [
-       "phone",
-       "telefone"
       ]
      ]
     },
@@ -1002,9 +970,9 @@
      "w": "think",
      "pt": "pensar",
      "o": [
-      "said",
-      "work",
-      "think"
+      "think",
+      "so",
+      "how"
      ]
     },
     {
@@ -1017,9 +985,9 @@
      "w": "through",
      "pt": "através",
      "o": [
+      "som",
       "trabalho",
-      "através",
-      "sentir"
+      "através"
      ]
     },
     {
@@ -1027,8 +995,8 @@
      "w": "think",
      "pt": "pensar",
      "o": [
-      "about",
-      "make",
+      "let",
+      "how",
       "think"
      ]
     },
@@ -1052,86 +1020,46 @@
        "contar"
       ],
       [
-       "hard",
-       "difícil"
+       "week",
+       "semana"
       ]
      ]
     },
     {
+     "t": "phrase",
+     "en": "OK. I'll try.",
+     "pt": "Tá. Vou tentar.",
+     "v": "en-AU-WilliamMultilingualNeural"
+    },
+    {
      "t": "bank",
-     "en": "I'm so sorry about Frank.",
-     "pt": "Sinto muito pelo Frank.",
-     "v": "en-US-MichelleNeural",
-     "x": [
-      "dog",
-      "information",
-      "see"
-     ]
-    },
-    {
-     "t": "fill",
-     "en": "Let's make a safety plan together.",
-     "pt": "Vamos fazer um plano de segurança juntos.",
-     "v": "en-US-JennyNeural",
-     "gap": "Let's make a safety plan ___.",
-     "w": "together",
-     "o": [
-      "together",
-      "bad",
-      "hand"
-     ]
-    },
-    {
-     "t": "speak",
-     "en": "I'm so sorry about Frank.",
-     "pt": "Sinto muito pelo Frank.",
-     "v": "en-US-MichelleNeural",
-     "o": [
-      "Sinto muito pelo Frank.",
-      "Talvez... 'Minhas ideias podem ser boas.'",
-      "Leve o tempo que precisar."
-     ]
-    },
-    {
-     "t": "pick",
-     "w": "through",
-     "pt": "através",
-     "o": [
-      "hard",
-      "through",
-      "so"
-     ]
-    },
-    {
-     "t": "type",
-     "en": "Let's make a safety plan together.",
-     "pt": "Vamos fazer um plano de segurança juntos.",
-     "v": "en-US-JennyNeural",
-     "x": [
-      "well",
-      "die",
-      "my"
-     ]
-    },
-    {
-     "t": "listen",
      "en": "OK. I'll try.",
      "pt": "Tá. Vou tentar.",
      "v": "en-AU-WilliamMultilingualNeural",
-     "o": [
-      "My daughter said I should come.",
-      "You're worried about his school.",
-      "OK. I'll try."
-     ]
+     "x": [
+      "down",
+      "also",
+      "without"
+     ],
+     "wr": "copy"
     },
     {
-     "t": "meaning",
-     "w": "thought",
-     "pt": "pensou",
+     "t": "phrase",
+     "en": "I'm so sorry about Frank.",
+     "pt": "Sinto muito pelo Frank.",
+     "v": "en-US-MichelleNeural"
+    },
+    {
+     "t": "fill",
+     "en": "I'm so sorry about Frank.",
+     "pt": "Sinto muito pelo Frank.",
+     "v": "en-US-MichelleNeural",
+     "gap": "I'm ___ sorry about Frank.",
+     "w": "so",
      "o": [
-      "pensou",
-      "difícil",
-      "som"
+      "through",
+      "so",
+      "fact"
      ]
     },
     {
@@ -1141,19 +1069,51 @@
      "v": "en-AU-WilliamMultilingualNeural",
      "o": [
       "Tá. Vou tentar.",
-      "Sério? Achei que estava ficando louca.",
-      "Minha filha. E minha vizinha, Mary."
+      "O que passou pela sua cabeça?",
+      "Oi, Sam. Como foi a sua semana?"
      ]
     },
     {
-     "t": "bank",
-     "en": "Yeah. Exactly.",
-     "pt": "É. Exatamente.",
-     "v": "en-NZ-MitchellNeural",
+     "t": "spell",
+     "w": "sound",
+     "pt": "som",
+     "o": [
+      "plan",
+      "sound",
+      "week"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "OK. I'll try.",
+     "pt": "Tá. Vou tentar.",
+     "v": "en-AU-WilliamMultilingualNeural",
+     "o": [
+      "Can you tell me more about that?",
+      "OK. I'll try.",
+      "Hold for four. Breathe out for six."
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "I'm so sorry about Frank.",
+     "pt": "Sinto muito pelo Frank.",
+     "v": "en-US-MichelleNeural",
+     "o": [
+      "Para a Maya. Ela sempre atende.",
+      "Então você sente que ninguém te escuta.",
+      "Sinto muito pelo Frank."
+     ]
+    },
+    {
+     "t": "copy",
+     "en": "I'm so sorry about Frank.",
+     "pt": "Sinto muito pelo Frank.",
+     "v": "en-US-MichelleNeural",
      "x": [
-      "quiet",
-      "report",
-      "sorry"
+      "anyone",
+      "there",
+      "fast"
      ]
     }
    ]
@@ -1181,8 +1141,8 @@
      "pt": "era",
      "o": [
       "era",
-      "através",
-      "fazer"
+      "som",
+      "pensou"
      ]
     },
     {
@@ -1195,9 +1155,9 @@
      "w": "bad",
      "pt": "ruim",
      "o": [
-      "feel",
-      "think",
-      "bad"
+      "bad",
+      "together",
+      "said"
      ]
     },
     {
@@ -1212,16 +1172,16 @@
        "ruim"
       ],
       [
-       "time",
-       "tempo"
+       "about",
+       "sobre"
       ],
       [
-       "work",
-       "trabalho"
+       "think",
+       "pensar"
       ],
       [
-       "through",
-       "através"
+       "together",
+       "juntos"
       ]
      ]
     },
@@ -1236,8 +1196,8 @@
      "pt": "respirar",
      "o": [
       "breathe",
-      "so",
-      "hard"
+      "together",
+      "so"
      ]
     },
     {
@@ -1250,9 +1210,9 @@
      "w": "feelings",
      "pt": "sentimentos",
      "o": [
-      "como",
+      "telefone",
       "sentimentos",
-      "respirar"
+      "pensar"
      ]
     },
     {
@@ -1260,9 +1220,9 @@
      "w": "breathe",
      "pt": "respirar",
      "o": [
-      "breathe",
       "bad",
-      "was"
+      "sound",
+      "breathe"
      ]
     },
     {
@@ -1285,109 +1245,103 @@
        "ruim"
       ],
       [
-       "phone",
-       "telefone"
+       "think",
+       "pensar"
       ]
      ]
     },
     {
-     "t": "bank",
-     "en": "I'm so sorry about Frank.",
-     "pt": "Sinto muito pelo Frank.",
-     "v": "en-US-MichelleNeural",
-     "x": [
-      "people",
-      "listen",
-      "six"
-     ]
+     "t": "phrase",
+     "en": "Let's make a safety plan together.",
+     "pt": "Vamos fazer um plano de segurança juntos.",
+     "v": "en-US-JennyNeural"
     },
     {
-     "t": "fill",
+     "t": "bank",
      "en": "Let's make a safety plan together.",
      "pt": "Vamos fazer um plano de segurança juntos.",
      "v": "en-US-JennyNeural",
-     "gap": "Let's make a ___ plan together.",
-     "w": "safety",
+     "x": [
+      "now",
+      "second",
+      "sad"
+     ],
+     "wr": "translate"
+    },
+    {
+     "t": "phrase",
+     "en": "Yeah. Exactly.",
+     "pt": "É. Exatamente.",
+     "v": "en-NZ-MitchellNeural"
+    },
+    {
+     "t": "fill",
+     "en": "Yeah. Exactly.",
+     "pt": "É. Exatamente.",
+     "v": "en-NZ-MitchellNeural",
+     "gap": "Yeah. ___.",
+     "w": "Exactly",
      "o": [
-      "safety",
-      "was",
-      "information"
+      "call",
+      "Exactly",
+      "but"
      ]
     },
     {
      "t": "speak",
-     "en": "I'm so sorry about Frank.",
-     "pt": "Sinto muito pelo Frank.",
-     "v": "en-US-MichelleNeural",
+     "en": "Let's make a safety plan together.",
+     "pt": "Vamos fazer um plano de segurança juntos.",
+     "v": "en-US-JennyNeural",
      "o": [
-      "Podemos encontrar um plano juntos?",
-      "Talvez eu tente. Obrigada por me ouvir.",
-      "Sinto muito pelo Frank."
-     ]
-    },
-    {
-     "t": "pick",
-     "w": "feelings",
-     "pt": "sentimentos",
-     "o": [
-      "think",
-      "breathe",
-      "feelings"
+      "Vamos fazer um plano de segurança juntos.",
+      "Minhas mãos tremem. Não consigo respirar.",
+      "Mais calmo. Um pouco."
      ]
     },
     {
      "t": "type",
-     "en": "Let's make a safety plan together.",
-     "pt": "Vamos fazer um plano de segurança juntos.",
-     "v": "en-US-JennyNeural",
+     "en": "Yeah. Exactly.",
+     "pt": "É. Exatamente.",
+     "v": "en-NZ-MitchellNeural",
      "x": [
-      "support",
-      "four",
-      "body"
+      "hand",
+      "bad",
+      "anyone"
      ]
     },
     {
      "t": "listen",
-     "en": "OK. I understand.",
-     "pt": "Tá. Entendi.",
-     "v": "en-AU-WilliamMultilingualNeural",
+     "en": "Let's make a safety plan together.",
+     "pt": "Vamos fazer um plano de segurança juntos.",
+     "v": "en-US-JennyNeural",
      "o": [
-      "Hello, Karen. Hello, Noah. Welcome.",
-      "OK. I understand.",
-      "Anxious. And sad."
-     ]
-    },
-    {
-     "t": "meaning",
-     "w": "about",
-     "pt": "sobre",
-     "o": [
-      "plano",
-      "era",
-      "sobre"
+      "Yeah. Exactly.",
+      "Let's make a safety plan together.",
+      "We were married for forty-five years."
      ]
     },
     {
      "t": "speak",
-     "en": "OK. I understand.",
-     "pt": "Tá. Entendi.",
-     "v": "en-AU-WilliamMultilingualNeural",
+     "en": "Yeah. Exactly.",
+     "pt": "É. Exatamente.",
+     "v": "en-NZ-MitchellNeural",
      "o": [
-      "Ela sempre grita comigo.",
-      "Tá. Entendi.",
-      "Esses são ótimos objetivos, Sam."
+      "O que aconteceu na reunião?",
+      "É. Exatamente.",
+      "Para a Maya. Ela sempre atende."
      ]
     },
     {
      "t": "bank",
-     "en": "OK. I'll try.",
-     "pt": "Tá. Vou tentar.",
-     "v": "en-AU-WilliamMultilingualNeural",
+     "en": "Yeah. Exactly.",
+     "pt": "É. Exatamente.",
+     "v": "en-NZ-MitchellNeural",
      "x": [
-      "husband",
-      "support",
-      "body"
-     ]
+      "two",
+      "up",
+      "daughter"
+     ],
+     "wr": "translate"
     }
    ]
   },
@@ -1413,9 +1367,9 @@
      "w": "great",
      "pt": "ótimo",
      "o": [
-      "era",
-      "deixar",
-      "ótimo"
+      "ótimo",
+      "juntos",
+      "pensou"
      ]
     },
     {
@@ -1428,9 +1382,9 @@
      "w": "happen",
      "pt": "acontecer",
      "o": [
-      "feelings",
+      "so",
       "happen",
-      "tell"
+      "mind"
      ]
     },
     {
@@ -1445,16 +1399,16 @@
        "acontecer"
       ],
       [
-       "make",
-       "fazer"
+       "how",
+       "como"
       ],
       [
-       "together",
-       "juntos"
+       "said",
+       "disse"
       ],
       [
-       "plan",
-       "plano"
+       "tell",
+       "contar"
       ]
      ]
     },
@@ -1469,8 +1423,8 @@
      "pt": "machucar",
      "o": [
       "hurt",
-      "feelings",
-      "tell"
+      "was",
+      "mind"
      ]
     },
     {
@@ -1483,8 +1437,8 @@
      "w": "mind",
      "pt": "mente",
      "o": [
-      "sentir",
-      "tempo",
+      "som",
+      "contar",
       "mente"
      ]
     },
@@ -1493,9 +1447,9 @@
      "w": "hurt",
      "pt": "machucar",
      "o": [
+      "think",
       "hurt",
-      "bad",
-      "let"
+      "hard"
      ]
     },
     {
@@ -1518,98 +1472,16 @@
        "acontecer"
       ],
       [
-       "hard",
-       "difícil"
+       "breathe",
+       "respirar"
       ]
      ]
     },
     {
-     "t": "bank",
-     "en": "I'm so sorry about Frank.",
-     "pt": "Sinto muito pelo Frank.",
-     "v": "en-US-MichelleNeural",
-     "x": [
-      "went",
-      "you",
-      "nothing"
-     ]
-    },
-    {
-     "t": "fill",
-     "en": "Let's make a safety plan together.",
-     "pt": "Vamos fazer um plano de segurança juntos.",
-     "v": "en-US-JennyNeural",
-     "gap": "Let's make a ___ plan together.",
-     "w": "safety",
-     "o": [
-      "courage",
-      "safety",
-      "panic"
-     ]
-    },
-    {
-     "t": "speak",
-     "en": "I'm so sorry about Frank.",
-     "pt": "Sinto muito pelo Frank.",
-     "v": "en-US-MichelleNeural",
-     "o": [
-      "Pode me contar mais sobre isso?",
-      "Para a Maya. Ela sempre atende.",
-      "Sinto muito pelo Frank."
-     ]
-    },
-    {
-     "t": "pick",
-     "w": "mind",
-     "pt": "mente",
-     "o": [
-      "so",
-      "together",
-      "mind"
-     ]
-    },
-    {
-     "t": "type",
-     "en": "Let's make a safety plan together.",
-     "pt": "Vamos fazer um plano de segurança juntos.",
-     "v": "en-US-JennyNeural",
-     "x": [
-      "forty",
-      "late",
-      "like"
-     ]
-    },
-    {
-     "t": "listen",
-     "en": "Yeah. Exactly.",
-     "pt": "É. Exatamente.",
-     "v": "en-NZ-MitchellNeural",
-     "o": [
-      "Yeah. Exactly.",
-      "OK. I'll try.",
-      "We were married for forty-five years."
-     ]
-    },
-    {
-     "t": "meaning",
-     "w": "together",
-     "pt": "juntos",
-     "o": [
-      "deixar",
-      "sentir",
-      "juntos"
-     ]
-    },
-    {
-     "t": "speak",
-     "en": "Yeah. Exactly.",
-     "pt": "É. Exatamente.",
-     "v": "en-NZ-MitchellNeural",
-     "o": [
-      "E quero dormir bem.",
-      "Minhas mãos tremem. Não consigo respirar.",
-      "É. Exatamente."
-     ]
+     "t": "phrase",
+     "en": "OK. I understand.",
+     "pt": "Tá. Entendi.",
+     "v": "en-AU-WilliamMultilingualNeural"
     },
     {
      "t": "bank",
@@ -1617,10 +1489,86 @@
      "pt": "Tá. Entendi.",
      "v": "en-AU-WilliamMultilingualNeural",
      "x": [
-      "feelings",
-      "die",
-      "especially"
+      "week",
+      "how",
+      "or"
+     ],
+     "wr": "translate"
+    },
+    {
+     "t": "phrase",
+     "en": "OK. I'll try.",
+     "pt": "Tá. Vou tentar.",
+     "v": "en-AU-WilliamMultilingualNeural"
+    },
+    {
+     "t": "fill",
+     "en": "OK. I'll try.",
+     "pt": "Tá. Vou tentar.",
+     "v": "en-AU-WilliamMultilingualNeural",
+     "gap": "OK. I'll ___.",
+     "w": "try",
+     "o": [
+      "try",
+      "four",
+      "line"
      ]
+    },
+    {
+     "t": "speak",
+     "en": "OK. I understand.",
+     "pt": "Tá. Entendi.",
+     "v": "en-AU-WilliamMultilingualNeural",
+     "o": [
+      "Tá. Entendi.",
+      "Leve o tempo que precisar.",
+      "Olá, Karen. Olá, Noah. Bem-vindos."
+     ]
+    },
+    {
+     "t": "type",
+     "en": "OK. I'll try.",
+     "pt": "Tá. Vou tentar.",
+     "v": "en-AU-WilliamMultilingualNeural",
+     "x": [
+      "important",
+      "cook",
+      "forty"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "OK. I understand.",
+     "pt": "Tá. Entendi.",
+     "v": "en-AU-WilliamMultilingualNeural",
+     "o": [
+      "Hi. Thank you. I'm a little nervous.",
+      "We were married for forty-five years.",
+      "OK. I understand."
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "OK. I'll try.",
+     "pt": "Tá. Vou tentar.",
+     "v": "en-AU-WilliamMultilingualNeural",
+     "o": [
+      "Você está preocupada com a escola dele.",
+      "Tá. Vou tentar.",
+      "O que aconteceu na reunião?"
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "OK. I'll try.",
+     "pt": "Tá. Vou tentar.",
+     "v": "en-AU-WilliamMultilingualNeural",
+     "x": [
+      "feelings",
+      "night",
+      "funny"
+     ],
+     "wr": "translate"
     }
    ]
   },
@@ -1646,9 +1594,9 @@
      "w": "safety",
      "pt": "segurança",
      "o": [
-      "através",
       "segurança",
-      "trabalho"
+      "pensar",
+      "disse"
      ]
     },
     {
@@ -1662,8 +1610,8 @@
      "pt": "sentido",
      "o": [
       "sense",
-      "about",
-      "how"
+      "work",
+      "through"
      ]
     },
     {
@@ -1678,16 +1626,16 @@
        "sentido"
       ],
       [
-       "hurt",
-       "machucar"
-      ],
-      [
-       "happen",
-       "acontecer"
-      ],
-      [
        "sound",
        "som"
+      ],
+      [
+       "feelings",
+       "sentimentos"
+      ],
+      [
+       "make",
+       "fazer"
       ]
      ]
     },
@@ -1701,9 +1649,9 @@
      "w": "take",
      "pt": "pegar",
      "o": [
-      "hard",
       "take",
-      "was"
+      "hard",
+      "want"
      ]
     },
     {
@@ -1716,9 +1664,9 @@
      "w": "want",
      "pt": "querer",
      "o": [
-      "querer",
+      "pensar",
       "sentimentos",
-      "sentido"
+      "querer"
      ]
     },
     {
@@ -1726,9 +1674,9 @@
      "w": "take",
      "pt": "pegar",
      "o": [
-      "been",
-      "take",
-      "phone"
+      "feel",
+      "phone",
+      "take"
      ]
     },
     {
@@ -1751,10 +1699,16 @@
        "sentido"
       ],
       [
-       "tell",
-       "contar"
+       "make",
+       "fazer"
       ]
      ]
+    },
+    {
+     "t": "phrase",
+     "en": "Let's make a safety plan together.",
+     "pt": "Vamos fazer um plano de segurança juntos.",
+     "v": "en-US-JennyNeural"
     },
     {
      "t": "bank",
@@ -1762,10 +1716,17 @@
      "pt": "Vamos fazer um plano de segurança juntos.",
      "v": "en-US-JennyNeural",
      "x": [
-      "there",
-      "go",
-      "house"
-     ]
+      "we",
+      "hard",
+      "tell"
+     ],
+     "wr": "translate"
+    },
+    {
+     "t": "phrase",
+     "en": "Take your time.",
+     "pt": "Leve o tempo que precisar.",
+     "v": "en-US-JennyNeural"
     },
     {
      "t": "fill",
@@ -1775,9 +1736,9 @@
      "gap": "Take your ___.",
      "w": "time",
      "o": [
-      "hard",
-      "anymore",
-      "time"
+      "time",
+      "is",
+      "hear"
      ]
     },
     {
@@ -1786,19 +1747,9 @@
      "pt": "Vamos fazer um plano de segurança juntos.",
      "v": "en-US-JennyNeural",
      "o": [
-      "Sim. O Bruno precisa de mim.",
-      "Às vezes eu converso com a foto dele.",
-      "Vamos fazer um plano de segurança juntos."
-     ]
-    },
-    {
-     "t": "pick",
-     "w": "want",
-     "pt": "querer",
-     "o": [
-      "mind",
-      "think",
-      "want"
+      "Vamos fazer um plano de segurança juntos.",
+      "Minha filha. E minha vizinha, Mary.",
+      "Mais calmo. Um pouco."
      ]
     },
     {
@@ -1807,53 +1758,44 @@
      "pt": "Leve o tempo que precisar.",
      "v": "en-US-JennyNeural",
      "x": [
-      "worry",
-      "neighbor",
-      "reach"
+      "anxiety",
+      "together",
+      "hard"
      ]
     },
     {
      "t": "listen",
-     "en": "Your feelings make sense.",
-     "pt": "Seus sentimentos fazem sentido.",
+     "en": "Let's make a safety plan together.",
+     "pt": "Vamos fazer um plano de segurança juntos.",
      "v": "en-US-JennyNeural",
      "o": [
-      "What goes through your mind when that happens?",
-      "My daughter said I should come.",
-      "Your feelings make sense."
-     ]
-    },
-    {
-     "t": "meaning",
-     "w": "bad",
-     "pt": "ruim",
-     "o": [
-      "ruim",
-      "sentimentos",
-      "respirar"
+      "So, what brings you here today?",
+      "That helps. My body feels more relaxed.",
+      "Let's make a safety plan together."
      ]
     },
     {
      "t": "speak",
-     "en": "Your feelings make sense.",
-     "pt": "Seus sentimentos fazem sentido.",
+     "en": "Take your time.",
+     "pt": "Leve o tempo que precisar.",
      "v": "en-US-JennyNeural",
      "o": [
       "Leve o tempo que precisar.",
-      "Seus sentimentos fazem sentido.",
-      "Fomos casados por quarenta e cinco anos."
+      "Pode me contar mais sobre isso?",
+      "Podemos encontrar um plano juntos?"
      ]
     },
     {
      "t": "bank",
-     "en": "OK. I'll try.",
-     "pt": "Tá. Vou tentar.",
-     "v": "en-AU-WilliamMultilingualNeural",
+     "en": "Take your time.",
+     "pt": "Leve o tempo que precisar.",
+     "v": "en-US-JennyNeural",
      "x": [
-      "friend",
-      "eight",
-      "anxious"
-     ]
+      "fast",
+      "neighbor",
+      "judge"
+     ],
+     "wr": "translate"
     }
    ]
   },
@@ -1879,9 +1821,9 @@
      "w": "yourself",
      "pt": "você mesmo",
      "o": [
-      "como",
-      "deixar",
-      "você mesmo"
+      "melhor",
+      "você mesmo",
+      "sido"
      ]
     },
     {
@@ -1894,9 +1836,9 @@
      "w": "always",
      "pt": "sempre",
      "o": [
-      "tell",
-      "want",
-      "always"
+      "anxious",
+      "always",
+      "let"
      ]
     },
     {
@@ -1911,16 +1853,16 @@
        "sempre"
       ],
       [
-       "feelings",
-       "sentimentos"
+       "plan",
+       "plano"
       ],
       [
-       "bad",
-       "ruim"
+       "mind",
+       "mente"
       ],
       [
-       "about",
-       "sobre"
+       "sense",
+       "sentido"
       ]
      ]
     },
@@ -1934,9 +1876,9 @@
      "w": "anxious",
      "pt": "ansioso",
      "o": [
-      "safety",
-      "anxious",
-      "been"
+      "feel",
+      "mind",
+      "anxious"
      ]
     },
     {
@@ -1949,9 +1891,9 @@
      "w": "better",
      "pt": "melhor",
      "o": [
-      "sobre",
-      "disse",
-      "melhor"
+      "sido",
+      "melhor",
+      "difícil"
      ]
     },
     {
@@ -1959,9 +1901,9 @@
      "w": "anxious",
      "pt": "ansioso",
      "o": [
-      "work",
       "anxious",
-      "great"
+      "feelings",
+      "make"
      ]
     },
     {
@@ -1984,33 +1926,46 @@
        "sempre"
       ],
       [
-       "time",
-       "tempo"
+       "so",
+       "então"
       ]
      ]
     },
     {
+     "t": "phrase",
+     "en": "Let's make a safety plan together.",
+     "pt": "Vamos fazer um plano de segurança juntos.",
+     "v": "en-US-JennyNeural"
+    },
+    {
      "t": "bank",
      "en": "Let's make a safety plan together.",
      "pt": "Vamos fazer um plano de segurança juntos.",
      "v": "en-US-JennyNeural",
      "x": [
-      "down",
-      "how",
-      "tutor"
-     ]
+      "everyone",
+      "husband",
+      "else"
+     ],
+     "wr": "translate"
+    },
+    {
+     "t": "phrase",
+     "en": "Your feelings make sense.",
+     "pt": "Seus sentimentos fazem sentido.",
+     "v": "en-US-JennyNeural"
     },
     {
      "t": "fill",
-     "en": "Take your time.",
-     "pt": "Leve o tempo que precisar.",
+     "en": "Your feelings make sense.",
+     "pt": "Seus sentimentos fazem sentido.",
      "v": "en-US-JennyNeural",
-     "gap": "___ your time.",
-     "w": "Take",
+     "gap": "Your ___ make sense.",
+     "w": "feelings",
      "o": [
-      "yesterday",
-      "hear",
-      "Take"
+      "end",
+      "feelings",
+      "let"
      ]
     },
     {
@@ -2019,51 +1974,31 @@
      "pt": "Vamos fazer um plano de segurança juntos.",
      "v": "en-US-JennyNeural",
      "o": [
-      "Seus sentimentos fazem sentido.",
+      "Ótimo! Como você se sente agora?",
       "Vamos fazer um plano de segurança juntos.",
-      "E para quem você pode ligar?"
-     ]
-    },
-    {
-     "t": "pick",
-     "w": "better",
-     "pt": "melhor",
-     "o": [
-      "safety",
-      "phone",
-      "better"
+      "Primeiro, o que você disser aqui é confidencial."
      ]
     },
     {
      "t": "type",
-     "en": "Take your time.",
-     "pt": "Leve o tempo que precisar.",
+     "en": "Your feelings make sense.",
+     "pt": "Seus sentimentos fazem sentido.",
      "v": "en-US-JennyNeural",
      "x": [
-      "hi",
-      "just",
-      "hear"
+      "support",
+      "please",
+      "married"
      ]
     },
     {
      "t": "listen",
-     "en": "Your feelings make sense.",
-     "pt": "Seus sentimentos fazem sentido.",
+     "en": "Let's make a safety plan together.",
+     "pt": "Vamos fazer um plano de segurança juntos.",
      "v": "en-US-JennyNeural",
      "o": [
-      "And I want to sleep well.",
-      "Anxious. And sad.",
-      "Your feelings make sense."
-     ]
-    },
-    {
-     "t": "meaning",
-     "w": "make",
-     "pt": "fazer",
-     "o": [
-      "fazer",
-      "ruim",
-      "pensou"
+      "Let's make a safety plan together.",
+      "Is it normal to feel like this?",
+      "Hello, Karen. Hello, Noah. Welcome."
      ]
     },
     {
@@ -2072,21 +2007,22 @@
      "pt": "Seus sentimentos fazem sentido.",
      "v": "en-US-JennyNeural",
      "o": [
-      "Seus sentimentos fazem sentido.",
-      "Talvez eu tente. Obrigada por me ouvir.",
-      "Olá, Ruth. Obrigada por vir."
+      "E quero dormir bem.",
+      "Obrigada por me contar sobre o Frank.",
+      "Seus sentimentos fazem sentido."
      ]
     },
     {
      "t": "bank",
-     "en": "I'm so sorry about Frank.",
-     "pt": "Sinto muito pelo Frank.",
-     "v": "en-US-MichelleNeural",
+     "en": "Your feelings make sense.",
+     "pt": "Seus sentimentos fazem sentido.",
+     "v": "en-US-JennyNeural",
      "x": [
-      "help",
-      "eat",
-      "say"
-     ]
+      "act",
+      "much",
+      "was"
+     ],
+     "wr": "translate"
     }
    ]
   },
@@ -2101,56 +2037,52 @@
      "t": "pairs",
      "p": [
       [
+       "always",
+       "sempre"
+      ],
+      [
        "sense",
        "sentido"
       ],
       [
-       "phone",
-       "telefone"
+       "take",
+       "pegar"
       ],
       [
-       "time",
-       "tempo"
+       "feel",
+       "sentir"
       ],
       [
-       "make",
-       "fazer"
-      ],
-      [
-       "week",
-       "semana"
+       "together",
+       "juntos"
       ]
      ]
     },
     {
      "t": "meaning",
-     "w": "about",
-     "pt": "sobre",
+     "w": "great",
+     "pt": "ótimo",
      "o": [
-      "trabalho",
-      "como",
-      "sobre"
+      "ótimo",
+      "sido",
+      "sentido"
      ]
     },
     {
      "t": "hear",
-     "w": "through",
-     "pt": "através",
+     "w": "week",
+     "pt": "semana",
      "o": [
-      "through",
-      "anxious",
-      "how"
+      "make",
+      "sound",
+      "week"
      ]
     },
     {
-     "t": "pick",
-     "w": "always",
-     "pt": "sempre",
-     "o": [
-      "hurt",
-      "always",
-      "sense"
-     ]
+     "t": "phrase",
+     "en": "How have you been feeling lately?",
+     "pt": "Como você tem se sentido ultimamente?",
+     "v": "en-US-JennyNeural"
     },
     {
      "t": "bank",
@@ -2158,10 +2090,28 @@
      "pt": "Como você tem se sentido ultimamente?",
      "v": "en-US-JennyNeural",
      "x": [
-      "fact",
-      "sometimes",
-      "grief"
+      "math",
+      "really",
+      "homework"
+     ],
+     "wr": "translate"
+    },
+    {
+     "t": "speak",
+     "en": "How have you been feeling lately?",
+     "pt": "Como você tem se sentido ultimamente?",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Você está pensando em tirar a própria vida?",
+      "Como você tem se sentido ultimamente?",
+      "Pensei: 'Todo mundo vai achar que eu sou burro.'"
      ]
+    },
+    {
+     "t": "phrase",
+     "en": "Take your time.",
+     "pt": "Leve o tempo que precisar.",
+     "v": "en-US-JennyNeural"
     },
     {
      "t": "fill",
@@ -2171,45 +2121,9 @@
      "gap": "___ your time.",
      "w": "Take",
      "o": [
-      "tutor",
-      "Take",
-      "goal"
-     ]
-    },
-    {
-     "t": "speak",
-     "en": "How have you been feeling lately?",
-     "pt": "Como você tem se sentido ultimamente?",
-     "v": "en-US-JennyNeural",
-     "o": [
-      "Segure por quatro. Expire por seis.",
-      "Como você tem se sentido ultimamente?",
-      "Minha filha disse que eu devia vir."
-     ]
-    },
-    {
-     "t": "pairs",
-     "p": [
-      [
-       "plan",
-       "plano"
-      ],
-      [
-       "tell",
-       "contar"
-      ],
-      [
-       "hard",
-       "difícil"
-      ],
-      [
-       "think",
-       "pensar"
-      ],
-      [
-       "anxious",
-       "ansioso"
-      ]
+      "make",
+      "when",
+      "Take"
      ]
     },
     {
@@ -2218,10 +2132,41 @@
      "pt": "Leve o tempo que precisar.",
      "v": "en-US-JennyNeural",
      "x": [
-      "second",
-      "her",
-      "boss"
+      "quiet",
+      "mom",
+      "something"
      ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "phone",
+       "telefone"
+      ],
+      [
+       "how",
+       "como"
+      ],
+      [
+       "safety",
+       "segurança"
+      ],
+      [
+       "let",
+       "deixar"
+      ],
+      [
+       "hurt",
+       "machucar"
+      ]
+     ]
+    },
+    {
+     "t": "phrase",
+     "en": "That sounds really hard.",
+     "pt": "Isso parece muito difícil.",
+     "v": "en-US-JennyNeural"
     },
     {
      "t": "listen",
@@ -2229,133 +2174,97 @@
      "pt": "Isso parece muito difícil.",
      "v": "en-US-JennyNeural",
      "o": [
-      "Are you having thoughts of hurting yourself?",
-      "That sounds really hard.",
-      "No phones at dinner?"
+      "Who can support you, Ruth?",
+      "That helps. My body feels more relaxed.",
+      "That sounds really hard."
      ]
     },
     {
-     "t": "meaning",
-     "w": "great",
-     "pt": "ótimo",
+     "t": "speak",
+     "en": "That sounds really hard.",
+     "pt": "Isso parece muito difícil.",
+     "v": "en-US-JennyNeural",
      "o": [
-      "sempre",
-      "ótimo",
-      "pegar"
+      "Leve o tempo que precisar.",
+      "Isso parece muito difícil.",
+      "E para quem você pode ligar?"
      ]
     },
     {
      "t": "pick",
-     "w": "hurt",
-     "pt": "machucar",
+     "w": "through",
+     "pt": "através",
      "o": [
-      "was",
-      "anxious",
-      "hurt"
-     ]
-    },
-    {
-     "t": "bank",
-     "en": "What goes through your mind when that happens?",
-     "pt": "O que passa pela sua cabeça quando isso acontece?",
-     "v": "en-US-JennyNeural",
-     "x": [
-      "meet",
-      "anxious",
-      "sign"
-     ]
-    },
-    {
-     "t": "speak",
-     "en": "What goes through your mind when that happens?",
-     "pt": "O que passa pela sua cabeça quando isso acontece?",
-     "v": "en-US-JennyNeural",
-     "o": [
-      "Leve o tempo que precisar.",
-      "Quem pode apoiar a senhora, Ruth?",
-      "O que passa pela sua cabeça quando isso acontece?"
-     ]
-    },
-    {
-     "t": "hear",
-     "w": "was",
-     "pt": "era",
-     "o": [
-      "always",
-      "was",
-      "work"
-     ]
-    },
-    {
-     "t": "fill",
-     "en": "Your feelings make sense.",
-     "pt": "Seus sentimentos fazem sentido.",
-     "v": "en-US-JennyNeural",
-     "gap": "Your ___ make sense.",
-     "w": "feelings",
-     "o": [
-      "people",
-      "alone",
-      "feelings"
+      "hard",
+      "take",
+      "through"
      ]
     },
     {
      "t": "type",
-     "en": "That sounds really hard.",
-     "pt": "Isso parece muito difícil.",
+     "en": "How have you been feeling lately?",
+     "pt": "Como você tem se sentido ultimamente?",
      "v": "en-US-JennyNeural",
      "x": [
-      "safety",
-      "maybe",
-      "be"
-     ]
-    },
-    {
-     "t": "pairs",
-     "p": [
-      [
-       "feelings",
-       "sentimentos"
-      ],
-      [
-       "want",
-       "querer"
-      ],
-      [
-       "better",
-       "melhor"
-      ],
-      [
-       "happen",
-       "acontecer"
-      ],
-      [
-       "mind",
-       "mente"
-      ]
+      "feelings",
+      "he",
+      "two"
      ]
     },
     {
      "t": "bank",
-     "en": "Your feelings make sense.",
-     "pt": "Seus sentimentos fazem sentido.",
+     "en": "That sounds really hard.",
+     "pt": "Isso parece muito difícil.",
      "v": "en-US-JennyNeural",
      "x": [
-      "ask",
-      "talk",
-      "photo"
+      "like",
+      "were",
+      "stop"
+     ],
+     "wr": "translate"
+    },
+    {
+     "t": "meaning",
+     "w": "think",
+     "pt": "pensar",
+     "o": [
+      "sido",
+      "pensar",
+      "pensou"
      ]
     },
     {
      "t": "speak",
-     "en": "Your feelings make sense.",
-     "pt": "Seus sentimentos fazem sentido.",
+     "en": "Take your time.",
+     "pt": "Leve o tempo que precisar.",
      "v": "en-US-JennyNeural",
      "o": [
-      "Talvez eu tente. Obrigada por me ouvir.",
-      "Seus sentimentos fazem sentido.",
-      "Olá, Ruth. Obrigada por vir."
+      "Leve o tempo que precisar.",
+      "E quero dormir bem.",
+      "É. Exatamente."
      ]
+    },
+    {
+     "t": "hear",
+     "w": "happen",
+     "pt": "acontecer",
+     "o": [
+      "work",
+      "happen",
+      "feel"
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "Take your time.",
+     "pt": "Leve o tempo que precisar.",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "third",
+      "better",
+      "through"
+     ],
+     "wr": "translate"
     }
    ]
   }

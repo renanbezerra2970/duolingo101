@@ -1501,7 +1501,7 @@
     function typed(answer, kind) {
       const box = document.createElement("div");
       box.className = "dr-type";
-      box.innerHTML = `<textarea class="write-input" rows="2" autocomplete="off" autocapitalize="sentences" spellcheck="false" placeholder="Escreva em inglês"></textarea><div class="pr-msg"></div>`;
+      box.innerHTML = `<textarea class="write-input" rows="2" autocomplete="off" autocapitalize="sentences" spellcheck="false" placeholder="${answer.includes(" ") ? "Escreva em inglês" : "Escreva a palavra"}"></textarea><div class="pr-msg"></div>`;
       $stage.appendChild(box);
       const $in = box.querySelector("textarea");
       $in.oninput = () => setFooter({ label: "Verificar", disabled: !$in.value.trim() });
@@ -1543,6 +1543,34 @@
           add(prompt("ESCOLHA O SIGNIFICADO", `O que significa <button class="nw-play big" data-w="${esc(sc.w)}">${SPEAKER}<b>${esc(sc.w)}</b></button>?`));
           if (mode.listen) say(sc.w);
           return choices(sc.o, sc.pt);
+        case "phrase":
+          add(`${prompt("✨ FRASE NOVA", "")}<div class="dr-card dr-phrase">${speakerBig()}<div class="dr-sent en">${wordsHTML(sc.en)}</div><div class="dr-pt">${esc(sc.pt)}</div></div>
+            <p class="dr-hint">Ouça e leia com atenção: ela vai aparecer nos próximos exercícios. Toque nas palavras para ver a tradução.</p>`);
+          wire((b) => sayLine(sc, b));
+          sayLine(sc, el.querySelector(".big-speaker"));
+          phase = "result";
+          setFooter({ label: "Continuar" });
+          return;
+        case "spell":
+          if (!mode.write) {
+            add(`${prompt("🎧 O QUE VOCÊ OUVE?", "Toque na palavra que você ouviu")}<div class="dr-listen">${speakerBig()}</div>`);
+            wire(() => say(sc.w));
+            say(sc.w);
+            return choices(sc.o, sc.w, { en: true });
+          }
+          add(`${prompt("✍️ ESCREVA A PALAVRA QUE VOCÊ OUVE", "")}<div class="dr-listen">${speakerBig()}</div><p class="dr-hint">Dica: ${esc(sc.pt)}</p>`);
+          wire(() => say(sc.w));
+          say(sc.w);
+          return typed(sc.w, "copy");
+        case "copy":
+          if (!mode.write) {
+            add(prompt("MONTE A FRASE EM INGLÊS", esc(sc.pt)));
+            return tiles(sc.en, sc.x);
+          }
+          add(`${prompt("✍️ COPIE A FRASE", "")}<div class="dr-sentence">${speakerBig()}<span class="en">${wordsHTML(sc.en)}</span></div><div class="dr-pt-line">${esc(sc.pt)}</div>`);
+          wire((b) => sayLine(sc, b));
+          if (mode.listen) sayLine(sc, el.querySelector(".big-speaker"));
+          return typed(sc.en, "copy");
         case "pick":
           add(prompt("ESCOLHA A PALAVRA", `Como se diz “${esc(sc.pt)}”?`));
           return choices(sc.o, sc.w, { en: true, speakTap: true });
@@ -1562,6 +1590,11 @@
           sayLine(sc, el.querySelector(".big-speaker"));
           return choices(sc.o, sc.en, { en: true });
         case "bank":
+          if (mode.write && sc.wr === "copy") { // 1ª metade: escreve vendo a frase
+            add(`${prompt("✍️ COPIE A FRASE", "")}<div class="dr-sentence">${speakerBig()}<span class="en">${wordsHTML(sc.en)}</span></div><div class="dr-pt-line">${esc(sc.pt)}</div>`);
+            wire((b) => sayLine(sc, b));
+            return typed(sc.en, "copy");
+          }
           if (mode.write) {
             add(prompt("✍️ ESCREVA EM INGLÊS", esc(sc.pt)));
             return typed(sc.en, "translate");

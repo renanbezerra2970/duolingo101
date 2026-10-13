@@ -431,3 +431,6 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .pp.cur { color: var(--text); background: color-mix(in srgb, var(--orange) 22%, transparent); font-weight: 900; }
 .pp.done { color: var(--green); }
 .pp.done::after { content: " ✓"; font-size: 13px; }
+.dr-phrase { max-width: 460px; }
+.dr-sent { font-size: 24px; font-weight: 900; text-align: center; line-height: 1.4; }
+.dr-phrase .dr-pt { font-size: 17px; text-align: center; }

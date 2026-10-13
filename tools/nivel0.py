@@ -134,13 +134,16 @@ def build(unit, taught_before, pro, rng):
             used_sents[s["en"]] = used_sents.get(s["en"], 0) + 1
         return chosen
 
-    def sentence_screens(s, kind):
+    def sentence_screens(s, kind, wr="translate"):
         base = {"en": s["en"], "pt": s["pt"], "v": s["v"]}
         others = [x for x in sents if x["en"] != s["en"]]
-        if kind == "bank":
+        if kind == "phrase":  # apresenta a frase antes de qualquer exercício com ela
+            return {"t": "phrase", **base}
+        if kind in ("bank", "copy"):
             extra = [w for w in all_words if w not in lem_set(s["en"])]
             rng.shuffle(extra)
-            return {"t": "bank", **base, "x": extra[:3]}
+            # bank: monta com blocos a partir da tradução; com ✍️ Escrita, "wr" diz se digita copiando ou traduzindo
+            return {"t": kind, **base, "x": extra[:3], **({"wr": wr} if kind == "bank" else {})}
         if kind == "listen":
             o = opts(s["en"], [x["en"] for x in others])
             return {"t": "listen", **base, "o": o}
@@ -168,7 +171,7 @@ def build(unit, taught_before, pro, rng):
             return {"t": "intro", "w": w, "pt": pool_gloss[w]}
         if t == "meaning":
             return {"t": "meaning", "w": w, "pt": pool_gloss[w], "o": opts(pool_gloss[w], [pool_gloss[x] for x in pool])}
-        if t in ("pick", "hear"):
+        if t in ("pick", "hear", "spell"):
             return {"t": t, "w": w, "pt": pool_gloss[w], "o": opts(w, pool)}
         raise ValueError(t)
 
@@ -199,8 +202,22 @@ def build(unit, taught_before, pro, rng):
             rev = [w for w in before] or new
             rng.shuffle(rev)
             r = (rev * 3)[:3]
-            S = pick_sents(known, set(new), 4)
-            S = (S * 4)[:4]
+            S = pick_sents(known, set(new), 2)
+            S = (S * 2)[:2]
+            first_half = i < LESSONS // 2
+            # frases: sempre apresentadas antes; na 1ª metade, nada de escrever frase inteira a partir do áudio
+            # (só palavras ou copiar a frase vendo); ditado de frase inteira só na 2ª metade
+            sentence_part = [
+                sentence_screens(S[0], "phrase"),
+                sentence_screens(S[0], "bank", "copy" if first_half else "translate"),
+                sentence_screens(S[1], "phrase"),
+                sentence_screens(S[1], "fill"),
+                sentence_screens(S[0], "speak"),
+                word_screen("spell", n1, known) if first_half else sentence_screens(S[1], "type"),
+                sentence_screens(S[0], "listen"),
+                sentence_screens(S[1], "speak"),
+                sentence_screens(S[1], "copy") if first_half else sentence_screens(S[1], "bank", "translate"),
+            ]
             screens = [
                 word_screen("intro", n1, known), word_screen("meaning", n1, known),
                 word_screen("intro", n2, known), word_screen("hear", n2, known),
@@ -209,12 +226,7 @@ def build(unit, taught_before, pro, rng):
                 word_screen("intro", n4, known), word_screen("meaning", n4, known),
                 word_screen("hear", n3, known),
                 pairs([n3, n4, n1, n2], known),
-                sentence_screens(S[0], "bank"), sentence_screens(S[1], "fill"),
-                sentence_screens(S[0], "speak"), word_screen("pick", n4, known),
-                sentence_screens(S[1], "type"), sentence_screens(S[2], "listen"),
-                word_screen("meaning", r[0], known), sentence_screens(S[2], "speak"),
-                sentence_screens(S[3], "bank"),
-            ]
+            ] + sentence_part
             title = " · ".join(new)
             title_pt = " · ".join(pool_gloss[w] for w in new)
         else:  # revisão geral
@@ -223,19 +235,29 @@ def build(unit, taught_before, pro, rng):
             rng.shuffle(ws)
             G = [s for s in sents if s["guide"]] + pick_sents(known, set(), 5)
             G = list({s["en"]: s for s in G}.values())
-            G = (G * 5)[:5]
+            G = (G * 3)[:3]
             w = (ws * 3)
             screens = [
                 pairs(w[0:5], known), word_screen("meaning", w[5], known), word_screen("hear", w[6], known),
-                word_screen("pick", w[7], known), sentence_screens(G[0], "bank"), sentence_screens(G[1], "fill"),
-                sentence_screens(G[0], "speak"), pairs(w[8:13], known), sentence_screens(G[1], "type"),
-                sentence_screens(G[2], "listen"), word_screen("meaning", w[13], known), word_screen("pick", w[14], known),
-                sentence_screens(G[3], "bank"), sentence_screens(G[3], "speak"), word_screen("hear", w[15], known),
-                sentence_screens(G[4], "fill"), sentence_screens(G[2], "type"), pairs(w[16:21], known),
-                sentence_screens(G[4], "bank"), sentence_screens(G[4], "speak"),
+                sentence_screens(G[0], "phrase"), sentence_screens(G[0], "bank"), sentence_screens(G[0], "speak"),
+                sentence_screens(G[1], "phrase"), sentence_screens(G[1], "fill"), sentence_screens(G[1], "type"),
+                pairs(w[8:13], known),
+                sentence_screens(G[2], "phrase"), sentence_screens(G[2], "listen"), sentence_screens(G[2], "speak"),
+                word_screen("pick", w[14], known), sentence_screens(G[0], "type"), sentence_screens(G[2], "bank"),
+                word_screen("meaning", w[13], known), sentence_screens(G[1], "speak"), word_screen("hear", w[15], known),
+                sentence_screens(G[1], "bank"),
             ]
             title, title_pt = "Review", "Revisão geral"
         assert len(screens) == 20
+        # toda frase pedida num exercício já foi apresentada antes, na mesma lição
+        shown = set()
+        for sc in screens:
+            if sc["t"] == "phrase":
+                shown.add(sc["en"])
+            elif "en" in sc:
+                assert sc["en"] in shown, (lid, sc["t"], sc["en"])
+        if i < LESSONS // 2:
+            assert not any(sc["t"] == "type" for sc in screens), lid
         lessons.append({"id": lid, "title": title, "titlePt": title_pt, "emoji": EMOJIS[i], "words": new, "screens": screens})
     return {"unit": unit["id"], "lessons": lessons}, set(words)
 
