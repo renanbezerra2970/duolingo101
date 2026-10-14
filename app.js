@@ -42,6 +42,14 @@
     out.xp = Math.max(a.xp || 0, b.xp || 0);
     out.streak = Math.max(a.streak || 0, b.streak || 0);
     out.lastDay = (a.lastDay || "") > (b.lastDay || "") ? a.lastDay : b.lastDay;
+    out.bestStreak = Math.max(a.bestStreak || 0, b.bestStreak || 0, out.streak);
+    if (a.words || b.words) {
+      const seen = { ...(b.words?.seen || {}) };
+      for (const [k, n] of Object.entries(a.words?.seen || {})) seen[k] = Math.max(n, seen[k] || 0);
+      out.words = { taught: { ...(b.words?.taught || {}), ...(a.words?.taught || {}) }, seen };
+    }
+    out.mistakes = { words: { ...(b.mistakes?.words || {}), ...(a.mistakes?.words || {}) }, sents: { ...(b.mistakes?.sents || {}), ...(a.mistakes?.sents || {}) } };
+    out.profile = a.profile?.name ? a.profile : b.profile || a.profile;
     return out;
   }
   if (location.hash.startsWith("#import=")) {
@@ -64,6 +72,8 @@
         text: "Aqui você aprende inglês com <b>histórias</b>: diálogos com áudio em cada frase, perguntas sobre o que aconteceu e desafios de fala e escrita. Vamos ver como tudo funciona?" },
       { target: ".tabs", title: "Histórias e Pro",
         text: "<b>📚 Histórias</b> acompanha o seu curso, unidade por unidade. <b>💼 Pro</b> traz conversas da vida profissional, com <b>busca</b> para achar a sua profissão." },
+      { target: "#menu", round: true, title: "Menu", icon: "☰",
+        text: "Aqui ficam <b>🏋️ Praticar</b> (revisão dos seus erros, palavras, fala e escuta), <b>🎯 Missões</b> do dia e o seu <b>👤 Perfil</b>." },
       { target: ".unit.open .unit-banner", title: "Unidades recolhíveis",
         text: "Toque no título de uma unidade para <b>abrir ou recolher</b>. A unidade em que você está estudando fica aberta. O botão <b>📖 GUIA</b> traz as frases-chave com áudio." },
       { target: ".unit.open .levels", title: "5 níveis de dificuldade",
@@ -123,7 +133,8 @@
   const levelInfo = (n) => state.levels.find(l => l.n === n) || { n, name: "", rate: "-5%" };
   const xpFor = (level, repeat) => (repeat ? 5 : 10 + 5 * level);
 
-  function today() { return new Date().toISOString().slice(0, 10); }
+  const ymd = (d) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+  function today() { return ymd(new Date()); }
   // devolve as faces conquistadas pela primeira vez nesta rodada
   function registerStudy(key, accuracy, level, earned = {}) {
     const prev = progress.lessons[key];
@@ -132,16 +143,125 @@
     for (const f of ["listen", "speak", "write"]) if (earned[f]) faces[f] = true;
     const fresh = FACES.filter(f => faces[f.id] && !before[f.id] && f.id !== "read").map(f => f.id);
     progress.lessons[key] = { done: true, best: Math.max(accuracy, prev?.best || 0), at: today(), faces };
-    progress.xp += xpFor(level, !!prev) + 5 * fresh.length;
-    const t = today();
-    if (progress.lastDay !== t) {
-      const y = new Date(Date.now() - 864e5).toISOString().slice(0, 10);
-      progress.streak = progress.lastDay === y ? progress.streak + 1 : 1;
-      progress.lastDay = t;
-    }
+    gainXP(xpFor(level, !!prev) + 5 * fresh.length);
+    touchStreak();
+    const d = daily();
+    d.lessons = (d.lessons || 0) + 1;
+    if (earned.listen) d.listenLessons = (d.listenLessons || 0) + 1;
+    if (accuracy >= 90) d.precise = (d.precise || 0) + 1;
+    if (level === 0) d.zero = (d.zero || 0) + 1;
+    checkMissions();
     saveProgress(progress);
     return fresh;
   }
+
+  /* ---------- Dia a dia: XP, sequência, missões, conquistas e erros ---------- */
+  progress.profile = Object.assign({ name: "", avatar: "🦊", color: "#58cc02", goal: 30, since: today() }, progress.profile || {});
+  progress.mistakes ||= { words: {}, sents: {} };
+  progress.daily ||= {};
+  progress.achieved ||= {};
+  progress.bestStreak = Math.max(progress.bestStreak || 0, progress.streak || 0);
+  // contadores do dia (zeram à meia-noite)
+  function daily() {
+    if (progress.daily.day !== today()) progress.daily = { day: today(), done: {} };
+    progress.daily.done ||= {};
+    return progress.daily;
+  }
+  function gainXP(n) {
+    progress.xp += n;
+    const d = daily();
+    d.xp = (d.xp || 0) + n;
+  }
+  function touchStreak() {
+    const t = today();
+    if (progress.lastDay === t) return;
+    const y = ymd(new Date(Date.now() - 864e5));
+    progress.streak = progress.lastDay === y ? progress.streak + 1 : 1;
+    progress.lastDay = t;
+    progress.bestStreak = Math.max(progress.bestStreak || 0, progress.streak);
+  }
+  function bump(key, n = 1) {
+    const d = daily();
+    d[key] = (d[key] || 0) + n;
+    checkMissions();
+    saveProgress(progress);
+  }
+
+  const MISSION_XP = 10;
+  const MISSION_POOL = [
+    { id: "lessons2", icon: "📚", text: "Conclua 2 lições", key: "lessons", target: 2 },
+    { id: "listen1", icon: "🎧", text: "Conclua 1 lição com 🎧 Escuta ligada", key: "listenLessons", target: 1 },
+    { id: "speak10", icon: "🎤", text: "Fale 10 frases corretamente", key: "speak", target: 10, needsMic: true },
+    { id: "write5", icon: "✍️", text: "Acerte 5 exercícios de escrita", key: "write", target: 5 },
+    { id: "words5", icon: "✨", text: "Aprenda 5 palavras novas", key: "words", target: 5 },
+    { id: "practice1", icon: "🏋️", text: "Faça 1 sessão em Praticar", key: "practice", target: 1 },
+    { id: "precise1", icon: "🎯", text: "Conclua uma lição com 90% de precisão", key: "precise", target: 1 },
+    { id: "lessons3", icon: "🚀", text: "Conclua 3 lições", key: "lessons", target: 3 },
+  ];
+  // a meta diária e mais 2 missões sorteadas pela data (as mesmas o dia todo)
+  function todaysMissions() {
+    const goal = { id: "goal", icon: "⚡", text: `Ganhe ${progress.profile.goal} XP (sua meta diária)`, key: "xp", target: progress.profile.goal };
+    const pool = MISSION_POOL.filter(m => !m.needsMic || SR);
+    let seed = [...today()].reduce((a, ch) => (a * 31 + ch.charCodeAt(0)) >>> 0, 7);
+    const picks = [];
+    while (picks.length < 2) {
+      seed = (seed * 1103515245 + 12345) >>> 0;
+      const m = pool[(seed >>> 8) % pool.length];
+      if (!picks.some(x => x.key === m.key)) picks.push(m);
+    }
+    return [goal, ...picks];
+  }
+  const missionValue = (m) => Math.min(m.target, daily()[m.key] || 0);
+  const pendingMissions = () => todaysMissions().filter(m => !daily().done[m.id]).length;
+
+  const doneKeys = () => Object.keys(progress.lessons).filter(k => progress.lessons[k]?.done);
+  const ACHIEVEMENTS = [
+    { id: "streak", icon: "🔥", name: "Constância", unit: "dias seguidos (recorde)", tiers: [3, 7, 30, 100], value: () => progress.bestStreak || 0 },
+    { id: "lessons", icon: "📚", name: "Leitor", unit: "lições concluídas", tiers: [5, 25, 75, 200], value: () => doneKeys().length },
+    { id: "words", icon: "✨", name: "Vocabulário", unit: "palavras aprendidas", tiers: [25, 100, 300, 1000], value: () => Object.keys(progress.words?.taught || {}).length },
+    { id: "xp", icon: "⚡", name: "Dedicação", unit: "XP no total", tiers: [100, 500, 2000, 10000], value: () => progress.xp },
+    { id: "faces", icon: "⭕", name: "Círculo completo", unit: "lições com as 4 faces", tiers: [1, 5, 20, 50], value: () => doneKeys().filter(k => { const f = facesOf(k); return f.read && f.listen && f.speak && f.write; }).length },
+    { id: "native", icon: "🏆", name: "Rumo ao nativo", unit: "histórias no nível 5", tiers: [1, 5, 15, 30], value: () => doneKeys().filter(k => k.endsWith("@5")).length },
+  ];
+  const tierOf = (a, v = a.value()) => a.tiers.filter(t => v >= t).length;
+
+  function checkMissions() {
+    const d = daily();
+    for (const m of todaysMissions()) {
+      if (d.done[m.id] || (d[m.key] || 0) < m.target) continue;
+      d.done[m.id] = true;
+      progress.xp += MISSION_XP; // bônus não conta para a própria meta
+      d.bonus = (d.bonus || 0) + MISSION_XP;
+      toast(`🎯 Missão cumprida: ${m.text}. +${MISSION_XP} XP`);
+    }
+    for (const a of ACHIEVEMENTS) {
+      const t = tierOf(a);
+      if (t > (progress.achieved[a.id] || 0)) {
+        progress.achieved[a.id] = t;
+        toast(`🏅 Conquista: ${a.name} ${"I II III IV".split(" ")[t - 1]}`);
+      }
+    }
+  }
+
+  // erros para a coleção "Erros" do Praticar: palavras ({w}) e frases ({en, pt, v})
+  function addMistake(item) {
+    const m = progress.mistakes;
+    if (item.w) {
+      const w = lemmaOf(item.w) || item.w.toLowerCase();
+      if (!state.glossary[w]) return;
+      m.words[w] = { n: (m.words[w]?.n || 0) + 1, at: today() };
+    } else if (item.en) {
+      m.sents[item.en] = { pt: item.pt, v: item.v, n: (m.sents[item.en]?.n || 0) + 1, at: today() };
+    }
+    saveProgress(progress);
+  }
+  function resolveMistake(item) {
+    const m = progress.mistakes;
+    const [box, k] = item.w ? [m.words, lemmaOf(item.w) || item.w.toLowerCase()] : [m.sents, item.en];
+    if (box[k] && --box[k].n <= 0) delete box[k];
+    saveProgress(progress);
+  }
+  const mistakeCount = () => Object.keys(progress.mistakes.words).length + Object.keys(progress.mistakes.sents).length;
 
   /* ---------- Áudio: MP3 pré-gerado (edge-tts) ou voz do navegador como reserva ---------- */
   let current = null, lastKey = null, lastAt = 0;
@@ -355,8 +475,7 @@
     stopAudio();
     const pro = section === "pro";
     openUnits[section] ||= new Set([defaultOpen(section)]);
-    let html = `<header class="topbar"><div class="brand"><img src="/icons/icon.svg" alt="">prolingo</div>
-      <div class="stats">${installPrompt ? `<button class="install" id="install">⬇ Instalar</button>` : ""}<button class="help" id="help" aria-label="Como funciona o app" title="Como funciona">?</button><span class="fire" title="Dias seguidos">🔥 ${progress.streak}</span><span class="xp" title="XP">⚡ ${progress.xp} XP</span></div></header>
+    let html = topbarHTML(`${installPrompt ? `<button class="install" id="install">⬇ Instalar</button>` : ""}<button class="help" id="help" aria-label="Como funciona o app" title="Como funciona">?</button>`) + `
       <nav class="tabs" role="tablist">
         <a href="#/" class="tab ${pro ? "" : "on"}" role="tab" aria-selected="${!pro}">📚 Histórias</a>
         <a href="#/pro" class="tab ${pro ? "on" : ""}" role="tab" aria-selected="${pro}">💼 Pro</a>
@@ -776,6 +895,7 @@
       k = parts.length;
       paintParts();
       onOk();
+      bump("speak");
       box.classList.add("ok");
       $msg.innerHTML = best.exact ? "Perfeito! 🎉" : `Muito bem! 👍 Repare no que está marcado com <b class="mk-legend">!</b>${original}`;
       setBlocker(null);
@@ -1138,7 +1258,7 @@
         $feed.classList.remove("quiz");
         unpin();
         scrollDown(box);
-        if (ok) stats.writeOk++;
+        if (ok) { stats.writeOk++; bump("write"); } else addMistake({ en: line.en, pt: line.pt, v: line.voice });
         box.classList.add(ok ? "ok" : "bad");
         blocker = null;
         setFooter({ ok, bad: !ok, fb: ok ? "Correto!" : "Não foi dessa vez" });
@@ -1183,7 +1303,9 @@
       $feed.appendChild(el);
       scrollDown(el);
       playWord(w.show);
+      let missed = false;
       el.querySelectorAll(".opt").forEach(b => b.onclick = () => {
+        if (b.dataset.ok !== "1" && !missed) { missed = true; addMistake({ w: w.lemma }); }
         if (b.dataset.ok === "1") {
           b.classList.add("right"); b.querySelector(".box").textContent = "✓";
           el.querySelectorAll(".opt").forEach(x => x.disabled = true);
@@ -1253,7 +1375,9 @@
       };
       const fresh = registerStudy(key, acc, level, earned);
       const learned = newWords.filter(w => introduced.has(w.lemma));
+      const newWords_ = learned.filter(w => !progress.words.taught[w.lemma]).length;
       for (const w of learned) progress.words.taught[w.lemma] ||= today();
+      if (newWords_) bump("words", newWords_);
       if (!repeat) for (const l of new Set(lemmasOf(steps).map(o => o.lemma))) progress.words.seen[l] = (progress.words.seen[l] || 0) + 1;
       saveProgress(progress);
       const faces = facesOf(key);
@@ -1333,26 +1457,29 @@
   const tokensOf = (s) => s.match(WORD_RE) || [];
   const sameTokens = (a, b) => tokensOf(a).join(" ").toLowerCase() === tokensOf(b).join(" ").toLowerCase();
 
-  async function renderDrill(id) {
-    const found = findLesson(id);
-    if (!found?.zero) return go("#/");
-    const { lesson, unit, section } = found;
-    const home = homeHash(section);
-    const level = 0, key = pkey(lesson.id, 0);
+  // practice: sessão do Praticar ({ lesson, kind, xp, force, hint }); sem ela, é uma lição do nível 0
+  async function renderDrill(id, practice = null) {
+    const P = practice;
+    const found = P ? null : findLesson(id);
+    if (!P && !found?.zero) return go("#/");
+    const { lesson, unit, section } = P ? { lesson: P.lesson } : found;
+    const home = P ? "#/practice" : homeHash(section);
+    const level = 0, key = P ? "practice" : pkey(lesson.id, 0);
     const info = levelInfo(0);
     const screens = lesson.screens;
     await ensureWords();
-    document.title = `Vocabulário ${found.index + 1} – ${unit.title} – Prolingo`;
+    document.title = P ? `${lesson.title} – Praticar – Prolingo` : `Vocabulário ${found.index + 1} – ${unit.title} – Prolingo`;
 
-    const mode = { listen: !!progress.autoplay, speak: !!progress.modes.speak && !!SR, write: !!progress.modes.write };
+    const mode = { listen: !!progress.autoplay, speak: !!progress.modes.speak && !!SR, write: !!progress.modes.write, ...(P?.force || {}) };
     const eligible = { ...mode };
     const stats = { speakOk: 0, speakTotal: 0, writeOk: 0, writeTotal: 0 };
     let queue = screens.map((_, i) => i), qi = -1, firstOk = 0, scored = 0, retried = [];
     let blocker = null, checker = null, phase = "start", isWrite = false;
 
     progress.inProgress ||= {};
-    const saved = progress.inProgress[key]?.queue ? progress.inProgress[key] : null;
+    const saved = !P && progress.inProgress[key]?.queue ? progress.inProgress[key] : null;
     const snapshot = () => {
+      if (P) return;
       progress.inProgress[key] = { queue, qi, firstOk, scored, retried, stats: { ...stats }, eligible: { ...eligible }, pct: Math.round(((qi + 1) / queue.length) * 100), at: today() };
       saveProgress(progress);
     };
@@ -1375,13 +1502,15 @@
         <div class="story-head">
           <div class="art">${lesson.emoji}</div>
           <div class="title"><span class="en drill-title">${esc(lesson.title)}</span></div>
+          ${P ? `<div class="sub">${esc(lesson.titlePt)}</div>
+          <p class="mode-hint">${esc(P.hint)} Vale <b>+${P.xp} XP</b>.</p>` : `
           <div class="sub">${esc(lesson.titlePt)} · ${esc(unit.title)}</div>
           <div class="lv-badge lv-0">Nível 0 · ${esc(info.name)} <span>${esc(info.cefr || "")}</span></div>
           <div class="start-ring">${ringSVG(facesOf(key))}</div>
           ${wordsList.length ? `<div class="new-words"><div class="nw-title">✨ Palavras desta lição</div>${wordListHTML(wordsList)}</div>`
             : `<p class="mode-hint">Revisão de todas as palavras da unidade.</p>`}
           ${saved ? `<p class="resume-note">⏸ Você parou em <b>${saved.pct}%</b> desta lição. Continue de onde parou ou recomece.</p>` : ""}
-          <p class="mode-hint">20 exercícios curtos. Ligue os modos <b>antes de começar</b> para completar o círculo: 🎧 escuta, 🎤 fala (repetir frases) e ✍️ escrita (digitar em vez de montar).</p>
+          <p class="mode-hint">20 exercícios curtos. Ligue os modos <b>antes de começar</b> para completar o círculo: 🎧 escuta, 🎤 fala (repetir frases) e ✍️ escrita (digitar em vez de montar).</p>`}
         </div>
       </div>
     </div>
@@ -1676,7 +1805,12 @@
       phase = "result";
       const first = !retried.includes(queue[qi]) || queue.indexOf(queue[qi]) === qi;
       if (first) { scored++; if (ok) firstOk++; }
-      if (first && isWrite) { stats.writeTotal++; if (ok) stats.writeOk++; } // escrita conta a 1ª tentativa
+      if (first && isWrite) { stats.writeTotal++; if (ok) { stats.writeOk++; bump("write"); } } // escrita conta a 1ª tentativa
+      // erros vão para a coleção "Erros"; acertar no Praticar tira da lista
+      const item = ["meaning", "pick", "hear", "spell", "fill"].includes(sc.t) ? { w: sc.w }
+        : sc.en && sc.t !== "pairs" ? { en: sc.en, pt: sc.pt, v: sc.v } : null;
+      if (item && !ok) addMistake(item);
+      else if (item && P && first) resolveMistake(item);
       if (ok) {
         if (sc.en && sc.t !== "listen") sayLine(sc);
         else if (sc.w) say(sc.w);
@@ -1699,10 +1833,35 @@
       show(screens[queue[qi]]);
     }
 
+    function finishPractice(acc) {
+      gainXP(P.xp);
+      touchStreak();
+      bump("practice");
+      $app.innerHTML = `<div class="end">
+        <div class="big">${lesson.emoji}</div>
+        <h1>Prática concluída!</h1>
+        <p style="color:var(--muted);margin:0">${esc(lesson.title)} · ${esc(lesson.titlePt)}</p>
+        <div class="cards">
+          <div class="card"><div class="k">XP</div><div class="v">⚡ ${P.xp}</div></div>
+          <div class="card green"><div class="k">PRECISÃO</div><div class="v">🎯 ${acc}%</div></div>
+        </div>
+        ${P.kind === "errors" ? `<p style="color:var(--muted)">${mistakeCount() ? `Ainda há <b>${mistakeCount()}</b> itens na sua lista de erros.` : "Sua lista de erros está zerada! 🎉"}</p>` : ""}
+        </div>
+        <div class="footer"><div class="footer-inner">
+          <button class="btn ghost" id="again">Praticar de novo</button>
+          <button class="btn" id="cont">Continuar</button>
+        </div></div>`;
+      document.getElementById("again").onclick = () => renderPracticeSession(P.kind);
+      document.getElementById("cont").onclick = () => go(home);
+      document.getElementById("cont").focus();
+      keyHandler = null;
+    }
+
     function finish() {
       cleanup();
       clearSnapshot();
       const acc = scored ? Math.round((firstOk / scored) * 100) : 100;
+      if (P) return finishPractice(acc);
       const repeat = !!progress.lessons[key];
       const speakRate = stats.speakTotal ? stats.speakOk / stats.speakTotal : 0;
       const writeRate = stats.writeTotal ? stats.writeOk / stats.writeTotal : 0;
@@ -1712,7 +1871,9 @@
         write: eligible.write && mode.write && stats.writeTotal > 0 && writeRate >= PASS_RATE,
       };
       const fresh = registerStudy(key, acc, 0, earned);
+      const newWords_ = lesson.words.filter(w => !progress.words.taught[w]).length;
       for (const w of lesson.words) progress.words.taught[w] ||= today();
+      if (newWords_) bump("words", newWords_);
       saveProgress(progress);
       const faces = facesOf(key);
       const zl = lessonsFor(unit.id, 0);
@@ -1791,6 +1952,314 @@
   }
 
 
+  /* ---------- Menu lateral ---------- */
+  const NAV = [
+    { page: "", hash: "#/", icon: "🏠", label: "Aprender" },
+    { page: "practice", hash: "#/practice", icon: "🏋️", label: "Praticar" },
+    { page: "missions", hash: "#/missions", icon: "🎯", label: "Missões" },
+    { page: "profile", hash: "#/profile", icon: "👤", label: "Perfil" },
+  ];
+  const avatarHTML = (size = "") => `<span class="avatar-dot ${size}" style="background:${esc(progress.profile.color)}">${esc(progress.profile.avatar)}</span>`;
+  function topbarHTML(extra = "") {
+    return `<header class="topbar">
+      <button class="menu-btn" id="menu" aria-label="Abrir menu" aria-controls="drawer">☰</button>
+      <div class="brand"><img src="/icons/icon.svg" alt="">prolingo</div>
+      <div class="stats">${extra}<span class="fire" title="Dias seguidos">🔥 ${progress.streak}</span><span class="xp" title="XP">⚡ ${progress.xp} XP</span></div></header>`;
+  }
+  const $drawer = document.createElement("nav");
+  $drawer.id = "drawer";
+  $drawer.setAttribute("aria-label", "Menu principal");
+  const $scrim = document.createElement("div");
+  $scrim.className = "drawer-scrim";
+  document.body.append($scrim, $drawer);
+  let currentPage = "";
+  function paintDrawer(page = currentPage) {
+    currentPage = page === "pro" || page === "guide" || page === undefined ? "" : page === "words" ? "practice" : page;
+    const pend = state.units.length ? pendingMissions() : 0;
+    $drawer.innerHTML = `<div class="dr-brand"><img src="/icons/icon.svg" alt="">prolingo</div>
+      <a class="dr-user" href="#/profile">${avatarHTML()}<span><b>${esc(progress.profile.name || "Seu perfil")}</b><small>🔥 ${progress.streak} · ⚡ ${progress.xp} XP</small></span></a>
+      ${NAV.map(n => `<a class="dr-item ${n.page === currentPage ? "on" : ""}" href="${n.hash}"><span class="dr-ic">${n.icon}</span>${n.label}${n.page === "missions" && pend ? `<em class="dr-badge">${pend}</em>` : ""}</a>`).join("")}`;
+  }
+  const openDrawer = () => { paintDrawer(); document.body.classList.add("drawer-open"); $drawer.querySelector(".dr-item.on, .dr-item")?.focus(); };
+  const closeDrawer = () => document.body.classList.remove("drawer-open");
+  $scrim.onclick = closeDrawer;
+  document.addEventListener("click", (e) => { if (e.target.closest("#menu")) openDrawer(); });
+  addEventListener("keydown", (e) => { if (e.key === "Escape") closeDrawer(); });
+
+  const pageHead = (title) => `${topbarHTML()}<h1 class="page-h">${title}</h1>`;
+
+  /* ---------- Praticar ---------- */
+  const PRACTICE = {
+    focus: { title: "Prática focada", titlePt: "Seus pontos fracos", emoji: "🎯", xp: 20, hint: "As palavras e frases em que você mais erra, misturadas com as que não vê há mais tempo." },
+    errors: { title: "Erros", titlePt: "Revise o que você errou", emoji: "🔁", xp: 15, hint: "Cada acerto de primeira tira o item da sua lista de erros." },
+    speak: { title: "Fala", titlePt: "Melhore a sua fala com estas frases", emoji: "🎤", xp: 15, force: { speak: true }, hint: "Frases das lições que você já fez, para repetir em voz alta." },
+    listen: { title: "Escuta", titlePt: "Uma sessão só de áudio", emoji: "🎧", xp: 15, force: { listen: true }, hint: "Ouça e responda: palavras e frases só pelo áudio." },
+    words: { title: "Palavras", titlePt: "Revise o seu vocabulário", emoji: "📇", xp: 10, hint: "Pares, significados e escuta com as palavras que você já aprendeu." },
+  };
+  // material para praticar: palavras aprendidas e frases curtas das lições concluídas (níveis 0 e 1)
+  function practicePool() {
+    const words = Object.keys(progress.words?.taught || {}).filter(w => state.glossary[w] && !STOP.has(w));
+    const sents = [], seen = new Set();
+    const add = (en, pt, v) => {
+      const n = wordsIn(en);
+      if (!seen.has(en) && n >= 2 && n <= 9) { seen.add(en); sents.push({ en, pt, v }); }
+    };
+    for (const u of [...state.units, ...state.pro]) {
+      for (const l of state.zero[u.id]?.lessons || []) {
+        if (progress.lessons[pkey(l.id, 0)]?.done) for (const sc of l.screens) if (sc.t === "phrase") add(sc.en, sc.pt, sc.v);
+      }
+      const d = state.unitData[u.id];
+      for (const l of d.lessons) {
+        if (progress.lessons[l.id]?.done) for (const s of l.steps) if (Array.isArray(s)) add(s[1], s[2], d.cast[s[0]]?.voice || DEFAULT_VOICE);
+      }
+    }
+    return { words, sents };
+  }
+  const glossShort = (w) => shortGloss(state.glossary[w] || "");
+  const take = (arr, n) => (arr.length ? Array.from({ length: n }, (_, i) => arr[i % arr.length]) : []);
+  function optsFrom(right, pool, k = 3) {
+    const out = [right], seen = new Set([norm(right)]);
+    for (const x of shuffle(pool)) {
+      if (out.length >= k) break;
+      if (x && !seen.has(norm(x))) { seen.add(norm(x)); out.push(x); }
+    }
+    return shuffle(out);
+  }
+  function wordScreen(t, w, words) {
+    const pool = words.length >= 4 ? words : [...words, ...shuffle(Object.keys(state.glossary)).slice(0, 20)];
+    const pt = glossShort(w);
+    if (t === "meaning") return { t, w, pt, o: optsFrom(pt, pool.filter(x => x !== w).map(glossShort)) };
+    return { t, w, pt, o: optsFrom(w, pool.filter(x => x !== w)) }; // pick, hear, spell
+  }
+  function pairsScreen(ws) {
+    const seen = new Set();
+    const p = [...new Set(ws)].filter(w => { const g = norm(glossShort(w)); if (seen.has(g)) return false; seen.add(g); return true; }).slice(0, 5);
+    return { t: "pairs", p: p.map(w => [w, glossShort(w)]) };
+  }
+  function sentScreen(t, s, pool) {
+    const base = { en: s.en, pt: s.pt, v: s.v || DEFAULT_VOICE };
+    const inside = new Set(tokensOf(s.en).map(x => x.toLowerCase()));
+    const extra = shuffle(pool.words.filter(w => !inside.has(w))).slice(0, 3);
+    if (t === "phrase") return { t, ...base };
+    if (t === "bank" || t === "type") return { t, ...base, x: extra, wr: "translate" };
+    if (t === "listen") return { t, ...base, o: optsFrom(s.en, pool.sents.map(x => x.en)) };
+    if (t === "speak") return { t, ...base, o: optsFrom(s.pt, pool.sents.map(x => x.pt)) };
+    if (t === "fill") {
+      const toks = [...s.en.matchAll(WORD_RE)];
+      const known = toks.filter(m => pool.words.includes(lemmaOf(m[0]) || ""));
+      const cand = known.length ? known : toks.filter(m => m[0].length > 2).length ? toks.filter(m => m[0].length > 2) : toks;
+      const m = cand[Math.floor(Math.random() * cand.length)];
+      return { t, ...base, gap: s.en.slice(0, m.index) + "___" + s.en.slice(m.index + m[0].length), w: m[0], o: optsFrom(m[0], pool.words.length >= 3 ? pool.words : tokensOf(s.en)) };
+    }
+    return null;
+  }
+  function buildPractice(kind) {
+    const pool = practicePool();
+    const W = pool.words, S = pool.sents, mist = progress.mistakes;
+    // mais fracas primeiro: as que você errou, depois as treinadas há mais tempo
+    const weak = shuffle(W).sort((a, b) => (mist.words[b]?.n || 0) - (mist.words[a]?.n || 0)
+      || String(progress.words.taught[a]).localeCompare(String(progress.words.taught[b])));
+    const weakS = shuffle(S).sort((a, b) => (mist.sents[b.en]?.n || 0) - (mist.sents[a.en]?.n || 0));
+    let screens = [];
+    if (kind === "focus") {
+      if (W.length < 6 || S.length < 2) return null;
+      const w = take(weak.slice(0, 8), 8), s = take(weakS.slice(0, 3), 3);
+      screens = [
+        pairsScreen(shuffle(w).slice(0, 5)), wordScreen("meaning", w[0], W), wordScreen("hear", w[1], W), wordScreen("pick", w[2], W),
+        sentScreen("bank", s[0], pool), sentScreen("fill", s[1], pool), wordScreen("meaning", w[3], W), sentScreen("listen", s[1], pool),
+        sentScreen("speak", s[0], pool), wordScreen("spell", w[4], W), wordScreen("hear", w[5], W), sentScreen("bank", s[2], pool),
+        pairsScreen(w.slice(3, 8)), sentScreen("type", s[2], pool), wordScreen("pick", w[6], W),
+      ];
+    } else if (kind === "errors") {
+      const ew = Object.keys(mist.words).filter(w => state.glossary[w]).sort((a, b) => mist.words[b].n - mist.words[a].n).slice(0, 6);
+      const es = Object.entries(mist.sents).sort((a, b) => b[1].n - a[1].n).slice(0, 3).map(([en, x]) => ({ en, pt: x.pt, v: x.v }));
+      if (!ew.length && !es.length) return null;
+      const P2 = { words: [...new Set([...W, ...ew])], sents: S.length >= 3 ? S : [...S, ...es] };
+      ew.forEach((w, i) => screens.push(wordScreen(i % 2 ? "hear" : "meaning", w, P2.words), wordScreen(i % 2 ? "pick" : "spell", w, P2.words)));
+      es.forEach(s => screens.push(sentScreen("phrase", s, P2), sentScreen("bank", s, P2), sentScreen("listen", s, P2)));
+    } else if (kind === "speak") {
+      if (S.length < 2) return null;
+      screens = take(weakS, Math.min(8, Math.max(S.length, 4))).map(s => sentScreen("speak", s, pool));
+    } else if (kind === "listen") {
+      if (W.length < 4 || S.length < 2) return null;
+      const w = take(shuffle(W), 5), s = take(weakS, 5);
+      screens = [
+        wordScreen("hear", w[0], W), sentScreen("listen", s[0], pool), wordScreen("hear", w[1], W), sentScreen("type", s[1], pool),
+        sentScreen("listen", s[2], pool), wordScreen("hear", w[2], W), sentScreen("type", s[3], pool), wordScreen("hear", w[3], W),
+        sentScreen("listen", s[4], pool), sentScreen("type", s[2], pool), wordScreen("hear", w[4], W), sentScreen("listen", s[3], pool),
+      ];
+    } else if (kind === "words") {
+      if (W.length < 4) return null;
+      const w = take(weak.slice(0, 10), 10);
+      screens = [
+        pairsScreen(w.slice(0, 5)), wordScreen("meaning", w[0], W), wordScreen("pick", w[1], W), wordScreen("hear", w[2], W),
+        wordScreen("spell", w[3], W), pairsScreen(w.slice(5, 10)), wordScreen("meaning", w[4], W), wordScreen("pick", w[5], W),
+        wordScreen("hear", w[6], W), wordScreen("meaning", w[7], W),
+      ];
+    }
+    screens = screens.filter(sc => sc && (sc.t !== "pairs" || sc.p.length >= 3));
+    if (!screens.length) return null;
+    return { kind, ...PRACTICE[kind], lesson: { id: "practice-" + kind, ...PRACTICE[kind], words: [], screens } };
+  }
+  async function renderPracticeSession(kind) {
+    if (!PRACTICE[kind]) return go("#/practice");
+    await ensureWords();
+    if (PRACTICE[kind].force?.speak && !SR) {
+      toast("Este navegador não reconhece voz. Use o Chrome (Android/PC) ou o Safari (iPhone).");
+      return go("#/practice");
+    }
+    const P = buildPractice(kind);
+    if (!P) {
+      toast(kind === "errors" ? "Nenhum erro para revisar agora. 🎉" : "Conclua algumas lições primeiro (comece pelo nível 0 ou 1) para liberar a prática.");
+      return go("#/practice");
+    }
+    renderDrill(null, P);
+  }
+
+  async function renderPractice() {
+    stopAudio();
+    await ensureWords();
+    const pool = practicePool();
+    const nWords = pool.words.length, nErr = mistakeCount();
+    const ready = nWords >= 6 && pool.sents.length >= 2;
+    const card = (kind, title, text, art, badge = "") => `<a class="pr-card ${kind === "errors" && !nErr ? "muted" : ""}" href="#/${kind === "wordlist" ? "words" : "practice/" + kind}">
+      <span class="pr-text"><b>${title}</b><span>${text}</span></span><span class="pr-art" aria-hidden="true">${art}</span>${badge ? `<em class="pr-badge">${badge}</em>` : ""}</a>`;
+    $app.innerHTML = `${pageHead("Revisão de hoje")}
+      <a class="pr-hero ${ready ? "" : "locked"}" href="#/practice/focus">
+        <span class="pr-text"><b>Prática focada</b><span>Concentre-se nos seus pontos fracos.</span>
+        <span class="pr-go">${ready ? `COMEÇAR +${PRACTICE.focus.xp} XP` : "🔒 Conclua algumas lições para liberar"}</span></span>
+        <span class="pr-art big" aria-hidden="true">🎯</span></a>
+      <h2 class="sec-h">Conversação</h2>
+      ${card("speak", "Fala", SR ? "Melhore a sua fala com estas frases." : "Precisa de um navegador com reconhecimento de voz (Chrome ou Safari).", "🎙️")}
+      ${card("listen", "Escuta", "Treine os ouvidos com uma sessão só de áudio.", "🎧")}
+      <h2 class="sec-h">Suas coleções</h2>
+      ${card("errors", "Erros", nErr ? "Faça uma lição personalizada e revise os seus erros." : "Nada por aqui: o que você errar nas lições aparece nesta coleção.", "🔁", nErr ? (nErr > 30 ? "30+" : nErr) : "")}
+      ${card("wordlist", "Palavras", "Revise o seu vocabulário de inglês quando quiser.", "📇", nWords ? (nWords > 30 ? "30+" : nWords) : "")}
+      <p class="page-foot">O que você treina aqui vale XP e conta para as <a href="#/missions">missões do dia</a>.</p>`;
+    document.title = "Praticar – Prolingo";
+  }
+
+  async function renderWords() {
+    stopAudio();
+    await ensureWords();
+    const list = Object.keys(progress.words.taught).filter(w => state.glossary[w]).sort((a, b) => a.localeCompare(b));
+    const mist = progress.mistakes.words;
+    $app.innerHTML = `${pageHead("Palavras")}
+      <a class="back-link" href="#/practice">← Praticar</a>
+      <p class="page-sub">${list.length ? `Você já aprendeu <b>${list.length}</b> ${list.length === 1 ? "palavra" : "palavras"}. Toque para ouvir.` : "As palavras aparecem aqui conforme você conclui lições."}</p>
+      ${list.length >= 4 ? `<a class="btn wide" href="#/practice/words">Treinar palavras +${PRACTICE.words.xp} XP</a>` : ""}
+      ${list.length ? `<label class="pro-search word-search"><span aria-hidden="true">🔎</span><input type="search" id="wq" placeholder="Buscar em inglês ou português…" autocomplete="off"></label>` : ""}
+      <ul class="word-list">${list.map(w => `<li data-q="${esc(norm(w + " " + state.glossary[w]))}"><button class="nw-play" data-w="${esc(w)}">${SPEAKER}<b>${esc(w)}</b></button><span>${esc(glossShort(w))}</span>${mist[w] ? `<em class="wl-err" title="Você errou esta palavra">!</em>` : ""}</li>`).join("")}</ul>`;
+    const $q = document.getElementById("wq");
+    if ($q) $q.oninput = () => {
+      const q = norm($q.value.trim());
+      $app.querySelectorAll(".word-list li").forEach(li => { li.hidden = !!q && !li.dataset.q.includes(q); });
+    };
+    document.title = "Palavras – Prolingo";
+  }
+
+  /* ---------- Missões ---------- */
+  function renderMissions() {
+    stopAudio();
+    const d = daily();
+    const ms = todaysMissions();
+    const now = new Date(), midnight = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
+    const left = Math.max(1, Math.round((midnight - now) / 36e5));
+    const goal = ms[0], gv = missionValue(goal);
+    const bar = (v, t, color) => `<div class="m-bar"><i style="width:${Math.round((v / t) * 100)}%;${color ? `background:${color}` : ""}"></i><span>${v}/${t}</span></div>`;
+    $app.innerHTML = `${pageHead("Missões")}
+      <div class="goal-card">
+        <div class="goal-ring" style="--p:${Math.round((gv / goal.target) * 100)}"><span>${d.done.goal ? "✓" : "⚡"}</span></div>
+        <div><b>Meta diária</b><span>${d.xp || 0} de ${goal.target} XP hoje${d.done.goal ? " · cumprida! 🎉" : ""}</span>
+        <a href="#/profile">Mudar a meta</a></div>
+      </div>
+      <h2 class="sec-h">Missões do dia <small>novas em ${left} h</small></h2>
+      <ul class="missions">${ms.map(m => {
+        const v = missionValue(m), done = d.done[m.id];
+        return `<li class="${done ? "done" : ""}"><span class="m-ic">${done ? "✅" : m.icon}</span><div class="m-body"><b>${esc(m.text)}</b>${bar(v, m.target)}</div><span class="m-xp">+${MISSION_XP} XP</span></li>`;
+      }).join("")}</ul>
+      <h2 class="sec-h">Conquistas</h2>
+      <ul class="achievements">${ACHIEVEMENTS.map(a => {
+        const v = a.value(), t = tierOf(a, v), next = a.tiers[t];
+        return `<li class="${t ? "got" : ""}"><span class="a-ic">${a.icon}${t ? `<em>${"I II III IV".split(" ")[t - 1]}</em>` : ""}</span>
+          <div class="m-body"><b>${a.name}</b><small>${next ? `${v} de ${next} ${a.unit}` : `Nível máximo: ${v} ${a.unit} 🏆`}</small>${next ? bar(Math.min(v, next), next, "var(--gold)") : ""}</div></li>`;
+      }).join("")}</ul>
+      <p class="page-foot">As missões mudam todo dia à meia-noite. Cada missão cumprida dá <b>+${MISSION_XP} XP</b>.</p>`;
+    document.title = "Missões – Prolingo";
+  }
+
+  /* ---------- Perfil ---------- */
+  const AVATARS = ["🦊", "🐼", "🐨", "🦁", "🐯", "🐸", "🐵", "🦉", "🐧", "🐙", "🦄", "🐢", "🐬", "🦋", "🐝", "🐳", "🌻", "🌵", "🍀", "🚀", "⭐", "🎧", "🎨", "☕", "👩🏽", "👨🏻", "👩🏿‍🦱", "👨🏾", "🧑🏼‍🦰", "👵🏼", "🧔🏻", "👱🏼‍♀️", "🧑🏻‍⚕️", "👩🏾‍⚕️", "🧑🏽‍🏫", "🧑🏻‍🎓"];
+  const COLORS = ["#58cc02", "#1cb0f6", "#ce82ff", "#ff9600", "#ff4b4b", "#ffc800", "#ff86d0", "#2b70c9", "#37464f"];
+  const GOALS = [[10, "Casual"], [20, "Regular"], [30, "Séria"], [50, "Intensa"]];
+  function renderProfile() {
+    stopAudio();
+    const pr = progress.profile;
+    const lessonsDone = doneKeys().length;
+    const circles = ACHIEVEMENTS.find(a => a.id === "faces").value();
+    const since = new Date(pr.since + "T12:00").toLocaleDateString("pt-BR", { month: "long", year: "numeric" });
+    $app.innerHTML = `${pageHead("Perfil")}
+      <div class="prof-head">${avatarHTML("xl")}
+        <div><input id="pname" class="prof-name" maxlength="30" placeholder="Seu nome" value="${esc(pr.name)}" aria-label="Seu nome"><small>No Prolingo desde ${esc(since)}</small></div></div>
+      <div class="stat-grid">
+        <div><b>🔥 ${progress.streak}</b><span>dias seguidos</span></div>
+        <div><b>🏅 ${progress.bestStreak || 0}</b><span>recorde de dias</span></div>
+        <div><b>⚡ ${progress.xp}</b><span>XP no total</span></div>
+        <div><b>📚 ${lessonsDone}</b><span>lições concluídas</span></div>
+        <div><b>✨ ${Object.keys(progress.words?.taught || {}).length}</b><span>palavras</span></div>
+        <div><b>⭕ ${circles}</b><span>círculos completos</span></div>
+      </div>
+      <h2 class="sec-h">Avatar</h2>
+      <div class="pick-grid" id="avatars">${AVATARS.map(a => `<button class="${a === pr.avatar ? "on" : ""}" data-a="${a}" aria-label="Avatar ${a}">${a}</button>`).join("")}</div>
+      <div class="color-row" id="colors">${COLORS.map(col => `<button class="${col === pr.color ? "on" : ""}" data-c="${col}" style="background:${col}" aria-label="Cor ${col}"></button>`).join("")}</div>
+      <h2 class="sec-h">Meta diária</h2>
+      <div class="goal-row" id="goals">${GOALS.map(([n, name]) => `<button class="${n === pr.goal ? "on" : ""}" data-g="${n}"><b>${name}</b><small>${n} XP por dia</small></button>`).join("")}</div>
+      <h2 class="sec-h">Seus dados</h2>
+      <p class="page-sub">O progresso fica guardado <b>neste aparelho</b>. Faça uma cópia para levar a outro celular ou computador.</p>
+      <div class="data-row"><button class="btn ghost" id="export">⬇ Baixar cópia</button><label class="btn ghost" for="import">⬆ Restaurar cópia</label><input type="file" id="import" accept="application/json,.json" hidden></div>`;
+    const save = () => { saveProgress(progress); paintDrawer(); };
+    document.getElementById("pname").oninput = (e) => { pr.name = e.target.value.trim(); save(); };
+    const repaint = () => { $app.querySelector(".prof-head .avatar-dot").outerHTML = avatarHTML("xl"); };
+    $app.querySelectorAll("#avatars button").forEach(b => b.onclick = () => {
+      pr.avatar = b.dataset.a; save(); repaint();
+      $app.querySelectorAll("#avatars button").forEach(x => x.classList.toggle("on", x === b));
+    });
+    $app.querySelectorAll("#colors button").forEach(b => b.onclick = () => {
+      pr.color = b.dataset.c; save(); repaint();
+      $app.querySelectorAll("#colors button").forEach(x => x.classList.toggle("on", x === b));
+    });
+    $app.querySelectorAll("#goals button").forEach(b => b.onclick = () => {
+      pr.goal = +b.dataset.g; checkMissions(); save();
+      $app.querySelectorAll("#goals button").forEach(x => x.classList.toggle("on", x === b));
+    });
+    document.getElementById("export").onclick = () => {
+      const blob = new Blob([JSON.stringify(progress)], { type: "application/json" });
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = `prolingo-progresso-${today()}.json`;
+      a.click();
+      setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+    };
+    document.getElementById("import").onchange = async (e) => {
+      const f = e.target.files[0];
+      if (!f) return;
+      try {
+        const data = JSON.parse(await f.text());
+        if (!data || typeof data !== "object" || !data.lessons) throw new Error("formato");
+        const ok = await confirmDialog({ title: "Restaurar cópia?", text: "O progresso da cópia será somado ao deste aparelho (nada é apagado).", cancel: "Cancelar", ok: "Restaurar" });
+        if (!ok) return;
+        progress = mergeProgress(progress, data);
+        progress.profile = Object.assign({ name: "", avatar: "🦊", color: "#58cc02", goal: 30, since: today() }, progress.profile || {});
+        progress.mistakes ||= { words: {}, sents: {} };
+        saveProgress(progress);
+        toast("Cópia restaurada! ✅");
+        renderProfile();
+      } catch { toast("Não consegui ler esse arquivo. Use uma cópia baixada aqui no Prolingo."); }
+    };
+    document.title = "Perfil – Prolingo";
+  }
+
+
   /* ---------- Rotas ---------- */
   let keyHandler = null;
   document.addEventListener("keydown", (e) => keyHandler?.(e));
@@ -1798,11 +2267,18 @@
   function route() {
     keyHandler = null; hideTip(); cleanup?.(); cleanup = null; stopAudio(); scrollTo(0, 0);
     const [, page, arg, lv] = location.hash.split("/");
+    closeDrawer();
+    document.body.classList.toggle("in-lesson", page === "lesson" || (page === "practice" && !!arg));
+    paintDrawer(page);
     const n = parseInt(lv, 10);
     const level = Number.isNaN(n) ? 1 : Math.min(5, Math.max(0, n));
     if (page === "lesson") (level === 0 ? renderDrill(arg) : renderLesson(arg, level));
     else if (page === "guide") renderGuide(arg);
     else if (page === "pro") renderHome("pro");
+    else if (page === "practice") (arg ? renderPracticeSession(arg) : renderPractice());
+    else if (page === "words") renderWords();
+    else if (page === "missions") renderMissions();
+    else if (page === "profile") renderProfile();
     else renderHome();
   }
   let ready = false; // só troca de tela depois que as lições carregaram

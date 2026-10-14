@@ -104,3 +104,11 @@ Para quem acha o nível 1 difícil. Não é história: são **10 lições de 20 
 ## Fala por partes
 
 Falas com várias orações são capturadas **uma oração por vez** (`splitClauses` em `app.js`): o reconhecimento do navegador para numa pausa, e frases longas eram cortadas. Orações muito longas também são divididas em vírgulas; pedaços curtos ("Hi!") se juntam ao vizinho.
+
+## Menu lateral: Aprender, Praticar, Missões, Perfil
+
+- **☰ Menu** (fixo à esquerda em telas largas; some dentro das lições).
+- **Praticar** (`#/practice`): Prática focada (pontos fracos), Fala, Escuta, Erros e Palavras. As sessões usam o mesmo motor do nível 0 (`renderDrill` com uma sessão montada por `buildPractice`), com palavras aprendidas e frases curtas das lições concluídas (níveis 0 e 1).
+- **Erros**: o que você erra (palavras novas, exercícios de escrita, nível 0) vai para `progress.mistakes`; acertar de primeira no Praticar tira o item da lista.
+- **Missões** (`#/missions`): meta diária de XP + 2 missões sorteadas pela data (+10 XP cada), e conquistas em 4 níveis (sequência, lições, palavras, XP, círculos completos, nível 5). O dia vira à meia-noite local.
+- **Perfil** (`#/profile`): nome, avatar, cor, meta diária, estatísticas e cópia do progresso (baixar/restaurar JSON).
