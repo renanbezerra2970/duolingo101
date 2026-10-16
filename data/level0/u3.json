@@ -55,12 +55,12 @@
        "meu"
       ],
       [
-       "from",
-       "de"
-      ],
-      [
        "this",
        "este"
+      ],
+      [
+       "from",
+       "de"
       ]
      ]
     },
@@ -240,8 +240,8 @@
      "w": "and",
      "pt": "e",
      "o": [
-      "este",
       "café",
+      "de",
       "e"
      ]
     },
@@ -255,9 +255,9 @@
      "w": "coffee",
      "pt": "café",
      "o": [
-      "my",
       "coffee",
-      "and"
+      "from",
+      "am"
      ]
     },
     {
@@ -272,16 +272,16 @@
        "café"
       ],
       [
+       "my",
+       "meu"
+      ],
+      [
        "from",
        "de"
       ],
       [
-       "is",
-       "é"
-      ],
-      [
-       "my",
-       "meu"
+       "this",
+       "este"
       ]
      ]
     },
@@ -295,8 +295,8 @@
      "w": "dad",
      "pt": "pai",
      "o": [
-      "my",
       "dad",
+      "coffee",
       "am"
      ]
     },
@@ -310,9 +310,9 @@
      "w": "am",
      "pt": "sou",
      "o": [
+      "pai",
       "café",
-      "sou",
-      "meu"
+      "sou"
      ]
     },
     {
@@ -321,7 +321,7 @@
      "pt": "pai",
      "o": [
       "dad",
-      "my",
+      "is",
       "am"
      ]
     },
@@ -345,56 +345,56 @@
        "café"
       ],
       [
-       "this",
-       "este"
+       "my",
+       "meu"
       ]
      ]
     },
     {
      "t": "phrase",
-     "en": "My dad is from France.",
-     "pt": "Meu pai é da França.",
-     "v": "en-US-JennyNeural"
+     "en": "And coffee! Coffee, please!",
+     "pt": "E café! Café, por favor!",
+     "v": "en-GB-RyanNeural"
     },
     {
      "t": "bank",
-     "en": "My dad is from France.",
-     "pt": "Meu pai é da França.",
-     "v": "en-US-JennyNeural",
+     "en": "And coffee! Coffee, please!",
+     "pt": "E café! Café, por favor!",
+     "v": "en-GB-RyanNeural",
      "x": [
-      "his",
-      "drinks",
-      "you"
+      "brother",
+      "are",
+      "lunch"
      ],
      "wr": "copy"
     },
     {
      "t": "phrase",
-     "en": "OK... Coffee, Lisa?",
-     "pt": "Tá... Café, Lisa?",
-     "v": "en-US-EricNeural"
+     "en": "My mom and my dad...",
+     "pt": "Minha mãe e meu pai...",
+     "v": "en-US-AnaNeural"
     },
     {
      "t": "fill",
-     "en": "OK... Coffee, Lisa?",
-     "pt": "Tá... Café, Lisa?",
-     "v": "en-US-EricNeural",
-     "gap": "OK... ___, Lisa?",
-     "w": "Coffee",
+     "en": "My mom and my dad...",
+     "pt": "Minha mãe e meu pai...",
+     "v": "en-US-AnaNeural",
+     "gap": "My mom and my ___...",
+     "w": "dad",
      "o": [
       "sunday",
-      "Coffee",
-      "morning"
+      "dad",
+      "it"
      ]
     },
     {
      "t": "speak",
-     "en": "My dad is from France.",
-     "pt": "Meu pai é da França.",
-     "v": "en-US-JennyNeural",
+     "en": "And coffee! Coffee, please!",
+     "pt": "E café! Café, por favor!",
+     "v": "en-GB-RyanNeural",
      "o": [
       "Bonjour, Lisa! Bem-vinda!",
-      "Meu pai é da França.",
+      "E café! Café, por favor!",
       "Tchau, Pedro!"
      ]
     },
@@ -403,42 +403,42 @@
      "w": "and",
      "pt": "e",
      "o": [
-      "my",
+      "is",
       "and",
-      "coffee"
+      "dad"
      ]
     },
     {
      "t": "listen",
-     "en": "My dad is from France.",
-     "pt": "Meu pai é da França.",
-     "v": "en-US-JennyNeural",
+     "en": "And coffee! Coffee, please!",
+     "pt": "E café! Café, por favor!",
+     "v": "en-GB-RyanNeural",
      "o": [
-      "My dad is from France.",
+      "And coffee! Coffee, please!",
       "And I am Ben! I am ten!",
       "Hi, Anna! Thank you!"
      ]
     },
     {
      "t": "speak",
-     "en": "OK... Coffee, Lisa?",
-     "pt": "Tá... Café, Lisa?",
-     "v": "en-US-EricNeural",
+     "en": "My mom and my dad...",
+     "pt": "Minha mãe e meu pai...",
+     "v": "en-US-AnaNeural",
      "o": [
       "Prazer em conhecer vocês!",
-      "Tá... Café, Lisa?",
-      "Sim! Quem é você?"
+      "Minha mãe e meu pai...",
+      "Oi! Meu nome é Lisa."
      ]
     },
     {
      "t": "copy",
-     "en": "OK... Coffee, Lisa?",
-     "pt": "Tá... Café, Lisa?",
-     "v": "en-US-EricNeural",
+     "en": "My mom and my dad...",
+     "pt": "Minha mãe e meu pai...",
+     "v": "en-US-AnaNeural",
      "x": [
-      "very",
-      "tea",
-      "drinks"
+      "coffee",
+      "her",
+      "here"
      ]
     }
    ]
@@ -466,8 +466,8 @@
      "pt": "você",
      "o": [
       "você",
-      "sou",
-      "meu"
+      "este",
+      "mãe"
      ]
     },
     {
@@ -480,8 +480,8 @@
      "w": "sister",
      "pt": "irmã",
      "o": [
-      "from",
-      "coffee",
+      "hi",
+      "dad",
       "sister"
      ]
     },
@@ -497,16 +497,16 @@
        "irmã"
       ],
       [
+       "this",
+       "este"
+      ],
+      [
+       "coffee",
+       "café"
+      ],
+      [
        "am",
        "sou"
-      ],
-      [
-       "is",
-       "é"
-      ],
-      [
-       "dad",
-       "pai"
       ]
      ]
     },
@@ -520,9 +520,9 @@
      "w": "mom",
      "pt": "mãe",
      "o": [
-      "my",
+      "you",
       "mom",
-      "you"
+      "and"
      ]
     },
     {
@@ -535,9 +535,9 @@
      "w": "hi",
      "pt": "oi",
      "o": [
-      "este",
+      "e",
       "oi",
-      "e"
+      "meu"
      ]
     },
     {
@@ -546,8 +546,8 @@
      "pt": "mãe",
      "o": [
       "mom",
-      "is",
-      "coffee"
+      "coffee",
+      "dad"
      ]
     },
     {
@@ -570,8 +570,8 @@
        "irmã"
       ],
       [
-       "and",
-       "e"
+       "from",
+       "de"
       ]
      ]
     },
@@ -595,19 +595,19 @@
     },
     {
      "t": "phrase",
-     "en": "Is Lisa my sister?",
-     "pt": "A Lisa é minha irmã?",
-     "v": "en-US-EricNeural"
+     "en": "Hi, Anna! Thank you!",
+     "pt": "Oi, Anna! Obrigado!",
+     "v": "en-US-GuyNeural"
     },
     {
      "t": "fill",
-     "en": "Is Lisa my sister?",
-     "pt": "A Lisa é minha irmã?",
-     "v": "en-US-EricNeural",
-     "gap": "Is Lisa ___ sister?",
-     "w": "my",
+     "en": "Hi, Anna! Thank you!",
+     "pt": "Oi, Anna! Obrigado!",
+     "v": "en-US-GuyNeural",
+     "gap": "Hi, Anna! Thank ___!",
+     "w": "you",
      "o": [
-      "my",
+      "you",
       "very",
       "door"
      ]
@@ -628,8 +628,8 @@
      "w": "you",
      "pt": "você",
      "o": [
-      "coffee",
-      "this",
+      "dad",
+      "and",
       "you"
      ]
     },
@@ -646,23 +646,23 @@
     },
     {
      "t": "speak",
-     "en": "Is Lisa my sister?",
-     "pt": "A Lisa é minha irmã?",
-     "v": "en-US-EricNeural",
+     "en": "Hi, Anna! Thank you!",
+     "pt": "Oi, Anna! Obrigado!",
+     "v": "en-US-GuyNeural",
      "o": [
-      "A Lisa é minha irmã?",
+      "Oi, Anna! Obrigado!",
       "O pai bebe o café dele.",
       "E café! Café, por favor!"
      ]
     },
     {
      "t": "copy",
-     "en": "Is Lisa my sister?",
-     "pt": "A Lisa é minha irmã?",
-     "v": "en-US-EricNeural",
+     "en": "Hi, Anna! Thank you!",
+     "pt": "Oi, Anna! Obrigado!",
+     "v": "en-US-GuyNeural",
      "x": [
-      "nice",
-      "from",
+      "hello",
+      "am",
       "goodbye"
      ]
     }
@@ -690,9 +690,9 @@
      "w": "no",
      "pt": "não",
      "o": [
-      "este",
+      "mãe",
       "não",
-      "de"
+      "e"
      ]
     },
     {
@@ -705,9 +705,9 @@
      "w": "brother",
      "pt": "irmão",
      "o": [
-      "this",
+      "you",
       "brother",
-      "from"
+      "mom"
      ]
     },
     {
@@ -722,16 +722,16 @@
        "irmão"
       ],
       [
-       "coffee",
-       "café"
+       "dad",
+       "pai"
       ],
       [
-       "and",
-       "e"
+       "my",
+       "meu"
       ],
       [
-       "sister",
-       "irmã"
+       "am",
+       "sou"
       ]
      ]
     },
@@ -746,8 +746,8 @@
      "pt": "para",
      "o": [
       "for",
-      "is",
-      "coffee"
+      "brother",
+      "no"
      ]
     },
     {
@@ -760,9 +760,9 @@
      "w": "name",
      "pt": "nome",
      "o": [
-      "irmão",
+      "você",
       "nome",
-      "meu"
+      "café"
      ]
     },
     {
@@ -770,8 +770,8 @@
      "w": "for",
      "pt": "para",
      "o": [
+      "this",
       "am",
-      "sister",
       "for"
      ]
     },
@@ -795,8 +795,8 @@
        "irmão"
       ],
       [
-       "my",
-       "meu"
+       "you",
+       "você"
       ]
      ]
     },
@@ -853,9 +853,9 @@
      "w": "no",
      "pt": "não",
      "o": [
-      "you",
+      "dad",
       "no",
-      "from"
+      "and"
      ]
     },
     {
@@ -915,8 +915,8 @@
      "w": "please",
      "pt": "por favor",
      "o": [
-      "mãe",
-      "de",
+      "sou",
+      "e",
       "por favor"
      ]
     },
@@ -930,8 +930,8 @@
      "w": "your",
      "pt": "seu",
      "o": [
-      "for",
-      "hi",
+      "from",
+      "is",
       "your"
      ]
     },
@@ -947,16 +947,16 @@
        "seu"
       ],
       [
-       "no",
-       "não"
+       "sister",
+       "irmã"
       ],
       [
-       "this",
-       "este"
+       "you",
+       "você"
       ],
       [
-       "hi",
-       "oi"
+       "is",
+       "é"
       ]
      ]
     },
@@ -970,8 +970,8 @@
      "w": "family",
      "pt": "família",
      "o": [
-      "and",
-      "dad",
+      "my",
+      "sister",
       "family"
      ]
     },
@@ -985,9 +985,9 @@
      "w": "tea",
      "pt": "chá",
      "o": [
-      "oi",
+      "é",
       "chá",
-      "para"
+      "de"
      ]
     },
     {
@@ -995,8 +995,8 @@
      "w": "family",
      "pt": "família",
      "o": [
-      "sister",
-      "am",
+      "please",
+      "name",
       "family"
      ]
     },
@@ -1020,57 +1020,57 @@
        "seu"
       ],
       [
-       "is",
-       "é"
+       "this",
+       "este"
       ]
      ]
     },
     {
      "t": "phrase",
-     "en": "Coffee, please!",
-     "pt": "Café, por favor!",
+     "en": "Your family is nice!",
+     "pt": "Sua família é legal!",
      "v": "en-US-GuyNeural"
     },
     {
      "t": "bank",
-     "en": "Coffee, please!",
-     "pt": "Café, por favor!",
+     "en": "Your family is nice!",
+     "pt": "Sua família é legal!",
      "v": "en-US-GuyNeural",
      "x": [
-      "girl",
-      "is",
-      "nice"
+      "door",
+      "am",
+      "too"
      ],
      "wr": "copy"
     },
     {
      "t": "phrase",
-     "en": "Coffee! Coffee, please!",
-     "pt": "Café! Café, por favor!",
-     "v": "en-GB-RyanNeural"
+     "en": "Thank you! And your family?",
+     "pt": "Obrigada! E a sua família?",
+     "v": "en-US-AnaNeural"
     },
     {
      "t": "fill",
-     "en": "Coffee! Coffee, please!",
-     "pt": "Café! Café, por favor!",
-     "v": "en-GB-RyanNeural",
-     "gap": "___! Coffee, please!",
-     "w": "Coffee",
+     "en": "Thank you! And your family?",
+     "pt": "Obrigada! E a sua família?",
+     "v": "en-US-AnaNeural",
+     "gap": "Thank ___! And your family?",
+     "w": "you",
      "o": [
       "am",
-      "Coffee",
+      "you",
       "tea"
      ]
     },
     {
      "t": "speak",
-     "en": "Coffee, please!",
-     "pt": "Café, por favor!",
+     "en": "Your family is nice!",
+     "pt": "Sua família é legal!",
      "v": "en-US-GuyNeural",
      "o": [
-      "Bonjour, Lisa! Bem-vinda!",
-      "Bom dia, família!",
-      "Café, por favor!"
+      "A Lisa é minha irmã?",
+      "Bom dia, Pierre!",
+      "Sua família é legal!"
      ]
     },
     {
@@ -1079,40 +1079,40 @@
      "pt": "por favor",
      "o": [
       "please",
-      "family",
-      "for"
+      "for",
+      "name"
      ]
     },
     {
      "t": "listen",
-     "en": "Coffee, please!",
-     "pt": "Café, por favor!",
+     "en": "Your family is nice!",
+     "pt": "Sua família é legal!",
      "v": "en-US-GuyNeural",
      "o": [
-      "And me? Water, please.",
-      "Coffee, please!",
+      "Water? Emma! No coffee?",
+      "Your family is nice!",
       "Hello! Nice to meet you!"
      ]
     },
     {
      "t": "speak",
-     "en": "Coffee! Coffee, please!",
-     "pt": "Café! Café, por favor!",
-     "v": "en-GB-RyanNeural",
+     "en": "Thank you! And your family?",
+     "pt": "Obrigada! E a sua família?",
+     "v": "en-US-AnaNeural",
      "o": [
-      "Café! Café, por favor!",
+      "Obrigada! E a sua família?",
       "Oi, Emma! Oi, Ben!",
-      "Bom dia, família!"
+      "Bom dia, Pierre!"
      ]
     },
     {
      "t": "copy",
-     "en": "Coffee! Coffee, please!",
-     "pt": "Café! Café, por favor!",
-     "v": "en-GB-RyanNeural",
+     "en": "Thank you! And your family?",
+     "pt": "Obrigada! E a sua família?",
+     "v": "en-US-AnaNeural",
      "x": [
-      "yes",
-      "hello",
+      "dad",
+      "her",
       "am"
      ]
     }
@@ -1140,8 +1140,8 @@
      "w": "milk",
      "pt": "leite",
      "o": [
-      "não",
-      "este",
+      "irmã",
+      "seu",
       "leite"
      ]
     },
@@ -1156,8 +1156,8 @@
      "pt": "cachorro",
      "o": [
       "dog",
-      "milk",
-      "am"
+      "hi",
+      "name"
      ]
     },
     {
@@ -1172,16 +1172,16 @@
        "cachorro"
       ],
       [
-       "please",
-       "por favor"
-      ],
-      [
-       "family",
-       "família"
-      ],
-      [
        "coffee",
        "café"
+      ],
+      [
+       "for",
+       "para"
+      ],
+      [
+       "brother",
+       "irmão"
       ]
      ]
     },
@@ -1195,9 +1195,9 @@
      "w": "house",
      "pt": "casa",
      "o": [
-      "this",
+      "your",
       "house",
-      "milk"
+      "ten"
      ]
     },
     {
@@ -1211,8 +1211,8 @@
      "pt": "dez",
      "o": [
       "dez",
-      "família",
-      "pai"
+      "leite",
+      "irmã"
      ]
     },
     {
@@ -1221,8 +1221,8 @@
      "pt": "casa",
      "o": [
       "house",
-      "from",
-      "coffee"
+      "hi",
+      "tea"
      ]
     },
     {
@@ -1245,8 +1245,8 @@
        "cachorro"
       ],
       [
-       "name",
-       "nome"
+       "hi",
+       "oi"
       ]
      ]
     },
@@ -1368,8 +1368,8 @@
      "pt": "quem",
      "o": [
       "quem",
-      "oi",
-      "casa"
+      "casa",
+      "cachorro"
      ]
     },
     {
@@ -1383,8 +1383,8 @@
      "pt": "gato",
      "o": [
       "cat",
-      "her",
-      "tea"
+      "this",
+      "who"
      ]
     },
     {
@@ -1399,16 +1399,16 @@
        "gato"
       ],
       [
-       "no",
-       "não"
+       "sister",
+       "irmã"
       ],
       [
-       "mom",
-       "mãe"
+       "name",
+       "nome"
       ],
       [
-       "from",
-       "de"
+       "hi",
+       "oi"
       ]
      ]
     },
@@ -1422,9 +1422,9 @@
      "w": "her",
      "pt": "dela",
      "o": [
-      "name",
+      "ten",
       "her",
-      "who"
+      "my"
      ]
     },
     {
@@ -1437,8 +1437,8 @@
      "w": "his",
      "pt": "dele",
      "o": [
-      "por favor",
-      "chá",
+      "seu",
+      "mãe",
       "dele"
      ]
     },
@@ -1448,8 +1448,8 @@
      "pt": "dela",
      "o": [
       "her",
-      "brother",
-      "sister"
+      "his",
+      "name"
      ]
     },
     {
@@ -1472,8 +1472,8 @@
        "gato"
       ],
       [
-       "hi",
-       "oi"
+       "house",
+       "casa"
       ]
      ]
     },
@@ -1594,9 +1594,9 @@
      "w": "drinks",
      "pt": "bebe",
      "o": [
-      "bebe",
-      "por favor",
-      "chá"
+      "para",
+      "leite",
+      "bebe"
      ]
     },
     {
@@ -1609,9 +1609,9 @@
      "w": "girl",
      "pt": "menina",
      "o": [
-      "look",
-      "girl",
-      "coffee"
+      "tea",
+      "coffee",
+      "girl"
      ]
     },
     {
@@ -1626,16 +1626,16 @@
        "menina"
       ],
       [
-       "her",
-       "dela"
+       "and",
+       "e"
       ],
       [
-       "dad",
-       "pai"
+       "ten",
+       "dez"
       ],
       [
-       "cat",
-       "gato"
+       "hi",
+       "oi"
       ]
      ]
     },
@@ -1649,9 +1649,9 @@
      "w": "look",
      "pt": "olha",
      "o": [
-      "family",
+      "hi",
       "look",
-      "sister"
+      "is"
      ]
     },
     {
@@ -1664,9 +1664,9 @@
      "w": "lunch",
      "pt": "almoço",
      "o": [
-      "para",
-      "almoço",
-      "família"
+      "família",
+      "quem",
+      "almoço"
      ]
     },
     {
@@ -1674,9 +1674,9 @@
      "w": "look",
      "pt": "olha",
      "o": [
-      "her",
       "look",
-      "my"
+      "milk",
+      "house"
      ]
     },
     {
@@ -1699,8 +1699,8 @@
        "menina"
       ],
       [
-       "sister",
-       "irmã"
+       "am",
+       "sou"
       ]
      ]
     },
@@ -1724,21 +1724,21 @@
     },
     {
      "t": "phrase",
-     "en": "Ben! No!",
-     "pt": "Ben! Não!",
-     "v": "en-US-AnaNeural"
+     "en": "Lunch, everyone!",
+     "pt": "Almoço, pessoal!",
+     "v": "en-US-JennyNeural"
     },
     {
      "t": "fill",
-     "en": "Ben! No!",
-     "pt": "Ben! Não!",
-     "v": "en-US-AnaNeural",
-     "gap": "Ben! ___!",
-     "w": "No",
+     "en": "Lunch, everyone!",
+     "pt": "Almoço, pessoal!",
+     "v": "en-US-JennyNeural",
+     "gap": "___, everyone!",
+     "w": "Lunch",
      "o": [
-      "No",
-      "sorry",
-      "are"
+      "Lunch",
+      "dog",
+      "for"
      ]
     },
     {
@@ -1754,13 +1754,13 @@
     },
     {
      "t": "type",
-     "en": "Ben! No!",
-     "pt": "Ben! Não!",
-     "v": "en-US-AnaNeural",
+     "en": "Lunch, everyone!",
+     "pt": "Almoço, pessoal!",
+     "v": "en-US-JennyNeural",
      "x": [
-      "dog",
-      "from",
-      "too"
+      "not",
+      "really",
+      "it"
      ]
     },
     {
@@ -1769,31 +1769,31 @@
      "pt": "O pai bebe o café dele.",
      "v": "en-US-AndrewNeural",
      "o": [
-      "Dad drinks his coffee.",
-      "And this is your brother?",
-      "Bonjour, Lisa! Welcome!"
+      "Mom, milk, please!",
+      "Wow! Who is this?",
+      "Dad drinks his coffee."
      ]
     },
     {
      "t": "speak",
-     "en": "Ben! No!",
-     "pt": "Ben! Não!",
-     "v": "en-US-AnaNeural",
+     "en": "Lunch, everyone!",
+     "pt": "Almoço, pessoal!",
+     "v": "en-US-JennyNeural",
      "o": [
-      "Bonjour, Lisa! Bem-vinda!",
-      "Ben! Não!",
-      "Leite para o Ben. Chá para mim."
+      "Almoço, pessoal!",
+      "Bom dia, Pierre!",
+      "E leite para mim!"
      ]
     },
     {
      "t": "bank",
-     "en": "Ben! No!",
-     "pt": "Ben! Não!",
-     "v": "en-US-AnaNeural",
+     "en": "Lunch, everyone!",
+     "pt": "Almoço, pessoal!",
+     "v": "en-US-JennyNeural",
      "x": [
-      "at",
-      "me",
-      "school"
+      "where",
+      "from",
+      "or"
      ],
      "wr": "translate"
     }
@@ -1821,8 +1821,8 @@
      "w": "photo",
      "pt": "foto",
      "o": [
-      "por favor",
-      "dele",
+      "sou",
+      "e",
       "foto"
      ]
     },
@@ -1836,9 +1836,9 @@
      "w": "school",
      "pt": "escola",
      "o": [
-      "you",
-      "this",
-      "school"
+      "please",
+      "school",
+      "coffee"
      ]
     },
     {
@@ -1853,16 +1853,16 @@
        "escola"
       ],
       [
-       "brother",
-       "irmão"
+       "who",
+       "quem"
       ],
       [
-       "family",
-       "família"
+       "name",
+       "nome"
       ],
       [
-       "dog",
-       "cachorro"
+       "ten",
+       "dez"
       ]
      ]
     },
@@ -1876,8 +1876,8 @@
      "w": "sunday",
      "pt": "domingo",
      "o": [
-      "drinks",
-      "ten",
+      "cat",
+      "this",
       "sunday"
      ]
     },
@@ -1891,9 +1891,9 @@
      "w": "very",
      "pt": "muito",
      "o": [
-      "este",
-      "leite",
-      "muito"
+      "pai",
+      "muito",
+      "seu"
      ]
     },
     {
@@ -1901,9 +1901,9 @@
      "w": "sunday",
      "pt": "domingo",
      "o": [
+      "who",
       "sunday",
-      "look",
-      "house"
+      "girl"
      ]
     },
     {
@@ -1926,8 +1926,8 @@
        "escola"
       ],
       [
-       "name",
-       "nome"
+       "lunch",
+       "almoço"
       ]
      ]
     },
@@ -1943,29 +1943,29 @@
      "pt": "Pedro, olha! Uma foto da minha família.",
      "v": "en-US-AnaNeural",
      "x": [
-      "good",
+      "or",
       "no",
-      "cat"
+      "for"
      ],
      "wr": "translate"
     },
     {
      "t": "phrase",
-     "en": "I am from London.",
-     "pt": "Eu sou de Londres.",
-     "v": "en-US-AnaNeural"
+     "en": "Anna and Pedro are at school.",
+     "pt": "A Anna e o Pedro estão na escola.",
+     "v": "en-US-AndrewNeural"
     },
     {
      "t": "fill",
-     "en": "I am from London.",
-     "pt": "Eu sou de Londres.",
-     "v": "en-US-AnaNeural",
-     "gap": "I am ___ London.",
-     "w": "from",
+     "en": "Anna and Pedro are at school.",
+     "pt": "A Anna e o Pedro estão na escola.",
+     "v": "en-US-AndrewNeural",
+     "gap": "Anna and Pedro are at ___.",
+     "w": "school",
      "o": [
-      "from",
-      "goodbye",
-      "dad"
+      "here",
+      "morning",
+      "school"
      ]
     },
     {
@@ -1974,20 +1974,20 @@
      "pt": "Pedro, olha! Uma foto da minha família.",
      "v": "en-US-AnaNeural",
      "o": [
-      "Oi! Meu nome é Anna.",
-      "Pedro, olha! Uma foto da minha família.",
-      "A Anna e o Pedro estão na escola."
+      "A Lisa é sua irmã?",
+      "Água, por favor, Ben.",
+      "Pedro, olha! Uma foto da minha família."
      ]
     },
     {
      "t": "type",
-     "en": "I am from London.",
-     "pt": "Eu sou de Londres.",
-     "v": "en-US-AnaNeural",
+     "en": "Anna and Pedro are at school.",
+     "pt": "A Anna e o Pedro estão na escola.",
+     "v": "en-US-AndrewNeural",
      "x": [
-      "yes",
-      "drinks",
-      "too"
+      "very",
+      "who",
+      "where"
      ]
     },
     {
@@ -1996,31 +1996,31 @@
      "pt": "Pedro, olha! Uma foto da minha família.",
      "v": "en-US-AnaNeural",
      "o": [
-      "My mom is from London, too.",
-      "Thank you! And your family?",
-      "Pedro, look! A photo of my family."
+      "Pedro, look! A photo of my family.",
+      "No, Ben! Emma is my sister.",
+      "Hi, Emma! Hi, Ben!"
      ]
     },
     {
      "t": "speak",
-     "en": "I am from London.",
-     "pt": "Eu sou de Londres.",
-     "v": "en-US-AnaNeural",
+     "en": "Anna and Pedro are at school.",
+     "pt": "A Anna e o Pedro estão na escola.",
+     "v": "en-US-AndrewNeural",
      "o": [
-      "Leite para o Ben. Chá para mim.",
-      "Eu sou de Londres.",
-      "De onde você é, Pedro?"
+      "A Anna e o Pedro estão na escola.",
+      "Minha mãe é de Londres também.",
+      "O quê? Eu tenho dez anos!"
      ]
     },
     {
      "t": "bank",
-     "en": "I am from London.",
-     "pt": "Eu sou de Londres.",
-     "v": "en-US-AnaNeural",
+     "en": "Anna and Pedro are at school.",
+     "pt": "A Anna e o Pedro estão na escola.",
+     "v": "en-US-AndrewNeural",
      "x": [
-      "your",
-      "brother",
-      "is"
+      "not",
+      "friend",
+      "sunday"
      ],
      "wr": "translate"
     }
@@ -2037,45 +2037,45 @@
      "t": "pairs",
      "p": [
       [
-       "drinks",
-       "bebe"
+       "and",
+       "e"
       ],
       [
-       "dad",
-       "pai"
+       "tea",
+       "chá"
+      ],
+      [
+       "no",
+       "não"
+      ],
+      [
+       "this",
+       "este"
       ],
       [
        "ten",
        "dez"
-      ],
-      [
-       "sister",
-       "irmã"
-      ],
-      [
-       "brother",
-       "irmão"
       ]
      ]
     },
     {
      "t": "meaning",
-     "w": "your",
-     "pt": "seu",
+     "w": "his",
+     "pt": "dele",
      "o": [
-      "sou",
-      "é",
-      "seu"
+      "dele",
+      "família",
+      "bebe"
      ]
     },
     {
      "t": "hear",
-     "w": "am",
-     "pt": "sou",
+     "w": "milk",
+     "pt": "leite",
      "o": [
-      "you",
-      "house",
-      "am"
+      "milk",
+      "your",
+      "look"
      ]
     },
     {
@@ -2090,9 +2090,9 @@
      "pt": "Meu pai é da França.",
      "v": "en-US-JennyNeural",
      "x": [
-      "you",
-      "with",
-      "are"
+      "me",
+      "ten",
+      "drinks"
      ],
      "wr": "translate"
     },
@@ -2102,9 +2102,9 @@
      "pt": "Meu pai é da França.",
      "v": "en-US-JennyNeural",
      "o": [
-      "Bom dia, família!",
+      "minha irmã e meu irmão",
       "Meu pai é da França.",
-      "Bom dia, Pierre!"
+      "Água, por favor, Ben."
      ]
     },
     {
@@ -2118,12 +2118,12 @@
      "en": "This is my mom.",
      "pt": "Essa é minha mãe.",
      "v": "en-US-JennyNeural",
-     "gap": "This is my ___.",
-     "w": "mom",
+     "gap": "This is ___ mom.",
+     "w": "my",
      "o": [
-      "family",
-      "mom",
-      "here"
+      "my",
+      "this",
+      "hi"
      ]
     },
     {
@@ -2132,33 +2132,33 @@
      "pt": "Essa é minha mãe.",
      "v": "en-US-JennyNeural",
      "x": [
-      "his",
-      "photo",
-      "house"
+      "it",
+      "lunch",
+      "from"
      ]
     },
     {
      "t": "pairs",
      "p": [
       [
-       "his",
-       "dele"
-      ],
-      [
        "my",
        "meu"
       ],
       [
-       "from",
-       "de"
+       "dad",
+       "pai"
       ],
       [
-       "sunday",
-       "domingo"
+       "mom",
+       "mãe"
       ],
       [
-       "you",
-       "você"
+       "please",
+       "por favor"
+      ],
+      [
+       "who",
+       "quem"
       ]
      ]
     },
@@ -2174,9 +2174,9 @@
      "pt": "Oi, meu nome é Anna.",
      "v": "en-US-JennyNeural",
      "o": [
-      "Hello! I am Ben. I am ten.",
-      "This is my mom.",
-      "Hi, my name is Anna."
+      "Hi, my name is Anna.",
+      "And my brother, Ben.",
+      "And me? Water, please."
      ]
     },
     {
@@ -2185,19 +2185,19 @@
      "pt": "Oi, meu nome é Anna.",
      "v": "en-US-JennyNeural",
      "o": [
-      "Pedro! Bem-vindo!",
-      "Ben, essa é minha amiga Lisa.",
-      "Oi, meu nome é Anna."
+      "Oi, Emma! Oi, Ben!",
+      "Oi, meu nome é Anna.",
+      "Sua família é legal!"
      ]
     },
     {
      "t": "pick",
-     "w": "family",
-     "pt": "família",
+     "w": "look",
+     "pt": "olha",
      "o": [
-      "is",
-      "family",
-      "lunch"
+      "look",
+      "my",
+      "name"
      ]
     },
     {
@@ -2206,9 +2206,9 @@
      "pt": "Meu pai é da França.",
      "v": "en-US-JennyNeural",
      "x": [
-      "you",
-      "thank",
-      "for"
+      "water",
+      "everyone",
+      "cat"
      ]
     },
     {
@@ -2217,20 +2217,20 @@
      "pt": "Oi, meu nome é Anna.",
      "v": "en-US-JennyNeural",
      "x": [
-      "house",
-      "cat",
-      "am"
+      "at",
+      "very",
+      "water"
      ],
      "wr": "translate"
     },
     {
      "t": "meaning",
-     "w": "dog",
-     "pt": "cachorro",
+     "w": "very",
+     "pt": "muito",
      "o": [
-      "cachorro",
-      "escola",
-      "este"
+      "de",
+      "muito",
+      "olha"
      ]
     },
     {
@@ -2239,19 +2239,19 @@
      "pt": "Essa é minha mãe.",
      "v": "en-US-JennyNeural",
      "o": [
-      "É de manhã na casa da Anna.",
       "Essa é minha mãe.",
-      "Lisa! Bem-vinda!"
+      "Bonjour, Lisa! Bem-vinda!",
+      "Água, por favor, Ben."
      ]
     },
     {
      "t": "hear",
-     "w": "for",
-     "pt": "para",
+     "w": "her",
+     "pt": "dela",
      "o": [
-      "ten",
-      "for",
-      "family"
+      "her",
+      "name",
+      "mom"
      ]
     },
     {
@@ -2262,7 +2262,7 @@
      "x": [
       "please",
       "not",
-      "thank"
+      "photo"
      ],
      "wr": "translate"
     }

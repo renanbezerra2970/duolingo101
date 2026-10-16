@@ -124,7 +124,7 @@
       "id": 5,
       "title": "Unidade 5",
       "subtitle": "Cidade e casa",
-      "color": "#ff86d0",
+      "color": "#2b9348",
       "emoji": "🏙️",
       "file": "data/unit5.json",
       "phrases": [
@@ -147,6 +147,36 @@
         [
           "Welcome to my city!",
           "Bem-vindo à minha cidade!"
+        ]
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Unidade 6",
+      "subtitle": "Peça comida e bebidas",
+      "color": "#ff86d0",
+      "emoji": "🍽️",
+      "file": "data/unit6.json",
+      "phrases": [
+        [
+          "I'd like a salad, please.",
+          "Eu gostaria de uma salada, por favor."
+        ],
+        [
+          "Excuse me, where is my burger?",
+          "Com licença, onde está meu hambúrguer?"
+        ],
+        [
+          "This restaurant is very expensive!",
+          "Esse restaurante é muito caro!"
+        ],
+        [
+          "Here is your pizza.",
+          "Aqui está sua pizza."
+        ],
+        [
+          "I'd like a glass of water.",
+          "Eu gostaria de um copo de água."
         ]
       ]
     }

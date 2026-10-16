@@ -40,7 +40,7 @@
      "o": [
       "you",
       "bread",
-      "milk"
+      "coffee"
      ]
     },
     {
@@ -74,7 +74,7 @@
      "w": "please",
      "pt": "por favor",
      "o": [
-      "coffee",
+      "milk",
       "good",
       "please"
      ]
@@ -240,9 +240,9 @@
      "w": "tea",
      "pt": "chá",
      "o": [
-      "leite",
-      "chá",
-      "por favor"
+      "você",
+      "café",
+      "chá"
      ]
     },
     {
@@ -255,9 +255,9 @@
      "w": "thank",
      "pt": "agradecer",
      "o": [
-      "please",
+      "thank",
       "coffee",
-      "thank"
+      "please"
      ]
     },
     {
@@ -272,16 +272,16 @@
        "agradecer"
       ],
       [
-       "coffee",
-       "café"
-      ],
-      [
        "milk",
        "leite"
       ],
       [
-       "you",
-       "você"
+       "coffee",
+       "café"
+      ],
+      [
+       "please",
+       "por favor"
       ]
      ]
     },
@@ -295,9 +295,9 @@
      "w": "and",
      "pt": "e",
      "o": [
-      "milk",
-      "you",
-      "and"
+      "and",
+      "with",
+      "milk"
      ]
     },
     {
@@ -311,8 +311,8 @@
      "pt": "com",
      "o": [
       "com",
-      "e",
-      "por favor"
+      "café",
+      "você"
      ]
     },
     {
@@ -320,9 +320,9 @@
      "w": "and",
      "pt": "e",
      "o": [
+      "milk",
       "and",
-      "you",
-      "coffee"
+      "with"
      ]
     },
     {
@@ -345,10 +345,28 @@
        "agradecer"
       ],
       [
-       "you",
-       "você"
+       "coffee",
+       "café"
       ]
      ]
+    },
+    {
+     "t": "phrase",
+     "en": "Tea, please. Tea with milk.",
+     "pt": "Chá, por favor. Chá com leite.",
+     "v": "en-US-AriaNeural"
+    },
+    {
+     "t": "bank",
+     "en": "Tea, please. Tea with milk.",
+     "pt": "Chá, por favor. Chá com leite.",
+     "v": "en-US-AriaNeural",
+     "x": [
+      "cheese",
+      "cake",
+      "you"
+     ],
+     "wr": "copy"
     },
     {
      "t": "phrase",
@@ -357,45 +375,27 @@
      "v": "en-US-JennyNeural"
     },
     {
-     "t": "bank",
+     "t": "fill",
      "en": "OK! Coffee with milk and tea.",
      "pt": "Certo! Café com leite e chá.",
      "v": "en-US-JennyNeural",
-     "x": [
-      "no",
-      "you",
-      "grandpa"
-     ],
-     "wr": "copy"
-    },
-    {
-     "t": "phrase",
-     "en": "Bea! Coffee with milk and tea, please!",
-     "pt": "Bea! Café com leite e chá, por favor!",
-     "v": "en-US-GuyNeural"
-    },
-    {
-     "t": "fill",
-     "en": "Bea! Coffee with milk and tea, please!",
-     "pt": "Bea! Café com leite e chá, por favor!",
-     "v": "en-US-GuyNeural",
-     "gap": "Bea! Coffee with milk and ___, please!",
-     "w": "tea",
+     "gap": "OK! Coffee with milk ___ tea.",
+     "w": "and",
      "o": [
-      "tea",
-      "café",
-      "her"
+      "puts",
+      "and",
+      "drinks"
      ]
     },
     {
      "t": "speak",
-     "en": "OK! Coffee with milk and tea.",
-     "pt": "Certo! Café com leite e chá.",
-     "v": "en-US-JennyNeural",
+     "en": "Tea, please. Tea with milk.",
+     "pt": "Chá, por favor. Chá com leite.",
+     "v": "en-US-AriaNeural",
      "o": [
-      "Bolo, por favor! E chá.",
-      "Oi, Tom! Oi, Mia! Bem-vindos!",
-      "Certo! Café com leite e chá."
+      "Chá, por favor. Chá com leite.",
+      "Bem-vindo!",
+      "Obrigada! Tchau, Bea!"
      ]
     },
     {
@@ -403,42 +403,42 @@
      "w": "tea",
      "pt": "chá",
      "o": [
+      "milk",
       "tea",
-      "thank",
-      "and"
+      "please"
      ]
     },
     {
      "t": "listen",
-     "en": "OK! Coffee with milk and tea.",
-     "pt": "Certo! Café com leite e chá.",
-     "v": "en-US-JennyNeural",
+     "en": "Tea, please. Tea with milk.",
+     "pt": "Chá, por favor. Chá com leite.",
+     "v": "en-US-AriaNeural",
      "o": [
-      "Coffee, please.",
-      "OK! Coffee with milk and tea.",
-      "OK, OK! Sugar for Tom, too."
+      "OK, OK! Sugar for Tom, too.",
+      "Tea, please. Tea with milk.",
+      "Mia drinks her coffee."
      ]
     },
     {
      "t": "speak",
-     "en": "Bea! Coffee with milk and tea, please!",
-     "pt": "Bea! Café com leite e chá, por favor!",
-     "v": "en-US-GuyNeural",
+     "en": "OK! Coffee with milk and tea.",
+     "pt": "Certo! Café com leite e chá.",
+     "v": "en-US-JennyNeural",
      "o": [
-      "Bea! Café com leite e chá, por favor!",
-      "Oba! Obrigado, Mia!",
-      "A Bea está ocupada."
+      "Certo! Café com leite e chá.",
+      "Desculpa, Bea. Café com leite para a Mia.",
+      "Sim! Chá com bolo!"
      ]
     },
     {
      "t": "copy",
-     "en": "Bea! Coffee with milk and tea, please!",
-     "pt": "Bea! Café com leite e chá, por favor!",
-     "v": "en-US-GuyNeural",
+     "en": "OK! Coffee with milk and tea.",
+     "pt": "Certo! Café com leite e chá.",
+     "v": "en-US-JennyNeural",
      "x": [
-      "go",
-      "thank",
-      "home"
+      "cake",
+      "are",
+      "bread"
      ]
     }
    ]
@@ -465,9 +465,9 @@
      "w": "for",
      "pt": "para",
      "o": [
-      "café",
+      "leite",
       "para",
-      "água"
+      "agradecer"
      ]
     },
     {
@@ -480,9 +480,9 @@
      "w": "sugar",
      "pt": "açúcar",
      "o": [
-      "coffee",
-      "and",
-      "sugar"
+      "thank",
+      "sugar",
+      "with"
      ]
     },
     {
@@ -497,16 +497,16 @@
        "açúcar"
       ],
       [
-       "please",
-       "por favor"
-      ],
-      [
-       "tea",
-       "chá"
-      ],
-      [
        "and",
        "e"
+      ],
+      [
+       "milk",
+       "leite"
+      ],
+      [
+       "coffee",
+       "café"
       ]
      ]
     },
@@ -520,9 +520,9 @@
      "w": "water",
      "pt": "água",
      "o": [
-      "milk",
+      "and",
       "water",
-      "thank"
+      "coffee"
      ]
     },
     {
@@ -535,9 +535,9 @@
      "w": "cake",
      "pt": "bolo",
      "o": [
-      "bolo",
-      "por favor",
-      "e"
+      "com",
+      "e",
+      "bolo"
      ]
     },
     {
@@ -545,9 +545,9 @@
      "w": "water",
      "pt": "água",
      "o": [
+      "coffee",
       "water",
-      "you",
-      "for"
+      "you"
      ]
     },
     {
@@ -570,28 +570,10 @@
        "açúcar"
       ],
       [
-       "please",
-       "por favor"
+       "tea",
+       "chá"
       ]
      ]
-    },
-    {
-     "t": "phrase",
-     "en": "Cake for Leo and water for Mia.",
-     "pt": "Bolo para o Leo e água para a Mia.",
-     "v": "en-US-JennyNeural"
-    },
-    {
-     "t": "bank",
-     "en": "Cake for Leo and water for Mia.",
-     "pt": "Bolo para o Leo e água para a Mia.",
-     "v": "en-US-JennyNeural",
-     "x": [
-      "in",
-      "puts",
-      "milk"
-     ],
-     "wr": "copy"
     },
     {
      "t": "phrase",
@@ -600,27 +582,45 @@
      "v": "en-US-AnaNeural"
     },
     {
-     "t": "fill",
+     "t": "bank",
      "en": "Mia! Sugar? For you?",
      "pt": "Mia! Açúcar? Para você?",
      "v": "en-US-AnaNeural",
-     "gap": "Mia! ___? For you?",
-     "w": "Sugar",
+     "x": [
+      "café",
+      "more",
+      "grandpa"
+     ],
+     "wr": "copy"
+    },
+    {
+     "t": "phrase",
+     "en": "Sugar for the milk? OK!",
+     "pt": "Açúcar para o leite? Certo!",
+     "v": "en-US-JennyNeural"
+    },
+    {
+     "t": "fill",
+     "en": "Sugar for the milk? OK!",
+     "pt": "Açúcar para o leite? Certo!",
+     "v": "en-US-JennyNeural",
+     "gap": "Sugar for the ___? OK!",
+     "w": "milk",
      "o": [
-      "are",
-      "Sugar",
+      "milk",
+      "café",
       "is"
      ]
     },
     {
      "t": "speak",
-     "en": "Cake for Leo and water for Mia.",
-     "pt": "Bolo para o Leo e água para a Mia.",
-     "v": "en-US-JennyNeural",
+     "en": "Mia! Sugar? For you?",
+     "pt": "Mia! Açúcar? Para você?",
+     "v": "en-US-AnaNeural",
      "o": [
-      "Bolo para todo mundo!",
-      "Bolo para o Leo e água para a Mia.",
-      "Bea, bolo para mim também, por favor!"
+      "Mia! Bem-vinda! Chá?",
+      "Mia! Açúcar? Para você?",
+      "Água, por favor."
      ]
     },
     {
@@ -628,42 +628,42 @@
      "w": "for",
      "pt": "para",
      "o": [
-      "tea",
+      "with",
       "for",
-      "please"
+      "and"
      ]
     },
     {
      "t": "listen",
-     "en": "Cake for Leo and water for Mia.",
-     "pt": "Bolo para o Leo e água para a Mia.",
-     "v": "en-US-JennyNeural",
+     "en": "Mia! Sugar? For you?",
+     "pt": "Mia! Açúcar? Para você?",
+     "v": "en-US-AnaNeural",
      "o": [
-      "Coffee with milk?",
-      "Cake for Leo and water for Mia.",
-      "Water for Tom. Here you go!"
+      "Sorry, Bea. Coffee with milk for Mia.",
+      "Mia! Sugar? For you?",
+      "No. Water, please."
      ]
     },
     {
      "t": "speak",
-     "en": "Mia! Sugar? For you?",
-     "pt": "Mia! Açúcar? Para você?",
-     "v": "en-US-AnaNeural",
+     "en": "Sugar for the milk? OK!",
+     "pt": "Açúcar para o leite? Certo!",
+     "v": "en-US-JennyNeural",
      "o": [
-      "Não. Água, por favor.",
-      "Mia! Açúcar? Para você?",
-      "Mais açúcar, por favor!"
+      "Açúcar para o leite? Certo!",
+      "Não, obrigada. Água, por favor.",
+      "Bolo para o Leo e água para a Mia."
      ]
     },
     {
      "t": "copy",
-     "en": "Mia! Sugar? For you?",
-     "pt": "Mia! Açúcar? Para você?",
-     "v": "en-US-AnaNeural",
+     "en": "Sugar for the milk? OK!",
+     "pt": "Açúcar para o leite? Certo!",
+     "v": "en-US-JennyNeural",
      "x": [
-      "bread",
-      "thank",
-      "more"
+      "with",
+      "too",
+      "go"
      ]
     }
    ]
@@ -690,9 +690,9 @@
      "w": "go",
      "pt": "ir",
      "o": [
+      "com",
       "ir",
-      "bem-vindo(a)",
-      "chá"
+      "agradecer"
      ]
     },
     {
@@ -705,9 +705,9 @@
      "w": "here",
      "pt": "aqui",
      "o": [
-      "thank",
-      "here",
-      "water"
+      "sugar",
+      "milk",
+      "here"
      ]
     },
     {
@@ -722,16 +722,16 @@
        "aqui"
       ],
       [
+       "tea",
+       "chá"
+      ],
+      [
        "water",
        "água"
       ],
       [
-       "for",
-       "para"
-      ],
-      [
-       "please",
-       "por favor"
+       "you",
+       "você"
       ]
      ]
     },
@@ -745,9 +745,9 @@
      "w": "no",
      "pt": "não",
      "o": [
-      "please",
-      "go",
-      "no"
+      "here",
+      "no",
+      "and"
      ]
     },
     {
@@ -760,9 +760,9 @@
      "w": "welcome",
      "pt": "bem-vindo(a)",
      "o": [
-      "você",
-      "bem-vindo(a)",
-      "agradecer"
+      "e",
+      "água",
+      "bem-vindo(a)"
      ]
     },
     {
@@ -770,9 +770,9 @@
      "w": "no",
      "pt": "não",
      "o": [
-      "here",
-      "for",
-      "no"
+      "tea",
+      "no",
+      "milk"
      ]
     },
     {
@@ -795,8 +795,8 @@
        "aqui"
       ],
       [
-       "milk",
-       "leite"
+       "cake",
+       "bolo"
       ]
      ]
     },
@@ -812,9 +812,9 @@
      "pt": "Aqui está!",
      "v": "en-US-JennyNeural",
      "x": [
-      "home",
-      "butter",
-      "water"
+      "eats",
+      "me",
+      "cake"
      ],
      "wr": "copy"
     },
@@ -829,12 +829,12 @@
      "en": "Tea with milk. Here you go!",
      "pt": "Chá com leite. Aqui está!",
      "v": "en-US-JennyNeural",
-     "gap": "Tea with ___. Here you go!",
-     "w": "milk",
+     "gap": "___ with milk. Here you go!",
+     "w": "Tea",
      "o": [
-      "puts",
-      "good",
-      "milk"
+      "Tea",
+      "bread",
+      "me"
      ]
     },
     {
@@ -843,9 +843,9 @@
      "pt": "Aqui está!",
      "v": "en-US-JennyNeural",
      "o": [
-      "Café com leite?",
+      "Tchau! Obrigada!",
       "Aqui está!",
-      "Aqui está! Açúcar para dois!"
+      "Oi, Tom! Oi, Mia! Bem-vindos!"
      ]
     },
     {
@@ -853,9 +853,9 @@
      "w": "go",
      "pt": "ir",
      "o": [
-      "milk",
-      "sugar",
-      "go"
+      "coffee",
+      "go",
+      "for"
      ]
     },
     {
@@ -864,9 +864,9 @@
      "pt": "Aqui está!",
      "v": "en-US-JennyNeural",
      "o": [
-      "Mia! Welcome! Tea?",
-      "Mia! Sugar? For you?",
-      "Here you go!"
+      "Here you go!",
+      "Hello! Milk, please.",
+      "Hi, Bea! Good morning!"
      ]
     },
     {
@@ -875,9 +875,9 @@
      "pt": "Chá com leite. Aqui está!",
      "v": "en-US-JennyNeural",
      "o": [
-      "Por favor, Mia! Por favor!",
+      "Obrigado! E pão?",
       "Chá com leite. Aqui está!",
-      "Bea, bolo para mim também, por favor!"
+      "Água, por favor!"
      ]
     },
     {
@@ -886,9 +886,9 @@
      "pt": "Chá com leite. Aqui está!",
      "v": "en-US-JennyNeural",
      "x": [
-      "drinks",
-      "oops",
-      "hi"
+      "eats",
+      "and",
+      "has"
      ]
     }
    ]
@@ -915,9 +915,9 @@
      "w": "café",
      "pt": "café",
      "o": [
+      "café",
       "e",
-      "bem-vindo(a)",
-      "café"
+      "bolo"
      ]
     },
     {
@@ -930,9 +930,9 @@
      "w": "or",
      "pt": "ou",
      "o": [
-      "tea",
-      "thank",
-      "or"
+      "or",
+      "cake",
+      "thank"
      ]
     },
     {
@@ -947,16 +947,16 @@
        "ou"
       ],
       [
-       "tea",
-       "chá"
+       "sugar",
+       "açúcar"
       ],
       [
-       "cake",
-       "bolo"
+       "please",
+       "por favor"
       ],
       [
-       "milk",
-       "leite"
+       "welcome",
+       "bem-vindo(a)"
       ]
      ]
     },
@@ -970,9 +970,9 @@
      "w": "yes",
      "pt": "sim",
      "o": [
-      "water",
-      "yes",
-      "for"
+      "café",
+      "or",
+      "yes"
      ]
     },
     {
@@ -985,9 +985,9 @@
      "w": "at",
      "pt": "em",
      "o": [
-      "em",
-      "bolo",
-      "para"
+      "sim",
+      "leite",
+      "em"
      ]
     },
     {
@@ -995,9 +995,9 @@
      "w": "yes",
      "pt": "sim",
      "o": [
+      "with",
       "yes",
-      "you",
-      "coffee"
+      "café"
      ]
     },
     {
@@ -1020,57 +1020,57 @@
        "ou"
       ],
       [
-       "tea",
-       "chá"
+       "with",
+       "com"
       ]
      ]
     },
     {
      "t": "phrase",
-     "en": "Tea or coffee?",
-     "pt": "Chá ou café?",
-     "v": "en-US-JennyNeural"
+     "en": "Leo is at a café.",
+     "pt": "O Leo está em um café.",
+     "v": "en-US-AndrewNeural"
     },
     {
      "t": "bank",
-     "en": "Tea or coffee?",
-     "pt": "Chá ou café?",
-     "v": "en-US-JennyNeural",
+     "en": "Leo is at a café.",
+     "pt": "O Leo está em um café.",
+     "v": "en-US-AndrewNeural",
      "x": [
-      "goodbye",
-      "sugar",
+      "sorry",
+      "good",
       "more"
      ],
      "wr": "copy"
     },
     {
      "t": "phrase",
-     "en": "Yes, please.",
-     "pt": "Sim, por favor.",
-     "v": "en-US-GuyNeural"
+     "en": "Tom and Mia are at the café.",
+     "pt": "O Tom e a Mia estão no café.",
+     "v": "en-US-AndrewNeural"
     },
     {
      "t": "fill",
-     "en": "Yes, please.",
-     "pt": "Sim, por favor.",
-     "v": "en-US-GuyNeural",
-     "gap": "___, please.",
-     "w": "Yes",
+     "en": "Tom and Mia are at the café.",
+     "pt": "O Tom e a Mia estão no café.",
+     "v": "en-US-AndrewNeural",
+     "gap": "Tom and Mia ___ at the café.",
+     "w": "are",
      "o": [
-      "in",
-      "hello",
-      "Yes"
+      "or",
+      "two",
+      "are"
      ]
     },
     {
      "t": "speak",
-     "en": "Tea or coffee?",
-     "pt": "Chá ou café?",
-     "v": "en-US-JennyNeural",
+     "en": "Leo is at a café.",
+     "pt": "O Leo está em um café.",
+     "v": "en-US-AndrewNeural",
      "o": [
-      "Sim, por favor.",
-      "Não. Água, por favor.",
-      "Chá ou café?"
+      "O Leo está em um café.",
+      "Oi, Bea! Bom dia!",
+      "Não. Água, por favor."
      ]
     },
     {
@@ -1078,42 +1078,42 @@
      "w": "café",
      "pt": "café",
      "o": [
-      "with",
-      "milk",
-      "café"
+      "for",
+      "café",
+      "yes"
      ]
     },
     {
      "t": "listen",
-     "en": "Tea or coffee?",
-     "pt": "Chá ou café?",
-     "v": "en-US-JennyNeural",
+     "en": "Leo is at a café.",
+     "pt": "O Leo está em um café.",
+     "v": "en-US-AndrewNeural",
      "o": [
-      "Tea or coffee?",
-      "Bea has a new café.",
-      "Leo is at the door."
+      "Leo is at a café.",
+      "Sugar for Mia and sugar for Tom!",
+      "Coffee, please."
      ]
     },
     {
      "t": "speak",
-     "en": "Yes, please.",
-     "pt": "Sim, por favor.",
-     "v": "en-US-GuyNeural",
+     "en": "Tom and Mia are at the café.",
+     "pt": "O Tom e a Mia estão no café.",
+     "v": "en-US-AndrewNeural",
      "o": [
-      "Sim, por favor.",
-      "Olá! Café, por favor.",
-      "Aqui está. Leite para o Tom."
+      "O Tom e a Mia estão no café.",
+      "Oi! Bom dia!",
+      "Bolo também? Bolo para dois?"
      ]
     },
     {
      "t": "copy",
-     "en": "Yes, please.",
-     "pt": "Sim, por favor.",
-     "v": "en-US-GuyNeural",
+     "en": "Tom and Mia are at the café.",
+     "pt": "O Tom e a Mia estão no café.",
+     "v": "en-US-AndrewNeural",
      "x": [
-      "cake",
-      "morning",
-      "hi"
+      "door",
+      "butter",
+      "good"
      ]
     }
    ]
@@ -1140,9 +1140,9 @@
      "w": "goodbye",
      "pt": "tchau",
      "o": [
-      "açúcar",
       "tchau",
-      "sim"
+      "é",
+      "você"
      ]
     },
     {
@@ -1155,9 +1155,9 @@
      "w": "hi",
      "pt": "oi",
      "o": [
-      "go",
-      "please",
-      "hi"
+      "hi",
+      "here",
+      "you"
      ]
     },
     {
@@ -1172,16 +1172,16 @@
        "oi"
       ],
       [
-       "coffee",
-       "café"
+       "thank",
+       "agradecer"
       ],
       [
-       "here",
-       "aqui"
+       "welcome",
+       "bem-vindo(a)"
       ],
       [
-       "cake",
-       "bolo"
+       "milk",
+       "leite"
       ]
      ]
     },
@@ -1195,9 +1195,9 @@
      "w": "good",
      "pt": "bom",
      "o": [
-      "coffee",
-      "no",
-      "good"
+      "good",
+      "is",
+      "thank"
      ]
     },
     {
@@ -1210,9 +1210,9 @@
      "w": "is",
      "pt": "é",
      "o": [
-      "leite",
-      "água",
-      "é"
+      "é",
+      "oi",
+      "não"
      ]
     },
     {
@@ -1220,9 +1220,9 @@
      "w": "good",
      "pt": "bom",
      "o": [
+      "coffee",
       "good",
-      "water",
-      "go"
+      "is"
      ]
     },
     {
@@ -1245,100 +1245,100 @@
        "oi"
       ],
       [
-       "tea",
-       "chá"
+       "for",
+       "para"
       ]
      ]
     },
     {
      "t": "phrase",
-     "en": "Thank you, goodbye!",
-     "pt": "Obrigada, adeus!",
-     "v": "en-US-JennyNeural"
+     "en": "Hi! Good morning!",
+     "pt": "Oi! Bom dia!",
+     "v": "en-US-GuyNeural"
     },
     {
      "t": "bank",
-     "en": "Thank you, goodbye!",
-     "pt": "Obrigada, adeus!",
-     "v": "en-US-JennyNeural",
+     "en": "Hi! Good morning!",
+     "pt": "Oi! Bom dia!",
+     "v": "en-US-GuyNeural",
      "x": [
-      "tea",
-      "go",
-      "is"
+      "with",
+      "sugar",
+      "puts"
      ],
      "wr": "translate"
     },
     {
      "t": "phrase",
-     "en": "Hi, Leo!",
-     "pt": "Oi, Leo!",
+     "en": "Hi, Bea! Good morning!",
+     "pt": "Oi, Bea! Bom dia!",
      "v": "en-US-AriaNeural"
     },
     {
      "t": "fill",
-     "en": "Hi, Leo!",
-     "pt": "Oi, Leo!",
+     "en": "Hi, Bea! Good morning!",
+     "pt": "Oi, Bea! Bom dia!",
      "v": "en-US-AriaNeural",
-     "gap": "___, Leo!",
+     "gap": "___, Bea! Good morning!",
      "w": "Hi",
      "o": [
-      "my",
-      "in",
-      "Hi"
+      "Hi",
+      "you",
+      "thank"
      ]
     },
     {
      "t": "speak",
-     "en": "Thank you, goodbye!",
-     "pt": "Obrigada, adeus!",
-     "v": "en-US-JennyNeural",
+     "en": "Hi! Good morning!",
+     "pt": "Oi! Bom dia!",
+     "v": "en-US-GuyNeural",
      "o": [
-      "Bom dia! Chá ou café?",
-      "Obrigada, adeus!",
-      "Bolo para o Leo e água para a Mia."
+      "Oi! Bom dia!",
+      "Bolo para todo mundo!",
+      "Leite ou água?"
      ]
     },
     {
      "t": "type",
-     "en": "Hi, Leo!",
-     "pt": "Oi, Leo!",
+     "en": "Hi, Bea! Good morning!",
+     "pt": "Oi, Bea! Bom dia!",
      "v": "en-US-AriaNeural",
      "x": [
+      "cheese",
       "milk",
-      "bread",
-      "is"
+      "water"
      ]
     },
     {
      "t": "listen",
-     "en": "Thank you, goodbye!",
-     "pt": "Obrigada, adeus!",
-     "v": "en-US-JennyNeural",
+     "en": "Hi! Good morning!",
+     "pt": "Oi! Bom dia!",
+     "v": "en-US-GuyNeural",
      "o": [
-      "Thank you, goodbye!",
-      "Yes! Tea with cake!",
-      "Sugar for Mia and sugar for Tom!"
+      "Welcome!",
+      "Hi! Good morning!",
+      "Coffee and water, please."
      ]
     },
     {
      "t": "speak",
-     "en": "Hi, Leo!",
-     "pt": "Oi, Leo!",
+     "en": "Hi, Bea! Good morning!",
+     "pt": "Oi, Bea! Bom dia!",
      "v": "en-US-AriaNeural",
      "o": [
-      "Chá ou café?",
-      "O Leo está na porta.",
-      "Oi, Leo!"
+      "Água para o Tom. Aqui está!",
+      "café com leite",
+      "Oi, Bea! Bom dia!"
      ]
     },
     {
      "t": "bank",
-     "en": "Hi, Leo!",
-     "pt": "Oi, Leo!",
+     "en": "Hi, Bea! Good morning!",
+     "pt": "Oi, Bea! Bom dia!",
      "v": "en-US-AriaNeural",
      "x": [
-      "welcome",
-      "café",
+      "two",
+      "has",
       "oops"
      ],
      "wr": "translate"
@@ -1367,9 +1367,9 @@
      "w": "morning",
      "pt": "manhã",
      "o": [
-      "bom",
+      "bolo",
       "manhã",
-      "ou"
+      "sim"
      ]
     },
     {
@@ -1383,8 +1383,8 @@
      "pt": "também",
      "o": [
       "too",
-      "yes",
-      "go"
+      "morning",
+      "and"
      ]
     },
     {
@@ -1399,16 +1399,16 @@
        "também"
       ],
       [
-       "café",
+       "is",
+       "é"
+      ],
+      [
+       "coffee",
        "café"
       ],
       [
-       "hi",
-       "oi"
-      ],
-      [
-       "here",
-       "aqui"
+       "goodbye",
+       "tchau"
       ]
      ]
     },
@@ -1422,9 +1422,9 @@
      "w": "hello",
      "pt": "olá",
      "o": [
-      "morning",
-      "no",
-      "hello"
+      "yes",
+      "hello",
+      "sugar"
      ]
     },
     {
@@ -1437,9 +1437,9 @@
      "w": "sorry",
      "pt": "desculpa",
      "o": [
-      "e",
-      "também",
-      "desculpa"
+      "desculpa",
+      "você",
+      "bom"
      ]
     },
     {
@@ -1447,9 +1447,9 @@
      "w": "hello",
      "pt": "olá",
      "o": [
-      "hello",
-      "good",
-      "go"
+      "hi",
+      "too",
+      "hello"
      ]
     },
     {
@@ -1472,8 +1472,8 @@
        "também"
       ],
       [
-       "welcome",
-       "bem-vindo(a)"
+       "milk",
+       "leite"
       ]
      ]
     },
@@ -1489,29 +1489,29 @@
      "pt": "Olá! Bem-vindo!",
      "v": "en-US-JennyNeural",
      "x": [
-      "sorry",
-      "tea",
-      "has"
+      "or",
+      "coffee",
+      "cake"
      ],
      "wr": "translate"
     },
     {
      "t": "phrase",
-     "en": "Hi! Good morning!",
-     "pt": "Oi! Bom dia!",
-     "v": "en-US-GuyNeural"
+     "en": "Good morning, Tom!",
+     "pt": "Bom dia, Tom!",
+     "v": "en-US-RogerNeural"
     },
     {
      "t": "fill",
-     "en": "Hi! Good morning!",
-     "pt": "Oi! Bom dia!",
-     "v": "en-US-GuyNeural",
-     "gap": "___! Good morning!",
-     "w": "Hi",
+     "en": "Good morning, Tom!",
+     "pt": "Bom dia, Tom!",
+     "v": "en-US-RogerNeural",
+     "gap": "___ morning, Tom!",
+     "w": "Good",
      "o": [
-      "Hi",
-      "goodbye",
-      "you"
+      "thank",
+      "Good",
+      "or"
      ]
     },
     {
@@ -1520,20 +1520,20 @@
      "pt": "Olá! Bem-vindo!",
      "v": "en-US-JennyNeural",
      "o": [
-      "Obrigado! E pão?",
-      "Ah! Desculpa! Desculpa!",
-      "Olá! Bem-vindo!"
+      "Olá! Bem-vindo!",
+      "Obrigado, Tom!",
+      "Aqui está. Leite para o Tom."
      ]
     },
     {
      "t": "type",
-     "en": "Hi! Good morning!",
-     "pt": "Oi! Bom dia!",
-     "v": "en-US-GuyNeural",
+     "en": "Good morning, Tom!",
+     "pt": "Bom dia, Tom!",
+     "v": "en-US-RogerNeural",
      "x": [
-      "sorry",
-      "my",
-      "two"
+      "and",
+      "go",
+      "for"
      ]
     },
     {
@@ -1542,31 +1542,31 @@
      "pt": "Olá! Bem-vindo!",
      "v": "en-US-JennyNeural",
      "o": [
-      "Hello! Welcome!",
-      "Coffee and water, please.",
-      "Water? Thank you..."
+      "Tom! No sugar, please!",
+      "Thank you! Goodbye, Bea!",
+      "Hello! Welcome!"
      ]
     },
     {
      "t": "speak",
-     "en": "Hi! Good morning!",
-     "pt": "Oi! Bom dia!",
-     "v": "en-US-GuyNeural",
+     "en": "Good morning, Tom!",
+     "pt": "Bom dia, Tom!",
+     "v": "en-US-RogerNeural",
      "o": [
-      "Não. Água, por favor.",
-      "Oi! Bom dia!",
-      "Leite, por favor!"
+      "Bom dia, Tom!",
+      "Obrigado, Tom!",
+      "A Bea está ocupada."
      ]
     },
     {
      "t": "bank",
-     "en": "Hi! Good morning!",
-     "pt": "Oi! Bom dia!",
-     "v": "en-US-GuyNeural",
+     "en": "Good morning, Tom!",
+     "pt": "Bom dia, Tom!",
+     "v": "en-US-RogerNeural",
      "x": [
-      "yes",
-      "too",
-      "go"
+      "milk",
+      "grandpa",
+      "with"
      ],
      "wr": "translate"
     }
@@ -1594,9 +1594,9 @@
      "w": "are",
      "pt": "são",
      "o": [
-      "é",
-      "bom",
-      "são"
+      "são",
+      "ou",
+      "e"
      ]
     },
     {
@@ -1609,8 +1609,8 @@
      "w": "bread",
      "pt": "pão",
      "o": [
-      "please",
-      "is",
+      "me",
+      "or",
       "bread"
      ]
     },
@@ -1626,16 +1626,16 @@
        "pão"
       ],
       [
-       "at",
-       "em"
+       "welcome",
+       "bem-vindo(a)"
+      ],
+      [
+       "no",
+       "não"
       ],
       [
        "good",
        "bom"
-      ],
-      [
-       "sugar",
-       "açúcar"
       ]
      ]
     },
@@ -1650,8 +1650,8 @@
      "pt": "vovô",
      "o": [
       "grandpa",
-      "me",
-      "good"
+      "no",
+      "milk"
      ]
     },
     {
@@ -1665,8 +1665,8 @@
      "pt": "mim",
      "o": [
       "mim",
-      "pão",
-      "é"
+      "oi",
+      "ou"
      ]
     },
     {
@@ -1674,9 +1674,9 @@
      "w": "grandpa",
      "pt": "vovô",
      "o": [
+      "morning",
       "grandpa",
-      "cake",
-      "and"
+      "hi"
      ]
     },
     {
@@ -1699,8 +1699,8 @@
        "pão"
       ],
       [
-       "yes",
-       "sim"
+       "please",
+       "por favor"
       ]
      ]
     },
@@ -1716,9 +1716,9 @@
      "pt": "Bom dia, vovô!",
      "v": "en-US-AnaNeural",
      "x": [
-      "go",
-      "here",
-      "please"
+      "too",
+      "sorry",
+      "my"
      ],
      "wr": "translate"
     },
@@ -1733,12 +1733,12 @@
      "en": "And for me!",
      "pt": "E para mim!",
      "v": "en-US-RogerNeural",
-     "gap": "And ___ me!",
-     "w": "for",
+     "gap": "And for ___!",
+     "w": "me",
      "o": [
-      "milk",
+      "me",
       "oops",
-      "for"
+      "good"
      ]
     },
     {
@@ -1747,9 +1747,9 @@
      "pt": "Bom dia, vovô!",
      "v": "en-US-AnaNeural",
      "o": [
-      "Bem-vindo!",
+      "Bom dia, Tom!",
       "Bom dia, vovô!",
-      "café com leite"
+      "Mia, chá ou café?"
      ]
     },
     {
@@ -1758,9 +1758,9 @@
      "pt": "E para mim!",
      "v": "en-US-RogerNeural",
      "x": [
-      "oops",
-      "good",
-      "has"
+      "new",
+      "grandpa",
+      "morning"
      ]
     },
     {
@@ -1769,9 +1769,9 @@
      "pt": "Bom dia, vovô!",
      "v": "en-US-AnaNeural",
      "o": [
+      "Water, please.",
       "Good morning, Grandpa!",
-      "Yes! Coffee with sugar!",
-      "Tea with milk. Here you go!"
+      "coffee with milk"
      ]
     },
     {
@@ -1780,9 +1780,9 @@
      "pt": "E para mim!",
      "v": "en-US-RogerNeural",
      "o": [
-      "Café, por favor. Café com leite.",
-      "Bolo, por favor! E chá.",
-      "E para mim!"
+      "Aqui está!",
+      "E para mim!",
+      "Leite, por favor!"
      ]
     },
     {
@@ -1791,9 +1791,9 @@
      "pt": "E para mim!",
      "v": "en-US-RogerNeural",
      "x": [
-      "good",
-      "milk",
-      "coffee"
+      "oops",
+      "café",
+      "with"
      ],
      "wr": "translate"
     }
@@ -1821,8 +1821,8 @@
      "w": "cheese",
      "pt": "queijo",
      "o": [
-      "e",
-      "dois",
+      "você",
+      "oi",
       "queijo"
      ]
     },
@@ -1836,9 +1836,9 @@
      "w": "more",
      "pt": "mais",
      "o": [
-      "for",
       "more",
-      "two"
+      "cheese",
+      "you"
      ]
     },
     {
@@ -1853,16 +1853,16 @@
        "mais"
       ],
       [
-       "thank",
-       "agradecer"
+       "cake",
+       "bolo"
       ],
       [
-       "yes",
-       "sim"
+       "you",
+       "você"
       ],
       [
-       "go",
-       "ir"
+       "too",
+       "também"
       ]
      ]
     },
@@ -1876,9 +1876,9 @@
      "w": "two",
      "pt": "dois",
      "o": [
-      "sorry",
-      "two",
-      "water"
+      "with",
+      "please",
+      "two"
      ]
     },
     {
@@ -1891,9 +1891,9 @@
      "w": "busy",
      "pt": "ocupado(a)",
      "o": [
-      "agradecer",
-      "desculpa",
-      "ocupado(a)"
+      "ocupado(a)",
+      "são",
+      "por favor"
      ]
     },
     {
@@ -1902,8 +1902,8 @@
      "pt": "dois",
      "o": [
       "two",
-      "good",
-      "no"
+      "water",
+      "cheese"
      ]
     },
     {
@@ -1926,8 +1926,8 @@
        "mais"
       ],
       [
-       "with",
-       "com"
+       "no",
+       "não"
       ]
      ]
     },
@@ -1943,9 +1943,9 @@
      "pt": "Mais açúcar, por favor!",
      "v": "en-US-AnaNeural",
      "x": [
-      "milk",
-      "with",
-      "home"
+      "goodbye",
+      "at",
+      "in"
      ],
      "wr": "translate"
     },
@@ -1963,9 +1963,9 @@
      "gap": "Bea is ___.",
      "w": "busy",
      "o": [
-      "too",
       "busy",
-      "my"
+      "café",
+      "everyone"
      ]
     },
     {
@@ -1974,9 +1974,9 @@
      "pt": "Mais açúcar, por favor!",
      "v": "en-US-AnaNeural",
      "o": [
-      "Pão com manteiga?",
-      "Mais açúcar, por favor!",
-      "Café com leite, por favor."
+      "Leite, por favor!",
+      "café com leite",
+      "Mais açúcar, por favor!"
      ]
     },
     {
@@ -1986,8 +1986,8 @@
      "v": "en-US-AndrewNeural",
      "x": [
       "my",
-      "cheese",
-      "goodbye"
+      "welcome",
+      "good"
      ]
     },
     {
@@ -1997,8 +1997,8 @@
      "v": "en-US-AnaNeural",
      "o": [
       "More sugar, please!",
-      "Thank you! Goodbye, Bea!",
-      "Hi, Bea! Good morning!"
+      "Cheese? No, thank you.",
+      "Sorry, Bea. Coffee with milk for Mia."
      ]
     },
     {
@@ -2007,9 +2007,9 @@
      "pt": "A Bea está ocupada.",
      "v": "en-US-AndrewNeural",
      "o": [
-      "Açúcar para a Mia e açúcar para o Tom!",
+      "Desculpa, Bea. Café com leite para a Mia.",
       "A Bea está ocupada.",
-      "Tá bom, tá bom! Açúcar para o Tom também."
+      "Sim! Café com açúcar!"
      ]
     },
     {
@@ -2018,9 +2018,9 @@
      "pt": "A Bea está ocupada.",
      "v": "en-US-AndrewNeural",
      "x": [
-      "water",
-      "hi",
-      "are"
+      "puts",
+      "oops",
+      "please"
      ],
      "wr": "translate"
     }
@@ -2037,45 +2037,45 @@
      "t": "pairs",
      "p": [
       [
-       "at",
-       "em"
+       "good",
+       "bom"
       ],
       [
-       "here",
-       "aqui"
+       "no",
+       "não"
       ],
       [
-       "yes",
-       "sim"
+       "water",
+       "água"
       ],
       [
-       "tea",
-       "chá"
+       "two",
+       "dois"
       ],
       [
-       "for",
-       "para"
+       "welcome",
+       "bem-vindo(a)"
       ]
      ]
     },
     {
      "t": "meaning",
-     "w": "too",
-     "pt": "também",
+     "w": "hi",
+     "pt": "oi",
      "o": [
-      "também",
-      "café",
-      "com"
+      "oi",
+      "ocupado(a)",
+      "para"
      ]
     },
     {
      "t": "hear",
-     "w": "no",
-     "pt": "não",
+     "w": "here",
+     "pt": "aqui",
      "o": [
-      "hello",
-      "no",
-      "sorry"
+      "here",
+      "thank",
+      "please"
      ]
     },
     {
@@ -2090,9 +2090,9 @@
      "pt": "Chá ou café?",
      "v": "en-US-JennyNeural",
      "x": [
-      "is",
-      "home",
-      "everyone"
+      "sorry",
+      "café",
+      "drinks"
      ],
      "wr": "translate"
     },
@@ -2103,8 +2103,8 @@
      "v": "en-US-JennyNeural",
      "o": [
       "Chá ou café?",
-      "Café com leite, por favor.",
-      "Não. Água, por favor."
+      "Bem-vindo!",
+      "Tom! Não! Chega de açúcar!"
      ]
     },
     {
@@ -2121,7 +2121,7 @@
      "gap": "Water, ___.",
      "w": "please",
      "o": [
-      "at",
+      "door",
       "yes",
       "please"
      ]
@@ -2132,33 +2132,33 @@
      "pt": "Água, por favor.",
      "v": "en-US-JennyNeural",
      "x": [
-      "puts",
-      "sorry",
-      "nice"
+      "oops",
+      "drinks",
+      "goodbye"
      ]
     },
     {
      "t": "pairs",
      "p": [
       [
-       "or",
-       "ou"
+       "with",
+       "com"
+      ],
+      [
+       "tea",
+       "chá"
       ],
       [
        "sugar",
        "açúcar"
       ],
       [
-       "me",
-       "mim"
+       "sorry",
+       "desculpa"
       ],
       [
-       "and",
-       "e"
-      ],
-      [
-       "are",
-       "são"
+       "thank",
+       "agradecer"
       ]
      ]
     },
@@ -2174,9 +2174,9 @@
      "pt": "café com leite",
      "v": "en-US-JennyNeural",
      "o": [
-      "Mia is at the café, too.",
-      "coffee with milk",
-      "Tea, please. Tea with milk."
+      "Leo eats the cake.",
+      "Cake for Leo and water for Mia.",
+      "coffee with milk"
      ]
     },
     {
@@ -2185,19 +2185,19 @@
      "pt": "café com leite",
      "v": "en-US-JennyNeural",
      "o": [
-      "Açúcar para o leite? Certo!",
-      "café com leite",
-      "Oi! Bom dia!"
+      "Leo... bolo, por favor?",
+      "O Leo está na porta.",
+      "café com leite"
      ]
     },
     {
      "t": "pick",
-     "w": "hi",
-     "pt": "oi",
+     "w": "morning",
+     "pt": "manhã",
      "o": [
-      "hi",
-      "hello",
-      "thank"
+      "café",
+      "morning",
+      "hello"
      ]
     },
     {
@@ -2206,9 +2206,9 @@
      "pt": "Chá ou café?",
      "v": "en-US-JennyNeural",
      "x": [
-      "with",
-      "go",
-      "hi"
+      "hi",
+      "and",
+      "my"
      ]
     },
     {
@@ -2217,20 +2217,20 @@
      "pt": "café com leite",
      "v": "en-US-JennyNeural",
      "x": [
-      "bread",
-      "go",
-      "thank"
+      "tea",
+      "hello",
+      "two"
      ],
      "wr": "translate"
     },
     {
      "t": "meaning",
-     "w": "go",
-     "pt": "ir",
+     "w": "for",
+     "pt": "para",
      "o": [
-      "ir",
-      "bem-vindo(a)",
-      "desculpa"
+      "açúcar",
+      "para",
+      "dois"
      ]
     },
     {
@@ -2240,18 +2240,18 @@
      "v": "en-US-JennyNeural",
      "o": [
       "Água, por favor.",
-      "Água, por favor!",
-      "Aqui está! Açúcar para dois!"
+      "O Leo e a Mia estão no café.",
+      "Obrigado, Bea! Bem-vindo, café!"
      ]
     },
     {
      "t": "hear",
-     "w": "please",
-     "pt": "por favor",
+     "w": "me",
+     "pt": "mim",
      "o": [
-      "please",
-      "for",
-      "good"
+      "me",
+      "grandpa",
+      "yes"
      ]
     },
     {
@@ -2260,9 +2260,9 @@
      "pt": "Água, por favor.",
      "v": "en-US-JennyNeural",
      "x": [
-      "good",
-      "are",
-      "and"
+      "morning",
+      "butter",
+      "busy"
      ],
      "wr": "translate"
     }

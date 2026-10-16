@@ -23,7 +23,7 @@ RULES = [  # mesmas regras do app (lemmaOf em app.js)
     (r"er$", ""), (r"est$", ""),
 ]
 # palavras que não fazem sentido ensinar sozinhas (artigos, preposições curtas, interjeições)
-SKIP = set("a an the to of oh ok okay ha hmm uh um wow ah hey yeah".split())
+SKIP = set("a an the to of oh ok okay ha hmm mmm uh um wow ah hey yeah".split())
 LESSONS, NEW_PER_LESSON = 10, 4
 EMOJIS = ["🔤", "🧩", "🎯", "🧠", "💬", "🔁", "⭐", "🗝️", "🚀", "🏆"]
 MAX_SENT_WORDS = 7
@@ -75,7 +75,7 @@ def unit_material(unit):
             if isinstance(s, list) and s[1] not in seen:
                 seen.add(s[1])
                 n = len(tokens(s[1]))
-                noisy = {t.lower() for t in tokens(s[1])} & {"hmm", "uh", "um", "ha", "oops"}
+                noisy = {t.lower() for t in tokens(s[1])} & {"hmm", "mmm", "uh", "um", "ha", "oops"}
                 if 2 <= n <= MAX_SENT_WORDS and not re.search(r"\d", s[1]) and not noisy:
                     sents.append({"en": s[1], "pt": s[2], "v": cast.get(s[0], {}).get("voice", DEFAULT_VOICE), "guide": False})
     freq = {}
@@ -128,7 +128,10 @@ def build(unit, taught_before, pro, rng):
             ls = {l for l in lem_set(s["en"]) if teachable(l, names)}
             unknown = len(ls - known)
             hit = len(ls & focus)
-            return (unknown, -hit, used_sents.get(s["en"], 0), -s["guide"], len(tokens(s["en"])))
+            used = used_sents.get(s["en"], 0)
+            # 1) não repetir frase de outra lição; 2) no máximo 2 palavras ainda não ensinadas;
+            # 3) usar as palavras novas da lição; 4) o mínimo de palavras desconhecidas
+            return (used > 0, unknown > 2, -min(hit, 2), unknown, used, -s["guide"], len(tokens(s["en"])))
         chosen = sorted(sents, key=score)[:n]
         for s in chosen:
             used_sents[s["en"]] = used_sents.get(s["en"], 0) + 1

@@ -1,0 +1,2272 @@
+{
+ "unit": 6,
+ "lessons": [
+  {
+   "id": "u6z1",
+   "title": "restaurant · burger · pizza · fish",
+   "titlePt": "restaurante · hambúrguer · pizza · peixe",
+   "emoji": "🔤",
+   "words": [
+    "restaurant",
+    "burger",
+    "pizza",
+    "fish"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "burger",
+     "pt": "hambúrguer"
+    },
+    {
+     "t": "meaning",
+     "w": "burger",
+     "pt": "hambúrguer",
+     "o": [
+      "olá",
+      "bolo",
+      "hambúrguer"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "pizza",
+     "pt": "pizza"
+    },
+    {
+     "t": "hear",
+     "w": "pizza",
+     "pt": "pizza",
+     "o": [
+      "here",
+      "pizza",
+      "at"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "burger",
+       "hambúrguer"
+      ],
+      [
+       "pizza",
+       "pizza"
+      ],
+      [
+       "restaurant",
+       "restaurante"
+      ],
+      [
+       "fish",
+       "peixe"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "fish",
+     "pt": "peixe"
+    },
+    {
+     "t": "pick",
+     "w": "fish",
+     "pt": "peixe",
+     "o": [
+      "mushrooms",
+      "fish",
+      "afraid"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "restaurant",
+     "pt": "restaurante"
+    },
+    {
+     "t": "meaning",
+     "w": "restaurant",
+     "pt": "restaurante",
+     "o": [
+      "com",
+      "restaurante",
+      "surpresa"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "fish",
+     "pt": "peixe",
+     "o": [
+      "fish",
+      "but",
+      "then"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "fish",
+       "peixe"
+      ],
+      [
+       "restaurant",
+       "restaurante"
+      ],
+      [
+       "burger",
+       "hambúrguer"
+      ],
+      [
+       "pizza",
+       "pizza"
+      ]
+     ]
+    },
+    {
+     "t": "phrase",
+     "en": "Wow! Pizza, burgers, salads... I'm hungry!",
+     "pt": "Uau! Pizza, hambúrgueres, saladas... Estou com fome!",
+     "v": "en-US-EricNeural"
+    },
+    {
+     "t": "bank",
+     "en": "Wow! Pizza, burgers, salads... I'm hungry!",
+     "pt": "Uau! Pizza, hambúrgueres, saladas... Estou com fome!",
+     "v": "en-US-EricNeural",
+     "x": [
+      "oven",
+      "can",
+      "two"
+     ],
+     "wr": "copy"
+    },
+    {
+     "t": "phrase",
+     "en": "And my burger?",
+     "pt": "E o meu hambúrguer?",
+     "v": "en-US-EricNeural"
+    },
+    {
+     "t": "fill",
+     "en": "And my burger?",
+     "pt": "E o meu hambúrguer?",
+     "v": "en-US-EricNeural",
+     "gap": "And my ___?",
+     "w": "burger",
+     "o": [
+      "that",
+      "on",
+      "burger"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Wow! Pizza, burgers, salads... I'm hungry!",
+     "pt": "Uau! Pizza, hambúrgueres, saladas... Estou com fome!",
+     "v": "en-US-EricNeural",
+     "o": [
+      "Pierre... este restaurante é muito caro!",
+      "Sim, por favor. Uma mesa para quatro.",
+      "Uau! Pizza, hambúrgueres, saladas... Estou com fome!"
+     ]
+    },
+    {
+     "t": "spell",
+     "w": "burger",
+     "pt": "hambúrguer",
+     "o": [
+      "burger",
+      "this",
+      "mushrooms"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "Wow! Pizza, burgers, salads... I'm hungry!",
+     "pt": "Uau! Pizza, hambúrgueres, saladas... Estou com fome!",
+     "v": "en-US-EricNeural",
+     "o": [
+      "Wow! Pizza, burgers, salads... I'm hungry!",
+      "I don't know, Ben. Ask the waitress.",
+      "Five minutes later, the waitress is back."
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "And my burger?",
+     "pt": "E o meu hambúrguer?",
+     "v": "en-US-EricNeural",
+     "o": [
+      "Eu gostaria de uma salada, por favor.",
+      "Feliz aniversário, mãe!",
+      "E o meu hambúrguer?"
+     ]
+    },
+    {
+     "t": "copy",
+     "en": "And my burger?",
+     "pt": "E o meu hambúrguer?",
+     "v": "en-US-EricNeural",
+     "x": [
+      "curry",
+      "five",
+      "twenty"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u6z2",
+   "title": "glass · salad · table · chicken",
+   "titlePt": "copo · salada · mesa · frango",
+   "emoji": "🧩",
+   "words": [
+    "glass",
+    "salad",
+    "table",
+    "chicken"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "glass",
+     "pt": "copo"
+    },
+    {
+     "t": "meaning",
+     "w": "glass",
+     "pt": "copo",
+     "o": [
+      "mesa",
+      "salada",
+      "copo"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "salad",
+     "pt": "salada"
+    },
+    {
+     "t": "hear",
+     "w": "salad",
+     "pt": "salada",
+     "o": [
+      "salad",
+      "chicken",
+      "pizza"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "glass",
+       "copo"
+      ],
+      [
+       "salad",
+       "salada"
+      ],
+      [
+       "fish",
+       "peixe"
+      ],
+      [
+       "pizza",
+       "pizza"
+      ],
+      [
+       "restaurant",
+       "restaurante"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "table",
+     "pt": "mesa"
+    },
+    {
+     "t": "pick",
+     "w": "table",
+     "pt": "mesa",
+     "o": [
+      "burger",
+      "table",
+      "restaurant"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "chicken",
+     "pt": "frango"
+    },
+    {
+     "t": "meaning",
+     "w": "chicken",
+     "pt": "frango",
+     "o": [
+      "mesa",
+      "peixe",
+      "frango"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "table",
+     "pt": "mesa",
+     "o": [
+      "burger",
+      "glass",
+      "table"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "table",
+       "mesa"
+      ],
+      [
+       "chicken",
+       "frango"
+      ],
+      [
+       "glass",
+       "copo"
+      ],
+      [
+       "salad",
+       "salada"
+      ],
+      [
+       "restaurant",
+       "restaurante"
+      ]
+     ]
+    },
+    {
+     "t": "phrase",
+     "en": "I'd like a salad, please.",
+     "pt": "Eu gostaria de uma salada, por favor.",
+     "v": "en-US-JennyNeural"
+    },
+    {
+     "t": "bank",
+     "en": "I'd like a salad, please.",
+     "pt": "Eu gostaria de uma salada, por favor.",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "indian",
+      "happy",
+      "chocolate"
+     ],
+     "wr": "copy"
+    },
+    {
+     "t": "phrase",
+     "en": "I'd like a glass of water.",
+     "pt": "Eu gostaria de um copo de água.",
+     "v": "en-US-JennyNeural"
+    },
+    {
+     "t": "fill",
+     "en": "I'd like a glass of water.",
+     "pt": "Eu gostaria de um copo de água.",
+     "v": "en-US-JennyNeural",
+     "gap": "I'd like a ___ of water.",
+     "w": "glass",
+     "o": [
+      "beef",
+      "glass",
+      "you"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "I'd like a salad, please.",
+     "pt": "Eu gostaria de uma salada, por favor.",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Não, obrigado. Eu quero o meu hambúrguer.",
+      "Eu gostaria de uma salada, por favor.",
+      "Uau! Pizza, hambúrgueres, saladas... Estou com fome!"
+     ]
+    },
+    {
+     "t": "spell",
+     "w": "glass",
+     "pt": "copo",
+     "o": [
+      "chicken",
+      "glass",
+      "salad"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "I'd like a salad, please.",
+     "pt": "Eu gostaria de uma salada, por favor.",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "I'd like a glass of water.",
+      "I'd like a salad, please.",
+      "Here is a glass of water."
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "I'd like a glass of water.",
+     "pt": "Eu gostaria de um copo de água.",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Três pizzas! Muito bem!",
+      "Eu gostaria de um copo de água.",
+      "Vocês estão prontos?"
+     ]
+    },
+    {
+     "t": "copy",
+     "en": "I'd like a glass of water.",
+     "pt": "Eu gostaria de um copo de água.",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "what",
+      "great",
+      "every"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u6z3",
+   "title": "food · hot · expensive · minute",
+   "titlePt": "comida · quente · caro · minuto",
+   "emoji": "🎯",
+   "words": [
+    "food",
+    "hot",
+    "expensive",
+    "minute"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "food",
+     "pt": "comida"
+    },
+    {
+     "t": "meaning",
+     "w": "food",
+     "pt": "comida",
+     "o": [
+      "comida",
+      "salada",
+      "pizza"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "hot",
+     "pt": "quente"
+    },
+    {
+     "t": "hear",
+     "w": "hot",
+     "pt": "quente",
+     "o": [
+      "glass",
+      "hot",
+      "salad"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "food",
+       "comida"
+      ],
+      [
+       "hot",
+       "quente"
+      ],
+      [
+       "fish",
+       "peixe"
+      ],
+      [
+       "glass",
+       "copo"
+      ],
+      [
+       "restaurant",
+       "restaurante"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "expensive",
+     "pt": "caro"
+    },
+    {
+     "t": "pick",
+     "w": "expensive",
+     "pt": "caro",
+     "o": [
+      "expensive",
+      "chicken",
+      "glass"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "minute",
+     "pt": "minuto"
+    },
+    {
+     "t": "meaning",
+     "w": "minute",
+     "pt": "minuto",
+     "o": [
+      "minuto",
+      "frango",
+      "quente"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "expensive",
+     "pt": "caro",
+     "o": [
+      "salad",
+      "expensive",
+      "pizza"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "expensive",
+       "caro"
+      ],
+      [
+       "minute",
+       "minuto"
+      ],
+      [
+       "food",
+       "comida"
+      ],
+      [
+       "hot",
+       "quente"
+      ],
+      [
+       "chicken",
+       "frango"
+      ]
+     ]
+    },
+    {
+     "t": "phrase",
+     "en": "Oh! Your burger... one minute!",
+     "pt": "Ah! Seu hambúrguer... um minuto!",
+     "v": "en-GB-LibbyNeural"
+    },
+    {
+     "t": "bank",
+     "en": "Oh! Your burger... one minute!",
+     "pt": "Ah! Seu hambúrguer... um minuto!",
+     "v": "en-GB-LibbyNeural",
+     "x": [
+      "curry",
+      "has",
+      "course"
+     ],
+     "wr": "copy"
+    },
+    {
+     "t": "phrase",
+     "en": "OK, OK. A beef burger. Two minutes!",
+     "pt": "Tá bom, tá bom. Um hambúrguer de carne. Dois minutos!",
+     "v": "en-GB-LibbyNeural"
+    },
+    {
+     "t": "fill",
+     "en": "OK, OK. A beef burger. Two minutes!",
+     "pt": "Tá bom, tá bom. Um hambúrguer de carne. Dois minutos!",
+     "v": "en-GB-LibbyNeural",
+     "gap": "OK, OK. A beef burger. Two ___!",
+     "w": "minutes",
+     "o": [
+      "minutes",
+      "beautiful",
+      "but"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Oh! Your burger... one minute!",
+     "pt": "Ah! Seu hambúrguer... um minuto!",
+     "v": "en-GB-LibbyNeural",
+     "o": [
+      "Ah! Seu hambúrguer... um minuto!",
+      "E aqui está o seu bolo de aniversário!",
+      "Uma salada. E para beber?"
+     ]
+    },
+    {
+     "t": "spell",
+     "w": "food",
+     "pt": "comida",
+     "o": [
+      "minute",
+      "food",
+      "chicken"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "Oh! Your burger... one minute!",
+     "pt": "Ah! Seu hambúrguer... um minuto!",
+     "v": "en-GB-LibbyNeural",
+     "o": [
+      "Oh! Your burger... one minute!",
+      "Wow, Pierre! This restaurant is beautiful!",
+      "Good evening. Here is the menu."
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "OK, OK. A beef burger. Two minutes!",
+     "pt": "Tá bom, tá bom. Um hambúrguer de carne. Dois minutos!",
+     "v": "en-GB-LibbyNeural",
+     "o": [
+      "E o peixe custa cinquenta libras!",
+      "Tá bom, tá bom. Um hambúrguer de carne. Dois minutos!",
+      "Feliz aniversário, mãe!"
+     ]
+    },
+    {
+     "t": "copy",
+     "en": "OK, OK. A beef burger. Two minutes!",
+     "pt": "Tá bom, tá bom. Um hambúrguer de carne. Dois minutos!",
+     "v": "en-GB-LibbyNeural",
+     "x": [
+      "try",
+      "are",
+      "sir"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u6z4",
+   "title": "want · birthday · do · friday",
+   "titlePt": "querer · aniversário · fazer · sexta-feira",
+   "emoji": "🧠",
+   "words": [
+    "want",
+    "birthday",
+    "do",
+    "friday"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "want",
+     "pt": "querer"
+    },
+    {
+     "t": "meaning",
+     "w": "want",
+     "pt": "querer",
+     "o": [
+      "querer",
+      "comida",
+      "quente"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "birthday",
+     "pt": "aniversário"
+    },
+    {
+     "t": "hear",
+     "w": "birthday",
+     "pt": "aniversário",
+     "o": [
+      "salad",
+      "birthday",
+      "fish"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "want",
+       "querer"
+      ],
+      [
+       "birthday",
+       "aniversário"
+      ],
+      [
+       "fish",
+       "peixe"
+      ],
+      [
+       "expensive",
+       "caro"
+      ],
+      [
+       "pizza",
+       "pizza"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "do",
+     "pt": "fazer"
+    },
+    {
+     "t": "pick",
+     "w": "do",
+     "pt": "fazer",
+     "o": [
+      "salad",
+      "birthday",
+      "do"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "friday",
+     "pt": "sexta-feira"
+    },
+    {
+     "t": "meaning",
+     "w": "friday",
+     "pt": "sexta-feira",
+     "o": [
+      "salada",
+      "sexta-feira",
+      "copo"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "do",
+     "pt": "fazer",
+     "o": [
+      "fish",
+      "expensive",
+      "do"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "do",
+       "fazer"
+      ],
+      [
+       "friday",
+       "sexta-feira"
+      ],
+      [
+       "want",
+       "querer"
+      ],
+      [
+       "birthday",
+       "aniversário"
+      ],
+      [
+       "fish",
+       "peixe"
+      ]
+     ]
+    },
+    {
+     "t": "phrase",
+     "en": "It's OK. It's your birthday!",
+     "pt": "Tudo bem. É o seu aniversário!",
+     "v": "en-GB-RyanNeural"
+    },
+    {
+     "t": "bank",
+     "en": "It's OK. It's your birthday!",
+     "pt": "Tudo bem. É o seu aniversário!",
+     "v": "en-GB-RyanNeural",
+     "x": [
+      "salad",
+      "big",
+      "ten"
+     ],
+     "wr": "copy"
+    },
+    {
+     "t": "phrase",
+     "en": "Happy birthday, Mom!",
+     "pt": "Feliz aniversário, mãe!",
+     "v": "en-US-JennyNeural"
+    },
+    {
+     "t": "fill",
+     "en": "Happy birthday, Mom!",
+     "pt": "Feliz aniversário, mãe!",
+     "v": "en-US-JennyNeural",
+     "gap": "___ birthday, Mom!",
+     "w": "Happy",
+     "o": [
+      "ready",
+      "later",
+      "Happy"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "It's OK. It's your birthday!",
+     "pt": "Tudo bem. É o seu aniversário!",
+     "v": "en-GB-RyanNeural",
+     "o": [
+      "Sim! Eu gostaria de uma salada, por favor.",
+      "Não, obrigado. Eu quero o meu hambúrguer.",
+      "Tudo bem. É o seu aniversário!"
+     ]
+    },
+    {
+     "t": "spell",
+     "w": "want",
+     "pt": "querer",
+     "o": [
+      "pizza",
+      "glass",
+      "want"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "It's OK. It's your birthday!",
+     "pt": "Tudo bem. É o seu aniversário!",
+     "v": "en-GB-RyanNeural",
+     "o": [
+      "Are you ready?",
+      "It's OK. It's your birthday!",
+      "Oh... Then I'd like the chicken, please."
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Happy birthday, Mom!",
+     "pt": "Feliz aniversário, mãe!",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Feliz aniversário, mãe!",
+      "E o meu hambúrguer?",
+      "Esse restaurante é muito caro!"
+     ]
+    },
+    {
+     "t": "copy",
+     "en": "Happy birthday, Mom!",
+     "pt": "Feliz aniversário, mãe!",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "everyone",
+      "water",
+      "nice"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u6z5",
+   "title": "pasta · curry · even · every",
+   "titlePt": "massa · curry · até · cada",
+   "emoji": "💬",
+   "words": [
+    "pasta",
+    "curry",
+    "even",
+    "every"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "pasta",
+     "pt": "massa"
+    },
+    {
+     "t": "meaning",
+     "w": "pasta",
+     "pt": "massa",
+     "o": [
+      "massa",
+      "peixe",
+      "frango"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "curry",
+     "pt": "curry"
+    },
+    {
+     "t": "hear",
+     "w": "curry",
+     "pt": "curry",
+     "o": [
+      "minute",
+      "hot",
+      "curry"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "pasta",
+       "massa"
+      ],
+      [
+       "curry",
+       "curry"
+      ],
+      [
+       "glass",
+       "copo"
+      ],
+      [
+       "expensive",
+       "caro"
+      ],
+      [
+       "hot",
+       "quente"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "even",
+     "pt": "até"
+    },
+    {
+     "t": "pick",
+     "w": "even",
+     "pt": "até",
+     "o": [
+      "curry",
+      "even",
+      "every"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "every",
+     "pt": "cada"
+    },
+    {
+     "t": "meaning",
+     "w": "every",
+     "pt": "cada",
+     "o": [
+      "frango",
+      "massa",
+      "cada"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "even",
+     "pt": "até",
+     "o": [
+      "pasta",
+      "even",
+      "fish"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "even",
+       "até"
+      ],
+      [
+       "every",
+       "cada"
+      ],
+      [
+       "pasta",
+       "massa"
+      ],
+      [
+       "curry",
+       "curry"
+      ],
+      [
+       "glass",
+       "copo"
+      ]
+     ]
+    },
+    {
+     "t": "phrase",
+     "en": "I don't know. The pasta? The fish?",
+     "pt": "Não sei. O macarrão? O peixe?",
+     "v": "en-US-AnaNeural"
+    },
+    {
+     "t": "bank",
+     "en": "I don't know. The pasta? The fish?",
+     "pt": "Não sei. O macarrão? O peixe?",
+     "v": "en-US-AnaNeural",
+     "x": [
+      "in",
+      "beef",
+      "there"
+     ],
+     "wr": "copy"
+    },
+    {
+     "t": "phrase",
+     "en": "Ben, do you want my pasta?",
+     "pt": "Ben, você quer o meu macarrão?",
+     "v": "en-US-AnaNeural"
+    },
+    {
+     "t": "fill",
+     "en": "Ben, do you want my pasta?",
+     "pt": "Ben, você quer o meu macarrão?",
+     "v": "en-US-AnaNeural",
+     "gap": "Ben, do you want my ___?",
+     "w": "pasta",
+     "o": [
+      "mushrooms",
+      "pasta",
+      "me"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "I don't know. The pasta? The fish?",
+     "pt": "Não sei. O macarrão? O peixe?",
+     "v": "en-US-AnaNeural",
+     "o": [
+      "E as pizzas cheiram tão bem!",
+      "Uau, Pierre! Este restaurante é lindo!",
+      "Não sei. O macarrão? O peixe?"
+     ]
+    },
+    {
+     "t": "spell",
+     "w": "pasta",
+     "pt": "massa",
+     "o": [
+      "table",
+      "pasta",
+      "minute"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "I don't know. The pasta? The fish?",
+     "pt": "Não sei. O macarrão? O peixe?",
+     "v": "en-US-AnaNeural",
+     "o": [
+      "I'd like the rice and vegetables, please.",
+      "Three pizzas! Very good!",
+      "I don't know. The pasta? The fish?"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Ben, do you want my pasta?",
+     "pt": "Ben, você quer o meu macarrão?",
+     "v": "en-US-AnaNeural",
+     "o": [
+      "Ben, você não tem medo?",
+      "Não sei, Ben. Pergunte para a garçonete.",
+      "Ben, você quer o meu macarrão?"
+     ]
+    },
+    {
+     "t": "copy",
+     "en": "Ben, do you want my pasta?",
+     "pt": "Ben, você quer o meu macarrão?",
+     "v": "en-US-AnaNeural",
+     "x": [
+      "make",
+      "see",
+      "welcome"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u6z6",
+   "title": "menu · so · afraid · back",
+   "titlePt": "cardápio · então · com medo · de volta",
+   "emoji": "🔁",
+   "words": [
+    "menu",
+    "so",
+    "afraid",
+    "back"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "menu",
+     "pt": "cardápio"
+    },
+    {
+     "t": "meaning",
+     "w": "menu",
+     "pt": "cardápio",
+     "o": [
+      "querer",
+      "peixe",
+      "cardápio"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "so",
+     "pt": "então"
+    },
+    {
+     "t": "hear",
+     "w": "so",
+     "pt": "então",
+     "o": [
+      "fish",
+      "so",
+      "restaurant"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "menu",
+       "cardápio"
+      ],
+      [
+       "so",
+       "então"
+      ],
+      [
+       "even",
+       "até"
+      ],
+      [
+       "expensive",
+       "caro"
+      ],
+      [
+       "minute",
+       "minuto"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "afraid",
+     "pt": "com medo"
+    },
+    {
+     "t": "pick",
+     "w": "afraid",
+     "pt": "com medo",
+     "o": [
+      "afraid",
+      "burger",
+      "back"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "back",
+     "pt": "de volta"
+    },
+    {
+     "t": "meaning",
+     "w": "back",
+     "pt": "de volta",
+     "o": [
+      "então",
+      "de volta",
+      "restaurante"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "afraid",
+     "pt": "com medo",
+     "o": [
+      "salad",
+      "hot",
+      "afraid"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "afraid",
+       "com medo"
+      ],
+      [
+       "back",
+       "de volta"
+      ],
+      [
+       "menu",
+       "cardápio"
+      ],
+      [
+       "so",
+       "então"
+      ],
+      [
+       "food",
+       "comida"
+      ]
+     ]
+    },
+    {
+     "t": "phrase",
+     "en": "Milk? OK...",
+     "pt": "Leite? Tá bom...",
+     "v": "en-US-EricNeural"
+    },
+    {
+     "t": "bank",
+     "en": "Milk? OK...",
+     "pt": "Leite? Tá bom...",
+     "v": "en-US-EricNeural",
+     "x": [
+      "very",
+      "yes",
+      "for"
+     ],
+     "wr": "translate"
+    },
+    {
+     "t": "phrase",
+     "en": "Thank you!",
+     "pt": "Obrigada!",
+     "v": "en-GB-LibbyNeural"
+    },
+    {
+     "t": "fill",
+     "en": "Thank you!",
+     "pt": "Obrigada!",
+     "v": "en-GB-LibbyNeural",
+     "gap": "Thank ___!",
+     "w": "you",
+     "o": [
+      "twenty",
+      "glass",
+      "you"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Milk? OK...",
+     "pt": "Leite? Tá bom...",
+     "v": "en-US-EricNeural",
+     "o": [
+      "E pão para todos, por favor.",
+      "Uau! Pizza, hambúrgueres, saladas... Estou com fome!",
+      "Leite? Tá bom..."
+     ]
+    },
+    {
+     "t": "type",
+     "en": "Thank you!",
+     "pt": "Obrigada!",
+     "v": "en-GB-LibbyNeural",
+     "x": [
+      "oven",
+      "nice",
+      "maybe"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "Milk? OK...",
+     "pt": "Leite? Tá bom...",
+     "v": "en-US-EricNeural",
+     "o": [
+      "And bread for everyone, please.",
+      "Milk? OK...",
+      "Thank you, Raj. The food is great!"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Thank you!",
+     "pt": "Obrigada!",
+     "v": "en-GB-LibbyNeural",
+     "o": [
+      "Feliz aniversário, mãe!",
+      "Obrigada!",
+      "Marco, as pizzas estão ótimas. Obrigado!"
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "Thank you!",
+     "pt": "Obrigada!",
+     "v": "en-GB-LibbyNeural",
+     "x": [
+      "so",
+      "twenty",
+      "my"
+     ],
+     "wr": "translate"
+    }
+   ]
+  },
+  {
+   "id": "u6z7",
+   "title": "beef · cream · eat · four",
+   "titlePt": "carne · creme · comer · quatro",
+   "emoji": "⭐",
+   "words": [
+    "beef",
+    "cream",
+    "eat",
+    "four"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "beef",
+     "pt": "carne"
+    },
+    {
+     "t": "meaning",
+     "w": "beef",
+     "pt": "carne",
+     "o": [
+      "carne",
+      "quatro",
+      "massa"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "cream",
+     "pt": "creme"
+    },
+    {
+     "t": "hear",
+     "w": "cream",
+     "pt": "creme",
+     "o": [
+      "menu",
+      "salad",
+      "cream"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "beef",
+       "carne"
+      ],
+      [
+       "cream",
+       "creme"
+      ],
+      [
+       "fish",
+       "peixe"
+      ],
+      [
+       "friday",
+       "sexta-feira"
+      ],
+      [
+       "menu",
+       "cardápio"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "eat",
+     "pt": "comer"
+    },
+    {
+     "t": "pick",
+     "w": "eat",
+     "pt": "comer",
+     "o": [
+      "eat",
+      "minute",
+      "chicken"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "four",
+     "pt": "quatro"
+    },
+    {
+     "t": "meaning",
+     "w": "four",
+     "pt": "quatro",
+     "o": [
+      "peixe",
+      "minuto",
+      "quatro"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "eat",
+     "pt": "comer",
+     "o": [
+      "so",
+      "beef",
+      "eat"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "eat",
+       "comer"
+      ],
+      [
+       "four",
+       "quatro"
+      ],
+      [
+       "beef",
+       "carne"
+      ],
+      [
+       "cream",
+       "creme"
+      ],
+      [
+       "hot",
+       "quente"
+      ]
+     ]
+    },
+    {
+     "t": "phrase",
+     "en": "Hello! A table for four?",
+     "pt": "Olá! Uma mesa para quatro?",
+     "v": "en-GB-LibbyNeural"
+    },
+    {
+     "t": "bank",
+     "en": "Hello! A table for four?",
+     "pt": "Olá! Uma mesa para quatro?",
+     "v": "en-GB-LibbyNeural",
+     "x": [
+      "ice",
+      "go",
+      "every"
+     ],
+     "wr": "translate"
+    },
+    {
+     "t": "phrase",
+     "en": "Is there a burger?",
+     "pt": "Tem hambúrguer?",
+     "v": "en-US-EricNeural"
+    },
+    {
+     "t": "fill",
+     "en": "Is there a burger?",
+     "pt": "Tem hambúrguer?",
+     "v": "en-US-EricNeural",
+     "gap": "Is there a ___?",
+     "w": "burger",
+     "o": [
+      "juice",
+      "time",
+      "burger"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Hello! A table for four?",
+     "pt": "Olá! Uma mesa para quatro?",
+     "v": "en-GB-LibbyNeural",
+     "o": [
+      "Obrigada. Vamos ver...",
+      "Uau, Pierre! Este restaurante é lindo!",
+      "Olá! Uma mesa para quatro?"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "Is there a burger?",
+     "pt": "Tem hambúrguer?",
+     "v": "en-US-EricNeural",
+     "x": [
+      "let",
+      "at",
+      "two"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "Hello! A table for four?",
+     "pt": "Olá! Uma mesa para quatro?",
+     "v": "en-GB-LibbyNeural",
+     "o": [
+      "Happy birthday, Mom!",
+      "Welcome! I'm Raj. Here is your table.",
+      "Hello! A table for four?"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Is there a burger?",
+     "pt": "Tem hambúrguer?",
+     "v": "en-US-EricNeural",
+     "o": [
+      "Pai! Uma salada custa vinte libras!",
+      "Não, obrigado. Eu quero o meu hambúrguer.",
+      "Tem hambúrguer?"
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "Is there a burger?",
+     "pt": "Tem hambúrguer?",
+     "v": "en-US-EricNeural",
+     "x": [
+      "go",
+      "smell",
+      "big"
+     ],
+     "wr": "translate"
+    }
+   ]
+  },
+  {
+   "id": "u6z8",
+   "title": "free · great · happy · hungry",
+   "titlePt": "grátis · ótimo · feliz · com fome",
+   "emoji": "🗝️",
+   "words": [
+    "free",
+    "great",
+    "happy",
+    "hungry"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "free",
+     "pt": "grátis"
+    },
+    {
+     "t": "meaning",
+     "w": "free",
+     "pt": "grátis",
+     "o": [
+      "grátis",
+      "massa",
+      "pizza"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "great",
+     "pt": "ótimo"
+    },
+    {
+     "t": "hear",
+     "w": "great",
+     "pt": "ótimo",
+     "o": [
+      "great",
+      "afraid",
+      "beef"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "free",
+       "grátis"
+      ],
+      [
+       "great",
+       "ótimo"
+      ],
+      [
+       "beef",
+       "carne"
+      ],
+      [
+       "birthday",
+       "aniversário"
+      ],
+      [
+       "want",
+       "querer"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "happy",
+     "pt": "feliz"
+    },
+    {
+     "t": "pick",
+     "w": "happy",
+     "pt": "feliz",
+     "o": [
+      "fish",
+      "back",
+      "happy"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "hungry",
+     "pt": "com fome"
+    },
+    {
+     "t": "meaning",
+     "w": "hungry",
+     "pt": "com fome",
+     "o": [
+      "com medo",
+      "minuto",
+      "com fome"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "happy",
+     "pt": "feliz",
+     "o": [
+      "pasta",
+      "curry",
+      "happy"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "happy",
+       "feliz"
+      ],
+      [
+       "hungry",
+       "com fome"
+      ],
+      [
+       "free",
+       "grátis"
+      ],
+      [
+       "great",
+       "ótimo"
+      ],
+      [
+       "four",
+       "quatro"
+      ]
+     ]
+    },
+    {
+     "t": "phrase",
+     "en": "Free? Wow! Thank you!",
+     "pt": "De graça? Uau! Obrigado!",
+     "v": "en-US-EricNeural"
+    },
+    {
+     "t": "bank",
+     "en": "Free? Wow! Thank you!",
+     "pt": "De graça? Uau! Obrigado!",
+     "v": "en-US-EricNeural",
+     "x": [
+      "has",
+      "drink",
+      "even"
+     ],
+     "wr": "translate"
+    },
+    {
+     "t": "phrase",
+     "en": "No, sir. No burgers.",
+     "pt": "Não, senhor. Não temos hambúrguer.",
+     "v": "en-GB-ThomasNeural"
+    },
+    {
+     "t": "fill",
+     "en": "No, sir. No burgers.",
+     "pt": "Não, senhor. Não temos hambúrguer.",
+     "v": "en-GB-ThomasNeural",
+     "gap": "No, sir. No ___.",
+     "w": "burgers",
+     "o": [
+      "juice",
+      "burgers",
+      "what"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Free? Wow! Thank you!",
+     "pt": "De graça? Uau! Obrigado!",
+     "v": "en-US-EricNeural",
+     "o": [
+      "De graça? Uau! Obrigado!",
+      "E eu gostaria do peixe, por favor.",
+      "Esse restaurante é muito caro!"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "No, sir. No burgers.",
+     "pt": "Não, senhor. Não temos hambúrguer.",
+     "v": "en-GB-ThomasNeural",
+     "x": [
+      "you",
+      "mom",
+      "big"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "Free? Wow! Thank you!",
+     "pt": "De graça? Uau! Obrigado!",
+     "v": "en-US-EricNeural",
+     "o": [
+      "Free? Wow! Thank you!",
+      "Mom, where is my burger?",
+      "Here is a glass of water."
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "No, sir. No burgers.",
+     "pt": "Não, senhor. Não temos hambúrguer.",
+     "v": "en-GB-ThomasNeural",
+     "o": [
+      "Obrigado! Vocês querem sorvete?",
+      "Esse restaurante é muito caro!",
+      "Não, senhor. Não temos hambúrguer."
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "No, sir. No burgers.",
+     "pt": "Não, senhor. Não temos hambúrguer.",
+     "v": "en-GB-ThomasNeural",
+     "x": [
+      "there",
+      "at",
+      "three"
+     ],
+     "wr": "translate"
+    }
+   ]
+  },
+  {
+   "id": "u6z9",
+   "title": "ice · know · later · night",
+   "titlePt": "gelo · saber · mais tarde · noite",
+   "emoji": "🚀",
+   "words": [
+    "ice",
+    "know",
+    "later",
+    "night"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "ice",
+     "pt": "gelo"
+    },
+    {
+     "t": "meaning",
+     "w": "ice",
+     "pt": "gelo",
+     "o": [
+      "gelo",
+      "com fome",
+      "salada"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "know",
+     "pt": "saber"
+    },
+    {
+     "t": "hear",
+     "w": "know",
+     "pt": "saber",
+     "o": [
+      "glass",
+      "know",
+      "pizza"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "ice",
+       "gelo"
+      ],
+      [
+       "know",
+       "saber"
+      ],
+      [
+       "so",
+       "então"
+      ],
+      [
+       "curry",
+       "curry"
+      ],
+      [
+       "cream",
+       "creme"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "later",
+     "pt": "mais tarde"
+    },
+    {
+     "t": "pick",
+     "w": "later",
+     "pt": "mais tarde",
+     "o": [
+      "want",
+      "later",
+      "pasta"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "night",
+     "pt": "noite"
+    },
+    {
+     "t": "meaning",
+     "w": "night",
+     "pt": "noite",
+     "o": [
+      "gelo",
+      "noite",
+      "creme"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "later",
+     "pt": "mais tarde",
+     "o": [
+      "birthday",
+      "happy",
+      "later"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "later",
+       "mais tarde"
+      ],
+      [
+       "night",
+       "noite"
+      ],
+      [
+       "ice",
+       "gelo"
+      ],
+      [
+       "know",
+       "saber"
+      ],
+      [
+       "friday",
+       "sexta-feira"
+      ]
+     ]
+    },
+    {
+     "t": "phrase",
+     "en": "Pizza night every Friday! Good idea!",
+     "pt": "Noite de pizza toda sexta! Boa ideia!",
+     "v": "en-IE-ConnorNeural"
+    },
+    {
+     "t": "bank",
+     "en": "Pizza night every Friday! Good idea!",
+     "pt": "Noite de pizza toda sexta! Boa ideia!",
+     "v": "en-IE-ConnorNeural",
+     "x": [
+      "smell",
+      "in",
+      "not"
+     ],
+     "wr": "translate"
+    },
+    {
+     "t": "phrase",
+     "en": "I don't know, Ben. Ask the waitress.",
+     "pt": "Não sei, Ben. Pergunte para a garçonete.",
+     "v": "en-US-JennyNeural"
+    },
+    {
+     "t": "fill",
+     "en": "I don't know, Ben. Ask the waitress.",
+     "pt": "Não sei, Ben. Pergunte para a garçonete.",
+     "v": "en-US-JennyNeural",
+     "gap": "I don't ___, Ben. Ask the waitress.",
+     "w": "know",
+     "o": [
+      "know",
+      "has",
+      "great"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Pizza night every Friday! Good idea!",
+     "pt": "Noite de pizza toda sexta! Boa ideia!",
+     "v": "en-IE-ConnorNeural",
+     "o": [
+      "Eu gostaria de um copo de água.",
+      "Noite de pizza toda sexta! Boa ideia!",
+      "Pai! Uma salada custa vinte libras!"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "I don't know, Ben. Ask the waitress.",
+     "pt": "Não sei, Ben. Pergunte para a garçonete.",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "where",
+      "great",
+      "food"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "Pizza night every Friday! Good idea!",
+     "pt": "Noite de pizza toda sexta! Boa ideia!",
+     "v": "en-IE-ConnorNeural",
+     "o": [
+      "Oh... Then I'd like the chicken, please.",
+      "Pizza night every Friday! Good idea!",
+      "Wow, Pierre! This restaurant is beautiful!"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "I don't know, Ben. Ask the waitress.",
+     "pt": "Não sei, Ben. Pergunte para a garçonete.",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Com licença, onde está meu hambúrguer?",
+      "Não sei, Ben. Pergunte para a garçonete.",
+      "E as pizzas cheiram tão bem!"
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "I don't know, Ben. Ask the waitress.",
+     "pt": "Não sei, Ben. Pergunte para a garçonete.",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "minute",
+      "cake",
+      "please"
+     ],
+     "wr": "translate"
+    }
+   ]
+  },
+  {
+   "id": "u6z10",
+   "title": "Review",
+   "titlePt": "Revisão geral",
+   "emoji": "🏆",
+   "words": [],
+   "screens": [
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "table",
+       "mesa"
+      ],
+      [
+       "burger",
+       "hambúrguer"
+      ],
+      [
+       "do",
+       "fazer"
+      ],
+      [
+       "ice",
+       "gelo"
+      ],
+      [
+       "glass",
+       "copo"
+      ]
+     ]
+    },
+    {
+     "t": "meaning",
+     "w": "want",
+     "pt": "querer",
+     "o": [
+      "curry",
+      "querer",
+      "massa"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "cream",
+     "pt": "creme",
+     "o": [
+      "cream",
+      "birthday",
+      "beef"
+     ]
+    },
+    {
+     "t": "phrase",
+     "en": "I'd like a salad, please.",
+     "pt": "Eu gostaria de uma salada, por favor.",
+     "v": "en-US-JennyNeural"
+    },
+    {
+     "t": "bank",
+     "en": "I'd like a salad, please.",
+     "pt": "Eu gostaria de uma salada, por favor.",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "minute",
+      "for",
+      "every"
+     ],
+     "wr": "translate"
+    },
+    {
+     "t": "speak",
+     "en": "I'd like a salad, please.",
+     "pt": "Eu gostaria de uma salada, por favor.",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Esse restaurante é muito caro!",
+      "Eu gostaria de um copo de água, por favor.",
+      "Eu gostaria de uma salada, por favor."
+     ]
+    },
+    {
+     "t": "phrase",
+     "en": "Excuse me, where is my burger?",
+     "pt": "Com licença, onde está meu hambúrguer?",
+     "v": "en-US-JennyNeural"
+    },
+    {
+     "t": "fill",
+     "en": "Excuse me, where is my burger?",
+     "pt": "Com licença, onde está meu hambúrguer?",
+     "v": "en-US-JennyNeural",
+     "gap": "Excuse me, where is my ___?",
+     "w": "burger",
+     "o": [
+      "mom",
+      "burger",
+      "good"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "Excuse me, where is my burger?",
+     "pt": "Com licença, onde está meu hambúrguer?",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "so",
+      "fish",
+      "please"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "curry",
+       "curry"
+      ],
+      [
+       "free",
+       "grátis"
+      ],
+      [
+       "know",
+       "saber"
+      ],
+      [
+       "pizza",
+       "pizza"
+      ],
+      [
+       "hungry",
+       "com fome"
+      ]
+     ]
+    },
+    {
+     "t": "phrase",
+     "en": "This restaurant is very expensive!",
+     "pt": "Esse restaurante é muito caro!",
+     "v": "en-US-JennyNeural"
+    },
+    {
+     "t": "listen",
+     "en": "This restaurant is very expensive!",
+     "pt": "Esse restaurante é muito caro!",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "No, Dad! I don't like fish!",
+      "This restaurant is very expensive!",
+      "I'd like the rice and vegetables, please."
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "This restaurant is very expensive!",
+     "pt": "Esse restaurante é muito caro!",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Sim, por favor. Uma mesa para quatro.",
+      "Esse restaurante é muito caro!",
+      "E as pizzas cheiram tão bem!"
+     ]
+    },
+    {
+     "t": "pick",
+     "w": "hot",
+     "pt": "quente",
+     "o": [
+      "great",
+      "even",
+      "hot"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "I'd like a salad, please.",
+     "pt": "Eu gostaria de uma salada, por favor.",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "birthday",
+      "minute",
+      "burger"
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "This restaurant is very expensive!",
+     "pt": "Esse restaurante é muito caro!",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "excuse",
+      "today",
+      "ice"
+     ],
+     "wr": "translate"
+    },
+    {
+     "t": "meaning",
+     "w": "night",
+     "pt": "noite",
+     "o": [
+      "noite",
+      "massa",
+      "de volta"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Excuse me, where is my burger?",
+     "pt": "Com licença, onde está meu hambúrguer?",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Com licença, onde está meu hambúrguer?",
+      "Não, pai! Eu não gosto de peixe!",
+      "Não sei, Ben. Pergunte para a garçonete."
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "every",
+     "pt": "cada",
+     "o": [
+      "expensive",
+      "every",
+      "even"
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "Excuse me, where is my burger?",
+     "pt": "Com licença, onde está meu hambúrguer?",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "minute",
+      "restaurant",
+      "or"
+     ],
+     "wr": "translate"
+    }
+   ]
+  }
+ ]
+}
