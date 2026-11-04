@@ -1,0 +1,2272 @@
+{
+ "unit": 8,
+ "lessons": [
+  {
+   "id": "u8z1",
+   "title": "language · little · speak · hindi",
+   "titlePt": "linguagem · pequeno · falar · hindi",
+   "emoji": "🔤",
+   "words": [
+    "language",
+    "little",
+    "speak",
+    "hindi"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "speak",
+     "pt": "falar"
+    },
+    {
+     "t": "meaning",
+     "w": "speak",
+     "pt": "falar",
+     "o": [
+      "curry",
+      "falar",
+      "comida"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "little",
+     "pt": "pequeno"
+    },
+    {
+     "t": "hear",
+     "w": "little",
+     "pt": "pequeno",
+     "o": [
+      "little",
+      "course",
+      "can"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "speak",
+       "falar"
+      ],
+      [
+       "little",
+       "pequeno"
+      ],
+      [
+       "language",
+       "linguagem"
+      ],
+      [
+       "hindi",
+       "hindi"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "hindi",
+     "pt": "hindi"
+    },
+    {
+     "t": "pick",
+     "w": "hindi",
+     "pt": "hindi",
+     "o": [
+      "hot",
+      "hindi",
+      "where"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "language",
+     "pt": "linguagem"
+    },
+    {
+     "t": "meaning",
+     "w": "language",
+     "pt": "linguagem",
+     "o": [
+      "bom",
+      "linguagem",
+      "de novo"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "hindi",
+     "pt": "hindi",
+     "o": [
+      "hindi",
+      "good",
+      "your"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "hindi",
+       "hindi"
+      ],
+      [
+       "language",
+       "linguagem"
+      ],
+      [
+       "speak",
+       "falar"
+      ],
+      [
+       "little",
+       "pequeno"
+      ]
+     ]
+    },
+    {
+     "t": "phrase",
+     "en": "I speak a little Spanish! Hola!",
+     "pt": "Eu falo um pouco de espanhol! Hola!",
+     "v": "en-US-EricNeural"
+    },
+    {
+     "t": "bank",
+     "en": "I speak a little Spanish! Hola!",
+     "pt": "Eu falo um pouco de espanhol! Hola!",
+     "v": "en-US-EricNeural",
+     "x": [
+      "small",
+      "back",
+      "pretty"
+     ],
+     "wr": "copy"
+    },
+    {
+     "t": "phrase",
+     "en": "I understand a little Hindi.",
+     "pt": "Eu entendo um pouco de hindi.",
+     "v": "en-US-JennyNeural"
+    },
+    {
+     "t": "fill",
+     "en": "I understand a little Hindi.",
+     "pt": "Eu entendo um pouco de hindi.",
+     "v": "en-US-JennyNeural",
+     "gap": "I understand a ___ Hindi.",
+     "w": "little",
+     "o": [
+      "here",
+      "good",
+      "little"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "I speak a little Spanish! Hola!",
+     "pt": "Eu falo um pouco de espanhol! Hola!",
+     "v": "en-US-EricNeural",
+     "o": [
+      "Eu falo espanhol com meu amigo.",
+      "Eu falo um pouco de espanhol! Hola!",
+      "Ben, agora você fala espanhol!"
+     ]
+    },
+    {
+     "t": "spell",
+     "w": "speak",
+     "pt": "falar",
+     "o": [
+      "great",
+      "speak",
+      "dad"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "I speak a little Spanish! Hola!",
+     "pt": "Eu falo um pouco de espanhol! Hola!",
+     "v": "en-US-EricNeural",
+     "o": [
+      "Ben, you have a new hobby: languages!",
+      "Spanish? Every day?",
+      "I speak a little Spanish! Hola!"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "I understand a little Hindi.",
+     "pt": "Eu entendo um pouco de hindi.",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Eu entendo um pouco de hindi.",
+      "\"The house\"!",
+      "Dhanyavaad, Raj!"
+     ]
+    },
+    {
+     "t": "copy",
+     "en": "I understand a little Hindi.",
+     "pt": "Eu entendo um pouco de hindi.",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "school",
+      "year",
+      "so"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u8z2",
+   "title": "understand · mean · study · word",
+   "titlePt": "entender · querer dizer · estudar · palavra",
+   "emoji": "🧩",
+   "words": [
+    "understand",
+    "mean",
+    "study",
+    "word"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "understand",
+     "pt": "entender"
+    },
+    {
+     "t": "meaning",
+     "w": "understand",
+     "pt": "entender",
+     "o": [
+      "estudar",
+      "entender",
+      "pequeno"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "mean",
+     "pt": "querer dizer"
+    },
+    {
+     "t": "hear",
+     "w": "mean",
+     "pt": "querer dizer",
+     "o": [
+      "speak",
+      "mean",
+      "study"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "understand",
+       "entender"
+      ],
+      [
+       "mean",
+       "querer dizer"
+      ],
+      [
+       "hindi",
+       "hindi"
+      ],
+      [
+       "little",
+       "pequeno"
+      ],
+      [
+       "language",
+       "linguagem"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "study",
+     "pt": "estudar"
+    },
+    {
+     "t": "pick",
+     "w": "study",
+     "pt": "estudar",
+     "o": [
+      "speak",
+      "study",
+      "hindi"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "word",
+     "pt": "palavra"
+    },
+    {
+     "t": "meaning",
+     "w": "word",
+     "pt": "palavra",
+     "o": [
+      "palavra",
+      "entender",
+      "querer dizer"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "study",
+     "pt": "estudar",
+     "o": [
+      "study",
+      "word",
+      "hindi"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "study",
+       "estudar"
+      ],
+      [
+       "word",
+       "palavra"
+      ],
+      [
+       "understand",
+       "entender"
+      ],
+      [
+       "mean",
+       "querer dizer"
+      ],
+      [
+       "little",
+       "pequeno"
+      ]
+     ]
+    },
+    {
+     "t": "phrase",
+     "en": "Water! I understand!",
+     "pt": "Água! Eu entendo!",
+     "v": "en-US-EricNeural"
+    },
+    {
+     "t": "bank",
+     "en": "Water! I understand!",
+     "pt": "Água! Eu entendo!",
+     "v": "en-US-EricNeural",
+     "x": [
+      "student",
+      "at",
+      "teacher"
+     ],
+     "wr": "copy"
+    },
+    {
+     "t": "phrase",
+     "en": "OK! \"Paani\" means \"water\".",
+     "pt": "Tá! \"Paani\" quer dizer \"água\".",
+     "v": "en-IN-NeerjaNeural"
+    },
+    {
+     "t": "fill",
+     "en": "OK! \"Paani\" means \"water\".",
+     "pt": "Tá! \"Paani\" quer dizer \"água\".",
+     "v": "en-IN-NeerjaNeural",
+     "gap": "OK! \"Paani\" ___ \"water\".",
+     "w": "means",
+     "o": [
+      "no",
+      "delicious",
+      "means"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Water! I understand!",
+     "pt": "Água! Eu entendo!",
+     "v": "en-US-EricNeural",
+     "o": [
+      "Água! Eu entendo!",
+      "Lola, adiós! Hora do jantar!",
+      "Uau! Quantos idiomas!"
+     ]
+    },
+    {
+     "t": "spell",
+     "w": "understand",
+     "pt": "entender",
+     "o": [
+      "study",
+      "mean",
+      "understand"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "Water! I understand!",
+     "pt": "Água! Eu entendo!",
+     "v": "en-US-EricNeural",
+     "o": [
+      "\"The food is delicious!\"",
+      "Water! I understand!",
+      "Can I be on the team too?"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "OK! \"Paani\" means \"water\".",
+     "pt": "Tá! \"Paani\" quer dizer \"água\".",
+     "v": "en-IN-NeerjaNeural",
+     "o": [
+      "Ben, agora você fala espanhol!",
+      "Tá! \"Paani\" quer dizer \"água\".",
+      "\"A comida está deliciosa!\""
+     ]
+    },
+    {
+     "t": "copy",
+     "en": "OK! \"Paani\" means \"water\".",
+     "pt": "Tá! \"Paani\" quer dizer \"água\".",
+     "v": "en-IN-NeerjaNeural",
+     "x": [
+      "new",
+      "we",
+      "no"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u8z3",
+   "title": "dinner · club · say · teach",
+   "titlePt": "jantar · clube · dizer · ensinar",
+   "emoji": "🎯",
+   "words": [
+    "dinner",
+    "club",
+    "say",
+    "teach"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "dinner",
+     "pt": "jantar"
+    },
+    {
+     "t": "meaning",
+     "w": "dinner",
+     "pt": "jantar",
+     "o": [
+      "jantar",
+      "dizer",
+      "entender"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "club",
+     "pt": "clube"
+    },
+    {
+     "t": "hear",
+     "w": "club",
+     "pt": "clube",
+     "o": [
+      "club",
+      "understand",
+      "mean"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "dinner",
+       "jantar"
+      ],
+      [
+       "club",
+       "clube"
+      ],
+      [
+       "language",
+       "linguagem"
+      ],
+      [
+       "little",
+       "pequeno"
+      ],
+      [
+       "study",
+       "estudar"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "say",
+     "pt": "dizer"
+    },
+    {
+     "t": "pick",
+     "w": "say",
+     "pt": "dizer",
+     "o": [
+      "say",
+      "understand",
+      "speak"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "teach",
+     "pt": "ensinar"
+    },
+    {
+     "t": "meaning",
+     "w": "teach",
+     "pt": "ensinar",
+     "o": [
+      "querer dizer",
+      "ensinar",
+      "jantar"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "say",
+     "pt": "dizer",
+     "o": [
+      "say",
+      "little",
+      "language"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "say",
+       "dizer"
+      ],
+      [
+       "teach",
+       "ensinar"
+      ],
+      [
+       "dinner",
+       "jantar"
+      ],
+      [
+       "club",
+       "clube"
+      ],
+      [
+       "little",
+       "pequeno"
+      ]
+     ]
+    },
+    {
+     "t": "phrase",
+     "en": "Lola, adiós! Dinner time!",
+     "pt": "Lola, adiós! Hora do jantar!",
+     "v": "en-US-EricNeural"
+    },
+    {
+     "t": "bank",
+     "en": "Lola, adiós! Dinner time!",
+     "pt": "Lola, adiós! Hora do jantar!",
+     "v": "en-US-EricNeural",
+     "x": [
+      "some",
+      "everyone",
+      "again"
+     ],
+     "wr": "copy"
+    },
+    {
+     "t": "phrase",
+     "en": "Dhanya... dhanyavaad!",
+     "pt": "Dhanya... dhanyavaad!",
+     "v": "en-US-EricNeural"
+    },
+    {
+     "t": "fill",
+     "en": "Dhanya... dhanyavaad!",
+     "pt": "Dhanya... dhanyavaad!",
+     "v": "en-US-EricNeural",
+     "gap": "___... dhanyavaad!",
+     "w": "Dhanya",
+     "o": [
+      "table",
+      "understand",
+      "Dhanya"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Lola, adiós! Dinner time!",
+     "pt": "Lola, adiós! Hora do jantar!",
+     "v": "en-US-EricNeural",
+     "o": [
+      "Não, mas eu entendo um pouco de hindi.",
+      "\"A comida está deliciosa!\"",
+      "Lola, adiós! Hora do jantar!"
+     ]
+    },
+    {
+     "t": "spell",
+     "w": "dinner",
+     "pt": "jantar",
+     "o": [
+      "dinner",
+      "hindi",
+      "language"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "Lola, adiós! Dinner time!",
+     "pt": "Lola, adiós! Hora do jantar!",
+     "v": "en-US-EricNeural",
+     "o": [
+      "I speak Spanish with my friend.",
+      "Lola, adiós! Dinner time!",
+      "Mom, Dad, Anna... la comida es deliciosa!"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Dhanya... dhanyavaad!",
+     "pt": "Dhanya... dhanyavaad!",
+     "v": "en-US-EricNeural",
+     "o": [
+      "Aqui. Estes são bolinhos. Prove um.",
+      "Uau! Ben, você fala hindi?",
+      "Dhanya... dhanyavaad!"
+     ]
+    },
+    {
+     "t": "copy",
+     "en": "Dhanya... dhanyavaad!",
+     "pt": "Dhanya... dhanyavaad!",
+     "v": "en-US-EricNeural",
+     "x": [
+      "has",
+      "time",
+      "lantern"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u8z4",
+   "title": "time · daughter · delicious · easy",
+   "titlePt": "tempo · filha · delicioso · fácil",
+   "emoji": "🧠",
+   "words": [
+    "time",
+    "daughter",
+    "delicious",
+    "easy"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "time",
+     "pt": "tempo"
+    },
+    {
+     "t": "meaning",
+     "w": "time",
+     "pt": "tempo",
+     "o": [
+      "filha",
+      "falar",
+      "tempo"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "daughter",
+     "pt": "filha"
+    },
+    {
+     "t": "hear",
+     "w": "daughter",
+     "pt": "filha",
+     "o": [
+      "delicious",
+      "club",
+      "daughter"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "time",
+       "tempo"
+      ],
+      [
+       "daughter",
+       "filha"
+      ],
+      [
+       "say",
+       "dizer"
+      ],
+      [
+       "teach",
+       "ensinar"
+      ],
+      [
+       "language",
+       "linguagem"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "delicious",
+     "pt": "delicioso"
+    },
+    {
+     "t": "pick",
+     "w": "delicious",
+     "pt": "delicioso",
+     "o": [
+      "time",
+      "study",
+      "delicious"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "easy",
+     "pt": "fácil"
+    },
+    {
+     "t": "meaning",
+     "w": "easy",
+     "pt": "fácil",
+     "o": [
+      "estudar",
+      "pequeno",
+      "fácil"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "delicious",
+     "pt": "delicioso",
+     "o": [
+      "delicious",
+      "dinner",
+      "easy"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "delicious",
+       "delicioso"
+      ],
+      [
+       "easy",
+       "fácil"
+      ],
+      [
+       "time",
+       "tempo"
+      ],
+      [
+       "daughter",
+       "filha"
+      ],
+      [
+       "dinner",
+       "jantar"
+      ]
+     ]
+    },
+    {
+     "t": "phrase",
+     "en": "Hola! Easy!",
+     "pt": "Hola! Fácil!",
+     "v": "en-US-EricNeural"
+    },
+    {
+     "t": "bank",
+     "en": "Hola! Easy!",
+     "pt": "Hola! Fácil!",
+     "v": "en-US-EricNeural",
+     "x": [
+      "mean",
+      "many",
+      "from"
+     ],
+     "wr": "copy"
+    },
+    {
+     "t": "phrase",
+     "en": "\"The food is delicious!\"",
+     "pt": "\"A comida está deliciosa!\"",
+     "v": "en-US-EricNeural"
+    },
+    {
+     "t": "fill",
+     "en": "\"The food is delicious!\"",
+     "pt": "\"A comida está deliciosa!\"",
+     "v": "en-US-EricNeural",
+     "gap": "\"The food is ___!\"",
+     "w": "delicious",
+     "o": [
+      "delicious",
+      "water",
+      "cat"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Hola! Easy!",
+     "pt": "Hola! Fácil!",
+     "v": "en-US-EricNeural",
+     "o": [
+      "Tchau, Ben! Tchau, Anna! Au revoir!",
+      "Ben, você tem um hobby novo: idiomas!",
+      "Hola! Fácil!"
+     ]
+    },
+    {
+     "t": "spell",
+     "w": "time",
+     "pt": "tempo",
+     "o": [
+      "understand",
+      "word",
+      "time"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "Hola! Easy!",
+     "pt": "Hola! Fácil!",
+     "v": "en-US-EricNeural",
+     "o": [
+      "I speak English and Spanish.",
+      "Hola! Easy!",
+      "Inès, do you speak Spanish?"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "\"The food is delicious!\"",
+     "pt": "\"A comida está deliciosa!\"",
+     "v": "en-US-EricNeural",
+     "o": [
+      "\"A comida está deliciosa!\"",
+      "Tá! \"Paani\" quer dizer \"água\".",
+      "Ben, você tem um hobby novo: idiomas!"
+     ]
+    },
+    {
+     "t": "copy",
+     "en": "\"The food is delicious!\"",
+     "pt": "\"A comida está deliciosa!\"",
+     "v": "en-US-EricNeural",
+     "x": [
+      "that",
+      "hi",
+      "great"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u8z5",
+   "title": "help · how · lantern · shop",
+   "titlePt": "ajuda · como · lanterna · loja",
+   "emoji": "💬",
+   "words": [
+    "help",
+    "how",
+    "lantern",
+    "shop"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "help",
+     "pt": "ajuda"
+    },
+    {
+     "t": "meaning",
+     "w": "help",
+     "pt": "ajuda",
+     "o": [
+      "ajuda",
+      "filha",
+      "linguagem"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "how",
+     "pt": "como"
+    },
+    {
+     "t": "hear",
+     "w": "how",
+     "pt": "como",
+     "o": [
+      "how",
+      "little",
+      "help"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "help",
+       "ajuda"
+      ],
+      [
+       "how",
+       "como"
+      ],
+      [
+       "speak",
+       "falar"
+      ],
+      [
+       "time",
+       "tempo"
+      ],
+      [
+       "understand",
+       "entender"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "lantern",
+     "pt": "lanterna"
+    },
+    {
+     "t": "pick",
+     "w": "lantern",
+     "pt": "lanterna",
+     "o": [
+      "lantern",
+      "little",
+      "shop"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "shop",
+     "pt": "loja"
+    },
+    {
+     "t": "meaning",
+     "w": "shop",
+     "pt": "loja",
+     "o": [
+      "fácil",
+      "jantar",
+      "loja"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "lantern",
+     "pt": "lanterna",
+     "o": [
+      "how",
+      "lantern",
+      "speak"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "lantern",
+       "lanterna"
+      ],
+      [
+       "shop",
+       "loja"
+      ],
+      [
+       "help",
+       "ajuda"
+      ],
+      [
+       "how",
+       "como"
+      ],
+      [
+       "say",
+       "dizer"
+      ]
+     ]
+    },
+    {
+     "t": "phrase",
+     "en": "Dhanyavaad, Raj!",
+     "pt": "Dhanyavaad, Raj!",
+     "v": "en-US-EricNeural"
+    },
+    {
+     "t": "bank",
+     "en": "Dhanyavaad, Raj!",
+     "pt": "Dhanyavaad, Raj!",
+     "v": "en-US-EricNeural",
+     "x": [
+      "we",
+      "your",
+      "no"
+     ],
+     "wr": "copy"
+    },
+    {
+     "t": "phrase",
+     "en": "\"Hao chi!\"",
+     "pt": "\"Hao chi!\"",
+     "v": "en-HK-YanNeural"
+    },
+    {
+     "t": "fill",
+     "en": "\"Hao chi!\"",
+     "pt": "\"Hao chi!\"",
+     "v": "en-HK-YanNeural",
+     "gap": "\"Hao ___!\"",
+     "w": "chi",
+     "o": [
+      "daughter",
+      "have",
+      "chi"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Dhanyavaad, Raj!",
+     "pt": "Dhanyavaad, Raj!",
+     "v": "en-US-EricNeural",
+     "o": [
+      "\"El gato\".",
+      "Mãe, pai, Anna... la comida es deliciosa!",
+      "Dhanyavaad, Raj!"
+     ]
+    },
+    {
+     "t": "spell",
+     "w": "help",
+     "pt": "ajuda",
+     "o": [
+      "time",
+      "mean",
+      "help"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "Dhanyavaad, Raj!",
+     "pt": "Dhanyavaad, Raj!",
+     "v": "en-US-EricNeural",
+     "o": [
+      "Do you like English?",
+      "Dhanyavaad, Raj!",
+      "Namaste! That means \"hello\" in Hindi."
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "\"Hao chi!\"",
+     "pt": "\"Hao chi!\"",
+     "v": "en-HK-YanNeural",
+     "o": [
+      "Bem-vindos de volta! Esta é a minha filha, Priya.",
+      "Ni hao! Xie xie.",
+      "\"Hao chi!\""
+     ]
+    },
+    {
+     "t": "copy",
+     "en": "\"Hao chi!\"",
+     "pt": "\"Hao chi!\"",
+     "v": "en-HK-YanNeural",
+     "x": [
+      "with",
+      "who",
+      "study"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u8z6",
+   "title": "team · cool · cousin · eight",
+   "titlePt": "time · legal · primo(a) · oito",
+   "emoji": "🔁",
+   "words": [
+    "team",
+    "cool",
+    "cousin",
+    "eight"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "team",
+     "pt": "time"
+    },
+    {
+     "t": "meaning",
+     "w": "team",
+     "pt": "time",
+     "o": [
+      "time",
+      "ajuda",
+      "oito"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "cool",
+     "pt": "legal"
+    },
+    {
+     "t": "hear",
+     "w": "cool",
+     "pt": "legal",
+     "o": [
+      "cool",
+      "shop",
+      "daughter"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "team",
+       "time"
+      ],
+      [
+       "cool",
+       "legal"
+      ],
+      [
+       "teach",
+       "ensinar"
+      ],
+      [
+       "understand",
+       "entender"
+      ],
+      [
+       "lantern",
+       "lanterna"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "cousin",
+     "pt": "primo(a)"
+    },
+    {
+     "t": "pick",
+     "w": "cousin",
+     "pt": "primo(a)",
+     "o": [
+      "help",
+      "team",
+      "cousin"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "eight",
+     "pt": "oito"
+    },
+    {
+     "t": "meaning",
+     "w": "eight",
+     "pt": "oito",
+     "o": [
+      "entender",
+      "como",
+      "oito"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "cousin",
+     "pt": "primo(a)",
+     "o": [
+      "cousin",
+      "dinner",
+      "teach"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "cousin",
+       "primo(a)"
+      ],
+      [
+       "eight",
+       "oito"
+      ],
+      [
+       "team",
+       "time"
+      ],
+      [
+       "cool",
+       "legal"
+      ],
+      [
+       "lantern",
+       "lanterna"
+      ]
+     ]
+    },
+    {
+     "t": "phrase",
+     "en": "Perfect! A team!",
+     "pt": "Perfeito! Uma equipe!",
+     "v": "en-ZA-LeahNeural"
+    },
+    {
+     "t": "bank",
+     "en": "Perfect! A team!",
+     "pt": "Perfeito! Uma equipe!",
+     "v": "en-ZA-LeahNeural",
+     "x": [
+      "time",
+      "back",
+      "where"
+     ],
+     "wr": "translate"
+    },
+    {
+     "t": "phrase",
+     "en": "Spanish! Wow, that's cool.",
+     "pt": "Espanhol! Uau, que legal.",
+     "v": "en-US-AnaNeural"
+    },
+    {
+     "t": "fill",
+     "en": "Spanish! Wow, that's cool.",
+     "pt": "Espanhol! Uau, que legal.",
+     "v": "en-US-AnaNeural",
+     "gap": "Spanish! Wow, that's ___.",
+     "w": "cool",
+     "o": [
+      "here",
+      "very",
+      "cool"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Perfect! A team!",
+     "pt": "Perfeito! Uma equipe!",
+     "v": "en-ZA-LeahNeural",
+     "o": [
+      "Perfeito! Uma equipe!",
+      "Uau! Quantos idiomas!",
+      "Xie xie, Sra. Mei!"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "Spanish! Wow, that's cool.",
+     "pt": "Espanhol! Uau, que legal.",
+     "v": "en-US-AnaNeural",
+     "x": [
+      "has",
+      "know",
+      "look"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "Perfect! A team!",
+     "pt": "Perfeito! Uma equipe!",
+     "v": "en-ZA-LeahNeural",
+     "o": [
+      "\"El gato\".",
+      "Perfect! A team!",
+      "A very little Spanish!"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Spanish! Wow, that's cool.",
+     "pt": "Espanhol! Uau, que legal.",
+     "v": "en-US-AnaNeural",
+     "o": [
+      "Água! Eu entendo!",
+      "Olá! Meu nome é Inès.",
+      "Espanhol! Uau, que legal."
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "Spanish! Wow, that's cool.",
+     "pt": "Espanhol! Uau, que legal.",
+     "v": "en-US-AnaNeural",
+     "x": [
+      "curry",
+      "shop",
+      "you"
+     ],
+     "wr": "translate"
+    }
+   ]
+  },
+  {
+   "id": "u8z7",
+   "title": "enough · everywhere · fast · hobby",
+   "titlePt": "suficiente · em todo lugar · rápido · passatempo",
+   "emoji": "⭐",
+   "words": [
+    "enough",
+    "everywhere",
+    "fast",
+    "hobby"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "enough",
+     "pt": "suficiente"
+    },
+    {
+     "t": "meaning",
+     "w": "enough",
+     "pt": "suficiente",
+     "o": [
+      "suficiente",
+      "tempo",
+      "hindi"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "everywhere",
+     "pt": "em todo lugar"
+    },
+    {
+     "t": "hear",
+     "w": "everywhere",
+     "pt": "em todo lugar",
+     "o": [
+      "how",
+      "everywhere",
+      "language"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "enough",
+       "suficiente"
+      ],
+      [
+       "everywhere",
+       "em todo lugar"
+      ],
+      [
+       "eight",
+       "oito"
+      ],
+      [
+       "language",
+       "linguagem"
+      ],
+      [
+       "delicious",
+       "delicioso"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "fast",
+     "pt": "rápido"
+    },
+    {
+     "t": "pick",
+     "w": "fast",
+     "pt": "rápido",
+     "o": [
+      "everywhere",
+      "fast",
+      "how"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "hobby",
+     "pt": "passatempo"
+    },
+    {
+     "t": "meaning",
+     "w": "hobby",
+     "pt": "passatempo",
+     "o": [
+      "querer dizer",
+      "fácil",
+      "passatempo"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "fast",
+     "pt": "rápido",
+     "o": [
+      "fast",
+      "cousin",
+      "how"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "fast",
+       "rápido"
+      ],
+      [
+       "hobby",
+       "passatempo"
+      ],
+      [
+       "enough",
+       "suficiente"
+      ],
+      [
+       "everywhere",
+       "em todo lugar"
+      ],
+      [
+       "daughter",
+       "filha"
+      ]
+     ]
+    },
+    {
+     "t": "phrase",
+     "en": "\"El gato\".",
+     "pt": "\"El gato\".",
+     "v": "en-US-AvaNeural"
+    },
+    {
+     "t": "bank",
+     "en": "\"El gato\".",
+     "pt": "\"El gato\".",
+     "v": "en-US-AvaNeural",
+     "x": [
+      "everyone",
+      "dog",
+      "sunday"
+     ],
+     "wr": "translate"
+    },
+    {
+     "t": "phrase",
+     "en": "Hey! Merci, David!",
+     "pt": "Ei! Merci, David!",
+     "v": "en-US-EricNeural"
+    },
+    {
+     "t": "fill",
+     "en": "Hey! Merci, David!",
+     "pt": "Ei! Merci, David!",
+     "v": "en-US-EricNeural",
+     "gap": "Hey! ___, David!",
+     "w": "Merci",
+     "o": [
+      "easy",
+      "Merci",
+      "hot"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "\"El gato\".",
+     "pt": "\"El gato\".",
+     "v": "en-US-AvaNeural",
+     "o": [
+      "\"El gato\".",
+      "Claro! Bienvenida, Anna! Isso quer dizer \"bem-vinda\".",
+      "Posso ficar na equipe também?"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "Hey! Merci, David!",
+     "pt": "Ei! Merci, David!",
+     "v": "en-US-EricNeural",
+     "x": [
+      "mean",
+      "every",
+      "man"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "\"El gato\".",
+     "pt": "\"El gato\".",
+     "v": "en-US-AvaNeural",
+     "o": [
+      "\"El gato\".",
+      "Hello! Welcome to my shop!",
+      "Yes! Hola, namaste, paani, dhanyavaad!"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Hey! Merci, David!",
+     "pt": "Ei! Merci, David!",
+     "v": "en-US-EricNeural",
+     "o": [
+      "Ei! Merci, David!",
+      "Olá! Bem-vindos à minha loja!",
+      "Eu falo inglês e espanhol."
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "Hey! Merci, David!",
+     "pt": "Ei! Merci, David!",
+     "v": "en-US-EricNeural",
+     "x": [
+      "mean",
+      "teach",
+      "bye"
+     ],
+     "wr": "translate"
+    }
+   ]
+  },
+  {
+   "id": "u8z8",
+   "title": "home · homework · just · need",
+   "titlePt": "casa · lição de casa · só · precisar",
+   "emoji": "🗝️",
+   "words": [
+    "home",
+    "homework",
+    "just",
+    "need"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "home",
+     "pt": "casa"
+    },
+    {
+     "t": "meaning",
+     "w": "home",
+     "pt": "casa",
+     "o": [
+      "delicioso",
+      "legal",
+      "casa"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "homework",
+     "pt": "lição de casa"
+    },
+    {
+     "t": "hear",
+     "w": "homework",
+     "pt": "lição de casa",
+     "o": [
+      "fast",
+      "homework",
+      "cool"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "home",
+       "casa"
+      ],
+      [
+       "homework",
+       "lição de casa"
+      ],
+      [
+       "teach",
+       "ensinar"
+      ],
+      [
+       "hobby",
+       "passatempo"
+      ],
+      [
+       "speak",
+       "falar"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "just",
+     "pt": "só"
+    },
+    {
+     "t": "pick",
+     "w": "just",
+     "pt": "só",
+     "o": [
+      "just",
+      "teach",
+      "speak"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "need",
+     "pt": "precisar"
+    },
+    {
+     "t": "meaning",
+     "w": "need",
+     "pt": "precisar",
+     "o": [
+      "precisar",
+      "oito",
+      "entender"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "just",
+     "pt": "só",
+     "o": [
+      "enough",
+      "just",
+      "help"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "just",
+       "só"
+      ],
+      [
+       "need",
+       "precisar"
+      ],
+      [
+       "home",
+       "casa"
+      ],
+      [
+       "homework",
+       "lição de casa"
+      ],
+      [
+       "understand",
+       "entender"
+      ]
+     ]
+    },
+    {
+     "t": "phrase",
+     "en": "Ni hao! Xie xie.",
+     "pt": "Ni hao! Xie xie.",
+     "v": "en-GB-RyanNeural"
+    },
+    {
+     "t": "bank",
+     "en": "Ni hao! Xie xie.",
+     "pt": "Ni hao! Xie xie.",
+     "v": "en-GB-RyanNeural",
+     "x": [
+      "who",
+      "student",
+      "his"
+     ],
+     "wr": "translate"
+    },
+    {
+     "t": "phrase",
+     "en": "Hao chi! Hao chi!",
+     "pt": "Hao chi! Hao chi!",
+     "v": "en-US-EricNeural"
+    },
+    {
+     "t": "fill",
+     "en": "Hao chi! Hao chi!",
+     "pt": "Hao chi! Hao chi!",
+     "v": "en-US-EricNeural",
+     "gap": "Hao ___! Hao chi!",
+     "w": "chi",
+     "o": [
+      "is",
+      "delicious",
+      "chi"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Ni hao! Xie xie.",
+     "pt": "Ni hao! Xie xie.",
+     "v": "en-GB-RyanNeural",
+     "o": [
+      "Gracias, Ben! Viu? Eu falo espanhol também!",
+      "Uau! Quantos idiomas!",
+      "Ni hao! Xie xie."
+     ]
+    },
+    {
+     "t": "type",
+     "en": "Hao chi! Hao chi!",
+     "pt": "Hao chi! Hao chi!",
+     "v": "en-US-EricNeural",
+     "x": [
+      "like",
+      "video",
+      "try"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "Ni hao! Xie xie.",
+     "pt": "Ni hao! Xie xie.",
+     "v": "en-GB-RyanNeural",
+     "o": [
+      "Ni hao! Xie xie.",
+      "At home, Mom calls Ben for dinner.",
+      "At the table, Ben has a surprise."
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Hao chi! Hao chi!",
+     "pt": "Hao chi! Hao chi!",
+     "v": "en-US-EricNeural",
+     "o": [
+      "Hao chi! Hao chi!",
+      "Na mesa, o Ben tem uma surpresa.",
+      "Claro! Bienvenida, Anna! Isso quer dizer \"bem-vinda\"."
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "Hao chi! Hao chi!",
+     "pt": "Hao chi! Hao chi!",
+     "v": "en-US-EricNeural",
+     "x": [
+      "red",
+      "eight",
+      "be"
+     ],
+     "wr": "translate"
+    }
+   ]
+  },
+  {
+   "id": "u8z9",
+   "title": "phone · practice · pretty · ready",
+   "titlePt": "telefone · praticar · bonito · pronto",
+   "emoji": "🚀",
+   "words": [
+    "phone",
+    "practice",
+    "pretty",
+    "ready"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "phone",
+     "pt": "telefone"
+    },
+    {
+     "t": "meaning",
+     "w": "phone",
+     "pt": "telefone",
+     "o": [
+      "telefone",
+      "entender",
+      "precisar"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "practice",
+     "pt": "praticar"
+    },
+    {
+     "t": "hear",
+     "w": "practice",
+     "pt": "praticar",
+     "o": [
+      "homework",
+      "practice",
+      "ready"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "phone",
+       "telefone"
+      ],
+      [
+       "practice",
+       "praticar"
+      ],
+      [
+       "shop",
+       "loja"
+      ],
+      [
+       "help",
+       "ajuda"
+      ],
+      [
+       "word",
+       "palavra"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "pretty",
+     "pt": "bonito"
+    },
+    {
+     "t": "pick",
+     "w": "pretty",
+     "pt": "bonito",
+     "o": [
+      "lantern",
+      "pretty",
+      "speak"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "ready",
+     "pt": "pronto"
+    },
+    {
+     "t": "meaning",
+     "w": "ready",
+     "pt": "pronto",
+     "o": [
+      "pronto",
+      "como",
+      "palavra"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "pretty",
+     "pt": "bonito",
+     "o": [
+      "pretty",
+      "ready",
+      "speak"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "pretty",
+       "bonito"
+      ],
+      [
+       "ready",
+       "pronto"
+      ],
+      [
+       "phone",
+       "telefone"
+      ],
+      [
+       "practice",
+       "praticar"
+      ],
+      [
+       "home",
+       "casa"
+      ]
+     ]
+    },
+    {
+     "t": "phrase",
+     "en": "Xie xie, Mrs. Mei!",
+     "pt": "Xie xie, Sra. Mei!",
+     "v": "en-US-JennyNeural"
+    },
+    {
+     "t": "bank",
+     "en": "Xie xie, Mrs. Mei!",
+     "pt": "Xie xie, Sra. Mei!",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "table",
+      "word",
+      "dad"
+     ],
+     "wr": "translate"
+    },
+    {
+     "t": "phrase",
+     "en": "\"The house\"!",
+     "pt": "\"The house\"!",
+     "v": "en-US-AvaNeural"
+    },
+    {
+     "t": "fill",
+     "en": "\"The house\"!",
+     "pt": "\"The house\"!",
+     "v": "en-US-AvaNeural",
+     "gap": "\"The ___\"!",
+     "w": "house",
+     "o": [
+      "word",
+      "house",
+      "family"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Xie xie, Mrs. Mei!",
+     "pt": "Xie xie, Sra. Mei!",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Xie xie, Sra. Mei!",
+      "Claro! Bienvenida, Anna! Isso quer dizer \"bem-vinda\".",
+      "Você gosta de inglês?"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "\"The house\"!",
+     "pt": "\"The house\"!",
+     "v": "en-US-AvaNeural",
+     "x": [
+      "mean",
+      "friend",
+      "teacher"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "Xie xie, Mrs. Mei!",
+     "pt": "Xie xie, Sra. Mei!",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "No. I speak French and English.",
+      "Xie xie, Mrs. Mei!",
+      "\"Hao chi!\""
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "\"The house\"!",
+     "pt": "\"The house\"!",
+     "v": "en-US-AvaNeural",
+     "o": [
+      "\"El gato\".",
+      "\"The house\"!",
+      "Mãe, pai, Anna... la comida es deliciosa!"
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "\"The house\"!",
+     "pt": "\"The house\"!",
+     "v": "en-US-AvaNeural",
+     "x": [
+      "tomorrow",
+      "we",
+      "he"
+     ],
+     "wr": "translate"
+    }
+   ]
+  },
+  {
+   "id": "u8z10",
+   "title": "Review",
+   "titlePt": "Revisão geral",
+   "emoji": "🏆",
+   "words": [],
+   "screens": [
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "need",
+       "precisar"
+      ],
+      [
+       "home",
+       "casa"
+      ],
+      [
+       "help",
+       "ajuda"
+      ],
+      [
+       "pretty",
+       "bonito"
+      ],
+      [
+       "delicious",
+       "delicioso"
+      ]
+     ]
+    },
+    {
+     "t": "meaning",
+     "w": "study",
+     "pt": "estudar",
+     "o": [
+      "rápido",
+      "dizer",
+      "estudar"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "shop",
+     "pt": "loja",
+     "o": [
+      "cool",
+      "just",
+      "shop"
+     ]
+    },
+    {
+     "t": "phrase",
+     "en": "I speak English and Spanish.",
+     "pt": "Eu falo inglês e espanhol.",
+     "v": "en-US-JennyNeural"
+    },
+    {
+     "t": "bank",
+     "en": "I speak English and Spanish.",
+     "pt": "Eu falo inglês e espanhol.",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "new",
+      "where",
+      "small"
+     ],
+     "wr": "translate"
+    },
+    {
+     "t": "speak",
+     "en": "I speak English and Spanish.",
+     "pt": "Eu falo inglês e espanhol.",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Sim, eu estudo inglês na escola.",
+      "Ah, você fala chinês também!",
+      "Eu falo inglês e espanhol."
+     ]
+    },
+    {
+     "t": "phrase",
+     "en": "Yes, I study English at school.",
+     "pt": "Sim, eu estudo inglês na escola.",
+     "v": "en-US-JennyNeural"
+    },
+    {
+     "t": "fill",
+     "en": "Yes, I study English at school.",
+     "pt": "Sim, eu estudo inglês na escola.",
+     "v": "en-US-JennyNeural",
+     "gap": "Yes, I ___ English at school.",
+     "w": "study",
+     "o": [
+      "have",
+      "about",
+      "study"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "Yes, I study English at school.",
+     "pt": "Sim, eu estudo inglês na escola.",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "teach",
+      "with",
+      "speak"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "phone",
+       "telefone"
+      ],
+      [
+       "ready",
+       "pronto"
+      ],
+      [
+       "cool",
+       "legal"
+      ],
+      [
+       "eight",
+       "oito"
+      ],
+      [
+       "practice",
+       "praticar"
+      ]
+     ]
+    },
+    {
+     "t": "phrase",
+     "en": "I understand a little Hindi.",
+     "pt": "Eu entendo um pouco de hindi.",
+     "v": "en-US-JennyNeural"
+    },
+    {
+     "t": "listen",
+     "en": "I understand a little Hindi.",
+     "pt": "Eu entendo um pouco de hindi.",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "I understand a little Hindi.",
+      "Hey! Merci, David!",
+      "Hello! My name is Inès."
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "I understand a little Hindi.",
+     "pt": "Eu entendo um pouco de hindi.",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Você gosta de inglês?",
+      "Bem-vindos de volta! Esta é a minha filha, Priya.",
+      "Eu entendo um pouco de hindi."
+     ]
+    },
+    {
+     "t": "pick",
+     "w": "daughter",
+     "pt": "filha",
+     "o": [
+      "daughter",
+      "how",
+      "phone"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "I speak English and Spanish.",
+     "pt": "Eu falo inglês e espanhol.",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "with",
+      "he",
+      "here"
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "I understand a little Hindi.",
+     "pt": "Eu entendo um pouco de hindi.",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "restaurant",
+      "there",
+      "yes"
+     ],
+     "wr": "translate"
+    },
+    {
+     "t": "meaning",
+     "w": "language",
+     "pt": "linguagem",
+     "o": [
+      "só",
+      "linguagem",
+      "em todo lugar"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Yes, I study English at school.",
+     "pt": "Sim, eu estudo inglês na escola.",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Lola, adiós! Hora do jantar!",
+      "Sim. Eu sou a Lola. Eu sou do México.",
+      "Sim, eu estudo inglês na escola."
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "speak",
+     "pt": "falar",
+     "o": [
+      "eight",
+      "lantern",
+      "speak"
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "Yes, I study English at school.",
+     "pt": "Sim, eu estudo inglês na escola.",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "back",
+      "surprise",
+      "and"
+     ],
+     "wr": "translate"
+    }
+   ]
+  }
+ ]
+}

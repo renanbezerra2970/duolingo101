@@ -1,0 +1,2272 @@
+{
+ "unit": 7,
+ "lessons": [
+  {
+   "id": "u7z1",
+   "title": "about · teacher · doctor · bus",
+   "titlePt": "sobre · professor(a) · médico(a) · ônibus",
+   "emoji": "🔤",
+   "words": [
+    "about",
+    "teacher",
+    "doctor",
+    "bus"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "doctor",
+     "pt": "médico(a)"
+    },
+    {
+     "t": "meaning",
+     "w": "doctor",
+     "pt": "médico(a)",
+     "o": [
+      "mundo",
+      "segunda-feira",
+      "médico(a)"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "teacher",
+     "pt": "professor(a)"
+    },
+    {
+     "t": "hear",
+     "w": "teacher",
+     "pt": "professor(a)",
+     "o": [
+      "teacher",
+      "your",
+      "make"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "doctor",
+       "médico(a)"
+      ],
+      [
+       "teacher",
+       "professor(a)"
+      ],
+      [
+       "bus",
+       "ônibus"
+      ],
+      [
+       "about",
+       "sobre"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "bus",
+     "pt": "ônibus"
+    },
+    {
+     "t": "pick",
+     "w": "bus",
+     "pt": "ônibus",
+     "o": [
+      "about",
+      "their",
+      "bus"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "about",
+     "pt": "sobre"
+    },
+    {
+     "t": "meaning",
+     "w": "about",
+     "pt": "sobre",
+     "o": [
+      "sobre",
+      "muito",
+      "gramática"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "bus",
+     "pt": "ônibus",
+     "o": [
+      "here",
+      "bread",
+      "bus"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "bus",
+       "ônibus"
+      ],
+      [
+       "about",
+       "sobre"
+      ],
+      [
+       "doctor",
+       "médico(a)"
+      ],
+      [
+       "teacher",
+       "professor(a)"
+      ]
+     ]
+    },
+    {
+     "t": "phrase",
+     "en": "I'm a teacher.",
+     "pt": "Sou professor.",
+     "v": "en-US-JennyNeural"
+    },
+    {
+     "t": "bank",
+     "en": "I'm a teacher.",
+     "pt": "Sou professor.",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "great",
+      "quiet",
+      "design"
+     ],
+     "wr": "copy"
+    },
+    {
+     "t": "phrase",
+     "en": "Sofia, what about you?",
+     "pt": "Sofia, e você?",
+     "v": "en-US-ChristopherNeural"
+    },
+    {
+     "t": "fill",
+     "en": "Sofia, what about you?",
+     "pt": "Sofia, e você?",
+     "v": "en-US-ChristopherNeural",
+     "gap": "Sofia, what ___ you?",
+     "w": "about",
+     "o": [
+      "about",
+      "at",
+      "now"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "I'm a teacher.",
+     "pt": "Sou professor.",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Sua mãe é muito simpática, Sofia.",
+      "Sou professor.",
+      "E você, Li?"
+     ]
+    },
+    {
+     "t": "spell",
+     "w": "doctor",
+     "pt": "médico(a)",
+     "o": [
+      "in",
+      "sick",
+      "doctor"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "I'm a teacher.",
+     "pt": "Sou professor.",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "A cook? I love Brazilian food!",
+      "I'm a teacher.",
+      "Is he a doctor for people?"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Sofia, what about you?",
+     "pt": "Sofia, e você?",
+     "v": "en-US-ChristopherNeural",
+     "o": [
+      "Sofia, e você?",
+      "Enfermeira! Onde ela trabalha?",
+      "Ótima ideia! Café no segundo andar."
+     ]
+    },
+    {
+     "t": "copy",
+     "en": "Sofia, what about you?",
+     "pt": "Sofia, e você?",
+     "v": "en-US-ChristopherNeural",
+     "x": [
+      "free",
+      "so",
+      "new"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u7z2",
+   "title": "driver · hospital · nurse · wife",
+   "titlePt": "motorista · hospital · enfermeira(o) · esposa",
+   "emoji": "🧩",
+   "words": [
+    "driver",
+    "hospital",
+    "nurse",
+    "wife"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "driver",
+     "pt": "motorista"
+    },
+    {
+     "t": "meaning",
+     "w": "driver",
+     "pt": "motorista",
+     "o": [
+      "médico(a)",
+      "motorista",
+      "enfermeira(o)"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "hospital",
+     "pt": "hospital"
+    },
+    {
+     "t": "hear",
+     "w": "hospital",
+     "pt": "hospital",
+     "o": [
+      "hospital",
+      "doctor",
+      "nurse"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "driver",
+       "motorista"
+      ],
+      [
+       "hospital",
+       "hospital"
+      ],
+      [
+       "doctor",
+       "médico(a)"
+      ],
+      [
+       "teacher",
+       "professor(a)"
+      ],
+      [
+       "about",
+       "sobre"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "nurse",
+     "pt": "enfermeira(o)"
+    },
+    {
+     "t": "pick",
+     "w": "nurse",
+     "pt": "enfermeira(o)",
+     "o": [
+      "nurse",
+      "teacher",
+      "doctor"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "wife",
+     "pt": "esposa"
+    },
+    {
+     "t": "meaning",
+     "w": "wife",
+     "pt": "esposa",
+     "o": [
+      "médico(a)",
+      "esposa",
+      "motorista"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "nurse",
+     "pt": "enfermeira(o)",
+     "o": [
+      "bus",
+      "nurse",
+      "doctor"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "nurse",
+       "enfermeira(o)"
+      ],
+      [
+       "wife",
+       "esposa"
+      ],
+      [
+       "driver",
+       "motorista"
+      ],
+      [
+       "hospital",
+       "hospital"
+      ],
+      [
+       "about",
+       "sobre"
+      ]
+     ]
+    },
+    {
+     "t": "phrase",
+     "en": "A bus driver? In London?",
+     "pt": "Motorista de ônibus? Em Londres?",
+     "v": "en-US-AriaNeural"
+    },
+    {
+     "t": "bank",
+     "en": "A bus driver? In London?",
+     "pt": "Motorista de ônibus? Em Londres?",
+     "v": "en-US-AriaNeural",
+     "x": [
+      "man",
+      "book",
+      "talk"
+     ],
+     "wr": "copy"
+    },
+    {
+     "t": "phrase",
+     "en": "A taxi driver! I'm a bus driver!",
+     "pt": "Taxista! Eu sou motorista de ônibus!",
+     "v": "en-AU-WilliamMultilingualNeural"
+    },
+    {
+     "t": "fill",
+     "en": "A taxi driver! I'm a bus driver!",
+     "pt": "Taxista! Eu sou motorista de ônibus!",
+     "v": "en-AU-WilliamMultilingualNeural",
+     "gap": "A ___ driver! I'm a bus driver!",
+     "w": "taxi",
+     "o": [
+      "engineer",
+      "book",
+      "taxi"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "A bus driver? In London?",
+     "pt": "Motorista de ônibus? Em Londres?",
+     "v": "en-US-AriaNeural",
+     "o": [
+      "Sofia, conte para a gente sobre a sua família.",
+      "Oi, Pedro. Cadê o Bolinha?",
+      "Motorista de ônibus? Em Londres?"
+     ]
+    },
+    {
+     "t": "spell",
+     "w": "driver",
+     "pt": "motorista",
+     "o": [
+      "driver",
+      "wife",
+      "bus"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "A bus driver? In London?",
+     "pt": "Motorista de ônibus? Em Londres?",
+     "v": "en-US-AriaNeural",
+     "o": [
+      "Really? Then I see you every morning!",
+      "Hi, Max! Where are you from?",
+      "A bus driver? In London?"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "A taxi driver! I'm a bus driver!",
+     "pt": "Taxista! Eu sou motorista de ônibus!",
+     "v": "en-AU-WilliamMultilingualNeural",
+     "o": [
+      "Eu sou engenheira. Eu construo pontes.",
+      "Taxista! Eu sou motorista de ônibus!",
+      "Motorista de ônibus? Em Londres?"
+     ]
+    },
+    {
+     "t": "copy",
+     "en": "A taxi driver! I'm a bus driver!",
+     "pt": "Taxista! Eu sou motorista de ônibus!",
+     "v": "en-AU-WilliamMultilingualNeural",
+     "x": [
+      "make",
+      "book",
+      "all"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u7z3",
+   "title": "work · bridge · cook · floor",
+   "titlePt": "trabalho · ponte · cozinhar · chão",
+   "emoji": "🎯",
+   "words": [
+    "work",
+    "bridge",
+    "cook",
+    "floor"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "work",
+     "pt": "trabalho"
+    },
+    {
+     "t": "meaning",
+     "w": "work",
+     "pt": "trabalho",
+     "o": [
+      "professor(a)",
+      "trabalho",
+      "motorista"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "bridge",
+     "pt": "ponte"
+    },
+    {
+     "t": "hear",
+     "w": "bridge",
+     "pt": "ponte",
+     "o": [
+      "teacher",
+      "cook",
+      "bridge"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "work",
+       "trabalho"
+      ],
+      [
+       "bridge",
+       "ponte"
+      ],
+      [
+       "wife",
+       "esposa"
+      ],
+      [
+       "nurse",
+       "enfermeira(o)"
+      ],
+      [
+       "hospital",
+       "hospital"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "cook",
+     "pt": "cozinhar"
+    },
+    {
+     "t": "pick",
+     "w": "cook",
+     "pt": "cozinhar",
+     "o": [
+      "cook",
+      "nurse",
+      "work"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "floor",
+     "pt": "chão"
+    },
+    {
+     "t": "meaning",
+     "w": "floor",
+     "pt": "chão",
+     "o": [
+      "cozinhar",
+      "enfermeira(o)",
+      "chão"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "cook",
+     "pt": "cozinhar",
+     "o": [
+      "cook",
+      "driver",
+      "wife"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "cook",
+       "cozinhar"
+      ],
+      [
+       "floor",
+       "chão"
+      ],
+      [
+       "work",
+       "trabalho"
+      ],
+      [
+       "bridge",
+       "ponte"
+      ],
+      [
+       "teacher",
+       "professor(a)"
+      ]
+     ]
+    },
+    {
+     "t": "phrase",
+     "en": "Bridges? Big bridges?",
+     "pt": "Pontes? Pontes grandes?",
+     "v": "en-US-EricNeural"
+    },
+    {
+     "t": "bank",
+     "en": "Bridges? Big bridges?",
+     "pt": "Pontes? Pontes grandes?",
+     "v": "en-US-EricNeural",
+     "x": [
+      "sofa",
+      "quiet",
+      "true"
+     ],
+     "wr": "copy"
+    },
+    {
+     "t": "phrase",
+     "en": "Really? What floor?",
+     "pt": "Sério? Em que andar?",
+     "v": "en-AU-NatashaNeural"
+    },
+    {
+     "t": "fill",
+     "en": "Really? What floor?",
+     "pt": "Sério? Em que andar?",
+     "v": "en-AU-NatashaNeural",
+     "gap": "Really? What ___?",
+     "w": "floor",
+     "o": [
+      "next",
+      "teach",
+      "floor"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Bridges? Big bridges?",
+     "pt": "Pontes? Pontes grandes?",
+     "v": "en-US-EricNeural",
+     "o": [
+      "Sim! Pontes muito grandes.",
+      "E o que você faz, Max?",
+      "Pontes? Pontes grandes?"
+     ]
+    },
+    {
+     "t": "spell",
+     "w": "work",
+     "pt": "trabalho",
+     "o": [
+      "cook",
+      "teacher",
+      "work"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "Bridges? Big bridges?",
+     "pt": "Pontes? Pontes grandes?",
+     "v": "en-US-EricNeural",
+     "o": [
+      "Bridges? Big bridges?",
+      "Is Max a student?",
+      "What a class!"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Really? What floor?",
+     "pt": "Sério? Em que andar?",
+     "v": "en-AU-NatashaNeural",
+     "o": [
+      "Sério? Em que andar?",
+      "Sim, é. Mas eu gosto.",
+      "Veterinário! Perfeito! Liga para ele!"
+     ]
+    },
+    {
+     "t": "copy",
+     "en": "Really? What floor?",
+     "pt": "Sério? Em que andar?",
+     "v": "en-AU-NatashaNeural",
+     "x": [
+      "make",
+      "always",
+      "dog"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u7z4",
+   "title": "brazilian · job · sick · talk",
+   "titlePt": "brasileiro · trabalho · doente · falar",
+   "emoji": "🧠",
+   "words": [
+    "brazilian",
+    "job",
+    "sick",
+    "talk"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "brazilian",
+     "pt": "brasileiro"
+    },
+    {
+     "t": "meaning",
+     "w": "brazilian",
+     "pt": "brasileiro",
+     "o": [
+      "doente",
+      "brasileiro",
+      "trabalho"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "job",
+     "pt": "trabalho"
+    },
+    {
+     "t": "hear",
+     "w": "job",
+     "pt": "trabalho",
+     "o": [
+      "nurse",
+      "bus",
+      "job"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "brazilian",
+       "brasileiro"
+      ],
+      [
+       "job",
+       "trabalho"
+      ],
+      [
+       "bridge",
+       "ponte"
+      ],
+      [
+       "nurse",
+       "enfermeira(o)"
+      ],
+      [
+       "about",
+       "sobre"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "sick",
+     "pt": "doente"
+    },
+    {
+     "t": "pick",
+     "w": "sick",
+     "pt": "doente",
+     "o": [
+      "sick",
+      "floor",
+      "nurse"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "talk",
+     "pt": "falar"
+    },
+    {
+     "t": "meaning",
+     "w": "talk",
+     "pt": "falar",
+     "o": [
+      "chão",
+      "enfermeira(o)",
+      "falar"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "sick",
+     "pt": "doente",
+     "o": [
+      "sick",
+      "brazilian",
+      "nurse"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "sick",
+       "doente"
+      ],
+      [
+       "talk",
+       "falar"
+      ],
+      [
+       "brazilian",
+       "brasileiro"
+      ],
+      [
+       "job",
+       "trabalho"
+      ],
+      [
+       "about",
+       "sobre"
+      ]
+     ]
+    },
+    {
+     "t": "phrase",
+     "en": "A cook? I love Brazilian food!",
+     "pt": "Cozinheiro? Eu amo comida brasileira!",
+     "v": "en-US-GuyNeural"
+    },
+    {
+     "t": "bank",
+     "en": "A cook? I love Brazilian food!",
+     "pt": "Cozinheiro? Eu amo comida brasileira!",
+     "v": "en-US-GuyNeural",
+     "x": [
+      "build",
+      "on",
+      "mom"
+     ],
+     "wr": "copy"
+    },
+    {
+     "t": "phrase",
+     "en": "A doctor! Wow, that's a hard job.",
+     "pt": "Médico! Uau, é uma profissão difícil.",
+     "v": "en-US-MichelleNeural"
+    },
+    {
+     "t": "fill",
+     "en": "A doctor! Wow, that's a hard job.",
+     "pt": "Médico! Uau, é uma profissão difícil.",
+     "v": "en-US-MichelleNeural",
+     "gap": "A ___! Wow, that's a hard job.",
+     "w": "doctor",
+     "o": [
+      "all",
+      "engineer",
+      "doctor"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "A cook? I love Brazilian food!",
+     "pt": "Cozinheiro? Eu amo comida brasileira!",
+     "v": "en-US-GuyNeural",
+     "o": [
+      "Cozinheiro? Eu amo comida brasileira!",
+      "Olá, Sofia! Olá, pessoal!",
+      "Olá! Prazer em conhecer todos vocês."
+     ]
+    },
+    {
+     "t": "spell",
+     "w": "brazilian",
+     "pt": "brasileiro",
+     "o": [
+      "brazilian",
+      "bus",
+      "cook"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "A cook? I love Brazilian food!",
+     "pt": "Cozinheiro? Eu amo comida brasileira!",
+     "v": "en-US-GuyNeural",
+     "o": [
+      "A cook? I love Brazilian food!",
+      "He's here, on the sofa.",
+      "A nurse! Where does she work?"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "A doctor! Wow, that's a hard job.",
+     "pt": "Médico! Uau, é uma profissão difícil.",
+     "v": "en-US-MichelleNeural",
+     "o": [
+      "Olha! Minha mãe está me ligando agora!",
+      "Médico! Uau, é uma profissão difícil.",
+      "Olá, Sofia! Olá, pessoal!"
+     ]
+    },
+    {
+     "t": "copy",
+     "en": "A doctor! Wow, that's a hard job.",
+     "pt": "Médico! Uau, é uma profissão difícil.",
+     "v": "en-US-MichelleNeural",
+     "x": [
+      "happy",
+      "second",
+      "thank"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u7z5",
+   "title": "vet · all · bye · call",
+   "titlePt": "veterinário · todos · tchau · ligar",
+   "emoji": "💬",
+   "words": [
+    "vet",
+    "all",
+    "bye",
+    "call"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "vet",
+     "pt": "veterinário"
+    },
+    {
+     "t": "meaning",
+     "w": "vet",
+     "pt": "veterinário",
+     "o": [
+      "tchau",
+      "sobre",
+      "veterinário"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "all",
+     "pt": "todos"
+    },
+    {
+     "t": "hear",
+     "w": "all",
+     "pt": "todos",
+     "o": [
+      "all",
+      "bye",
+      "cook"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "vet",
+       "veterinário"
+      ],
+      [
+       "all",
+       "todos"
+      ],
+      [
+       "nurse",
+       "enfermeira(o)"
+      ],
+      [
+       "talk",
+       "falar"
+      ],
+      [
+       "work",
+       "trabalho"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "bye",
+     "pt": "tchau"
+    },
+    {
+     "t": "pick",
+     "w": "bye",
+     "pt": "tchau",
+     "o": [
+      "about",
+      "bye",
+      "doctor"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "call",
+     "pt": "ligar"
+    },
+    {
+     "t": "meaning",
+     "w": "call",
+     "pt": "ligar",
+     "o": [
+      "ponte",
+      "ligar",
+      "cozinhar"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "bye",
+     "pt": "tchau",
+     "o": [
+      "talk",
+      "about",
+      "bye"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "bye",
+       "tchau"
+      ],
+      [
+       "call",
+       "ligar"
+      ],
+      [
+       "vet",
+       "veterinário"
+      ],
+      [
+       "all",
+       "todos"
+      ],
+      [
+       "nurse",
+       "enfermeira(o)"
+      ]
+     ]
+    },
+    {
+     "t": "phrase",
+     "en": "A vet! Perfect! Call him!",
+     "pt": "Veterinário! Perfeito! Liga para ele!",
+     "v": "en-US-MichelleNeural"
+    },
+    {
+     "t": "bank",
+     "en": "A vet! Perfect! Call him!",
+     "pt": "Veterinário! Perfeito! Liga para ele!",
+     "v": "en-US-MichelleNeural",
+     "x": [
+      "that",
+      "there",
+      "let"
+     ],
+     "wr": "copy"
+    },
+    {
+     "t": "phrase",
+     "en": "Oh no!",
+     "pt": "Ah, não!",
+     "v": "en-US-JennyNeural"
+    },
+    {
+     "t": "fill",
+     "en": "Oh no!",
+     "pt": "Ah, não!",
+     "v": "en-US-JennyNeural",
+     "gap": "___ no!",
+     "w": "Oh",
+     "o": [
+      "Oh",
+      "class",
+      "his"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "A vet! Perfect! Call him!",
+     "pt": "Veterinário! Perfeito! Liga para ele!",
+     "v": "en-US-MichelleNeural",
+     "o": [
+      "Num hospital? Como eu!",
+      "Eu sou da Austrália. De Sydney.",
+      "Veterinário! Perfeito! Liga para ele!"
+     ]
+    },
+    {
+     "t": "spell",
+     "w": "vet",
+     "pt": "veterinário",
+     "o": [
+      "vet",
+      "talk",
+      "wife"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "A vet! Perfect! Call him!",
+     "pt": "Veterinário! Perfeito! Liga para ele!",
+     "v": "en-US-MichelleNeural",
+     "o": [
+      "Sofia, tell us about your family.",
+      "And brothers or sisters?",
+      "A vet! Perfect! Call him!"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Oh no!",
+     "pt": "Ah, não!",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Você é aluno da turma?",
+      "Ah, não!",
+      "Ele está aqui, no sofá."
+     ]
+    },
+    {
+     "t": "copy",
+     "en": "Oh no!",
+     "pt": "Ah, não!",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "have",
+      "yes",
+      "children"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u7z6",
+   "title": "design · engineer · him · let",
+   "titlePt": "design · engenheiro(a) · ele · deixar",
+   "emoji": "🔁",
+   "words": [
+    "design",
+    "engineer",
+    "him",
+    "let"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "design",
+     "pt": "design"
+    },
+    {
+     "t": "meaning",
+     "w": "design",
+     "pt": "design",
+     "o": [
+      "sobre",
+      "doente",
+      "design"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "engineer",
+     "pt": "engenheiro(a)"
+    },
+    {
+     "t": "hear",
+     "w": "engineer",
+     "pt": "engenheiro(a)",
+     "o": [
+      "talk",
+      "driver",
+      "engineer"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "design",
+       "design"
+      ],
+      [
+       "engineer",
+       "engenheiro(a)"
+      ],
+      [
+       "nurse",
+       "enfermeira(o)"
+      ],
+      [
+       "bye",
+       "tchau"
+      ],
+      [
+       "job",
+       "trabalho"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "him",
+     "pt": "ele"
+    },
+    {
+     "t": "pick",
+     "w": "him",
+     "pt": "ele",
+     "o": [
+      "wife",
+      "him",
+      "driver"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "let",
+     "pt": "deixar"
+    },
+    {
+     "t": "meaning",
+     "w": "let",
+     "pt": "deixar",
+     "o": [
+      "trabalho",
+      "deixar",
+      "sobre"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "him",
+     "pt": "ele",
+     "o": [
+      "him",
+      "about",
+      "talk"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "him",
+       "ele"
+      ],
+      [
+       "let",
+       "deixar"
+      ],
+      [
+       "design",
+       "design"
+      ],
+      [
+       "engineer",
+       "engenheiro(a)"
+      ],
+      [
+       "call",
+       "ligar"
+      ]
+     ]
+    },
+    {
+     "t": "phrase",
+     "en": "I'm an engineer. I build bridges.",
+     "pt": "Eu sou engenheira. Eu construo pontes.",
+     "v": "en-US-AriaNeural"
+    },
+    {
+     "t": "bank",
+     "en": "I'm an engineer. I build bridges.",
+     "pt": "Eu sou engenheira. Eu construo pontes.",
+     "v": "en-US-AriaNeural",
+     "x": [
+      "driver",
+      "write",
+      "ask"
+     ],
+     "wr": "translate"
+    },
+    {
+     "t": "phrase",
+     "en": "I'm from Australia. From Sydney.",
+     "pt": "Eu sou da Austrália. De Sydney.",
+     "v": "en-AU-WilliamMultilingualNeural"
+    },
+    {
+     "t": "fill",
+     "en": "I'm from Australia. From Sydney.",
+     "pt": "Eu sou da Austrália. De Sydney.",
+     "v": "en-AU-WilliamMultilingualNeural",
+     "gap": "___ from Australia. From Sydney.",
+     "w": "I'm",
+     "o": [
+      "eat",
+      "I'm",
+      "you"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "I'm an engineer. I build bridges.",
+     "pt": "Eu sou engenheira. Eu construo pontes.",
+     "v": "en-US-AriaNeural",
+     "o": [
+      "Pedro, o que aconteceu?",
+      "Eu sou engenheira. Eu construo pontes.",
+      "Oi, Max! De onde você é?"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "I'm from Australia. From Sydney.",
+     "pt": "Eu sou da Austrália. De Sydney.",
+     "v": "en-AU-WilliamMultilingualNeural",
+     "x": [
+      "call",
+      "engineer",
+      "food"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "I'm an engineer. I build bridges.",
+     "pt": "Eu sou engenheira. Eu construo pontes.",
+     "v": "en-US-AriaNeural",
+     "o": [
+      "Mr. Brown comes in.",
+      "I'm an engineer. I build bridges.",
+      "A hospital? Like me!"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "I'm from Australia. From Sydney.",
+     "pt": "Eu sou da Austrália. De Sydney.",
+     "v": "en-AU-WilliamMultilingualNeural",
+     "o": [
+      "Num hospital? Como eu!",
+      "E você, Li?",
+      "Eu sou da Austrália. De Sydney."
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "I'm from Australia. From Sydney.",
+     "pt": "Eu sou da Austrália. De Sydney.",
+     "v": "en-AU-WilliamMultilingualNeural",
+     "x": [
+      "red",
+      "this",
+      "nice"
+     ],
+     "wr": "translate"
+    }
+   ]
+  },
+  {
+   "id": "u7z7",
+   "title": "monday · number · perfect · quiet",
+   "titlePt": "segunda-feira · número · perfeito · quieto",
+   "emoji": "⭐",
+   "words": [
+    "monday",
+    "number",
+    "perfect",
+    "quiet"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "monday",
+     "pt": "segunda-feira"
+    },
+    {
+     "t": "meaning",
+     "w": "monday",
+     "pt": "segunda-feira",
+     "o": [
+      "trabalho",
+      "segunda-feira",
+      "enfermeira(o)"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "number",
+     "pt": "número"
+    },
+    {
+     "t": "hear",
+     "w": "number",
+     "pt": "número",
+     "o": [
+      "monday",
+      "hospital",
+      "number"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "monday",
+       "segunda-feira"
+      ],
+      [
+       "number",
+       "número"
+      ],
+      [
+       "call",
+       "ligar"
+      ],
+      [
+       "bridge",
+       "ponte"
+      ],
+      [
+       "cook",
+       "cozinhar"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "perfect",
+     "pt": "perfeito"
+    },
+    {
+     "t": "pick",
+     "w": "perfect",
+     "pt": "perfeito",
+     "o": [
+      "perfect",
+      "vet",
+      "about"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "quiet",
+     "pt": "quieto"
+    },
+    {
+     "t": "meaning",
+     "w": "quiet",
+     "pt": "quieto",
+     "o": [
+      "quieto",
+      "cozinhar",
+      "ligar"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "perfect",
+     "pt": "perfeito",
+     "o": [
+      "brazilian",
+      "perfect",
+      "monday"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "perfect",
+       "perfeito"
+      ],
+      [
+       "quiet",
+       "quieto"
+      ],
+      [
+       "monday",
+       "segunda-feira"
+      ],
+      [
+       "number",
+       "número"
+      ],
+      [
+       "wife",
+       "esposa"
+      ]
+     ]
+    },
+    {
+     "t": "phrase",
+     "en": "Is Max a student?",
+     "pt": "Max é estudante?",
+     "v": "en-US-JennyNeural"
+    },
+    {
+     "t": "bank",
+     "en": "Is Max a student?",
+     "pt": "Max é estudante?",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "know",
+      "class",
+      "hi"
+     ],
+     "wr": "translate"
+    },
+    {
+     "t": "phrase",
+     "en": "And you, Li?",
+     "pt": "E você, Li?",
+     "v": "en-US-ChristopherNeural"
+    },
+    {
+     "t": "fill",
+     "en": "And you, Li?",
+     "pt": "E você, Li?",
+     "v": "en-US-ChristopherNeural",
+     "gap": "And ___, Li?",
+     "w": "you",
+     "o": [
+      "bridge",
+      "very",
+      "you"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Is Max a student?",
+     "pt": "Max é estudante?",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Max é estudante?",
+      "Sim. E agora, lição de casa!",
+      "Eu fico no segundo andar. Coração."
+     ]
+    },
+    {
+     "t": "type",
+     "en": "And you, Li?",
+     "pt": "E você, Li?",
+     "v": "en-US-ChristopherNeural",
+     "x": [
+      "teach",
+      "design",
+      "bread"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "Is Max a student?",
+     "pt": "Max é estudante?",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Yes! Very big bridges.",
+      "Is Max a student?",
+      "Yes... a lot. He loves it!"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "And you, Li?",
+     "pt": "E você, Li?",
+     "v": "en-US-ChristopherNeural",
+     "o": [
+      "E você, Li?",
+      "E o que você faz, Max?",
+      "Max é estudante?"
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "And you, Li?",
+     "pt": "E você, Li?",
+     "v": "en-US-ChristopherNeural",
+     "x": [
+      "cheese",
+      "cook",
+      "tall"
+     ],
+     "wr": "translate"
+    }
+   ]
+  },
+  {
+   "id": "u7z8",
+   "title": "second · taxi · after · afternoon",
+   "titlePt": "segundo · táxi · depois · tarde",
+   "emoji": "🗝️",
+   "words": [
+    "second",
+    "taxi",
+    "after",
+    "afternoon"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "second",
+     "pt": "segundo"
+    },
+    {
+     "t": "meaning",
+     "w": "second",
+     "pt": "segundo",
+     "o": [
+      "segundo",
+      "trabalho",
+      "médico(a)"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "taxi",
+     "pt": "táxi"
+    },
+    {
+     "t": "hear",
+     "w": "taxi",
+     "pt": "táxi",
+     "o": [
+      "talk",
+      "nurse",
+      "taxi"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "second",
+       "segundo"
+      ],
+      [
+       "taxi",
+       "táxi"
+      ],
+      [
+       "bus",
+       "ônibus"
+      ],
+      [
+       "perfect",
+       "perfeito"
+      ],
+      [
+       "wife",
+       "esposa"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "after",
+     "pt": "depois"
+    },
+    {
+     "t": "pick",
+     "w": "after",
+     "pt": "depois",
+     "o": [
+      "let",
+      "him",
+      "after"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "afternoon",
+     "pt": "tarde"
+    },
+    {
+     "t": "meaning",
+     "w": "afternoon",
+     "pt": "tarde",
+     "o": [
+      "motorista",
+      "tarde",
+      "sobre"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "after",
+     "pt": "depois",
+     "o": [
+      "talk",
+      "after",
+      "monday"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "after",
+       "depois"
+      ],
+      [
+       "afternoon",
+       "tarde"
+      ],
+      [
+       "second",
+       "segundo"
+      ],
+      [
+       "taxi",
+       "táxi"
+      ],
+      [
+       "quiet",
+       "quieto"
+      ]
+     ]
+    },
+    {
+     "t": "phrase",
+     "en": "I'm on the second floor. Hearts.",
+     "pt": "Eu fico no segundo andar. Coração.",
+     "v": "en-AU-NatashaNeural"
+    },
+    {
+     "t": "bank",
+     "en": "I'm on the second floor. Hearts.",
+     "pt": "Eu fico no segundo andar. Coração.",
+     "v": "en-AU-NatashaNeural",
+     "x": [
+      "grammar",
+      "new",
+      "happy"
+     ],
+     "wr": "translate"
+    },
+    {
+     "t": "phrase",
+     "en": "What a class!",
+     "pt": "Que turma!",
+     "v": "en-US-MichelleNeural"
+    },
+    {
+     "t": "fill",
+     "en": "What a class!",
+     "pt": "Que turma!",
+     "v": "en-US-MichelleNeural",
+     "gap": "What a ___!",
+     "w": "class",
+     "o": [
+      "world",
+      "class",
+      "so"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "I'm on the second floor. Hearts.",
+     "pt": "Eu fico no segundo andar. Coração.",
+     "v": "en-AU-NatashaNeural",
+     "o": [
+      "Eu fico no segundo andar. Coração.",
+      "Minha esposa é médica também!",
+      "Sério? Em que andar?"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "What a class!",
+     "pt": "Que turma!",
+     "v": "en-US-MichelleNeural",
+     "x": [
+      "coffee",
+      "but",
+      "big"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "I'm on the second floor. Hearts.",
+     "pt": "Eu fico no segundo andar. Coração.",
+     "v": "en-AU-NatashaNeural",
+     "o": [
+      "A hospital? Like me!",
+      "I'm on the second floor. Hearts.",
+      "Yes, it is. But I like it."
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "What a class!",
+     "pt": "Que turma!",
+     "v": "en-US-MichelleNeural",
+     "o": [
+      "Cozinheiro? Eu amo comida brasileira!",
+      "Que turma!",
+      "Muito bom! Pedro, o que você faz?"
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "What a class!",
+     "pt": "Que turma!",
+     "v": "en-US-MichelleNeural",
+     "x": [
+      "let",
+      "city",
+      "hospital"
+     ],
+     "wr": "translate"
+    }
+   ]
+  },
+  {
+   "id": "u7z9",
+   "title": "always · animals · ask · build",
+   "titlePt": "sempre · animais · perguntar · construir",
+   "emoji": "🚀",
+   "words": [
+    "always",
+    "animals",
+    "ask",
+    "build"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "always",
+     "pt": "sempre"
+    },
+    {
+     "t": "meaning",
+     "w": "always",
+     "pt": "sempre",
+     "o": [
+      "tarde",
+      "quieto",
+      "sempre"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "animals",
+     "pt": "animais"
+    },
+    {
+     "t": "hear",
+     "w": "animals",
+     "pt": "animais",
+     "o": [
+      "animals",
+      "vet",
+      "brazilian"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "always",
+       "sempre"
+      ],
+      [
+       "animals",
+       "animais"
+      ],
+      [
+       "hospital",
+       "hospital"
+      ],
+      [
+       "job",
+       "trabalho"
+      ],
+      [
+       "taxi",
+       "táxi"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "ask",
+     "pt": "perguntar"
+    },
+    {
+     "t": "pick",
+     "w": "ask",
+     "pt": "perguntar",
+     "o": [
+      "ask",
+      "floor",
+      "teacher"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "build",
+     "pt": "construir"
+    },
+    {
+     "t": "meaning",
+     "w": "build",
+     "pt": "construir",
+     "o": [
+      "construir",
+      "ligar",
+      "segunda-feira"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "ask",
+     "pt": "perguntar",
+     "o": [
+      "design",
+      "ask",
+      "call"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "ask",
+       "perguntar"
+      ],
+      [
+       "build",
+       "construir"
+      ],
+      [
+       "always",
+       "sempre"
+      ],
+      [
+       "animals",
+       "animais"
+      ],
+      [
+       "afternoon",
+       "tarde"
+      ]
+     ]
+    },
+    {
+     "t": "phrase",
+     "en": "Pedro, what's wrong?",
+     "pt": "Pedro, o que aconteceu?",
+     "v": "en-US-AriaNeural"
+    },
+    {
+     "t": "bank",
+     "en": "Pedro, what's wrong?",
+     "pt": "Pedro, o que aconteceu?",
+     "v": "en-US-AriaNeural",
+     "x": [
+      "homework",
+      "their",
+      "food"
+     ],
+     "wr": "translate"
+    },
+    {
+     "t": "phrase",
+     "en": "The fourth floor. Children.",
+     "pt": "No quarto andar. Crianças.",
+     "v": "en-US-GuyNeural"
+    },
+    {
+     "t": "fill",
+     "en": "The fourth floor. Children.",
+     "pt": "No quarto andar. Crianças.",
+     "v": "en-US-GuyNeural",
+     "gap": "The fourth ___. Children.",
+     "w": "floor",
+     "o": [
+      "floor",
+      "not",
+      "really"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Pedro, what's wrong?",
+     "pt": "Pedro, o que aconteceu?",
+     "v": "en-US-AriaNeural",
+     "o": [
+      "Pessoal, esta é a minha esposa, Helen.",
+      "Pedro, o que aconteceu?",
+      "Naquela tarde, o Lucas vai à casa do Pedro."
+     ]
+    },
+    {
+     "t": "type",
+     "en": "The fourth floor. Children.",
+     "pt": "No quarto andar. Crianças.",
+     "v": "en-US-GuyNeural",
+     "x": [
+      "driver",
+      "afternoon",
+      "but"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "Pedro, what's wrong?",
+     "pt": "Pedro, o que aconteceu?",
+     "v": "en-US-AriaNeural",
+     "o": [
+      "I'm an engineer. I build bridges.",
+      "Pedro, what's wrong?",
+      "Welcome, Max! Sit next to Li."
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "The fourth floor. Children.",
+     "pt": "No quarto andar. Crianças.",
+     "v": "en-US-GuyNeural",
+     "o": [
+      "Isso não é verdade!",
+      "No quarto andar. Crianças.",
+      "Sou professor."
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "The fourth floor. Children.",
+     "pt": "No quarto andar. Crianças.",
+     "v": "en-US-GuyNeural",
+     "x": [
+      "for",
+      "heart",
+      "at"
+     ],
+     "wr": "translate"
+    }
+   ]
+  },
+  {
+   "id": "u7z10",
+   "title": "Review",
+   "titlePt": "Revisão geral",
+   "emoji": "🏆",
+   "words": [],
+   "screens": [
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "call",
+       "ligar"
+      ],
+      [
+       "hospital",
+       "hospital"
+      ],
+      [
+       "design",
+       "design"
+      ],
+      [
+       "wife",
+       "esposa"
+      ],
+      [
+       "work",
+       "trabalho"
+      ]
+     ]
+    },
+    {
+     "t": "meaning",
+     "w": "let",
+     "pt": "deixar",
+     "o": [
+      "número",
+      "deixar",
+      "depois"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "monday",
+     "pt": "segunda-feira",
+     "o": [
+      "monday",
+      "second",
+      "let"
+     ]
+    },
+    {
+     "t": "phrase",
+     "en": "I'm a teacher.",
+     "pt": "Sou professor.",
+     "v": "en-US-JennyNeural"
+    },
+    {
+     "t": "bank",
+     "en": "I'm a teacher.",
+     "pt": "Sou professor.",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "website",
+      "floor",
+      "small"
+     ],
+     "wr": "translate"
+    },
+    {
+     "t": "speak",
+     "en": "I'm a teacher.",
+     "pt": "Sou professor.",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "E irmãos ou irmãs?",
+      "Oi, Pedro. Cadê o Bolinha?",
+      "Sou professor."
+     ]
+    },
+    {
+     "t": "phrase",
+     "en": "My wife is a doctor too!",
+     "pt": "Minha esposa é médica também!",
+     "v": "en-US-JennyNeural"
+    },
+    {
+     "t": "fill",
+     "en": "My wife is a doctor too!",
+     "pt": "Minha esposa é médica também!",
+     "v": "en-US-JennyNeural",
+     "gap": "My ___ is a doctor too!",
+     "w": "wife",
+     "o": [
+      "work",
+      "quiet",
+      "wife"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "My wife is a doctor too!",
+     "pt": "Minha esposa é médica também!",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "like",
+      "his",
+      "you"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "bye",
+       "tchau"
+      ],
+      [
+       "talk",
+       "falar"
+      ],
+      [
+       "engineer",
+       "engenheiro(a)"
+      ],
+      [
+       "build",
+       "construir"
+      ],
+      [
+       "sick",
+       "doente"
+      ]
+     ]
+    },
+    {
+     "t": "phrase",
+     "en": "Your brother is a doctor, right?",
+     "pt": "Seu irmão é médico, né?",
+     "v": "en-US-JennyNeural"
+    },
+    {
+     "t": "listen",
+     "en": "Your brother is a doctor, right?",
+     "pt": "Seu irmão é médico, né?",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Your brother is a doctor, right?",
+      "Very nice! Pedro, what do you do?",
+      "Yes! Very big bridges."
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Your brother is a doctor, right?",
+     "pt": "Seu irmão é médico, né?",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Seu irmão é médico, né?",
+      "Sou professor.",
+      "Que turma!"
+     ]
+    },
+    {
+     "t": "pick",
+     "w": "quiet",
+     "pt": "quieto",
+     "o": [
+      "call",
+      "quiet",
+      "doctor"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "I'm a teacher.",
+     "pt": "Sou professor.",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "animals",
+      "second",
+      "that"
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "Your brother is a doctor, right?",
+     "pt": "Seu irmão é médico, né?",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "sad",
+      "quiet",
+      "he"
+     ],
+     "wr": "translate"
+    },
+    {
+     "t": "meaning",
+     "w": "about",
+     "pt": "sobre",
+     "o": [
+      "sobre",
+      "perguntar",
+      "design"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "My wife is a doctor too!",
+     "pt": "Minha esposa é médica também!",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Que turma!",
+      "Minha esposa é médica também!",
+      "Bem-vindo, Max! Sente ao lado do Li."
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "doctor",
+     "pt": "médico(a)",
+     "o": [
+      "doctor",
+      "second",
+      "teacher"
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "My wife is a doctor too!",
+     "pt": "Minha esposa é médica também!",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "small",
+      "teacher",
+      "design"
+     ],
+     "wr": "translate"
+    }
+   ]
+  }
+ ]
+}

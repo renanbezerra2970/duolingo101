@@ -1,0 +1,2272 @@
+{
+ "unit": 9,
+ "lessons": [
+  {
+   "id": "u9z1",
+   "title": "sunny · hat · rainy · cold",
+   "titlePt": "ensolarado · chapéu · chuvoso · frio",
+   "emoji": "🔤",
+   "words": [
+    "sunny",
+    "hat",
+    "rainy",
+    "cold"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "hat",
+     "pt": "chapéu"
+    },
+    {
+     "t": "meaning",
+     "w": "hat",
+     "pt": "chapéu",
+     "o": [
+      "chapéu",
+      "com",
+      "um"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "cold",
+     "pt": "frio"
+    },
+    {
+     "t": "hear",
+     "w": "cold",
+     "pt": "frio",
+     "o": [
+      "people",
+      "cold",
+      "rain"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "hat",
+       "chapéu"
+      ],
+      [
+       "cold",
+       "frio"
+      ],
+      [
+       "rainy",
+       "chuvoso"
+      ],
+      [
+       "sunny",
+       "ensolarado"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "sunny",
+     "pt": "ensolarado"
+    },
+    {
+     "t": "pick",
+     "w": "sunny",
+     "pt": "ensolarado",
+     "o": [
+      "for",
+      "sunny",
+      "sun"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "rainy",
+     "pt": "chuvoso"
+    },
+    {
+     "t": "meaning",
+     "w": "rainy",
+     "pt": "chuvoso",
+     "o": [
+      "vídeo",
+      "ligar",
+      "chuvoso"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "sunny",
+     "pt": "ensolarado",
+     "o": [
+      "we",
+      "sunny",
+      "cream"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "sunny",
+       "ensolarado"
+      ],
+      [
+       "rainy",
+       "chuvoso"
+      ],
+      [
+       "hat",
+       "chapéu"
+      ],
+      [
+       "cold",
+       "frio"
+      ]
+     ]
+    },
+    {
+     "t": "phrase",
+     "en": "It's sunny today!",
+     "pt": "Está ensolarado hoje!",
+     "v": "en-US-JennyNeural"
+    },
+    {
+     "t": "bank",
+     "en": "It's sunny today!",
+     "pt": "Está ensolarado hoje!",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "rain",
+      "wait",
+      "buy"
+     ],
+     "wr": "copy"
+    },
+    {
+     "t": "phrase",
+     "en": "Brrr! It's so cold!",
+     "pt": "Brrr! Está tão frio!",
+     "v": "en-US-EricNeural"
+    },
+    {
+     "t": "fill",
+     "en": "Brrr! It's so cold!",
+     "pt": "Brrr! Está tão frio!",
+     "v": "en-US-EricNeural",
+     "gap": "Brrr! It's so ___!",
+     "w": "cold",
+     "o": [
+      "cold",
+      "two",
+      "very"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "It's sunny today!",
+     "pt": "Está ensolarado hoje!",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Claro!",
+      "A pipa está numa árvore agora.",
+      "Está ensolarado hoje!"
+     ]
+    },
+    {
+     "t": "spell",
+     "w": "hat",
+     "pt": "chapéu",
+     "o": [
+      "hat",
+      "so",
+      "big"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "It's sunny today!",
+     "pt": "Está ensolarado hoje!",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Run, Anna! Run!",
+      "It's sunny today!",
+      "And it's half price today."
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Brrr! It's so cold!",
+     "pt": "Brrr! Está tão frio!",
+     "v": "en-US-EricNeural",
+     "o": [
+      "Brrr! Está tão frio!",
+      "Eu preciso de um chapéu e um cachecol.",
+      "E eu tenho um chapéu de banana!"
+     ]
+    },
+    {
+     "t": "copy",
+     "en": "Brrr! It's so cold!",
+     "pt": "Brrr! Está tão frio!",
+     "v": "en-US-EricNeural",
+     "x": [
+      "this",
+      "no",
+      "juice"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u9z2",
+   "title": "scarf · kite · windy · banana",
+   "titlePt": "cachecol · pipa · com vento · banana",
+   "emoji": "🧩",
+   "words": [
+    "scarf",
+    "kite",
+    "windy",
+    "banana"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "scarf",
+     "pt": "cachecol"
+    },
+    {
+     "t": "meaning",
+     "w": "scarf",
+     "pt": "cachecol",
+     "o": [
+      "pipa",
+      "com vento",
+      "cachecol"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "kite",
+     "pt": "pipa"
+    },
+    {
+     "t": "hear",
+     "w": "kite",
+     "pt": "pipa",
+     "o": [
+      "kite",
+      "windy",
+      "sunny"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "scarf",
+       "cachecol"
+      ],
+      [
+       "kite",
+       "pipa"
+      ],
+      [
+       "sunny",
+       "ensolarado"
+      ],
+      [
+       "rainy",
+       "chuvoso"
+      ],
+      [
+       "cold",
+       "frio"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "windy",
+     "pt": "com vento"
+    },
+    {
+     "t": "pick",
+     "w": "windy",
+     "pt": "com vento",
+     "o": [
+      "kite",
+      "sunny",
+      "windy"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "banana",
+     "pt": "banana"
+    },
+    {
+     "t": "meaning",
+     "w": "banana",
+     "pt": "banana",
+     "o": [
+      "ensolarado",
+      "banana",
+      "cachecol"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "windy",
+     "pt": "com vento",
+     "o": [
+      "banana",
+      "windy",
+      "sunny"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "windy",
+       "com vento"
+      ],
+      [
+       "banana",
+       "banana"
+      ],
+      [
+       "scarf",
+       "cachecol"
+      ],
+      [
+       "kite",
+       "pipa"
+      ],
+      [
+       "cold",
+       "frio"
+      ]
+     ]
+    },
+    {
+     "t": "phrase",
+     "en": "Dad! The kite! The kite!",
+     "pt": "Pai! A pipa! A pipa!",
+     "v": "en-US-EricNeural"
+    },
+    {
+     "t": "bank",
+     "en": "Dad! The kite! The kite!",
+     "pt": "Pai! A pipa! A pipa!",
+     "v": "en-US-EricNeural",
+     "x": [
+      "this",
+      "buy",
+      "fly"
+     ],
+     "wr": "copy"
+    },
+    {
+     "t": "phrase",
+     "en": "It's very windy today!",
+     "pt": "Está ventando muito hoje!",
+     "v": "en-US-JennyNeural"
+    },
+    {
+     "t": "fill",
+     "en": "It's very windy today!",
+     "pt": "Está ventando muito hoje!",
+     "v": "en-US-JennyNeural",
+     "gap": "It's very ___ today!",
+     "w": "windy",
+     "o": [
+      "poor",
+      "home",
+      "windy"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Dad! The kite! The kite!",
+     "pt": "Pai! A pipa! A pipa!",
+     "v": "en-US-EricNeural",
+     "o": [
+      "Hola, Abuela! Esta é minha avó, Carmen.",
+      "Eu amei! Eu preciso deste chapéu!",
+      "Pai! A pipa! A pipa!"
+     ]
+    },
+    {
+     "t": "spell",
+     "w": "scarf",
+     "pt": "cachecol",
+     "o": [
+      "scarf",
+      "windy",
+      "sunny"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "Dad! The kite! The kite!",
+     "pt": "Pai! A pipa! A pipa!",
+     "v": "en-US-EricNeural",
+     "o": [
+      "It's higher than the trees!",
+      "Oh, is it cold today?",
+      "Dad! The kite! The kite!"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "It's very windy today!",
+     "pt": "Está ventando muito hoje!",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Está no lago! Ah, não!",
+      "Está ventando muito hoje!",
+      "Sim! Está muito frio hoje. É novembro!"
+     ]
+    },
+    {
+     "t": "copy",
+     "en": "It's very windy today!",
+     "pt": "Está ventando muito hoje!",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "lake",
+      "wind",
+      "sunday"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u9z3",
+   "title": "rain · coat · duck · glove",
+   "titlePt": "chuva · casaco · abaixar-se · luva",
+   "emoji": "🎯",
+   "words": [
+    "rain",
+    "coat",
+    "duck",
+    "glove"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "rain",
+     "pt": "chuva"
+    },
+    {
+     "t": "meaning",
+     "w": "rain",
+     "pt": "chuva",
+     "o": [
+      "com vento",
+      "banana",
+      "chuva"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "coat",
+     "pt": "casaco"
+    },
+    {
+     "t": "hear",
+     "w": "coat",
+     "pt": "casaco",
+     "o": [
+      "coat",
+      "windy",
+      "hat"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "rain",
+       "chuva"
+      ],
+      [
+       "coat",
+       "casaco"
+      ],
+      [
+       "sunny",
+       "ensolarado"
+      ],
+      [
+       "hat",
+       "chapéu"
+      ],
+      [
+       "scarf",
+       "cachecol"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "duck",
+     "pt": "abaixar-se"
+    },
+    {
+     "t": "pick",
+     "w": "duck",
+     "pt": "abaixar-se",
+     "o": [
+      "hat",
+      "coat",
+      "duck"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "glove",
+     "pt": "luva"
+    },
+    {
+     "t": "meaning",
+     "w": "glove",
+     "pt": "luva",
+     "o": [
+      "luva",
+      "frio",
+      "com vento"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "duck",
+     "pt": "abaixar-se",
+     "o": [
+      "glove",
+      "duck",
+      "coat"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "duck",
+       "abaixar-se"
+      ],
+      [
+       "glove",
+       "luva"
+      ],
+      [
+       "rain",
+       "chuva"
+      ],
+      [
+       "coat",
+       "casaco"
+      ],
+      [
+       "cold",
+       "frio"
+      ]
+     ]
+    },
+    {
+     "t": "phrase",
+     "en": "OK... Gloves too.",
+     "pt": "Tá... Luvas também.",
+     "v": "en-US-EricNeural"
+    },
+    {
+     "t": "bank",
+     "en": "OK... Gloves too.",
+     "pt": "Tá... Luvas também.",
+     "v": "en-US-EricNeural",
+     "x": [
+      "hour",
+      "away",
+      "course"
+     ],
+     "wr": "copy"
+    },
+    {
+     "t": "phrase",
+     "en": "And now... rain!",
+     "pt": "E agora... chuva!",
+     "v": "en-GB-RyanNeural"
+    },
+    {
+     "t": "fill",
+     "en": "And now... rain!",
+     "pt": "E agora... chuva!",
+     "v": "en-GB-RyanNeural",
+     "gap": "And now... ___!",
+     "w": "rain",
+     "o": [
+      "rain",
+      "poor",
+      "is"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "OK... Gloves too.",
+     "pt": "Tá... Luvas também.",
+     "v": "en-US-EricNeural",
+     "o": [
+      "Tá... Luvas também.",
+      "Sim! Olha! O céu está azul!",
+      "Oi, pessoal! Bonjour!"
+     ]
+    },
+    {
+     "t": "spell",
+     "w": "rain",
+     "pt": "chuva",
+     "o": [
+      "glove",
+      "duck",
+      "rain"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "OK... Gloves too.",
+     "pt": "Tá... Luvas também.",
+     "v": "en-US-EricNeural",
+     "o": [
+      "And I have a banana hat!",
+      "Look! A duck has your hat!",
+      "OK... Gloves too."
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "And now... rain!",
+     "pt": "E agora... chuva!",
+     "v": "en-GB-RyanNeural",
+     "o": [
+      "Sim. Por quê?",
+      "Ótimo! Vento é bom para pipas!",
+      "E agora... chuva!"
+     ]
+    },
+    {
+     "t": "copy",
+     "en": "And now... rain!",
+     "pt": "E agora... chuva!",
+     "v": "en-GB-RyanNeural",
+     "x": [
+      "video",
+      "wait",
+      "it"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u9z4",
+   "title": "november · summer · up · funny",
+   "titlePt": "novembro · verão · para cima · engraçado",
+   "emoji": "🧠",
+   "words": [
+    "november",
+    "summer",
+    "up",
+    "funny"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "november",
+     "pt": "novembro"
+    },
+    {
+     "t": "meaning",
+     "w": "november",
+     "pt": "novembro",
+     "o": [
+      "novembro",
+      "frio",
+      "cachecol"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "summer",
+     "pt": "verão"
+    },
+    {
+     "t": "hear",
+     "w": "summer",
+     "pt": "verão",
+     "o": [
+      "summer",
+      "up",
+      "rainy"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "november",
+       "novembro"
+      ],
+      [
+       "summer",
+       "verão"
+      ],
+      [
+       "sunny",
+       "ensolarado"
+      ],
+      [
+       "rain",
+       "chuva"
+      ],
+      [
+       "scarf",
+       "cachecol"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "up",
+     "pt": "para cima"
+    },
+    {
+     "t": "pick",
+     "w": "up",
+     "pt": "para cima",
+     "o": [
+      "kite",
+      "up",
+      "hat"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "funny",
+     "pt": "engraçado"
+    },
+    {
+     "t": "meaning",
+     "w": "funny",
+     "pt": "engraçado",
+     "o": [
+      "chuva",
+      "engraçado",
+      "banana"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "up",
+     "pt": "para cima",
+     "o": [
+      "up",
+      "summer",
+      "glove"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "up",
+       "para cima"
+      ],
+      [
+       "funny",
+       "engraçado"
+      ],
+      [
+       "november",
+       "novembro"
+      ],
+      [
+       "summer",
+       "verão"
+      ],
+      [
+       "banana",
+       "banana"
+      ]
+     ]
+    },
+    {
+     "t": "phrase",
+     "en": "Sunny? In London? In November?",
+     "pt": "Ensolarado? Em Londres? Em novembro?",
+     "v": "en-GB-RyanNeural"
+    },
+    {
+     "t": "bank",
+     "en": "Sunny? In London? In November?",
+     "pt": "Ensolarado? Em Londres? Em novembro?",
+     "v": "en-GB-RyanNeural",
+     "x": [
+      "go",
+      "school",
+      "are"
+     ],
+     "wr": "copy"
+    },
+    {
+     "t": "phrase",
+     "en": "The kite goes up, up, up!",
+     "pt": "A pipa sobe, sobe, sobe!",
+     "v": "en-US-AndrewNeural"
+    },
+    {
+     "t": "fill",
+     "en": "The kite goes up, up, up!",
+     "pt": "A pipa sobe, sobe, sobe!",
+     "v": "en-US-AndrewNeural",
+     "gap": "The ___ goes up, up, up!",
+     "w": "kite",
+     "o": [
+      "morning",
+      "party",
+      "kite"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Sunny? In London? In November?",
+     "pt": "Ensolarado? Em Londres? Em novembro?",
+     "v": "en-GB-RyanNeural",
+     "o": [
+      "Está mais alta que as árvores!",
+      "Ensolarado? Em Londres? Em novembro?",
+      "Claro!"
+     ]
+    },
+    {
+     "t": "spell",
+     "w": "november",
+     "pt": "novembro",
+     "o": [
+      "windy",
+      "kite",
+      "november"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "Sunny? In London? In November?",
+     "pt": "Ensolarado? Em Londres? Em novembro?",
+     "v": "en-GB-RyanNeural",
+     "o": [
+      "Sunny? In London? In November?",
+      "Is it rainy in your city?",
+      "Let's go home!"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "The kite goes up, up, up!",
+     "pt": "A pipa sobe, sobe, sobe!",
+     "v": "en-US-AndrewNeural",
+     "o": [
+      "Ah, não. Está ventando muito, muito hoje!",
+      "A pipa sobe, sobe, sobe!",
+      "Eu amei! Eu preciso deste chapéu!"
+     ]
+    },
+    {
+     "t": "copy",
+     "en": "The kite goes up, up, up!",
+     "pt": "A pipa sobe, sobe, sobe!",
+     "v": "en-US-AndrewNeural",
+     "x": [
+      "city",
+      "take",
+      "why"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u9z5",
+   "title": "half · high · kid · lucky",
+   "titlePt": "metade · alto · criança · sortudo",
+   "emoji": "💬",
+   "words": [
+    "half",
+    "high",
+    "kid",
+    "lucky"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "half",
+     "pt": "metade"
+    },
+    {
+     "t": "meaning",
+     "w": "half",
+     "pt": "metade",
+     "o": [
+      "novembro",
+      "metade",
+      "frio"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "high",
+     "pt": "alto"
+    },
+    {
+     "t": "hear",
+     "w": "high",
+     "pt": "alto",
+     "o": [
+      "banana",
+      "high",
+      "summer"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "half",
+       "metade"
+      ],
+      [
+       "high",
+       "alto"
+      ],
+      [
+       "banana",
+       "banana"
+      ],
+      [
+       "kite",
+       "pipa"
+      ],
+      [
+       "rainy",
+       "chuvoso"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "kid",
+     "pt": "criança"
+    },
+    {
+     "t": "pick",
+     "w": "kid",
+     "pt": "criança",
+     "o": [
+      "kid",
+      "lucky",
+      "hat"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "lucky",
+     "pt": "sortudo"
+    },
+    {
+     "t": "meaning",
+     "w": "lucky",
+     "pt": "sortudo",
+     "o": [
+      "sortudo",
+      "para cima",
+      "com vento"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "kid",
+     "pt": "criança",
+     "o": [
+      "kid",
+      "scarf",
+      "kite"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "kid",
+       "criança"
+      ],
+      [
+       "lucky",
+       "sortudo"
+      ],
+      [
+       "half",
+       "metade"
+      ],
+      [
+       "high",
+       "alto"
+      ],
+      [
+       "scarf",
+       "cachecol"
+      ]
+     ]
+    },
+    {
+     "t": "phrase",
+     "en": "Lucky you, Lola!",
+     "pt": "Que sorte a sua, Lola!",
+     "v": "en-US-AnaNeural"
+    },
+    {
+     "t": "bank",
+     "en": "Lucky you, Lola!",
+     "pt": "Que sorte a sua, Lola!",
+     "v": "en-US-AnaNeural",
+     "x": [
+      "park",
+      "good",
+      "lake"
+     ],
+     "wr": "copy"
+    },
+    {
+     "t": "phrase",
+     "en": "Look! It's so high!",
+     "pt": "Olha! Está tão alta!",
+     "v": "en-US-AvaNeural"
+    },
+    {
+     "t": "fill",
+     "en": "Look! It's so high!",
+     "pt": "Olha! Está tão alta!",
+     "v": "en-US-AvaNeural",
+     "gap": "Look! It's so ___!",
+     "w": "high",
+     "o": [
+      "school",
+      "over",
+      "high"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Lucky you, Lola!",
+     "pt": "Que sorte a sua, Lola!",
+     "v": "en-US-AnaNeural",
+     "o": [
+      "Pai! A pipa! A pipa!",
+      "Olha! Está tão alta!",
+      "Que sorte a sua, Lola!"
+     ]
+    },
+    {
+     "t": "spell",
+     "w": "half",
+     "pt": "metade",
+     "o": [
+      "cold",
+      "november",
+      "half"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "Lucky you, Lola!",
+     "pt": "Que sorte a sua, Lola!",
+     "v": "en-US-AnaNeural",
+     "o": [
+      "Lucky you, Lola!",
+      "Oh, is it cold today?",
+      "Oh no. It's very, very windy today!"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Look! It's so high!",
+     "pt": "Olha! Está tão alta!",
+     "v": "en-US-AvaNeural",
+     "o": [
+      "Olha! Está tão alta!",
+      "Ben! Você parece uma banana!",
+      "Claro!"
+     ]
+    },
+    {
+     "t": "copy",
+     "en": "Look! It's so high!",
+     "pt": "Olha! Está tão alta!",
+     "v": "en-US-AvaNeural",
+     "x": [
+      "bye",
+      "yellow",
+      "happy"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u9z6",
+   "title": "open · pants · picnic · price",
+   "titlePt": "abrir · calças · piquenique · preço",
+   "emoji": "🔁",
+   "words": [
+    "open",
+    "pants",
+    "picnic",
+    "price"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "open",
+     "pt": "abrir"
+    },
+    {
+     "t": "meaning",
+     "w": "open",
+     "pt": "abrir",
+     "o": [
+      "chuva",
+      "preço",
+      "abrir"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "pants",
+     "pt": "calças"
+    },
+    {
+     "t": "hear",
+     "w": "pants",
+     "pt": "calças",
+     "o": [
+      "pants",
+      "picnic",
+      "half"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "open",
+       "abrir"
+      ],
+      [
+       "pants",
+       "calças"
+      ],
+      [
+       "windy",
+       "com vento"
+      ],
+      [
+       "kite",
+       "pipa"
+      ],
+      [
+       "glove",
+       "luva"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "picnic",
+     "pt": "piquenique"
+    },
+    {
+     "t": "pick",
+     "w": "picnic",
+     "pt": "piquenique",
+     "o": [
+      "kite",
+      "scarf",
+      "picnic"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "price",
+     "pt": "preço"
+    },
+    {
+     "t": "meaning",
+     "w": "price",
+     "pt": "preço",
+     "o": [
+      "cachecol",
+      "calças",
+      "preço"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "picnic",
+     "pt": "piquenique",
+     "o": [
+      "funny",
+      "picnic",
+      "sunny"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "picnic",
+       "piquenique"
+      ],
+      [
+       "price",
+       "preço"
+      ],
+      [
+       "open",
+       "abrir"
+      ],
+      [
+       "pants",
+       "calças"
+      ],
+      [
+       "kite",
+       "pipa"
+      ]
+     ]
+    },
+    {
+     "t": "phrase",
+     "en": "Ben opens the door.",
+     "pt": "O Ben abre a porta.",
+     "v": "en-US-AndrewNeural"
+    },
+    {
+     "t": "bank",
+     "en": "Ben opens the door.",
+     "pt": "O Ben abre a porta.",
+     "v": "en-US-AndrewNeural",
+     "x": [
+      "sky",
+      "course",
+      "hello"
+     ],
+     "wr": "translate"
+    },
+    {
+     "t": "phrase",
+     "en": "And it's half price today.",
+     "pt": "E hoje está pela metade do preço.",
+     "v": "en-GB-ThomasNeural"
+    },
+    {
+     "t": "fill",
+     "en": "And it's half price today.",
+     "pt": "E hoje está pela metade do preço.",
+     "v": "en-GB-ThomasNeural",
+     "gap": "And it's ___ price today.",
+     "w": "half",
+     "o": [
+      "hot",
+      "half",
+      "juice"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Ben opens the door.",
+     "pt": "O Ben abre a porta.",
+     "v": "en-US-AndrewNeural",
+     "o": [
+      "Ah, está frio hoje?",
+      "O Ben abre a porta.",
+      "Está no lago! Ah, não!"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "And it's half price today.",
+     "pt": "E hoje está pela metade do preço.",
+     "v": "en-GB-ThomasNeural",
+     "x": [
+      "shirt",
+      "tree",
+      "morning"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "Ben opens the door.",
+     "pt": "O Ben abre a porta.",
+     "v": "en-US-AndrewNeural",
+     "o": [
+      "Good morning! Can I help you?",
+      "Bye, Mom! I'm going to school!",
+      "Ben opens the door."
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "And it's half price today.",
+     "pt": "E hoje está pela metade do preço.",
+     "v": "en-GB-ThomasNeural",
+     "o": [
+      "Corre, Anna! Corre!",
+      "A pipa está numa árvore agora.",
+      "E hoje está pela metade do preço."
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "And it's half price today.",
+     "pt": "E hoje está pela metade do preço.",
+     "v": "en-GB-ThomasNeural",
+     "x": [
+      "one",
+      "there",
+      "it"
+     ],
+     "wr": "translate"
+    }
+   ]
+  },
+  {
+   "id": "u9z7",
+   "title": "saturday · sky · sweater · tree",
+   "titlePt": "sábado · céu · suéter · árvore",
+   "emoji": "⭐",
+   "words": [
+    "saturday",
+    "sky",
+    "sweater",
+    "tree"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "saturday",
+     "pt": "sábado"
+    },
+    {
+     "t": "meaning",
+     "w": "saturday",
+     "pt": "sábado",
+     "o": [
+      "preço",
+      "criança",
+      "sábado"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "sky",
+     "pt": "céu"
+    },
+    {
+     "t": "hear",
+     "w": "sky",
+     "pt": "céu",
+     "o": [
+      "tree",
+      "sky",
+      "sunny"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "saturday",
+       "sábado"
+      ],
+      [
+       "sky",
+       "céu"
+      ],
+      [
+       "glove",
+       "luva"
+      ],
+      [
+       "scarf",
+       "cachecol"
+      ],
+      [
+       "kite",
+       "pipa"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "sweater",
+     "pt": "suéter"
+    },
+    {
+     "t": "pick",
+     "w": "sweater",
+     "pt": "suéter",
+     "o": [
+      "sweater",
+      "kite",
+      "glove"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "tree",
+     "pt": "árvore"
+    },
+    {
+     "t": "meaning",
+     "w": "tree",
+     "pt": "árvore",
+     "o": [
+      "novembro",
+      "frio",
+      "árvore"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "sweater",
+     "pt": "suéter",
+     "o": [
+      "sweater",
+      "coat",
+      "scarf"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "sweater",
+       "suéter"
+      ],
+      [
+       "tree",
+       "árvore"
+      ],
+      [
+       "saturday",
+       "sábado"
+      ],
+      [
+       "sky",
+       "céu"
+      ],
+      [
+       "pants",
+       "calças"
+      ]
+     ]
+    },
+    {
+     "t": "phrase",
+     "en": "It's higher than the trees!",
+     "pt": "Está mais alta que as árvores!",
+     "v": "en-US-EricNeural"
+    },
+    {
+     "t": "bank",
+     "en": "It's higher than the trees!",
+     "pt": "Está mais alta que as árvores!",
+     "v": "en-US-EricNeural",
+     "x": [
+      "fly",
+      "old",
+      "blue"
+     ],
+     "wr": "translate"
+    },
+    {
+     "t": "phrase",
+     "en": "OK, OK.",
+     "pt": "Tá, tá.",
+     "v": "en-US-EricNeural"
+    },
+    {
+     "t": "fill",
+     "en": "OK, OK.",
+     "pt": "Tá, tá.",
+     "v": "en-US-EricNeural",
+     "gap": "OK, ___.",
+     "w": "OK",
+     "o": [
+      "OK",
+      "yellow",
+      "love"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "It's higher than the trees!",
+     "pt": "Está mais alta que as árvores!",
+     "v": "en-US-EricNeural",
+     "o": [
+      "Tá... Luvas também.",
+      "Sim. Por quê?",
+      "Está mais alta que as árvores!"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "OK, OK.",
+     "pt": "Tá, tá.",
+     "v": "en-US-EricNeural",
+     "x": [
+      "full",
+      "sweater",
+      "black"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "It's higher than the trees!",
+     "pt": "Está mais alta que as árvores!",
+     "v": "en-US-EricNeural",
+     "o": [
+      "Sunny and hot? Lucky you!",
+      "It's higher than the trees!",
+      "A duck has her old hat."
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "OK, OK.",
+     "pt": "Tá, tá.",
+     "v": "en-US-EricNeural",
+     "o": [
+      "Tá, tá.",
+      "E sorvete?",
+      "Está ensolarado! Sol é tempo de sorvete!"
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "OK, OK.",
+     "pt": "Tá, tá.",
+     "v": "en-US-EricNeural",
+     "x": [
+      "love",
+      "course",
+      "mom"
+     ],
+     "wr": "translate"
+    }
+   ]
+  },
+  {
+   "id": "u9z8",
+   "title": "warm · weather · wind · yellow",
+   "titlePt": "morno · tempo · vento · amarelo",
+   "emoji": "🗝️",
+   "words": [
+    "warm",
+    "weather",
+    "wind",
+    "yellow"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "warm",
+     "pt": "morno"
+    },
+    {
+     "t": "meaning",
+     "w": "warm",
+     "pt": "morno",
+     "o": [
+      "cachecol",
+      "morno",
+      "banana"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "weather",
+     "pt": "tempo"
+    },
+    {
+     "t": "hear",
+     "w": "weather",
+     "pt": "tempo",
+     "o": [
+      "high",
+      "hat",
+      "weather"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "warm",
+       "morno"
+      ],
+      [
+       "weather",
+       "tempo"
+      ],
+      [
+       "kid",
+       "criança"
+      ],
+      [
+       "saturday",
+       "sábado"
+      ],
+      [
+       "banana",
+       "banana"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "wind",
+     "pt": "vento"
+    },
+    {
+     "t": "pick",
+     "w": "wind",
+     "pt": "vento",
+     "o": [
+      "price",
+      "november",
+      "wind"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "yellow",
+     "pt": "amarelo"
+    },
+    {
+     "t": "meaning",
+     "w": "yellow",
+     "pt": "amarelo",
+     "o": [
+      "amarelo",
+      "metade",
+      "chuva"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "wind",
+     "pt": "vento",
+     "o": [
+      "wind",
+      "price",
+      "kid"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "wind",
+       "vento"
+      ],
+      [
+       "yellow",
+       "amarelo"
+      ],
+      [
+       "warm",
+       "morno"
+      ],
+      [
+       "weather",
+       "tempo"
+      ],
+      [
+       "duck",
+       "abaixar-se"
+      ]
+     ]
+    },
+    {
+     "t": "phrase",
+     "en": "Of course!",
+     "pt": "Claro!",
+     "v": "en-US-JennyNeural"
+    },
+    {
+     "t": "bank",
+     "en": "Of course!",
+     "pt": "Claro!",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "good",
+      "scarves",
+      "new"
+     ],
+     "wr": "translate"
+    },
+    {
+     "t": "phrase",
+     "en": "Yes! Mexico!",
+     "pt": "Sim! México!",
+     "v": "en-US-JennyNeural"
+    },
+    {
+     "t": "fill",
+     "en": "Yes! Mexico!",
+     "pt": "Sim! México!",
+     "v": "en-US-JennyNeural",
+     "gap": "___! Mexico!",
+     "w": "Yes",
+     "o": [
+      "sandwich",
+      "Yes",
+      "sun"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Of course!",
+     "pt": "Claro!",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "O chapéu da Anna voa pelo parque.",
+      "Eu amei! Eu preciso deste chapéu!",
+      "Claro!"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "Yes! Mexico!",
+     "pt": "Sim! México!",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "pants",
+      "this",
+      "weather"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "Of course!",
+     "pt": "Claro!",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Of course!",
+      "It's in the lake! Oh no!",
+      "Oh, is it cold today?"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Yes! Mexico!",
+     "pt": "Sim! México!",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Sim! México!",
+      "Muito bem. E suas luvas?",
+      "Sim! Está muito frio hoje. É novembro!"
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "Yes! Mexico!",
+     "pt": "Sim! México!",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "rain",
+      "ice",
+      "window"
+     ],
+     "wr": "translate"
+    }
+   ]
+  },
+  {
+   "id": "u9z9",
+   "title": "away · buy · clothes · cloud",
+   "titlePt": "longe · comprar · roupas · nuvem",
+   "emoji": "🚀",
+   "words": [
+    "away",
+    "buy",
+    "clothes",
+    "cloud"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "away",
+     "pt": "longe"
+    },
+    {
+     "t": "meaning",
+     "w": "away",
+     "pt": "longe",
+     "o": [
+      "longe",
+      "piquenique",
+      "chapéu"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "buy",
+     "pt": "comprar"
+    },
+    {
+     "t": "hear",
+     "w": "buy",
+     "pt": "comprar",
+     "o": [
+      "buy",
+      "rain",
+      "yellow"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "away",
+       "longe"
+      ],
+      [
+       "buy",
+       "comprar"
+      ],
+      [
+       "duck",
+       "abaixar-se"
+      ],
+      [
+       "pants",
+       "calças"
+      ],
+      [
+       "half",
+       "metade"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "clothes",
+     "pt": "roupas"
+    },
+    {
+     "t": "pick",
+     "w": "clothes",
+     "pt": "roupas",
+     "o": [
+      "half",
+      "clothes",
+      "cloud"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "cloud",
+     "pt": "nuvem"
+    },
+    {
+     "t": "meaning",
+     "w": "cloud",
+     "pt": "nuvem",
+     "o": [
+      "nuvem",
+      "alto",
+      "preço"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "clothes",
+     "pt": "roupas",
+     "o": [
+      "duck",
+      "price",
+      "clothes"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "clothes",
+       "roupas"
+      ],
+      [
+       "cloud",
+       "nuvem"
+      ],
+      [
+       "away",
+       "longe"
+      ],
+      [
+       "buy",
+       "comprar"
+      ],
+      [
+       "wind",
+       "vento"
+      ]
+     ]
+    },
+    {
+     "t": "phrase",
+     "en": "Run, Anna! Run!",
+     "pt": "Corre, Anna! Corre!",
+     "v": "en-GB-RyanNeural"
+    },
+    {
+     "t": "bank",
+     "en": "Run, Anna! Run!",
+     "pt": "Corre, Anna! Corre!",
+     "v": "en-GB-RyanNeural",
+     "x": [
+      "summer",
+      "too",
+      "later"
+     ],
+     "wr": "translate"
+    },
+    {
+     "t": "phrase",
+     "en": "Hola, Lola! Hello, Anna! Hello, Ben!",
+     "pt": "Hola, Lola! Olá, Anna! Olá, Ben!",
+     "v": "en-NZ-MollyNeural"
+    },
+    {
+     "t": "fill",
+     "en": "Hola, Lola! Hello, Anna! Hello, Ben!",
+     "pt": "Hola, Lola! Olá, Anna! Olá, Ben!",
+     "v": "en-NZ-MollyNeural",
+     "gap": "___, Lola! Hello, Anna! Hello, Ben!",
+     "w": "Hola",
+     "o": [
+      "Hola",
+      "too",
+      "do"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Run, Anna! Run!",
+     "pt": "Corre, Anna! Corre!",
+     "v": "en-GB-RyanNeural",
+     "o": [
+      "Está mais alta que as árvores!",
+      "Corre, Anna! Corre!",
+      "Tá, tá."
+     ]
+    },
+    {
+     "t": "type",
+     "en": "Hola, Lola! Hello, Anna! Hello, Ben!",
+     "pt": "Hola, Lola! Olá, Anna! Olá, Ben!",
+     "v": "en-NZ-MollyNeural",
+     "x": [
+      "full",
+      "thank",
+      "has"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "Run, Anna! Run!",
+     "pt": "Corre, Anna! Corre!",
+     "v": "en-GB-RyanNeural",
+     "o": [
+      "Great! Windy is good for kites!",
+      "Run, Anna! Run!",
+      "It's sunny! Sunny is ice cream weather!"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Hola, Lola! Hello, Anna! Hello, Ben!",
+     "pt": "Hola, Lola! Olá, Anna! Olá, Ben!",
+     "v": "en-NZ-MollyNeural",
+     "o": [
+      "David, está chovendo na sua cidade?",
+      "Hola, Lola! Olá, Anna! Olá, Ben!",
+      "E eu tenho um chapéu de banana!"
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "Hola, Lola! Hello, Anna! Hello, Ben!",
+     "pt": "Hola, Lola! Olá, Anna! Olá, Ben!",
+     "v": "en-NZ-MollyNeural",
+     "x": [
+      "bye",
+      "thank",
+      "people"
+     ],
+     "wr": "translate"
+    }
+   ]
+  },
+  {
+   "id": "u9z10",
+   "title": "Review",
+   "titlePt": "Revisão geral",
+   "emoji": "🏆",
+   "words": [],
+   "screens": [
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "duck",
+       "abaixar-se"
+      ],
+      [
+       "warm",
+       "morno"
+      ],
+      [
+       "hat",
+       "chapéu"
+      ],
+      [
+       "rainy",
+       "chuvoso"
+      ],
+      [
+       "open",
+       "abrir"
+      ]
+     ]
+    },
+    {
+     "t": "meaning",
+     "w": "kite",
+     "pt": "pipa",
+     "o": [
+      "pipa",
+      "banana",
+      "metade"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "sunny",
+     "pt": "ensolarado",
+     "o": [
+      "sunny",
+      "coat",
+      "weather"
+     ]
+    },
+    {
+     "t": "phrase",
+     "en": "Oh, is it cold today?",
+     "pt": "Ah, está frio hoje?",
+     "v": "en-US-JennyNeural"
+    },
+    {
+     "t": "bank",
+     "en": "Oh, is it cold today?",
+     "pt": "Ah, está frio hoje?",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "two",
+      "pole",
+      "have"
+     ],
+     "wr": "translate"
+    },
+    {
+     "t": "speak",
+     "en": "Oh, is it cold today?",
+     "pt": "Ah, está frio hoje?",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Ben, está muito frio. Leve as luvas.",
+      "Ah, está frio hoje?",
+      "Muito engraçado, Anna. Tchau!"
+     ]
+    },
+    {
+     "t": "phrase",
+     "en": "It's very windy today!",
+     "pt": "Está ventando muito hoje!",
+     "v": "en-US-JennyNeural"
+    },
+    {
+     "t": "fill",
+     "en": "It's very windy today!",
+     "pt": "Está ventando muito hoje!",
+     "v": "en-US-JennyNeural",
+     "gap": "It's very ___ today!",
+     "w": "windy",
+     "o": [
+      "windy",
+      "price",
+      "banana"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "It's very windy today!",
+     "pt": "Está ventando muito hoje!",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "later",
+      "five",
+      "nice"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "high",
+       "alto"
+      ],
+      [
+       "coat",
+       "casaco"
+      ],
+      [
+       "tree",
+       "árvore"
+      ],
+      [
+       "price",
+       "preço"
+      ],
+      [
+       "away",
+       "longe"
+      ]
+     ]
+    },
+    {
+     "t": "phrase",
+     "en": "I need a hat and a scarf.",
+     "pt": "Eu preciso de um chapéu e um cachecol.",
+     "v": "en-US-JennyNeural"
+    },
+    {
+     "t": "listen",
+     "en": "I need a hat and a scarf.",
+     "pt": "Eu preciso de um chapéu e um cachecol.",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "I need a hat and a scarf.",
+      "Mom! Dad! It's sunny today!",
+      "And in London? Is it cold?"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "I need a hat and a scarf.",
+     "pt": "Eu preciso de um chapéu e um cachecol.",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Eu preciso de um chapéu e um cachecol.",
+      "Chovendo? Não! Aqui está ensolarado e quente.",
+      "Luvas? Mãe! Não está nevando!"
+     ]
+    },
+    {
+     "t": "pick",
+     "w": "up",
+     "pt": "para cima",
+     "o": [
+      "up",
+      "picnic",
+      "buy"
+     ]
+    },
+    {
+     "t": "type",
+     "en": "Oh, is it cold today?",
+     "pt": "Ah, está frio hoje?",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "come",
+      "sky",
+      "help"
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "I need a hat and a scarf.",
+     "pt": "Eu preciso de um chapéu e um cachecol.",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "where",
+      "yellow",
+      "hot"
+     ],
+     "wr": "translate"
+    },
+    {
+     "t": "meaning",
+     "w": "clothes",
+     "pt": "roupas",
+     "o": [
+      "roupas",
+      "preço",
+      "árvore"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "It's very windy today!",
+     "pt": "Está ventando muito hoje!",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Sim! México!",
+      "Está ventando muito hoje!",
+      "Ensolarado e quente? Que sorte!"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "banana",
+     "pt": "banana",
+     "o": [
+      "banana",
+      "kid",
+      "sunny"
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "It's very windy today!",
+     "pt": "Está ventando muito hoje!",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "people",
+      "weather",
+      "banana"
+     ],
+     "wr": "translate"
+    }
+   ]
+  }
+ ]
+}

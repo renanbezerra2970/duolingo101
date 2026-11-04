@@ -179,6 +179,96 @@
           "Eu gostaria de um copo de água."
         ]
       ]
+    },
+    {
+      "id": 7,
+      "title": "Unidade 7",
+      "subtitle": "Fale sobre profissões",
+      "color": "#58cc02",
+      "emoji": "💼",
+      "file": "data/unit7.json",
+      "phrases": [
+        [
+          "I'm a teacher.",
+          "Sou professor."
+        ],
+        [
+          "My wife is a doctor too!",
+          "Minha esposa é médica também!"
+        ],
+        [
+          "Your brother is a doctor, right?",
+          "Seu irmão é médico, né?"
+        ],
+        [
+          "Is Max a student?",
+          "Max é estudante?"
+        ],
+        [
+          "My mom is a nurse.",
+          "Minha mãe é enfermeira."
+        ]
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Unidade 8",
+      "subtitle": "Fale sobre idiomas",
+      "color": "#ff9600",
+      "emoji": "🌍",
+      "file": "data/unit8.json",
+      "phrases": [
+        [
+          "I speak English and Spanish.",
+          "Eu falo inglês e espanhol."
+        ],
+        [
+          "Yes, I study English at school.",
+          "Sim, eu estudo inglês na escola."
+        ],
+        [
+          "I understand a little Hindi.",
+          "Eu entendo um pouco de hindi."
+        ],
+        [
+          "Oh, you speak Chinese too!",
+          "Ah, você fala chinês também!"
+        ],
+        [
+          "I speak Spanish with my friend.",
+          "Eu falo espanhol com meu amigo."
+        ]
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Unidade 9",
+      "subtitle": "Fale sobre o tempo",
+      "color": "#1cb0f6",
+      "emoji": "🌦️",
+      "file": "data/unit9.json",
+      "phrases": [
+        [
+          "Oh, is it cold today?",
+          "Ah, está frio hoje?"
+        ],
+        [
+          "It's very windy today!",
+          "Está ventando muito hoje!"
+        ],
+        [
+          "I need a hat and a scarf.",
+          "Eu preciso de um chapéu e um cachecol."
+        ],
+        [
+          "It's sunny today!",
+          "Está ensolarado hoje!"
+        ],
+        [
+          "Is it rainy in your city?",
+          "Está chovendo na sua cidade?"
+        ]
+      ]
     }
   ],
   "pro": [

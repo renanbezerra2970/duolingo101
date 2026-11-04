@@ -23,7 +23,7 @@ RULES = [  # mesmas regras do app (lemmaOf em app.js)
     (r"er$", ""), (r"est$", ""),
 ]
 # palavras que não fazem sentido ensinar sozinhas (artigos, preposições curtas, interjeições)
-SKIP = set("a an the to of oh ok okay ha hmm mmm uh um wow ah hey yeah".split())
+SKIP = set("a an the to of oh ok okay ha hmm mmm uh um wow ah hey yeah st brrr mr mrs ms".split())
 LESSONS, NEW_PER_LESSON = 10, 4
 EMOJIS = ["🔤", "🧩", "🎯", "🧠", "💬", "🔁", "⭐", "🗝️", "🚀", "🏆"]
 MAX_SENT_WORDS = 7
@@ -54,7 +54,7 @@ def short(g):
 
 def teachable(l, names):
     g = GLOSS.get(l, "")
-    return l and l not in SKIP and l not in names and "francês" not in g and "'" not in l and not re.match(r"^[A-ZÀ-Ý]", g) and len(l) > 1
+    return l and l not in SKIP and l not in names and not any(x in g for x in ("francês", "espanhol", "hindi)", "chinês", "italiano")) and "'" not in l and not re.match(r"^[A-ZÀ-Ý]", g) and len(l) > 1
 
 
 def tokens(en):

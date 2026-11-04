@@ -55,12 +55,12 @@
        "pizza"
       ],
       [
-       "restaurant",
-       "restaurante"
-      ],
-      [
        "fish",
        "peixe"
+      ],
+      [
+       "restaurant",
+       "restaurante"
       ]
      ]
     },
@@ -240,8 +240,8 @@
      "w": "glass",
      "pt": "copo",
      "o": [
+      "pizza",
       "mesa",
-      "salada",
       "copo"
      ]
     },
@@ -256,7 +256,7 @@
      "pt": "salada",
      "o": [
       "salad",
-      "chicken",
+      "burger",
       "pizza"
      ]
     },
@@ -272,16 +272,16 @@
        "salada"
       ],
       [
-       "fish",
-       "peixe"
-      ],
-      [
-       "pizza",
-       "pizza"
-      ],
-      [
        "restaurant",
        "restaurante"
+      ],
+      [
+       "burger",
+       "hambúrguer"
+      ],
+      [
+       "fish",
+       "peixe"
       ]
      ]
     },
@@ -295,9 +295,9 @@
      "w": "table",
      "pt": "mesa",
      "o": [
-      "burger",
+      "glass",
       "table",
-      "restaurant"
+      "fish"
      ]
     },
     {
@@ -310,8 +310,8 @@
      "w": "chicken",
      "pt": "frango",
      "o": [
-      "mesa",
-      "peixe",
+      "pizza",
+      "salada",
       "frango"
      ]
     },
@@ -320,8 +320,8 @@
      "w": "table",
      "pt": "mesa",
      "o": [
-      "burger",
       "glass",
+      "restaurant",
       "table"
      ]
     },
@@ -345,8 +345,8 @@
        "salada"
       ],
       [
-       "restaurant",
-       "restaurante"
+       "pizza",
+       "pizza"
       ]
      ]
     },
@@ -403,9 +403,9 @@
      "w": "glass",
      "pt": "copo",
      "o": [
-      "chicken",
+      "salad",
       "glass",
-      "salad"
+      "table"
      ]
     },
     {
@@ -466,8 +466,8 @@
      "pt": "comida",
      "o": [
       "comida",
-      "salada",
-      "pizza"
+      "quente",
+      "caro"
      ]
     },
     {
@@ -480,9 +480,9 @@
      "w": "hot",
      "pt": "quente",
      "o": [
-      "glass",
+      "restaurant",
       "hot",
-      "salad"
+      "table"
      ]
     },
     {
@@ -497,16 +497,16 @@
        "quente"
       ],
       [
-       "fish",
-       "peixe"
-      ],
-      [
-       "glass",
-       "copo"
+       "burger",
+       "hambúrguer"
       ],
       [
        "restaurant",
        "restaurante"
+      ],
+      [
+       "fish",
+       "peixe"
       ]
      ]
     },
@@ -521,8 +521,8 @@
      "pt": "caro",
      "o": [
       "expensive",
-      "chicken",
-      "glass"
+      "burger",
+      "restaurant"
      ]
     },
     {
@@ -536,8 +536,8 @@
      "pt": "minuto",
      "o": [
       "minuto",
-      "frango",
-      "quente"
+      "comida",
+      "copo"
      ]
     },
     {
@@ -545,9 +545,9 @@
      "w": "expensive",
      "pt": "caro",
      "o": [
-      "salad",
+      "table",
       "expensive",
-      "pizza"
+      "hot"
      ]
     },
     {
@@ -570,8 +570,8 @@
        "quente"
       ],
       [
-       "chicken",
-       "frango"
+       "salad",
+       "salada"
       ]
      ]
     },
@@ -628,9 +628,9 @@
      "w": "food",
      "pt": "comida",
      "o": [
-      "minute",
+      "salad",
       "food",
-      "chicken"
+      "burger"
      ]
     },
     {
@@ -691,8 +691,8 @@
      "pt": "querer",
      "o": [
       "querer",
-      "comida",
-      "quente"
+      "salada",
+      "copo"
      ]
     },
     {
@@ -705,9 +705,9 @@
      "w": "birthday",
      "pt": "aniversário",
      "o": [
-      "salad",
+      "table",
       "birthday",
-      "fish"
+      "restaurant"
      ]
     },
     {
@@ -722,16 +722,16 @@
        "aniversário"
       ],
       [
+       "minute",
+       "minuto"
+      ],
+      [
        "fish",
        "peixe"
       ],
       [
        "expensive",
        "caro"
-      ],
-      [
-       "pizza",
-       "pizza"
       ]
      ]
     },
@@ -745,8 +745,8 @@
      "w": "do",
      "pt": "fazer",
      "o": [
-      "salad",
-      "birthday",
+      "pizza",
+      "burger",
       "do"
      ]
     },
@@ -760,9 +760,9 @@
      "w": "friday",
      "pt": "sexta-feira",
      "o": [
-      "salada",
+      "mesa",
       "sexta-feira",
-      "copo"
+      "caro"
      ]
     },
     {
@@ -770,8 +770,8 @@
      "w": "do",
      "pt": "fazer",
      "o": [
-      "fish",
-      "expensive",
+      "want",
+      "friday",
       "do"
      ]
     },
@@ -795,8 +795,8 @@
        "aniversário"
       ],
       [
-       "fish",
-       "peixe"
+       "minute",
+       "minuto"
       ]
      ]
     },
@@ -853,8 +853,8 @@
      "w": "want",
      "pt": "querer",
      "o": [
-      "pizza",
-      "glass",
+      "hot",
+      "expensive",
       "want"
      ]
     },
@@ -916,8 +916,8 @@
      "pt": "massa",
      "o": [
       "massa",
-      "peixe",
-      "frango"
+      "restaurante",
+      "querer"
      ]
     },
     {
@@ -930,8 +930,8 @@
      "w": "curry",
      "pt": "curry",
      "o": [
-      "minute",
-      "hot",
+      "burger",
+      "birthday",
       "curry"
      ]
     },
@@ -947,16 +947,16 @@
        "curry"
       ],
       [
-       "glass",
-       "copo"
+       "pizza",
+       "pizza"
       ],
       [
-       "expensive",
-       "caro"
+       "friday",
+       "sexta-feira"
       ],
       [
-       "hot",
-       "quente"
+       "do",
+       "fazer"
       ]
      ]
     },
@@ -970,9 +970,9 @@
      "w": "even",
      "pt": "até",
      "o": [
-      "curry",
+      "expensive",
       "even",
-      "every"
+      "curry"
      ]
     },
     {
@@ -985,8 +985,8 @@
      "w": "every",
      "pt": "cada",
      "o": [
-      "frango",
-      "massa",
+      "caro",
+      "querer",
       "cada"
      ]
     },
@@ -995,9 +995,9 @@
      "w": "even",
      "pt": "até",
      "o": [
-      "pasta",
+      "table",
       "even",
-      "fish"
+      "restaurant"
      ]
     },
     {
@@ -1020,8 +1020,8 @@
        "curry"
       ],
       [
-       "glass",
-       "copo"
+       "pizza",
+       "pizza"
       ]
      ]
     },
@@ -1078,9 +1078,9 @@
      "w": "pasta",
      "pt": "massa",
      "o": [
-      "table",
+      "fish",
       "pasta",
-      "minute"
+      "burger"
      ]
     },
     {
@@ -1140,8 +1140,8 @@
      "w": "menu",
      "pt": "cardápio",
      "o": [
-      "querer",
-      "peixe",
+      "fazer",
+      "restaurante",
       "cardápio"
      ]
     },
@@ -1155,9 +1155,9 @@
      "w": "so",
      "pt": "então",
      "o": [
-      "fish",
+      "restaurant",
       "so",
-      "restaurant"
+      "afraid"
      ]
     },
     {
@@ -1172,16 +1172,16 @@
        "então"
       ],
       [
-       "even",
-       "até"
+       "want",
+       "querer"
       ],
       [
-       "expensive",
-       "caro"
+       "friday",
+       "sexta-feira"
       ],
       [
-       "minute",
-       "minuto"
+       "burger",
+       "hambúrguer"
       ]
      ]
     },
@@ -1196,8 +1196,8 @@
      "pt": "com medo",
      "o": [
       "afraid",
-      "burger",
-      "back"
+      "salad",
+      "want"
      ]
     },
     {
@@ -1210,9 +1210,9 @@
      "w": "back",
      "pt": "de volta",
      "o": [
-      "então",
+      "copo",
       "de volta",
-      "restaurante"
+      "com medo"
      ]
     },
     {
@@ -1220,8 +1220,8 @@
      "w": "afraid",
      "pt": "com medo",
      "o": [
-      "salad",
-      "hot",
+      "friday",
+      "glass",
       "afraid"
      ]
     },
@@ -1369,7 +1369,7 @@
      "o": [
       "carne",
       "quatro",
-      "massa"
+      "frango"
      ]
     },
     {
@@ -1382,8 +1382,8 @@
      "w": "cream",
      "pt": "creme",
      "o": [
-      "menu",
-      "salad",
+      "table",
+      "friday",
       "cream"
      ]
     },
@@ -1399,16 +1399,16 @@
        "creme"
       ],
       [
-       "fish",
-       "peixe"
+       "restaurant",
+       "restaurante"
       ],
       [
-       "friday",
-       "sexta-feira"
+       "birthday",
+       "aniversário"
       ],
       [
-       "menu",
-       "cardápio"
+       "table",
+       "mesa"
       ]
      ]
     },
@@ -1423,8 +1423,8 @@
      "pt": "comer",
      "o": [
       "eat",
-      "minute",
-      "chicken"
+      "burger",
+      "expensive"
      ]
     },
     {
@@ -1437,8 +1437,8 @@
      "w": "four",
      "pt": "quatro",
      "o": [
-      "peixe",
-      "minuto",
+      "até",
+      "hambúrguer",
       "quatro"
      ]
     },
@@ -1447,8 +1447,8 @@
      "w": "eat",
      "pt": "comer",
      "o": [
-      "so",
-      "beef",
+      "birthday",
+      "salad",
       "eat"
      ]
     },
@@ -1472,8 +1472,8 @@
        "creme"
       ],
       [
-       "hot",
-       "quente"
+       "salad",
+       "salada"
       ]
      ]
     },
@@ -1595,7 +1595,7 @@
      "pt": "grátis",
      "o": [
       "grátis",
-      "massa",
+      "cada",
       "pizza"
      ]
     },
@@ -1610,8 +1610,8 @@
      "pt": "ótimo",
      "o": [
       "great",
-      "afraid",
-      "beef"
+      "want",
+      "glass"
      ]
     },
     {
@@ -1626,16 +1626,16 @@
        "ótimo"
       ],
       [
-       "beef",
-       "carne"
+       "salad",
+       "salada"
       ],
       [
-       "birthday",
-       "aniversário"
+       "minute",
+       "minuto"
       ],
       [
-       "want",
-       "querer"
+       "do",
+       "fazer"
       ]
      ]
     },
@@ -1649,8 +1649,8 @@
      "w": "happy",
      "pt": "feliz",
      "o": [
-      "fish",
-      "back",
+      "pasta",
+      "want",
       "happy"
      ]
     },
@@ -1664,8 +1664,8 @@
      "w": "hungry",
      "pt": "com fome",
      "o": [
-      "com medo",
-      "minuto",
+      "querer",
+      "hambúrguer",
       "com fome"
      ]
     },
@@ -1674,8 +1674,8 @@
      "w": "happy",
      "pt": "feliz",
      "o": [
-      "pasta",
-      "curry",
+      "free",
+      "hungry",
       "happy"
      ]
     },
@@ -1822,8 +1822,8 @@
      "pt": "gelo",
      "o": [
       "gelo",
-      "com fome",
-      "salada"
+      "restaurante",
+      "peixe"
      ]
     },
     {
@@ -1836,9 +1836,9 @@
      "w": "know",
      "pt": "saber",
      "o": [
-      "glass",
+      "pasta",
       "know",
-      "pizza"
+      "eat"
      ]
     },
     {
@@ -1853,16 +1853,16 @@
        "saber"
       ],
       [
+       "birthday",
+       "aniversário"
+      ],
+      [
        "so",
        "então"
       ],
       [
        "curry",
        "curry"
-      ],
-      [
-       "cream",
-       "creme"
       ]
      ]
     },
@@ -1876,9 +1876,9 @@
      "w": "later",
      "pt": "mais tarde",
      "o": [
-      "want",
+      "hungry",
       "later",
-      "pasta"
+      "ice"
      ]
     },
     {
@@ -1891,9 +1891,9 @@
      "w": "night",
      "pt": "noite",
      "o": [
-      "gelo",
+      "fazer",
       "noite",
-      "creme"
+      "curry"
      ]
     },
     {
@@ -1901,8 +1901,8 @@
      "w": "later",
      "pt": "mais tarde",
      "o": [
-      "birthday",
-      "happy",
+      "minute",
+      "menu",
       "later"
      ]
     },
@@ -1926,8 +1926,8 @@
        "saber"
       ],
       [
-       "friday",
-       "sexta-feira"
+       "cream",
+       "creme"
       ]
      ]
     },
@@ -2037,45 +2037,45 @@
      "t": "pairs",
      "p": [
       [
-       "table",
-       "mesa"
+       "friday",
+       "sexta-feira"
       ],
       [
-       "burger",
-       "hambúrguer"
+       "salad",
+       "salada"
+      ],
+      [
+       "free",
+       "grátis"
       ],
       [
        "do",
        "fazer"
       ],
       [
-       "ice",
-       "gelo"
-      ],
-      [
-       "glass",
-       "copo"
+       "pasta",
+       "massa"
       ]
      ]
     },
     {
      "t": "meaning",
-     "w": "want",
-     "pt": "querer",
+     "w": "hungry",
+     "pt": "com fome",
      "o": [
-      "curry",
-      "querer",
-      "massa"
+      "feliz",
+      "com fome",
+      "gelo"
      ]
     },
     {
      "t": "hear",
-     "w": "cream",
-     "pt": "creme",
+     "w": "afraid",
+     "pt": "com medo",
      "o": [
-      "cream",
-      "birthday",
-      "beef"
+      "afraid",
+      "minute",
+      "so"
      ]
     },
     {
@@ -2141,24 +2141,24 @@
      "t": "pairs",
      "p": [
       [
-       "curry",
-       "curry"
+       "happy",
+       "feliz"
       ],
       [
-       "free",
-       "grátis"
+       "hot",
+       "quente"
       ],
       [
-       "know",
-       "saber"
+       "night",
+       "noite"
       ],
       [
-       "pizza",
-       "pizza"
+       "eat",
+       "comer"
       ],
       [
-       "hungry",
-       "com fome"
+       "restaurant",
+       "restaurante"
       ]
      ]
     },
@@ -2192,12 +2192,12 @@
     },
     {
      "t": "pick",
-     "w": "hot",
-     "pt": "quente",
+     "w": "great",
+     "pt": "ótimo",
      "o": [
-      "great",
-      "even",
-      "hot"
+      "birthday",
+      "chicken",
+      "great"
      ]
     },
     {
@@ -2225,12 +2225,12 @@
     },
     {
      "t": "meaning",
-     "w": "night",
-     "pt": "noite",
+     "w": "glass",
+     "pt": "copo",
      "o": [
-      "noite",
-      "massa",
-      "de volta"
+      "copo",
+      "gelo",
+      "querer"
      ]
     },
     {
@@ -2246,12 +2246,12 @@
     },
     {
      "t": "hear",
-     "w": "every",
-     "pt": "cada",
+     "w": "beef",
+     "pt": "carne",
      "o": [
-      "expensive",
-      "every",
-      "even"
+      "back",
+      "beef",
+      "chicken"
      ]
     },
     {

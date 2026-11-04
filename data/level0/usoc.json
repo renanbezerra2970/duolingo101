@@ -3,80 +3,29 @@
  "lessons": [
   {
    "id": "socz1",
-   "title": "month · home · week · help",
-   "titlePt": "mês · casa · semana · ajuda",
+   "title": "bring · week · make · month",
+   "titlePt": "trazer · semana · fazer · mês",
    "emoji": "🔤",
    "words": [
-    "month",
-    "home",
+    "bring",
     "week",
-    "help"
+    "make",
+    "month"
    ],
    "screens": [
-    {
-     "t": "intro",
-     "w": "help",
-     "pt": "ajuda"
-    },
-    {
-     "t": "meaning",
-     "w": "help",
-     "pt": "ajuda",
-     "o": [
-      "sentir",
-      "ajuda",
-      "cair"
-     ]
-    },
-    {
-     "t": "intro",
-     "w": "home",
-     "pt": "casa"
-    },
-    {
-     "t": "hear",
-     "w": "home",
-     "pt": "casa",
-     "o": [
-      "press",
-      "messy",
-      "home"
-     ]
-    },
-    {
-     "t": "pairs",
-     "p": [
-      [
-       "help",
-       "ajuda"
-      ],
-      [
-       "home",
-       "casa"
-      ],
-      [
-       "month",
-       "mês"
-      ],
-      [
-       "week",
-       "semana"
-      ]
-     ]
-    },
     {
      "t": "intro",
      "w": "month",
      "pt": "mês"
     },
     {
-     "t": "pick",
+     "t": "meaning",
      "w": "month",
      "pt": "mês",
      "o": [
-      "month",
-      "or",
-      "she"
+      "sentir",
+      "mês",
+      "cair"
      ]
     },
     {
@@ -85,23 +34,13 @@
      "pt": "semana"
     },
     {
-     "t": "meaning",
+     "t": "hear",
      "w": "week",
      "pt": "semana",
      "o": [
-      "semana",
-      "porta",
-      "oi"
-     ]
-    },
-    {
-     "t": "hear",
-     "w": "month",
-     "pt": "mês",
-     "o": [
-      "about",
-      "month",
-      "luck"
+      "press",
+      "no",
+      "week"
      ]
     },
     {
@@ -116,12 +55,73 @@
        "semana"
       ],
       [
-       "help",
-       "ajuda"
+       "make",
+       "fazer"
       ],
       [
-       "home",
-       "casa"
+       "bring",
+       "trazer"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "bring",
+     "pt": "trazer"
+    },
+    {
+     "t": "pick",
+     "w": "bring",
+     "pt": "trazer",
+     "o": [
+      "bring",
+      "or",
+      "she"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "make",
+     "pt": "fazer"
+    },
+    {
+     "t": "meaning",
+     "w": "make",
+     "pt": "fazer",
+     "o": [
+      "fazer",
+      "dois",
+      "dia"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "bring",
+     "pt": "trazer",
+     "o": [
+      "bring",
+      "eight",
+      "pay"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "bring",
+       "trazer"
+      ],
+      [
+       "make",
+       "fazer"
+      ],
+      [
+       "month",
+       "mês"
+      ],
+      [
+       "week",
+       "semana"
       ]
      ]
     },
@@ -175,11 +175,11 @@
     },
     {
      "t": "spell",
-     "w": "help",
-     "pt": "ajuda",
+     "w": "month",
+     "pt": "mês",
      "o": [
       "afternoon",
-      "help",
+      "month",
       "proud"
      ]
     },
@@ -220,294 +220,29 @@
   },
   {
    "id": "socz2",
-   "title": "bring · call · how · let",
-   "titlePt": "trazer · ligar · como · deixar",
+   "title": "plan · stay · tell · confidential",
+   "titlePt": "plano · ficar · contar · confidencial",
    "emoji": "🧩",
    "words": [
-    "bring",
-    "call",
-    "how",
-    "let"
-   ],
-   "screens": [
-    {
-     "t": "intro",
-     "w": "bring",
-     "pt": "trazer"
-    },
-    {
-     "t": "meaning",
-     "w": "bring",
-     "pt": "trazer",
-     "o": [
-      "deixar",
-      "trazer",
-      "ligar"
-     ]
-    },
-    {
-     "t": "intro",
-     "w": "call",
-     "pt": "ligar"
-    },
-    {
-     "t": "hear",
-     "w": "call",
-     "pt": "ligar",
-     "o": [
-      "call",
-      "help",
-      "let"
-     ]
-    },
-    {
-     "t": "pairs",
-     "p": [
-      [
-       "bring",
-       "trazer"
-      ],
-      [
-       "call",
-       "ligar"
-      ],
-      [
-       "week",
-       "semana"
-      ],
-      [
-       "month",
-       "mês"
-      ],
-      [
-       "home",
-       "casa"
-      ]
-     ]
-    },
-    {
-     "t": "intro",
-     "w": "how",
-     "pt": "como"
-    },
-    {
-     "t": "pick",
-     "w": "how",
-     "pt": "como",
-     "o": [
-      "how",
-      "call",
-      "week"
-     ]
-    },
-    {
-     "t": "intro",
-     "w": "let",
-     "pt": "deixar"
-    },
-    {
-     "t": "meaning",
-     "w": "let",
-     "pt": "deixar",
-     "o": [
-      "como",
-      "casa",
-      "deixar"
-     ]
-    },
-    {
-     "t": "hear",
-     "w": "how",
-     "pt": "como",
-     "o": [
-      "how",
-      "call",
-      "month"
-     ]
-    },
-    {
-     "t": "pairs",
-     "p": [
-      [
-       "how",
-       "como"
-      ],
-      [
-       "let",
-       "deixar"
-      ],
-      [
-       "bring",
-       "trazer"
-      ],
-      [
-       "call",
-       "ligar"
-      ],
-      [
-       "week",
-       "semana"
-      ]
-     ]
-    },
-    {
-     "t": "phrase",
-     "en": "Rosa calls Mr. Grant, the landlord.",
-     "pt": "A Rosa liga para o Sr. Grant, o proprietário.",
-     "v": "en-US-AndrewNeural"
-    },
-    {
-     "t": "bank",
-     "en": "Rosa calls Mr. Grant, the landlord.",
-     "pt": "A Rosa liga para o Sr. Grant, o proprietário.",
-     "v": "en-US-AndrewNeural",
-     "x": [
-      "please",
-      "follow",
-      "thank"
-     ],
-     "wr": "copy"
-    },
-    {
-     "t": "phrase",
-     "en": "Every day?",
-     "pt": "Todo dia?",
-     "v": "en-KE-ChilembaNeural"
-    },
-    {
-     "t": "fill",
-     "en": "Every day?",
-     "pt": "Todo dia?",
-     "v": "en-KE-ChilembaNeural",
-     "gap": "___ day?",
-     "w": "Every",
-     "o": [
-      "good",
-      "private",
-      "Every"
-     ]
-    },
-    {
-     "t": "speak",
-     "en": "Rosa calls Mr. Grant, the landlord.",
-     "pt": "A Rosa liga para o Sr. Grant, o proprietário.",
-     "v": "en-US-AndrewNeural",
-     "o": [
-      "Há uma reunião sobre a alta dele.",
-      "Vamos fazer um plano juntos.",
-      "A Rosa liga para o Sr. Grant, o proprietário."
-     ]
-    },
-    {
-     "t": "spell",
-     "w": "bring",
-     "pt": "trazer",
-     "o": [
-      "week",
-      "month",
-      "bring"
-     ]
-    },
-    {
-     "t": "listen",
-     "en": "Rosa calls Mr. Grant, the landlord.",
-     "pt": "A Rosa liga para o Sr. Grant, o proprietário.",
-     "v": "en-US-AndrewNeural",
-     "o": [
-      "And I can stay in my house?",
-      "Rosa calls Mr. Grant, the landlord.",
-      "OK. That's fair. She can stay."
-     ]
-    },
-    {
-     "t": "speak",
-     "en": "Every day?",
-     "pt": "Todo dia?",
-     "v": "en-KE-ChilembaNeural",
-     "o": [
-      "Traga seu apetite! Vou fazer chá.",
-      "Primeiro, tudo o que você me contar é confidencial.",
-      "Todo dia?"
-     ]
-    },
-    {
-     "t": "copy",
-     "en": "Every day?",
-     "pt": "Todo dia?",
-     "v": "en-KE-ChilembaNeural",
-     "x": [
-      "last",
-      "or",
-      "at"
-     ]
-    }
-   ]
-  },
-  {
-   "id": "socz3",
-   "title": "make · plan · stay · tell",
-   "titlePt": "fazer · plano · ficar · contar",
-   "emoji": "🎯",
-   "words": [
-    "make",
     "plan",
     "stay",
-    "tell"
+    "tell",
+    "confidential"
    ],
    "screens": [
-    {
-     "t": "intro",
-     "w": "make",
-     "pt": "fazer"
-    },
-    {
-     "t": "meaning",
-     "w": "make",
-     "pt": "fazer",
-     "o": [
-      "fazer",
-      "trazer",
-      "ajuda"
-     ]
-    },
     {
      "t": "intro",
      "w": "plan",
      "pt": "plano"
     },
     {
-     "t": "hear",
+     "t": "meaning",
      "w": "plan",
      "pt": "plano",
      "o": [
-      "help",
-      "plan",
-      "week"
-     ]
-    },
-    {
-     "t": "pairs",
-     "p": [
-      [
-       "make",
-       "fazer"
-      ],
-      [
-       "plan",
-       "plano"
-      ],
-      [
-       "month",
-       "mês"
-      ],
-      [
-       "how",
-       "como"
-      ],
-      [
-       "week",
-       "semana"
-      ]
+      "contar",
+      "plano",
+      "fazer"
      ]
     },
     {
@@ -516,13 +251,38 @@
      "pt": "ficar"
     },
     {
-     "t": "pick",
+     "t": "hear",
      "w": "stay",
      "pt": "ficar",
      "o": [
-      "plan",
-      "call",
-      "stay"
+      "stay",
+      "confidential",
+      "bring"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "plan",
+       "plano"
+      ],
+      [
+       "stay",
+       "ficar"
+      ],
+      [
+       "month",
+       "mês"
+      ],
+      [
+       "week",
+       "semana"
+      ],
+      [
+       "bring",
+       "trazer"
+      ]
      ]
     },
     {
@@ -531,168 +291,13 @@
      "pt": "contar"
     },
     {
-     "t": "meaning",
+     "t": "pick",
      "w": "tell",
      "pt": "contar",
      "o": [
-      "trazer",
-      "fazer",
-      "contar"
-     ]
-    },
-    {
-     "t": "hear",
-     "w": "stay",
-     "pt": "ficar",
-     "o": [
-      "how",
-      "call",
-      "stay"
-     ]
-    },
-    {
-     "t": "pairs",
-     "p": [
-      [
-       "stay",
-       "ficar"
-      ],
-      [
-       "tell",
-       "contar"
-      ],
-      [
-       "make",
-       "fazer"
-      ],
-      [
-       "plan",
-       "plano"
-      ],
-      [
-       "how",
-       "como"
-      ]
-     ]
-    },
-    {
-     "t": "phrase",
-     "en": "Let's make a plan together.",
-     "pt": "Vamos fazer um plano juntos.",
-     "v": "en-US-JennyNeural"
-    },
-    {
-     "t": "bank",
-     "en": "Let's make a plan together.",
-     "pt": "Vamos fazer um plano juntos.",
-     "v": "en-US-JennyNeural",
-     "x": [
-      "fun",
-      "home",
-      "he"
-     ],
-     "wr": "copy"
-    },
-    {
-     "t": "phrase",
-     "en": "Tell me!",
-     "pt": "Me conta!",
-     "v": "en-PH-RosaNeural"
-    },
-    {
-     "t": "fill",
-     "en": "Tell me!",
-     "pt": "Me conta!",
-     "v": "en-PH-RosaNeural",
-     "gap": "___ me!",
-     "w": "Tell",
-     "o": [
-      "safe",
-      "smile",
-      "Tell"
-     ]
-    },
-    {
-     "t": "speak",
-     "en": "Let's make a plan together.",
-     "pt": "Vamos fazer um plano juntos.",
-     "v": "en-US-JennyNeural",
-     "o": [
-      "Vamos fazer um plano juntos.",
-      "Então, o que te traz aqui hoje?",
-      "Rosa, olha. Uma carta do meu proprietário."
-     ]
-    },
-    {
-     "t": "spell",
-     "w": "make",
-     "pt": "fazer",
-     "o": [
-      "home",
-      "make",
-      "month"
-     ]
-    },
-    {
-     "t": "listen",
-     "en": "Let's make a plan together.",
-     "pt": "Vamos fazer um plano juntos.",
-     "v": "en-US-JennyNeural",
-     "o": [
-      "Yes. I agree.",
-      "Can I read it?",
-      "Let's make a plan together."
-     ]
-    },
-    {
-     "t": "speak",
-     "en": "Tell me!",
-     "pt": "Me conta!",
-     "v": "en-PH-RosaNeural",
-     "o": [
-      "Rosa, olha. Uma carta do meu proprietário.",
-      "Me conta!",
-      "Sim. Eu não tenho o dinheiro."
-     ]
-    },
-    {
-     "t": "copy",
-     "en": "Tell me!",
-     "pt": "Me conta!",
-     "v": "en-PH-RosaNeural",
-     "x": [
-      "food",
-      "visit",
-      "leave"
-     ]
-    }
-   ]
-  },
-  {
-   "id": "socz4",
-   "title": "work · confidential · feel · together",
-   "titlePt": "trabalho · confidencial · sentir · juntos",
-   "emoji": "🧠",
-   "words": [
-    "work",
-    "confidential",
-    "feel",
-    "together"
-   ],
-   "screens": [
-    {
-     "t": "intro",
-     "w": "work",
-     "pt": "trabalho"
-    },
-    {
-     "t": "meaning",
-     "w": "work",
-     "pt": "trabalho",
-     "o": [
-      "plano",
-      "trabalho",
-      "como"
+      "bring",
+      "tell",
+      "week"
      ]
     },
     {
@@ -701,53 +306,168 @@
      "pt": "confidencial"
     },
     {
-     "t": "hear",
+     "t": "meaning",
      "w": "confidential",
      "pt": "confidencial",
      "o": [
-      "together",
-      "feel",
-      "confidential"
+      "confidencial",
+      "ficar",
+      "trazer"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "tell",
+     "pt": "contar",
+     "o": [
+      "tell",
+      "bring",
+      "make"
      ]
     },
     {
      "t": "pairs",
      "p": [
       [
-       "work",
-       "trabalho"
+       "tell",
+       "contar"
       ],
       [
        "confidential",
        "confidencial"
       ],
       [
-       "let",
-       "deixar"
+       "plan",
+       "plano"
       ],
       [
        "stay",
        "ficar"
       ],
       [
-       "how",
-       "como"
+       "month",
+       "mês"
       ]
      ]
     },
+    {
+     "t": "phrase",
+     "en": "Tell me!",
+     "pt": "Me conta!",
+     "v": "en-PH-RosaNeural"
+    },
+    {
+     "t": "bank",
+     "en": "Tell me!",
+     "pt": "Me conta!",
+     "v": "en-PH-RosaNeural",
+     "x": [
+      "us",
+      "there",
+      "every"
+     ],
+     "wr": "copy"
+    },
+    {
+     "t": "phrase",
+     "en": "Let's make a plan together.",
+     "pt": "Vamos fazer um plano juntos.",
+     "v": "en-US-JennyNeural"
+    },
+    {
+     "t": "fill",
+     "en": "Let's make a plan together.",
+     "pt": "Vamos fazer um plano juntos.",
+     "v": "en-US-JennyNeural",
+     "gap": "Let's make a ___ together.",
+     "w": "plan",
+     "o": [
+      "plan",
+      "agree",
+      "understand"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Tell me!",
+     "pt": "Me conta!",
+     "v": "en-PH-RosaNeural",
+     "o": [
+      "Sim. Estou muito preocupada.",
+      "Me conta!",
+      "O que te traz aqui hoje?"
+     ]
+    },
+    {
+     "t": "spell",
+     "w": "plan",
+     "pt": "plano",
+     "o": [
+      "tell",
+      "plan",
+      "stay"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "Tell me!",
+     "pt": "Me conta!",
+     "v": "en-PH-RosaNeural",
+     "o": [
+      "Can I read it?",
+      "Let's make a plan together.",
+      "Tell me!"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Let's make a plan together.",
+     "pt": "Vamos fazer um plano juntos.",
+     "v": "en-US-JennyNeural",
+     "o": [
+      "Água, por favor.",
+      "Vamos fazer um plano juntos.",
+      "Tá. Até o mês que vem!"
+     ]
+    },
+    {
+     "t": "copy",
+     "en": "Let's make a plan together.",
+     "pt": "Vamos fazer um plano juntos.",
+     "v": "en-US-JennyNeural",
+     "x": [
+      "extra",
+      "no",
+      "feel"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "socz3",
+   "title": "feel · together · decide · everything",
+   "titlePt": "sentir · juntos · decidir · tudo",
+   "emoji": "🎯",
+   "words": [
+    "feel",
+    "together",
+    "decide",
+    "everything"
+   ],
+   "screens": [
     {
      "t": "intro",
      "w": "feel",
      "pt": "sentir"
     },
     {
-     "t": "pick",
+     "t": "meaning",
      "w": "feel",
      "pt": "sentir",
      "o": [
-      "feel",
-      "together",
-      "help"
+      "mês",
+      "sentir",
+      "confidencial"
      ]
     },
     {
@@ -756,23 +476,13 @@
      "pt": "juntos"
     },
     {
-     "t": "meaning",
+     "t": "hear",
      "w": "together",
      "pt": "juntos",
      "o": [
-      "juntos",
-      "trabalho",
-      "sentir"
-     ]
-    },
-    {
-     "t": "hear",
-     "w": "feel",
-     "pt": "sentir",
-     "o": [
-      "feel",
-      "make",
-      "call"
+      "bring",
+      "together",
+      "everything"
      ]
     },
     {
@@ -787,34 +497,99 @@
        "juntos"
       ],
       [
-       "work",
-       "trabalho"
+       "stay",
+       "ficar"
+      ],
+      [
+       "week",
+       "semana"
       ],
       [
        "confidential",
        "confidencial"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "decide",
+     "pt": "decidir"
+    },
+    {
+     "t": "pick",
+     "w": "decide",
+     "pt": "decidir",
+     "o": [
+      "make",
+      "confidential",
+      "decide"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "everything",
+     "pt": "tudo"
+    },
+    {
+     "t": "meaning",
+     "w": "everything",
+     "pt": "tudo",
+     "o": [
+      "fazer",
+      "tudo",
+      "contar"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "decide",
+     "pt": "decidir",
+     "o": [
+      "decide",
+      "stay",
+      "feel"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "decide",
+       "decidir"
       ],
       [
-       "home",
-       "casa"
+       "everything",
+       "tudo"
+      ],
+      [
+       "feel",
+       "sentir"
+      ],
+      [
+       "together",
+       "juntos"
+      ],
+      [
+       "bring",
+       "trazer"
       ]
      ]
     },
     {
      "t": "phrase",
-     "en": "Hello. I'm Rosa, his social worker.",
-     "pt": "Olá. Eu sou a Rosa, a assistente social dele.",
-     "v": "en-PH-RosaNeural"
+     "en": "Every day?",
+     "pt": "Todo dia?",
+     "v": "en-KE-ChilembaNeural"
     },
     {
      "t": "bank",
-     "en": "Hello. I'm Rosa, his social worker.",
-     "pt": "Olá. Eu sou a Rosa, a assistente social dele.",
-     "v": "en-PH-RosaNeural",
+     "en": "Every day?",
+     "pt": "Todo dia?",
+     "v": "en-KE-ChilembaNeural",
      "x": [
-      "embarrassed",
-      "want",
-      "him"
+      "him",
+      "it",
+      "today"
      ],
      "wr": "copy"
     },
@@ -832,41 +607,41 @@
      "gap": "Yes, of ___.",
      "w": "course",
      "o": [
-      "often",
       "course",
-      "shop"
+      "press",
+      "for"
      ]
     },
     {
      "t": "speak",
-     "en": "Hello. I'm Rosa, his social worker.",
-     "pt": "Olá. Eu sou a Rosa, a assistente social dele.",
-     "v": "en-PH-RosaNeural",
+     "en": "Every day?",
+     "pt": "Todo dia?",
+     "v": "en-KE-ChilembaNeural",
      "o": [
-      "Posso ler?",
-      "Olá. Eu sou a Rosa, a assistente social dele.",
-      "Cem dólares a mais por mês."
+      "Sim. Eu não tenho o dinheiro.",
+      "Obrigada a todos.",
+      "Todo dia?"
      ]
     },
     {
      "t": "spell",
-     "w": "work",
-     "pt": "trabalho",
+     "w": "feel",
+     "pt": "sentir",
      "o": [
-      "work",
-      "let",
-      "bring"
+      "week",
+      "confidential",
+      "feel"
      ]
     },
     {
      "t": "listen",
-     "en": "Hello. I'm Rosa, his social worker.",
-     "pt": "Olá. Eu sou a Rosa, a assistente social dele.",
-     "v": "en-PH-RosaNeural",
+     "en": "Every day?",
+     "pt": "Todo dia?",
+     "v": "en-KE-ChilembaNeural",
      "o": [
-      "The fridge is almost empty.",
-      "Hello. I'm Rosa, his social worker.",
-      "Tell me!"
+      "Were you hurt?",
+      "Every day?",
+      "I'd love some tea. Thank you."
      ]
     },
     {
@@ -876,8 +651,8 @@
      "v": "en-KE-ChilembaNeural",
      "o": [
       "Sim, claro.",
-      "Ah. Então sim. Eu gostaria disso.",
-      "Você tem o direito de decidir."
+      "Oi. Eu sou a Jasmine. Obrigada.",
+      "Cem dólares a mais por mês."
      ]
     },
     {
@@ -886,93 +661,38 @@
      "pt": "Sim, claro.",
      "v": "en-KE-ChilembaNeural",
      "x": [
-      "emergency",
-      "other",
-      "that"
+      "four",
+      "car",
+      "shopping"
      ]
     }
    ]
   },
   {
-   "id": "socz5",
-   "title": "decide · everything · follow · pay",
-   "titlePt": "decidir · tudo · seguir · pagar",
-   "emoji": "💬",
+   "id": "socz4",
+   "title": "follow · pay · rent · safe",
+   "titlePt": "seguir · pagar · aluguel · seguro",
+   "emoji": "🧠",
    "words": [
-    "decide",
-    "everything",
     "follow",
-    "pay"
+    "pay",
+    "rent",
+    "safe"
    ],
    "screens": [
-    {
-     "t": "intro",
-     "w": "decide",
-     "pt": "decidir"
-    },
-    {
-     "t": "meaning",
-     "w": "decide",
-     "pt": "decidir",
-     "o": [
-      "ligar",
-      "decidir",
-      "pagar"
-     ]
-    },
-    {
-     "t": "intro",
-     "w": "everything",
-     "pt": "tudo"
-    },
-    {
-     "t": "hear",
-     "w": "everything",
-     "pt": "tudo",
-     "o": [
-      "pay",
-      "home",
-      "everything"
-     ]
-    },
-    {
-     "t": "pairs",
-     "p": [
-      [
-       "decide",
-       "decidir"
-      ],
-      [
-       "everything",
-       "tudo"
-      ],
-      [
-       "call",
-       "ligar"
-      ],
-      [
-       "help",
-       "ajuda"
-      ],
-      [
-       "make",
-       "fazer"
-      ]
-     ]
-    },
     {
      "t": "intro",
      "w": "follow",
      "pt": "seguir"
     },
     {
-     "t": "pick",
+     "t": "meaning",
      "w": "follow",
      "pt": "seguir",
      "o": [
-      "confidential",
-      "follow",
-      "bring"
+      "trazer",
+      "decidir",
+      "seguir"
      ]
     },
     {
@@ -981,23 +701,13 @@
      "pt": "pagar"
     },
     {
-     "t": "meaning",
+     "t": "hear",
      "w": "pay",
      "pt": "pagar",
      "o": [
-      "pagar",
-      "contar",
-      "tudo"
-     ]
-    },
-    {
-     "t": "hear",
-     "w": "follow",
-     "pt": "seguir",
-     "o": [
-      "plan",
-      "make",
-      "follow"
+      "safe",
+      "month",
+      "pay"
      ]
     },
     {
@@ -1012,137 +722,32 @@
        "pagar"
       ],
       [
+       "stay",
+       "ficar"
+      ],
+      [
        "decide",
        "decidir"
       ],
       [
-       "everything",
-       "tudo"
-      ],
-      [
-       "together",
-       "juntos"
+       "plan",
+       "plano"
       ]
      ]
     },
-    {
-     "t": "phrase",
-     "en": "I'll follow up next week.",
-     "pt": "Vou dar retorno na semana que vem.",
-     "v": "en-US-JennyNeural"
-    },
-    {
-     "t": "bank",
-     "en": "I'll follow up next week.",
-     "pt": "Vou dar retorno na semana que vem.",
-     "v": "en-US-JennyNeural",
-     "x": [
-      "with",
-      "tea",
-      "work"
-     ],
-     "wr": "copy"
-    },
-    {
-     "t": "phrase",
-     "en": "I'll follow up next month, OK?",
-     "pt": "Vou dar retorno no mês que vem, tá?",
-     "v": "en-PH-RosaNeural"
-    },
-    {
-     "t": "fill",
-     "en": "I'll follow up next month, OK?",
-     "pt": "Vou dar retorno no mês que vem, tá?",
-     "v": "en-PH-RosaNeural",
-     "gap": "I'll ___ up next month, OK?",
-     "w": "follow",
-     "o": [
-      "nursery",
-      "follow",
-      "did"
-     ]
-    },
-    {
-     "t": "speak",
-     "en": "I'll follow up next week.",
-     "pt": "Vou dar retorno na semana que vem.",
-     "v": "en-US-JennyNeural",
-     "o": [
-      "Vou dar retorno na semana que vem.",
-      "A Lily está com a mãe hoje.",
-      "A gente pode ficar? De verdade?"
-     ]
-    },
-    {
-     "t": "spell",
-     "w": "decide",
-     "pt": "decidir",
-     "o": [
-      "decide",
-      "tell",
-      "plan"
-     ]
-    },
-    {
-     "t": "listen",
-     "en": "I'll follow up next week.",
-     "pt": "Vou dar retorno na semana que vem.",
-     "v": "en-US-JennyNeural",
-     "o": [
-      "I'll follow up next week.",
-      "Can I read it?",
-      "Hi. I'm Jasmine. Thank you."
-     ]
-    },
-    {
-     "t": "speak",
-     "en": "I'll follow up next month, OK?",
-     "pt": "Vou dar retorno no mês que vem, tá?",
-     "v": "en-PH-RosaNeural",
-     "o": [
-      "A gente pode ficar? De verdade?",
-      "Vou dar retorno no mês que vem, tá?",
-      "Água, por favor."
-     ]
-    },
-    {
-     "t": "copy",
-     "en": "I'll follow up next month, OK?",
-     "pt": "Vou dar retorno no mês que vem, tá?",
-     "v": "en-PH-RosaNeural",
-     "x": [
-      "much",
-      "him",
-      "last"
-     ]
-    }
-   ]
-  },
-  {
-   "id": "socz6",
-   "title": "rent · safe · up · about",
-   "titlePt": "aluguel · seguro · para cima · sobre",
-   "emoji": "🔁",
-   "words": [
-    "rent",
-    "safe",
-    "up",
-    "about"
-   ],
-   "screens": [
     {
      "t": "intro",
      "w": "rent",
      "pt": "aluguel"
     },
     {
-     "t": "meaning",
+     "t": "pick",
      "w": "rent",
      "pt": "aluguel",
      "o": [
-      "aluguel",
-      "ligar",
-      "trabalho"
+      "together",
+      "rent",
+      "follow"
      ]
     },
     {
@@ -1151,13 +756,23 @@
      "pt": "seguro"
     },
     {
-     "t": "hear",
+     "t": "meaning",
      "w": "safe",
      "pt": "seguro",
      "o": [
-      "pay",
-      "home",
-      "safe"
+      "seguro",
+      "juntos",
+      "pagar"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "rent",
+     "pt": "aluguel",
+     "o": [
+      "decide",
+      "week",
+      "rent"
      ]
     },
     {
@@ -1176,77 +791,12 @@
        "seguir"
       ],
       [
-       "bring",
-       "trazer"
+       "pay",
+       "pagar"
       ],
       [
-       "work",
-       "trabalho"
-      ]
-     ]
-    },
-    {
-     "t": "intro",
-     "w": "up",
-     "pt": "para cima"
-    },
-    {
-     "t": "pick",
-     "w": "up",
-     "pt": "para cima",
-     "o": [
-      "home",
-      "up",
-      "feel"
-     ]
-    },
-    {
-     "t": "intro",
-     "w": "about",
-     "pt": "sobre"
-    },
-    {
-     "t": "meaning",
-     "w": "about",
-     "pt": "sobre",
-     "o": [
-      "tudo",
-      "sobre",
-      "contar"
-     ]
-    },
-    {
-     "t": "hear",
-     "w": "up",
-     "pt": "para cima",
-     "o": [
-      "everything",
-      "together",
-      "up"
-     ]
-    },
-    {
-     "t": "pairs",
-     "p": [
-      [
-       "up",
-       "para cima"
-      ],
-      [
-       "about",
-       "sobre"
-      ],
-      [
-       "rent",
-       "aluguel"
-      ],
-      [
-       "safe",
-       "seguro"
-      ],
-      [
-       "together",
-       "juntos"
+       "everything",
+       "tudo"
       ]
      ]
     },
@@ -1262,29 +812,29 @@
      "pt": "E o aluguel?",
      "v": "en-PH-RosaNeural",
      "x": [
-      "much",
-      "home",
-      "food"
+      "for",
+      "course",
+      "little"
      ],
-     "wr": "translate"
+     "wr": "copy"
     },
     {
      "t": "phrase",
-     "en": "Yes. I agree.",
-     "pt": "Sim. Eu concordo.",
-     "v": "en-KE-ChilembaNeural"
+     "en": "I'll follow up next week.",
+     "pt": "Vou dar retorno na semana que vem.",
+     "v": "en-US-JennyNeural"
     },
     {
      "t": "fill",
-     "en": "Yes. I agree.",
-     "pt": "Sim. Eu concordo.",
-     "v": "en-KE-ChilembaNeural",
-     "gap": "Yes. I ___.",
-     "w": "agree",
+     "en": "I'll follow up next week.",
+     "pt": "Vou dar retorno na semana que vem.",
+     "v": "en-US-JennyNeural",
+     "gap": "I'll follow up next ___.",
+     "w": "week",
      "o": [
-      "soon",
-      "agree",
-      "email"
+      "even",
+      "thank",
+      "week"
      ]
     },
     {
@@ -1293,20 +843,19 @@
      "pt": "E o aluguel?",
      "v": "en-PH-RosaNeural",
      "o": [
-      "Oi. Eu sou a Jasmine. Obrigada.",
-      "Primeiro, tudo o que você me contar é confidencial.",
+      "Você gostaria de água ou chá?",
+      "Então, o que te traz aqui hoje?",
       "E o aluguel?"
      ]
     },
     {
-     "t": "type",
-     "en": "Yes. I agree.",
-     "pt": "Sim. Eu concordo.",
-     "v": "en-KE-ChilembaNeural",
-     "x": [
-      "work",
-      "food",
-      "come"
+     "t": "spell",
+     "w": "follow",
+     "pt": "seguir",
+     "o": [
+      "follow",
+      "week",
+      "safe"
      ]
     },
     {
@@ -1315,46 +864,45 @@
      "pt": "E o aluguel?",
      "v": "en-PH-RosaNeural",
      "o": [
-      "Yes. You can stay.",
-      "Thank you, Rosa! Thank you so much!",
-      "And the rent?"
+      "And the rent?",
+      "Good afternoon. I'm Sharon, the ward manager.",
+      "Rosa calls Mr. Grant, the landlord."
      ]
     },
     {
      "t": "speak",
-     "en": "Yes. I agree.",
-     "pt": "Sim. Eu concordo.",
-     "v": "en-KE-ChilembaNeural",
+     "en": "I'll follow up next week.",
+     "pt": "Vou dar retorno na semana que vem.",
+     "v": "en-US-JennyNeural",
      "o": [
-      "Eu adoraria um chá. Obrigada.",
-      "Sim. Eu concordo.",
-      "Jasmine! Olá! Você parece feliz!"
+      "Vou dar retorno na semana que vem.",
+      "Só o braço. Um pouco.",
+      "A geladeira está quase vazia."
      ]
     },
     {
-     "t": "bank",
-     "en": "Yes. I agree.",
-     "pt": "Sim. Eu concordo.",
-     "v": "en-KE-ChilembaNeural",
+     "t": "copy",
+     "en": "I'll follow up next week.",
+     "pt": "Vou dar retorno na semana que vem.",
+     "v": "en-US-JennyNeural",
      "x": [
-      "leave",
-      "come",
-      "there"
-     ],
-     "wr": "translate"
+      "mom",
+      "two",
+      "love"
+     ]
     }
    ]
   },
   {
-   "id": "socz7",
-   "title": "alone · button · job · landlord",
-   "titlePt": "sozinho · botão · trabalho · proprietário",
-   "emoji": "⭐",
+   "id": "socz5",
+   "title": "alone · button · landlord · much",
+   "titlePt": "sozinho · botão · proprietário · muito",
+   "emoji": "💬",
    "words": [
     "alone",
     "button",
-    "job",
-    "landlord"
+    "landlord",
+    "much"
    ],
    "screens": [
     {
@@ -1367,9 +915,9 @@
      "w": "alone",
      "pt": "sozinho",
      "o": [
-      "confidencial",
-      "para cima",
-      "sozinho"
+      "sozinho",
+      "seguir",
+      "aluguel"
      ]
     },
     {
@@ -1382,9 +930,9 @@
      "w": "button",
      "pt": "botão",
      "o": [
-      "safe",
+      "together",
       "button",
-      "pay"
+      "follow"
      ]
     },
     {
@@ -1399,32 +947,17 @@
        "botão"
       ],
       [
-       "pay",
-       "pagar"
+       "rent",
+       "aluguel"
       ],
       [
-       "how",
-       "como"
+       "bring",
+       "trazer"
       ],
       [
-       "call",
-       "ligar"
+       "stay",
+       "ficar"
       ]
-     ]
-    },
-    {
-     "t": "intro",
-     "w": "job",
-     "pt": "trabalho"
-    },
-    {
-     "t": "pick",
-     "w": "job",
-     "pt": "trabalho",
-     "o": [
-      "job",
-      "up",
-      "tell"
      ]
     },
     {
@@ -1433,35 +966,50 @@
      "pt": "proprietário"
     },
     {
-     "t": "meaning",
+     "t": "pick",
      "w": "landlord",
      "pt": "proprietário",
      "o": [
-      "proprietário",
-      "semana",
-      "trazer"
+      "button",
+      "landlord",
+      "make"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "much",
+     "pt": "muito"
+    },
+    {
+     "t": "meaning",
+     "w": "much",
+     "pt": "muito",
+     "o": [
+      "decidir",
+      "muito",
+      "mês"
      ]
     },
     {
      "t": "hear",
-     "w": "job",
-     "pt": "trabalho",
+     "w": "landlord",
+     "pt": "proprietário",
      "o": [
-      "job",
-      "pay",
-      "follow"
+      "landlord",
+      "bring",
+      "stay"
      ]
     },
     {
      "t": "pairs",
      "p": [
       [
-       "job",
-       "trabalho"
-      ],
-      [
        "landlord",
        "proprietário"
+      ],
+      [
+       "much",
+       "muito"
       ],
       [
        "alone",
@@ -1479,181 +1027,109 @@
     },
     {
      "t": "phrase",
-     "en": "OK. I'd like that.",
-     "pt": "Tá. Eu gostaria disso.",
-     "v": "en-US-AvaNeural"
+     "en": "Rosa calls Mr. Grant, the landlord.",
+     "pt": "A Rosa liga para o Sr. Grant, o proprietário.",
+     "v": "en-US-AndrewNeural"
     },
     {
      "t": "bank",
-     "en": "OK. I'd like that.",
-     "pt": "Tá. Eu gostaria disso.",
-     "v": "en-US-AvaNeural",
+     "en": "Rosa calls Mr. Grant, the landlord.",
+     "pt": "A Rosa liga para o Sr. Grant, o proprietário.",
+     "v": "en-US-AndrewNeural",
      "x": [
-      "family",
-      "how",
-      "has"
+      "lost",
+      "picture",
+      "four"
      ],
-     "wr": "translate"
+     "wr": "copy"
     },
     {
      "t": "phrase",
-     "en": "I'm worried. He lives alone.",
-     "pt": "Estou preocupada. Ele mora sozinho.",
-     "v": "en-NG-EzinneNeural"
+     "en": "A little. Not much.",
+     "pt": "Um pouco. Não muito.",
+     "v": "en-US-AvaNeural"
     },
     {
      "t": "fill",
-     "en": "I'm worried. He lives alone.",
-     "pt": "Estou preocupada. Ele mora sozinho.",
-     "v": "en-NG-EzinneNeural",
-     "gap": "I'm worried. He lives ___.",
-     "w": "alone",
+     "en": "A little. Not much.",
+     "pt": "Um pouco. Não muito.",
+     "v": "en-US-AvaNeural",
+     "gap": "A little. Not ___.",
+     "w": "much",
      "o": [
-      "come",
-      "fair",
-      "alone"
+      "support",
+      "morning",
+      "much"
      ]
     },
     {
      "t": "speak",
-     "en": "OK. I'd like that.",
-     "pt": "Tá. Eu gostaria disso.",
-     "v": "en-US-AvaNeural",
+     "en": "Rosa calls Mr. Grant, the landlord.",
+     "pt": "A Rosa liga para o Sr. Grant, o proprietário.",
+     "v": "en-US-AndrewNeural",
      "o": [
-      "Quantos anos têm seus filhos?",
-      "Tá. Eu gostaria disso.",
-      "Sim, na cozinha. Mas estou bem!"
+      "Jasmine! Olá! Você parece feliz!",
+      "Perdi meu emprego no mês passado.",
+      "A Rosa liga para o Sr. Grant, o proprietário."
      ]
     },
     {
-     "t": "type",
-     "en": "I'm worried. He lives alone.",
-     "pt": "Estou preocupada. Ele mora sozinho.",
-     "v": "en-NG-EzinneNeural",
-     "x": [
-      "open",
-      "problem",
-      "other"
+     "t": "spell",
+     "w": "alone",
+     "pt": "sozinho",
+     "o": [
+      "alone",
+      "tell",
+      "together"
      ]
     },
     {
      "t": "listen",
-     "en": "OK. I'd like that.",
-     "pt": "Tá. Eu gostaria disso.",
-     "v": "en-US-AvaNeural",
+     "en": "Rosa calls Mr. Grant, the landlord.",
+     "pt": "A Rosa liga para o Sr. Grant, o proprietário.",
+     "v": "en-US-AndrewNeural",
      "o": [
-      "The fridge is almost empty.",
-      "First, everything you tell me is confidential.",
-      "OK. I'd like that."
+      "Rosa calls Mr. Grant, the landlord.",
+      "Do you feel safe at home?",
+      "I'm worried. He lives alone."
      ]
     },
     {
      "t": "speak",
-     "en": "I'm worried. He lives alone.",
-     "pt": "Estou preocupada. Ele mora sozinho.",
-     "v": "en-NG-EzinneNeural",
+     "en": "A little. Not much.",
+     "pt": "Um pouco. Não muito.",
+     "v": "en-US-AvaNeural",
      "o": [
-      "Estou preocupada. Ele mora sozinho.",
-      "Por favor, não se sinta. Pedir ajuda é corajoso.",
-      "Obrigada. Me sinto envergonhada."
+      "Um pouco. Não muito.",
+      "E o aluguel?",
+      "Vamos fazer um plano juntos."
      ]
     },
     {
-     "t": "bank",
-     "en": "I'm worried. He lives alone.",
-     "pt": "Estou preocupada. Ele mora sozinho.",
-     "v": "en-NG-EzinneNeural",
+     "t": "copy",
+     "en": "A little. Not much.",
+     "pt": "Um pouco. Não muito.",
+     "v": "en-US-AvaNeural",
      "x": [
-      "father",
-      "afternoon",
-      "your"
-     ],
-     "wr": "translate"
+      "often",
+      "what",
+      "war"
+     ]
     }
    ]
   },
   {
-   "id": "socz8",
-   "title": "little · much · say · some",
-   "titlePt": "pequeno · muito · dizer · algum",
-   "emoji": "🗝️",
+   "id": "socz6",
+   "title": "some · support · visit · worry",
+   "titlePt": "algum · apoio · visitar · preocupar-se",
+   "emoji": "🔁",
    "words": [
-    "little",
-    "much",
-    "say",
-    "some"
+    "some",
+    "support",
+    "visit",
+    "worry"
    ],
    "screens": [
-    {
-     "t": "intro",
-     "w": "little",
-     "pt": "pequeno"
-    },
-    {
-     "t": "meaning",
-     "w": "little",
-     "pt": "pequeno",
-     "o": [
-      "pequeno",
-      "aluguel",
-      "trabalho"
-     ]
-    },
-    {
-     "t": "intro",
-     "w": "much",
-     "pt": "muito"
-    },
-    {
-     "t": "hear",
-     "w": "much",
-     "pt": "muito",
-     "o": [
-      "much",
-      "month",
-      "confidential"
-     ]
-    },
-    {
-     "t": "pairs",
-     "p": [
-      [
-       "little",
-       "pequeno"
-      ],
-      [
-       "much",
-       "muito"
-      ],
-      [
-       "bring",
-       "trazer"
-      ],
-      [
-       "job",
-       "trabalho"
-      ],
-      [
-       "help",
-       "ajuda"
-      ]
-     ]
-    },
-    {
-     "t": "intro",
-     "w": "say",
-     "pt": "dizer"
-    },
-    {
-     "t": "pick",
-     "w": "say",
-     "pt": "dizer",
-     "o": [
-      "month",
-      "up",
-      "say"
-     ]
-    },
     {
      "t": "intro",
      "w": "some",
@@ -1664,205 +1140,48 @@
      "w": "some",
      "pt": "algum",
      "o": [
-      "sobre",
-      "algum",
-      "ajuda"
+      "preocupar-se",
+      "proprietário",
+      "algum"
      ]
     },
-    {
-     "t": "hear",
-     "w": "say",
-     "pt": "dizer",
-     "o": [
-      "say",
-      "everything",
-      "home"
-     ]
-    },
-    {
-     "t": "pairs",
-     "p": [
-      [
-       "say",
-       "dizer"
-      ],
-      [
-       "some",
-       "algum"
-      ],
-      [
-       "little",
-       "pequeno"
-      ],
-      [
-       "much",
-       "muito"
-      ],
-      [
-       "decide",
-       "decidir"
-      ]
-     ]
-    },
-    {
-     "t": "phrase",
-     "en": "A little. Not much.",
-     "pt": "Um pouco. Não muito.",
-     "v": "en-US-AvaNeural"
-    },
-    {
-     "t": "bank",
-     "en": "A little. Not much.",
-     "pt": "Um pouco. Não muito.",
-     "v": "en-US-AvaNeural",
-     "x": [
-      "smile",
-      "make",
-      "were"
-     ],
-     "wr": "translate"
-    },
-    {
-     "t": "phrase",
-     "en": "Just my arm. A little.",
-     "pt": "Só o braço. Um pouco.",
-     "v": "en-KE-ChilembaNeural"
-    },
-    {
-     "t": "fill",
-     "en": "Just my arm. A little.",
-     "pt": "Só o braço. Um pouco.",
-     "v": "en-KE-ChilembaNeural",
-     "gap": "Just my arm. A ___.",
-     "w": "little",
-     "o": [
-      "home",
-      "wonderful",
-      "little"
-     ]
-    },
-    {
-     "t": "speak",
-     "en": "A little. Not much.",
-     "pt": "Um pouco. Não muito.",
-     "v": "en-US-AvaNeural",
-     "o": [
-      "Um pouco. Não muito.",
-      "A Lily tem oito, e o Marcus tem quatro.",
-      "Tá. Até o mês que vem!"
-     ]
-    },
-    {
-     "t": "type",
-     "en": "Just my arm. A little.",
-     "pt": "Só o braço. Um pouco.",
-     "v": "en-KE-ChilembaNeural",
-     "x": [
-      "her",
-      "money",
-      "beautiful"
-     ]
-    },
-    {
-     "t": "listen",
-     "en": "A little. Not much.",
-     "pt": "Um pouco. Não muito.",
-     "v": "en-US-AvaNeural",
-     "o": [
-      "A little. Not much.",
-      "OK. I'd like that.",
-      "I'm OK. My legs are tired."
-     ]
-    },
-    {
-     "t": "speak",
-     "en": "Just my arm. A little.",
-     "pt": "Só o braço. Um pouco.",
-     "v": "en-KE-ChilembaNeural",
-     "o": [
-      "Só o braço. Um pouco.",
-      "Tchau, Rosa!",
-      "E o aluguel?"
-     ]
-    },
-    {
-     "t": "bank",
-     "en": "Just my arm. A little.",
-     "pt": "Só o braço. Um pouco.",
-     "v": "en-KE-ChilembaNeural",
-     "x": [
-      "everything",
-      "home",
-      "leg"
-     ],
-     "wr": "translate"
-    }
-   ]
-  },
-  {
-   "id": "socz9",
-   "title": "support · time · visit · worry",
-   "titlePt": "apoio · tempo · visitar · preocupar-se",
-   "emoji": "🚀",
-   "words": [
-    "support",
-    "time",
-    "visit",
-    "worry"
-   ],
-   "screens": [
     {
      "t": "intro",
      "w": "support",
      "pt": "apoio"
     },
     {
-     "t": "meaning",
+     "t": "hear",
      "w": "support",
      "pt": "apoio",
      "o": [
-      "trazer",
-      "casa",
-      "apoio"
-     ]
-    },
-    {
-     "t": "intro",
-     "w": "time",
-     "pt": "tempo"
-    },
-    {
-     "t": "hear",
-     "w": "time",
-     "pt": "tempo",
-     "o": [
-      "time",
-      "confidential",
-      "up"
+      "support",
+      "month",
+      "plan"
      ]
     },
     {
      "t": "pairs",
      "p": [
       [
+       "some",
+       "algum"
+      ],
+      [
        "support",
        "apoio"
       ],
       [
-       "time",
-       "tempo"
+       "decide",
+       "decidir"
       ],
       [
-       "bring",
-       "trazer"
+       "everything",
+       "tudo"
       ],
       [
-       "button",
-       "botão"
-      ],
-      [
-       "safe",
-       "seguro"
+       "week",
+       "semana"
       ]
      ]
     },
@@ -1876,9 +1195,9 @@
      "w": "visit",
      "pt": "visitar",
      "o": [
-      "visit",
       "some",
-      "safe"
+      "visit",
+      "bring"
      ]
     },
     {
@@ -1891,9 +1210,9 @@
      "w": "worry",
      "pt": "preocupar-se",
      "o": [
-      "sozinho",
-      "muito",
-      "preocupar-se"
+      "juntos",
+      "preocupar-se",
+      "aluguel"
      ]
     },
     {
@@ -1901,9 +1220,9 @@
      "w": "visit",
      "pt": "visitar",
      "o": [
-      "everything",
+      "landlord",
       "visit",
-      "button"
+      "make"
      ]
     },
     {
@@ -1918,36 +1237,18 @@
        "preocupar-se"
       ],
       [
+       "some",
+       "algum"
+      ],
+      [
        "support",
        "apoio"
       ],
       [
-       "time",
-       "tempo"
-      ],
-      [
-       "tell",
-       "contar"
+       "feel",
+       "sentir"
       ]
      ]
-    },
-    {
-     "t": "phrase",
-     "en": "How can I support you?",
-     "pt": "Como posso te apoiar?",
-     "v": "en-US-JennyNeural"
-    },
-    {
-     "t": "bank",
-     "en": "How can I support you?",
-     "pt": "Como posso te apoiar?",
-     "v": "en-US-JennyNeural",
-     "x": [
-      "home",
-      "fall",
-      "almost"
-     ],
-     "wr": "translate"
     },
     {
      "t": "phrase",
@@ -1956,71 +1257,770 @@
      "v": "en-US-AvaNeural"
     },
     {
-     "t": "fill",
-     "en": "Yes. I'm very worried.",
-     "pt": "Sim. Estou muito preocupada.",
-     "v": "en-US-AvaNeural",
-     "gap": "Yes. I'm very ___.",
-     "w": "worried",
-     "o": [
-      "read",
-      "button",
-      "worried"
-     ]
-    },
-    {
-     "t": "speak",
-     "en": "How can I support you?",
-     "pt": "Como posso te apoiar?",
-     "v": "en-US-JennyNeural",
-     "o": [
-      "Sr. Okoro, o senhor faz compras?",
-      "Como posso te apoiar?",
-      "Traga seu apetite! Vou fazer chá."
-     ]
-    },
-    {
-     "t": "type",
-     "en": "Yes. I'm very worried.",
-     "pt": "Sim. Estou muito preocupada.",
-     "v": "en-US-AvaNeural",
-     "x": [
-      "manager",
-      "that",
-      "sit"
-     ]
-    },
-    {
-     "t": "listen",
-     "en": "How can I support you?",
-     "pt": "Como posso te apoiar?",
-     "v": "en-US-JennyNeural",
-     "o": [
-      "Good. You have the right to decide.",
-      "How can I support you?",
-      "Lily is eight, and Marcus is four."
-     ]
-    },
-    {
-     "t": "speak",
-     "en": "Yes. I'm very worried.",
-     "pt": "Sim. Estou muito preocupada.",
-     "v": "en-US-AvaNeural",
-     "o": [
-      "Vou dar retorno na semana que vem.",
-      "Obrigada, Rosa! Muito obrigada!",
-      "Sim. Estou muito preocupada."
-     ]
-    },
-    {
      "t": "bank",
      "en": "Yes. I'm very worried.",
      "pt": "Sim. Estou muito preocupada.",
      "v": "en-US-AvaNeural",
      "x": [
-      "your",
-      "care",
-      "say"
+      "family",
+      "four",
+      "if"
+     ],
+     "wr": "translate"
+    },
+    {
+     "t": "phrase",
+     "en": "I'm worried. He lives alone.",
+     "pt": "Estou preocupada. Ele mora sozinho.",
+     "v": "en-NG-EzinneNeural"
+    },
+    {
+     "t": "fill",
+     "en": "I'm worried. He lives alone.",
+     "pt": "Estou preocupada. Ele mora sozinho.",
+     "v": "en-NG-EzinneNeural",
+     "gap": "I'm ___. He lives alone.",
+     "w": "worried",
+     "o": [
+      "bring",
+      "worried",
+      "they"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Yes. I'm very worried.",
+     "pt": "Sim. Estou muito preocupada.",
+     "v": "en-US-AvaNeural",
+     "o": [
+      "Jasmine! Olá! Você parece feliz!",
+      "Então, o que te traz aqui hoje?",
+      "Sim. Estou muito preocupada."
+     ]
+    },
+    {
+     "t": "type",
+     "en": "I'm worried. He lives alone.",
+     "pt": "Estou preocupada. Ele mora sozinho.",
+     "v": "en-NG-EzinneNeural",
+     "x": [
+      "shop",
+      "home",
+      "war"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "Yes. I'm very worried.",
+     "pt": "Sim. Estou muito preocupada.",
+     "v": "en-US-AvaNeural",
+     "o": [
+      "Good afternoon. I'm Sharon, the ward manager.",
+      "Hello. I'm Rosa, his social worker.",
+      "Yes. I'm very worried."
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "I'm worried. He lives alone.",
+     "pt": "Estou preocupada. Ele mora sozinho.",
+     "v": "en-NG-EzinneNeural",
+     "o": [
+      "Posso ler?",
+      "Que maravilha! Parabéns!",
+      "Estou preocupada. Ele mora sozinho."
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "I'm worried. He lives alone.",
+     "pt": "Estou preocupada. Ele mora sozinho.",
+     "v": "en-NG-EzinneNeural",
+     "x": [
+      "if",
+      "read",
+      "home"
+     ],
+     "wr": "translate"
+    }
+   ]
+  },
+  {
+   "id": "socz7",
+   "title": "would · agree · also · better",
+   "titlePt": "(condicional) -ria · concordar · também · melhor",
+   "emoji": "⭐",
+   "words": [
+    "would",
+    "agree",
+    "also",
+    "better"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "would",
+     "pt": "(condicional) -ria"
+    },
+    {
+     "t": "meaning",
+     "w": "would",
+     "pt": "(condicional) -ria",
+     "o": [
+      "algum",
+      "(condicional) -ria",
+      "fazer"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "agree",
+     "pt": "concordar"
+    },
+    {
+     "t": "hear",
+     "w": "agree",
+     "pt": "concordar",
+     "o": [
+      "confidential",
+      "make",
+      "agree"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "would",
+       "(condicional) -ria"
+      ],
+      [
+       "agree",
+       "concordar"
+      ],
+      [
+       "together",
+       "juntos"
+      ],
+      [
+       "safe",
+       "seguro"
+      ],
+      [
+       "everything",
+       "tudo"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "also",
+     "pt": "também"
+    },
+    {
+     "t": "pick",
+     "w": "also",
+     "pt": "também",
+     "o": [
+      "much",
+      "also",
+      "confidential"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "better",
+     "pt": "melhor"
+    },
+    {
+     "t": "meaning",
+     "w": "better",
+     "pt": "melhor",
+     "o": [
+      "preocupar-se",
+      "melhor",
+      "apoio"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "also",
+     "pt": "também",
+     "o": [
+      "also",
+      "week",
+      "pay"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "also",
+       "também"
+      ],
+      [
+       "better",
+       "melhor"
+      ],
+      [
+       "would",
+       "(condicional) -ria"
+      ],
+      [
+       "agree",
+       "concordar"
+      ],
+      [
+       "together",
+       "juntos"
+      ]
+     ]
+    },
+    {
+     "t": "phrase",
+     "en": "Yes. I agree.",
+     "pt": "Sim. Eu concordo.",
+     "v": "en-KE-ChilembaNeural"
+    },
+    {
+     "t": "bank",
+     "en": "Yes. I agree.",
+     "pt": "Sim. Eu concordo.",
+     "v": "en-KE-ChilembaNeural",
+     "x": [
+      "lot",
+      "normal",
+      "children"
+     ],
+     "wr": "translate"
+    },
+    {
+     "t": "phrase",
+     "en": "That's good. I feel better.",
+     "pt": "Isso é bom. Me sinto melhor.",
+     "v": "en-NG-EzinneNeural"
+    },
+    {
+     "t": "fill",
+     "en": "That's good. I feel better.",
+     "pt": "Isso é bom. Me sinto melhor.",
+     "v": "en-NG-EzinneNeural",
+     "gap": "That's good. I feel ___.",
+     "w": "better",
+     "o": [
+      "better",
+      "fridge",
+      "food"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Yes. I agree.",
+     "pt": "Sim. Eu concordo.",
+     "v": "en-KE-ChilembaNeural",
+     "o": [
+      "Sim. Eu concordo.",
+      "Então, o que te traz aqui hoje?",
+      "Começo na segunda."
+     ]
+    },
+    {
+     "t": "type",
+     "en": "That's good. I feel better.",
+     "pt": "Isso é bom. Me sinto melhor.",
+     "v": "en-NG-EzinneNeural",
+     "x": [
+      "have",
+      "pay",
+      "daughter"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "Yes. I agree.",
+     "pt": "Sim. Eu concordo.",
+     "v": "en-KE-ChilembaNeural",
+     "o": [
+      "I'll follow up next month, OK?",
+      "Yes. I agree.",
+      "Tell me!"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "That's good. I feel better.",
+     "pt": "Isso é bom. Me sinto melhor.",
+     "v": "en-NG-EzinneNeural",
+     "o": [
+      "Quantos anos têm seus filhos?",
+      "Você tem o direito de decidir.",
+      "Isso é bom. Me sinto melhor."
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "That's good. I feel better.",
+     "pt": "Isso é bom. Me sinto melhor.",
+     "v": "en-NG-EzinneNeural",
+     "x": [
+      "his",
+      "must",
+      "too"
+     ],
+     "wr": "translate"
+    }
+   ]
+  },
+  {
+   "id": "socz8",
+   "title": "fall · hard · if · last",
+   "titlePt": "cair · difícil · se · último",
+   "emoji": "🗝️",
+   "words": [
+    "fall",
+    "hard",
+    "if",
+    "last"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "fall",
+     "pt": "cair"
+    },
+    {
+     "t": "meaning",
+     "w": "fall",
+     "pt": "cair",
+     "o": [
+      "cair",
+      "mês",
+      "melhor"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "hard",
+     "pt": "difícil"
+    },
+    {
+     "t": "hear",
+     "w": "hard",
+     "pt": "difícil",
+     "o": [
+      "hard",
+      "decide",
+      "button"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "fall",
+       "cair"
+      ],
+      [
+       "hard",
+       "difícil"
+      ],
+      [
+       "everything",
+       "tudo"
+      ],
+      [
+       "week",
+       "semana"
+      ],
+      [
+       "better",
+       "melhor"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "if",
+     "pt": "se"
+    },
+    {
+     "t": "pick",
+     "w": "if",
+     "pt": "se",
+     "o": [
+      "pay",
+      "if",
+      "fall"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "last",
+     "pt": "último"
+    },
+    {
+     "t": "meaning",
+     "w": "last",
+     "pt": "último",
+     "o": [
+      "melhor",
+      "último",
+      "pagar"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "if",
+     "pt": "se",
+     "o": [
+      "agree",
+      "safe",
+      "if"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "if",
+       "se"
+      ],
+      [
+       "last",
+       "último"
+      ],
+      [
+       "fall",
+       "cair"
+      ],
+      [
+       "hard",
+       "difícil"
+      ],
+      [
+       "everything",
+       "tudo"
+      ]
+     ]
+    },
+    {
+     "t": "phrase",
+     "en": "OK. I'd like that.",
+     "pt": "Tá. Eu gostaria disso.",
+     "v": "en-US-AvaNeural"
+    },
+    {
+     "t": "bank",
+     "en": "OK. I'd like that.",
+     "pt": "Tá. Eu gostaria disso.",
+     "v": "en-US-AvaNeural",
+     "x": [
+      "door",
+      "open",
+      "talk"
+     ],
+     "wr": "translate"
+    },
+    {
+     "t": "phrase",
+     "en": "I'll follow up next month, OK?",
+     "pt": "Vou dar retorno no mês que vem, tá?",
+     "v": "en-PH-RosaNeural"
+    },
+    {
+     "t": "fill",
+     "en": "I'll follow up next month, OK?",
+     "pt": "Vou dar retorno no mês que vem, tá?",
+     "v": "en-PH-RosaNeural",
+     "gap": "I'll follow up next ___, OK?",
+     "w": "month",
+     "o": [
+      "month",
+      "were",
+      "go"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "OK. I'd like that.",
+     "pt": "Tá. Eu gostaria disso.",
+     "v": "en-US-AvaNeural",
+     "o": [
+      "Tá. Eu gostaria disso.",
+      "Por favor, não se sinta. Pedir ajuda é corajoso.",
+      "Olá. Eu sou a Rosa, a assistente social dele."
+     ]
+    },
+    {
+     "t": "type",
+     "en": "I'll follow up next month, OK?",
+     "pt": "Vou dar retorno no mês que vem, tá?",
+     "v": "en-PH-RosaNeural",
+     "x": [
+      "tell",
+      "friday",
+      "did"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "OK. I'd like that.",
+     "pt": "Tá. Eu gostaria disso.",
+     "v": "en-US-AvaNeural",
+     "o": [
+      "Lily is eight, and Marcus is four.",
+      "That's wonderful! Congratulations!",
+      "OK. I'd like that."
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "I'll follow up next month, OK?",
+     "pt": "Vou dar retorno no mês que vem, tá?",
+     "v": "en-PH-RosaNeural",
+     "o": [
+      "Vou dar retorno no mês que vem, tá?",
+      "Ótimo. O senhor tem o direito de decidir.",
+      "Tá. Isso é justo. Ela pode ficar."
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "I'll follow up next month, OK?",
+     "pt": "Vou dar retorno no mês que vem, tá?",
+     "v": "en-PH-RosaNeural",
+     "x": [
+      "letter",
+      "say",
+      "tea"
+     ],
+     "wr": "translate"
+    }
+   ]
+  },
+  {
+   "id": "socz9",
+   "title": "leave · letter · live · money",
+   "titlePt": "sair · carta · morar · dinheiro",
+   "emoji": "🚀",
+   "words": [
+    "leave",
+    "letter",
+    "live",
+    "money"
+   ],
+   "screens": [
+    {
+     "t": "intro",
+     "w": "leave",
+     "pt": "sair"
+    },
+    {
+     "t": "meaning",
+     "w": "leave",
+     "pt": "sair",
+     "o": [
+      "plano",
+      "sair",
+      "morar"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "letter",
+     "pt": "carta"
+    },
+    {
+     "t": "hear",
+     "w": "letter",
+     "pt": "carta",
+     "o": [
+      "worry",
+      "confidential",
+      "letter"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "leave",
+       "sair"
+      ],
+      [
+       "letter",
+       "carta"
+      ],
+      [
+       "much",
+       "muito"
+      ],
+      [
+       "last",
+       "último"
+      ],
+      [
+       "button",
+       "botão"
+      ]
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "live",
+     "pt": "morar"
+    },
+    {
+     "t": "pick",
+     "w": "live",
+     "pt": "morar",
+     "o": [
+      "bring",
+      "rent",
+      "live"
+     ]
+    },
+    {
+     "t": "intro",
+     "w": "money",
+     "pt": "dinheiro"
+    },
+    {
+     "t": "meaning",
+     "w": "money",
+     "pt": "dinheiro",
+     "o": [
+      "dinheiro",
+      "proprietário",
+      "ficar"
+     ]
+    },
+    {
+     "t": "hear",
+     "w": "live",
+     "pt": "morar",
+     "o": [
+      "visit",
+      "month",
+      "live"
+     ]
+    },
+    {
+     "t": "pairs",
+     "p": [
+      [
+       "live",
+       "morar"
+      ],
+      [
+       "money",
+       "dinheiro"
+      ],
+      [
+       "leave",
+       "sair"
+      ],
+      [
+       "letter",
+       "carta"
+      ],
+      [
+       "follow",
+       "seguir"
+      ]
+     ]
+    },
+    {
+     "t": "phrase",
+     "en": "Yes. I don't have the money.",
+     "pt": "Sim. Eu não tenho o dinheiro.",
+     "v": "en-US-AvaNeural"
+    },
+    {
+     "t": "bank",
+     "en": "Yes. I don't have the money.",
+     "pt": "Sim. Eu não tenho o dinheiro.",
+     "v": "en-US-AvaNeural",
+     "x": [
+      "must",
+      "this",
+      "someone"
+     ],
+     "wr": "translate"
+    },
+    {
+     "t": "phrase",
+     "en": "Rosa, look. A letter from my landlord.",
+     "pt": "Rosa, olha. Uma carta do meu proprietário.",
+     "v": "en-US-AvaNeural"
+    },
+    {
+     "t": "fill",
+     "en": "Rosa, look. A letter from my landlord.",
+     "pt": "Rosa, olha. Uma carta do meu proprietário.",
+     "v": "en-US-AvaNeural",
+     "gap": "Rosa, look. A letter from my ___.",
+     "w": "landlord",
+     "o": [
+      "landlord",
+      "confidential",
+      "month"
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Yes. I don't have the money.",
+     "pt": "Sim. Eu não tenho o dinheiro.",
+     "v": "en-US-AvaNeural",
+     "o": [
+      "Obrigada a todos.",
+      "Sim. Eu não tenho o dinheiro.",
+      "Um pouco. Não muito."
+     ]
+    },
+    {
+     "t": "type",
+     "en": "Rosa, look. A letter from my landlord.",
+     "pt": "Rosa, olha. Uma carta do meu proprietário.",
+     "v": "en-US-AvaNeural",
+     "x": [
+      "fair",
+      "time",
+      "sit"
+     ]
+    },
+    {
+     "t": "listen",
+     "en": "Yes. I don't have the money.",
+     "pt": "Sim. Eu não tenho o dinheiro.",
+     "v": "en-US-AvaNeural",
+     "o": [
+      "Yes. I don't have the money.",
+      "Can you come back on Thursday?",
+      "Good. You have the right to decide."
+     ]
+    },
+    {
+     "t": "speak",
+     "en": "Rosa, look. A letter from my landlord.",
+     "pt": "Rosa, olha. Uma carta do meu proprietário.",
+     "v": "en-US-AvaNeural",
+     "o": [
+      "Vou dar retorno no mês que vem, tá?",
+      "Cem dólares a mais por mês.",
+      "Rosa, olha. Uma carta do meu proprietário."
+     ]
+    },
+    {
+     "t": "bank",
+     "en": "Rosa, look. A letter from my landlord.",
+     "pt": "Rosa, olha. Uma carta do meu proprietário.",
+     "v": "en-US-AvaNeural",
+     "x": [
+      "stay",
+      "shop",
+      "button"
      ],
      "wr": "translate"
     }
@@ -2037,45 +2037,45 @@
      "t": "pairs",
      "p": [
       [
-       "up",
-       "para cima"
+       "everything",
+       "tudo"
       ],
       [
-       "bring",
-       "trazer"
+       "would",
+       "(condicional) -ria"
       ],
       [
-       "home",
-       "casa"
+       "tell",
+       "contar"
       ],
       [
-       "job",
-       "trabalho"
+       "rent",
+       "aluguel"
       ],
       [
-       "call",
-       "ligar"
+       "month",
+       "mês"
       ]
      ]
     },
     {
      "t": "meaning",
-     "w": "month",
-     "pt": "mês",
+     "w": "pay",
+     "pt": "pagar",
      "o": [
-      "mês",
-      "apoio",
-      "tudo"
+      "pagar",
+      "botão",
+      "aluguel"
      ]
     },
     {
      "t": "hear",
-     "w": "decide",
-     "pt": "decidir",
+     "w": "if",
+     "pt": "se",
      "o": [
-      "decide",
-      "worry",
-      "make"
+      "agree",
+      "plan",
+      "if"
      ]
     },
     {
@@ -2090,9 +2090,9 @@
      "pt": "Tudo o que você me contar é confidencial.",
      "v": "en-US-JennyNeural",
      "x": [
-      "door",
-      "must",
-      "better"
+      "it",
+      "and",
+      "his"
      ],
      "wr": "translate"
     },
@@ -2102,9 +2102,9 @@
      "pt": "Tudo o que você me contar é confidencial.",
      "v": "en-US-JennyNeural",
      "o": [
-      "Ah. Então sim. Eu gostaria disso.",
-      "Sim, na cozinha. Mas estou bem!",
-      "Tudo o que você me contar é confidencial."
+      "Tudo o que você me contar é confidencial.",
+      "Tá. Até o mês que vem!",
+      "Traga seu apetite! Vou fazer chá."
      ]
     },
     {
@@ -2121,8 +2121,8 @@
      "gap": "What ___ you here today?",
      "w": "brings",
      "o": [
-      "together",
-      "job",
+      "take",
+      "extra",
       "brings"
      ]
     },
@@ -2132,33 +2132,33 @@
      "pt": "O que te traz aqui hoje?",
      "v": "en-US-JennyNeural",
      "x": [
-      "friday",
-      "him",
-      "follow"
+      "and",
+      "neck",
+      "fun"
      ]
     },
     {
      "t": "pairs",
      "p": [
       [
-       "safe",
-       "seguro"
+       "landlord",
+       "proprietário"
       ],
       [
-       "help",
-       "ajuda"
+       "follow",
+       "seguir"
       ],
       [
-       "visit",
-       "visitar"
+       "better",
+       "melhor"
       ],
       [
-       "button",
-       "botão"
+       "support",
+       "apoio"
       ],
       [
-       "rent",
-       "aluguel"
+       "hard",
+       "difícil"
       ]
      ]
     },
@@ -2174,9 +2174,9 @@
      "pt": "Como posso te apoiar?",
      "v": "en-US-JennyNeural",
      "o": [
+      "Good afternoon. I'm Sharon, the ward manager.",
       "First, everything you tell me is confidential.",
-      "How can I support you?",
-      "I'll follow up next month, OK?"
+      "How can I support you?"
      ]
     },
     {
@@ -2185,19 +2185,19 @@
      "pt": "Como posso te apoiar?",
      "v": "en-US-JennyNeural",
      "o": [
-      "A geladeira está quase vazia.",
-      "Sim, claro.",
+      "Rosa, olha. Uma carta do meu proprietário.",
+      "Vou dar retorno na semana que vem.",
       "Como posso te apoiar?"
      ]
     },
     {
      "t": "pick",
-     "w": "tell",
-     "pt": "contar",
+     "w": "leave",
+     "pt": "sair",
      "o": [
-      "everything",
-      "tell",
-      "landlord"
+      "landlord",
+      "fall",
+      "leave"
      ]
     },
     {
@@ -2206,9 +2206,9 @@
      "pt": "Tudo o que você me contar é confidencial.",
      "v": "en-US-JennyNeural",
      "x": [
-      "say",
-      "monday",
-      "water"
+      "hello",
+      "alone",
+      "week"
      ]
     },
     {
@@ -2217,9 +2217,9 @@
      "pt": "Como posso te apoiar?",
      "v": "en-US-JennyNeural",
      "x": [
-      "luck",
-      "up",
-      "often"
+      "morning",
+      "too",
+      "must"
      ],
      "wr": "translate"
     },
@@ -2228,9 +2228,9 @@
      "w": "some",
      "pt": "algum",
      "o": [
-      "aluguel",
-      "decidir",
-      "algum"
+      "algum",
+      "proprietário",
+      "mês"
      ]
     },
     {
@@ -2239,9 +2239,9 @@
      "pt": "O que te traz aqui hoje?",
      "v": "en-US-JennyNeural",
      "o": [
-      "Eu entendo. O que o seu pai quer?",
       "O que te traz aqui hoje?",
-      "Tá. Eu gostaria disso."
+      "A Lily tem oito, e o Marcus tem quatro.",
+      "Tudo o que você me contar é confidencial."
      ]
     },
     {
@@ -2249,9 +2249,9 @@
      "w": "make",
      "pt": "fazer",
      "o": [
-      "make",
-      "follow",
-      "month"
+      "button",
+      "money",
+      "make"
      ]
     },
     {
@@ -2260,9 +2260,9 @@
      "pt": "O que te traz aqui hoje?",
      "v": "en-US-JennyNeural",
      "x": [
-      "difficult",
-      "empty",
-      "or"
+      "four",
+      "how",
+      "understand"
      ],
      "wr": "translate"
     }

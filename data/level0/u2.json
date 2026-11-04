@@ -55,12 +55,12 @@
        "sou"
       ],
       [
-       "is",
-       "é"
-      ],
-      [
        "you",
        "você"
+      ],
+      [
+       "is",
+       "é"
       ]
      ]
     },
@@ -91,7 +91,7 @@
      "o": [
       "aluno(a)",
       "é",
-      "sou"
+      "você"
      ]
     },
     {
@@ -240,9 +240,9 @@
      "w": "and",
      "pt": "e",
      "o": [
-      "sou",
+      "onde",
       "e",
-      "é"
+      "sou"
      ]
     },
     {
@@ -256,8 +256,8 @@
      "pt": "onde",
      "o": [
       "where",
-      "you",
-      "meet"
+      "is",
+      "you"
      ]
     },
     {
@@ -272,16 +272,16 @@
        "onde"
       ],
       [
-       "you",
-       "você"
+       "am",
+       "sou"
       ],
       [
        "is",
        "é"
       ],
       [
-       "am",
-       "sou"
+       "you",
+       "você"
       ]
      ]
     },
@@ -297,7 +297,7 @@
      "o": [
       "meet",
       "you",
-      "nice"
+      "is"
      ]
     },
     {
@@ -310,7 +310,7 @@
      "w": "nice",
      "pt": "legal",
      "o": [
-      "é",
+      "sou",
       "legal",
       "e"
      ]
@@ -320,7 +320,7 @@
      "w": "meet",
      "pt": "conhecer",
      "o": [
-      "nice",
+      "is",
       "meet",
       "you"
      ]
@@ -403,7 +403,7 @@
      "w": "and",
      "pt": "e",
      "o": [
-      "is",
+      "am",
       "and",
       "nice"
      ]
@@ -465,9 +465,9 @@
      "w": "he",
      "pt": "ele",
      "o": [
-      "e",
+      "legal",
       "ele",
-      "onde"
+      "ela"
      ]
     },
     {
@@ -480,8 +480,8 @@
      "w": "she",
      "pt": "ela",
      "o": [
-      "and",
-      "everyone",
+      "he",
+      "am",
       "she"
      ]
     },
@@ -497,16 +497,16 @@
        "ela"
       ],
       [
-       "is",
-       "é"
-      ],
-      [
-       "from",
-       "de"
+       "am",
+       "sou"
       ],
       [
        "meet",
        "conhecer"
+      ],
+      [
+       "you",
+       "você"
       ]
      ]
     },
@@ -521,8 +521,8 @@
      "pt": "todo mundo",
      "o": [
       "everyone",
-      "from",
-      "and"
+      "meet",
+      "nice"
      ]
     },
     {
@@ -535,9 +535,9 @@
      "w": "not",
      "pt": "não",
      "o": [
-      "ela",
+      "legal",
       "não",
-      "ele"
+      "você"
      ]
     },
     {
@@ -545,8 +545,8 @@
      "w": "everyone",
      "pt": "todo mundo",
      "o": [
-      "nice",
-      "from",
+      "not",
+      "meet",
       "everyone"
      ]
     },
@@ -570,8 +570,8 @@
        "ela"
       ],
       [
-       "you",
-       "você"
+       "is",
+       "é"
       ]
      ]
     },
@@ -628,8 +628,8 @@
      "w": "he",
      "pt": "ele",
      "o": [
-      "you",
-      "from",
+      "is",
+      "meet",
       "he"
      ]
     },
@@ -690,9 +690,9 @@
      "w": "in",
      "pt": "em",
      "o": [
-      "legal",
+      "não",
       "em",
-      "é"
+      "novo(a)"
      ]
     },
     {
@@ -706,8 +706,8 @@
      "pt": "novo(a)",
      "o": [
       "new",
-      "meet",
-      "english"
+      "is",
+      "in"
      ]
     },
     {
@@ -722,16 +722,16 @@
        "novo(a)"
       ],
       [
-       "she",
-       "ela"
+       "he",
+       "ele"
       ],
       [
-       "nice",
-       "legal"
+       "not",
+       "não"
       ],
       [
-       "meet",
-       "conhecer"
+       "is",
+       "é"
       ]
      ]
     },
@@ -745,8 +745,8 @@
      "w": "class",
      "pt": "aula",
      "o": [
-      "everyone",
-      "from",
+      "where",
+      "english",
       "class"
      ]
     },
@@ -761,7 +761,7 @@
      "pt": "inglês",
      "o": [
       "inglês",
-      "você",
+      "não",
       "novo(a)"
      ]
     },
@@ -770,9 +770,9 @@
      "w": "class",
      "pt": "aula",
      "o": [
-      "new",
+      "everyone",
       "class",
-      "am"
+      "meet"
      ]
     },
     {
@@ -795,8 +795,8 @@
        "novo(a)"
       ],
       [
-       "is",
-       "é"
+       "everyone",
+       "todo mundo"
       ]
      ]
     },
@@ -855,7 +855,7 @@
      "o": [
       "english",
       "in",
-      "is"
+      "new"
      ]
     },
     {
@@ -915,9 +915,9 @@
      "w": "game",
      "pt": "jogo",
      "o": [
-      "onde",
+      "de",
       "jogo",
-      "todo mundo"
+      "novo(a)"
      ]
     },
     {
@@ -931,8 +931,8 @@
      "pt": "albergue",
      "o": [
       "hostel",
-      "in",
-      "party"
+      "really",
+      "everyone"
      ]
     },
     {
@@ -947,16 +947,16 @@
        "albergue"
       ],
       [
-       "not",
-       "não"
+       "from",
+       "de"
       ],
       [
-       "nice",
-       "legal"
+       "where",
+       "onde"
       ],
       [
-       "and",
-       "e"
+       "he",
+       "ele"
       ]
      ]
     },
@@ -970,8 +970,8 @@
      "w": "party",
      "pt": "festa",
      "o": [
-      "nice",
-      "and",
+      "where",
+      "he",
       "party"
      ]
     },
@@ -985,8 +985,8 @@
      "w": "really",
      "pt": "sério? de verdade",
      "o": [
-      "é",
-      "todo mundo",
+      "novo(a)",
+      "jogo",
       "sério? de verdade"
      ]
     },
@@ -995,8 +995,8 @@
      "w": "party",
      "pt": "festa",
      "o": [
+      "in",
       "class",
-      "really",
       "party"
      ]
     },
@@ -1020,8 +1020,8 @@
        "albergue"
       ],
       [
-       "everyone",
-       "todo mundo"
+       "new",
+       "novo(a)"
       ]
      ]
     },
@@ -1078,8 +1078,8 @@
      "w": "game",
      "pt": "jogo",
      "o": [
+      "english",
       "in",
-      "class",
       "game"
      ]
     },
@@ -1140,8 +1140,8 @@
      "w": "student",
      "pt": "aluno(a)",
      "o": [
-      "inglês",
-      "de",
+      "conhecer",
+      "sério? de verdade",
       "aluno(a)"
      ]
     },
@@ -1155,9 +1155,9 @@
      "w": "this",
      "pt": "este",
      "o": [
-      "really",
+      "new",
       "this",
-      "new"
+      "hostel"
      ]
     },
     {
@@ -1172,16 +1172,16 @@
        "este"
       ],
       [
-       "party",
-       "festa"
+       "everyone",
+       "todo mundo"
+      ],
+      [
+       "hostel",
+       "albergue"
       ],
       [
        "she",
        "ela"
-      ],
-      [
-       "where",
-       "onde"
       ]
      ]
     },
@@ -1196,8 +1196,8 @@
      "pt": "curso",
      "o": [
       "course",
-      "you",
-      "everyone"
+      "day",
+      "game"
      ]
     },
     {
@@ -1211,8 +1211,8 @@
      "pt": "dia",
      "o": [
       "dia",
-      "em",
-      "não"
+      "sério? de verdade",
+      "aula"
      ]
     },
     {
@@ -1220,9 +1220,9 @@
      "w": "course",
      "pt": "curso",
      "o": [
-      "am",
+      "english",
       "course",
-      "this"
+      "is"
      ]
     },
     {
@@ -1245,8 +1245,8 @@
        "este"
       ],
       [
-       "hostel",
-       "albergue"
+       "not",
+       "não"
       ]
      ]
     },
@@ -1367,8 +1367,8 @@
      "w": "door",
      "pt": "porta",
      "o": [
-      "legal",
-      "aula",
+      "conhecer",
+      "tem",
       "porta"
      ]
     },
@@ -1383,8 +1383,8 @@
      "pt": "primeiro",
      "o": [
       "first",
-      "really",
-      "not"
+      "student",
+      "new"
      ]
     },
     {
@@ -1399,16 +1399,16 @@
        "primeiro"
       ],
       [
-       "is",
-       "é"
+       "student",
+       "aluno(a)"
       ],
       [
        "am",
        "sou"
       ],
       [
-       "not",
-       "não"
+       "class",
+       "aula"
       ]
      ]
     },
@@ -1422,9 +1422,9 @@
      "w": "friend",
      "pt": "amigo(a)",
      "o": [
-      "is",
+      "game",
       "friend",
-      "new"
+      "everyone"
      ]
     },
     {
@@ -1438,8 +1438,8 @@
      "pt": "tem",
      "o": [
       "tem",
-      "porta",
-      "novo(a)"
+      "todo mundo",
+      "albergue"
      ]
     },
     {
@@ -1447,8 +1447,8 @@
      "w": "friend",
      "pt": "amigo(a)",
      "o": [
-      "not",
-      "course",
+      "class",
+      "you",
       "friend"
      ]
     },
@@ -1472,8 +1472,8 @@
        "primeiro"
       ],
       [
-       "from",
-       "de"
+       "really",
+       "sério? de verdade"
       ]
      ]
     },
@@ -1594,8 +1594,8 @@
      "w": "it",
      "pt": "isso",
      "o": [
-      "onde",
-      "legal",
+      "novo(a)",
+      "conhecer",
       "isso"
      ]
     },
@@ -1609,8 +1609,8 @@
      "w": "my",
      "pt": "meu",
      "o": [
-      "game",
-      "new",
+      "not",
+      "everyone",
       "my"
      ]
     },
@@ -1626,16 +1626,16 @@
        "meu"
       ],
       [
-       "this",
-       "este"
+       "is",
+       "é"
       ],
       [
-       "you",
-       "você"
+       "door",
+       "porta"
       ],
       [
-       "am",
-       "sou"
+       "english",
+       "inglês"
       ]
      ]
     },
@@ -1649,9 +1649,9 @@
      "w": "one",
      "pt": "um",
      "o": [
-      "door",
+      "am",
       "one",
-      "is"
+      "game"
      ]
     },
     {
@@ -1664,9 +1664,9 @@
      "w": "play",
      "pt": "jogar",
      "o": [
-      "tem",
+      "legal",
       "jogar",
-      "porta"
+      "sou"
      ]
     },
     {
@@ -1675,8 +1675,8 @@
      "pt": "um",
      "o": [
       "one",
-      "friend",
-      "you"
+      "he",
+      "door"
      ]
     },
     {
@@ -1699,8 +1699,8 @@
        "meu"
       ],
       [
-       "new",
-       "novo(a)"
+       "everyone",
+       "todo mundo"
       ]
      ]
     },
@@ -1821,9 +1821,9 @@
      "w": "shy",
      "pt": "tímido(a)",
      "o": [
-      "jogar",
+      "amigo(a)",
       "tímido(a)",
-      "amigo(a)"
+      "e"
      ]
     },
     {
@@ -1836,9 +1836,9 @@
      "w": "there",
      "pt": "lá",
      "o": [
-      "he",
+      "party",
       "there",
-      "game"
+      "not"
      ]
     },
     {
@@ -1853,16 +1853,16 @@
        "lá"
       ],
       [
-       "party",
-       "festa"
+       "day",
+       "dia"
       ],
       [
-       "you",
-       "você"
+       "english",
+       "inglês"
       ],
       [
-       "hostel",
-       "albergue"
+       "my",
+       "meu"
       ]
      ]
     },
@@ -1877,8 +1877,8 @@
      "pt": "o quê",
      "o": [
       "what",
-      "new",
-      "she"
+      "everyone",
+      "my"
      ]
     },
     {
@@ -1891,9 +1891,9 @@
      "w": "zero",
      "pt": "zero",
      "o": [
-      "é",
+      "tímido(a)",
       "zero",
-      "festa"
+      "o quê"
      ]
     },
     {
@@ -1901,8 +1901,8 @@
      "w": "what",
      "pt": "o quê",
      "o": [
-      "my",
-      "hostel",
+      "class",
+      "course",
       "what"
      ]
     },
@@ -1926,8 +1926,8 @@
        "lá"
       ],
       [
-       "student",
-       "aluno(a)"
+       "friend",
+       "amigo(a)"
       ]
      ]
     },
@@ -2037,12 +2037,8 @@
      "t": "pairs",
      "p": [
       [
-       "one",
-       "um"
-      ],
-      [
-       "shy",
-       "tímido(a)"
+       "play",
+       "jogar"
       ],
       [
        "this",
@@ -2053,29 +2049,33 @@
        "é"
       ],
       [
-       "really",
-       "sério? de verdade"
+       "shy",
+       "tímido(a)"
+      ],
+      [
+       "student",
+       "aluno(a)"
       ]
      ]
     },
     {
      "t": "meaning",
-     "w": "nice",
-     "pt": "legal",
+     "w": "meet",
+     "pt": "conhecer",
      "o": [
-      "legal",
-      "em",
-      "inglês"
+      "conhecer",
+      "inglês",
+      "em"
      ]
     },
     {
      "t": "hear",
-     "w": "first",
-     "pt": "primeiro",
+     "w": "it",
+     "pt": "isso",
      "o": [
-      "shy",
-      "first",
-      "am"
+      "this",
+      "it",
+      "zero"
      ]
     },
     {
@@ -2141,24 +2141,24 @@
      "t": "pairs",
      "p": [
       [
-       "from",
-       "de"
+       "one",
+       "um"
       ],
       [
-       "friend",
-       "amigo(a)"
+       "and",
+       "e"
       ],
       [
-       "zero",
-       "zero"
+       "day",
+       "dia"
       ],
       [
-       "new",
-       "novo(a)"
+       "hostel",
+       "albergue"
       ],
       [
-       "in",
-       "em"
+       "english",
+       "inglês"
       ]
      ]
     },
@@ -2192,12 +2192,12 @@
     },
     {
      "t": "pick",
-     "w": "it",
-     "pt": "isso",
+     "w": "everyone",
+     "pt": "todo mundo",
      "o": [
-      "party",
-      "shy",
-      "it"
+      "what",
+      "this",
+      "everyone"
      ]
     },
     {
@@ -2225,12 +2225,12 @@
     },
     {
      "t": "meaning",
-     "w": "there",
-     "pt": "lá",
+     "w": "new",
+     "pt": "novo(a)",
      "o": [
-      "aula",
-      "você",
-      "lá"
+      "tem",
+      "porta",
+      "novo(a)"
      ]
     },
     {
@@ -2246,12 +2246,12 @@
     },
     {
      "t": "hear",
-     "w": "student",
-     "pt": "aluno(a)",
+     "w": "first",
+     "pt": "primeiro",
      "o": [
-      "in",
-      "student",
-      "shy"
+      "english",
+      "first",
+      "this"
      ]
     },
     {
