@@ -128,4 +128,17 @@ Gerar o APK (saída em `android/app/build/outputs/apk/release/`), com o JDK do A
 cd android && ./gradlew assembleRelease
 ```
 
+Publicar uma versão nova do APK:
+
+1. Em `android/app/build.gradle.kts`, aumente `versionCode` e `versionName`.
+2. Gere o APK e copie `app-release.apk` para `apk/Prolingo.apk`.
+3. Em `apk/version.json`, use os mesmos números e escreva a novidade em `notes`.
+4. Publique o site. Ao abrir, o app compara o `versionCode`, pergunta se pode atualizar e só então baixa (`Updater.kt`).
+
+Link para compartilhar: https://prolingo101.vercel.app/apk/Prolingo.apk
+
+A atualização exige a mesma assinatura: guarde `%USERPROFILE%\.android\debug.keystore`. Sem esse arquivo, quem já tem o app precisa desinstalar antes de instalar a versão nova, e o progresso se perde.
+
+Mudanças só no site chegam ao app sem atualizar o APK.
+
 No celular: instale o APK e, no Android Auto, ative o modo desenvolvedor (toque 10 vezes em "Versão e permissões") e ligue **Fontes desconhecidas**.

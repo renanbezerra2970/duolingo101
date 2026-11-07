@@ -77,7 +77,10 @@ class MainActivity : Activity() {
             })
         }
         setContentView(web)
-        if (savedInstanceState == null) web.loadUrl(SITE) else web.restoreState(savedInstanceState)
+        if (savedInstanceState == null) {
+            web.loadUrl(SITE)
+            Updater(this).check()
+        } else web.restoreState(savedInstanceState)
     }
 
     override fun onSaveInstanceState(outState: Bundle) {

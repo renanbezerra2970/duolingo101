@@ -11,8 +11,8 @@ android {
         applicationId = "app.prolingo"
         minSdk = 28 // o Android Auto exige Android 9 ou superior
         targetSdk = 34 // no 35 o Android só dá foco de áudio ao app em primeiro plano: com o celular no bolso, a lição não tocaria
-        versionCode = 3
-        versionName = "0.3"
+        versionCode = 4
+        versionName = "0.4"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -41,4 +41,5 @@ dependencies {
     implementation("androidx.media3:media3-datasource:1.5.1")
     implementation("androidx.media3:media3-database:1.5.1")
     implementation("androidx.webkit:webkit:1.12.1")
+    implementation("androidx.core:core:1.13.1")
 }
