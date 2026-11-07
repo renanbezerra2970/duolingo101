@@ -18,6 +18,24 @@
     if ("speechSynthesis" in window) speechSynthesis.cancel();
   };
 
+  // o WebView também não fala sozinho: a leitura em voz alta vem do Android
+  let ttsId = 0;
+  const speaking = new Map();
+  window.__prolingoTTS = {
+    done(id) { const u = speaking.get(id); speaking.delete(id); u?.onend?.(); },
+  };
+  window.SpeechSynthesisUtterance = class {
+    constructor(text) { this.text = text; this.lang = "en-US"; this.rate = 1; }
+  };
+  Object.defineProperty(window, "speechSynthesis", {
+    configurable: true,
+    value: {
+      getVoices: () => [],
+      speak(u) { speaking.set(++ttsId, u); ProlingoNative.say(ttsId, u.text, u.lang, u.rate); },
+      cancel() { speaking.clear(); ProlingoNative.sayStop(); },
+    },
+  });
+
   if (!ProlingoNative.speechAvailable()) return;
   let cur = null;
   window.__prolingoSR = {

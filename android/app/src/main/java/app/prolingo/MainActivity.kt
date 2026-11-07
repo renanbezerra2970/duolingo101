@@ -10,6 +10,8 @@ import android.os.Bundle
 import android.speech.RecognitionListener
 import android.speech.RecognizerIntent
 import android.speech.SpeechRecognizer
+import android.speech.tts.TextToSpeech
+import android.speech.tts.UtteranceProgressListener
 import android.view.WindowInsets
 import android.webkit.JavascriptInterface
 import android.webkit.ValueCallback
@@ -21,12 +23,14 @@ import androidx.webkit.WebViewCompat
 import androidx.webkit.WebViewFeature
 import org.json.JSONArray
 import org.json.JSONObject
+import java.util.Locale
 
 /** O app completo: o próprio site, baixado sob demanda. Abre no celular e na tela do carro parado. */
 class MainActivity : Activity() {
     private lateinit var web: WebView
     private var recognizer: SpeechRecognizer? = null
     private var pendingFiles: ValueCallback<Array<Uri>>? = null
+    private var tts: TextToSpeech? = null
 
     @SuppressLint("SetJavaScriptEnabled")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -64,6 +68,14 @@ class MainActivity : Activity() {
             val script = assets.open("bridge.js").bufferedReader().use { it.readText() }
             WebViewCompat.addDocumentStartJavaScript(web, script, setOf("https://$SITE_HOST"))
         }
+        tts = TextToSpeech(this) {}.apply {
+            setOnUtteranceProgressListener(object : UtteranceProgressListener() {
+                override fun onStart(utteranceId: String?) {}
+                override fun onDone(utteranceId: String?) = ttsDone(utteranceId)
+                @Deprecated("Deprecated in Java")
+                override fun onError(utteranceId: String?) = ttsDone(utteranceId)
+            })
+        }
         setContentView(web)
         if (savedInstanceState == null) web.loadUrl(SITE) else web.restoreState(savedInstanceState)
     }
@@ -77,6 +89,7 @@ class MainActivity : Activity() {
     override fun onPause() {
         web.evaluateJavascript("window.__prolingoPause && __prolingoPause()", null)
         recognizer?.cancel()
+        tts?.stop()
         web.onPause()
         super.onPause()
     }
@@ -88,6 +101,7 @@ class MainActivity : Activity() {
 
     override fun onDestroy() {
         recognizer?.destroy()
+        tts?.shutdown()
         web.destroy()
         super.onDestroy()
     }
@@ -104,6 +118,8 @@ class MainActivity : Activity() {
             pendingFiles = null
         }
     }
+
+    private fun ttsDone(id: String?) = runOnUiThread { web.evaluateJavascript("window.__prolingoTTS && __prolingoTTS.done($id)", null) }
 
     private fun toJs(code: String) = runOnUiThread { web.evaluateJavascript("window.__prolingoSR && __prolingoSR.$code", null) }
 
@@ -155,6 +171,14 @@ class MainActivity : Activity() {
     }
 
     private inner class Bridge {
+        @JavascriptInterface fun say(id: Int, text: String, lang: String, rate: Float) = runOnUiThread {
+            val engine = tts ?: return@runOnUiThread ttsDone(id.toString())
+            engine.language = Locale.forLanguageTag(lang)
+            engine.setSpeechRate(rate)
+            if (engine.speak(text, TextToSpeech.QUEUE_ADD, null, id.toString()) != TextToSpeech.SUCCESS) ttsDone(id.toString())
+        }
+        @JavascriptInterface fun sayStop() = runOnUiThread { tts?.stop() }
+        @JavascriptInterface fun keepScreen(on: Boolean) = runOnUiThread { web.keepScreenOn = on }
         @JavascriptInterface fun speechAvailable() = SpeechRecognizer.isRecognitionAvailable(this@MainActivity)
         @JavascriptInterface fun startListening(lang: String, alternatives: Int) = runOnUiThread { listen(lang, alternatives) }
         @JavascriptInterface fun stopListening() = runOnUiThread { recognizer?.stopListening() }

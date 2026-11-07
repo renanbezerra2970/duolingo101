@@ -8,12 +8,11 @@
 
     <queries>
         <intent><action android:name="android.speech.RecognitionService" /></intent>
+        <intent><action android:name="android.intent.action.TTS_SERVICE" /></intent>
     </queries>
 
-    <!-- appCategory="game": é a única categoria que o Android Auto deixa abrir uma tela própria com o carro parado -->
     <application
         android:allowBackup="true"
-        android:appCategory="game"
         android:icon="@mipmap/ic_launcher"
         android:label="Prolingo"
         android:supportsRtl="true"
@@ -31,7 +30,6 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
-                <category android:name="android.intent.category.CAR_LAUNCHER" />
             </intent-filter>
         </activity>
 
