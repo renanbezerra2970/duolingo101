@@ -112,3 +112,19 @@ Falas com várias orações são capturadas **uma oração por vez** (`splitClau
 - **Erros**: o que você erra (palavras novas, exercícios de escrita, nível 0) vai para `progress.mistakes`; acertar de primeira no Praticar tira o item da lista.
 - **Missões** (`#/missions`): meta diária de XP + 2 missões sorteadas pela data (+10 XP cada), e conquistas em 4 níveis (sequência, lições, palavras, XP, círculos completos, nível 5). O dia vira à meia-noite local.
 - **Perfil** (`#/profile`): nome, avatar, cor, meta diária, estatísticas e cópia do progresso (baixar/restaurar JSON).
+
+## App Android e Android Auto (`android/`)
+
+APK de testes, fora da Play Store, com cerca de 1,5 MB: não leva lições nem áudios. Tudo vem do site sob demanda; os áudios ficam em cache (até 200 MB) e os mais antigos saem sozinhos.
+
+- **No carro em movimento:** app de áudio (`PlaybackService`, Media3). Lista unidades, lições e níveis e toca a história, com inglês no título e português no subtítulo.
+- **No carro parado e no celular:** o site completo num WebView (`MainActivity`). O `assets/bridge.js` liga o modo Fala ao reconhecimento de voz do Android. O app se declara como jogo porque é a única categoria com tela própria no Android Auto, e isso exige Android 15 ou superior. Essa declaração não passaria na revisão da Play Store.
+- `targetSdk` fica em 34: no 35 o Android nega foco de áudio a app em segundo plano e a lição não toca.
+
+Gerar o APK (saída em `android/app/build/outputs/apk/release/`), com o JDK do Android Studio em `JAVA_HOME`:
+
+```bash
+cd android && ./gradlew assembleRelease
+```
+
+No celular: instale o APK e, no Android Auto, ative o modo desenvolvedor (toque 10 vezes em "Versão e permissões") e ligue **Fontes desconhecidas**.
