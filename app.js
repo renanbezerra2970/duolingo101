@@ -1552,7 +1552,9 @@
     progress.handsPos ||= {};
     let i = Math.min(progress.handsPos[key] || 0, steps.length - 1);
     let alive = true, denied = false, mistakes = 0, answered = 0, speakOk = 0, wake = null, audio = null;
-    let skipped = false, skipSignal = null, signalSkip = null; // botão Passar: interrompe o passo atual
+    let skipped = false, skipSignal = null, signalSkip = null; // botões Passar e Pausar: interrompem o passo atual
+    let paused = false, resumeSignal = null, signalResume = null; // pausa: áudio e microfone desligados
+    let heard = false; // a frase ou pergunta do passo já tocou: depois da pausa ele só volta a ouvir
     document.title = `Mãos livres: ${lesson.title} – Prolingo`;
 
     $app.innerHTML = `<div class="hands">
@@ -1572,7 +1574,10 @@
         </ul>
         <button class="btn main hands-go">${i ? "Continuar" : "Começar"}</button>
       </div>
-      <button class="hands-skip" hidden>Passar ⏭</button>
+      <div class="hands-btns" hidden>
+        <button class="hands-pause">Pausar ⏸</button>
+        <button class="hands-skip">Passar ⏭</button>
+      </div>
     </div>`;
     const $ = (s) => $app.querySelector(s);
     $(".close").onclick = () => go(`#/lesson/${id}/${level}`);
@@ -1585,7 +1590,7 @@
     const status = (t) => { $(".hands-status").textContent = t; };
     const save = () => { progress.handsPos[key] = i; saveProgress(progress); };
 
-    const gone = () => !alive || document.hidden || skipped;
+    const gone = () => !alive || document.hidden || skipped || paused;
     const untilHidden = () => new Promise(r => {
       const f = () => { if (document.hidden) { document.removeEventListener("visibilitychange", f); r(); } };
       document.addEventListener("visibilitychange", f);
@@ -1645,9 +1650,13 @@
       show(en, pt, cast[s.who]?.name || "");
       status("🎧 Ouça");
       if (s.who === "nar") { await model(); return !gone(); }
-      await twice();
-      if (gone()) return false;
-      if (s.teach) await say(pt, "pt-BR");
+      if (!heard) {
+        await twice();
+        if (gone()) return false;
+        if (s.teach) await say(pt, "pt-BR");
+        if (gone()) return false;
+        heard = true;
+      }
       const parts = splitClauses(en);
       let k = 0;
       for (;;) {
@@ -1684,7 +1693,11 @@
         await say(q.q, lang);
         for (let n = 0; n < q.o.length && !gone(); n++) await say(`${n + 1}. ${q.o[n]}`, q.optLang || lang);
       };
-      await read();
+      if (!heard) {
+        await read();
+        if (gone()) return false;
+        heard = true;
+      }
       for (;;) {
         if (gone()) return false;
         const alts = await waitSpeech(lang, 8000);
@@ -1699,7 +1712,7 @@
           ding(pick === q.a);
           if (pick !== q.a) mistakes++;
           await say(pick === q.a ? (isEn ? "Correct!" : "Certo!") : `${isEn ? "The answer is" : "A resposta é"}: ${q.o[q.a]}`, lang);
-          return !gone();
+          return true;
         }
         if (cmd === "repeat") await read();
         else if (alts.length) ding(false);
@@ -1729,30 +1742,50 @@
     }
     async function run() {
       while (alive && i < steps.length) {
+        if (paused) {
+          status("⏸ Pausado: treine à vontade. O microfone está desligado.");
+          await resumeSignal;
+          status("");
+          if (!alive) return;
+        }
         const s = steps[i];
         skipped = false;
         skipSignal = new Promise(r => { signalSkip = r; });
         const line = Array.isArray(s) ? { who: s[0], en: s[1], pt: s[2] } : s;
         const done = await (line.en ? lineStep(line) : questionStep(line));
         if (!alive || denied) return;
-        if (done || skipped) { i++; save(); }
+        if (done || skipped) { i++; heard = false; save(); }
+        else if (paused) continue;
         else if (document.hidden) await untilVisible();
       }
       if (alive) {
-        $(".hands-skip").hidden = true;
+        $(".hands-btns").hidden = true;
         finish();
       }
     }
-    $(".hands-skip").onclick = () => {
-      if (skipped) return;
-      skipped = true;
+    const interrupt = () => {
       stopRec();
       stopAudio();
       if ("speechSynthesis" in window) speechSynthesis.cancel();
       signalSkip?.();
     };
+    $(".hands-skip").onclick = () => {
+      if (skipped || paused) return;
+      skipped = true;
+      interrupt();
+    };
+    $(".hands-pause").onclick = () => {
+      paused = !paused;
+      $(".hands-pause").textContent = paused ? "Retomar ▶" : "Pausar ⏸";
+      $(".hands-skip").disabled = paused;
+      if (paused) {
+        resumeSignal = new Promise(r => { signalResume = r; });
+        interrupt();
+      } else signalResume?.();
+    };
     cleanup = () => {
       alive = false;
+      signalResume?.();
       stopRec();
       if ("speechSynthesis" in window) speechSynthesis.cancel();
       wake?.release?.().catch?.(() => {});
@@ -1762,7 +1795,7 @@
     $(".hands-go").onclick = async () => {
       $(".hands-go").remove();
       $(".hands-help").remove();
-      $(".hands-skip").hidden = false;
+      $(".hands-btns").hidden = false;
       audio = new (window.AudioContext || window.webkitAudioContext)();
       window.ProlingoNative?.keepScreen?.(true);
       try { wake = await navigator.wakeLock?.request("screen"); } catch {}

@@ -552,9 +552,12 @@ body.drawer-open .drawer-scrim { opacity: 1; pointer-events: auto; }
 .hands-help b { color: inherit; }
 .hands-go { min-width: 220px; margin: 0 auto; }
 .hands-link { border-color: var(--orange); }
-.hands-skip { width: 100%; min-height: 96px; margin-bottom: 16px; border: 0; border-radius: 18px; background: var(--blue); color: #0b2230; font-size: 26px; font-weight: 900; box-shadow: 0 5px 0 #1487c4; }
-.hands-skip[hidden] { display: none; }
-.hands-skip:active { transform: translateY(4px); box-shadow: 0 1px 0 #1487c4; }
+.hands-btns { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 16px; }
+.hands-btns[hidden] { display: none; }
+.hands-skip, .hands-pause { min-height: 96px; border: 0; border-radius: 18px; color: #0b2230; font-size: 24px; font-weight: 900; background: var(--blue); box-shadow: 0 5px 0 #1487c4; }
+.hands-pause { background: var(--orange); box-shadow: 0 5px 0 #c97600; }
+.hands-skip:active, .hands-pause:active { transform: translateY(4px); box-shadow: none; }
+.hands-skip:disabled { opacity: .4; }
 
 /* telas baixas e largas (central do carro, celular deitado): cabeçalho e rodapé mínimos, para a frase caber */
 @media (max-height: 560px) and (orientation: landscape) {
