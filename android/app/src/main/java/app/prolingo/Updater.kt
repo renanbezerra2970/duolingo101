@@ -3,6 +3,8 @@ package app.prolingo
 import android.app.Activity
 import android.app.AlertDialog
 import android.content.Intent
+import android.net.Uri
+import android.provider.Settings
 import androidx.core.content.FileProvider
 import org.json.JSONObject
 import java.io.File
@@ -12,6 +14,8 @@ import kotlin.concurrent.thread
 
 /** Ao abrir o app, procura versão nova do APK no site. Só baixa e instala se a pessoa autorizar. */
 class Updater(private val activity: Activity) {
+    private var pending: File? = null
+
     private fun open(path: String) = (URL("${SITE}apk/$path").openConnection() as HttpURLConnection).apply {
         connectTimeout = 15000
         readTimeout = 30000
@@ -70,8 +74,28 @@ class Updater(private val activity: Activity) {
         }
     }
 
+    // na primeira atualização o Android exige liberar o Prolingo como fonte de instalação
+    private fun allow(apk: File) {
+        AlertDialog.Builder(activity)
+            .setTitle("Falta uma permissão")
+            .setMessage("Na próxima tela, ative a opção para permitir instalar a partir do Prolingo e volte para o app. Isso só é pedido uma vez.")
+            .setPositiveButton("Abrir") { _, _ ->
+                pending = apk
+                activity.startActivity(Intent(Settings.ACTION_MANAGE_UNKNOWN_APP_SOURCES, Uri.parse("package:${activity.packageName}")))
+            }
+            .setNegativeButton("Agora não", null)
+            .show()
+    }
+
+    fun resume() {
+        val apk = pending ?: return
+        pending = null
+        if (activity.packageManager.canRequestPackageInstalls()) install(apk)
+    }
+
     // o instalador do Android confere a assinatura e pede a confirmação final
     private fun install(apk: File) {
+        if (!activity.packageManager.canRequestPackageInstalls()) return allow(apk)
         val uri = FileProvider.getUriForFile(activity, "${activity.packageName}.files", apk)
         activity.startActivity(Intent(Intent.ACTION_VIEW).apply {
             setDataAndType(uri, "application/vnd.android.package-archive")

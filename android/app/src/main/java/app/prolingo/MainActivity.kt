@@ -31,6 +31,7 @@ class MainActivity : Activity() {
     private var recognizer: SpeechRecognizer? = null
     private var pendingFiles: ValueCallback<Array<Uri>>? = null
     private var tts: TextToSpeech? = null
+    private val updater = Updater(this)
 
     @SuppressLint("SetJavaScriptEnabled")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -79,7 +80,7 @@ class MainActivity : Activity() {
         setContentView(web)
         if (savedInstanceState == null) {
             web.loadUrl(SITE)
-            Updater(this).check()
+            updater.check()
         } else web.restoreState(savedInstanceState)
     }
 
@@ -100,6 +101,7 @@ class MainActivity : Activity() {
     override fun onResume() {
         super.onResume()
         web.onResume()
+        updater.resume()
     }
 
     override fun onDestroy() {
