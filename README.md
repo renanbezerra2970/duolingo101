@@ -118,7 +118,7 @@ Falas com várias orações são capturadas **uma oração por vez** (`splitClau
 APK de testes, fora da Play Store, com cerca de 1,5 MB: não leva lições nem áudios. Tudo vem do site sob demanda; os áudios ficam em cache (até 200 MB) e os mais antigos saem sozinhos.
 
 - **No carro em movimento:** app de áudio (`PlaybackService`, Media3). Lista unidades, lições e níveis e toca a história, com inglês no título e português no subtítulo.
-- **Mãos livres (site e APK):** `#/hands/<lição>/<nível>`, entrada na tela inicial da lição. Toca a fala, ouve a repetição e segue sozinha; comandos "passar", "repetir", "tradução" e "parar"; perguntas lidas em voz alta e respondidas com "um", "dois" ou "três". Roda no celular, com a tela ligada e o app em primeiro plano.
+- **Mãos livres (site e APK):** `#/hands/<lição>/<nível>`, entrada na tela inicial da lição. Toca a fala, ouve a repetição e segue sozinha; comandos "passar", "repetir", "tradução" e "parar"; perguntas lidas em voz alta e respondidas com "um", "dois" ou "três". No nível 0 (`zeroHandsSteps`), palavras e frases viram repetição e as checagens de significado viram perguntas; os pares ficam de fora. Roda no celular, com a tela ligada e o app em primeiro plano.
 - **No carro parado e no celular:** o site completo num WebView (`MainActivity`). O `assets/bridge.js` liga o modo Fala ao reconhecimento de voz do Android. A declaração como jogo (`appCategory` e `CAR_LAUNCHER`), que abriria essa tela no carro com Android 15 ou superior, foi retirada na versão 0.2 para testes: o app ainda não aparece no carro.
 - `targetSdk` fica em 34: no 35 o Android nega foco de áudio a app em segundo plano e a lição não toca.
 

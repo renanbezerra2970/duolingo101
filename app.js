@@ -1515,17 +1515,34 @@
     });
   }
 
+  // nível 0 por voz: palavras e frases para ouvir e repetir, e as checagens de significado viram perguntas.
+  // O que depende de ver a tela (pares, montar frase) cai fora ou vira repetição.
+  function zeroHandsSteps(lesson) {
+    const out = [];
+    for (const sc of lesson.screens) {
+      if (sc.t === "intro") out.push({ en: sc.w, pt: sc.pt, word: true, teach: true });
+      else if (sc.t === "hear" || sc.t === "spell") out.push({ en: sc.w, pt: sc.pt, word: true });
+      else if (sc.t === "meaning") out.push({ q: "O que significa?", show: `O que significa ${sc.w}?`, word: sc.w, o: sc.o, a: sc.o.indexOf(sc.pt) });
+      else if (sc.t === "pick") out.push({ q: `Como se diz ${sc.pt} em inglês?`, o: sc.o, a: sc.o.indexOf(sc.w), optLang: "en-US" });
+      else if (sc.t === "phrase") out.push({ en: sc.en, pt: sc.pt, voice: sc.v, teach: true });
+      else if (sc.en) out.push({ en: sc.en, pt: sc.pt, voice: sc.v });
+    }
+    return out;
+  }
+
   async function renderHands(id, level) {
     const found = findLesson(id);
-    if (!found || found.zero || !SR) return go("#/");
+    if (!found || !SR) return go("#/");
     const { lesson, unit, section } = found;
-    const content = await getSteps(found, level);
+    const zero = !!found.zero;
+    level = zero ? 0 : Math.max(1, level);
+    const content = zero ? { steps: zeroHandsSteps(lesson), cast: {} } : await getSteps(found, level);
     if (!content) return go(`#/lesson/${id}/${level}`);
     const { steps, cast } = content;
     const key = pkey(lesson.id, level);
     const rate = levelInfo(level).rate;
-    const dialogueTotal = steps.filter(s => Array.isArray(s) && s[0] !== "nar").length;
-    const all = groupsOf(section).flatMap(u => state.unitData[u.id].lessons.map(l => l.id));
+    const dialogueTotal = steps.filter(s => (Array.isArray(s) ? s[0] !== "nar" : s.en)).length;
+    const all = groupsOf(section).flatMap(u => lessonsFor(u.id, level).map(l => l.id));
     const nextId = all[all.indexOf(lesson.id) + 1];
     progress.handsPos ||= {};
     let i = Math.min(progress.handsPos[key] || 0, steps.length - 1);
@@ -1570,6 +1587,7 @@
       document.addEventListener("visibilitychange", f);
     });
     const playLine = (voice, text) => Promise.race([new Promise(r => playSentence(voice, text, null, rate, r)), untilHidden()]);
+    const playWordLine = (w) => Promise.race([new Promise(r => play(`word|${w.toLowerCase()}`, w, null, r)), untilHidden()]);
     const say = (text, lang) => Promise.race([new Promise(r => {
       if (!("speechSynthesis" in window)) return r();
       const u = new SpeechSynthesisUtterance(text);
@@ -1601,17 +1619,21 @@
     }
 
     // true: pode ir para o próximo passo; false: foi interrompido e o passo recomeça depois
-    async function lineStep([who, en, pt]) {
-      const voice = cast[who]?.voice || DEFAULT_VOICE;
-      show(en, pt, cast[who]?.name || "");
+    async function lineStep(s) {
+      const { en, pt, word } = s;
+      const voice = s.voice || cast[s.who]?.voice || DEFAULT_VOICE;
+      const hearModel = () => (word ? playWordLine(en) : playLine(voice, en));
+      show(en, pt, cast[s.who]?.name || "");
       status("🎧 Ouça");
-      await playLine(voice, en);
+      await hearModel();
       if (gone()) return false;
-      if (who === "nar") return true;
+      if (s.who === "nar") return true;
+      if (s.teach) await say(pt, "pt-BR");
+      if (gone()) return false;
       const parts = splitClauses(en);
       for (let k = 0; k < parts.length; k++) {
         const part = parts[k];
-        const again = () => (parts.length > 1 ? say(part, "en-US") : playLine(voice, en));
+        const again = () => (parts.length > 1 ? say(part, "en-US") : hearModel());
         if (parts.length > 1) await again();
         let silent = 0, misses = 0;
         for (;;) {
@@ -1641,10 +1663,11 @@
     async function questionStep(q) {
       const isEn = level >= 3 || q.lang === "en";
       const lang = isEn ? "en-US" : "pt-BR";
-      show(q.q, q.o.map((o, n) => `${n + 1}. ${o}`).join("   "), isEn ? "Question" : "Pergunta");
+      show(q.show || q.q, q.o.map((o, n) => `${n + 1}. ${o}`).join("   "), isEn ? "Question" : "Pergunta");
       const read = async () => {
+        if (q.word) await playWordLine(q.word);
         await say(q.q, lang);
-        for (let n = 0; n < q.o.length && !gone(); n++) await say(`${n + 1}. ${q.o[n]}`, lang);
+        for (let n = 0; n < q.o.length && !gone(); n++) await say(`${n + 1}. ${q.o[n]}`, q.optLang || lang);
       };
       await read();
       for (let silent = 0; silent < 3;) {
@@ -1676,11 +1699,16 @@
       const earned = { listen: true, speak: speakRate >= PASS_RATE };
       registerStudy(key, acc, level, earned);
       await ensureWords();
-      if (!repeat) for (const l of new Set(lemmasOf(steps).map(o => o.lemma))) progress.words.seen[l] = (progress.words.seen[l] || 0) + 1;
+      if (zero) {
+        const fresh = lesson.words.filter(w => !progress.words.taught[w]).length;
+        for (const w of lesson.words) progress.words.taught[w] ||= today();
+        if (fresh) bump("words", fresh);
+      } else if (!repeat) for (const l of new Set(lemmasOf(steps).map(o => o.lemma))) progress.words.seen[l] = (progress.words.seen[l] || 0) + 1;
       saveProgress(progress);
       i = steps.length;
-      show("História concluída! 🎉", `${speakOk} de ${dialogueTotal} falas repetidas · ${acc}% nas perguntas`);
-      await say(nextId ? "História concluída. Diga próxima para continuar, ou parar para sair." : "História concluída.", "pt-BR");
+      const doneText = zero ? "Lição concluída" : "História concluída";
+      show(`${doneText}! 🎉`, `${speakOk} de ${dialogueTotal} repetidas · ${acc}% nas perguntas`);
+      await say(nextId ? `${doneText}. Diga próxima para continuar, ou parar para sair.` : `${doneText}.`, "pt-BR");
       if (!nextId || gone()) return;
       const cmd = voiceCmd(await hear("pt-BR", 8000));
       if (cmd === "next" && alive) go(`#/hands/${nextId}/${level}`);
@@ -1688,7 +1716,8 @@
     async function run() {
       while (alive && i < steps.length) {
         const s = steps[i];
-        const done = await (Array.isArray(s) ? lineStep(s) : questionStep(s));
+        const line = Array.isArray(s) ? { who: s[0], en: s[1], pt: s[2] } : s;
+        const done = await (line.en ? lineStep(line) : questionStep(line));
         if (!alive || denied) return;
         if (done) { i++; save(); }
         else if (document.hidden) await untilVisible();
@@ -1765,6 +1794,7 @@
           ${wordsList.length ? `<div class="new-words"><div class="nw-title">✨ Palavras desta lição</div>${wordListHTML(wordsList)}</div>`
             : `<p class="mode-hint">Revisão de todas as palavras da unidade.</p>`}
           ${saved ? `<p class="resume-note">⏸ Você parou em <b>${saved.pct}%</b> desta lição. Continue de onde parou ou recomece.</p>` : ""}
+          ${SR ? `<a class="zero-link hands-link" href="#/hands/${lesson.id}/0">🚗 <b>Mãos livres</b>: só áudio, repita e diga “passar” →</a>` : ""}
           <p class="mode-hint">20 exercícios curtos. Ligue os modos <b>antes de começar</b> para completar o círculo: 🎧 escuta, 🎤 fala (repetir frases) e ✍️ escrita (digitar em vez de montar).</p>`}
         </div>
       </div>
@@ -2528,7 +2558,7 @@
     const n = parseInt(lv, 10);
     const level = Number.isNaN(n) ? 1 : Math.min(5, Math.max(0, n));
     if (page === "lesson") (level === 0 ? renderDrill(arg) : renderLesson(arg, level));
-    else if (page === "hands") renderHands(arg, Math.max(1, level));
+    else if (page === "hands") renderHands(arg, level);
     else if (page === "guide") renderGuide(arg);
     else if (page === "pro") renderHome("pro");
     else if (page === "practice") (arg ? renderPracticeSession(arg) : renderPractice());
