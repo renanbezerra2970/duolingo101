@@ -1563,7 +1563,8 @@
         <div class="hands-pt">${esc(lesson.titlePt)} · ${esc(unit.title)} · nível ${level}</div>
         <div class="hands-status"></div>
         <ul class="hands-help">
-          <li>🎤 <b>Repita a frase</b> e a lição segue sozinha</li>
+          <li>🎧 Cada frase toca <b>duas vezes</b> e espera você</li>
+          <li>🎤 <b>Repita a frase</b> e a lição segue</li>
           <li><b>“Passar”</b>: vai para a próxima</li>
           <li><b>“Repetir”</b>: ouve de novo</li>
           <li><b>“Tradução”</b>: ouve em português</li>
@@ -1626,47 +1627,54 @@
     }
 
     // true: pode ir para o próximo passo; false: foi interrompido e o passo recomeça depois
+    const rest = (ms) => Promise.race([new Promise(r => setTimeout(r, ms)), skipSignal]);
+    // espera em silêncio: o microfone volta a ouvir até vir uma resposta ou o botão Passar
+    async function waitSpeech(lang, ms) {
+      const t = Date.now();
+      const alts = await hear(lang, ms);
+      if (!alts.length && !gone()) await rest(Date.now() - t < 1500 ? 1500 : 300);
+      return alts;
+    }
+    const micDenied = () => { status("Permita o uso do microfone para usar este modo."); return false; };
+    // a frase toca duas vezes seguidas e para: daí em diante só anda com a resposta da pessoa
     async function lineStep(s) {
       const { en, pt, word } = s;
       const voice = s.voice || cast[s.who]?.voice || DEFAULT_VOICE;
-      const hearModel = () => (word ? playWordLine(en) : playLine(voice, en));
+      const model = () => (word ? playWordLine(en) : playLine(voice, en));
+      const twice = async () => { await model(); if (!gone()) await model(); };
       show(en, pt, cast[s.who]?.name || "");
       status("🎧 Ouça");
-      await hearModel();
+      if (s.who === "nar") { await model(); return !gone(); }
+      await twice();
       if (gone()) return false;
-      if (s.who === "nar") return true;
       if (s.teach) await say(pt, "pt-BR");
-      if (gone()) return false;
       const parts = splitClauses(en);
-      for (let k = 0; k < parts.length; k++) {
-        const part = parts[k];
-        const again = () => (parts.length > 1 ? say(part, "en-US") : hearModel());
-        if (parts.length > 1) await again();
-        let silent = 0, misses = 0;
-        for (;;) {
-          if (gone()) return false;
-          const alts = await hear("en-US", 5000 + wordsIn(part) * 600);
-          if (gone()) return false;
-          if (denied) { status("Permita o uso do microfone para usar este modo."); return false; }
-          const best = alts.map(a => M.score(part, a, "recall")).sort((a, b) => b.score - a.score)[0];
-          if (best && best.score >= THRESHOLD.speak) { ding(true); break; }
-          const cmd = voiceCmd(alts);
-          if (cmd === "next") return true;
-          if (cmd === "stop") { stop(); return false; }
-          if (cmd === "pt") await say(pt, "pt-BR");
-          else if (!cmd && !alts.length && ++silent >= 3) return true; // sem resposta: não trava a lição
-          else if (!cmd && alts.length) {
-            ding(false);
-            if (++misses >= 3) { await say("Vamos seguir.", "pt-BR"); return true; }
-          }
-          if (gone()) return false;
-          await again();
+      let k = 0;
+      for (;;) {
+        if (gone()) return false;
+        const alts = await waitSpeech("en-US", 6000 + wordsIn(en) * 600);
+        if (gone()) return false;
+        if (denied) return micDenied();
+        const score = (target) => Math.max(0, ...alts.map(a => M.score(target, a, "recall").score));
+        if (score(en) >= THRESHOLD.speak) { ding(true); break; }
+        // frase longa: também vale repetir uma parte de cada vez
+        if (parts.length > 1 && score(parts[k]) >= THRESHOLD.speak) {
+          ding(true);
+          if (++k === parts.length) break;
+          continue;
         }
+        const cmd = voiceCmd(alts);
+        if (cmd === "next") return true;
+        if (cmd === "stop") { stop(); return false; }
+        if (cmd === "pt") await say(pt, "pt-BR");
+        else if (cmd === "repeat") { status("🎧 Ouça"); await twice(); }
+        else if (alts.length) ding(false);
       }
       speakOk++;
       bump("speak");
       return true;
     }
+    // a pergunta é lida uma vez e espera; só relê com "repetir"
     async function questionStep(q) {
       const isEn = level >= 3 || q.lang === "en";
       const lang = isEn ? "en-US" : "pt-BR";
@@ -1677,12 +1685,11 @@
         for (let n = 0; n < q.o.length && !gone(); n++) await say(`${n + 1}. ${q.o[n]}`, q.optLang || lang);
       };
       await read();
-      // ouviu e não entendeu também gasta tentativa: a pergunta nunca fica presa
-      for (let tries = 0; tries < 3; tries++) {
+      for (;;) {
         if (gone()) return false;
-        const alts = await hear(lang, 8000);
+        const alts = await waitSpeech(lang, 8000);
         if (gone()) return false;
-        if (denied) { status("Permita o uso do microfone para usar este modo."); return false; }
+        if (denied) return micDenied();
         const cmd = voiceCmd(alts);
         if (cmd === "next") return true;
         if (cmd === "stop") { stop(); return false; }
@@ -1694,10 +1701,9 @@
           await say(pick === q.a ? (isEn ? "Correct!" : "Certo!") : `${isEn ? "The answer is" : "A resposta é"}: ${q.o[q.a]}`, lang);
           return !gone();
         }
-        if (tries < 2) await read();
+        if (cmd === "repeat") await read();
+        else if (alts.length) ding(false);
       }
-      await say("Vamos seguir.", "pt-BR");
-      return !gone();
     }
     async function finish() {
       delete progress.handsPos[key];
